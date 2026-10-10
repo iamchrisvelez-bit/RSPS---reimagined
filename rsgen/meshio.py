@@ -244,6 +244,13 @@ def _node_matrix(n):
     return T @ R @ S
 
 
+def _linear_to_srgb(c):
+    """glTF vertex colours and baseColorFactor are linear; displays (and the RS
+    palette) are sRGB. Textures are already sRGB and are not converted."""
+    c = np.clip(np.asarray(c, float), 0, 1)
+    return np.where(c <= 0.0031308, c * 12.92, 1.055 * np.power(c, 1 / 2.4) - 0.055)
+
+
 def load_glb(path):
     with open(path, 'rb') as f:
         data = f.read()
@@ -297,7 +304,7 @@ def load_glb(path):
                 tris = idx.reshape(-1, 3)
                 mat = js.get('materials', [{}])[prim['material']] if 'material' in prim else {}
                 pbr = mat.get('pbrMetallicRoughness', {})
-                factor = np.array(pbr.get('baseColorFactor', [1, 1, 1, 1])[:3])
+                factor = _linear_to_srgb(pbr.get('baseColorFactor', [1, 1, 1, 1])[:3])
                 tex = pbr.get('baseColorTexture')
                 vc = accessor(prim['attributes']['COLOR_0'])[:, :3] if 'COLOR_0' in prim['attributes'] else None
                 uv = None
@@ -311,10 +318,10 @@ def load_glb(path):
                         u = uv[[a, b, c]].mean(0)
                         rgb = np.array(_sample(img, (u[0], 1 - u[1]))) / 255.0  # glTF UV origin is top-left
                     elif vc is not None:
-                        rgb = vc[[a, b, c]].mean(0)
+                        rgb = _linear_to_srgb(vc[[a, b, c]].mean(0))
                     else:
                         rgb = np.ones(3)
-                    allC.append(tuple(int(x) for x in np.clip(rgb * factor * 255, 0, 255)))
+                    allC.append(tuple(int(round(x)) for x in np.clip(rgb * factor * 255, 0, 255)))
                     allF.append((a + base, b + base, c + base))
         for ch in node.get('children', []):
             visit(ch, M)

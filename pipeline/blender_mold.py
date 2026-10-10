@@ -104,7 +104,11 @@ def mold_item(d, meta, faces=1800, depth_gain=1.0, colors=8, delight=0.75, voxel
         raise RuntimeError('%s: empty silhouette' % meta['code'])
     bpy.ops.wm.read_factory_settings(use_empty=True)
 
-    base = evaluated_mesh(slab(polys, half, min(half * 0.6, size * 0.02)))
+    slab_obj = slab(polys, half, min(half * 0.6, size * 0.02))
+    base = evaluated_mesh(slab_obj)
+    curve = slab_obj.data
+    bpy.data.objects.remove(slab_obj)  # leave the scene empty for the caller
+    bpy.data.curves.remove(curve)
     base = with_modifier(base, 'REMESH', mode='VOXEL', voxel_size=size / voxels)
     # mold: push the front out / back in by the smoothed depth map
     z = blur(np.asarray(Image.open(os.path.join(d, 'depth.png'))).astype(np.float64) / 65535.0, size / 30) * m
@@ -145,6 +149,34 @@ def mold_item(d, meta, faces=1800, depth_gain=1.0, colors=8, delight=0.75, voxel
         k = 1.0 if n[2] >= 0 else 0.8  # backs a little darker
         C.append(tuple(int(v * k) for v in col))
     return Mesh(V, F, C)
+
+
+def build_object(mesh, name='model'):
+    """Turn a pipeline Mesh (y up, +z front, per-face RGB) into a Blender object
+    in Blender's convention (Z up, front facing -Y) with a flat face colour per
+    triangle, linked to the scene. Use it to refine a mold_item() result with
+    Blender tools, or to preview it."""
+    me = bpy.data.meshes.new(name)
+    verts = [(x, -z, y) for x, y, z in mesh.V.tolist()]  # y-up/+z-front -> Z-up/-Y-front (a proper rotation)
+    me.from_pydata(verts, [], [tuple(f) for f in mesh.F.tolist()])
+    attr = me.color_attributes.new('Col', 'BYTE_COLOR', 'CORNER')
+    for poly, col in zip(me.polygons, mesh.C):
+        for li in poly.loop_indices:
+            attr.data[li].color_srgb = (col[0] / 255, col[1] / 255, col[2] / 255, 1.0)
+    mat = bpy.data.materials.new(name + '_vc')
+    mat.use_nodes = True
+    vc = mat.node_tree.nodes.new('ShaderNodeVertexColor')
+    vc.layer_name = 'Col'
+    mat.node_tree.links.new(vc.outputs['Color'], mat.node_tree.nodes['Principled BSDF'].inputs['Base Color'])
+    me.materials.append(mat)
+    obj = new_object(name, me)
+    return obj
+
+
+def export_glb(filepath):
+    """Export the whole scene as GLB (glTF is y-up/+z-front, matching stage 3's defaults)."""
+    bpy.ops.export_scene.gltf(filepath=filepath, export_format='GLB')
+    return filepath
 
 
 def main():

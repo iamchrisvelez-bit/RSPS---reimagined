@@ -124,7 +124,7 @@ class TestMeshIO(unittest.TestCase):
 
     def test_glb_with_vertex_colours_and_node_transform(self):
         P = np.array([[0, 0, 0], [1, 0, 0], [0, 1, 0]], np.float32)
-        Cc = np.array([[0, 1, 0, 1]] * 3, np.float32)
+        Cc = np.array([[0, 1, 0.2, 1]] * 3, np.float32)  # glTF colours are linear
         I = np.array([0, 1, 2], np.uint16)
         binb = P.tobytes() + Cc.tobytes() + I.tobytes() + b'\0\0'
         js = {'asset': {'version': '2.0'}, 'scene': 0, 'scenes': [{'nodes': [0]}],
@@ -146,7 +146,8 @@ class TestMeshIO(unittest.TestCase):
             open(p, 'wb').write(glb)
             m = load_mesh(p)
         self.assertEqual(len(m.F), 1)
-        self.assertEqual(m.C[0], (0, 255, 0))
+        self.assertEqual(m.C[0][:2], (0, 255))
+        self.assertAlmostEqual(m.C[0][2], 124, delta=1)  # linear 0.2 -> sRGB ~0.484
         self.assertAlmostEqual(m.V[:, 0].min(), 5.0)
 
 
