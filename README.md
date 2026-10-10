@@ -4,6 +4,7 @@ There are 84 low-poly items built from `reference_sheet.jpg` (14 batches × 6, r
 They are packaged as game-ready RuneScape classic-format models, 36×32 inventory sprites and item definitions.
 
 **Integrating into the server? Read [HANDOFF.md](HANDOFF.md).**
+**Automatic sheet → 3D → RS pipeline: see [PIPELINE.md](PIPELINE.md)** (`./run_pipeline.sh`).
 
 ```sh
 pip install -r requirements.txt
