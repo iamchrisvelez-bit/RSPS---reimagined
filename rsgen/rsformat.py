@@ -152,6 +152,10 @@ def encode(mesh, priority=10):
         fdata += _smart(int(a) - last) + _smart(int(b) - int(a)) + _smart(int(c) - int(b))
         last = int(c)
 
+    for name, sec in (('x', xs), ('y', ys), ('z', zs), ('face index', fdata)):
+        if len(sec) > 65535:  # the footer stores each section length as an unsigned 16-bit value
+            raise ValueError('model too large: %s data is %d bytes (format limit 65535)' % (name, len(sec)))
+
     render_types = bytes([1]) * nf  # flat shading -> faceted low-poly look
     col = b''.join(struct.pack('>H', c) for c in colors)
 

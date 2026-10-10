@@ -61,7 +61,9 @@ Pick the section that matches the server's revision. Look for the cache folder (
 **Server side (both):**
 - Register each item's equip slot and two-handed flag from `defs/equipment.json` wherever the server keeps equipment data.
 - Slot numbers: 0 head, 1 cape, 2 neck, 3 weapon, 4 body, 5 shield, 7 legs, 9 hands, 10 feet.
-- `hide_kits` are player kit parts to hide while worn: 6 arms, 8 hair, 11 jaw. On OSRS-style defs these are `wearPos2`/`wearPos3`. Bases without that field usually hard-code them in an "is full body / full helm / full mask" list: add these ids there.
+- `hide_kits` are player kit parts to hide while worn: 6 arms, 8 hair, 11 jaw.
+  - Most platebodies are **short-sleeved** cuirasses, so they hide nothing: the player's own arms show and animate below the pauldrons.
+  - Long-sleeved bodies (robes, ranger tunics, solar scale body) hide arms. The hooded tunics also hide hair and jaw. On OSRS-style defs these are `wearPos2`/`wearPos3`. Bases without that field usually hard-code them in an "is full body / full helm / full mask" list: add these ids there.
 
 ## 4. Sprites
 OSRS-style and 317 clients **render inventory icons from `inventory_model` at runtime**, so the cache doesn't need the PNGs. Use `sprites/<item_id>.png` where the server or website needs a static icon: item DB, shops, wiki, Discord bot. Only put them in the sprite archive if the base has a custom-icon override system.
@@ -76,6 +78,7 @@ For each `item_id`:
 ## 6. Known limitations, stated plainly
 - **No vertex skins.** Worn models are placed on a ~200-unit-tall player (feet at y=0, facing +z in authoring space, stored as RS y-down). They show correctly while standing but will **not bend with animations** until vertex groups are copied from the base player kit in a model editor.
 - Items with `worn_placement: item_space_needs_offset` (weapons, shields, amulets) have the grip or centre at the origin. They need the base's usual hand/neck offset, or re-posing, before they look right when equipped.
+- Every model has at most 3,000 faces (enforced by the tests), so equipped players stay cheap to draw.
 - `icon.zoom2d` is estimated from model size (≈12.5 × largest extent). Expect small per-item tweaks.
 - These were verified offline:
   - all 168 models decode byte-for-byte identically with RuneLite's own `ModelLoader` (`verify/runelite_check.py`)

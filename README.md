@@ -21,6 +21,8 @@ pip install -r requirements.txt
 | `rsgen/render.py` | Preview renderer and inventory-sprite generator |
 | `build.py` | Builds `out/` (models, sprites, defs, manifest) |
 | `tests/` | Release checks |
+| `tools/compare.py` | Reference panel vs. current renders, side by side (`out/compare/`) |
+| `tools/preview.py` | Quick render of ad-hoc meshes while tuning templates |
 | `verify/` | RuneLite `ModelLoader` sources (BSD-2, unmodified apart from removing Lombok) + cross-check harness |
 
 ## Interpretations of the sheet

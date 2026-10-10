@@ -36,7 +36,6 @@ OUT = os.path.join(ROOT, 'out')
 # OSRS / 317 equipment slot indices
 SLOT_ID = {'head': 0, 'cape': 1, 'neck': 2, 'weapon': 3, 'body': 4, 'shield': 5, 'legs': 7,
            'hands': 9, 'feet': 10}
-ARMS, HAIR, JAW = 6, 8, 11
 
 # Icon camera angles (RS angle units: 2048 = 360 degrees) per slot.
 ICON_ANGLES = {
@@ -56,16 +55,8 @@ def rot_z(V, deg):
 
 
 def hidden_kits(it):
-    """Player kit parts to hide while worn (wearPos2/3)."""
-    slot, code = it['slot'], it['code']
-    if slot == 'body':
-        hide = [] if code == 'B02_2' else [ARMS]  # B02_2 is sleeveless
-        if code.startswith('B07') and code in ('B07_1', 'B07_2', 'B07_3', 'B07_4'):
-            hide.append(HAIR)  # hooded tunic covers the hair
-        return hide
-    if slot == 'head':
-        return [HAIR] if code in ('B10_1',) else [HAIR, JAW]
-    return []
+    """Player kit parts to hide while worn (wearPos2/3), declared per item."""
+    return list(it['hides'])
 
 
 def write_model(mesh, model_id):

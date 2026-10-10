@@ -4,9 +4,7 @@
   "name": "Copper scale platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -14,9 +12,7 @@
   "name": "Iron platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -24,9 +20,7 @@
   "name": "Steel platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -34,9 +28,7 @@
   "name": "Shadowsteel platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -44,9 +36,7 @@
   "name": "Silver filigree platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -54,9 +44,7 @@
   "name": "Jade crystal platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -64,9 +52,7 @@
   "name": "Royal sapphire platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -162,9 +148,7 @@
   "name": "Reaver platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -199,9 +183,7 @@
   "name": "Ribcage platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -228,9 +210,7 @@
   "name": "Crimson chain hauberk",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -257,9 +237,7 @@
   "name": "Paladin platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -286,9 +264,7 @@
   "name": "Magma platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -330,7 +306,8 @@
   "slot": "body",
   "hide_kits": [
    6,
-   8
+   8,
+   11
   ],
   "two_handed": false
  },
@@ -341,7 +318,8 @@
   "slot": "body",
   "hide_kits": [
    6,
-   8
+   8,
+   11
   ],
   "two_handed": false
  },
@@ -352,7 +330,8 @@
   "slot": "body",
   "hide_kits": [
    6,
-   8
+   8,
+   11
   ],
   "two_handed": false
  },
@@ -363,7 +342,8 @@
   "slot": "body",
   "hide_kits": [
    6,
-   8
+   8,
+   11
   ],
   "two_handed": false
  },
@@ -373,8 +353,7 @@
   "equip_slot": 0,
   "slot": "head",
   "hide_kits": [
-   8,
-   11
+   8
   ],
   "two_handed": false
  },
@@ -383,9 +362,7 @@
   "name": "Valkyrie platebody",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -441,9 +418,7 @@
   "name": "Verdant crystal body",
   "equip_slot": 4,
   "slot": "body",
-  "hide_kits": [
-   6
-  ],
+  "hide_kits": [],
   "two_handed": false
  },
  {
@@ -528,8 +503,7 @@
   "equip_slot": 0,
   "slot": "head",
   "hide_kits": [
-   8,
-   11
+   8
   ],
   "two_handed": false
  },
@@ -557,8 +531,7 @@
   "equip_slot": 0,
   "slot": "head",
   "hide_kits": [
-   8,
-   11
+   8
   ],
   "two_handed": false
  },

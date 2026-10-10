@@ -145,20 +145,25 @@ def merge(*parts):
 
 # ---------------------------------------------------------------- primitives
 
-def loft(rings, cap_bottom=True, cap_top=True, closed_ring=True, col=(128, 128, 128)):
+def loft(rings, cap_bottom=True, cap_top=True, closed_ring=True, col=(128, 128, 128), loop=False):
     """Join a list of equal-length point rings with quads. Caps are fans to the
-    ring centroid. Orientation is fixed afterwards so faces point outward."""
+    ring centroid. loop=True also joins the last ring back to the first (a
+    hollow band / torus-like solid, no caps). Orientation is fixed afterwards
+    so faces point outward."""
     rings = [np.asarray(r, float) for r in rings]
     n = len(rings[0])
     V = np.vstack(rings)
     F = []
     seg = n if closed_ring else n - 1
-    for i in range(len(rings) - 1):
+    if loop:
+        cap_bottom = cap_top = False
+    for i in range(len(rings) - 1 + (1 if loop else 0)):
+        nxt = (i + 1) % len(rings)
         for j in range(seg):
             a = i * n + j
             b = i * n + (j + 1) % n
-            c = (i + 1) * n + (j + 1) % n
-            d = (i + 1) * n + j
+            c = nxt * n + (j + 1) % n
+            d = nxt * n + j
             F += [(a, b, c), (a, c, d)]
     V = list(V)
     if cap_bottom and closed_ring:

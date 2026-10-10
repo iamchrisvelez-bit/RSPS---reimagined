@@ -22,6 +22,9 @@ from rsgen.geom import Mesh  # noqa: E402
 from rsgen.items import ITEMS  # noqa: E402
 
 
+MAX_FACES = 3000  # keep worn models light: the client draws every face of every visible player
+
+
 def read(path, mode='rb'):
     with open(path, mode) as f:
         return f.read()
@@ -96,6 +99,7 @@ class TestOutputs(unittest.TestCase):
                     self.assertEqual(len(V), m['vertices'])
                     self.assertEqual(len(F), m['faces'])
                     self.assertLess(len(V), 65536)
+                    self.assertLessEqual(len(F), MAX_FACES, 'over the per-model face budget')
                     self.assertTrue((F >= 0).all() and (F < len(V)).all())
                     self.assertEqual(d['texture_count'], 0)
                     self.assertTrue(all(r == 1 for r in d['render_types']))
