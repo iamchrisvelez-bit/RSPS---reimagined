@@ -15,6 +15,7 @@ sys.path.insert(0, os.path.join(ROOT, 'pipeline'))
 from rsgen import rsformat  # noqa: E402
 from rsgen.fit import decimate, fit_to_slot, reorient, SLOT_BOX  # noqa: E402
 from rsgen.geom import box  # noqa: E402
+from rsgen.lowpoly import delaunay, outline_points, triangulate_art  # noqa: E402
 from rsgen.meshio import load_mesh, write_obj_rgb  # noqa: E402
 import stage1_designs_to_3d as s1  # noqa: E402
 import stage2_images_to_models as s2  # noqa: E402
@@ -58,6 +59,42 @@ class TestStage1(unittest.TestCase):
         z = s1.depth_map(Image.new('RGB', (60, 60), (120, 120, 120)), m)
         self.assertEqual(z[0, 0], 0)
         self.assertGreater(z[30, 30], z[12, 30])
+
+
+class TestLowPoly(unittest.TestCase):
+    def test_delaunay_is_valid(self):
+        rng = np.random.default_rng(3)
+        P = rng.uniform(0, 100, (60, 2))
+        T = delaunay(P)
+        self.assertTrue(len(T) <= 2 * len(P) - 5)
+        for t in T:
+            a, b, c = P[t]
+            self.assertGreater((b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0]), 0)  # CCW
+            M = np.array([[*(q - a), np.dot(q - a, q - a)] for q in (b, c)])
+            ux, uy = np.linalg.solve(2 * M[:, :2], M[:, 2])
+            r2 = ux * ux + uy * uy
+            d2 = ((P - a - [ux, uy]) ** 2).sum(1)
+            self.assertTrue((d2 >= r2 - 1e-6).all(), 'point inside a circumcircle')
+
+    def test_outline_is_clean_and_on_edge(self):
+        m = np.zeros((80, 80), bool)
+        m[10:70, 20:60] = True
+        pts = outline_points(m, eps=1.0, step=8)
+        self.assertGreater(len(pts), 8)
+        ys, xs = pts[:, 0], pts[:, 1]
+        self.assertTrue(((np.abs(ys - 10) < 1) | (np.abs(ys - 69) < 1) | (np.abs(xs - 20) < 1)
+                         | (np.abs(xs - 59) < 1)).all())
+
+    def test_triangles_stay_inside_silhouette(self):
+        m = np.zeros((90, 90), bool)
+        yy, xx = np.mgrid[:90, :90]
+        m[(yy - 45) ** 2 + (xx - 45) ** 2 < 38 ** 2] = True
+        m[40:50, 40:90] = False  # a notch: triangles must not bridge it
+        L = np.where(m, (xx > 45).astype(int), -1)
+        P, T, lab, rim = triangulate_art(m, L, 200, 3.0)
+        cen = P[T].mean(1)
+        self.assertTrue(m[np.round(cen[:, 0]).astype(int), np.round(cen[:, 1]).astype(int)].all())
+        self.assertEqual(set(lab.tolist()), {0, 1})
 
 
 class TestMeshIO(unittest.TestCase):
@@ -127,6 +164,26 @@ class TestFitAndConvert(unittest.TestCase):
         for _ in range(4):
             m = m.subdivide()
         self.assertLessEqual(len(decimate(m, 300).F), 300)
+
+    def test_lowpoly_to_rs_end_to_end(self):
+        p = synthetic_panel()
+        item = s1.group_items(s1.components(s1.foreground_mask(p), 150), 6)[1]
+        y0, x0 = item.min(0)
+        y1, x1 = item.max(0) + 1
+        m = np.zeros(p.size[::-1], bool)
+        m[item[:, 0], item[:, 1]] = True
+        m = m[y0:y1, x0:x1]
+        rgb = p.crop((x0, y0, x1, y1))
+        z = s1.depth_map(rgb, m)
+        mask = Image.fromarray((m * 255).astype(np.uint8))
+        depth = Image.fromarray((z / max(z.max(), 1) * 65535).astype(np.uint16))
+        mesh = s2.lowpoly_mesh(rgb, mask, depth, 200, 0.35)
+        self.assertGreater(mesh.signed_volume(), 0)
+        cols = {c for c in mesh.C}
+        self.assertLessEqual(len(cols), 16)  # flat palette (front tones + darker backs)
+        rs = s3.convert(mesh, 'shield', 2400)
+        dec = rsformat.decode(rsformat.encode(rs))
+        self.assertTrue(np.array_equal(dec['F'], rs.F))
 
     def test_relief_to_rs_end_to_end(self):
         p = synthetic_panel()

@@ -29,17 +29,18 @@ The depth is **estimated**, not measured: a rounded profile from the silhouette,
 ## Stage 2: 3D images → models
 | `--backend` | What it does | Where it runs |
 |---|---|---|
-| `relief` (default) | Builds a closed mesh: a front surface from the depth map and a mirrored, thinner back (thickness depends on the slot). The artwork's colours are reduced to about 10 flat tones (`--colors`), with baked lighting partly removed (`--delight`). | Anywhere (it ran here) |
+| `lowpoly` (default) | Builds low-poly triangles that follow the artwork. Points sit along a traced, simplified outline and along colour borders; a Delaunay triangulation of them is trimmed to the silhouette, and each triangle takes its dominant flat colour. The artwork's baked lighting is mostly removed (`--delight 0.75`) and its colours are reduced to `--colors 8` material tones, so the RS client's lighting does the shading. The front comes from a smoothed depth map, with a thinner mirrored back. About 1,300 faces. | Anywhere (it ran here) |
+| `relief` | The older grid version of the above (stair-stepped outline, noisier colour). | Anywhere |
 | `command` | Runs your own image-to-3D tool on every item. `--cmd` is a template using `{image} {mask} {depth} {outdir} {code}`, and the tool must write a .glb/.obj/.ply into `{outdir}`. | A machine with that tool, usually a GPU box |
 | `import` | Uses meshes you made elsewhere, from `--import-dir/<code>.glb|obj|ply`. Examples: an online image-to-3D service fed with the stage-1 `color.png` files, or Blender. | Anywhere |
 
-**Know the limits.** The `relief` backend reconstructs from one front view. It works well for flat items: blades, shields, amulets, capes, bows. Armour and helms come out as a relief, not a full sculpt with a believable back. For true 3D, use an AI image-to-3D tool through `command` or `import`. This environment has no GPU and no access to model downloads, so those backends are written but not exercised here (the tests cover the `import` path's file loading).
+**Know the limits.** The `lowpoly` and `relief` backends reconstructs from one front view. It works well for flat items: blades, shields, amulets, capes, bows. Armour and helms come out as a relief, not a full sculpt with a believable back. For true 3D, use an AI image-to-3D tool through `command` or `import`. This environment has no GPU and no access to model downloads, so those backends are written but not exercised here (the tests cover the `import` path's file loading).
 
 ## Stage 3: models → RS
 This stage takes the stage-2 output, or **any** `.obj`/`.ply`/`.glb` file or folder of them. For each model it:
 1. Reorients to the game's axes (`--up`, `--forward`). For a Blender export use `--up z --forward -y`.
 2. Fits the model into its equipment slot. Worn slots go on the standard player; weapons, shields and amulets are centred in item space.
-3. Reduces faces to `--max-faces` (default 1500).
+3. Reduces faces to `--max-faces` (default 2400; `lowpoly` output already fits, so it isn't decimated).
 4. Snaps vertices to the integer grid and colours to the RS palette.
 5. Encodes the classic model format, then decodes it again and requires an exact match.
 
@@ -49,6 +50,8 @@ Example for a single model file:
 ```sh
 python3 pipeline/stage3_models_to_rs.py --in my_sword.glb --slot weapon --up z --forward -y
 ```
+
+Compare against the sheet with `python3 tools/compare.py --pipeline` (writes `pipeline_out/compare/`).
 
 ## How this relates to `out/`
 `out/` holds the hand-built models from `rsgen/items.py`, and those remain the higher-quality set. This pipeline is the automatic route:

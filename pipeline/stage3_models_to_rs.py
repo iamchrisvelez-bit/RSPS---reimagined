@@ -74,7 +74,7 @@ def main():
     ap.add_argument('--slot', choices=sorted(SLOT_BOX), help='override the slot from stage-1 metadata')
     ap.add_argument('--up', default='y', help="source up axis: x, y, z, -x, -y, -z (Blender exports: 'z')")
     ap.add_argument('--forward', default='z', help="source axis the item's front faces (Blender: '-y')")
-    ap.add_argument('--max-faces', type=int, default=1500)
+    ap.add_argument('--max-faces', type=int, default=2400)
     ap.add_argument('--fill', type=float, default=1.0, help='fraction of the slot box to fill')
     ap.add_argument('--base-model-id', type=int, default=61000)
     ap.add_argument('--only', default='')
