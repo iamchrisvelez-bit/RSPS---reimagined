@@ -183,15 +183,13 @@ def poisson_pick(cands, weights, radius, limit, rng):
     return out
 
 
-def triangulate_art(mask, labels, n_points=420, edge_spacing=3.0, seed=0):
-    """Points (y, x), triangles and per-triangle palette label for an item.
-
-    mask: bool HxW silhouette; labels: int HxW palette index (-1 outside)."""
+def seed_points(mask, labels, n_points=420, edge_spacing=3.0, seed=0, outline_eps=None):
+    """Silhouette outline points (exact, simplified) followed by interior points
+    biased toward colour-region borders. Returns (points (y, x) array, n_edge)."""
     rng = random.Random(seed)
-    h, w = mask.shape
-    pts = [tuple(p) for p in outline_points(mask, eps=max(0.8, edge_spacing * 0.35), step=edge_spacing * 1.6)]
+    eps = outline_eps if outline_eps is not None else max(0.8, edge_spacing * 0.35)
+    pts = [tuple(p) for p in outline_points(mask, eps=eps, step=edge_spacing * 1.6)]
     n_edge = len(pts)
-    # colour-region borders inside the item attract points
     L = labels
     border = np.zeros_like(mask)
     border[:-1] |= (L[:-1] != L[1:]) & mask[:-1] & mask[1:]
@@ -204,10 +202,18 @@ def triangulate_art(mask, labels, n_points=420, edge_spacing=3.0, seed=0):
     area = float(mask.sum())
     radius = max(2.0, (area / budget) ** 0.5 * 0.55)
     pts += poisson_pick(inner, wts, radius, budget, rng)
-    P = np.array(pts, float)
+    return np.array(pts, float), n_edge
+
+
+def triangulate_points(mask, labels, P, n_edge):
+    """Delaunay-triangulate given points, keep triangles inside the silhouette
+    and give each the dominant palette label beneath it.
+    Returns (triangles, labels per triangle, on_edge flags per point)."""
+    h, w = mask.shape
+    L = labels
     T = delaunay(P[:, ::-1])  # triangulate in (x, y)
-    # keep triangles that lie inside the silhouette (test centroid and edge midpoints)
-    def inside(p):
+
+    def touches_inside(p):
         # outline points lie on pixel corners: a point counts as inside when it
         # touches an inside pixel (pixel (r, c) spans [r, r+1) x [c, c+1))
         y0, x0 = int(np.floor(p[0] - 0.5)), int(np.floor(p[1] - 0.5))
@@ -218,28 +224,59 @@ def triangulate_art(mask, labels, n_points=420, edge_spacing=3.0, seed=0):
         a, b, c = P[t]
         cen = (a + b + c) / 3
         if (mask[min(h - 1, int(cen[0])), min(w - 1, int(cen[1]))]
-                and all(inside(p) for p in ((a + b) / 2, (b + c) / 2, (c + a) / 2))):
+                and all(touches_inside(p) for p in ((a + b) / 2, (b + c) / 2, (c + a) / 2))):
             keep.append(t)
-    T = np.array(keep)
-    # dominant label under each triangle
+    T = np.array(keep).reshape(-1, 3)
     lab = []
     for t in T:
         a, b, c = P[t]
         y0, y1 = int(max(0, np.floor(min(a[0], b[0], c[0])))), int(min(h - 1, np.ceil(max(a[0], b[0], c[0]))))
         x0, x1 = int(max(0, np.floor(min(a[1], b[1], c[1])))), int(min(w - 1, np.ceil(max(a[1], b[1], c[1]))))
-        gy, gx = np.mgrid[y0:y1 + 1, x0:x1 + 1]
+        gy, gx = np.mgrid[y0:y1 + 1, x0:x1 + 1] + 0.5  # pixel centres
         d = (b[1] - c[1]) * (a[0] - c[0]) + (c[0] - b[0]) * (a[1] - c[1])
+        cy = min(h - 1, int((a[0] + b[0] + c[0]) / 3))
+        cx = min(w - 1, int((a[1] + b[1] + c[1]) / 3))
         if abs(d) < 1e-9:
-            lab.append(L[int(a[0]), int(a[1])])
+            lab.append(int(max(L[cy, cx], 0)))
             continue
         l1 = ((b[1] - c[1]) * (gy - c[0]) + (c[0] - b[0]) * (gx - c[1])) / d
         l2 = ((c[1] - a[1]) * (gy - c[0]) + (a[0] - c[0]) * (gx - c[1])) / d
-        inside = (l1 >= -0.05) & (l2 >= -0.05) & (1 - l1 - l2 >= -0.05)
-        vals = L[gy[inside], gx[inside]]
+        cover = (l1 >= -0.05) & (l2 >= -0.05) & (1 - l1 - l2 >= -0.05)
+        vals = L[(gy[cover] - 0.5).astype(int), (gx[cover] - 0.5).astype(int)]
         vals = vals[vals >= 0]
-        cy = min(h - 1, int((a[0] + b[0] + c[0]) / 3))
-        cx = min(w - 1, int((a[1] + b[1] + c[1]) / 3))
         lab.append(int(np.bincount(vals).argmax()) if len(vals) else int(max(L[cy, cx], 0)))
     on_edge = np.zeros(len(P), bool)
     on_edge[:n_edge] = True
-    return P, T, np.array(lab), on_edge
+    return T, np.array(lab, int), on_edge
+
+
+def triangulate_art(mask, labels, n_points=420, edge_spacing=3.0, seed=0):
+    """Points (y, x), triangles and per-triangle palette label for an item.
+
+    mask: bool HxW silhouette; labels: int HxW palette index (-1 outside)."""
+    P, n_edge = seed_points(mask, labels, n_points, edge_spacing, seed)
+    T, lab, on_edge = triangulate_points(mask, labels, P, n_edge)
+    return P, T, lab, on_edge
+
+
+def rasterize_labels(P, T, lab, shape):
+    """Front orthographic render of a triangulation at design resolution:
+    per-pixel palette label (-1 = not covered). Pixel (r, c) is sampled at its
+    centre, so the result lines up exactly with the design image."""
+    h, w = shape
+    out = np.full(shape, -1, int)
+    for t, li in zip(T, lab):
+        a, b, c = P[t]
+        y0, y1 = int(max(0, np.floor(min(a[0], b[0], c[0])))), int(min(h - 1, np.ceil(max(a[0], b[0], c[0]))))
+        x0, x1 = int(max(0, np.floor(min(a[1], b[1], c[1])))), int(min(w - 1, np.ceil(max(a[1], b[1], c[1]))))
+        if y1 < y0 or x1 < x0:
+            continue
+        gy, gx = np.mgrid[y0:y1 + 1, x0:x1 + 1] + 0.5
+        d = (b[1] - c[1]) * (a[0] - c[0]) + (c[0] - b[0]) * (a[1] - c[1])
+        if abs(d) < 1e-9:
+            continue
+        l1 = ((b[1] - c[1]) * (gy - c[0]) + (c[0] - b[0]) * (gx - c[1])) / d
+        l2 = ((c[1] - a[1]) * (gy - c[0]) + (a[0] - c[0]) * (gx - c[1])) / d
+        cover = (l1 >= -1e-9) & (l2 >= -1e-9) & (1 - l1 - l2 >= -1e-9)
+        out[y0:y1 + 1, x0:x1 + 1][cover] = li
+    return out

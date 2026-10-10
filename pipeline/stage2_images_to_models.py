@@ -120,6 +120,14 @@ def lowpoly_mesh(color, mask, depth, points=420, thickness=0.6, depth_gain=1.0, 
     rgb = delit(color, delight)
     L, pal = palette_labels(rgb, m, colors)
     P, T, lab, rim = triangulate_art(m, L, points, max(2.5, max(h, w) / 70), seed)
+    return mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness, depth_gain, smooth_div)
+
+
+def mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness=0.6, depth_gain=1.0, smooth_div=30.0):
+    """Closed mesh from a front triangulation of the artwork (points (y, x) in
+    pixels): front from the depth map, mirrored thinner back, sealed at the rim
+    (rim points are shared by both sides). Units: 1 = one source pixel."""
+    h, w = m.shape
     # smooth the depth so neighbouring facets tilt coherently (the stage-1 depth
     # carries fine shading relief that would otherwise make every facet flicker)
     z = blur(np.asarray(depth).astype(np.float64) / 65535.0, max(1.5, max(h, w) / smooth_div)) * m

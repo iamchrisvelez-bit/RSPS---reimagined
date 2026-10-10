@@ -2,7 +2,10 @@
 """Decode every out/models/*.dat with RuneLite's own ModelLoader (Java) and
 compare the result against rsgen's decoder, field by field.
 
-  python3 verify/runelite_check.py      -> exit 0 when every model matches
+  python3 verify/runelite_check.py [models_dir]   -> exit 0 when every model matches
+
+models_dir defaults to out/models; folders are searched recursively for
+<id>.dat (e.g. pipeline_out/03_rs).
 """
 import glob
 import os
@@ -35,9 +38,11 @@ def java_dump(models_dir):
 
 
 def main():
-    models_dir = os.path.join(ROOT, 'out', 'models')
-    java = java_dump(models_dir)
-    files = sorted(glob.glob(os.path.join(models_dir, '*.dat')))
+    models_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'out', 'models')
+    files = sorted(glob.glob(os.path.join(models_dir, '**', '*.dat'), recursive=True))
+    java = {}
+    for d in sorted({os.path.dirname(f) for f in files}):
+        java.update(java_dump(d))
     bad = 0
     for path in files:
         mid = int(os.path.basename(path)[:-4])

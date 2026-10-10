@@ -15,11 +15,12 @@ sys.path.insert(0, os.path.join(ROOT, 'pipeline'))
 from rsgen import rsformat  # noqa: E402
 from rsgen.fit import decimate, fit_to_slot, reorient, SLOT_BOX  # noqa: E402
 from rsgen.geom import box  # noqa: E402
-from rsgen.lowpoly import delaunay, outline_points, triangulate_art  # noqa: E402
+from rsgen.lowpoly import delaunay, outline_points, rasterize_labels, triangulate_art  # noqa: E402
 from rsgen.meshio import load_mesh, write_obj_rgb  # noqa: E402
 import stage1_designs_to_3d as s1  # noqa: E402
 import stage2_images_to_models as s2  # noqa: E402
 import stage3_models_to_rs as s3  # noqa: E402
+import refine_to_match as rf  # noqa: E402
 
 
 def synthetic_panel():
@@ -213,3 +214,52 @@ class TestFitAndConvert(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+def synthetic_item(k=1):
+    p = synthetic_panel()
+    item = s1.group_items(s1.components(s1.foreground_mask(p), 150), 6)[k]
+    y0, x0 = item.min(0)
+    y1, x1 = item.max(0) + 1
+    m = np.zeros(p.size[::-1], bool)
+    m[item[:, 0], item[:, 1]] = True
+    m = m[y0:y1, x0:x1]
+    rgb = p.crop((x0, y0, x1, y1))
+    z = s1.depth_map(rgb, m)
+    return (rgb, Image.fromarray((m * 255).astype(np.uint8)),
+            Image.fromarray((z / max(z.max(), 1) * 65535).astype(np.uint16)), m)
+
+
+class TestRefine(unittest.TestCase):
+    def test_rasterize_matches_silhouette(self):
+        rgb, mask, depth, m = synthetic_item()
+        L, pal = s2.palette_labels(np.asarray(rgb, float), m, 4)
+        P, T, lab, rim = triangulate_art(m, L, 300, 2.0)
+        R = rasterize_labels(P, T, lab, m.shape)
+        self.assertGreater(rf.score(R, m, L)[1], 0.95)
+
+    def test_score_perfect_and_empty(self):
+        m = np.zeros((10, 10), bool)
+        m[2:8, 2:8] = True
+        L = np.where(m, 0, -1)
+        self.assertEqual(rf.score(L, m, L)[0], 1.0)
+        self.assertEqual(rf.score(np.full_like(L, -1), m, L)[0], 0.0)
+
+    def test_refinement_improves_and_respects_budget(self):
+        rgb, mask, depth, m = synthetic_item()
+        mesh, hist, snaps = rf.refine_item(rgb, mask, depth, 0.35, max_faces=600, target=0.999, start_points=8)
+        self.assertGreater(len(hist), 2)
+        self.assertGreater(max(h['score'] for h in hist), hist[0]['score'])
+        self.assertLessEqual(len(mesh.F), 600)
+        self.assertTrue(all(h['faces'] <= 600 for h in hist))
+        self.assertIn(hist[-1]['stop'], ('target', 'budget', 'plateau', 'rounds', 'no error left to fix'))
+        self.assertGreater(mesh.signed_volume(), 0)
+        rs = s3.convert(mesh, 'shield', 2400)
+        dec = rsformat.decode(rsformat.encode(rs))
+        self.assertTrue(np.array_equal(dec['F'], rs.F))
+
+    def test_stops_at_target(self):
+        rgb, mask, depth, m = synthetic_item()
+        _, hist, _ = rf.refine_item(rgb, mask, depth, target=0.5)
+        self.assertEqual(hist[-1]['stop'], 'target')
+        self.assertEqual(len(hist), 1)
