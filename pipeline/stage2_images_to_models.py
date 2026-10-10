@@ -18,6 +18,10 @@ Backends:
            Blender script, ...). --cmd is a template with {image} {mask}
            {depth} {outdir} {code}; the tool must write a .obj/.ply/.glb into
            {outdir}.
+  meshy    Sends each cutout to Meshy's image-to-3D API (needs MESHY_API_KEY
+           and api.meshy.ai + its asset host allowed). Paid: use --dry-run
+           first and --max-tasks to cap spend; task ids are saved per item so
+           re-runs resume instead of re-paying.
   import   Copies meshes you made elsewhere (online image-to-3D services,
            Blender) from --import-dir/<code>.{glb,obj,ply}.
 
@@ -31,6 +35,7 @@ import shlex
 import shutil
 import subprocess
 import sys
+import time
 
 import numpy as np
 from PIL import Image, ImageFilter
@@ -255,11 +260,84 @@ def _normalise(src, out, meta):
     return path, mesh
 
 
+def run_meshy_all(items, a, client=None, log=print):
+    """Meshy image-to-3D for every item, in two phases: submit, then poll and
+    download. Task ids are written to <out>/<code>/meshy_task.json before
+    anything else, so an interrupted or repeated run resumes those tasks
+    instead of paying for new ones; items that already have source.glb are
+    skipped. Returns [(code, meta, out, path, mesh)] for finished items."""
+    from rsgen.meshy import client_from_env, image_data_uri, MeshyError
+    opts = dict(should_remesh=True, topology=a.meshy_topology, target_polycount=a.meshy_polycount,
+                should_texture=not a.meshy_no_texture, enable_pbr=False)
+    if a.meshy_model:
+        opts['ai_model'] = a.meshy_model
+    plan = []
+    for d, meta in items:
+        out = os.path.join(a.out, meta['code'])
+        tj = os.path.join(out, 'meshy_task.json')
+        if os.path.exists(os.path.join(out, 'source.glb')):
+            state = 'done'
+        elif os.path.exists(tj):
+            state = 'resume'
+        else:
+            state = 'new'
+        plan.append((d, meta, out, tj, state))
+    new = [p for p in plan if p[4] == 'new']
+    log('meshy: %d items - %d already downloaded, %d tasks to resume, %d new tasks (limit %s)' % (
+        len(plan), sum(p[4] == 'done' for p in plan), sum(p[4] == 'resume' for p in plan), len(new),
+        a.max_tasks if a.max_tasks is not None else 'none'))
+    log('meshy options: %s' % json.dumps(opts))
+    if a.dry_run:
+        log('dry run: nothing submitted')
+        return []
+    client = client or client_from_env()
+    submitted = 0
+    for d, meta, out, tj, state in plan:  # phase 1: submit
+        if state != 'new':
+            continue
+        if a.max_tasks is not None and submitted >= a.max_tasks:
+            log('%s: skipped (--max-tasks %d reached)' % (meta['code'], a.max_tasks))
+            continue
+        os.makedirs(out, exist_ok=True)
+        tid = client.create_image_to_3d(image_data_uri(os.path.join(d, 'color.png')), **opts)
+        with open(tj, 'w') as f:
+            json.dump(dict(task_id=tid, options=opts, created=time.time()), f, indent=1)
+        submitted += 1
+        log('%s: submitted task %s' % (meta['code'], tid))
+    results, failed = [], []
+    for d, meta, out, tj, state in plan:  # phase 2: wait + download
+        glb = os.path.join(out, 'source.glb')
+        if not os.path.exists(glb):
+            if not os.path.exists(tj):
+                continue
+            with open(tj) as f:
+                tid = json.load(f)['task_id']
+            try:
+                task = client.wait(tid, poll=a.meshy_poll, timeout=a.meshy_timeout,
+                                   on_progress=lambda t, st, pr, c=meta['code']: log('%s: %s %s%%' % (c, st, pr)))
+                url = (task.get('model_urls') or {}).get('glb')
+                if not url:
+                    raise MeshyError('task %s finished without a GLB url' % tid)
+                client.download(url, glb + '.part')
+                os.replace(glb + '.part', glb)
+            except MeshyError as e:
+                failed.append(meta['code'])
+                log('%s: FAILED - %s' % (meta['code'], e))
+                continue
+        mesh = load_mesh(glb)
+        path = os.path.join(out, 'model.obj')
+        write_obj_rgb(mesh, path, meta['code'])
+        results.append((meta['code'], meta, out, path, mesh))
+    if failed:
+        log('meshy: %d failed: %s (delete their meshy_task.json to resubmit)' % (len(failed), ', '.join(failed)))
+    return results
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--views', default=os.path.join(ROOT, 'pipeline_out', '01_views'))
     ap.add_argument('--out', default=os.path.join(ROOT, 'pipeline_out', '02_models'))
-    ap.add_argument('--backend', choices=('lowpoly', 'relief', 'command', 'import'), default='lowpoly')
+    ap.add_argument('--backend', choices=('lowpoly', 'relief', 'command', 'import', 'meshy'), default='lowpoly')
     ap.add_argument('--points', type=int, default=420, help='lowpoly: triangulation points per item')
     ap.add_argument('--only', default='', help='code prefix filter, e.g. B06')
     ap.add_argument('--cells', type=int, default=56, help='relief grid resolution (longest side)')
@@ -269,20 +347,39 @@ def main():
     ap.add_argument('--colors', type=int, default=8, help='flat colours per item (0 = keep every cell colour)')
     ap.add_argument('--cmd', help='command template for --backend command')
     ap.add_argument('--import-dir', help='folder of <code>.glb/.obj/.ply for --backend import')
+    ap.add_argument('--dry-run', action='store_true', help='meshy: show what would be submitted, call nothing')
+    ap.add_argument('--max-tasks', type=int, default=None, help='meshy: cap on NEW paid tasks this run')
+    ap.add_argument('--meshy-polycount', type=int, default=2000, help='meshy: target faces (RS budget ~2400)')
+    ap.add_argument('--meshy-topology', choices=('triangle', 'quad'), default='triangle')
+    ap.add_argument('--meshy-model', default='', help='meshy: ai_model value (default: Meshy default)')
+    ap.add_argument('--meshy-no-texture', action='store_true', help='meshy: geometry only (cheaper)')
+    ap.add_argument('--meshy-poll', type=float, default=10.0)
+    ap.add_argument('--meshy-timeout', type=float, default=3600.0)
     a = ap.parse_args()
     if a.backend == 'command' and not a.cmd:
         ap.error('--backend command needs --cmd')
     if a.backend == 'import' and not a.import_dir:
         ap.error('--backend import needs --import-dir')
 
-    run = {'lowpoly': run_lowpoly, 'relief': run_relief, 'command': run_command, 'import': run_import}[a.backend]
-    n = 0
+    items = []
     for d in sorted(glob.glob(os.path.join(a.views, '*', 'meta.json'))):
         d = os.path.dirname(d)
         with open(os.path.join(d, 'meta.json')) as f:
             meta = json.load(f)
-        if not meta['code'].startswith(a.only):
-            continue
+        if meta['code'].startswith(a.only):
+            items.append((d, meta))
+    if a.backend == 'meshy':
+        done = run_meshy_all(items, a)
+        for code, meta, out, path, mesh in done:
+            with open(os.path.join(out, 'meta.json'), 'w') as f:
+                json.dump(dict(meta, backend='meshy', model=os.path.basename(path), vertices=len(mesh.V),
+                               faces=len(mesh.F)), f, indent=1)
+            print('%-6s %-28s meshy   v=%d f=%d' % (code, meta['name'], len(mesh.V), len(mesh.F)))
+        print('stage 2: %d models -> %s' % (len(done), a.out))
+        return
+    run = {'lowpoly': run_lowpoly, 'relief': run_relief, 'command': run_command, 'import': run_import}[a.backend]
+    n = 0
+    for d, meta in items:
         out = os.path.join(a.out, meta['code'])
         os.makedirs(out, exist_ok=True)
         path, mesh = run(d, out, meta, a)
