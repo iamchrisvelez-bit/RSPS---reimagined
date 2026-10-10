@@ -1,0 +1,36 @@
+newmtl hsl_45328
+Kd 0.1529 0.1373 0.2353
+illum 1
+
+newmtl hsl_45335
+Kd 0.2078 0.1843 0.3137
+illum 1
+
+newmtl hsl_45338
+Kd 0.2314 0.2039 0.3451
+illum 1
+
+newmtl hsl_46793
+Kd 0.5098 0.3529 0.8902
+illum 1
+
+newmtl hsl_45334
+Kd 0.1961 0.1804 0.2980
+illum 1
+
+newmtl hsl_40773
+Kd 0.2353 0.4667 0.9294
+illum 1
+
+newmtl hsl_37845
+Kd 0.4275 0.7608 0.9843
+illum 1
+
+newmtl hsl_39884
+Kd 0.2863 0.5804 0.9804
+illum 1
+
+newmtl hsl_37862
+Kd 0.6706 0.8588 0.9882
+illum 1
+

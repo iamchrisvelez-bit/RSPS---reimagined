@@ -1,0 +1,4 @@
+__pycache__/
+verify/build/
+out/compare/
+pipeline_out/
