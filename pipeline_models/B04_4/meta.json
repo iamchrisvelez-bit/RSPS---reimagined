@@ -1,0 +1,240 @@
+{
+ "code": "B04_4",
+ "name": "Horned bone helm",
+ "slot": "head",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  48,
+  546,
+  190,
+  716
+ ],
+ "size": [
+  142,
+  170
+ ],
+ "depth_scale_px": 52.137874603271484,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1265,
+ "faces": 2400,
+ "match": {
+  "round": 24,
+  "points": 1031,
+  "faces": 2399,
+  "score": 0.7381,
+  "iou": 0.9671,
+  "colour": 0.5091,
+  "stop": "budget",
+  "back_faces": 361,
+  "line_faces": 76
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 90,
+   "faces": 571,
+   "score": 0.5528,
+   "iou": 0.8865,
+   "colour": 0.2192
+  },
+  {
+   "round": 1,
+   "points": 102,
+   "faces": 593,
+   "score": 0.5725,
+   "iou": 0.9118,
+   "colour": 0.2333
+  },
+  {
+   "round": 2,
+   "points": 114,
+   "faces": 612,
+   "score": 0.5862,
+   "iou": 0.9298,
+   "colour": 0.2427
+  },
+  {
+   "round": 3,
+   "points": 127,
+   "faces": 635,
+   "score": 0.5889,
+   "iou": 0.9335,
+   "colour": 0.2442
+  },
+  {
+   "round": 4,
+   "points": 142,
+   "faces": 655,
+   "score": 0.591,
+   "iou": 0.9343,
+   "colour": 0.2478
+  },
+  {
+   "round": 5,
+   "points": 159,
+   "faces": 687,
+   "score": 0.5976,
+   "iou": 0.938,
+   "colour": 0.2572
+  },
+  {
+   "round": 6,
+   "points": 178,
+   "faces": 725,
+   "score": 0.6058,
+   "iou": 0.9397,
+   "colour": 0.2718
+  },
+  {
+   "round": 7,
+   "points": 199,
+   "faces": 768,
+   "score": 0.6027,
+   "iou": 0.9429,
+   "colour": 0.2624,
+   "rolled_back": true
+  },
+  {
+   "round": 8,
+   "points": 199,
+   "faces": 765,
+   "score": 0.6074,
+   "iou": 0.9375,
+   "colour": 0.2773
+  },
+  {
+   "round": 9,
+   "points": 222,
+   "faces": 811,
+   "score": 0.6125,
+   "iou": 0.9337,
+   "colour": 0.2912
+  },
+  {
+   "round": 10,
+   "points": 248,
+   "faces": 861,
+   "score": 0.6189,
+   "iou": 0.9382,
+   "colour": 0.2996
+  },
+  {
+   "round": 11,
+   "points": 277,
+   "faces": 918,
+   "score": 0.6243,
+   "iou": 0.9383,
+   "colour": 0.3103
+  },
+  {
+   "round": 12,
+   "points": 310,
+   "faces": 984,
+   "score": 0.6299,
+   "iou": 0.9383,
+   "colour": 0.3215
+  },
+  {
+   "round": 13,
+   "points": 347,
+   "faces": 1059,
+   "score": 0.6414,
+   "iou": 0.9416,
+   "colour": 0.3413
+  },
+  {
+   "round": 14,
+   "points": 388,
+   "faces": 1140,
+   "score": 0.648,
+   "iou": 0.9416,
+   "colour": 0.3544
+  },
+  {
+   "round": 15,
+   "points": 434,
+   "faces": 1229,
+   "score": 0.6568,
+   "iou": 0.9393,
+   "colour": 0.3743
+  },
+  {
+   "round": 16,
+   "points": 486,
+   "faces": 1331,
+   "score": 0.6641,
+   "iou": 0.9359,
+   "colour": 0.3924
+  },
+  {
+   "round": 17,
+   "points": 544,
+   "faces": 1445,
+   "score": 0.6678,
+   "iou": 0.9392,
+   "colour": 0.3964
+  },
+  {
+   "round": 18,
+   "points": 609,
+   "faces": 1576,
+   "score": 0.6775,
+   "iou": 0.9413,
+   "colour": 0.4138
+  },
+  {
+   "round": 19,
+   "points": 682,
+   "faces": 1721,
+   "score": 0.694,
+   "iou": 0.9477,
+   "colour": 0.4402
+  },
+  {
+   "round": 20,
+   "points": 763,
+   "faces": 1879,
+   "score": 0.6983,
+   "iou": 0.9497,
+   "colour": 0.447
+  },
+  {
+   "round": 21,
+   "points": 854,
+   "faces": 2055,
+   "score": 0.7165,
+   "iou": 0.9553,
+   "colour": 0.4776
+  },
+  {
+   "round": 22,
+   "points": 956,
+   "faces": 2253,
+   "score": 0.7253,
+   "iou": 0.9625,
+   "colour": 0.4881
+  },
+  {
+   "round": 23,
+   "points": 1029,
+   "faces": 2395,
+   "score": 0.738,
+   "iou": 0.9671,
+   "colour": 0.5088
+  },
+  {
+   "round": 24,
+   "points": 1031,
+   "faces": 2399,
+   "score": 0.7381,
+   "iou": 0.9671,
+   "colour": 0.5091,
+   "stop": "budget",
+   "back_faces": 361,
+   "line_faces": 76
+  }
+ ]
+}

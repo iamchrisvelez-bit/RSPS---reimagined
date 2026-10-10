@@ -1,0 +1,264 @@
+{
+ "code": "B10_6",
+ "name": "Runeweaver robe skirt",
+ "slot": "legs",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  419,
+  1245,
+  597,
+  1427
+ ],
+ "size": [
+  178,
+  182
+ ],
+ "depth_scale_px": 69.129150390625,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1332,
+ "faces": 2400,
+ "match": {
+  "round": 26,
+  "points": 943,
+  "faces": 2385,
+  "score": 0.7554,
+  "iou": 0.9779,
+  "colour": 0.5328
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 77,
+   "faces": 663,
+   "score": 0.6252,
+   "iou": 0.9282,
+   "colour": 0.3223
+  },
+  {
+   "round": 1,
+   "points": 89,
+   "faces": 687,
+   "score": 0.6437,
+   "iou": 0.9568,
+   "colour": 0.3307
+  },
+  {
+   "round": 2,
+   "points": 101,
+   "faces": 708,
+   "score": 0.653,
+   "iou": 0.9681,
+   "colour": 0.3379
+  },
+  {
+   "round": 3,
+   "points": 113,
+   "faces": 730,
+   "score": 0.6578,
+   "iou": 0.9723,
+   "colour": 0.3434
+  },
+  {
+   "round": 4,
+   "points": 126,
+   "faces": 755,
+   "score": 0.6623,
+   "iou": 0.9734,
+   "colour": 0.3512
+  },
+  {
+   "round": 5,
+   "points": 141,
+   "faces": 787,
+   "score": 0.6752,
+   "iou": 0.9746,
+   "colour": 0.3757
+  },
+  {
+   "round": 6,
+   "points": 157,
+   "faces": 819,
+   "score": 0.6786,
+   "iou": 0.9746,
+   "colour": 0.3826
+  },
+  {
+   "round": 7,
+   "points": 175,
+   "faces": 855,
+   "score": 0.6758,
+   "iou": 0.9746,
+   "colour": 0.377,
+   "rolled_back": true
+  },
+  {
+   "round": 8,
+   "points": 175,
+   "faces": 855,
+   "score": 0.6768,
+   "iou": 0.9746,
+   "colour": 0.379,
+   "rolled_back": true
+  },
+  {
+   "round": 9,
+   "points": 175,
+   "faces": 855,
+   "score": 0.6783,
+   "iou": 0.9746,
+   "colour": 0.3819
+  },
+  {
+   "round": 10,
+   "points": 196,
+   "faces": 897,
+   "score": 0.6874,
+   "iou": 0.9746,
+   "colour": 0.4002
+  },
+  {
+   "round": 11,
+   "points": 219,
+   "faces": 943,
+   "score": 0.6849,
+   "iou": 0.9746,
+   "colour": 0.3953,
+   "rolled_back": true
+  },
+  {
+   "round": 12,
+   "points": 219,
+   "faces": 943,
+   "score": 0.6877,
+   "iou": 0.9746,
+   "colour": 0.4007
+  },
+  {
+   "round": 13,
+   "points": 245,
+   "faces": 995,
+   "score": 0.6863,
+   "iou": 0.9746,
+   "colour": 0.398,
+   "rolled_back": true
+  },
+  {
+   "round": 14,
+   "points": 245,
+   "faces": 995,
+   "score": 0.6935,
+   "iou": 0.9746,
+   "colour": 0.4123
+  },
+  {
+   "round": 15,
+   "points": 274,
+   "faces": 1052,
+   "score": 0.6961,
+   "iou": 0.9761,
+   "colour": 0.4161
+  },
+  {
+   "round": 16,
+   "points": 306,
+   "faces": 1116,
+   "score": 0.7008,
+   "iou": 0.9761,
+   "colour": 0.4256
+  },
+  {
+   "round": 17,
+   "points": 342,
+   "faces": 1188,
+   "score": 0.7031,
+   "iou": 0.9761,
+   "colour": 0.43
+  },
+  {
+   "round": 18,
+   "points": 383,
+   "faces": 1270,
+   "score": 0.708,
+   "iou": 0.9761,
+   "colour": 0.4399
+  },
+  {
+   "round": 19,
+   "points": 428,
+   "faces": 1359,
+   "score": 0.71,
+   "iou": 0.9753,
+   "colour": 0.4447
+  },
+  {
+   "round": 20,
+   "points": 479,
+   "faces": 1461,
+   "score": 0.7132,
+   "iou": 0.9756,
+   "colour": 0.4509
+  },
+  {
+   "round": 21,
+   "points": 536,
+   "faces": 1575,
+   "score": 0.7173,
+   "iou": 0.9756,
+   "colour": 0.459
+  },
+  {
+   "round": 22,
+   "points": 600,
+   "faces": 1704,
+   "score": 0.7243,
+   "iou": 0.9763,
+   "colour": 0.4723
+  },
+  {
+   "round": 23,
+   "points": 672,
+   "faces": 1846,
+   "score": 0.7316,
+   "iou": 0.9754,
+   "colour": 0.4878
+  },
+  {
+   "round": 24,
+   "points": 752,
+   "faces": 2004,
+   "score": 0.7328,
+   "iou": 0.9754,
+   "colour": 0.4902
+  },
+  {
+   "round": 25,
+   "points": 842,
+   "faces": 2183,
+   "score": 0.7476,
+   "iou": 0.9775,
+   "colour": 0.5178
+  },
+  {
+   "round": 26,
+   "points": 943,
+   "faces": 2385,
+   "score": 0.7554,
+   "iou": 0.9779,
+   "colour": 0.5328
+  },
+  {
+   "round": 27,
+   "points": 950,
+   "faces": 2399,
+   "score": 0.7552,
+   "iou": 0.9779,
+   "colour": 0.5324,
+   "stop": "budget",
+   "back_faces": 375,
+   "line_faces": 176
+  }
+ ]
+}

@@ -123,16 +123,11 @@ def lowpoly_mesh(color, mask, depth, points=420, thickness=0.6, depth_gain=1.0, 
     return mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness, depth_gain, smooth_div)
 
 
-def mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness=0.6, depth_gain=1.0, smooth_div=30.0,
-                        detail=None, back=None):
-    """Closed mesh from a front triangulation of the artwork (points (y, x) in
-    pixels): front from the depth map, mirrored thinner back, sealed at the rim
-    (rim points are shared by both sides). detail: optional HxW depth offsets
-    (fractions of the depth range, e.g. cavity dents) added after smoothing.
-    back: optional (triangles, RGB per triangle) for a separate, coarser back
-    built over the same points (it must share the rim, see collapse_interior);
-    default is the front mirrored, 20% darker.
-    Units: 1 = one source pixel."""
+def point_heights(P, T, rim, m, depth, depth_gain=1.0, smooth_div=30.0, detail=None, smooth_iters=0):
+    """Front height (mesh units) of every triangulation point: the smoothed
+    depth map plus optional detail offsets, 0 on the rim. smooth_iters runs
+    Laplacian smoothing over the triangle graph (rim fixed), which evens out
+    the small bumps that make a surface look crumpled."""
     h, w = m.shape
     # smooth the depth so neighbouring facets tilt coherently (the stage-1 depth
     # carries fine shading relief that would otherwise make every facet flicker)
@@ -140,15 +135,42 @@ def mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness=0.6, depth_gain
     if detail is not None:  # dents never push the front through the back
         z = np.maximum(z + detail * m, z * 0.3)
     zs = depth_gain * max(h, w) * 0.22
+    yi = np.clip(np.round(P[:, 0]).astype(int), 0, h - 1)
+    xi = np.clip(np.round(P[:, 1]).astype(int), 0, w - 1)
+    d = np.where(rim, 0.0, z[yi, xi] * zs)
+    if smooth_iters and len(T):
+        nb = [set() for _ in range(len(P))]
+        for a, b, c in T:
+            nb[a].update((b, c))
+            nb[b].update((a, c))
+            nb[c].update((a, b))
+        for _ in range(smooth_iters):
+            avg = np.array([d[list(n)].mean() if n else d[i] for i, n in enumerate(nb)])
+            d = np.where(rim, 0.0, 0.5 * d + 0.5 * avg)
+    return d
+
+
+def mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness=0.6, depth_gain=1.0, smooth_div=30.0,
+                        detail=None, back=None, heights=None, extra=None):
+    """Closed mesh from a front triangulation of the artwork (points (y, x) in
+    pixels): front from the depth map, mirrored thinner back, sealed at the rim
+    (rim points are shared by both sides). detail: optional HxW depth offsets
+    (fractions of the depth range, e.g. cavity dents) added after smoothing.
+    back: optional (triangles, RGB per triangle) for a separate, coarser back
+    built over the same points (it must share the rim, see collapse_interior);
+    default is the front mirrored, 20% darker. heights: precomputed front
+    heights (see point_heights). extra: a Mesh in the same units appended as
+    is (e.g. detail-line strips). Units: 1 = one source pixel."""
+    h, w = m.shape
+    d_all = heights if heights is not None else point_heights(P, T, rim, m, depth, depth_gain, smooth_div, detail)
     V, front, back_idx = [], [], []
-    for (y, x), r in zip(P, rim):
+    for (y, x), r, d in zip(P, rim, d_all):
         X, Y = x - w / 2, h / 2 - y
         if r:
             front.append(len(V))
             back_idx.append(len(V))
             V.append((X, Y, 0.0))
         else:
-            d = z[min(h - 1, int(round(y))), min(w - 1, int(round(x)))] * zs
             front.append(len(V))
             V.append((X, Y, d))
             back_idx.append(len(V))
@@ -175,7 +197,10 @@ def mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness=0.6, depth_gain
         if len(set(f)) == 3:
             F2.append(tuple(remap[v] for v in f))
             C2.append(col)
-    return Mesh(V, F2, C2)
+    mesh = Mesh(V, F2, C2)
+    if extra is not None:
+        mesh.add(extra)
+    return mesh
 
 
 def relief_mesh(color, mask, depth, cells=56, thickness=0.6, depth_gain=1.0, delight=0.55, colors=10):

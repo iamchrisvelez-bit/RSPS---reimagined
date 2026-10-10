@@ -1,0 +1,228 @@
+{
+ "code": "B14_2",
+ "name": "Glacial crystal shield",
+ "slot": "shield",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  890,
+  1440,
+  1030,
+  1631
+ ],
+ "size": [
+  140,
+  191
+ ],
+ "depth_scale_px": 63.0635986328125,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1276,
+ "faces": 2399,
+ "match": {
+  "round": 22,
+  "points": 1024,
+  "faces": 2398,
+  "score": 0.7481,
+  "iou": 0.9702,
+  "colour": 0.526
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 93,
+   "faces": 571,
+   "score": 0.5698,
+   "iou": 0.9043,
+   "colour": 0.2353
+  },
+  {
+   "round": 1,
+   "points": 105,
+   "faces": 592,
+   "score": 0.5951,
+   "iou": 0.9428,
+   "colour": 0.2474
+  },
+  {
+   "round": 2,
+   "points": 117,
+   "faces": 613,
+   "score": 0.6009,
+   "iou": 0.95,
+   "colour": 0.2517
+  },
+  {
+   "round": 3,
+   "points": 131,
+   "faces": 639,
+   "score": 0.6007,
+   "iou": 0.9488,
+   "colour": 0.2526
+  },
+  {
+   "round": 4,
+   "points": 146,
+   "faces": 669,
+   "score": 0.6068,
+   "iou": 0.955,
+   "colour": 0.2585
+  },
+  {
+   "round": 5,
+   "points": 163,
+   "faces": 704,
+   "score": 0.6138,
+   "iou": 0.9605,
+   "colour": 0.2671
+  },
+  {
+   "round": 6,
+   "points": 182,
+   "faces": 742,
+   "score": 0.6235,
+   "iou": 0.9605,
+   "colour": 0.2865
+  },
+  {
+   "round": 7,
+   "points": 203,
+   "faces": 784,
+   "score": 0.6286,
+   "iou": 0.9605,
+   "colour": 0.2966
+  },
+  {
+   "round": 8,
+   "points": 227,
+   "faces": 832,
+   "score": 0.6381,
+   "iou": 0.9605,
+   "colour": 0.3157
+  },
+  {
+   "round": 9,
+   "points": 254,
+   "faces": 883,
+   "score": 0.6409,
+   "iou": 0.9552,
+   "colour": 0.3267
+  },
+  {
+   "round": 10,
+   "points": 284,
+   "faces": 942,
+   "score": 0.6491,
+   "iou": 0.9591,
+   "colour": 0.3392
+  },
+  {
+   "round": 11,
+   "points": 318,
+   "faces": 1008,
+   "score": 0.6539,
+   "iou": 0.9589,
+   "colour": 0.3488
+  },
+  {
+   "round": 12,
+   "points": 356,
+   "faces": 1081,
+   "score": 0.6582,
+   "iou": 0.9573,
+   "colour": 0.3591
+  },
+  {
+   "round": 13,
+   "points": 398,
+   "faces": 1164,
+   "score": 0.6649,
+   "iou": 0.9596,
+   "colour": 0.3702
+  },
+  {
+   "round": 14,
+   "points": 445,
+   "faces": 1257,
+   "score": 0.6649,
+   "iou": 0.9548,
+   "colour": 0.375
+  },
+  {
+   "round": 15,
+   "points": 498,
+   "faces": 1361,
+   "score": 0.6766,
+   "iou": 0.9606,
+   "colour": 0.3926
+  },
+  {
+   "round": 16,
+   "points": 557,
+   "faces": 1479,
+   "score": 0.6808,
+   "iou": 0.9606,
+   "colour": 0.401
+  },
+  {
+   "round": 17,
+   "points": 623,
+   "faces": 1611,
+   "score": 0.6875,
+   "iou": 0.9612,
+   "colour": 0.4137
+  },
+  {
+   "round": 18,
+   "points": 697,
+   "faces": 1758,
+   "score": 0.6965,
+   "iou": 0.9603,
+   "colour": 0.4326
+  },
+  {
+   "round": 19,
+   "points": 780,
+   "faces": 1922,
+   "score": 0.7136,
+   "iou": 0.963,
+   "colour": 0.4643
+  },
+  {
+   "round": 20,
+   "points": 873,
+   "faces": 2103,
+   "score": 0.7312,
+   "iou": 0.9661,
+   "colour": 0.4964
+  },
+  {
+   "round": 21,
+   "points": 977,
+   "faces": 2305,
+   "score": 0.7427,
+   "iou": 0.9691,
+   "colour": 0.5164
+  },
+  {
+   "round": 22,
+   "points": 1024,
+   "faces": 2398,
+   "score": 0.7481,
+   "iou": 0.9702,
+   "colour": 0.526
+  },
+  {
+   "round": 23,
+   "points": 1025,
+   "faces": 2400,
+   "score": 0.7477,
+   "iou": 0.9702,
+   "colour": 0.5252,
+   "stop": "budget",
+   "back_faces": 361,
+   "line_faces": 74
+  }
+ ]
+}

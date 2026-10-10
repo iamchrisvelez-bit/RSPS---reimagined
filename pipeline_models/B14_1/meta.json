@@ -1,0 +1,240 @@
+{
+ "code": "B14_1",
+ "name": "Dragonfire shield",
+ "slot": "shield",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  679,
+  1443,
+  845,
+  1625
+ ],
+ "size": [
+  166,
+  182
+ ],
+ "depth_scale_px": 55.373592376708984,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1266,
+ "faces": 2400,
+ "match": {
+  "round": 24,
+  "points": 1058,
+  "faces": 2400,
+  "score": 0.807,
+  "iou": 0.9775,
+  "colour": 0.6365,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 70
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 102,
+   "faces": 570,
+   "score": 0.633,
+   "iou": 0.8745,
+   "colour": 0.3915
+  },
+  {
+   "round": 1,
+   "points": 114,
+   "faces": 591,
+   "score": 0.6539,
+   "iou": 0.9029,
+   "colour": 0.405
+  },
+  {
+   "round": 2,
+   "points": 127,
+   "faces": 618,
+   "score": 0.668,
+   "iou": 0.9206,
+   "colour": 0.4154
+  },
+  {
+   "round": 3,
+   "points": 142,
+   "faces": 641,
+   "score": 0.6765,
+   "iou": 0.9313,
+   "colour": 0.4218
+  },
+  {
+   "round": 4,
+   "points": 159,
+   "faces": 671,
+   "score": 0.6837,
+   "iou": 0.9428,
+   "colour": 0.4246
+  },
+  {
+   "round": 5,
+   "points": 178,
+   "faces": 703,
+   "score": 0.6877,
+   "iou": 0.942,
+   "colour": 0.4333
+  },
+  {
+   "round": 6,
+   "points": 199,
+   "faces": 744,
+   "score": 0.6895,
+   "iou": 0.9427,
+   "colour": 0.4363
+  },
+  {
+   "round": 7,
+   "points": 222,
+   "faces": 790,
+   "score": 0.6916,
+   "iou": 0.9427,
+   "colour": 0.4405
+  },
+  {
+   "round": 8,
+   "points": 248,
+   "faces": 841,
+   "score": 0.6959,
+   "iou": 0.9425,
+   "colour": 0.4493
+  },
+  {
+   "round": 9,
+   "points": 277,
+   "faces": 899,
+   "score": 0.6986,
+   "iou": 0.9425,
+   "colour": 0.4546
+  },
+  {
+   "round": 10,
+   "points": 310,
+   "faces": 965,
+   "score": 0.7031,
+   "iou": 0.9426,
+   "colour": 0.4636
+  },
+  {
+   "round": 11,
+   "points": 347,
+   "faces": 1036,
+   "score": 0.6992,
+   "iou": 0.9343,
+   "colour": 0.464,
+   "rolled_back": true
+  },
+  {
+   "round": 12,
+   "points": 347,
+   "faces": 1039,
+   "score": 0.7083,
+   "iou": 0.9426,
+   "colour": 0.4741
+  },
+  {
+   "round": 13,
+   "points": 388,
+   "faces": 1120,
+   "score": 0.7136,
+   "iou": 0.9411,
+   "colour": 0.4861
+  },
+  {
+   "round": 14,
+   "points": 434,
+   "faces": 1211,
+   "score": 0.7182,
+   "iou": 0.9415,
+   "colour": 0.4949
+  },
+  {
+   "round": 15,
+   "points": 486,
+   "faces": 1312,
+   "score": 0.7227,
+   "iou": 0.9439,
+   "colour": 0.5014
+  },
+  {
+   "round": 16,
+   "points": 544,
+   "faces": 1420,
+   "score": 0.7293,
+   "iou": 0.9484,
+   "colour": 0.5102
+  },
+  {
+   "round": 17,
+   "points": 609,
+   "faces": 1545,
+   "score": 0.7391,
+   "iou": 0.9517,
+   "colour": 0.5264
+  },
+  {
+   "round": 18,
+   "points": 682,
+   "faces": 1688,
+   "score": 0.7483,
+   "iou": 0.9537,
+   "colour": 0.543
+  },
+  {
+   "round": 19,
+   "points": 763,
+   "faces": 1842,
+   "score": 0.7603,
+   "iou": 0.9605,
+   "colour": 0.56
+  },
+  {
+   "round": 20,
+   "points": 854,
+   "faces": 2016,
+   "score": 0.7741,
+   "iou": 0.9688,
+   "colour": 0.5795
+  },
+  {
+   "round": 21,
+   "points": 956,
+   "faces": 2211,
+   "score": 0.7915,
+   "iou": 0.9704,
+   "colour": 0.6126
+  },
+  {
+   "round": 22,
+   "points": 1050,
+   "faces": 2387,
+   "score": 0.8068,
+   "iou": 0.9775,
+   "colour": 0.6361
+  },
+  {
+   "round": 23,
+   "points": 1056,
+   "faces": 2396,
+   "score": 0.8068,
+   "iou": 0.9775,
+   "colour": 0.636
+  },
+  {
+   "round": 24,
+   "points": 1058,
+   "faces": 2400,
+   "score": 0.807,
+   "iou": 0.9775,
+   "colour": 0.6365,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 70
+  }
+ ]
+}

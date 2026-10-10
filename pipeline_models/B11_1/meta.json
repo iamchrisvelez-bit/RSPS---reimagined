@@ -1,0 +1,119 @@
+{
+ "code": "B11_1",
+ "name": "Voidwoven hood",
+ "slot": "head",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  694,
+  1090,
+  814,
+  1245
+ ],
+ "size": [
+  120,
+  155
+ ],
+ "depth_scale_px": 40.80296325683594,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 505,
+ "faces": 924,
+ "match": {
+  "round": 9,
+  "points": 250,
+  "faces": 837,
+  "score": 0.799,
+  "iou": 0.9579,
+  "colour": 0.6401,
+  "stop": "plateau",
+  "back_faces": 447,
+  "line_faces": 30
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 91,
+   "faces": 530,
+   "score": 0.7665,
+   "iou": 0.9259,
+   "colour": 0.6072
+  },
+  {
+   "round": 1,
+   "points": 103,
+   "faces": 552,
+   "score": 0.7798,
+   "iou": 0.9392,
+   "colour": 0.6205
+  },
+  {
+   "round": 2,
+   "points": 115,
+   "faces": 572,
+   "score": 0.7932,
+   "iou": 0.9541,
+   "colour": 0.6323
+  },
+  {
+   "round": 3,
+   "points": 128,
+   "faces": 596,
+   "score": 0.7955,
+   "iou": 0.9584,
+   "colour": 0.6326
+  },
+  {
+   "round": 4,
+   "points": 143,
+   "faces": 624,
+   "score": 0.7964,
+   "iou": 0.9584,
+   "colour": 0.6345
+  },
+  {
+   "round": 5,
+   "points": 160,
+   "faces": 658,
+   "score": 0.7963,
+   "iou": 0.9584,
+   "colour": 0.6343
+  },
+  {
+   "round": 6,
+   "points": 179,
+   "faces": 696,
+   "score": 0.7989,
+   "iou": 0.9584,
+   "colour": 0.6394
+  },
+  {
+   "round": 7,
+   "points": 200,
+   "faces": 737,
+   "score": 0.7987,
+   "iou": 0.9579,
+   "colour": 0.6394
+  },
+  {
+   "round": 8,
+   "points": 224,
+   "faces": 785,
+   "score": 0.7986,
+   "iou": 0.9579,
+   "colour": 0.6393
+  },
+  {
+   "round": 9,
+   "points": 250,
+   "faces": 837,
+   "score": 0.799,
+   "iou": 0.9579,
+   "colour": 0.6401,
+   "stop": "plateau",
+   "back_faces": 447,
+   "line_faces": 30
+  }
+ ]
+}

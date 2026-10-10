@@ -1,0 +1,228 @@
+{
+ "code": "B09_3",
+ "name": "Dragonspine bow",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1699,
+  731,
+  1910,
+  916
+ ],
+ "size": [
+  211,
+  185
+ ],
+ "depth_scale_px": 27.765153884887695,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1191,
+ "faces": 2399,
+ "match": {
+  "round": 22,
+  "points": 1141,
+  "faces": 2397,
+  "score": 0.7913,
+  "iou": 0.9659,
+  "colour": 0.6167
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 116,
+   "faces": 506,
+   "score": 0.5379,
+   "iou": 0.8329,
+   "colour": 0.2428
+  },
+  {
+   "round": 1,
+   "points": 129,
+   "faces": 528,
+   "score": 0.5577,
+   "iou": 0.8603,
+   "colour": 0.2552
+  },
+  {
+   "round": 2,
+   "points": 144,
+   "faces": 552,
+   "score": 0.571,
+   "iou": 0.8777,
+   "colour": 0.2644
+  },
+  {
+   "round": 3,
+   "points": 161,
+   "faces": 574,
+   "score": 0.5731,
+   "iou": 0.8766,
+   "colour": 0.2696
+  },
+  {
+   "round": 4,
+   "points": 180,
+   "faces": 612,
+   "score": 0.5862,
+   "iou": 0.8913,
+   "colour": 0.2812
+  },
+  {
+   "round": 5,
+   "points": 201,
+   "faces": 652,
+   "score": 0.5988,
+   "iou": 0.899,
+   "colour": 0.2986
+  },
+  {
+   "round": 6,
+   "points": 225,
+   "faces": 696,
+   "score": 0.6019,
+   "iou": 0.8973,
+   "colour": 0.3064
+  },
+  {
+   "round": 7,
+   "points": 252,
+   "faces": 749,
+   "score": 0.6088,
+   "iou": 0.9021,
+   "colour": 0.3156
+  },
+  {
+   "round": 8,
+   "points": 282,
+   "faces": 808,
+   "score": 0.6161,
+   "iou": 0.9018,
+   "colour": 0.3303
+  },
+  {
+   "round": 9,
+   "points": 315,
+   "faces": 873,
+   "score": 0.6268,
+   "iou": 0.9005,
+   "colour": 0.3531
+  },
+  {
+   "round": 10,
+   "points": 352,
+   "faces": 945,
+   "score": 0.6374,
+   "iou": 0.9013,
+   "colour": 0.3735
+  },
+  {
+   "round": 11,
+   "points": 394,
+   "faces": 1027,
+   "score": 0.6465,
+   "iou": 0.9021,
+   "colour": 0.391
+  },
+  {
+   "round": 12,
+   "points": 441,
+   "faces": 1118,
+   "score": 0.6605,
+   "iou": 0.9035,
+   "colour": 0.4176
+  },
+  {
+   "round": 13,
+   "points": 493,
+   "faces": 1221,
+   "score": 0.6762,
+   "iou": 0.9125,
+   "colour": 0.4399
+  },
+  {
+   "round": 14,
+   "points": 552,
+   "faces": 1332,
+   "score": 0.69,
+   "iou": 0.917,
+   "colour": 0.463
+  },
+  {
+   "round": 15,
+   "points": 618,
+   "faces": 1447,
+   "score": 0.7011,
+   "iou": 0.9218,
+   "colour": 0.4803
+  },
+  {
+   "round": 16,
+   "points": 692,
+   "faces": 1582,
+   "score": 0.7184,
+   "iou": 0.932,
+   "colour": 0.5047
+  },
+  {
+   "round": 17,
+   "points": 775,
+   "faces": 1736,
+   "score": 0.74,
+   "iou": 0.9439,
+   "colour": 0.5361
+  },
+  {
+   "round": 18,
+   "points": 868,
+   "faces": 1914,
+   "score": 0.7565,
+   "iou": 0.9512,
+   "colour": 0.5618
+  },
+  {
+   "round": 19,
+   "points": 972,
+   "faces": 2107,
+   "score": 0.773,
+   "iou": 0.9564,
+   "colour": 0.5896
+  },
+  {
+   "round": 20,
+   "points": 1088,
+   "faces": 2304,
+   "score": 0.7847,
+   "iou": 0.9625,
+   "colour": 0.6069
+  },
+  {
+   "round": 21,
+   "points": 1136,
+   "faces": 2389,
+   "score": 0.7898,
+   "iou": 0.9639,
+   "colour": 0.6157
+  },
+  {
+   "round": 22,
+   "points": 1141,
+   "faces": 2397,
+   "score": 0.7913,
+   "iou": 0.9659,
+   "colour": 0.6167
+  },
+  {
+   "round": 23,
+   "points": 1142,
+   "faces": 2400,
+   "score": 0.7912,
+   "iou": 0.9659,
+   "colour": 0.6164,
+   "stop": "budget",
+   "back_faces": 362,
+   "line_faces": 0
+  }
+ ]
+}

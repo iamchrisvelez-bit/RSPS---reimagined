@@ -1,0 +1,231 @@
+{
+ "code": "B05_6",
+ "name": "Paladin greaves",
+ "slot": "feet",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1074,
+  546,
+  1214,
+  710
+ ],
+ "size": [
+  140,
+  164
+ ],
+ "depth_scale_px": 25.683700561523438,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1235,
+ "faces": 2399,
+ "match": {
+  "round": 23,
+  "points": 1062,
+  "faces": 2399,
+  "score": 0.8115,
+  "iou": 0.9754,
+  "colour": 0.6476,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 60
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 88,
+   "faces": 541,
+   "score": 0.498,
+   "iou": 0.7519,
+   "colour": 0.2442
+  },
+  {
+   "round": 1,
+   "points": 100,
+   "faces": 561,
+   "score": 0.5293,
+   "iou": 0.7993,
+   "colour": 0.2594
+  },
+  {
+   "round": 2,
+   "points": 112,
+   "faces": 585,
+   "score": 0.5678,
+   "iou": 0.8556,
+   "colour": 0.2799
+  },
+  {
+   "round": 3,
+   "points": 125,
+   "faces": 610,
+   "score": 0.5793,
+   "iou": 0.8718,
+   "colour": 0.2868
+  },
+  {
+   "round": 4,
+   "points": 140,
+   "faces": 637,
+   "score": 0.6018,
+   "iou": 0.899,
+   "colour": 0.3047
+  },
+  {
+   "round": 5,
+   "points": 156,
+   "faces": 666,
+   "score": 0.6099,
+   "iou": 0.9151,
+   "colour": 0.3047
+  },
+  {
+   "round": 6,
+   "points": 174,
+   "faces": 696,
+   "score": 0.6195,
+   "iou": 0.9194,
+   "colour": 0.3196
+  },
+  {
+   "round": 7,
+   "points": 194,
+   "faces": 734,
+   "score": 0.6326,
+   "iou": 0.9233,
+   "colour": 0.3419
+  },
+  {
+   "round": 8,
+   "points": 217,
+   "faces": 781,
+   "score": 0.6383,
+   "iou": 0.9293,
+   "colour": 0.3472
+  },
+  {
+   "round": 9,
+   "points": 243,
+   "faces": 833,
+   "score": 0.6487,
+   "iou": 0.9293,
+   "colour": 0.3682
+  },
+  {
+   "round": 10,
+   "points": 272,
+   "faces": 887,
+   "score": 0.66,
+   "iou": 0.9288,
+   "colour": 0.3912
+  },
+  {
+   "round": 11,
+   "points": 304,
+   "faces": 952,
+   "score": 0.6727,
+   "iou": 0.9315,
+   "colour": 0.4139
+  },
+  {
+   "round": 12,
+   "points": 340,
+   "faces": 1022,
+   "score": 0.6792,
+   "iou": 0.9319,
+   "colour": 0.4265
+  },
+  {
+   "round": 13,
+   "points": 380,
+   "faces": 1101,
+   "score": 0.6858,
+   "iou": 0.9326,
+   "colour": 0.4389
+  },
+  {
+   "round": 14,
+   "points": 425,
+   "faces": 1189,
+   "score": 0.6977,
+   "iou": 0.936,
+   "colour": 0.4593
+  },
+  {
+   "round": 15,
+   "points": 476,
+   "faces": 1289,
+   "score": 0.7094,
+   "iou": 0.9418,
+   "colour": 0.477
+  },
+  {
+   "round": 16,
+   "points": 533,
+   "faces": 1394,
+   "score": 0.7149,
+   "iou": 0.9432,
+   "colour": 0.4865
+  },
+  {
+   "round": 17,
+   "points": 596,
+   "faces": 1519,
+   "score": 0.7288,
+   "iou": 0.9511,
+   "colour": 0.5065
+  },
+  {
+   "round": 18,
+   "points": 667,
+   "faces": 1656,
+   "score": 0.7461,
+   "iou": 0.9567,
+   "colour": 0.5356
+  },
+  {
+   "round": 19,
+   "points": 747,
+   "faces": 1808,
+   "score": 0.7601,
+   "iou": 0.9599,
+   "colour": 0.5602
+  },
+  {
+   "round": 20,
+   "points": 836,
+   "faces": 1982,
+   "score": 0.774,
+   "iou": 0.9621,
+   "colour": 0.5859
+  },
+  {
+   "round": 21,
+   "points": 936,
+   "faces": 2168,
+   "score": 0.7839,
+   "iou": 0.9601,
+   "colour": 0.6077
+  },
+  {
+   "round": 22,
+   "points": 1048,
+   "faces": 2371,
+   "score": 0.809,
+   "iou": 0.9738,
+   "colour": 0.6441
+  },
+  {
+   "round": 23,
+   "points": 1062,
+   "faces": 2399,
+   "score": 0.8115,
+   "iou": 0.9754,
+   "colour": 0.6476,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 60
+  }
+ ]
+}

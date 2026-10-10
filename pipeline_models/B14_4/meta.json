@@ -1,0 +1,228 @@
+{
+ "code": "B14_4",
+ "name": "Jade thorn shield",
+ "slot": "shield",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  696,
+  1618,
+  840,
+  1791
+ ],
+ "size": [
+  144,
+  173
+ ],
+ "depth_scale_px": 54.24720764160156,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1265,
+ "faces": 2400,
+ "match": {
+  "round": 22,
+  "points": 1020,
+  "faces": 2388,
+  "score": 0.7897,
+  "iou": 0.9771,
+  "colour": 0.6024
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 92,
+   "faces": 582,
+   "score": 0.6447,
+   "iou": 0.9517,
+   "colour": 0.3377
+  },
+  {
+   "round": 1,
+   "points": 104,
+   "faces": 605,
+   "score": 0.6539,
+   "iou": 0.967,
+   "colour": 0.3407
+  },
+  {
+   "round": 2,
+   "points": 116,
+   "faces": 627,
+   "score": 0.6581,
+   "iou": 0.9708,
+   "colour": 0.3454
+  },
+  {
+   "round": 3,
+   "points": 129,
+   "faces": 653,
+   "score": 0.6599,
+   "iou": 0.9707,
+   "colour": 0.3492
+  },
+  {
+   "round": 4,
+   "points": 144,
+   "faces": 683,
+   "score": 0.6648,
+   "iou": 0.9709,
+   "colour": 0.3588
+  },
+  {
+   "round": 5,
+   "points": 161,
+   "faces": 717,
+   "score": 0.6721,
+   "iou": 0.9709,
+   "colour": 0.3732
+  },
+  {
+   "round": 6,
+   "points": 180,
+   "faces": 755,
+   "score": 0.6721,
+   "iou": 0.9715,
+   "colour": 0.3728
+  },
+  {
+   "round": 7,
+   "points": 201,
+   "faces": 797,
+   "score": 0.673,
+   "iou": 0.9715,
+   "colour": 0.3744
+  },
+  {
+   "round": 8,
+   "points": 225,
+   "faces": 843,
+   "score": 0.6874,
+   "iou": 0.9711,
+   "colour": 0.4038
+  },
+  {
+   "round": 9,
+   "points": 252,
+   "faces": 897,
+   "score": 0.6951,
+   "iou": 0.9711,
+   "colour": 0.4191
+  },
+  {
+   "round": 10,
+   "points": 282,
+   "faces": 955,
+   "score": 0.6956,
+   "iou": 0.9694,
+   "colour": 0.4218
+  },
+  {
+   "round": 11,
+   "points": 315,
+   "faces": 1019,
+   "score": 0.6992,
+   "iou": 0.9704,
+   "colour": 0.428
+  },
+  {
+   "round": 12,
+   "points": 352,
+   "faces": 1091,
+   "score": 0.7022,
+   "iou": 0.9696,
+   "colour": 0.4349
+  },
+  {
+   "round": 13,
+   "points": 394,
+   "faces": 1173,
+   "score": 0.7067,
+   "iou": 0.97,
+   "colour": 0.4435
+  },
+  {
+   "round": 14,
+   "points": 441,
+   "faces": 1266,
+   "score": 0.7171,
+   "iou": 0.9686,
+   "colour": 0.4656
+  },
+  {
+   "round": 15,
+   "points": 493,
+   "faces": 1367,
+   "score": 0.7228,
+   "iou": 0.9697,
+   "colour": 0.4758
+  },
+  {
+   "round": 16,
+   "points": 552,
+   "faces": 1485,
+   "score": 0.7312,
+   "iou": 0.9701,
+   "colour": 0.4922
+  },
+  {
+   "round": 17,
+   "points": 618,
+   "faces": 1612,
+   "score": 0.7419,
+   "iou": 0.9704,
+   "colour": 0.5134
+  },
+  {
+   "round": 18,
+   "points": 692,
+   "faces": 1757,
+   "score": 0.7479,
+   "iou": 0.9713,
+   "colour": 0.5245
+  },
+  {
+   "round": 19,
+   "points": 775,
+   "faces": 1918,
+   "score": 0.7551,
+   "iou": 0.972,
+   "colour": 0.5381
+  },
+  {
+   "round": 20,
+   "points": 868,
+   "faces": 2101,
+   "score": 0.7665,
+   "iou": 0.9735,
+   "colour": 0.5595
+  },
+  {
+   "round": 21,
+   "points": 972,
+   "faces": 2303,
+   "score": 0.7829,
+   "iou": 0.9767,
+   "colour": 0.5891
+  },
+  {
+   "round": 22,
+   "points": 1020,
+   "faces": 2388,
+   "score": 0.7897,
+   "iou": 0.9771,
+   "colour": 0.6024
+  },
+  {
+   "round": 23,
+   "points": 1026,
+   "faces": 2400,
+   "score": 0.7897,
+   "iou": 0.9766,
+   "colour": 0.6028,
+   "stop": "budget",
+   "back_faces": 372,
+   "line_faces": 80
+  }
+ ]
+}

@@ -33,7 +33,7 @@ def java_dump(models_dir):
         elif p[0] == 'v':
             cur['V'].append(tuple(map(int, p[1:4])))
         elif p[0] == 'f':
-            cur['F'].append(tuple(map(int, p[1:7])))
+            cur['F'].append(tuple(map(int, p[1:8])))
     return models
 
 
@@ -51,8 +51,8 @@ def main():
         j = java.get(mid)
         ok = (j is not None and j['nv'] == len(d['V']) and j['nf'] == len(d['F'])
               and j['V'] == [tuple(v) for v in d['V'].tolist()]
-              and j['F'] == [(a, b, c, col, rt, -1) for (a, b, c), col, rt in
-                             zip(d['F'].tolist(), d['colors'], d['render_types'])])
+              and j['F'] == [(a, b, c, col, rt, -1, pr) for (a, b, c), col, rt, pr in
+                             zip(d['F'].tolist(), d['colors'], d['render_types'], d['priorities'])])
         if not ok:
             bad += 1
             print('MISMATCH model', mid)

@@ -1,0 +1,245 @@
+{
+ "code": "B03_3",
+ "name": "Necrotic flail",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1698,
+  12,
+  1895,
+  187
+ ],
+ "size": [
+  197,
+  175
+ ],
+ "depth_scale_px": 34.46699905395508,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1190,
+ "faces": 2399,
+ "match": {
+  "round": 23,
+  "points": 1123,
+  "faces": 2391,
+  "score": 0.8734,
+  "iou": 0.9832,
+  "colour": 0.7635
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 94,
+   "faces": 494,
+   "score": 0.611,
+   "iou": 0.8607,
+   "colour": 0.3614
+  },
+  {
+   "round": 1,
+   "points": 106,
+   "faces": 515,
+   "score": 0.6296,
+   "iou": 0.8877,
+   "colour": 0.3715
+  },
+  {
+   "round": 2,
+   "points": 118,
+   "faces": 537,
+   "score": 0.6449,
+   "iou": 0.9059,
+   "colour": 0.384
+  },
+  {
+   "round": 3,
+   "points": 132,
+   "faces": 560,
+   "score": 0.6571,
+   "iou": 0.9179,
+   "colour": 0.3964
+  },
+  {
+   "round": 4,
+   "points": 147,
+   "faces": 591,
+   "score": 0.6672,
+   "iou": 0.9195,
+   "colour": 0.4149
+  },
+  {
+   "round": 5,
+   "points": 164,
+   "faces": 620,
+   "score": 0.6778,
+   "iou": 0.9187,
+   "colour": 0.4369
+  },
+  {
+   "round": 6,
+   "points": 183,
+   "faces": 657,
+   "score": 0.6882,
+   "iou": 0.9226,
+   "colour": 0.4538
+  },
+  {
+   "round": 7,
+   "points": 204,
+   "faces": 699,
+   "score": 0.6962,
+   "iou": 0.9226,
+   "colour": 0.4699
+  },
+  {
+   "round": 8,
+   "points": 228,
+   "faces": 747,
+   "score": 0.7019,
+   "iou": 0.9226,
+   "colour": 0.4812
+  },
+  {
+   "round": 9,
+   "points": 255,
+   "faces": 799,
+   "score": 0.713,
+   "iou": 0.923,
+   "colour": 0.5029
+  },
+  {
+   "round": 10,
+   "points": 285,
+   "faces": 856,
+   "score": 0.7251,
+   "iou": 0.9279,
+   "colour": 0.5222
+  },
+  {
+   "round": 11,
+   "points": 319,
+   "faces": 920,
+   "score": 0.7396,
+   "iou": 0.9307,
+   "colour": 0.5484
+  },
+  {
+   "round": 12,
+   "points": 357,
+   "faces": 991,
+   "score": 0.7513,
+   "iou": 0.9338,
+   "colour": 0.5688
+  },
+  {
+   "round": 13,
+   "points": 399,
+   "faces": 1070,
+   "score": 0.769,
+   "iou": 0.9432,
+   "colour": 0.5948
+  },
+  {
+   "round": 14,
+   "points": 446,
+   "faces": 1158,
+   "score": 0.7807,
+   "iou": 0.9452,
+   "colour": 0.6163
+  },
+  {
+   "round": 15,
+   "points": 499,
+   "faces": 1257,
+   "score": 0.8045,
+   "iou": 0.9602,
+   "colour": 0.6489
+  },
+  {
+   "round": 16,
+   "points": 558,
+   "faces": 1367,
+   "score": 0.816,
+   "iou": 0.9654,
+   "colour": 0.6665
+  },
+  {
+   "round": 17,
+   "points": 624,
+   "faces": 1488,
+   "score": 0.8244,
+   "iou": 0.9654,
+   "colour": 0.6835
+  },
+  {
+   "round": 18,
+   "points": 698,
+   "faces": 1627,
+   "score": 0.8366,
+   "iou": 0.9707,
+   "colour": 0.7025
+  },
+  {
+   "round": 19,
+   "points": 781,
+   "faces": 1785,
+   "score": 0.8504,
+   "iou": 0.9731,
+   "colour": 0.7278
+  },
+  {
+   "round": 20,
+   "points": 874,
+   "faces": 1958,
+   "score": 0.8566,
+   "iou": 0.976,
+   "colour": 0.7373
+  },
+  {
+   "round": 21,
+   "points": 978,
+   "faces": 2143,
+   "score": 0.8625,
+   "iou": 0.9765,
+   "colour": 0.7485
+  },
+  {
+   "round": 22,
+   "points": 1095,
+   "faces": 2343,
+   "score": 0.867,
+   "iou": 0.9785,
+   "colour": 0.7554
+  },
+  {
+   "round": 23,
+   "points": 1123,
+   "faces": 2391,
+   "score": 0.8734,
+   "iou": 0.9832,
+   "colour": 0.7635
+  },
+  {
+   "round": 24,
+   "points": 1127,
+   "faces": 2396,
+   "score": 0.8723,
+   "iou": 0.9831,
+   "colour": 0.7616,
+   "rolled_back": true
+  },
+  {
+   "round": 25,
+   "points": 1127,
+   "faces": 2399,
+   "score": 0.8734,
+   "iou": 0.9832,
+   "colour": 0.7637,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 0
+  }
+ ]
+}

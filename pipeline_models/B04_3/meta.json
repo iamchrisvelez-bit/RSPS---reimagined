@@ -1,0 +1,289 @@
+{
+ "code": "B04_3",
+ "name": "Reaver warboots",
+ "slot": "feet",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  446,
+  360,
+  576,
+  559
+ ],
+ "size": [
+  130,
+  199
+ ],
+ "depth_scale_px": 42.84904479980469,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1239,
+ "faces": 2399,
+ "match": {
+  "round": 29,
+  "points": 1071,
+  "faces": 2397,
+  "score": 0.8473,
+  "iou": 0.9845,
+  "colour": 0.71
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 88,
+   "faces": 539,
+   "score": 0.6545,
+   "iou": 0.8917,
+   "colour": 0.4173
+  },
+  {
+   "round": 1,
+   "points": 100,
+   "faces": 560,
+   "score": 0.6698,
+   "iou": 0.9101,
+   "colour": 0.4296
+  },
+  {
+   "round": 2,
+   "points": 112,
+   "faces": 579,
+   "score": 0.6822,
+   "iou": 0.9246,
+   "colour": 0.4397
+  },
+  {
+   "round": 3,
+   "points": 125,
+   "faces": 604,
+   "score": 0.689,
+   "iou": 0.9286,
+   "colour": 0.4493
+  },
+  {
+   "round": 4,
+   "points": 140,
+   "faces": 634,
+   "score": 0.6971,
+   "iou": 0.9367,
+   "colour": 0.4575
+  },
+  {
+   "round": 5,
+   "points": 156,
+   "faces": 655,
+   "score": 0.6738,
+   "iou": 0.9065,
+   "colour": 0.4411,
+   "rolled_back": true
+  },
+  {
+   "round": 6,
+   "points": 156,
+   "faces": 660,
+   "score": 0.6857,
+   "iou": 0.9182,
+   "colour": 0.4533,
+   "rolled_back": true
+  },
+  {
+   "round": 7,
+   "points": 156,
+   "faces": 664,
+   "score": 0.7027,
+   "iou": 0.9383,
+   "colour": 0.4671
+  },
+  {
+   "round": 8,
+   "points": 174,
+   "faces": 699,
+   "score": 0.7111,
+   "iou": 0.9411,
+   "colour": 0.4811
+  },
+  {
+   "round": 9,
+   "points": 194,
+   "faces": 737,
+   "score": 0.7103,
+   "iou": 0.9359,
+   "colour": 0.4848
+  },
+  {
+   "round": 10,
+   "points": 217,
+   "faces": 782,
+   "score": 0.7156,
+   "iou": 0.9401,
+   "colour": 0.4912
+  },
+  {
+   "round": 11,
+   "points": 243,
+   "faces": 831,
+   "score": 0.7165,
+   "iou": 0.9395,
+   "colour": 0.4934
+  },
+  {
+   "round": 12,
+   "points": 272,
+   "faces": 885,
+   "score": 0.7065,
+   "iou": 0.9284,
+   "colour": 0.4846,
+   "rolled_back": true
+  },
+  {
+   "round": 13,
+   "points": 272,
+   "faces": 888,
+   "score": 0.7204,
+   "iou": 0.9422,
+   "colour": 0.4985
+  },
+  {
+   "round": 14,
+   "points": 304,
+   "faces": 947,
+   "score": 0.713,
+   "iou": 0.933,
+   "colour": 0.493,
+   "rolled_back": true
+  },
+  {
+   "round": 15,
+   "points": 304,
+   "faces": 945,
+   "score": 0.7154,
+   "iou": 0.9341,
+   "colour": 0.4967,
+   "rolled_back": true
+  },
+  {
+   "round": 16,
+   "points": 304,
+   "faces": 953,
+   "score": 0.7194,
+   "iou": 0.9354,
+   "colour": 0.5034
+  },
+  {
+   "round": 17,
+   "points": 340,
+   "faces": 1023,
+   "score": 0.7282,
+   "iou": 0.9419,
+   "colour": 0.5144
+  },
+  {
+   "round": 18,
+   "points": 380,
+   "faces": 1100,
+   "score": 0.7401,
+   "iou": 0.9463,
+   "colour": 0.5338
+  },
+  {
+   "round": 19,
+   "points": 425,
+   "faces": 1188,
+   "score": 0.7509,
+   "iou": 0.9517,
+   "colour": 0.5501
+  },
+  {
+   "round": 20,
+   "points": 476,
+   "faces": 1279,
+   "score": 0.7645,
+   "iou": 0.9584,
+   "colour": 0.5707
+  },
+  {
+   "round": 21,
+   "points": 533,
+   "faces": 1389,
+   "score": 0.7725,
+   "iou": 0.9596,
+   "colour": 0.5855
+  },
+  {
+   "round": 22,
+   "points": 596,
+   "faces": 1508,
+   "score": 0.7862,
+   "iou": 0.9682,
+   "colour": 0.6042
+  },
+  {
+   "round": 23,
+   "points": 667,
+   "faces": 1645,
+   "score": 0.7917,
+   "iou": 0.9721,
+   "colour": 0.6113
+  },
+  {
+   "round": 24,
+   "points": 747,
+   "faces": 1798,
+   "score": 0.8066,
+   "iou": 0.977,
+   "colour": 0.6362
+  },
+  {
+   "round": 25,
+   "points": 836,
+   "faces": 1962,
+   "score": 0.8192,
+   "iou": 0.9773,
+   "colour": 0.6611
+  },
+  {
+   "round": 26,
+   "points": 936,
+   "faces": 2143,
+   "score": 0.8349,
+   "iou": 0.9826,
+   "colour": 0.6872
+  },
+  {
+   "round": 27,
+   "points": 1048,
+   "faces": 2357,
+   "score": 0.8455,
+   "iou": 0.9845,
+   "colour": 0.7065
+  },
+  {
+   "round": 28,
+   "points": 1069,
+   "faces": 2395,
+   "score": 0.8469,
+   "iou": 0.9845,
+   "colour": 0.7092
+  },
+  {
+   "round": 29,
+   "points": 1071,
+   "faces": 2397,
+   "score": 0.8473,
+   "iou": 0.9845,
+   "colour": 0.71
+  },
+  {
+   "round": 30,
+   "points": 1072,
+   "faces": 2399,
+   "score": 0.8473,
+   "iou": 0.9845,
+   "colour": 0.71,
+   "stop": "plateau",
+   "back_faces": 360,
+   "line_faces": 54
+  }
+ ]
+}

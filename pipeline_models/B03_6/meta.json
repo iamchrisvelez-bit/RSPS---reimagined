@@ -1,0 +1,236 @@
+{
+ "code": "B03_6",
+ "name": "Necrotic skull censer",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1720,
+  155,
+  1886,
+  360
+ ],
+ "size": [
+  166,
+  205
+ ],
+ "depth_scale_px": 48.37771987915039,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1210,
+ "faces": 2399,
+ "match": {
+  "round": 23,
+  "points": 1139,
+  "faces": 2394,
+  "score": 0.8013,
+  "iou": 0.9658,
+  "colour": 0.6367
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 100,
+   "faces": 499,
+   "score": 0.566,
+   "iou": 0.8539,
+   "colour": 0.2782
+  },
+  {
+   "round": 1,
+   "points": 112,
+   "faces": 518,
+   "score": 0.5868,
+   "iou": 0.884,
+   "colour": 0.2896
+  },
+  {
+   "round": 2,
+   "points": 125,
+   "faces": 540,
+   "score": 0.608,
+   "iou": 0.9098,
+   "colour": 0.3062
+  },
+  {
+   "round": 3,
+   "points": 140,
+   "faces": 562,
+   "score": 0.6078,
+   "iou": 0.9043,
+   "colour": 0.3113
+  },
+  {
+   "round": 4,
+   "points": 156,
+   "faces": 593,
+   "score": 0.6173,
+   "iou": 0.9153,
+   "colour": 0.3193
+  },
+  {
+   "round": 5,
+   "points": 174,
+   "faces": 627,
+   "score": 0.6248,
+   "iou": 0.9127,
+   "colour": 0.3369
+  },
+  {
+   "round": 6,
+   "points": 194,
+   "faces": 662,
+   "score": 0.6348,
+   "iou": 0.9172,
+   "colour": 0.3523
+  },
+  {
+   "round": 7,
+   "points": 217,
+   "faces": 706,
+   "score": 0.6388,
+   "iou": 0.9155,
+   "colour": 0.3622
+  },
+  {
+   "round": 8,
+   "points": 243,
+   "faces": 757,
+   "score": 0.651,
+   "iou": 0.9205,
+   "colour": 0.3816
+  },
+  {
+   "round": 9,
+   "points": 272,
+   "faces": 811,
+   "score": 0.661,
+   "iou": 0.9246,
+   "colour": 0.3973
+  },
+  {
+   "round": 10,
+   "points": 304,
+   "faces": 874,
+   "score": 0.6627,
+   "iou": 0.9252,
+   "colour": 0.4003
+  },
+  {
+   "round": 11,
+   "points": 340,
+   "faces": 945,
+   "score": 0.6733,
+   "iou": 0.9245,
+   "colour": 0.4221
+  },
+  {
+   "round": 12,
+   "points": 380,
+   "faces": 1019,
+   "score": 0.6806,
+   "iou": 0.9231,
+   "colour": 0.438
+  },
+  {
+   "round": 13,
+   "points": 425,
+   "faces": 1102,
+   "score": 0.6949,
+   "iou": 0.9317,
+   "colour": 0.458
+  },
+  {
+   "round": 14,
+   "points": 476,
+   "faces": 1205,
+   "score": 0.7087,
+   "iou": 0.9369,
+   "colour": 0.4804
+  },
+  {
+   "round": 15,
+   "points": 533,
+   "faces": 1311,
+   "score": 0.7173,
+   "iou": 0.936,
+   "colour": 0.4986
+  },
+  {
+   "round": 16,
+   "points": 596,
+   "faces": 1427,
+   "score": 0.7316,
+   "iou": 0.939,
+   "colour": 0.5242
+  },
+  {
+   "round": 17,
+   "points": 667,
+   "faces": 1559,
+   "score": 0.7486,
+   "iou": 0.9475,
+   "colour": 0.5497
+  },
+  {
+   "round": 18,
+   "points": 747,
+   "faces": 1713,
+   "score": 0.7676,
+   "iou": 0.9566,
+   "colour": 0.5786
+  },
+  {
+   "round": 19,
+   "points": 836,
+   "faces": 1877,
+   "score": 0.7755,
+   "iou": 0.9554,
+   "colour": 0.5956
+  },
+  {
+   "round": 20,
+   "points": 936,
+   "faces": 2051,
+   "score": 0.79,
+   "iou": 0.962,
+   "colour": 0.6179
+  },
+  {
+   "round": 21,
+   "points": 1048,
+   "faces": 2250,
+   "score": 0.7964,
+   "iou": 0.9632,
+   "colour": 0.6296
+  },
+  {
+   "round": 22,
+   "points": 1123,
+   "faces": 2368,
+   "score": 0.8003,
+   "iou": 0.9647,
+   "colour": 0.636
+  },
+  {
+   "round": 23,
+   "points": 1139,
+   "faces": 2394,
+   "score": 0.8013,
+   "iou": 0.9658,
+   "colour": 0.6367
+  },
+  {
+   "round": 24,
+   "points": 1142,
+   "faces": 2399,
+   "score": 0.8007,
+   "iou": 0.966,
+   "colour": 0.6354,
+   "stop": "budget",
+   "back_faces": 365,
+   "line_faces": 0
+  }
+ ]
+}

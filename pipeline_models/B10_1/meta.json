@@ -1,0 +1,244 @@
+{
+ "code": "B10_1",
+ "name": "Astral wizard hat",
+ "slot": "head",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  41,
+  1092,
+  198,
+  1245
+ ],
+ "size": [
+  157,
+  153
+ ],
+ "depth_scale_px": 48.684200286865234,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1254,
+ "faces": 2399,
+ "match": {
+  "round": 24,
+  "points": 1017,
+  "faces": 2398,
+  "score": 0.7984,
+  "iou": 0.9794,
+  "colour": 0.6173
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 81,
+   "faces": 574,
+   "score": 0.645,
+   "iou": 0.8925,
+   "colour": 0.3975
+  },
+  {
+   "round": 1,
+   "points": 93,
+   "faces": 596,
+   "score": 0.6775,
+   "iou": 0.9379,
+   "colour": 0.4172
+  },
+  {
+   "round": 2,
+   "points": 105,
+   "faces": 618,
+   "score": 0.6851,
+   "iou": 0.9462,
+   "colour": 0.4239
+  },
+  {
+   "round": 3,
+   "points": 117,
+   "faces": 640,
+   "score": 0.6896,
+   "iou": 0.9509,
+   "colour": 0.4283
+  },
+  {
+   "round": 4,
+   "points": 131,
+   "faces": 666,
+   "score": 0.6897,
+   "iou": 0.9557,
+   "colour": 0.4238
+  },
+  {
+   "round": 5,
+   "points": 146,
+   "faces": 695,
+   "score": 0.6894,
+   "iou": 0.9547,
+   "colour": 0.424
+  },
+  {
+   "round": 6,
+   "points": 163,
+   "faces": 728,
+   "score": 0.6923,
+   "iou": 0.9547,
+   "colour": 0.43
+  },
+  {
+   "round": 7,
+   "points": 182,
+   "faces": 766,
+   "score": 0.6948,
+   "iou": 0.9547,
+   "colour": 0.4348
+  },
+  {
+   "round": 8,
+   "points": 203,
+   "faces": 808,
+   "score": 0.7029,
+   "iou": 0.9547,
+   "colour": 0.4511
+  },
+  {
+   "round": 9,
+   "points": 227,
+   "faces": 856,
+   "score": 0.7089,
+   "iou": 0.9547,
+   "colour": 0.463
+  },
+  {
+   "round": 10,
+   "points": 254,
+   "faces": 910,
+   "score": 0.7121,
+   "iou": 0.9547,
+   "colour": 0.4696
+  },
+  {
+   "round": 11,
+   "points": 284,
+   "faces": 969,
+   "score": 0.7176,
+   "iou": 0.9564,
+   "colour": 0.4788
+  },
+  {
+   "round": 12,
+   "points": 318,
+   "faces": 1036,
+   "score": 0.7176,
+   "iou": 0.955,
+   "colour": 0.4802
+  },
+  {
+   "round": 13,
+   "points": 356,
+   "faces": 1112,
+   "score": 0.7189,
+   "iou": 0.955,
+   "colour": 0.4827
+  },
+  {
+   "round": 14,
+   "points": 398,
+   "faces": 1195,
+   "score": 0.7265,
+   "iou": 0.9542,
+   "colour": 0.4988
+  },
+  {
+   "round": 15,
+   "points": 445,
+   "faces": 1287,
+   "score": 0.7337,
+   "iou": 0.9565,
+   "colour": 0.511
+  },
+  {
+   "round": 16,
+   "points": 498,
+   "faces": 1393,
+   "score": 0.739,
+   "iou": 0.9573,
+   "colour": 0.5206
+  },
+  {
+   "round": 17,
+   "points": 557,
+   "faces": 1510,
+   "score": 0.7485,
+   "iou": 0.9577,
+   "colour": 0.5393
+  },
+  {
+   "round": 18,
+   "points": 623,
+   "faces": 1644,
+   "score": 0.7519,
+   "iou": 0.9617,
+   "colour": 0.5421
+  },
+  {
+   "round": 19,
+   "points": 697,
+   "faces": 1787,
+   "score": 0.7614,
+   "iou": 0.9651,
+   "colour": 0.5576
+  },
+  {
+   "round": 20,
+   "points": 780,
+   "faces": 1952,
+   "score": 0.7738,
+   "iou": 0.9663,
+   "colour": 0.5813
+  },
+  {
+   "round": 21,
+   "points": 873,
+   "faces": 2134,
+   "score": 0.7776,
+   "iou": 0.9675,
+   "colour": 0.5877
+  },
+  {
+   "round": 22,
+   "points": 977,
+   "faces": 2323,
+   "score": 0.7949,
+   "iou": 0.9774,
+   "colour": 0.6124
+  },
+  {
+   "round": 23,
+   "points": 1015,
+   "faces": 2395,
+   "score": 0.7966,
+   "iou": 0.9792,
+   "colour": 0.614
+  },
+  {
+   "round": 24,
+   "points": 1017,
+   "faces": 2398,
+   "score": 0.7984,
+   "iou": 0.9794,
+   "colour": 0.6173
+  },
+  {
+   "round": 25,
+   "points": 1018,
+   "faces": 2400,
+   "score": 0.7982,
+   "iou": 0.9794,
+   "colour": 0.617,
+   "stop": "plateau",
+   "back_faces": 361,
+   "line_faces": 84
+  }
+ ]
+}

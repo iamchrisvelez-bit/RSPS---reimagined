@@ -1,0 +1,191 @@
+{
+ "code": "B06_6",
+ "name": "Magma kiteshield",
+ "slot": "shield",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1645,
+  571,
+  1782,
+  720
+ ],
+ "size": [
+  137,
+  149
+ ],
+ "depth_scale_px": 65.6717529296875,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 815,
+ "faces": 1420,
+ "match": {
+  "round": 17,
+  "points": 388,
+  "faces": 1139,
+  "score": 0.8429,
+  "iou": 0.9929,
+  "colour": 0.6928
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 78,
+   "faces": 624,
+   "score": 0.7636,
+   "iou": 0.9271,
+   "colour": 0.6001
+  },
+  {
+   "round": 1,
+   "points": 90,
+   "faces": 638,
+   "score": 0.7618,
+   "iou": 0.9226,
+   "colour": 0.601,
+   "rolled_back": true
+  },
+  {
+   "round": 2,
+   "points": 90,
+   "faces": 641,
+   "score": 0.7828,
+   "iou": 0.9448,
+   "colour": 0.6208
+  },
+  {
+   "round": 3,
+   "points": 102,
+   "faces": 658,
+   "score": 0.8037,
+   "iou": 0.9708,
+   "colour": 0.6367
+  },
+  {
+   "round": 4,
+   "points": 114,
+   "faces": 674,
+   "score": 0.8054,
+   "iou": 0.9737,
+   "colour": 0.6371
+  },
+  {
+   "round": 5,
+   "points": 127,
+   "faces": 690,
+   "score": 0.8034,
+   "iou": 0.9723,
+   "colour": 0.6344,
+   "rolled_back": true
+  },
+  {
+   "round": 6,
+   "points": 127,
+   "faces": 687,
+   "score": 0.806,
+   "iou": 0.9736,
+   "colour": 0.6383
+  },
+  {
+   "round": 7,
+   "points": 142,
+   "faces": 708,
+   "score": 0.812,
+   "iou": 0.9795,
+   "colour": 0.6446
+  },
+  {
+   "round": 8,
+   "points": 159,
+   "faces": 738,
+   "score": 0.8179,
+   "iou": 0.9859,
+   "colour": 0.65
+  },
+  {
+   "round": 9,
+   "points": 178,
+   "faces": 761,
+   "score": 0.8185,
+   "iou": 0.988,
+   "colour": 0.6489
+  },
+  {
+   "round": 10,
+   "points": 199,
+   "faces": 776,
+   "score": 0.8201,
+   "iou": 0.9906,
+   "colour": 0.6496
+  },
+  {
+   "round": 11,
+   "points": 222,
+   "faces": 807,
+   "score": 0.8264,
+   "iou": 0.9929,
+   "colour": 0.6599
+  },
+  {
+   "round": 12,
+   "points": 248,
+   "faces": 859,
+   "score": 0.8245,
+   "iou": 0.9929,
+   "colour": 0.656,
+   "rolled_back": true
+  },
+  {
+   "round": 13,
+   "points": 248,
+   "faces": 859,
+   "score": 0.8296,
+   "iou": 0.9929,
+   "colour": 0.6663
+  },
+  {
+   "round": 14,
+   "points": 277,
+   "faces": 917,
+   "score": 0.8311,
+   "iou": 0.9929,
+   "colour": 0.6693
+  },
+  {
+   "round": 15,
+   "points": 310,
+   "faces": 983,
+   "score": 0.8393,
+   "iou": 0.9929,
+   "colour": 0.6857
+  },
+  {
+   "round": 16,
+   "points": 347,
+   "faces": 1057,
+   "score": 0.8414,
+   "iou": 0.9929,
+   "colour": 0.6899
+  },
+  {
+   "round": 17,
+   "points": 388,
+   "faces": 1139,
+   "score": 0.8429,
+   "iou": 0.9929,
+   "colour": 0.6928
+  },
+  {
+   "round": 18,
+   "points": 434,
+   "faces": 1231,
+   "score": 0.8428,
+   "iou": 0.9929,
+   "colour": 0.6926,
+   "stop": "plateau",
+   "back_faces": 641,
+   "line_faces": 138
+  }
+ ]
+}

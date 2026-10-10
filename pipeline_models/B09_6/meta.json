@@ -1,0 +1,248 @@
+{
+ "code": "B09_6",
+ "name": "Runic crossbow",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1698,
+  916,
+  1910,
+  1046
+ ],
+ "size": [
+  212,
+  130
+ ],
+ "depth_scale_px": 53.068782806396484,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1200,
+ "faces": 2400,
+ "match": {
+  "round": 25,
+  "points": 1106,
+  "faces": 2399,
+  "score": 0.851,
+  "iou": 0.9795,
+  "colour": 0.7226,
+  "stop": "budget",
+  "back_faces": 361,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 89,
+   "faces": 492,
+   "score": 0.619,
+   "iou": 0.8993,
+   "colour": 0.3387
+  },
+  {
+   "round": 1,
+   "points": 101,
+   "faces": 513,
+   "score": 0.6261,
+   "iou": 0.91,
+   "colour": 0.3422
+  },
+  {
+   "round": 2,
+   "points": 113,
+   "faces": 538,
+   "score": 0.6461,
+   "iou": 0.9313,
+   "colour": 0.3608
+  },
+  {
+   "round": 3,
+   "points": 126,
+   "faces": 554,
+   "score": 0.6439,
+   "iou": 0.9232,
+   "colour": 0.3646,
+   "rolled_back": true
+  },
+  {
+   "round": 4,
+   "points": 126,
+   "faces": 560,
+   "score": 0.6493,
+   "iou": 0.9303,
+   "colour": 0.3683
+  },
+  {
+   "round": 5,
+   "points": 141,
+   "faces": 585,
+   "score": 0.6583,
+   "iou": 0.9379,
+   "colour": 0.3787
+  },
+  {
+   "round": 6,
+   "points": 157,
+   "faces": 615,
+   "score": 0.6736,
+   "iou": 0.9432,
+   "colour": 0.4039
+  },
+  {
+   "round": 7,
+   "points": 175,
+   "faces": 649,
+   "score": 0.6902,
+   "iou": 0.9431,
+   "colour": 0.4372
+  },
+  {
+   "round": 8,
+   "points": 196,
+   "faces": 689,
+   "score": 0.6937,
+   "iou": 0.9446,
+   "colour": 0.4428
+  },
+  {
+   "round": 9,
+   "points": 219,
+   "faces": 735,
+   "score": 0.701,
+   "iou": 0.9446,
+   "colour": 0.4575
+  },
+  {
+   "round": 10,
+   "points": 245,
+   "faces": 785,
+   "score": 0.7092,
+   "iou": 0.9449,
+   "colour": 0.4735
+  },
+  {
+   "round": 11,
+   "points": 274,
+   "faces": 841,
+   "score": 0.718,
+   "iou": 0.9461,
+   "colour": 0.4898
+  },
+  {
+   "round": 12,
+   "points": 306,
+   "faces": 905,
+   "score": 0.7261,
+   "iou": 0.946,
+   "colour": 0.5062
+  },
+  {
+   "round": 13,
+   "points": 342,
+   "faces": 976,
+   "score": 0.7366,
+   "iou": 0.9488,
+   "colour": 0.5244
+  },
+  {
+   "round": 14,
+   "points": 383,
+   "faces": 1050,
+   "score": 0.7448,
+   "iou": 0.9482,
+   "colour": 0.5414
+  },
+  {
+   "round": 15,
+   "points": 428,
+   "faces": 1134,
+   "score": 0.7539,
+   "iou": 0.9435,
+   "colour": 0.5642
+  },
+  {
+   "round": 16,
+   "points": 479,
+   "faces": 1230,
+   "score": 0.7711,
+   "iou": 0.9509,
+   "colour": 0.5912
+  },
+  {
+   "round": 17,
+   "points": 536,
+   "faces": 1340,
+   "score": 0.7831,
+   "iou": 0.9542,
+   "colour": 0.612
+  },
+  {
+   "round": 18,
+   "points": 600,
+   "faces": 1463,
+   "score": 0.7914,
+   "iou": 0.9575,
+   "colour": 0.6252
+  },
+  {
+   "round": 19,
+   "points": 672,
+   "faces": 1596,
+   "score": 0.8044,
+   "iou": 0.9606,
+   "colour": 0.6482
+  },
+  {
+   "round": 20,
+   "points": 752,
+   "faces": 1747,
+   "score": 0.8241,
+   "iou": 0.9726,
+   "colour": 0.6756
+  },
+  {
+   "round": 21,
+   "points": 842,
+   "faces": 1913,
+   "score": 0.8354,
+   "iou": 0.9761,
+   "colour": 0.6947
+  },
+  {
+   "round": 22,
+   "points": 943,
+   "faces": 2103,
+   "score": 0.8425,
+   "iou": 0.9774,
+   "colour": 0.7075
+  },
+  {
+   "round": 23,
+   "points": 1056,
+   "faces": 2308,
+   "score": 0.8488,
+   "iou": 0.9791,
+   "colour": 0.7184
+  },
+  {
+   "round": 24,
+   "points": 1102,
+   "faces": 2391,
+   "score": 0.8503,
+   "iou": 0.9793,
+   "colour": 0.7213
+  },
+  {
+   "round": 25,
+   "points": 1106,
+   "faces": 2399,
+   "score": 0.851,
+   "iou": 0.9795,
+   "colour": 0.7226,
+   "stop": "budget",
+   "back_faces": 361,
+   "line_faces": 0
+  }
+ ]
+}

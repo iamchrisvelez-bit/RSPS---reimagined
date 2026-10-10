@@ -1,0 +1,231 @@
+{
+ "code": "B05_5",
+ "name": "Paladin platebody",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  877,
+  538,
+  1014,
+  710
+ ],
+ "size": [
+  137,
+  172
+ ],
+ "depth_scale_px": 56.706581115722656,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1288,
+ "faces": 2400,
+ "match": {
+  "round": 23,
+  "points": 990,
+  "faces": 2400,
+  "score": 0.7841,
+  "iou": 0.9797,
+  "colour": 0.5885,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 120
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 76,
+   "faces": 607,
+   "score": 0.591,
+   "iou": 0.9402,
+   "colour": 0.2419
+  },
+  {
+   "round": 1,
+   "points": 88,
+   "faces": 629,
+   "score": 0.5944,
+   "iou": 0.9436,
+   "colour": 0.2452
+  },
+  {
+   "round": 2,
+   "points": 100,
+   "faces": 654,
+   "score": 0.6052,
+   "iou": 0.9586,
+   "colour": 0.2519
+  },
+  {
+   "round": 3,
+   "points": 112,
+   "faces": 676,
+   "score": 0.6103,
+   "iou": 0.9623,
+   "colour": 0.2583
+  },
+  {
+   "round": 4,
+   "points": 125,
+   "faces": 699,
+   "score": 0.621,
+   "iou": 0.9655,
+   "colour": 0.2764
+  },
+  {
+   "round": 5,
+   "points": 140,
+   "faces": 728,
+   "score": 0.6291,
+   "iou": 0.9662,
+   "colour": 0.2921
+  },
+  {
+   "round": 6,
+   "points": 156,
+   "faces": 760,
+   "score": 0.6415,
+   "iou": 0.9662,
+   "colour": 0.3169
+  },
+  {
+   "round": 7,
+   "points": 174,
+   "faces": 796,
+   "score": 0.6486,
+   "iou": 0.9662,
+   "colour": 0.3311
+  },
+  {
+   "round": 8,
+   "points": 194,
+   "faces": 836,
+   "score": 0.6518,
+   "iou": 0.9662,
+   "colour": 0.3375
+  },
+  {
+   "round": 9,
+   "points": 217,
+   "faces": 882,
+   "score": 0.6643,
+   "iou": 0.9662,
+   "colour": 0.3623
+  },
+  {
+   "round": 10,
+   "points": 243,
+   "faces": 934,
+   "score": 0.6774,
+   "iou": 0.9662,
+   "colour": 0.3886
+  },
+  {
+   "round": 11,
+   "points": 272,
+   "faces": 992,
+   "score": 0.6824,
+   "iou": 0.9662,
+   "colour": 0.3987
+  },
+  {
+   "round": 12,
+   "points": 304,
+   "faces": 1055,
+   "score": 0.6859,
+   "iou": 0.9653,
+   "colour": 0.4065
+  },
+  {
+   "round": 13,
+   "points": 340,
+   "faces": 1127,
+   "score": 0.6975,
+   "iou": 0.9653,
+   "colour": 0.4297
+  },
+  {
+   "round": 14,
+   "points": 380,
+   "faces": 1206,
+   "score": 0.699,
+   "iou": 0.9647,
+   "colour": 0.4334
+  },
+  {
+   "round": 15,
+   "points": 425,
+   "faces": 1295,
+   "score": 0.7035,
+   "iou": 0.9647,
+   "colour": 0.4424
+  },
+  {
+   "round": 16,
+   "points": 476,
+   "faces": 1396,
+   "score": 0.7091,
+   "iou": 0.9646,
+   "colour": 0.4535
+  },
+  {
+   "round": 17,
+   "points": 533,
+   "faces": 1508,
+   "score": 0.7158,
+   "iou": 0.9645,
+   "colour": 0.467
+  },
+  {
+   "round": 18,
+   "points": 596,
+   "faces": 1633,
+   "score": 0.7254,
+   "iou": 0.9648,
+   "colour": 0.4861
+  },
+  {
+   "round": 19,
+   "points": 667,
+   "faces": 1772,
+   "score": 0.737,
+   "iou": 0.9636,
+   "colour": 0.5105
+  },
+  {
+   "round": 20,
+   "points": 747,
+   "faces": 1927,
+   "score": 0.752,
+   "iou": 0.9728,
+   "colour": 0.5312
+  },
+  {
+   "round": 21,
+   "points": 836,
+   "faces": 2100,
+   "score": 0.7659,
+   "iou": 0.9741,
+   "colour": 0.5577
+  },
+  {
+   "round": 22,
+   "points": 936,
+   "faces": 2291,
+   "score": 0.7772,
+   "iou": 0.9778,
+   "colour": 0.5766
+  },
+  {
+   "round": 23,
+   "points": 990,
+   "faces": 2400,
+   "score": 0.7841,
+   "iou": 0.9797,
+   "colour": 0.5885,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 120
+  }
+ ]
+}

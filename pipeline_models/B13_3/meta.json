@@ -1,0 +1,262 @@
+{
+ "code": "B13_3",
+ "name": "Sapphire amulet",
+ "slot": "neck",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  434,
+  1440,
+  599,
+  1620
+ ],
+ "size": [
+  165,
+  180
+ ],
+ "depth_scale_px": 40.05561065673828,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1197,
+ "faces": 2400,
+ "match": {
+  "round": 25,
+  "points": 1117,
+  "faces": 2394,
+  "score": 0.7996,
+  "iou": 0.9703,
+  "colour": 0.6289
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 96,
+   "faces": 499,
+   "score": 0.4946,
+   "iou": 0.8259,
+   "colour": 0.1632
+  },
+  {
+   "round": 1,
+   "points": 108,
+   "faces": 522,
+   "score": 0.5202,
+   "iou": 0.8656,
+   "colour": 0.1749
+  },
+  {
+   "round": 2,
+   "points": 120,
+   "faces": 541,
+   "score": 0.5317,
+   "iou": 0.8818,
+   "colour": 0.1816
+  },
+  {
+   "round": 3,
+   "points": 134,
+   "faces": 566,
+   "score": 0.5437,
+   "iou": 0.9001,
+   "colour": 0.1874
+  },
+  {
+   "round": 4,
+   "points": 150,
+   "faces": 593,
+   "score": 0.5562,
+   "iou": 0.9138,
+   "colour": 0.1986
+  },
+  {
+   "round": 5,
+   "points": 168,
+   "faces": 627,
+   "score": 0.5747,
+   "iou": 0.9117,
+   "colour": 0.2378
+  },
+  {
+   "round": 6,
+   "points": 188,
+   "faces": 663,
+   "score": 0.5858,
+   "iou": 0.9135,
+   "colour": 0.2581
+  },
+  {
+   "round": 7,
+   "points": 210,
+   "faces": 706,
+   "score": 0.6025,
+   "iou": 0.9147,
+   "colour": 0.2904
+  },
+  {
+   "round": 8,
+   "points": 235,
+   "faces": 755,
+   "score": 0.6061,
+   "iou": 0.9144,
+   "colour": 0.2979
+  },
+  {
+   "round": 9,
+   "points": 263,
+   "faces": 810,
+   "score": 0.619,
+   "iou": 0.9148,
+   "colour": 0.3232
+  },
+  {
+   "round": 10,
+   "points": 294,
+   "faces": 873,
+   "score": 0.6326,
+   "iou": 0.9179,
+   "colour": 0.3473
+  },
+  {
+   "round": 11,
+   "points": 329,
+   "faces": 938,
+   "score": 0.6294,
+   "iou": 0.9049,
+   "colour": 0.3539,
+   "rolled_back": true
+  },
+  {
+   "round": 12,
+   "points": 329,
+   "faces": 938,
+   "score": 0.6267,
+   "iou": 0.9052,
+   "colour": 0.3481,
+   "rolled_back": true
+  },
+  {
+   "round": 13,
+   "points": 329,
+   "faces": 942,
+   "score": 0.6389,
+   "iou": 0.9177,
+   "colour": 0.3601
+  },
+  {
+   "round": 14,
+   "points": 368,
+   "faces": 1016,
+   "score": 0.6464,
+   "iou": 0.922,
+   "colour": 0.3708
+  },
+  {
+   "round": 15,
+   "points": 412,
+   "faces": 1102,
+   "score": 0.66,
+   "iou": 0.9178,
+   "colour": 0.4022
+  },
+  {
+   "round": 16,
+   "points": 461,
+   "faces": 1193,
+   "score": 0.677,
+   "iou": 0.9239,
+   "colour": 0.4301
+  },
+  {
+   "round": 17,
+   "points": 516,
+   "faces": 1295,
+   "score": 0.6943,
+   "iou": 0.9314,
+   "colour": 0.4572
+  },
+  {
+   "round": 18,
+   "points": 577,
+   "faces": 1404,
+   "score": 0.7092,
+   "iou": 0.9367,
+   "colour": 0.4817
+  },
+  {
+   "round": 19,
+   "points": 646,
+   "faces": 1535,
+   "score": 0.7295,
+   "iou": 0.9431,
+   "colour": 0.5159
+  },
+  {
+   "round": 20,
+   "points": 723,
+   "faces": 1671,
+   "score": 0.7483,
+   "iou": 0.9477,
+   "colour": 0.5489
+  },
+  {
+   "round": 21,
+   "points": 809,
+   "faces": 1820,
+   "score": 0.7658,
+   "iou": 0.9556,
+   "colour": 0.576
+  },
+  {
+   "round": 22,
+   "points": 906,
+   "faces": 2008,
+   "score": 0.7841,
+   "iou": 0.9639,
+   "colour": 0.6043
+  },
+  {
+   "round": 23,
+   "points": 1014,
+   "faces": 2211,
+   "score": 0.7883,
+   "iou": 0.966,
+   "colour": 0.6105
+  },
+  {
+   "round": 24,
+   "points": 1108,
+   "faces": 2381,
+   "score": 0.7987,
+   "iou": 0.9695,
+   "colour": 0.6279
+  },
+  {
+   "round": 25,
+   "points": 1117,
+   "faces": 2394,
+   "score": 0.7996,
+   "iou": 0.9703,
+   "colour": 0.6289
+  },
+  {
+   "round": 26,
+   "points": 1120,
+   "faces": 2398,
+   "score": 0.7995,
+   "iou": 0.9705,
+   "colour": 0.6285
+  },
+  {
+   "round": 27,
+   "points": 1121,
+   "faces": 2400,
+   "score": 0.7995,
+   "iou": 0.9705,
+   "colour": 0.6285,
+   "stop": "plateau",
+   "back_faces": 366,
+   "line_faces": 0
+  }
+ ]
+}

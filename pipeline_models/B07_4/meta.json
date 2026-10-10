@@ -1,0 +1,215 @@
+{
+ "code": "B07_4",
+ "name": "Nightstalker ranger tunic",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  467,
+  722,
+  609,
+  905
+ ],
+ "size": [
+  142,
+  183
+ ],
+ "depth_scale_px": 34.792781829833984,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1231,
+ "faces": 2399,
+ "match": {
+  "round": 21,
+  "points": 1131,
+  "faces": 2399,
+  "score": 0.9337,
+  "iou": 0.9812,
+  "colour": 0.8862,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 58
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 123,
+   "faces": 572,
+   "score": 0.7377,
+   "iou": 0.8662,
+   "colour": 0.6092
+  },
+  {
+   "round": 1,
+   "points": 137,
+   "faces": 600,
+   "score": 0.7695,
+   "iou": 0.8995,
+   "colour": 0.6395
+  },
+  {
+   "round": 2,
+   "points": 153,
+   "faces": 622,
+   "score": 0.778,
+   "iou": 0.9105,
+   "colour": 0.6454
+  },
+  {
+   "round": 3,
+   "points": 171,
+   "faces": 648,
+   "score": 0.7844,
+   "iou": 0.9158,
+   "colour": 0.653
+  },
+  {
+   "round": 4,
+   "points": 191,
+   "faces": 687,
+   "score": 0.7913,
+   "iou": 0.9225,
+   "colour": 0.6601
+  },
+  {
+   "round": 5,
+   "points": 213,
+   "faces": 729,
+   "score": 0.8003,
+   "iou": 0.9271,
+   "colour": 0.6736
+  },
+  {
+   "round": 6,
+   "points": 238,
+   "faces": 781,
+   "score": 0.8055,
+   "iou": 0.9283,
+   "colour": 0.6827
+  },
+  {
+   "round": 7,
+   "points": 266,
+   "faces": 836,
+   "score": 0.8135,
+   "iou": 0.9349,
+   "colour": 0.6921
+  },
+  {
+   "round": 8,
+   "points": 297,
+   "faces": 896,
+   "score": 0.8231,
+   "iou": 0.939,
+   "colour": 0.7073
+  },
+  {
+   "round": 9,
+   "points": 332,
+   "faces": 961,
+   "score": 0.8349,
+   "iou": 0.9437,
+   "colour": 0.726
+  },
+  {
+   "round": 10,
+   "points": 371,
+   "faces": 1030,
+   "score": 0.8437,
+   "iou": 0.949,
+   "colour": 0.7385
+  },
+  {
+   "round": 11,
+   "points": 415,
+   "faces": 1104,
+   "score": 0.857,
+   "iou": 0.9572,
+   "colour": 0.7568
+  },
+  {
+   "round": 12,
+   "points": 464,
+   "faces": 1192,
+   "score": 0.8662,
+   "iou": 0.9592,
+   "colour": 0.7733
+  },
+  {
+   "round": 13,
+   "points": 519,
+   "faces": 1288,
+   "score": 0.8722,
+   "iou": 0.9641,
+   "colour": 0.7804
+  },
+  {
+   "round": 14,
+   "points": 581,
+   "faces": 1396,
+   "score": 0.8859,
+   "iou": 0.9718,
+   "colour": 0.8
+  },
+  {
+   "round": 15,
+   "points": 650,
+   "faces": 1514,
+   "score": 0.8947,
+   "iou": 0.9722,
+   "colour": 0.8173
+  },
+  {
+   "round": 16,
+   "points": 728,
+   "faces": 1657,
+   "score": 0.9084,
+   "iou": 0.978,
+   "colour": 0.8389
+  },
+  {
+   "round": 17,
+   "points": 815,
+   "faces": 1811,
+   "score": 0.9134,
+   "iou": 0.9771,
+   "colour": 0.8498
+  },
+  {
+   "round": 18,
+   "points": 912,
+   "faces": 1991,
+   "score": 0.9231,
+   "iou": 0.982,
+   "colour": 0.8642
+  },
+  {
+   "round": 19,
+   "points": 1021,
+   "faces": 2192,
+   "score": 0.9276,
+   "iou": 0.9809,
+   "colour": 0.8743
+  },
+  {
+   "round": 20,
+   "points": 1125,
+   "faces": 2387,
+   "score": 0.9315,
+   "iou": 0.979,
+   "colour": 0.8839
+  },
+  {
+   "round": 21,
+   "points": 1131,
+   "faces": 2399,
+   "score": 0.9337,
+   "iou": 0.9812,
+   "colour": 0.8862,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 58
+  }
+ ]
+}

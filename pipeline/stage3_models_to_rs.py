@@ -82,6 +82,8 @@ def main():
     ap.add_argument('--up', default='y', help="source up axis: x, y, z, -x, -y, -z (Blender exports: 'z')")
     ap.add_argument('--forward', default='z', help="source axis the item's front faces (Blender: '-y')")
     ap.add_argument('--max-faces', type=int, default=2400)
+    ap.add_argument('--shading', choices=['smooth', 'flat'], default='smooth',
+                    help='RS render type: smooth (Gouraud, lit per vertex) or flat (faceted)')
     ap.add_argument('--fill', type=float, default=1.0, help='fraction of the slot box to fill')
     ap.add_argument('--base-model-id', type=int, default=61000)
     ap.add_argument('--only', default='')
@@ -95,11 +97,12 @@ def main():
         slot = a.slot or meta.get('slot') or 'weapon'
         src = load_mesh(path)
         m = convert(src, slot, a.max_faces, a.up, a.forward, a.fill, from_design='crop' in meta)
-        data = rsformat.encode(m)
+        data = rsformat.encode(m, smooth=a.shading == 'smooth')
         dec = rsformat.decode(data)
         V = dec['V'] * np.array([1, -1, -1])
         if not (np.array_equal(V, m.V) and np.array_equal(dec['F'], m.F)
-                and dec['colors'] == rsformat.rgb_to_hsl16(m.C)):
+                and dec['colors'] == rsformat.rgb_to_hsl16(m.C)
+                and [p - min(dec['priorities']) for p in dec['priorities']] == m.layers()):
             raise AssertionError('%s: decoded model differs from the encoded mesh' % code)
         mid = a.base_model_id + k
         d = os.path.join(a.out, code)
@@ -112,9 +115,11 @@ def main():
         cols = [rsformat.hsl16_to_rgb(h) for h in dec['colors']]
         v = VIEW.get(slot, dict(yaw=-32, pitch=16))
         Vr = rot_z(V, v.get('roll', 0))
-        img = render.render(Vr, dec['F'], cols, None, size=360, yaw=v['yaw'], pitch=v['pitch'])
+        look = dict(smooth=dec['render_types'][0] == 0 if dec['render_types'] else False,
+                    layers=[p - min(dec['priorities']) for p in dec['priorities']])
+        img = render.render(Vr, dec['F'], cols, None, size=360, yaw=v['yaw'], pitch=v['pitch'], **look)
         img.save(os.path.join(d, 'preview.png'))
-        render.item_sprite(render.render_rgba(Vr, dec['F'], cols, 256, v['yaw'], v['pitch'])).save(
+        render.item_sprite(render.render_rgba(Vr, dec['F'], cols, 256, v['yaw'], v['pitch'], **look)).save(
             os.path.join(d, 'sprite.png'))
         tiles.append(render.label(img.copy(), code, meta.get('name', code)))
         lo, hi = m.bounds()

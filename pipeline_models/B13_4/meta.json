@@ -1,0 +1,239 @@
+{
+ "code": "B13_4",
+ "name": "Verdant shard amulet",
+ "slot": "neck",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  52,
+  1606,
+  171,
+  1783
+ ],
+ "size": [
+  119,
+  177
+ ],
+ "depth_scale_px": 36.09760284423828,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1193,
+ "faces": 2399,
+ "match": {
+  "round": 24,
+  "points": 1108,
+  "faces": 2399,
+  "score": 0.9068,
+  "iou": 0.9806,
+  "colour": 0.833,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 86,
+   "faces": 492,
+   "score": 0.6107,
+   "iou": 0.8776,
+   "colour": 0.3438
+  },
+  {
+   "round": 1,
+   "points": 98,
+   "faces": 512,
+   "score": 0.6323,
+   "iou": 0.903,
+   "colour": 0.3615
+  },
+  {
+   "round": 2,
+   "points": 110,
+   "faces": 532,
+   "score": 0.6431,
+   "iou": 0.9171,
+   "colour": 0.3692
+  },
+  {
+   "round": 3,
+   "points": 123,
+   "faces": 558,
+   "score": 0.6578,
+   "iou": 0.9171,
+   "colour": 0.3986
+  },
+  {
+   "round": 4,
+   "points": 137,
+   "faces": 582,
+   "score": 0.6578,
+   "iou": 0.9091,
+   "colour": 0.4065
+  },
+  {
+   "round": 5,
+   "points": 153,
+   "faces": 607,
+   "score": 0.663,
+   "iou": 0.9201,
+   "colour": 0.406
+  },
+  {
+   "round": 6,
+   "points": 171,
+   "faces": 641,
+   "score": 0.6756,
+   "iou": 0.9227,
+   "colour": 0.4284
+  },
+  {
+   "round": 7,
+   "points": 191,
+   "faces": 680,
+   "score": 0.6868,
+   "iou": 0.9258,
+   "colour": 0.4478
+  },
+  {
+   "round": 8,
+   "points": 213,
+   "faces": 725,
+   "score": 0.7092,
+   "iou": 0.9296,
+   "colour": 0.4888
+  },
+  {
+   "round": 9,
+   "points": 238,
+   "faces": 775,
+   "score": 0.7271,
+   "iou": 0.9311,
+   "colour": 0.523
+  },
+  {
+   "round": 10,
+   "points": 266,
+   "faces": 826,
+   "score": 0.7473,
+   "iou": 0.9391,
+   "colour": 0.5556
+  },
+  {
+   "round": 11,
+   "points": 297,
+   "faces": 884,
+   "score": 0.761,
+   "iou": 0.9494,
+   "colour": 0.5726
+  },
+  {
+   "round": 12,
+   "points": 332,
+   "faces": 952,
+   "score": 0.7796,
+   "iou": 0.9546,
+   "colour": 0.6046
+  },
+  {
+   "round": 13,
+   "points": 371,
+   "faces": 1022,
+   "score": 0.7936,
+   "iou": 0.9579,
+   "colour": 0.6294
+  },
+  {
+   "round": 14,
+   "points": 415,
+   "faces": 1102,
+   "score": 0.8014,
+   "iou": 0.9573,
+   "colour": 0.6455
+  },
+  {
+   "round": 15,
+   "points": 464,
+   "faces": 1194,
+   "score": 0.8174,
+   "iou": 0.9603,
+   "colour": 0.6744
+  },
+  {
+   "round": 16,
+   "points": 519,
+   "faces": 1295,
+   "score": 0.8325,
+   "iou": 0.9626,
+   "colour": 0.7024
+  },
+  {
+   "round": 17,
+   "points": 581,
+   "faces": 1412,
+   "score": 0.8452,
+   "iou": 0.968,
+   "colour": 0.7225
+  },
+  {
+   "round": 18,
+   "points": 650,
+   "faces": 1540,
+   "score": 0.8564,
+   "iou": 0.969,
+   "colour": 0.7439
+  },
+  {
+   "round": 19,
+   "points": 728,
+   "faces": 1688,
+   "score": 0.8662,
+   "iou": 0.9668,
+   "colour": 0.7656
+  },
+  {
+   "round": 20,
+   "points": 815,
+   "faces": 1837,
+   "score": 0.8759,
+   "iou": 0.9755,
+   "colour": 0.7762
+  },
+  {
+   "round": 21,
+   "points": 912,
+   "faces": 2021,
+   "score": 0.8925,
+   "iou": 0.9785,
+   "colour": 0.8064
+  },
+  {
+   "round": 22,
+   "points": 1021,
+   "faces": 2233,
+   "score": 0.9031,
+   "iou": 0.9798,
+   "colour": 0.8265
+  },
+  {
+   "round": 23,
+   "points": 1104,
+   "faces": 2391,
+   "score": 0.9062,
+   "iou": 0.9801,
+   "colour": 0.8323
+  },
+  {
+   "round": 24,
+   "points": 1108,
+   "faces": 2399,
+   "score": 0.9068,
+   "iou": 0.9806,
+   "colour": 0.833,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 0
+  }
+ ]
+}

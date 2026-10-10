@@ -1,0 +1,231 @@
+{
+ "code": "B04_6",
+ "name": "Bone bracers",
+ "slot": "hands",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  433,
+  547,
+  595,
+  714
+ ],
+ "size": [
+  162,
+  167
+ ],
+ "depth_scale_px": 31.23936653137207,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1222,
+ "faces": 2400,
+ "match": {
+  "round": 23,
+  "points": 1067,
+  "faces": 2399,
+  "score": 0.8012,
+  "iou": 0.9719,
+  "colour": 0.6305,
+  "stop": "budget",
+  "back_faces": 361,
+  "line_faces": 32
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 94,
+   "faces": 527,
+   "score": 0.575,
+   "iou": 0.8777,
+   "colour": 0.2723
+  },
+  {
+   "round": 1,
+   "points": 106,
+   "faces": 548,
+   "score": 0.5825,
+   "iou": 0.8911,
+   "colour": 0.2739
+  },
+  {
+   "round": 2,
+   "points": 118,
+   "faces": 570,
+   "score": 0.5995,
+   "iou": 0.9094,
+   "colour": 0.2895
+  },
+  {
+   "round": 3,
+   "points": 132,
+   "faces": 596,
+   "score": 0.6093,
+   "iou": 0.9218,
+   "colour": 0.2968
+  },
+  {
+   "round": 4,
+   "points": 147,
+   "faces": 620,
+   "score": 0.6173,
+   "iou": 0.9332,
+   "colour": 0.3015
+  },
+  {
+   "round": 5,
+   "points": 164,
+   "faces": 647,
+   "score": 0.6227,
+   "iou": 0.9393,
+   "colour": 0.3061
+  },
+  {
+   "round": 6,
+   "points": 183,
+   "faces": 683,
+   "score": 0.6342,
+   "iou": 0.9401,
+   "colour": 0.3284
+  },
+  {
+   "round": 7,
+   "points": 204,
+   "faces": 725,
+   "score": 0.636,
+   "iou": 0.9415,
+   "colour": 0.3304
+  },
+  {
+   "round": 8,
+   "points": 228,
+   "faces": 774,
+   "score": 0.6411,
+   "iou": 0.9424,
+   "colour": 0.3397
+  },
+  {
+   "round": 9,
+   "points": 255,
+   "faces": 827,
+   "score": 0.6476,
+   "iou": 0.9426,
+   "colour": 0.3525
+  },
+  {
+   "round": 10,
+   "points": 285,
+   "faces": 886,
+   "score": 0.653,
+   "iou": 0.9437,
+   "colour": 0.3624
+  },
+  {
+   "round": 11,
+   "points": 319,
+   "faces": 950,
+   "score": 0.6581,
+   "iou": 0.9413,
+   "colour": 0.3748
+  },
+  {
+   "round": 12,
+   "points": 357,
+   "faces": 1025,
+   "score": 0.6681,
+   "iou": 0.9431,
+   "colour": 0.3932
+  },
+  {
+   "round": 13,
+   "points": 399,
+   "faces": 1108,
+   "score": 0.674,
+   "iou": 0.9395,
+   "colour": 0.4084
+  },
+  {
+   "round": 14,
+   "points": 446,
+   "faces": 1198,
+   "score": 0.6855,
+   "iou": 0.9399,
+   "colour": 0.4312
+  },
+  {
+   "round": 15,
+   "points": 499,
+   "faces": 1301,
+   "score": 0.6945,
+   "iou": 0.9452,
+   "colour": 0.4437
+  },
+  {
+   "round": 16,
+   "points": 558,
+   "faces": 1420,
+   "score": 0.7087,
+   "iou": 0.9481,
+   "colour": 0.4693
+  },
+  {
+   "round": 17,
+   "points": 624,
+   "faces": 1549,
+   "score": 0.7278,
+   "iou": 0.9534,
+   "colour": 0.5022
+  },
+  {
+   "round": 18,
+   "points": 698,
+   "faces": 1688,
+   "score": 0.7452,
+   "iou": 0.9564,
+   "colour": 0.5339
+  },
+  {
+   "round": 19,
+   "points": 781,
+   "faces": 1848,
+   "score": 0.7538,
+   "iou": 0.9551,
+   "colour": 0.5525
+  },
+  {
+   "round": 20,
+   "points": 874,
+   "faces": 2028,
+   "score": 0.7749,
+   "iou": 0.9659,
+   "colour": 0.584
+  },
+  {
+   "round": 21,
+   "points": 978,
+   "faces": 2225,
+   "score": 0.788,
+   "iou": 0.9682,
+   "colour": 0.6078
+  },
+  {
+   "round": 22,
+   "points": 1065,
+   "faces": 2395,
+   "score": 0.8003,
+   "iou": 0.9709,
+   "colour": 0.6298
+  },
+  {
+   "round": 23,
+   "points": 1067,
+   "faces": 2399,
+   "score": 0.8012,
+   "iou": 0.9719,
+   "colour": 0.6305,
+   "stop": "budget",
+   "back_faces": 361,
+   "line_faces": 32
+  }
+ ]
+}

@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 """Build every redesign into game-ready assets.
 
-  python3 build.py [--base-model-id 60000] [--base-item-id 30000] [--only B06]
+  python3 build.py [--source pipeline|handbuilt] [--base-model-id 60000] [--base-item-id 30000] [--only B06]
+
+Sources:
+  pipeline   (default) the models refined from the design sheet
+             (pipeline_models/<code>/model.obj, made by
+             pipeline/refine_to_match.py): true design colours with shadows
+             and texture, detail-line strips drawn over the surface (higher
+             face priority), smooth (Gouraud) shading
+  handbuilt  the procedural models in rsgen/items.py (flat shading)
 
 For each item this writes:
   out/models/<id>.dat  (+ .gz)  RS classic-format models: an inventory model
@@ -32,6 +40,8 @@ from rsgen.items import ITEMS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'out')
+PIPELINE_MODELS = os.path.join(ROOT, 'pipeline_models')
+MAX_FACES = 2400  # per model; tests/test_assets.py allows up to 3000
 
 # OSRS / 317 equipment slot indices
 SLOT_ID = {'head': 0, 'cape': 1, 'neck': 2, 'weapon': 3, 'body': 4, 'shield': 5, 'legs': 7,
@@ -59,14 +69,28 @@ def hidden_kits(it):
     return list(it['hides'])
 
 
-def write_model(mesh, model_id):
+def pipeline_build(code, slot, models_dir=PIPELINE_MODELS):
+    """Worn-placement mesh for a pipeline model (same fitting as stage 3)."""
+    sys.path.insert(0, os.path.join(ROOT, 'pipeline'))
+    from rsgen.meshio import load_mesh
+    from stage3_models_to_rs import convert
+    path = os.path.join(models_dir, code, 'model.obj')
+    if not os.path.exists(path):
+        raise SystemExit('no pipeline model %s - run pipeline/refine_to_match.py --out pipeline_models '
+                         '(or build with --source handbuilt)' % path)
+    return convert(load_mesh(path), slot, MAX_FACES, from_design=True)
+
+
+def write_model(mesh, model_id, smooth=False):
     """Encode, verify by decoding, write .dat/.gz. Returns (decoded, bytes)."""
-    data = rsformat.encode(mesh)
+    data = rsformat.encode(mesh, smooth=smooth)
     dec = rsformat.decode(data)
     V = dec['V'] * np.array([1, -1, -1])
+    prio = dec['priorities']
     if not (np.array_equal(dec['F'], mesh.F) and np.array_equal(V, mesh.V)
             and dec['colors'] == rsformat.rgb_to_hsl16(mesh.C)
-            and dec['render_types'] == [1] * len(mesh.F)):
+            and dec['render_types'] == [0 if smooth else 1] * len(mesh.F)
+            and [p - min(prio, default=0) for p in prio] == mesh.layers()):
         raise AssertionError('round-trip mismatch for model %d' % model_id)
     with open(os.path.join(OUT, 'models', '%d.dat' % model_id), 'wb') as f:
         f.write(data)
@@ -82,7 +106,12 @@ def main():
     ap.add_argument('--base-item-id', type=int, default=30000, help='first item id')
     ap.add_argument('--only', default='', help='build only codes starting with this prefix (no manifest)')
     ap.add_argument('--size', type=int, default=480, help='preview render size')
+    ap.add_argument('--source', choices=['pipeline', 'handbuilt'], default='pipeline',
+                    help='which models to package (see above)')
+    ap.add_argument('--models', default=PIPELINE_MODELS, help='pipeline models folder')
     a = ap.parse_args()
+    smooth = a.source == 'pipeline'
+
 
     if not a.only and os.path.isdir(OUT):
         shutil.rmtree(OUT)  # never leave stale ids from an older numbering behind
@@ -93,14 +122,17 @@ def main():
     for idx, it in enumerate(ITEMS):
         if not it['code'].startswith(a.only):
             continue
-        worn = rsformat.clean(it['build']())
+        if a.source == 'pipeline':
+            worn = pipeline_build(it['code'], it['slot'], a.models)
+        else:
+            worn = rsformat.clean(it['build']())
         lo, hi = worn.bounds()
         centre = np.rint((lo + hi) / 2)
         inv = worn.copy().move(*(-centre))
         inv_id, worn_id = a.base_model_id + 2 * idx, a.base_model_id + 2 * idx + 1
         item_id = a.base_item_id + idx
-        dec_inv, data_inv = write_model(inv, inv_id)
-        dec_worn, data_worn = write_model(worn, worn_id)
+        dec_inv, data_inv = write_model(inv, inv_id, smooth)
+        dec_worn, data_worn = write_model(worn, worn_id, smooth)
 
         base = '%s_%s' % (it['code'], slug(it['name']))
         rsformat.write_obj(worn, os.path.join(OUT, 'obj', base + '.obj'), base)
@@ -109,9 +141,10 @@ def main():
         Vr = rot_z(dec_inv['V'] * np.array([1, -1, -1]), v.get('roll', 0))
         cols = [rsformat.hsl16_to_rgb(h) for h in dec_inv['colors']]
         yaw, pitch = v.get('yaw', -32), v.get('pitch', 16)
-        img = render.render(Vr, dec_inv['F'], cols, inv.G, size=a.size, yaw=yaw, pitch=pitch)
+        look = dict(smooth=smooth, layers=inv.layers())
+        img = render.render(Vr, dec_inv['F'], cols, inv.G, size=a.size, yaw=yaw, pitch=pitch, **look)
         img.save(os.path.join(OUT, 'renders', base + '.png'))
-        sprite = render.item_sprite(render.render_rgba(Vr, dec_inv['F'], cols, 256, yaw, pitch))
+        sprite = render.item_sprite(render.render_rgba(Vr, dec_inv['F'], cols, 256, yaw, pitch, **look))
         sprite.save(os.path.join(OUT, 'sprites', '%d.png' % item_id))
         tile = render.label(img.copy(), it['code'], it['name'])
         tiles.append(tile)
@@ -154,7 +187,8 @@ def main():
         os.path.join(OUT, 'sheets', 'SPRITES_x3.png'))
 
     with open(os.path.join(OUT, 'manifest.json'), 'w') as f:
-        json.dump(dict(format='rs-classic-model', base_model_id=a.base_model_id,
+        json.dump(dict(format='rs-classic-model', source=a.source, shading='smooth' if smooth else 'flat',
+                       base_model_id=a.base_model_id,
                        base_item_id=a.base_item_id, count=len(manifest), items=manifest), f, indent=1)
     write_defs(manifest)
     print('built %d items, %d models' % (len(manifest), 2 * len(manifest)))

@@ -1,0 +1,239 @@
+{
+ "code": "B03_4",
+ "name": "Necrotic twin mauls",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1298,
+  180,
+  1501,
+  354
+ ],
+ "size": [
+  203,
+  174
+ ],
+ "depth_scale_px": 41.118343353271484,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1188,
+ "faces": 2400,
+ "match": {
+  "round": 24,
+  "points": 1091,
+  "faces": 2400,
+  "score": 0.8424,
+  "iou": 0.9804,
+  "colour": 0.7043,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 89,
+   "faces": 496,
+   "score": 0.59,
+   "iou": 0.87,
+   "colour": 0.31
+  },
+  {
+   "round": 1,
+   "points": 101,
+   "faces": 518,
+   "score": 0.6268,
+   "iou": 0.9124,
+   "colour": 0.3411
+  },
+  {
+   "round": 2,
+   "points": 113,
+   "faces": 541,
+   "score": 0.6377,
+   "iou": 0.928,
+   "colour": 0.3474
+  },
+  {
+   "round": 3,
+   "points": 126,
+   "faces": 560,
+   "score": 0.6524,
+   "iou": 0.9355,
+   "colour": 0.3692
+  },
+  {
+   "round": 4,
+   "points": 141,
+   "faces": 586,
+   "score": 0.6611,
+   "iou": 0.9365,
+   "colour": 0.3858
+  },
+  {
+   "round": 5,
+   "points": 157,
+   "faces": 616,
+   "score": 0.6647,
+   "iou": 0.933,
+   "colour": 0.3963
+  },
+  {
+   "round": 6,
+   "points": 175,
+   "faces": 651,
+   "score": 0.6738,
+   "iou": 0.9393,
+   "colour": 0.4083
+  },
+  {
+   "round": 7,
+   "points": 196,
+   "faces": 691,
+   "score": 0.6802,
+   "iou": 0.9362,
+   "colour": 0.4242
+  },
+  {
+   "round": 8,
+   "points": 219,
+   "faces": 737,
+   "score": 0.6883,
+   "iou": 0.9398,
+   "colour": 0.4369
+  },
+  {
+   "round": 9,
+   "points": 245,
+   "faces": 787,
+   "score": 0.6902,
+   "iou": 0.9362,
+   "colour": 0.4442
+  },
+  {
+   "round": 10,
+   "points": 274,
+   "faces": 842,
+   "score": 0.7006,
+   "iou": 0.9421,
+   "colour": 0.4591
+  },
+  {
+   "round": 11,
+   "points": 306,
+   "faces": 904,
+   "score": 0.7065,
+   "iou": 0.9402,
+   "colour": 0.4728
+  },
+  {
+   "round": 12,
+   "points": 342,
+   "faces": 973,
+   "score": 0.706,
+   "iou": 0.9327,
+   "colour": 0.4793
+  },
+  {
+   "round": 13,
+   "points": 383,
+   "faces": 1053,
+   "score": 0.723,
+   "iou": 0.9412,
+   "colour": 0.5047
+  },
+  {
+   "round": 14,
+   "points": 428,
+   "faces": 1142,
+   "score": 0.7364,
+   "iou": 0.9477,
+   "colour": 0.525
+  },
+  {
+   "round": 15,
+   "points": 479,
+   "faces": 1241,
+   "score": 0.7466,
+   "iou": 0.9464,
+   "colour": 0.5467
+  },
+  {
+   "round": 16,
+   "points": 536,
+   "faces": 1354,
+   "score": 0.7668,
+   "iou": 0.9556,
+   "colour": 0.578
+  },
+  {
+   "round": 17,
+   "points": 600,
+   "faces": 1475,
+   "score": 0.7784,
+   "iou": 0.9593,
+   "colour": 0.5975
+  },
+  {
+   "round": 18,
+   "points": 672,
+   "faces": 1614,
+   "score": 0.7922,
+   "iou": 0.9648,
+   "colour": 0.6196
+  },
+  {
+   "round": 19,
+   "points": 752,
+   "faces": 1767,
+   "score": 0.8048,
+   "iou": 0.9693,
+   "colour": 0.6403
+  },
+  {
+   "round": 20,
+   "points": 842,
+   "faces": 1939,
+   "score": 0.8214,
+   "iou": 0.9753,
+   "colour": 0.6675
+  },
+  {
+   "round": 21,
+   "points": 943,
+   "faces": 2132,
+   "score": 0.8265,
+   "iou": 0.9735,
+   "colour": 0.6796
+  },
+  {
+   "round": 22,
+   "points": 1056,
+   "faces": 2333,
+   "score": 0.8366,
+   "iou": 0.9793,
+   "colour": 0.6939
+  },
+  {
+   "round": 23,
+   "points": 1089,
+   "faces": 2396,
+   "score": 0.8412,
+   "iou": 0.9807,
+   "colour": 0.7017
+  },
+  {
+   "round": 24,
+   "points": 1091,
+   "faces": 2400,
+   "score": 0.8424,
+   "iou": 0.9804,
+   "colour": 0.7043,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 0
+  }
+ ]
+}

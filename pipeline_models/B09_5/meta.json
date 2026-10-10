@@ -1,0 +1,248 @@
+{
+ "code": "B09_5",
+ "name": "Seraph crossbow",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1491,
+  910,
+  1694,
+  1045
+ ],
+ "size": [
+  203,
+  135
+ ],
+ "depth_scale_px": 50.59988021850586,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1201,
+ "faces": 2400,
+ "match": {
+  "round": 25,
+  "points": 1089,
+  "faces": 2399,
+  "score": 0.795,
+  "iou": 0.979,
+  "colour": 0.6111,
+  "stop": "budget",
+  "back_faces": 361,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 90,
+   "faces": 499,
+   "score": 0.5659,
+   "iou": 0.9427,
+   "colour": 0.189
+  },
+  {
+   "round": 1,
+   "points": 102,
+   "faces": 517,
+   "score": 0.5522,
+   "iou": 0.9081,
+   "colour": 0.1963,
+   "rolled_back": true
+  },
+  {
+   "round": 2,
+   "points": 102,
+   "faces": 517,
+   "score": 0.5673,
+   "iou": 0.9376,
+   "colour": 0.197
+  },
+  {
+   "round": 3,
+   "points": 114,
+   "faces": 541,
+   "score": 0.5819,
+   "iou": 0.9493,
+   "colour": 0.2145
+  },
+  {
+   "round": 4,
+   "points": 127,
+   "faces": 560,
+   "score": 0.5887,
+   "iou": 0.9495,
+   "colour": 0.2278
+  },
+  {
+   "round": 5,
+   "points": 142,
+   "faces": 585,
+   "score": 0.5924,
+   "iou": 0.9453,
+   "colour": 0.2394
+  },
+  {
+   "round": 6,
+   "points": 159,
+   "faces": 616,
+   "score": 0.5963,
+   "iou": 0.9452,
+   "colour": 0.2473
+  },
+  {
+   "round": 7,
+   "points": 178,
+   "faces": 652,
+   "score": 0.6067,
+   "iou": 0.947,
+   "colour": 0.2665
+  },
+  {
+   "round": 8,
+   "points": 199,
+   "faces": 694,
+   "score": 0.6091,
+   "iou": 0.947,
+   "colour": 0.2712
+  },
+  {
+   "round": 9,
+   "points": 222,
+   "faces": 740,
+   "score": 0.6201,
+   "iou": 0.9472,
+   "colour": 0.293
+  },
+  {
+   "round": 10,
+   "points": 248,
+   "faces": 790,
+   "score": 0.6297,
+   "iou": 0.9464,
+   "colour": 0.313
+  },
+  {
+   "round": 11,
+   "points": 277,
+   "faces": 844,
+   "score": 0.6404,
+   "iou": 0.9442,
+   "colour": 0.3367
+  },
+  {
+   "round": 12,
+   "points": 310,
+   "faces": 907,
+   "score": 0.649,
+   "iou": 0.9465,
+   "colour": 0.3514
+  },
+  {
+   "round": 13,
+   "points": 347,
+   "faces": 982,
+   "score": 0.6616,
+   "iou": 0.9496,
+   "colour": 0.3735
+  },
+  {
+   "round": 14,
+   "points": 388,
+   "faces": 1064,
+   "score": 0.6732,
+   "iou": 0.9496,
+   "colour": 0.3967
+  },
+  {
+   "round": 15,
+   "points": 434,
+   "faces": 1152,
+   "score": 0.6887,
+   "iou": 0.9482,
+   "colour": 0.4293
+  },
+  {
+   "round": 16,
+   "points": 486,
+   "faces": 1253,
+   "score": 0.6988,
+   "iou": 0.9474,
+   "colour": 0.4502
+  },
+  {
+   "round": 17,
+   "points": 544,
+   "faces": 1367,
+   "score": 0.7126,
+   "iou": 0.9503,
+   "colour": 0.4748
+  },
+  {
+   "round": 18,
+   "points": 609,
+   "faces": 1496,
+   "score": 0.7246,
+   "iou": 0.9536,
+   "colour": 0.4956
+  },
+  {
+   "round": 19,
+   "points": 682,
+   "faces": 1639,
+   "score": 0.7339,
+   "iou": 0.9569,
+   "colour": 0.5108
+  },
+  {
+   "round": 20,
+   "points": 763,
+   "faces": 1792,
+   "score": 0.744,
+   "iou": 0.9595,
+   "colour": 0.5285
+  },
+  {
+   "round": 21,
+   "points": 854,
+   "faces": 1966,
+   "score": 0.7637,
+   "iou": 0.9656,
+   "colour": 0.5618
+  },
+  {
+   "round": 22,
+   "points": 956,
+   "faces": 2152,
+   "score": 0.7792,
+   "iou": 0.9716,
+   "colour": 0.5869
+  },
+  {
+   "round": 23,
+   "points": 1070,
+   "faces": 2364,
+   "score": 0.7923,
+   "iou": 0.9795,
+   "colour": 0.6051
+  },
+  {
+   "round": 24,
+   "points": 1088,
+   "faces": 2397,
+   "score": 0.7947,
+   "iou": 0.979,
+   "colour": 0.6104
+  },
+  {
+   "round": 25,
+   "points": 1089,
+   "faces": 2399,
+   "score": 0.795,
+   "iou": 0.979,
+   "colour": 0.6111,
+   "stop": "budget",
+   "back_faces": 361,
+   "line_faces": 0
+  }
+ ]
+}

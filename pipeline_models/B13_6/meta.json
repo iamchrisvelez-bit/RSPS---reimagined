@@ -1,0 +1,223 @@
+{
+ "code": "B13_6",
+ "name": "Magma cape",
+ "slot": "cape",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  409,
+  1612,
+  598,
+  1800
+ ],
+ "size": [
+  189,
+  188
+ ],
+ "depth_scale_px": 78.73658752441406,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1361,
+ "faces": 2399,
+ "match": {
+  "round": 22,
+  "points": 944,
+  "faces": 2400,
+  "score": 0.7712,
+  "iou": 0.9748,
+  "colour": 0.5676,
+  "stop": "budget",
+  "back_faces": 359,
+  "line_faces": 200
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 89,
+   "faces": 698,
+   "score": 0.6909,
+   "iou": 0.9559,
+   "colour": 0.426
+  },
+  {
+   "round": 1,
+   "points": 101,
+   "faces": 720,
+   "score": 0.703,
+   "iou": 0.9694,
+   "colour": 0.4366
+  },
+  {
+   "round": 2,
+   "points": 113,
+   "faces": 739,
+   "score": 0.7028,
+   "iou": 0.9663,
+   "colour": 0.4394
+  },
+  {
+   "round": 3,
+   "points": 126,
+   "faces": 767,
+   "score": 0.7094,
+   "iou": 0.9738,
+   "colour": 0.445
+  },
+  {
+   "round": 4,
+   "points": 141,
+   "faces": 797,
+   "score": 0.7111,
+   "iou": 0.9749,
+   "colour": 0.4474
+  },
+  {
+   "round": 5,
+   "points": 157,
+   "faces": 829,
+   "score": 0.7137,
+   "iou": 0.9749,
+   "colour": 0.4525
+  },
+  {
+   "round": 6,
+   "points": 175,
+   "faces": 865,
+   "score": 0.7148,
+   "iou": 0.9749,
+   "colour": 0.4547
+  },
+  {
+   "round": 7,
+   "points": 196,
+   "faces": 907,
+   "score": 0.7188,
+   "iou": 0.9749,
+   "colour": 0.4627
+  },
+  {
+   "round": 8,
+   "points": 219,
+   "faces": 953,
+   "score": 0.7286,
+   "iou": 0.9749,
+   "colour": 0.4823
+  },
+  {
+   "round": 9,
+   "points": 245,
+   "faces": 1005,
+   "score": 0.7341,
+   "iou": 0.9749,
+   "colour": 0.4934
+  },
+  {
+   "round": 10,
+   "points": 274,
+   "faces": 1063,
+   "score": 0.7353,
+   "iou": 0.9749,
+   "colour": 0.4957
+  },
+  {
+   "round": 11,
+   "points": 306,
+   "faces": 1127,
+   "score": 0.7379,
+   "iou": 0.9749,
+   "colour": 0.501
+  },
+  {
+   "round": 12,
+   "points": 342,
+   "faces": 1199,
+   "score": 0.7423,
+   "iou": 0.9749,
+   "colour": 0.5097
+  },
+  {
+   "round": 13,
+   "points": 383,
+   "faces": 1281,
+   "score": 0.7448,
+   "iou": 0.9749,
+   "colour": 0.5148
+  },
+  {
+   "round": 14,
+   "points": 428,
+   "faces": 1371,
+   "score": 0.7492,
+   "iou": 0.9749,
+   "colour": 0.5235
+  },
+  {
+   "round": 15,
+   "points": 479,
+   "faces": 1473,
+   "score": 0.7499,
+   "iou": 0.9749,
+   "colour": 0.525
+  },
+  {
+   "round": 16,
+   "points": 536,
+   "faces": 1587,
+   "score": 0.7522,
+   "iou": 0.9749,
+   "colour": 0.5295
+  },
+  {
+   "round": 17,
+   "points": 600,
+   "faces": 1715,
+   "score": 0.7546,
+   "iou": 0.9749,
+   "colour": 0.5343
+  },
+  {
+   "round": 18,
+   "points": 672,
+   "faces": 1859,
+   "score": 0.7566,
+   "iou": 0.9749,
+   "colour": 0.5383
+  },
+  {
+   "round": 19,
+   "points": 752,
+   "faces": 2019,
+   "score": 0.7594,
+   "iou": 0.9749,
+   "colour": 0.5439
+  },
+  {
+   "round": 20,
+   "points": 842,
+   "faces": 2199,
+   "score": 0.7658,
+   "iou": 0.9749,
+   "colour": 0.5568
+  },
+  {
+   "round": 21,
+   "points": 942,
+   "faces": 2396,
+   "score": 0.7711,
+   "iou": 0.9748,
+   "colour": 0.5674
+  },
+  {
+   "round": 22,
+   "points": 944,
+   "faces": 2400,
+   "score": 0.7712,
+   "iou": 0.9748,
+   "colour": 0.5676,
+   "stop": "budget",
+   "back_faces": 359,
+   "line_faces": 200
+  }
+ ]
+}

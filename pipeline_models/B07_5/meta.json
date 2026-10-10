@@ -1,0 +1,223 @@
+{
+ "code": "B07_5",
+ "name": "Valkyrie winged helm",
+ "slot": "head",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  122,
+  898,
+  267,
+  1068
+ ],
+ "size": [
+  145,
+  170
+ ],
+ "depth_scale_px": 64.42589569091797,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1268,
+ "faces": 2399,
+ "match": {
+  "round": 22,
+  "points": 1011,
+  "faces": 2399,
+  "score": 0.7808,
+  "iou": 0.9754,
+  "colour": 0.5861,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 88
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 89,
+   "faces": 587,
+   "score": 0.636,
+   "iou": 0.9543,
+   "colour": 0.3177
+  },
+  {
+   "round": 1,
+   "points": 101,
+   "faces": 609,
+   "score": 0.6404,
+   "iou": 0.9609,
+   "colour": 0.3199
+  },
+  {
+   "round": 2,
+   "points": 113,
+   "faces": 633,
+   "score": 0.6473,
+   "iou": 0.9679,
+   "colour": 0.3267
+  },
+  {
+   "round": 3,
+   "points": 126,
+   "faces": 652,
+   "score": 0.6495,
+   "iou": 0.9693,
+   "colour": 0.3296
+  },
+  {
+   "round": 4,
+   "points": 141,
+   "faces": 682,
+   "score": 0.6576,
+   "iou": 0.9697,
+   "colour": 0.3455
+  },
+  {
+   "round": 5,
+   "points": 157,
+   "faces": 714,
+   "score": 0.6635,
+   "iou": 0.9697,
+   "colour": 0.3573
+  },
+  {
+   "round": 6,
+   "points": 175,
+   "faces": 750,
+   "score": 0.6759,
+   "iou": 0.9697,
+   "colour": 0.3821
+  },
+  {
+   "round": 7,
+   "points": 196,
+   "faces": 792,
+   "score": 0.6749,
+   "iou": 0.9697,
+   "colour": 0.3801
+  },
+  {
+   "round": 8,
+   "points": 219,
+   "faces": 838,
+   "score": 0.6798,
+   "iou": 0.9697,
+   "colour": 0.3898
+  },
+  {
+   "round": 9,
+   "points": 245,
+   "faces": 890,
+   "score": 0.6947,
+   "iou": 0.9697,
+   "colour": 0.4198
+  },
+  {
+   "round": 10,
+   "points": 274,
+   "faces": 948,
+   "score": 0.6976,
+   "iou": 0.9697,
+   "colour": 0.4256
+  },
+  {
+   "round": 11,
+   "points": 306,
+   "faces": 1012,
+   "score": 0.6998,
+   "iou": 0.9697,
+   "colour": 0.4298
+  },
+  {
+   "round": 12,
+   "points": 342,
+   "faces": 1084,
+   "score": 0.7082,
+   "iou": 0.9697,
+   "colour": 0.4467
+  },
+  {
+   "round": 13,
+   "points": 383,
+   "faces": 1166,
+   "score": 0.7114,
+   "iou": 0.9699,
+   "colour": 0.4529
+  },
+  {
+   "round": 14,
+   "points": 428,
+   "faces": 1258,
+   "score": 0.7183,
+   "iou": 0.9711,
+   "colour": 0.4655
+  },
+  {
+   "round": 15,
+   "points": 479,
+   "faces": 1360,
+   "score": 0.7253,
+   "iou": 0.9726,
+   "colour": 0.4781
+  },
+  {
+   "round": 16,
+   "points": 536,
+   "faces": 1471,
+   "score": 0.7287,
+   "iou": 0.9693,
+   "colour": 0.488
+  },
+  {
+   "round": 17,
+   "points": 600,
+   "faces": 1597,
+   "score": 0.7369,
+   "iou": 0.9726,
+   "colour": 0.5011
+  },
+  {
+   "round": 18,
+   "points": 672,
+   "faces": 1738,
+   "score": 0.7431,
+   "iou": 0.9729,
+   "colour": 0.5132
+  },
+  {
+   "round": 19,
+   "points": 752,
+   "faces": 1891,
+   "score": 0.7523,
+   "iou": 0.9728,
+   "colour": 0.5318
+  },
+  {
+   "round": 20,
+   "points": 842,
+   "faces": 2065,
+   "score": 0.7632,
+   "iou": 0.9744,
+   "colour": 0.552
+  },
+  {
+   "round": 21,
+   "points": 943,
+   "faces": 2264,
+   "score": 0.7682,
+   "iou": 0.9757,
+   "colour": 0.5607
+  },
+  {
+   "round": 22,
+   "points": 1011,
+   "faces": 2399,
+   "score": 0.7808,
+   "iou": 0.9754,
+   "colour": 0.5861,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 88
+  }
+ ]
+}

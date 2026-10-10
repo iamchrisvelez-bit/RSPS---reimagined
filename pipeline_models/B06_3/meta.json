@@ -1,0 +1,256 @@
+{
+ "code": "B06_3",
+ "name": "Magma gauntlets",
+ "slot": "hands",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1377,
+  479,
+  1559,
+  608
+ ],
+ "size": [
+  182,
+  129
+ ],
+ "depth_scale_px": 45.38591766357422,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1243,
+ "faces": 2399,
+ "match": {
+  "round": 26,
+  "points": 1050,
+  "faces": 2399,
+  "score": 0.888,
+  "iou": 0.9867,
+  "colour": 0.7893,
+  "stop": "plateau",
+  "back_faces": 360,
+  "line_faces": 66
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 83,
+   "faces": 560,
+   "score": 0.729,
+   "iou": 0.9095,
+   "colour": 0.5486
+  },
+  {
+   "round": 1,
+   "points": 95,
+   "faces": 579,
+   "score": 0.7479,
+   "iou": 0.9304,
+   "colour": 0.5655
+  },
+  {
+   "round": 2,
+   "points": 107,
+   "faces": 603,
+   "score": 0.7616,
+   "iou": 0.9444,
+   "colour": 0.5787
+  },
+  {
+   "round": 3,
+   "points": 119,
+   "faces": 624,
+   "score": 0.7634,
+   "iou": 0.9464,
+   "colour": 0.5803
+  },
+  {
+   "round": 4,
+   "points": 133,
+   "faces": 652,
+   "score": 0.7637,
+   "iou": 0.9463,
+   "colour": 0.5811
+  },
+  {
+   "round": 5,
+   "points": 148,
+   "faces": 680,
+   "score": 0.7706,
+   "iou": 0.947,
+   "colour": 0.5942
+  },
+  {
+   "round": 6,
+   "points": 165,
+   "faces": 714,
+   "score": 0.7751,
+   "iou": 0.9472,
+   "colour": 0.6031
+  },
+  {
+   "round": 7,
+   "points": 184,
+   "faces": 751,
+   "score": 0.7783,
+   "iou": 0.9472,
+   "colour": 0.6094
+  },
+  {
+   "round": 8,
+   "points": 206,
+   "faces": 795,
+   "score": 0.7778,
+   "iou": 0.9472,
+   "colour": 0.6084
+  },
+  {
+   "round": 9,
+   "points": 230,
+   "faces": 843,
+   "score": 0.7789,
+   "iou": 0.9472,
+   "colour": 0.6107
+  },
+  {
+   "round": 10,
+   "points": 257,
+   "faces": 896,
+   "score": 0.7848,
+   "iou": 0.9481,
+   "colour": 0.6215
+  },
+  {
+   "round": 11,
+   "points": 287,
+   "faces": 954,
+   "score": 0.7849,
+   "iou": 0.9477,
+   "colour": 0.6222
+  },
+  {
+   "round": 12,
+   "points": 321,
+   "faces": 1019,
+   "score": 0.7884,
+   "iou": 0.9477,
+   "colour": 0.6291
+  },
+  {
+   "round": 13,
+   "points": 359,
+   "faces": 1094,
+   "score": 0.7965,
+   "iou": 0.9524,
+   "colour": 0.6405
+  },
+  {
+   "round": 14,
+   "points": 402,
+   "faces": 1181,
+   "score": 0.8023,
+   "iou": 0.9532,
+   "colour": 0.6514
+  },
+  {
+   "round": 15,
+   "points": 450,
+   "faces": 1276,
+   "score": 0.8148,
+   "iou": 0.9639,
+   "colour": 0.6657
+  },
+  {
+   "round": 16,
+   "points": 504,
+   "faces": 1381,
+   "score": 0.8244,
+   "iou": 0.9686,
+   "colour": 0.6803
+  },
+  {
+   "round": 17,
+   "points": 564,
+   "faces": 1498,
+   "score": 0.8266,
+   "iou": 0.9646,
+   "colour": 0.6886
+  },
+  {
+   "round": 18,
+   "points": 631,
+   "faces": 1624,
+   "score": 0.8465,
+   "iou": 0.9727,
+   "colour": 0.7203
+  },
+  {
+   "round": 19,
+   "points": 706,
+   "faces": 1764,
+   "score": 0.8554,
+   "iou": 0.9754,
+   "colour": 0.7354
+  },
+  {
+   "round": 20,
+   "points": 790,
+   "faces": 1920,
+   "score": 0.8673,
+   "iou": 0.9807,
+   "colour": 0.7538
+  },
+  {
+   "round": 21,
+   "points": 884,
+   "faces": 2097,
+   "score": 0.8746,
+   "iou": 0.9826,
+   "colour": 0.7666
+  },
+  {
+   "round": 22,
+   "points": 990,
+   "faces": 2291,
+   "score": 0.8855,
+   "iou": 0.9868,
+   "colour": 0.7842
+  },
+  {
+   "round": 23,
+   "points": 1044,
+   "faces": 2389,
+   "score": 0.8872,
+   "iou": 0.986,
+   "colour": 0.7883
+  },
+  {
+   "round": 24,
+   "points": 1049,
+   "faces": 2396,
+   "score": 0.8853,
+   "iou": 0.9842,
+   "colour": 0.7865,
+   "rolled_back": true
+  },
+  {
+   "round": 25,
+   "points": 1049,
+   "faces": 2397,
+   "score": 0.8876,
+   "iou": 0.9863,
+   "colour": 0.7889
+  },
+  {
+   "round": 26,
+   "points": 1050,
+   "faces": 2399,
+   "score": 0.888,
+   "iou": 0.9867,
+   "colour": 0.7893,
+   "stop": "plateau",
+   "back_faces": 360,
+   "line_faces": 66
+  }
+ ]
+}

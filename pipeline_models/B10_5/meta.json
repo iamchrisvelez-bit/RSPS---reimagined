@@ -1,0 +1,255 @@
+{
+ "code": "B10_5",
+ "name": "Runeweaver robe top",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  202,
+  1242,
+  406,
+  1424
+ ],
+ "size": [
+  204,
+  182
+ ],
+ "depth_scale_px": 84.33522033691406,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1392,
+ "faces": 2400,
+ "match": {
+  "round": 25,
+  "points": 910,
+  "faces": 2396,
+  "score": 0.7499,
+  "iou": 0.9756,
+  "colour": 0.5242
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 81,
+   "faces": 758,
+   "score": 0.6306,
+   "iou": 0.9691,
+   "colour": 0.2921
+  },
+  {
+   "round": 1,
+   "points": 93,
+   "faces": 778,
+   "score": 0.6419,
+   "iou": 0.9739,
+   "colour": 0.3099
+  },
+  {
+   "round": 2,
+   "points": 105,
+   "faces": 797,
+   "score": 0.6367,
+   "iou": 0.9679,
+   "colour": 0.3054,
+   "rolled_back": true
+  },
+  {
+   "round": 3,
+   "points": 105,
+   "faces": 800,
+   "score": 0.6393,
+   "iou": 0.9663,
+   "colour": 0.3124,
+   "rolled_back": true
+  },
+  {
+   "round": 4,
+   "points": 105,
+   "faces": 799,
+   "score": 0.6358,
+   "iou": 0.9643,
+   "colour": 0.3073,
+   "rolled_back": true
+  },
+  {
+   "round": 5,
+   "points": 105,
+   "faces": 802,
+   "score": 0.6427,
+   "iou": 0.9739,
+   "colour": 0.3114
+  },
+  {
+   "round": 6,
+   "points": 117,
+   "faces": 825,
+   "score": 0.6484,
+   "iou": 0.974,
+   "colour": 0.3227
+  },
+  {
+   "round": 7,
+   "points": 131,
+   "faces": 852,
+   "score": 0.6527,
+   "iou": 0.9737,
+   "colour": 0.3316
+  },
+  {
+   "round": 8,
+   "points": 146,
+   "faces": 881,
+   "score": 0.6573,
+   "iou": 0.9736,
+   "colour": 0.3411
+  },
+  {
+   "round": 9,
+   "points": 163,
+   "faces": 914,
+   "score": 0.6581,
+   "iou": 0.9732,
+   "colour": 0.343
+  },
+  {
+   "round": 10,
+   "points": 182,
+   "faces": 952,
+   "score": 0.6613,
+   "iou": 0.9732,
+   "colour": 0.3493
+  },
+  {
+   "round": 11,
+   "points": 203,
+   "faces": 994,
+   "score": 0.6696,
+   "iou": 0.9732,
+   "colour": 0.366
+  },
+  {
+   "round": 12,
+   "points": 227,
+   "faces": 1041,
+   "score": 0.6739,
+   "iou": 0.972,
+   "colour": 0.3759
+  },
+  {
+   "round": 13,
+   "points": 254,
+   "faces": 1095,
+   "score": 0.6821,
+   "iou": 0.9717,
+   "colour": 0.3925
+  },
+  {
+   "round": 14,
+   "points": 284,
+   "faces": 1155,
+   "score": 0.6867,
+   "iou": 0.9729,
+   "colour": 0.4006
+  },
+  {
+   "round": 15,
+   "points": 318,
+   "faces": 1223,
+   "score": 0.6888,
+   "iou": 0.9735,
+   "colour": 0.4041
+  },
+  {
+   "round": 16,
+   "points": 356,
+   "faces": 1299,
+   "score": 0.6938,
+   "iou": 0.9735,
+   "colour": 0.4142
+  },
+  {
+   "round": 17,
+   "points": 398,
+   "faces": 1381,
+   "score": 0.7002,
+   "iou": 0.972,
+   "colour": 0.4283
+  },
+  {
+   "round": 18,
+   "points": 445,
+   "faces": 1475,
+   "score": 0.7047,
+   "iou": 0.9737,
+   "colour": 0.4358
+  },
+  {
+   "round": 19,
+   "points": 498,
+   "faces": 1581,
+   "score": 0.7063,
+   "iou": 0.9737,
+   "colour": 0.4389
+  },
+  {
+   "round": 20,
+   "points": 557,
+   "faces": 1699,
+   "score": 0.7073,
+   "iou": 0.9737,
+   "colour": 0.4409
+  },
+  {
+   "round": 21,
+   "points": 623,
+   "faces": 1830,
+   "score": 0.7149,
+   "iou": 0.9733,
+   "colour": 0.4566
+  },
+  {
+   "round": 22,
+   "points": 697,
+   "faces": 1977,
+   "score": 0.7222,
+   "iou": 0.9736,
+   "colour": 0.4708
+  },
+  {
+   "round": 23,
+   "points": 780,
+   "faces": 2140,
+   "score": 0.7332,
+   "iou": 0.9745,
+   "colour": 0.4919
+  },
+  {
+   "round": 24,
+   "points": 873,
+   "faces": 2326,
+   "score": 0.7447,
+   "iou": 0.9745,
+   "colour": 0.5149
+  },
+  {
+   "round": 25,
+   "points": 910,
+   "faces": 2396,
+   "score": 0.7499,
+   "iou": 0.9756,
+   "colour": 0.5242
+  },
+  {
+   "round": 26,
+   "points": 912,
+   "faces": 2400,
+   "score": 0.7498,
+   "iou": 0.9756,
+   "colour": 0.5241,
+   "stop": "budget",
+   "back_faces": 364,
+   "line_faces": 264
+  }
+ ]
+}

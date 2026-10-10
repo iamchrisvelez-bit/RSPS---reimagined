@@ -1,0 +1,231 @@
+{
+ "code": "B06_2",
+ "name": "Magma platebody",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1619,
+  360,
+  1798,
+  503
+ ],
+ "size": [
+  179,
+  143
+ ],
+ "depth_scale_px": 64.03084564208984,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1065,
+ "faces": 1834,
+ "match": {
+  "round": 22,
+  "points": 434,
+  "faces": 1376,
+  "score": 0.7773,
+  "iou": 0.967,
+  "colour": 0.5877,
+  "stop": "plateau",
+  "back_faces": 818,
+  "line_faces": 198
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 90,
+   "faces": 696,
+   "score": 0.7313,
+   "iou": 0.9386,
+   "colour": 0.524
+  },
+  {
+   "round": 1,
+   "points": 102,
+   "faces": 718,
+   "score": 0.7437,
+   "iou": 0.958,
+   "colour": 0.5294
+  },
+  {
+   "round": 2,
+   "points": 114,
+   "faces": 737,
+   "score": 0.7474,
+   "iou": 0.9614,
+   "colour": 0.5334
+  },
+  {
+   "round": 3,
+   "points": 127,
+   "faces": 763,
+   "score": 0.754,
+   "iou": 0.9658,
+   "colour": 0.5421
+  },
+  {
+   "round": 4,
+   "points": 142,
+   "faces": 793,
+   "score": 0.7599,
+   "iou": 0.9658,
+   "colour": 0.554
+  },
+  {
+   "round": 5,
+   "points": 159,
+   "faces": 827,
+   "score": 0.7561,
+   "iou": 0.9608,
+   "colour": 0.5515,
+   "rolled_back": true
+  },
+  {
+   "round": 6,
+   "points": 159,
+   "faces": 827,
+   "score": 0.7612,
+   "iou": 0.9658,
+   "colour": 0.5565
+  },
+  {
+   "round": 7,
+   "points": 178,
+   "faces": 864,
+   "score": 0.7642,
+   "iou": 0.9669,
+   "colour": 0.5616
+  },
+  {
+   "round": 8,
+   "points": 199,
+   "faces": 906,
+   "score": 0.7653,
+   "iou": 0.9669,
+   "colour": 0.5638
+  },
+  {
+   "round": 9,
+   "points": 222,
+   "faces": 951,
+   "score": 0.7614,
+   "iou": 0.9619,
+   "colour": 0.5609,
+   "rolled_back": true
+  },
+  {
+   "round": 10,
+   "points": 222,
+   "faces": 952,
+   "score": 0.7672,
+   "iou": 0.9669,
+   "colour": 0.5675
+  },
+  {
+   "round": 11,
+   "points": 248,
+   "faces": 1003,
+   "score": 0.7622,
+   "iou": 0.9601,
+   "colour": 0.5643,
+   "rolled_back": true
+  },
+  {
+   "round": 12,
+   "points": 248,
+   "faces": 1003,
+   "score": 0.7639,
+   "iou": 0.961,
+   "colour": 0.5667,
+   "rolled_back": true
+  },
+  {
+   "round": 13,
+   "points": 248,
+   "faces": 1003,
+   "score": 0.7653,
+   "iou": 0.9621,
+   "colour": 0.5684,
+   "rolled_back": true
+  },
+  {
+   "round": 14,
+   "points": 248,
+   "faces": 1002,
+   "score": 0.7617,
+   "iou": 0.9596,
+   "colour": 0.5637,
+   "rolled_back": true
+  },
+  {
+   "round": 15,
+   "points": 248,
+   "faces": 1004,
+   "score": 0.7699,
+   "iou": 0.9669,
+   "colour": 0.5729
+  },
+  {
+   "round": 16,
+   "points": 277,
+   "faces": 1060,
+   "score": 0.7627,
+   "iou": 0.9569,
+   "colour": 0.5686,
+   "rolled_back": true
+  },
+  {
+   "round": 17,
+   "points": 277,
+   "faces": 1062,
+   "score": 0.7716,
+   "iou": 0.9665,
+   "colour": 0.5767
+  },
+  {
+   "round": 18,
+   "points": 310,
+   "faces": 1127,
+   "score": 0.7744,
+   "iou": 0.969,
+   "colour": 0.5798
+  },
+  {
+   "round": 19,
+   "points": 347,
+   "faces": 1200,
+   "score": 0.7726,
+   "iou": 0.9657,
+   "colour": 0.5796,
+   "rolled_back": true
+  },
+  {
+   "round": 20,
+   "points": 347,
+   "faces": 1201,
+   "score": 0.7752,
+   "iou": 0.969,
+   "colour": 0.5815
+  },
+  {
+   "round": 21,
+   "points": 388,
+   "faces": 1283,
+   "score": 0.7763,
+   "iou": 0.969,
+   "colour": 0.5835
+  },
+  {
+   "round": 22,
+   "points": 434,
+   "faces": 1376,
+   "score": 0.7773,
+   "iou": 0.967,
+   "colour": 0.5877,
+   "stop": "plateau",
+   "back_faces": 818,
+   "line_faces": 198
+  }
+ ]
+}

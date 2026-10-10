@@ -62,8 +62,8 @@ def cluster(mesh, cell):
     np.add.at(sums, inv, mesh.V)
     cnt = np.bincount(inv, minlength=len(uniq))[:, None]
     V = sums / cnt
-    F, C, G, seen = [], [], [], set()
-    for (a, b, c), col, g in zip(inv[mesh.F], mesh.C, mesh.G):
+    F, C, G, L, seen = [], [], [], [], set()
+    for (a, b, c), col, g, ly in zip(inv[mesh.F], mesh.C, mesh.G, mesh.layers()):
         if a == b or b == c or a == c:
             continue
         key = tuple(sorted((a, b, c)))
@@ -73,7 +73,8 @@ def cluster(mesh, cell):
         F.append((a, b, c))
         C.append(col)
         G.append(g)
-    return Mesh(V, F, C, G)
+        L.append(ly)
+    return Mesh(V, F, C, G, L)
 
 
 def decimate(mesh, max_faces):

@@ -8,7 +8,8 @@ They are packaged as game-ready RuneScape classic-format models, 36×32 inventor
 
 ```sh
 pip install -r requirements.txt
-./verify.sh                      # build out/ + run all checks (JDK optional, enables the RuneLite check)
+./verify.sh                      # build out/ from pipeline_models/ + run all checks (JDK optional, enables the RuneLite check)
+./verify.sh --source handbuilt   # package the procedural models (rsgen/items.py) instead
 ./verify.sh --base-model-id 61000 --base-item-id 31000   # renumber everything consistently
 ```
 

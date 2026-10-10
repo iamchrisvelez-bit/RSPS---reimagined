@@ -1,0 +1,223 @@
+{
+ "code": "B08_3",
+ "name": "Solar scale platebody",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1067,
+  725,
+  1225,
+  896
+ ],
+ "size": [
+  158,
+  171
+ ],
+ "depth_scale_px": 68.10594177246094,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1358,
+ "faces": 2400,
+ "match": {
+  "round": 22,
+  "points": 947,
+  "faces": 2400,
+  "score": 0.6649,
+  "iou": 0.9618,
+  "colour": 0.3679,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 208
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 80,
+   "faces": 697,
+   "score": 0.5218,
+   "iou": 0.8908,
+   "colour": 0.1528
+  },
+  {
+   "round": 1,
+   "points": 92,
+   "faces": 720,
+   "score": 0.544,
+   "iou": 0.9236,
+   "colour": 0.1645
+  },
+  {
+   "round": 2,
+   "points": 104,
+   "faces": 744,
+   "score": 0.5627,
+   "iou": 0.9512,
+   "colour": 0.1743
+  },
+  {
+   "round": 3,
+   "points": 116,
+   "faces": 763,
+   "score": 0.5678,
+   "iou": 0.9557,
+   "colour": 0.1798
+  },
+  {
+   "round": 4,
+   "points": 129,
+   "faces": 784,
+   "score": 0.5712,
+   "iou": 0.9574,
+   "colour": 0.1851
+  },
+  {
+   "round": 5,
+   "points": 144,
+   "faces": 808,
+   "score": 0.5775,
+   "iou": 0.9618,
+   "colour": 0.1933
+  },
+  {
+   "round": 6,
+   "points": 161,
+   "faces": 838,
+   "score": 0.5775,
+   "iou": 0.9577,
+   "colour": 0.1972
+  },
+  {
+   "round": 7,
+   "points": 180,
+   "faces": 875,
+   "score": 0.5812,
+   "iou": 0.9617,
+   "colour": 0.2007
+  },
+  {
+   "round": 8,
+   "points": 201,
+   "faces": 917,
+   "score": 0.5875,
+   "iou": 0.9622,
+   "colour": 0.2128
+  },
+  {
+   "round": 9,
+   "points": 225,
+   "faces": 964,
+   "score": 0.5944,
+   "iou": 0.9615,
+   "colour": 0.2274
+  },
+  {
+   "round": 10,
+   "points": 252,
+   "faces": 1018,
+   "score": 0.5952,
+   "iou": 0.9615,
+   "colour": 0.229
+  },
+  {
+   "round": 11,
+   "points": 282,
+   "faces": 1078,
+   "score": 0.5976,
+   "iou": 0.9615,
+   "colour": 0.2337
+  },
+  {
+   "round": 12,
+   "points": 315,
+   "faces": 1143,
+   "score": 0.6016,
+   "iou": 0.9617,
+   "colour": 0.2415
+  },
+  {
+   "round": 13,
+   "points": 352,
+   "faces": 1217,
+   "score": 0.6082,
+   "iou": 0.9617,
+   "colour": 0.2547
+  },
+  {
+   "round": 14,
+   "points": 394,
+   "faces": 1301,
+   "score": 0.6102,
+   "iou": 0.9617,
+   "colour": 0.2588
+  },
+  {
+   "round": 15,
+   "points": 441,
+   "faces": 1394,
+   "score": 0.6187,
+   "iou": 0.9614,
+   "colour": 0.2761
+  },
+  {
+   "round": 16,
+   "points": 493,
+   "faces": 1498,
+   "score": 0.6288,
+   "iou": 0.9614,
+   "colour": 0.2962
+  },
+  {
+   "round": 17,
+   "points": 552,
+   "faces": 1616,
+   "score": 0.6364,
+   "iou": 0.9614,
+   "colour": 0.3114
+  },
+  {
+   "round": 18,
+   "points": 618,
+   "faces": 1747,
+   "score": 0.6409,
+   "iou": 0.9614,
+   "colour": 0.3205
+  },
+  {
+   "round": 19,
+   "points": 692,
+   "faces": 1891,
+   "score": 0.6425,
+   "iou": 0.9583,
+   "colour": 0.3267
+  },
+  {
+   "round": 20,
+   "points": 775,
+   "faces": 2056,
+   "score": 0.6511,
+   "iou": 0.9599,
+   "colour": 0.3422
+  },
+  {
+   "round": 21,
+   "points": 868,
+   "faces": 2242,
+   "score": 0.6597,
+   "iou": 0.9618,
+   "colour": 0.3576
+  },
+  {
+   "round": 22,
+   "points": 947,
+   "faces": 2400,
+   "score": 0.6649,
+   "iou": 0.9618,
+   "colour": 0.3679,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 208
+  }
+ ]
+}

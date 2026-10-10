@@ -98,9 +98,9 @@ def clean(mesh):
             keymap[v] = len(newV)
             newV.append(v)
         remap[i] = keymap[v]
-    F, C, G = [], [], []
+    F, C, G, L = [], [], [], []
     Vn = np.array(newV, float)
-    for (a, b, c), col, g in zip(remap[mesh.F], mesh.C, mesh.G):
+    for (a, b, c), col, g, ly in zip(remap[mesh.F], mesh.C, mesh.G, mesh.layers()):
         if a == b or b == c or a == c:
             continue
         if np.linalg.norm(np.cross(Vn[b] - Vn[a], Vn[c] - Vn[a])) == 0:
@@ -108,13 +108,20 @@ def clean(mesh):
         F.append((a, b, c))
         C.append(col)
         G.append(g)
+        L.append(ly)
     used = sorted({i for f in F for i in f})
     idx = {o: n for n, o in enumerate(used)}
-    return Mesh(Vn[used], [(idx[a], idx[b], idx[c]) for a, b, c in F], C, G)
+    return Mesh(Vn[used], [(idx[a], idx[b], idx[c]) for a, b, c in F], C, G, L)
 
 
-def encode(mesh, priority=10):
-    """Encode a cleaned mesh (see clean()); vertices must already be integers."""
+def encode(mesh, priority=10, smooth=False):
+    """Encode a cleaned mesh (see clean()); vertices must already be integers.
+
+    priority: face draw priority (0..11 in the client). Faces on a detail
+    layer (mesh.L = 1) get priority + 1 so they draw over the surface; the
+    model then stores a per-face priority list.
+    smooth: render type 0 (Gouraud: lit per vertex, smooth shading) instead
+    of 1 (flat, one light value per face)."""
     if not np.array_equal(mesh.V, np.rint(mesh.V)):
         raise ValueError('mesh has non-integer vertices; run clean() first')
     if not 0 <= priority <= 254:
@@ -156,13 +163,21 @@ def encode(mesh, priority=10):
         if len(sec) > 65535:  # the footer stores each section length as an unsigned 16-bit value
             raise ValueError('model too large: %s data is %d bytes (format limit 65535)' % (name, len(sec)))
 
-    render_types = bytes([1]) * nf  # flat shading -> faceted low-poly look
+    render_types = bytes([0 if smooth else 1]) * nf  # 0 smooth (Gouraud), 1 flat (faceted)
     col = b''.join(struct.pack('>H', c) for c in colors)
+    layers = mesh.layers()
+    if any(layers):
+        if priority + max(layers) > 11:
+            raise ValueError('priority + layer must stay within 0..11')
+        prios = bytes(priority + ly for ly in layers)
+        prio_flag = 255
+    else:
+        prios, prio_flag = b'', priority
 
-    body = vflags + ctypes + render_types + fdata + col + xs + ys + zs
+    body = vflags + ctypes + prios + render_types + fdata + col + xs + ys + zs
     footer = struct.pack('>HHBBBBBBHHHH', nv, nf, 0,
                          1,          # per-face render types present
-                         priority,   # single priority for every face
+                         prio_flag,  # one priority for every face, or 255 = per-face list
                          0, 0, 0,    # no alpha, no face/vertex skins
                          len(xs), len(ys), len(zs), len(fdata))
     return bytes(body + footer)

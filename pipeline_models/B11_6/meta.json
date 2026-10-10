@@ -1,0 +1,231 @@
+{
+ "code": "B11_6",
+ "name": "Necrotic soulstaff",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1091,
+  1243,
+  1210,
+  1437
+ ],
+ "size": [
+  119,
+  194
+ ],
+ "depth_scale_px": 32.250362396240234,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1215,
+ "faces": 2400,
+ "match": {
+  "round": 23,
+  "points": 960,
+  "faces": 2070,
+  "score": 0.8428,
+  "iou": 0.9848,
+  "colour": 0.7008,
+  "stop": "no error left to fix",
+  "back_faces": 690,
+  "line_faces": 18
+ },
+ "stop": "no error left to fix",
+ "history": [
+  {
+   "round": 0,
+   "points": 81,
+   "faces": 505,
+   "score": 0.5421,
+   "iou": 0.8127,
+   "colour": 0.2715
+  },
+  {
+   "round": 1,
+   "points": 93,
+   "faces": 529,
+   "score": 0.579,
+   "iou": 0.855,
+   "colour": 0.3031
+  },
+  {
+   "round": 2,
+   "points": 105,
+   "faces": 548,
+   "score": 0.5944,
+   "iou": 0.8743,
+   "colour": 0.3145
+  },
+  {
+   "round": 3,
+   "points": 117,
+   "faces": 568,
+   "score": 0.6148,
+   "iou": 0.898,
+   "colour": 0.3316
+  },
+  {
+   "round": 4,
+   "points": 131,
+   "faces": 595,
+   "score": 0.6169,
+   "iou": 0.8995,
+   "colour": 0.3344
+  },
+  {
+   "round": 5,
+   "points": 146,
+   "faces": 625,
+   "score": 0.617,
+   "iou": 0.8995,
+   "colour": 0.3345
+  },
+  {
+   "round": 6,
+   "points": 163,
+   "faces": 659,
+   "score": 0.6298,
+   "iou": 0.8995,
+   "colour": 0.36
+  },
+  {
+   "round": 7,
+   "points": 182,
+   "faces": 697,
+   "score": 0.6534,
+   "iou": 0.9091,
+   "colour": 0.3977
+  },
+  {
+   "round": 8,
+   "points": 203,
+   "faces": 738,
+   "score": 0.6678,
+   "iou": 0.9091,
+   "colour": 0.4266
+  },
+  {
+   "round": 9,
+   "points": 227,
+   "faces": 786,
+   "score": 0.6778,
+   "iou": 0.9107,
+   "colour": 0.4448
+  },
+  {
+   "round": 10,
+   "points": 254,
+   "faces": 840,
+   "score": 0.6893,
+   "iou": 0.9129,
+   "colour": 0.4657
+  },
+  {
+   "round": 11,
+   "points": 284,
+   "faces": 892,
+   "score": 0.6978,
+   "iou": 0.9208,
+   "colour": 0.4749
+  },
+  {
+   "round": 12,
+   "points": 318,
+   "faces": 953,
+   "score": 0.708,
+   "iou": 0.9244,
+   "colour": 0.4917
+  },
+  {
+   "round": 13,
+   "points": 356,
+   "faces": 1020,
+   "score": 0.7244,
+   "iou": 0.9304,
+   "colour": 0.5183
+  },
+  {
+   "round": 14,
+   "points": 398,
+   "faces": 1097,
+   "score": 0.7358,
+   "iou": 0.9312,
+   "colour": 0.5404
+  },
+  {
+   "round": 15,
+   "points": 445,
+   "faces": 1176,
+   "score": 0.752,
+   "iou": 0.9424,
+   "colour": 0.5615
+  },
+  {
+   "round": 16,
+   "points": 498,
+   "faces": 1270,
+   "score": 0.7834,
+   "iou": 0.9598,
+   "colour": 0.607
+  },
+  {
+   "round": 17,
+   "points": 557,
+   "faces": 1383,
+   "score": 0.8038,
+   "iou": 0.9646,
+   "colour": 0.6429
+  },
+  {
+   "round": 18,
+   "points": 623,
+   "faces": 1506,
+   "score": 0.8174,
+   "iou": 0.9677,
+   "colour": 0.667
+  },
+  {
+   "round": 19,
+   "points": 697,
+   "faces": 1628,
+   "score": 0.8275,
+   "iou": 0.9743,
+   "colour": 0.6806
+  },
+  {
+   "round": 20,
+   "points": 780,
+   "faces": 1773,
+   "score": 0.8381,
+   "iou": 0.9821,
+   "colour": 0.6942
+  },
+  {
+   "round": 21,
+   "points": 873,
+   "faces": 1936,
+   "score": 0.8397,
+   "iou": 0.9812,
+   "colour": 0.6981
+  },
+  {
+   "round": 22,
+   "points": 950,
+   "faces": 2056,
+   "score": 0.8419,
+   "iou": 0.9839,
+   "colour": 0.6998
+  },
+  {
+   "round": 23,
+   "points": 960,
+   "faces": 2070,
+   "score": 0.8428,
+   "iou": 0.9848,
+   "colour": 0.7008,
+   "stop": "no error left to fix",
+   "back_faces": 690,
+   "line_faces": 18
+  }
+ ]
+}

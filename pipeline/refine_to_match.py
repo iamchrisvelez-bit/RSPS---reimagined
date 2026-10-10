@@ -50,9 +50,12 @@ sys.path.insert(0, os.path.join(ROOT, 'pipeline'))
 
 from rsgen.lowpoly import (_components, boundary_pixels, collapse_interior, rasterize_labels,  # noqa: E402
                            simplify, trace_outline, triangulate_points)
+from rsgen.detail import budget_lines, dilate, find_lines, line_coverage, strip_faces  # noqa: E402
+from rsgen.geom import Mesh  # noqa: E402
 from rsgen.meshio import write_obj_rgb  # noqa: E402
 from rsgen.render import render  # noqa: E402
-from stage2_images_to_models import THICKNESS, blur, delit, mesh_from_triangles, palette_labels  # noqa: E402
+from stage2_images_to_models import (THICKNESS, blur, delit, mesh_from_triangles, palette_labels,  # noqa: E402
+                                     point_heights)
 
 
 def outline_rings(mask, eps):
@@ -143,12 +146,106 @@ def face_colours(ids, target, P, T):
     return cols / cnt[:, None]
 
 
+def rs_unit(slot, shape, thickness=0.6, depth_gain=1.0):
+    """Design pixels per RS unit once stage 3 fits the model into its slot
+    (the same uniform scale as rsgen.fit.fit_to_slot, estimated from the
+    image size and the relief depth)."""
+    from rsgen.fit import SLOT_BOX
+    h, w = shape
+    lo, hi = (np.array(b, float) for b in SLOT_BOX.get(slot or 'weapon', SLOT_BOX['weapon']))
+    ext = np.array([w, h, depth_gain * max(h, w) * 0.22 * (1 + thickness)], float)
+    k = float(np.min((hi - lo) / np.maximum(ext, 1e-6)))  # RS units per pixel
+    return 1.0 / max(k, 1e-6)
+
+
+def inpaint(img, hole, mask, r=3):
+    """img with the `hole` pixels filled from the surrounding non-hole pixels
+    of the item (normalised blur, widened until every hole pixel is reached)."""
+    out = img.copy()
+    todo = hole & mask
+    w = (mask & ~hole).astype(np.float64)
+    while todo.any() and r < max(img.shape[:2]):
+        ws = blur(w, r)
+        fill = np.stack([blur(img[..., c] * w, r) for c in range(3)], -1) / np.maximum(ws, 1e-6)[..., None]
+        ok = todo & (ws > 1e-3)
+        out[ok] = fill[ok]
+        todo &= ~ok
+        r *= 2
+    return out
+
+
+def smooth_face_colours(T, cols, sigma=12.0, iters=2):
+    """Edge-preserving smoothing of face colours over the triangle graph:
+    each face moves toward neighbours of similar colour (a bilateral filter),
+    so speckle and noisy shading even out while real colour borders stay."""
+    from collections import defaultdict
+    owner = defaultdict(list)
+    for i, (a, b, c) in enumerate(T):
+        for e in ((a, b), (b, c), (c, a)):
+            owner[(min(e), max(e))].append(i)
+    nb = [[] for _ in range(len(T))]
+    for fs in owner.values():
+        for i in fs:
+            nb[i] += [j for j in fs if j != i]
+    cols = np.asarray(cols, float)
+    for _ in range(iters):
+        new = cols.copy()
+        for i, n in enumerate(nb):
+            if not n:
+                continue
+            c = cols[[i] + n]
+            wt = np.exp(-np.sum((c - cols[i]) ** 2, 1) / (2 * sigma ** 2))
+            new[i] = (c * wt[:, None]).sum(0) / wt.sum()
+        cols = new
+    return cols
+
+
+def line_strips(lines, P, T, R, heights, shape, lift):
+    """3D strips for detail lines, lying `lift` in front of the surface (its
+    height interpolated from the front triangulation). Returns a Mesh in the
+    surface's units with every face on the detail layer (L = 1)."""
+    h, w = shape
+    Ps, Ts, which = strip_faces(lines)
+    if not len(Ts):
+        return Mesh()
+    Z = np.zeros(len(Ps))
+    cov = np.argwhere(R >= 0)
+    for k, (y, x) in enumerate(Ps):
+        yi, xi = int(np.clip(y, 0, h - 1)), int(np.clip(x, 0, w - 1))
+        t = R[yi, xi]
+        if t < 0 and len(cov):  # just off the surface: use the nearest covered pixel
+            j = np.argmin((cov[:, 0] - yi) ** 2 + (cov[:, 1] - xi) ** 2)
+            t = R[cov[j, 0], cov[j, 1]]
+        if t < 0:
+            continue
+        a, b, c = P[T[t]]
+        den = (b[1] - c[1]) * (a[0] - c[0]) + (c[0] - b[0]) * (a[1] - c[1])
+        if abs(den) < 1e-9:
+            Z[k] = heights[T[t]].mean()
+            continue
+        l1 = ((b[1] - c[1]) * (y - c[0]) + (c[0] - b[0]) * (x - c[1])) / den
+        l2 = ((c[1] - a[1]) * (y - c[0]) + (a[0] - c[0]) * (x - c[1])) / den
+        l1, l2 = np.clip(l1, 0, 1), np.clip(l2, 0, 1)
+        l3 = max(0.0, 1 - l1 - l2)
+        Z[k] = (l1 * heights[T[t][0]] + l2 * heights[T[t][1]] + l3 * heights[T[t][2]]) / max(l1 + l2 + l3, 1e-9)
+    V = np.stack([Ps[:, 1] - w / 2, h / 2 - Ps[:, 0], Z + lift], 1)
+    F = Ts[:, [0, 2, 1]]  # CCW in image (y down) -> facing +z once y points up, like the surface
+    C = [tuple(int(round(v)) for v in np.clip(lines[i][2], 0, 255)) for i in which]
+    return Mesh(V, F, C, L=[1] * len(F))
+
+
 class Refiner:
-    def __init__(self, mask, labels, start_points=60, seed=0, target=None):
+    def __init__(self, mask, labels, start_points=60, seed=0, target=None, face_target=None, overlay=None):
         """labels: palette labels (flat mode). With target (HxWx3 design
         colours, detail mode) every face takes the true colour under it and
-        the match is judged on colour, so shadows and texture are refined too."""
+        the match is judged on colour, so shadows and texture are refined too.
+        face_target: the colours faces take (default target), e.g. the design
+        with detail lines painted out; overlay: (mask, colours) of detail-line
+        strips drawn over the faces before comparing."""
         self.m, self.L, self.target = mask, labels, target
+        self.face_target = target if face_target is None else face_target
+        self.overlay = overlay
+        self.extra_faces = 0  # faces outside the triangulation (detail-line strips)
         self.cols = self.img = None
         self.back_faces = None  # None: back mirrors the front; n: coarse back of ~n faces
         h, w = mask.shape
@@ -206,9 +303,12 @@ class Refiner:
         else:
             self.R = rasterize_labels(P, T, np.arange(len(T)), self.m.shape)  # face id per pixel
             self.lab = np.arange(len(T))
-            self.cols = face_colours(self.R, self.target, P, T)
+            self.cols = face_colours(self.R, self.face_target, P, T)
             self.img = np.zeros(self.m.shape + (3,))
             self.img[self.R >= 0] = self.cols[self.R[self.R >= 0]]
+            if self.overlay is not None:
+                on = self.overlay[0] & (self.R >= 0)
+                self.img[on] = self.overlay[1][on]
         return self
 
     def score(self):
@@ -231,9 +331,9 @@ class Refiner:
 
     def faces(self):
         if self.back_faces is None:
-            return 2 * len(self.T)  # front + mirrored back
+            return 2 * len(self.T) + self.extra_faces  # front + mirrored back
         # coarse back: rim vertices are locked, so it can't get below ~1 face per rim point
-        return len(self.T) + max(self.back_faces, len(self.edge))
+        return len(self.T) + max(self.back_faces, len(self.edge)) + self.extra_faces
 
     def snap(self, y, x, taken):
         """Nearest free colour-border pixel within a couple of spacings, else (y, x)."""
@@ -301,7 +401,8 @@ def flat_image(R, pal):
 
 def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, min_gain=0.004, patience=3,
                 step=0.12, start_points=60, colors=8, delight=0.75, depth_gain=1.0, max_rounds=40, seed=0,
-                smooth=3, mode='detail', cavity=0.06, back_share=0.15, log=None):
+                smooth=3, mode='detail', cavity=0.06, back_share=0.15, line_share=0.25, smoothing=True,
+                slot=None, log=None):
     """Returns (mesh, history, snapshots). history: one dict per round.
 
     mode 'detail': faces take the design's true colours, shadows and texture
@@ -310,16 +411,31 @@ def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, 
     mode 'flat': the design reduced to `colors` flat tones, shading removed.
     back_share: fraction of the face budget for a coarse back (the rim stays
     shared, so the model is closed); the front gets the rest. None mirrors the
-    front onto the back (half the budget each)."""
+    front onto the back (half the budget each).
+    line_share (detail mode): up to this fraction of the face budget goes to
+    detail-line strips (crisp glow cracks, trims, straps), longest first; 0
+    turns them off. smoothing: even out the surface for a smoother look -
+    edge-preserving face-colour smoothing and Laplacian height smoothing."""
     m = np.asarray(mask.convert('L')) > 127
     detail = None
     if mode == 'detail':
         tgt = shading_target(color, m)
-        L, pal = palette_labels(tgt, m, 16, smooth=1)  # only used for border snapping
-        ref = Refiner(m, L, start_points, seed, target=tgt)
+        unit = rs_unit(slot, m.shape, thickness, depth_gain)
+        # below ~1/4 RS unit per design pixel a line can't be drawn thinner than
+        # ~2 units without swallowing the detail it is meant to show: skip them
+        use_lines = line_share and unit <= 4.0
+        lines = budget_lines(find_lines(tgt, m, unit=unit), int(max_faces * line_share)) if use_lines else []
+        lcov, limg = line_coverage(lines, m.shape)
+        # faces take the surface colour under the lines, not a blend with them
+        face_tgt = inpaint(tgt, dilate(lcov, 1), m) if lines else tgt
+        L, pal = palette_labels(face_tgt, m, 16, smooth=1)  # only used for border snapping
+        ref = Refiner(m, L, start_points, seed, target=tgt, face_target=face_tgt,
+                      overlay=(lcov, limg) if lines else None)
+        ref.extra_faces = sum(2 * (len(pl) - 1) for pl, _, _ in lines)
         if cavity:
             detail = cavity_relief(tgt, m, max(m.shape), cavity)
     elif mode == 'flat':
+        lines = []
         rgb = delit(color, delight)
         # the target is the design reduced to flat colour shapes (speckle and
         # shading noise smoothed away)
@@ -374,17 +490,23 @@ def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, 
             break
     _, (_, _, _, P, T, lab, rim, R, cols, img) = best
     if cols is not None:
+        if smoothing:
+            cols = smooth_face_colours(T, cols)
         lab, pal = np.arange(len(T)), cols
-    else:
-        img = np.zeros(m.shape + (3,))
-        img[R >= 0] = np.asarray(pal, float)[R[R >= 0]]
+    img = np.zeros(m.shape + (3,))  # the faces' own look (no line overlay), for the back
+    img[R >= 0] = np.asarray(pal, float)[R[R >= 0]]  # R: palette label (flat) or face id (detail)
+    heights = point_heights(P, T, rim, m, depth, depth_gain, detail=detail, smooth_iters=3 if smoothing else 0)
+    strips = line_strips(lines, P, T, R, heights, m.shape, lift=max(1.0, 1.2 * rs_unit(slot, m.shape, thickness, depth_gain))) \
+        if lines else None
     back = None
     if ref.back_faces is not None:
-        Tb = collapse_interior(P, T, rim, max(ref.back_faces, max_faces - len(T)))
+        Tb = collapse_interior(P, T, rim, max(ref.back_faces, max_faces - len(T) - ref.extra_faces))
         ids = rasterize_labels(P, Tb, np.arange(len(Tb)), m.shape)
         back = (Tb, face_colours(ids, img, P, Tb) * 0.8)  # the front's look, a little darker
-    mesh = mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness, depth_gain, detail=detail, back=back)
+    mesh = mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness, depth_gain, back=back, heights=heights,
+                               extra=strips)
     history[-1]['back_faces'] = 0 if back is None else len(back[0])
+    history[-1]['line_faces'] = 0 if strips is None else len(strips.F)
     return mesh, history, snaps
 
 
@@ -440,7 +562,7 @@ def main():
             color, Image.open(os.path.join(d, 'mask.png')), Image.open(os.path.join(d, 'depth.png')),
             THICKNESS.get(meta.get('slot'), 0.6), a.max_faces, a.target, a.min_gain,
             start_points=a.start_points, colors=a.colors, delight=a.delight, depth_gain=a.depth_gain,
-            mode=a.mode, cavity=a.cavity, back_share=a.back_share or None, log=print)
+            mode=a.mode, cavity=a.cavity, back_share=a.back_share or None, slot=meta.get('slot'), log=print)
         out = os.path.join(a.out, meta['code'])
         os.makedirs(out, exist_ok=True)
         write_obj_rgb(mesh, os.path.join(out, 'model.obj'), meta['code'])

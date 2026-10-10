@@ -102,7 +102,9 @@ class TestOutputs(unittest.TestCase):
                     self.assertLessEqual(len(F), MAX_FACES, 'over the per-model face budget')
                     self.assertTrue((F >= 0).all() and (F < len(V)).all())
                     self.assertEqual(d['texture_count'], 0)
-                    self.assertTrue(all(r == 1 for r in d['render_types']))
+                    want = 0 if self.man.get('shading') == 'smooth' else 1  # 0 Gouraud, 1 flat
+                    self.assertTrue(all(r == want for r in d['render_types']))
+                    self.assertTrue(all(0 <= p <= 11 for p in d['priorities']), 'face priority outside 0..11')
                     self.assertTrue(all(0 <= c < 65536 for c in d['colors']))
                     t = V[F].astype(float)
                     area = np.linalg.norm(np.cross(t[:, 1] - t[:, 0], t[:, 2] - t[:, 0]), axis=1)

@@ -1,0 +1,183 @@
+{
+ "code": "B01_5",
+ "name": "Silver filigree platebody",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  226,
+  170,
+  405,
+  349
+ ],
+ "size": [
+  179,
+  179
+ ],
+ "depth_scale_px": 63.61479568481445,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1352,
+ "faces": 2350,
+ "match": {
+  "round": 17,
+  "points": 558,
+  "faces": 1646,
+  "score": 0.6898,
+  "iou": 0.9691,
+  "colour": 0.4105,
+  "stop": "plateau",
+  "back_faces": 1064,
+  "line_faces": 222
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 82,
+   "faces": 713,
+   "score": 0.625,
+   "iou": 0.932,
+   "colour": 0.3179
+  },
+  {
+   "round": 1,
+   "points": 94,
+   "faces": 737,
+   "score": 0.6378,
+   "iou": 0.9483,
+   "colour": 0.3273
+  },
+  {
+   "round": 2,
+   "points": 106,
+   "faces": 760,
+   "score": 0.6491,
+   "iou": 0.9626,
+   "colour": 0.3356
+  },
+  {
+   "round": 3,
+   "points": 118,
+   "faces": 779,
+   "score": 0.653,
+   "iou": 0.9665,
+   "colour": 0.3394
+  },
+  {
+   "round": 4,
+   "points": 132,
+   "faces": 803,
+   "score": 0.6551,
+   "iou": 0.9669,
+   "colour": 0.3434
+  },
+  {
+   "round": 5,
+   "points": 147,
+   "faces": 832,
+   "score": 0.6631,
+   "iou": 0.9672,
+   "colour": 0.359
+  },
+  {
+   "round": 6,
+   "points": 164,
+   "faces": 865,
+   "score": 0.6647,
+   "iou": 0.9676,
+   "colour": 0.3618
+  },
+  {
+   "round": 7,
+   "points": 183,
+   "faces": 901,
+   "score": 0.6674,
+   "iou": 0.968,
+   "colour": 0.3667
+  },
+  {
+   "round": 8,
+   "points": 204,
+   "faces": 943,
+   "score": 0.6746,
+   "iou": 0.968,
+   "colour": 0.3812
+  },
+  {
+   "round": 9,
+   "points": 228,
+   "faces": 991,
+   "score": 0.6768,
+   "iou": 0.969,
+   "colour": 0.3847
+  },
+  {
+   "round": 10,
+   "points": 255,
+   "faces": 1045,
+   "score": 0.6783,
+   "iou": 0.969,
+   "colour": 0.3875
+  },
+  {
+   "round": 11,
+   "points": 285,
+   "faces": 1103,
+   "score": 0.68,
+   "iou": 0.9688,
+   "colour": 0.3913
+  },
+  {
+   "round": 12,
+   "points": 319,
+   "faces": 1169,
+   "score": 0.6833,
+   "iou": 0.9686,
+   "colour": 0.3979
+  },
+  {
+   "round": 13,
+   "points": 357,
+   "faces": 1244,
+   "score": 0.6826,
+   "iou": 0.969,
+   "colour": 0.3962
+  },
+  {
+   "round": 14,
+   "points": 399,
+   "faces": 1328,
+   "score": 0.687,
+   "iou": 0.969,
+   "colour": 0.405
+  },
+  {
+   "round": 15,
+   "points": 446,
+   "faces": 1422,
+   "score": 0.6894,
+   "iou": 0.969,
+   "colour": 0.4097
+  },
+  {
+   "round": 16,
+   "points": 499,
+   "faces": 1527,
+   "score": 0.6895,
+   "iou": 0.9689,
+   "colour": 0.4101
+  },
+  {
+   "round": 17,
+   "points": 558,
+   "faces": 1646,
+   "score": 0.6898,
+   "iou": 0.9691,
+   "colour": 0.4105,
+   "stop": "plateau",
+   "back_faces": 1064,
+   "line_faces": 222
+  }
+ ]
+}

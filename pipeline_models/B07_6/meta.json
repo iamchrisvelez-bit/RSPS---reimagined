@@ -1,0 +1,231 @@
+{
+ "code": "B07_6",
+ "name": "Valkyrie platebody",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  339,
+  903,
+  523,
+  1076
+ ],
+ "size": [
+  184,
+  173
+ ],
+ "depth_scale_px": 56.41462326049805,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1325,
+ "faces": 2399,
+ "match": {
+  "round": 23,
+  "points": 980,
+  "faces": 2399,
+  "score": 0.7492,
+  "iou": 0.9693,
+  "colour": 0.5292,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 154
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 92,
+   "faces": 652,
+   "score": 0.5648,
+   "iou": 0.89,
+   "colour": 0.2396
+  },
+  {
+   "round": 1,
+   "points": 104,
+   "faces": 675,
+   "score": 0.5915,
+   "iou": 0.9332,
+   "colour": 0.2498
+  },
+  {
+   "round": 2,
+   "points": 116,
+   "faces": 700,
+   "score": 0.6024,
+   "iou": 0.9425,
+   "colour": 0.2622
+  },
+  {
+   "round": 3,
+   "points": 129,
+   "faces": 722,
+   "score": 0.6129,
+   "iou": 0.9509,
+   "colour": 0.275
+  },
+  {
+   "round": 4,
+   "points": 144,
+   "faces": 748,
+   "score": 0.6158,
+   "iou": 0.9594,
+   "colour": 0.2723
+  },
+  {
+   "round": 5,
+   "points": 161,
+   "faces": 778,
+   "score": 0.6208,
+   "iou": 0.9622,
+   "colour": 0.2794
+  },
+  {
+   "round": 6,
+   "points": 180,
+   "faces": 816,
+   "score": 0.632,
+   "iou": 0.9622,
+   "colour": 0.3018
+  },
+  {
+   "round": 7,
+   "points": 201,
+   "faces": 858,
+   "score": 0.6391,
+   "iou": 0.9622,
+   "colour": 0.3161
+  },
+  {
+   "round": 8,
+   "points": 225,
+   "faces": 904,
+   "score": 0.6448,
+   "iou": 0.9621,
+   "colour": 0.3274
+  },
+  {
+   "round": 9,
+   "points": 252,
+   "faces": 957,
+   "score": 0.6525,
+   "iou": 0.9618,
+   "colour": 0.3433
+  },
+  {
+   "round": 10,
+   "points": 282,
+   "faces": 1016,
+   "score": 0.655,
+   "iou": 0.9618,
+   "colour": 0.3482
+  },
+  {
+   "round": 11,
+   "points": 315,
+   "faces": 1081,
+   "score": 0.6621,
+   "iou": 0.9613,
+   "colour": 0.363
+  },
+  {
+   "round": 12,
+   "points": 352,
+   "faces": 1154,
+   "score": 0.6684,
+   "iou": 0.9612,
+   "colour": 0.3757
+  },
+  {
+   "round": 13,
+   "points": 394,
+   "faces": 1238,
+   "score": 0.6725,
+   "iou": 0.9612,
+   "colour": 0.3838
+  },
+  {
+   "round": 14,
+   "points": 441,
+   "faces": 1334,
+   "score": 0.6794,
+   "iou": 0.9626,
+   "colour": 0.3963
+  },
+  {
+   "round": 15,
+   "points": 493,
+   "faces": 1436,
+   "score": 0.6863,
+   "iou": 0.9613,
+   "colour": 0.4114
+  },
+  {
+   "round": 16,
+   "points": 552,
+   "faces": 1552,
+   "score": 0.6939,
+   "iou": 0.9621,
+   "colour": 0.4257
+  },
+  {
+   "round": 17,
+   "points": 618,
+   "faces": 1683,
+   "score": 0.7017,
+   "iou": 0.9612,
+   "colour": 0.4422
+  },
+  {
+   "round": 18,
+   "points": 692,
+   "faces": 1831,
+   "score": 0.7142,
+   "iou": 0.9615,
+   "colour": 0.4668
+  },
+  {
+   "round": 19,
+   "points": 775,
+   "faces": 1998,
+   "score": 0.7272,
+   "iou": 0.9634,
+   "colour": 0.4911
+  },
+  {
+   "round": 20,
+   "points": 868,
+   "faces": 2184,
+   "score": 0.7408,
+   "iou": 0.9678,
+   "colour": 0.5138
+  },
+  {
+   "round": 21,
+   "points": 972,
+   "faces": 2386,
+   "score": 0.748,
+   "iou": 0.9679,
+   "colour": 0.5281
+  },
+  {
+   "round": 22,
+   "points": 979,
+   "faces": 2397,
+   "score": 0.7491,
+   "iou": 0.9693,
+   "colour": 0.5289
+  },
+  {
+   "round": 23,
+   "points": 980,
+   "faces": 2399,
+   "score": 0.7492,
+   "iou": 0.9693,
+   "colour": 0.5292,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 154
+  }
+ ]
+}

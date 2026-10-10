@@ -1,0 +1,249 @@
+{
+ "code": "B05_3",
+ "name": "Crimson knight tassets",
+ "slot": "legs",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1058,
+  373,
+  1233,
+  549
+ ],
+ "size": [
+  175,
+  176
+ ],
+ "depth_scale_px": 64.66876220703125,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1298,
+ "faces": 2399,
+ "match": {
+  "round": 25,
+  "points": 989,
+  "faces": 2400,
+  "score": 0.7984,
+  "iou": 0.9682,
+  "colour": 0.6286,
+  "stop": "budget",
+  "back_faces": 359,
+  "line_faces": 128
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 84,
+   "faces": 619,
+   "score": 0.6742,
+   "iou": 0.9161,
+   "colour": 0.4323
+  },
+  {
+   "round": 1,
+   "points": 96,
+   "faces": 643,
+   "score": 0.7028,
+   "iou": 0.9362,
+   "colour": 0.4694
+  },
+  {
+   "round": 2,
+   "points": 108,
+   "faces": 662,
+   "score": 0.7151,
+   "iou": 0.9462,
+   "colour": 0.4841
+  },
+  {
+   "round": 3,
+   "points": 120,
+   "faces": 683,
+   "score": 0.7228,
+   "iou": 0.9518,
+   "colour": 0.4938
+  },
+  {
+   "round": 4,
+   "points": 134,
+   "faces": 709,
+   "score": 0.7247,
+   "iou": 0.9524,
+   "colour": 0.497
+  },
+  {
+   "round": 5,
+   "points": 150,
+   "faces": 741,
+   "score": 0.7234,
+   "iou": 0.9524,
+   "colour": 0.4945,
+   "rolled_back": true
+  },
+  {
+   "round": 6,
+   "points": 150,
+   "faces": 742,
+   "score": 0.7257,
+   "iou": 0.9533,
+   "colour": 0.498
+  },
+  {
+   "round": 7,
+   "points": 168,
+   "faces": 777,
+   "score": 0.7261,
+   "iou": 0.9527,
+   "colour": 0.4995
+  },
+  {
+   "round": 8,
+   "points": 188,
+   "faces": 817,
+   "score": 0.7305,
+   "iou": 0.9527,
+   "colour": 0.5084
+  },
+  {
+   "round": 9,
+   "points": 210,
+   "faces": 861,
+   "score": 0.7296,
+   "iou": 0.9527,
+   "colour": 0.5065
+  },
+  {
+   "round": 10,
+   "points": 235,
+   "faces": 911,
+   "score": 0.7338,
+   "iou": 0.9528,
+   "colour": 0.5148
+  },
+  {
+   "round": 11,
+   "points": 263,
+   "faces": 967,
+   "score": 0.7439,
+   "iou": 0.9528,
+   "colour": 0.5349
+  },
+  {
+   "round": 12,
+   "points": 294,
+   "faces": 1029,
+   "score": 0.7444,
+   "iou": 0.9528,
+   "colour": 0.536
+  },
+  {
+   "round": 13,
+   "points": 329,
+   "faces": 1099,
+   "score": 0.7472,
+   "iou": 0.9528,
+   "colour": 0.5415
+  },
+  {
+   "round": 14,
+   "points": 368,
+   "faces": 1177,
+   "score": 0.75,
+   "iou": 0.9528,
+   "colour": 0.5473
+  },
+  {
+   "round": 15,
+   "points": 412,
+   "faces": 1265,
+   "score": 0.75,
+   "iou": 0.9528,
+   "colour": 0.5471
+  },
+  {
+   "round": 16,
+   "points": 461,
+   "faces": 1362,
+   "score": 0.7542,
+   "iou": 0.9534,
+   "colour": 0.555
+  },
+  {
+   "round": 17,
+   "points": 516,
+   "faces": 1472,
+   "score": 0.7516,
+   "iou": 0.9534,
+   "colour": 0.5498,
+   "rolled_back": true
+  },
+  {
+   "round": 18,
+   "points": 516,
+   "faces": 1473,
+   "score": 0.7575,
+   "iou": 0.9541,
+   "colour": 0.5609
+  },
+  {
+   "round": 19,
+   "points": 577,
+   "faces": 1594,
+   "score": 0.7642,
+   "iou": 0.9544,
+   "colour": 0.5741
+  },
+  {
+   "round": 20,
+   "points": 646,
+   "faces": 1732,
+   "score": 0.7654,
+   "iou": 0.9555,
+   "colour": 0.5753
+  },
+  {
+   "round": 21,
+   "points": 723,
+   "faces": 1884,
+   "score": 0.7739,
+   "iou": 0.9578,
+   "colour": 0.59
+  },
+  {
+   "round": 22,
+   "points": 809,
+   "faces": 2054,
+   "score": 0.785,
+   "iou": 0.9637,
+   "colour": 0.6062
+  },
+  {
+   "round": 23,
+   "points": 906,
+   "faces": 2241,
+   "score": 0.7946,
+   "iou": 0.9665,
+   "colour": 0.6227
+  },
+  {
+   "round": 24,
+   "points": 985,
+   "faces": 2392,
+   "score": 0.7975,
+   "iou": 0.9682,
+   "colour": 0.6269
+  },
+  {
+   "round": 25,
+   "points": 989,
+   "faces": 2400,
+   "score": 0.7984,
+   "iou": 0.9682,
+   "colour": 0.6286,
+   "stop": "budget",
+   "back_faces": 359,
+   "line_faces": 128
+  }
+ ]
+}

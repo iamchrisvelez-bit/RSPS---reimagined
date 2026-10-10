@@ -1,0 +1,143 @@
+{
+ "code": "B05_2",
+ "name": "Crimson chain hauberk",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  869,
+  364,
+  1032,
+  552
+ ],
+ "size": [
+  163,
+  188
+ ],
+ "depth_scale_px": 75.63214111328125,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 916,
+ "faces": 1500,
+ "match": {
+  "round": 12,
+  "points": 342,
+  "faces": 1225,
+  "score": 0.7271,
+  "iou": 0.9701,
+  "colour": 0.484,
+  "stop": "plateau",
+  "back_faces": 635,
+  "line_faces": 230
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 89,
+   "faces": 722,
+   "score": 0.6749,
+   "iou": 0.928,
+   "colour": 0.4218
+  },
+  {
+   "round": 1,
+   "points": 101,
+   "faces": 745,
+   "score": 0.6828,
+   "iou": 0.9398,
+   "colour": 0.4258
+  },
+  {
+   "round": 2,
+   "points": 113,
+   "faces": 770,
+   "score": 0.6925,
+   "iou": 0.9508,
+   "colour": 0.4342
+  },
+  {
+   "round": 3,
+   "points": 126,
+   "faces": 796,
+   "score": 0.7046,
+   "iou": 0.9629,
+   "colour": 0.4463
+  },
+  {
+   "round": 4,
+   "points": 141,
+   "faces": 823,
+   "score": 0.7093,
+   "iou": 0.967,
+   "colour": 0.4516
+  },
+  {
+   "round": 5,
+   "points": 157,
+   "faces": 855,
+   "score": 0.7162,
+   "iou": 0.9691,
+   "colour": 0.4632
+  },
+  {
+   "round": 6,
+   "points": 175,
+   "faces": 891,
+   "score": 0.7199,
+   "iou": 0.9701,
+   "colour": 0.4697
+  },
+  {
+   "round": 7,
+   "points": 196,
+   "faces": 933,
+   "score": 0.7229,
+   "iou": 0.9701,
+   "colour": 0.4757
+  },
+  {
+   "round": 8,
+   "points": 219,
+   "faces": 979,
+   "score": 0.7231,
+   "iou": 0.9701,
+   "colour": 0.476
+  },
+  {
+   "round": 9,
+   "points": 245,
+   "faces": 1031,
+   "score": 0.7242,
+   "iou": 0.9701,
+   "colour": 0.4784
+  },
+  {
+   "round": 10,
+   "points": 274,
+   "faces": 1089,
+   "score": 0.726,
+   "iou": 0.9701,
+   "colour": 0.4819
+  },
+  {
+   "round": 11,
+   "points": 306,
+   "faces": 1153,
+   "score": 0.727,
+   "iou": 0.9701,
+   "colour": 0.4839
+  },
+  {
+   "round": 12,
+   "points": 342,
+   "faces": 1225,
+   "score": 0.7271,
+   "iou": 0.9701,
+   "colour": 0.484,
+   "stop": "plateau",
+   "back_faces": 635,
+   "line_faces": 230
+  }
+ ]
+}

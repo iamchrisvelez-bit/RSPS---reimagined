@@ -1,0 +1,275 @@
+{
+ "code": "B02_6",
+ "name": "Magma hatchet",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1051,
+  170,
+  1244,
+  357
+ ],
+ "size": [
+  193,
+  187
+ ],
+ "depth_scale_px": 36.24298858642578,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1194,
+ "faces": 2399,
+ "match": {
+  "round": 28,
+  "points": 1088,
+  "faces": 2399,
+  "score": 0.8573,
+  "iou": 0.9827,
+  "colour": 0.7319,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 84,
+   "faces": 491,
+   "score": 0.5921,
+   "iou": 0.895,
+   "colour": 0.2893
+  },
+  {
+   "round": 1,
+   "points": 96,
+   "faces": 513,
+   "score": 0.6087,
+   "iou": 0.9211,
+   "colour": 0.2962
+  },
+  {
+   "round": 2,
+   "points": 108,
+   "faces": 529,
+   "score": 0.6165,
+   "iou": 0.9299,
+   "colour": 0.303
+  },
+  {
+   "round": 3,
+   "points": 120,
+   "faces": 550,
+   "score": 0.6217,
+   "iou": 0.9366,
+   "colour": 0.3067
+  },
+  {
+   "round": 4,
+   "points": 134,
+   "faces": 578,
+   "score": 0.6314,
+   "iou": 0.9396,
+   "colour": 0.3232
+  },
+  {
+   "round": 5,
+   "points": 150,
+   "faces": 610,
+   "score": 0.6339,
+   "iou": 0.9396,
+   "colour": 0.3282
+  },
+  {
+   "round": 6,
+   "points": 168,
+   "faces": 644,
+   "score": 0.6295,
+   "iou": 0.927,
+   "colour": 0.3319,
+   "rolled_back": true
+  },
+  {
+   "round": 7,
+   "points": 168,
+   "faces": 645,
+   "score": 0.6312,
+   "iou": 0.9284,
+   "colour": 0.334,
+   "rolled_back": true
+  },
+  {
+   "round": 8,
+   "points": 168,
+   "faces": 644,
+   "score": 0.6323,
+   "iou": 0.9314,
+   "colour": 0.3332,
+   "rolled_back": true
+  },
+  {
+   "round": 9,
+   "points": 168,
+   "faces": 645,
+   "score": 0.6404,
+   "iou": 0.9383,
+   "colour": 0.3425
+  },
+  {
+   "round": 10,
+   "points": 188,
+   "faces": 684,
+   "score": 0.6505,
+   "iou": 0.9396,
+   "colour": 0.3614
+  },
+  {
+   "round": 11,
+   "points": 210,
+   "faces": 728,
+   "score": 0.6632,
+   "iou": 0.9396,
+   "colour": 0.3867
+  },
+  {
+   "round": 12,
+   "points": 235,
+   "faces": 777,
+   "score": 0.6591,
+   "iou": 0.924,
+   "colour": 0.3942,
+   "rolled_back": true
+  },
+  {
+   "round": 13,
+   "points": 235,
+   "faces": 778,
+   "score": 0.6706,
+   "iou": 0.9396,
+   "colour": 0.4015
+  },
+  {
+   "round": 14,
+   "points": 263,
+   "faces": 833,
+   "score": 0.6766,
+   "iou": 0.9401,
+   "colour": 0.4131
+  },
+  {
+   "round": 15,
+   "points": 294,
+   "faces": 897,
+   "score": 0.6771,
+   "iou": 0.921,
+   "colour": 0.4332
+  },
+  {
+   "round": 16,
+   "points": 329,
+   "faces": 962,
+   "score": 0.6966,
+   "iou": 0.9411,
+   "colour": 0.4522
+  },
+  {
+   "round": 17,
+   "points": 368,
+   "faces": 1041,
+   "score": 0.7148,
+   "iou": 0.9405,
+   "colour": 0.4892
+  },
+  {
+   "round": 18,
+   "points": 412,
+   "faces": 1127,
+   "score": 0.731,
+   "iou": 0.9487,
+   "colour": 0.5134
+  },
+  {
+   "round": 19,
+   "points": 461,
+   "faces": 1222,
+   "score": 0.7422,
+   "iou": 0.9449,
+   "colour": 0.5394
+  },
+  {
+   "round": 20,
+   "points": 516,
+   "faces": 1328,
+   "score": 0.7553,
+   "iou": 0.9478,
+   "colour": 0.5627
+  },
+  {
+   "round": 21,
+   "points": 577,
+   "faces": 1444,
+   "score": 0.7743,
+   "iou": 0.9571,
+   "colour": 0.5915
+  },
+  {
+   "round": 22,
+   "points": 646,
+   "faces": 1579,
+   "score": 0.7956,
+   "iou": 0.9626,
+   "colour": 0.6286
+  },
+  {
+   "round": 23,
+   "points": 723,
+   "faces": 1720,
+   "score": 0.8084,
+   "iou": 0.9668,
+   "colour": 0.6501
+  },
+  {
+   "round": 24,
+   "points": 809,
+   "faces": 1874,
+   "score": 0.8248,
+   "iou": 0.9722,
+   "colour": 0.6774
+  },
+  {
+   "round": 25,
+   "points": 906,
+   "faces": 2058,
+   "score": 0.8436,
+   "iou": 0.9789,
+   "colour": 0.7083
+  },
+  {
+   "round": 26,
+   "points": 1014,
+   "faces": 2258,
+   "score": 0.8513,
+   "iou": 0.9798,
+   "colour": 0.7227
+  },
+  {
+   "round": 27,
+   "points": 1085,
+   "faces": 2393,
+   "score": 0.8565,
+   "iou": 0.9824,
+   "colour": 0.7307
+  },
+  {
+   "round": 28,
+   "points": 1088,
+   "faces": 2399,
+   "score": 0.8573,
+   "iou": 0.9827,
+   "colour": 0.7319,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 0
+  }
+ ]
+}

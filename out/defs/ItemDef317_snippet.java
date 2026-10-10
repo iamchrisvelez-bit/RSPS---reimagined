@@ -5,7 +5,7 @@ case 30000: // B01_1 Copper scale platebody
     itemDef.name = "Copper scale platebody";
     itemDef.description = "A redesigned copper scale platebody.".getBytes();
     itemDef.modelID = 60000;
-    itemDef.modelZoom = 1175;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -19,7 +19,7 @@ case 30001: // B01_2 Iron platebody
     itemDef.name = "Iron platebody";
     itemDef.description = "A redesigned iron platebody.".getBytes();
     itemDef.modelID = 60002;
-    itemDef.modelZoom = 1188;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -33,7 +33,7 @@ case 30002: // B01_3 Steel platebody
     itemDef.name = "Steel platebody";
     itemDef.description = "A redesigned steel platebody.".getBytes();
     itemDef.modelID = 60004;
-    itemDef.modelZoom = 1212;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -47,7 +47,7 @@ case 30003: // B01_4 Shadowsteel platebody
     itemDef.name = "Shadowsteel platebody";
     itemDef.description = "A redesigned shadowsteel platebody.".getBytes();
     itemDef.modelID = 60006;
-    itemDef.modelZoom = 1188;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -61,7 +61,7 @@ case 30004: // B01_5 Silver filigree platebody
     itemDef.name = "Silver filigree platebody";
     itemDef.description = "A redesigned silver filigree platebody.".getBytes();
     itemDef.modelID = 60008;
-    itemDef.modelZoom = 1200;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -75,7 +75,7 @@ case 30005: // B01_6 Jade crystal platebody
     itemDef.name = "Jade crystal platebody";
     itemDef.description = "A redesigned jade crystal platebody.".getBytes();
     itemDef.modelID = 60010;
-    itemDef.modelZoom = 1200;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -89,7 +89,7 @@ case 30006: // B02_1 Royal sapphire platebody
     itemDef.name = "Royal sapphire platebody";
     itemDef.description = "A redesigned royal sapphire platebody.".getBytes();
     itemDef.modelID = 60012;
-    itemDef.modelZoom = 1188;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -103,7 +103,7 @@ case 30007: // B02_2 Crimson dragonscale body
     itemDef.name = "Crimson dragonscale body";
     itemDef.description = "A redesigned crimson dragonscale body.".getBytes();
     itemDef.modelID = 60014;
-    itemDef.modelZoom = 1300;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -117,7 +117,7 @@ case 30008: // B02_3 Crimson crystal scimitar
     itemDef.name = "Crimson crystal scimitar";
     itemDef.description = "A redesigned crimson crystal scimitar.".getBytes();
     itemDef.modelID = 60016;
-    itemDef.modelZoom = 1238;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -131,7 +131,7 @@ case 30009: // B02_4 Sapphire pickaxe
     itemDef.name = "Sapphire pickaxe";
     itemDef.description = "A redesigned sapphire pickaxe.".getBytes();
     itemDef.modelID = 60018;
-    itemDef.modelZoom = 1125;
+    itemDef.modelZoom = 525;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -145,7 +145,7 @@ case 30010: // B02_5 Magma pickaxe
     itemDef.name = "Magma pickaxe";
     itemDef.description = "A redesigned magma pickaxe.".getBytes();
     itemDef.modelID = 60020;
-    itemDef.modelZoom = 1150;
+    itemDef.modelZoom = 550;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -159,7 +159,7 @@ case 30011: // B02_6 Magma hatchet
     itemDef.name = "Magma hatchet";
     itemDef.description = "A redesigned magma hatchet.".getBytes();
     itemDef.modelID = 60022;
-    itemDef.modelZoom = 1200;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -173,7 +173,7 @@ case 30012: // B03_1 Necrotic battleaxe
     itemDef.name = "Necrotic battleaxe";
     itemDef.description = "A redesigned necrotic battleaxe.".getBytes();
     itemDef.modelID = 60024;
-    itemDef.modelZoom = 1462;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -187,7 +187,7 @@ case 30013: // B03_2 Necrotic spear
     itemDef.name = "Necrotic spear";
     itemDef.description = "A redesigned necrotic spear.".getBytes();
     itemDef.modelID = 60026;
-    itemDef.modelZoom = 1812;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -201,7 +201,7 @@ case 30014: // B03_3 Necrotic flail
     itemDef.name = "Necrotic flail";
     itemDef.description = "A redesigned necrotic flail.".getBytes();
     itemDef.modelID = 60028;
-    itemDef.modelZoom = 1050;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -215,7 +215,7 @@ case 30015: // B03_4 Necrotic twin mauls
     itemDef.name = "Necrotic twin mauls";
     itemDef.description = "A redesigned necrotic twin mauls.".getBytes();
     itemDef.modelID = 60030;
-    itemDef.modelZoom = 1200;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -229,7 +229,7 @@ case 30016: // B03_5 Necrotic crossbow
     itemDef.name = "Necrotic crossbow";
     itemDef.description = "A redesigned necrotic crossbow.".getBytes();
     itemDef.modelID = 60032;
-    itemDef.modelZoom = 1138;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -243,7 +243,7 @@ case 30017: // B03_6 Necrotic skull censer
     itemDef.name = "Necrotic skull censer";
     itemDef.description = "A redesigned necrotic skull censer.".getBytes();
     itemDef.modelID = 60034;
-    itemDef.modelZoom = 1525;
+    itemDef.modelZoom = 625;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -257,7 +257,7 @@ case 30018: // B04_1 Reaver platebody
     itemDef.name = "Reaver platebody";
     itemDef.description = "A redesigned reaver platebody.".getBytes();
     itemDef.modelID = 60036;
-    itemDef.modelZoom = 1412;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -271,7 +271,7 @@ case 30019: // B04_2 Reaver platelegs
     itemDef.name = "Reaver platelegs";
     itemDef.description = "A redesigned reaver platelegs.".getBytes();
     itemDef.modelID = 60038;
-    itemDef.modelZoom = 1300;
+    itemDef.modelZoom = 1200;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -285,7 +285,7 @@ case 30020: // B04_3 Reaver warboots
     itemDef.name = "Reaver warboots";
     itemDef.description = "A redesigned reaver warboots.".getBytes();
     itemDef.modelID = 60040;
-    itemDef.modelZoom = 750;
+    itemDef.modelZoom = 625;
     itemDef.modelRotation1 = 164;
     itemDef.modelRotation2 = 156;
     itemDef.modelOffset1 = 0;
@@ -299,7 +299,7 @@ case 30021: // B04_4 Horned bone helm
     itemDef.name = "Horned bone helm";
     itemDef.description = "A redesigned horned bone helm.".getBytes();
     itemDef.modelID = 60042;
-    itemDef.modelZoom = 1050;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -313,7 +313,7 @@ case 30022: // B04_5 Ribcage platebody
     itemDef.name = "Ribcage platebody";
     itemDef.description = "A redesigned ribcage platebody.".getBytes();
     itemDef.modelID = 60044;
-    itemDef.modelZoom = 1388;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -327,7 +327,7 @@ case 30023: // B04_6 Bone bracers
     itemDef.name = "Bone bracers";
     itemDef.description = "A redesigned bone bracers.".getBytes();
     itemDef.modelID = 60046;
-    itemDef.modelZoom = 1475;
+    itemDef.modelZoom = 575;
     itemDef.modelRotation1 = 420;
     itemDef.modelRotation2 = 828;
     itemDef.modelOffset1 = 0;
@@ -341,7 +341,7 @@ case 30024: // B05_1 Crimson knight helm
     itemDef.name = "Crimson knight helm";
     itemDef.description = "A redesigned crimson knight helm.".getBytes();
     itemDef.modelID = 60048;
-    itemDef.modelZoom = 1388;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -355,7 +355,7 @@ case 30025: // B05_2 Crimson chain hauberk
     itemDef.name = "Crimson chain hauberk";
     itemDef.description = "A redesigned crimson chain hauberk.".getBytes();
     itemDef.modelID = 60050;
-    itemDef.modelZoom = 1438;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -369,7 +369,7 @@ case 30026: // B05_3 Crimson knight tassets
     itemDef.name = "Crimson knight tassets";
     itemDef.description = "A redesigned crimson knight tassets.".getBytes();
     itemDef.modelID = 60052;
-    itemDef.modelZoom = 1200;
+    itemDef.modelZoom = 750;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -383,7 +383,7 @@ case 30027: // B05_4 Paladin full helm
     itemDef.name = "Paladin full helm";
     itemDef.description = "A redesigned paladin full helm.".getBytes();
     itemDef.modelID = 60054;
-    itemDef.modelZoom = 1150;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -397,7 +397,7 @@ case 30028: // B05_5 Paladin platebody
     itemDef.name = "Paladin platebody";
     itemDef.description = "A redesigned paladin platebody.".getBytes();
     itemDef.modelID = 60056;
-    itemDef.modelZoom = 1175;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -411,7 +411,7 @@ case 30029: // B05_6 Paladin greaves
     itemDef.name = "Paladin greaves";
     itemDef.description = "A redesigned paladin greaves.".getBytes();
     itemDef.modelID = 60058;
-    itemDef.modelZoom = 762;
+    itemDef.modelZoom = 625;
     itemDef.modelRotation1 = 164;
     itemDef.modelRotation2 = 156;
     itemDef.modelOffset1 = 0;
@@ -439,7 +439,7 @@ case 30031: // B06_2 Magma platebody
     itemDef.name = "Magma platebody";
     itemDef.description = "A redesigned magma platebody.".getBytes();
     itemDef.modelID = 60062;
-    itemDef.modelZoom = 1188;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -453,7 +453,7 @@ case 30032: // B06_3 Magma gauntlets
     itemDef.name = "Magma gauntlets";
     itemDef.description = "A redesigned magma gauntlets.".getBytes();
     itemDef.modelID = 60064;
-    itemDef.modelZoom = 1262;
+    itemDef.modelZoom = 825;
     itemDef.modelRotation1 = 420;
     itemDef.modelRotation2 = 828;
     itemDef.modelOffset1 = 0;
@@ -467,7 +467,7 @@ case 30033: // B06_4 Magma dagger
     itemDef.name = "Magma dagger";
     itemDef.description = "A redesigned magma dagger.".getBytes();
     itemDef.modelID = 60066;
-    itemDef.modelZoom = 675;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -481,7 +481,7 @@ case 30034: // B06_5 Magma mace
     itemDef.name = "Magma mace";
     itemDef.description = "A redesigned magma mace.".getBytes();
     itemDef.modelID = 60068;
-    itemDef.modelZoom = 1062;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -495,7 +495,7 @@ case 30035: // B06_6 Magma kiteshield
     itemDef.name = "Magma kiteshield";
     itemDef.description = "A redesigned magma kiteshield.".getBytes();
     itemDef.modelID = 60070;
-    itemDef.modelZoom = 812;
+    itemDef.modelZoom = 700;
     itemDef.modelRotation1 = 344;
     itemDef.modelRotation2 = 1104;
     itemDef.modelOffset1 = 0;
@@ -509,7 +509,7 @@ case 30036: // B07_1 Woodland ranger tunic
     itemDef.name = "Woodland ranger tunic";
     itemDef.description = "A redesigned woodland ranger tunic.".getBytes();
     itemDef.modelID = 60072;
-    itemDef.modelZoom = 1862;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -523,7 +523,7 @@ case 30037: // B07_2 Tidewalker ranger tunic
     itemDef.name = "Tidewalker ranger tunic";
     itemDef.description = "A redesigned tidewalker ranger tunic.".getBytes();
     itemDef.modelID = 60074;
-    itemDef.modelZoom = 1862;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -537,7 +537,7 @@ case 30038: // B07_3 Emberhide ranger tunic
     itemDef.name = "Emberhide ranger tunic";
     itemDef.description = "A redesigned emberhide ranger tunic.".getBytes();
     itemDef.modelID = 60076;
-    itemDef.modelZoom = 1838;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -551,7 +551,7 @@ case 30039: // B07_4 Nightstalker ranger tunic
     itemDef.name = "Nightstalker ranger tunic";
     itemDef.description = "A redesigned nightstalker ranger tunic.".getBytes();
     itemDef.modelID = 60078;
-    itemDef.modelZoom = 1862;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -565,7 +565,7 @@ case 30040: // B07_5 Valkyrie winged helm
     itemDef.name = "Valkyrie winged helm";
     itemDef.description = "A redesigned valkyrie winged helm.".getBytes();
     itemDef.modelID = 60080;
-    itemDef.modelZoom = 1575;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -579,7 +579,7 @@ case 30041: // B07_6 Valkyrie platebody
     itemDef.name = "Valkyrie platebody";
     itemDef.description = "A redesigned valkyrie platebody.".getBytes();
     itemDef.modelID = 60082;
-    itemDef.modelZoom = 1250;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -593,7 +593,7 @@ case 30042: // B08_1 Seraph feather mantle
     itemDef.name = "Seraph feather mantle";
     itemDef.description = "A redesigned seraph feather mantle.".getBytes();
     itemDef.modelID = 60084;
-    itemDef.modelZoom = 1012;
+    itemDef.modelZoom = 925;
     itemDef.modelRotation1 = 380;
     itemDef.modelRotation2 = 1024;
     itemDef.modelOffset1 = 0;
@@ -607,7 +607,7 @@ case 30043: // B08_2 Solar helm
     itemDef.name = "Solar helm";
     itemDef.description = "A redesigned solar helm.".getBytes();
     itemDef.modelID = 60086;
-    itemDef.modelZoom = 1325;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -621,7 +621,7 @@ case 30044: // B08_3 Solar scale platebody
     itemDef.name = "Solar scale platebody";
     itemDef.description = "A redesigned solar scale platebody.".getBytes();
     itemDef.modelID = 60088;
-    itemDef.modelZoom = 1275;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -635,7 +635,7 @@ case 30045: // B08_4 Solar scale platelegs
     itemDef.name = "Solar scale platelegs";
     itemDef.description = "A redesigned solar scale platelegs.".getBytes();
     itemDef.modelID = 60090;
-    itemDef.modelZoom = 1325;
+    itemDef.modelZoom = 975;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -649,7 +649,7 @@ case 30046: // B08_5 Verdant crystal helm
     itemDef.name = "Verdant crystal helm";
     itemDef.description = "A redesigned verdant crystal helm.".getBytes();
     itemDef.modelID = 60092;
-    itemDef.modelZoom = 988;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -663,7 +663,7 @@ case 30047: // B08_6 Verdant crystal body
     itemDef.name = "Verdant crystal body";
     itemDef.description = "A redesigned verdant crystal body.".getBytes();
     itemDef.modelID = 60094;
-    itemDef.modelZoom = 1238;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -677,7 +677,7 @@ case 30048: // B09_1 Bone longbow
     itemDef.name = "Bone longbow";
     itemDef.description = "A redesigned bone longbow.".getBytes();
     itemDef.modelID = 60096;
-    itemDef.modelZoom = 1600;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -691,7 +691,7 @@ case 30049: // B09_2 Shadowvine bow
     itemDef.name = "Shadowvine bow";
     itemDef.description = "A redesigned shadowvine bow.".getBytes();
     itemDef.modelID = 60098;
-    itemDef.modelZoom = 1425;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -705,7 +705,7 @@ case 30050: // B09_3 Dragonspine bow
     itemDef.name = "Dragonspine bow";
     itemDef.description = "A redesigned dragonspine bow.".getBytes();
     itemDef.modelID = 60100;
-    itemDef.modelZoom = 1625;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -719,7 +719,7 @@ case 30051: // B09_4 Crystal-root bow
     itemDef.name = "Crystal-root bow";
     itemDef.description = "A redesigned crystal-root bow.".getBytes();
     itemDef.modelID = 60102;
-    itemDef.modelZoom = 1675;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -733,7 +733,7 @@ case 30052: // B09_5 Seraph crossbow
     itemDef.name = "Seraph crossbow";
     itemDef.description = "A redesigned seraph crossbow.".getBytes();
     itemDef.modelID = 60104;
-    itemDef.modelZoom = 1212;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -747,7 +747,7 @@ case 30053: // B09_6 Runic crossbow
     itemDef.name = "Runic crossbow";
     itemDef.description = "A redesigned runic crossbow.".getBytes();
     itemDef.modelID = 60106;
-    itemDef.modelZoom = 1138;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -761,7 +761,7 @@ case 30054: // B10_1 Astral wizard hat
     itemDef.name = "Astral wizard hat";
     itemDef.description = "A redesigned astral wizard hat.".getBytes();
     itemDef.modelID = 60108;
-    itemDef.modelZoom = 1025;
+    itemDef.modelZoom = 625;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -775,7 +775,7 @@ case 30055: // B10_2 Astral robe top
     itemDef.name = "Astral robe top";
     itemDef.description = "A redesigned astral robe top.".getBytes();
     itemDef.modelID = 60110;
-    itemDef.modelZoom = 1425;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -789,7 +789,7 @@ case 30056: // B10_3 Astral robe bottom
     itemDef.name = "Astral robe bottom";
     itemDef.description = "A redesigned astral robe bottom.".getBytes();
     itemDef.modelID = 60112;
-    itemDef.modelZoom = 1325;
+    itemDef.modelZoom = 750;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -803,7 +803,7 @@ case 30057: // B10_4 Runeweaver hood
     itemDef.name = "Runeweaver hood";
     itemDef.description = "A redesigned runeweaver hood.".getBytes();
     itemDef.modelID = 60114;
-    itemDef.modelZoom = 1200;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -817,7 +817,7 @@ case 30058: // B10_5 Runeweaver robe top
     itemDef.name = "Runeweaver robe top";
     itemDef.description = "A redesigned runeweaver robe top.".getBytes();
     itemDef.modelID = 60116;
-    itemDef.modelZoom = 1425;
+    itemDef.modelZoom = 1100;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -831,7 +831,7 @@ case 30059: // B10_6 Runeweaver robe skirt
     itemDef.name = "Runeweaver robe skirt";
     itemDef.description = "A redesigned runeweaver robe skirt.".getBytes();
     itemDef.modelID = 60118;
-    itemDef.modelZoom = 1325;
+    itemDef.modelZoom = 775;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -845,7 +845,7 @@ case 30060: // B11_1 Voidwoven hood
     itemDef.name = "Voidwoven hood";
     itemDef.description = "A redesigned voidwoven hood.".getBytes();
     itemDef.modelID = 60120;
-    itemDef.modelZoom = 1175;
+    itemDef.modelZoom = 662;
     itemDef.modelRotation1 = 100;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -859,7 +859,7 @@ case 30061: // B11_2 Voidwoven robe top
     itemDef.name = "Voidwoven robe top";
     itemDef.description = "A redesigned voidwoven robe top.".getBytes();
     itemDef.modelID = 60122;
-    itemDef.modelZoom = 1350;
+    itemDef.modelZoom = 1075;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -873,7 +873,7 @@ case 30062: // B11_3 Voidwoven robe skirt
     itemDef.name = "Voidwoven robe skirt";
     itemDef.description = "A redesigned voidwoven robe skirt.".getBytes();
     itemDef.modelID = 60124;
-    itemDef.modelZoom = 1325;
+    itemDef.modelZoom = 900;
     itemDef.modelRotation1 = 500;
     itemDef.modelRotation2 = 0;
     itemDef.modelOffset1 = 0;
@@ -887,7 +887,7 @@ case 30063: // B11_4 Stormcaller staff
     itemDef.name = "Stormcaller staff";
     itemDef.description = "A redesigned stormcaller staff.".getBytes();
     itemDef.modelID = 60126;
-    itemDef.modelZoom = 1550;
+    itemDef.modelZoom = 775;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -901,7 +901,7 @@ case 30064: // B11_5 Solar sceptre
     itemDef.name = "Solar sceptre";
     itemDef.description = "A redesigned solar sceptre.".getBytes();
     itemDef.modelID = 60128;
-    itemDef.modelZoom = 1462;
+    itemDef.modelZoom = 850;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -915,7 +915,7 @@ case 30065: // B11_6 Necrotic soulstaff
     itemDef.name = "Necrotic soulstaff";
     itemDef.description = "A redesigned necrotic soulstaff.".getBytes();
     itemDef.modelID = 60130;
-    itemDef.modelZoom = 1488;
+    itemDef.modelZoom = 850;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -929,7 +929,7 @@ case 30066: // B12_1 Abyssal tidewhip
     itemDef.name = "Abyssal tidewhip";
     itemDef.description = "A redesigned abyssal tidewhip.".getBytes();
     itemDef.modelID = 60132;
-    itemDef.modelZoom = 1625;
+    itemDef.modelZoom = 550;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -943,7 +943,7 @@ case 30067: // B12_2 Seraph longsword
     itemDef.name = "Seraph longsword";
     itemDef.description = "A redesigned seraph longsword.".getBytes();
     itemDef.modelID = 60134;
-    itemDef.modelZoom = 1275;
+    itemDef.modelZoom = 625;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -957,7 +957,7 @@ case 30068: // B12_3 Bloodfang cleaver
     itemDef.name = "Bloodfang cleaver";
     itemDef.description = "A redesigned bloodfang cleaver.".getBytes();
     itemDef.modelID = 60136;
-    itemDef.modelZoom = 1450;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -971,7 +971,7 @@ case 30069: // B12_4 Crimson rapier
     itemDef.name = "Crimson rapier";
     itemDef.description = "A redesigned crimson rapier.".getBytes();
     itemDef.modelID = 60138;
-    itemDef.modelZoom = 1362;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -985,7 +985,7 @@ case 30070: // B12_5 Gilded fang
     itemDef.name = "Gilded fang";
     itemDef.description = "A redesigned gilded fang.".getBytes();
     itemDef.modelID = 60140;
-    itemDef.modelZoom = 1075;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -999,7 +999,7 @@ case 30071: // B12_6 Goblin knotclub
     itemDef.name = "Goblin knotclub";
     itemDef.description = "A redesigned goblin knotclub.".getBytes();
     itemDef.modelID = 60142;
-    itemDef.modelZoom = 1250;
+    itemDef.modelZoom = 500;
     itemDef.modelRotation1 = 498;
     itemDef.modelRotation2 = 484;
     itemDef.modelOffset1 = 0;
@@ -1013,7 +1013,7 @@ case 30072: // B13_1 Amulet of the sun
     itemDef.name = "Amulet of the sun";
     itemDef.description = "A redesigned amulet of the sun.".getBytes();
     itemDef.modelID = 60144;
-    itemDef.modelZoom = 950;
+    itemDef.modelZoom = 575;
     itemDef.modelRotation1 = 424;
     itemDef.modelRotation2 = 68;
     itemDef.modelOffset1 = 0;
@@ -1027,7 +1027,7 @@ case 30073: // B13_2 Crimson cord necklace
     itemDef.name = "Crimson cord necklace";
     itemDef.description = "A redesigned crimson cord necklace.".getBytes();
     itemDef.modelID = 60146;
-    itemDef.modelZoom = 1125;
+    itemDef.modelZoom = 550;
     itemDef.modelRotation1 = 424;
     itemDef.modelRotation2 = 68;
     itemDef.modelOffset1 = 0;
@@ -1041,7 +1041,7 @@ case 30074: // B13_3 Sapphire amulet
     itemDef.name = "Sapphire amulet";
     itemDef.description = "A redesigned sapphire amulet.".getBytes();
     itemDef.modelID = 60148;
-    itemDef.modelZoom = 1200;
+    itemDef.modelZoom = 625;
     itemDef.modelRotation1 = 424;
     itemDef.modelRotation2 = 68;
     itemDef.modelOffset1 = 0;
@@ -1055,7 +1055,7 @@ case 30075: // B13_4 Verdant shard amulet
     itemDef.name = "Verdant shard amulet";
     itemDef.description = "A redesigned verdant shard amulet.".getBytes();
     itemDef.modelID = 60150;
-    itemDef.modelZoom = 1075;
+    itemDef.modelZoom = 525;
     itemDef.modelRotation1 = 424;
     itemDef.modelRotation2 = 68;
     itemDef.modelOffset1 = 0;
@@ -1069,7 +1069,7 @@ case 30076: // B13_5 Obsidian cape
     itemDef.name = "Obsidian cape";
     itemDef.description = "A redesigned obsidian cape.".getBytes();
     itemDef.modelID = 60152;
-    itemDef.modelZoom = 1900;
+    itemDef.modelZoom = 1025;
     itemDef.modelRotation1 = 380;
     itemDef.modelRotation2 = 1024;
     itemDef.modelOffset1 = 0;
@@ -1083,7 +1083,7 @@ case 30077: // B13_6 Magma cape
     itemDef.name = "Magma cape";
     itemDef.description = "A redesigned magma cape.".getBytes();
     itemDef.modelID = 60154;
-    itemDef.modelZoom = 1862;
+    itemDef.modelZoom = 1025;
     itemDef.modelRotation1 = 380;
     itemDef.modelRotation2 = 1024;
     itemDef.modelOffset1 = 0;
@@ -1097,7 +1097,7 @@ case 30078: // B14_1 Dragonfire shield
     itemDef.name = "Dragonfire shield";
     itemDef.description = "A redesigned dragonfire shield.".getBytes();
     itemDef.modelID = 60156;
-    itemDef.modelZoom = 1100;
+    itemDef.modelZoom = 700;
     itemDef.modelRotation1 = 344;
     itemDef.modelRotation2 = 1104;
     itemDef.modelOffset1 = 0;
@@ -1111,7 +1111,7 @@ case 30079: // B14_2 Glacial crystal shield
     itemDef.name = "Glacial crystal shield";
     itemDef.description = "A redesigned glacial crystal shield.".getBytes();
     itemDef.modelID = 60158;
-    itemDef.modelZoom = 1075;
+    itemDef.modelZoom = 800;
     itemDef.modelRotation1 = 344;
     itemDef.modelRotation2 = 1104;
     itemDef.modelOffset1 = 0;
@@ -1125,7 +1125,7 @@ case 30080: // B14_3 Solar heater shield
     itemDef.name = "Solar heater shield";
     itemDef.description = "A redesigned solar heater shield.".getBytes();
     itemDef.modelID = 60160;
-    itemDef.modelZoom = 800;
+    itemDef.modelZoom = 725;
     itemDef.modelRotation1 = 344;
     itemDef.modelRotation2 = 1104;
     itemDef.modelOffset1 = 0;
@@ -1139,7 +1139,7 @@ case 30081: // B14_4 Jade thorn shield
     itemDef.name = "Jade thorn shield";
     itemDef.description = "A redesigned jade thorn shield.".getBytes();
     itemDef.modelID = 60162;
-    itemDef.modelZoom = 1012;
+    itemDef.modelZoom = 725;
     itemDef.modelRotation1 = 344;
     itemDef.modelRotation2 = 1104;
     itemDef.modelOffset1 = 0;
@@ -1153,7 +1153,7 @@ case 30082: // B14_5 Sapphire dragon kiteshield
     itemDef.name = "Sapphire dragon kiteshield";
     itemDef.description = "A redesigned sapphire dragon kiteshield.".getBytes();
     itemDef.modelID = 60164;
-    itemDef.modelZoom = 850;
+    itemDef.modelZoom = 725;
     itemDef.modelRotation1 = 344;
     itemDef.modelRotation2 = 1104;
     itemDef.modelOffset1 = 0;
@@ -1167,7 +1167,7 @@ case 30083: // B14_6 Crimson spiked roundshield
     itemDef.name = "Crimson spiked roundshield";
     itemDef.description = "A redesigned crimson spiked roundshield.".getBytes();
     itemDef.modelID = 60166;
-    itemDef.modelZoom = 1025;
+    itemDef.modelZoom = 700;
     itemDef.modelRotation1 = 344;
     itemDef.modelRotation2 = 1104;
     itemDef.modelOffset1 = 0;

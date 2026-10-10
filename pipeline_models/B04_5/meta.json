@@ -1,0 +1,207 @@
+{
+ "code": "B04_5",
+ "name": "Ribcage platebody",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  241,
+  542,
+  384,
+  716
+ ],
+ "size": [
+  143,
+  174
+ ],
+ "depth_scale_px": 68.18045043945312,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1394,
+ "faces": 2400,
+ "match": {
+  "round": 20,
+  "points": 868,
+  "faces": 2287,
+  "score": 0.6924,
+  "iou": 0.9586,
+  "colour": 0.4261,
+  "stop": "budget",
+  "back_faces": 473,
+  "line_faces": 254
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 92,
+   "faces": 754,
+   "score": 0.5906,
+   "iou": 0.9238,
+   "colour": 0.2573
+  },
+  {
+   "round": 1,
+   "points": 104,
+   "faces": 775,
+   "score": 0.5993,
+   "iou": 0.9371,
+   "colour": 0.2614
+  },
+  {
+   "round": 2,
+   "points": 116,
+   "faces": 796,
+   "score": 0.6098,
+   "iou": 0.9498,
+   "colour": 0.2698
+  },
+  {
+   "round": 3,
+   "points": 129,
+   "faces": 818,
+   "score": 0.6157,
+   "iou": 0.9562,
+   "colour": 0.2752
+  },
+  {
+   "round": 4,
+   "points": 144,
+   "faces": 847,
+   "score": 0.6194,
+   "iou": 0.9561,
+   "colour": 0.2827
+  },
+  {
+   "round": 5,
+   "points": 161,
+   "faces": 878,
+   "score": 0.6215,
+   "iou": 0.9579,
+   "colour": 0.285
+  },
+  {
+   "round": 6,
+   "points": 180,
+   "faces": 916,
+   "score": 0.6275,
+   "iou": 0.9579,
+   "colour": 0.2971
+  },
+  {
+   "round": 7,
+   "points": 201,
+   "faces": 958,
+   "score": 0.6314,
+   "iou": 0.9579,
+   "colour": 0.305
+  },
+  {
+   "round": 8,
+   "points": 225,
+   "faces": 1006,
+   "score": 0.6335,
+   "iou": 0.9579,
+   "colour": 0.3092
+  },
+  {
+   "round": 9,
+   "points": 252,
+   "faces": 1060,
+   "score": 0.6409,
+   "iou": 0.9579,
+   "colour": 0.3239
+  },
+  {
+   "round": 10,
+   "points": 282,
+   "faces": 1120,
+   "score": 0.6465,
+   "iou": 0.9579,
+   "colour": 0.3351
+  },
+  {
+   "round": 11,
+   "points": 315,
+   "faces": 1186,
+   "score": 0.6509,
+   "iou": 0.9586,
+   "colour": 0.3432
+  },
+  {
+   "round": 12,
+   "points": 352,
+   "faces": 1259,
+   "score": 0.6546,
+   "iou": 0.9581,
+   "colour": 0.3511
+  },
+  {
+   "round": 13,
+   "points": 394,
+   "faces": 1342,
+   "score": 0.6577,
+   "iou": 0.9581,
+   "colour": 0.3573
+  },
+  {
+   "round": 14,
+   "points": 441,
+   "faces": 1436,
+   "score": 0.6631,
+   "iou": 0.9581,
+   "colour": 0.3681
+  },
+  {
+   "round": 15,
+   "points": 493,
+   "faces": 1540,
+   "score": 0.6661,
+   "iou": 0.958,
+   "colour": 0.3742
+  },
+  {
+   "round": 16,
+   "points": 552,
+   "faces": 1658,
+   "score": 0.6712,
+   "iou": 0.958,
+   "colour": 0.3844
+  },
+  {
+   "round": 17,
+   "points": 618,
+   "faces": 1790,
+   "score": 0.6769,
+   "iou": 0.958,
+   "colour": 0.3957
+  },
+  {
+   "round": 18,
+   "points": 692,
+   "faces": 1938,
+   "score": 0.6825,
+   "iou": 0.958,
+   "colour": 0.4069
+  },
+  {
+   "round": 19,
+   "points": 775,
+   "faces": 2102,
+   "score": 0.6842,
+   "iou": 0.957,
+   "colour": 0.4115
+  },
+  {
+   "round": 20,
+   "points": 868,
+   "faces": 2287,
+   "score": 0.6924,
+   "iou": 0.9586,
+   "colour": 0.4261,
+   "stop": "budget",
+   "back_faces": 473,
+   "line_faces": 254
+  }
+ ]
+}

@@ -4,7 +4,7 @@ import net.runelite.cache.definitions.ModelDefinition;
 import net.runelite.cache.definitions.loaders.ModelLoader;
 
 /** Decodes every model with RuneLite's own ModelLoader and prints a canonical
- *  dump (id, counts, vertices, faces, colours, render types) for comparison. */
+ *  dump (id, counts, vertices, faces, colours, render types, priorities) for comparison. */
 public class VerifyModels {
     public static void main(String[] a) throws Exception {
         Path dir = Paths.get(a[0]);
@@ -22,7 +22,8 @@ public class VerifyModels {
                 sb.append("f ").append(d.faceIndices1[i]).append(' ').append(d.faceIndices2[i]).append(' ').append(d.faceIndices3[i])
                   .append(' ').append(d.faceColors[i] & 0xFFFF)
                   .append(' ').append(d.faceRenderTypes == null ? 0 : d.faceRenderTypes[i])
-                  .append(' ').append(d.faceTextures == null ? -1 : d.faceTextures[i]).append('\n');
+                  .append(' ').append(d.faceTextures == null ? -1 : d.faceTextures[i])
+                  .append(' ').append(d.faceRenderPriorities == null ? d.priority : d.faceRenderPriorities[i]).append('\n');
             d.computeNormals();
         }
         System.out.print(sb);

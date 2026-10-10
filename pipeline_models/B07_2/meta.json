@@ -1,0 +1,271 @@
+{
+ "code": "B07_2",
+ "name": "Tidewalker ranger tunic",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  165,
+  722,
+  311,
+  905
+ ],
+ "size": [
+  146,
+  183
+ ],
+ "depth_scale_px": 45.04391098022461,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1287,
+ "faces": 2399,
+ "match": {
+  "round": 27,
+  "points": 1016,
+  "faces": 2398,
+  "score": 0.8478,
+  "iou": 0.9832,
+  "colour": 0.7123
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 87,
+   "faces": 619,
+   "score": 0.66,
+   "iou": 0.9161,
+   "colour": 0.4038
+  },
+  {
+   "round": 1,
+   "points": 99,
+   "faces": 641,
+   "score": 0.6741,
+   "iou": 0.9327,
+   "colour": 0.4154
+  },
+  {
+   "round": 2,
+   "points": 111,
+   "faces": 665,
+   "score": 0.6898,
+   "iou": 0.9464,
+   "colour": 0.4331
+  },
+  {
+   "round": 3,
+   "points": 124,
+   "faces": 686,
+   "score": 0.6875,
+   "iou": 0.9426,
+   "colour": 0.4325,
+   "rolled_back": true
+  },
+  {
+   "round": 4,
+   "points": 124,
+   "faces": 690,
+   "score": 0.6908,
+   "iou": 0.9465,
+   "colour": 0.435
+  },
+  {
+   "round": 5,
+   "points": 138,
+   "faces": 717,
+   "score": 0.6876,
+   "iou": 0.9391,
+   "colour": 0.436,
+   "rolled_back": true
+  },
+  {
+   "round": 6,
+   "points": 138,
+   "faces": 717,
+   "score": 0.6852,
+   "iou": 0.9346,
+   "colour": 0.4358,
+   "rolled_back": true
+  },
+  {
+   "round": 7,
+   "points": 138,
+   "faces": 717,
+   "score": 0.6931,
+   "iou": 0.9464,
+   "colour": 0.4399
+  },
+  {
+   "round": 8,
+   "points": 154,
+   "faces": 747,
+   "score": 0.6982,
+   "iou": 0.9486,
+   "colour": 0.4479
+  },
+  {
+   "round": 9,
+   "points": 172,
+   "faces": 781,
+   "score": 0.703,
+   "iou": 0.9461,
+   "colour": 0.4598
+  },
+  {
+   "round": 10,
+   "points": 192,
+   "faces": 820,
+   "score": 0.7074,
+   "iou": 0.9482,
+   "colour": 0.4666
+  },
+  {
+   "round": 11,
+   "points": 215,
+   "faces": 866,
+   "score": 0.7146,
+   "iou": 0.9482,
+   "colour": 0.4811
+  },
+  {
+   "round": 12,
+   "points": 240,
+   "faces": 915,
+   "score": 0.7195,
+   "iou": 0.9495,
+   "colour": 0.4894
+  },
+  {
+   "round": 13,
+   "points": 268,
+   "faces": 968,
+   "score": 0.723,
+   "iou": 0.9499,
+   "colour": 0.4961
+  },
+  {
+   "round": 14,
+   "points": 300,
+   "faces": 1032,
+   "score": 0.7308,
+   "iou": 0.9517,
+   "colour": 0.5099
+  },
+  {
+   "round": 15,
+   "points": 336,
+   "faces": 1103,
+   "score": 0.7394,
+   "iou": 0.9507,
+   "colour": 0.5281
+  },
+  {
+   "round": 16,
+   "points": 376,
+   "faces": 1183,
+   "score": 0.7442,
+   "iou": 0.9524,
+   "colour": 0.536
+  },
+  {
+   "round": 17,
+   "points": 421,
+   "faces": 1273,
+   "score": 0.7501,
+   "iou": 0.9553,
+   "colour": 0.5449
+  },
+  {
+   "round": 18,
+   "points": 471,
+   "faces": 1373,
+   "score": 0.7564,
+   "iou": 0.9576,
+   "colour": 0.5552
+  },
+  {
+   "round": 19,
+   "points": 527,
+   "faces": 1481,
+   "score": 0.7709,
+   "iou": 0.9605,
+   "colour": 0.5813
+  },
+  {
+   "round": 20,
+   "points": 590,
+   "faces": 1602,
+   "score": 0.779,
+   "iou": 0.9609,
+   "colour": 0.5971
+  },
+  {
+   "round": 21,
+   "points": 660,
+   "faces": 1739,
+   "score": 0.7944,
+   "iou": 0.9656,
+   "colour": 0.6232
+  },
+  {
+   "round": 22,
+   "points": 739,
+   "faces": 1892,
+   "score": 0.81,
+   "iou": 0.9717,
+   "colour": 0.6483
+  },
+  {
+   "round": 23,
+   "points": 827,
+   "faces": 2057,
+   "score": 0.8242,
+   "iou": 0.9767,
+   "colour": 0.6717
+  },
+  {
+   "round": 24,
+   "points": 926,
+   "faces": 2234,
+   "score": 0.8413,
+   "iou": 0.9817,
+   "colour": 0.701
+  },
+  {
+   "round": 25,
+   "points": 1009,
+   "faces": 2388,
+   "score": 0.8474,
+   "iou": 0.9831,
+   "colour": 0.7116
+  },
+  {
+   "round": 26,
+   "points": 1015,
+   "faces": 2398,
+   "score": 0.8476,
+   "iou": 0.9832,
+   "colour": 0.712
+  },
+  {
+   "round": 27,
+   "points": 1016,
+   "faces": 2398,
+   "score": 0.8478,
+   "iou": 0.9832,
+   "colour": 0.7123
+  },
+  {
+   "round": 28,
+   "points": 1017,
+   "faces": 2400,
+   "score": 0.8476,
+   "iou": 0.9832,
+   "colour": 0.7119,
+   "stop": "plateau",
+   "back_faces": 361,
+   "line_faces": 128
+  }
+ ]
+}

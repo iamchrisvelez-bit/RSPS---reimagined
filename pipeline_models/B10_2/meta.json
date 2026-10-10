@@ -1,0 +1,228 @@
+{
+ "code": "B10_2",
+ "name": "Astral robe top",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  213,
+  1084,
+  407,
+  1249
+ ],
+ "size": [
+  194,
+  165
+ ],
+ "depth_scale_px": 74.47506713867188,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1317,
+ "faces": 2400,
+ "match": {
+  "round": 22,
+  "points": 959,
+  "faces": 2398,
+  "score": 0.8022,
+  "iou": 0.9819,
+  "colour": 0.6225
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 79,
+   "faces": 657,
+   "score": 0.6567,
+   "iou": 0.9684,
+   "colour": 0.345
+  },
+  {
+   "round": 1,
+   "points": 91,
+   "faces": 681,
+   "score": 0.6654,
+   "iou": 0.9784,
+   "colour": 0.3524
+  },
+  {
+   "round": 2,
+   "points": 103,
+   "faces": 701,
+   "score": 0.6716,
+   "iou": 0.9771,
+   "colour": 0.3661
+  },
+  {
+   "round": 3,
+   "points": 115,
+   "faces": 725,
+   "score": 0.6803,
+   "iou": 0.9771,
+   "colour": 0.3835
+  },
+  {
+   "round": 4,
+   "points": 128,
+   "faces": 751,
+   "score": 0.6822,
+   "iou": 0.9771,
+   "colour": 0.3873
+  },
+  {
+   "round": 5,
+   "points": 143,
+   "faces": 781,
+   "score": 0.6874,
+   "iou": 0.9771,
+   "colour": 0.3977
+  },
+  {
+   "round": 6,
+   "points": 160,
+   "faces": 815,
+   "score": 0.6958,
+   "iou": 0.9771,
+   "colour": 0.4144
+  },
+  {
+   "round": 7,
+   "points": 179,
+   "faces": 853,
+   "score": 0.703,
+   "iou": 0.9771,
+   "colour": 0.4289
+  },
+  {
+   "round": 8,
+   "points": 200,
+   "faces": 895,
+   "score": 0.7053,
+   "iou": 0.9771,
+   "colour": 0.4336
+  },
+  {
+   "round": 9,
+   "points": 224,
+   "faces": 942,
+   "score": 0.7105,
+   "iou": 0.9767,
+   "colour": 0.4443
+  },
+  {
+   "round": 10,
+   "points": 250,
+   "faces": 994,
+   "score": 0.7114,
+   "iou": 0.9767,
+   "colour": 0.4461
+  },
+  {
+   "round": 11,
+   "points": 280,
+   "faces": 1054,
+   "score": 0.7147,
+   "iou": 0.9767,
+   "colour": 0.4526
+  },
+  {
+   "round": 12,
+   "points": 313,
+   "faces": 1120,
+   "score": 0.7197,
+   "iou": 0.9767,
+   "colour": 0.4626
+  },
+  {
+   "round": 13,
+   "points": 350,
+   "faces": 1194,
+   "score": 0.7239,
+   "iou": 0.9767,
+   "colour": 0.4711
+  },
+  {
+   "round": 14,
+   "points": 392,
+   "faces": 1275,
+   "score": 0.7283,
+   "iou": 0.9762,
+   "colour": 0.4804
+  },
+  {
+   "round": 15,
+   "points": 439,
+   "faces": 1368,
+   "score": 0.7416,
+   "iou": 0.9758,
+   "colour": 0.5074
+  },
+  {
+   "round": 16,
+   "points": 491,
+   "faces": 1472,
+   "score": 0.7473,
+   "iou": 0.9758,
+   "colour": 0.5188
+  },
+  {
+   "round": 17,
+   "points": 549,
+   "faces": 1584,
+   "score": 0.7589,
+   "iou": 0.9778,
+   "colour": 0.54
+  },
+  {
+   "round": 18,
+   "points": 614,
+   "faces": 1712,
+   "score": 0.7614,
+   "iou": 0.9756,
+   "colour": 0.5472
+  },
+  {
+   "round": 19,
+   "points": 687,
+   "faces": 1858,
+   "score": 0.7693,
+   "iou": 0.9762,
+   "colour": 0.5624
+  },
+  {
+   "round": 20,
+   "points": 769,
+   "faces": 2018,
+   "score": 0.7763,
+   "iou": 0.9775,
+   "colour": 0.5752
+  },
+  {
+   "round": 21,
+   "points": 861,
+   "faces": 2203,
+   "score": 0.787,
+   "iou": 0.9792,
+   "colour": 0.5949
+  },
+  {
+   "round": 22,
+   "points": 959,
+   "faces": 2398,
+   "score": 0.8022,
+   "iou": 0.9819,
+   "colour": 0.6225
+  },
+  {
+   "round": 23,
+   "points": 960,
+   "faces": 2400,
+   "score": 0.8021,
+   "iou": 0.9819,
+   "colour": 0.6224,
+   "stop": "budget",
+   "back_faces": 362,
+   "line_faces": 162
+  }
+ ]
+}

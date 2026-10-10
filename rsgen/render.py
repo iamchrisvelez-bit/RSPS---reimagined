@@ -22,7 +22,8 @@ def background(w, h):
     return img
 
 
-def render(V, F, cols, glow=None, size=480, yaw=-32, pitch=16, ss=3, fill=0.84, bg=None):
+def render(V, F, cols, glow=None, size=480, yaw=-32, pitch=16, ss=3, fill=0.84, bg=None, smooth=False,
+           layers=None):
     W = H = size * ss
     R = _rx(pitch) @ _ry(yaw)
     P = np.asarray(V, float) @ R.T
@@ -43,6 +44,16 @@ def render(V, F, cols, glow=None, size=480, yaw=-32, pitch=16, ss=3, fill=0.84, 
     diff = np.clip(n @ L, 0, 1)
     rim = np.clip(n @ L2, 0, 1)
     shade = 0.42 + 0.72 * diff + 0.18 * rim
+    vshade = None
+    if smooth:  # Gouraud, like RS render type 0: light per vertex normal, interpolate across the face
+        vn = np.zeros((len(P), 3))
+        an = np.cross(T[:, 1] - T[:, 0], T[:, 2] - T[:, 0])  # area-weighted face normals
+        for k in range(3):
+            np.add.at(vn, np.asarray(F)[:, k], an)
+        vn /= np.maximum(np.linalg.norm(vn, axis=1, keepdims=True), 1e-9)
+        vshade = 0.42 + 0.72 * np.clip(vn @ L, 0, 1) + 0.18 * np.clip(vn @ L2, 0, 1)
+    # detail-layer faces (decals) win depth ties against the surface, like a higher RS priority
+    zbias = np.zeros(len(F)) if layers is None or len(layers) != len(F) else np.asarray(layers, float) * 1e-3
     cols = np.asarray(cols, float)
     glow = np.zeros(len(F), bool) if glow is None else np.asarray(glow, bool)
     shade = np.where(glow, np.maximum(shade, 1.05), shade)
@@ -67,11 +78,15 @@ def render(V, F, cols, glow=None, size=480, yaw=-32, pitch=16, ss=3, fill=0.84, 
         m = (w0 >= -1e-6) & (w1 >= -1e-6) & (w2 >= -1e-6)
         if not m.any():
             continue
-        z = w0 * Z[a] + w1 * Z[b] + w2 * Z[cc]
+        z = w0 * Z[a] + w1 * Z[b] + w2 * Z[cc] + zbias[i]
         zb = zbuf[y0:y1 + 1, x0:x1 + 1]
         m &= z > zb
         zb[m] = z[m]
-        img[y0:y1 + 1, x0:x1 + 1][m] = fc[i]
+        if vshade is not None and not glow[i]:
+            sh = w0 * vshade[a] + w1 * vshade[b] + w2 * vshade[cc]
+            img[y0:y1 + 1, x0:x1 + 1][m] = np.clip(cols[i][None, :] * sh[m][:, None], 0, 255)
+        else:
+            img[y0:y1 + 1, x0:x1 + 1][m] = fc[i]
 
     # soft glow bloom for emissive faces
     out = Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
@@ -119,13 +134,14 @@ def sheet(tiles, cols, tile=320, title=None):
     return out
 
 
-def render_rgba(V, F, cols, size=256, yaw=-32, pitch=16, ss=2):
+def render_rgba(V, F, cols, size=256, yaw=-32, pitch=16, ss=2, smooth=False, layers=None):
     """Transparent-background render (no bloom), cropped to the model."""
     W = size * ss
     bg = np.zeros((W, W, 3))
     probe = np.full((W, W, 3), 255.0)
-    a = np.asarray(render(V, F, cols, None, size=W, yaw=yaw, pitch=pitch, ss=1, fill=0.96, bg=bg))
-    b = np.asarray(render(V, F, cols, None, size=W, yaw=yaw, pitch=pitch, ss=1, fill=0.96, bg=probe))
+    kw = dict(size=W, yaw=yaw, pitch=pitch, ss=1, fill=0.96, smooth=smooth, layers=layers)
+    a = np.asarray(render(V, F, cols, None, bg=bg, **kw))
+    b = np.asarray(render(V, F, cols, None, bg=probe, **kw))
     # a pixel is model-covered when it is the same on both backgrounds
     alpha = (np.abs(a.astype(int) - b.astype(int)).max(-1) == 0).astype(np.uint8) * 255
     img = Image.fromarray(np.dstack([a, alpha]).astype(np.uint8), 'RGBA')

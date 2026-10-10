@@ -93,6 +93,20 @@ A round that makes the match worse is undone, and its spots are skipped next tim
 
 `--mode flat` gives the earlier look: 8 flat tones with the shading removed.
 
+### Detail lines and smoothing
+
+- **Detail lines** (`rsgen/detail.py`) are found in each design:
+  - A pixel is part of a line when it differs from the surface on both sides and those sides look alike. A step edge between two flat areas, like a facet border in the low-poly art, only differs on one side, so it doesn't count.
+  - The lines are traced to centre lines, joined across junctions, and checked to stand out from the surface around them.
+  - Each one is built as its own thin strip lying just in front of the surface, on face priority 11 (the surface uses 10). They draw on top in game, and the faces underneath take the surface colour instead of a blur of line and surface.
+  - **Width and segment length follow the item's real in-game size** (`rs_unit`: design pixels per RS unit for the slot). RS vertices sit on an integer grid and a helm is only about 50 units across, so lines are at least about 1.8 units wide, with segments of about 3 units. Thinner lines would snap into broken zig-zags.
+  - Weapons are too small for that, so their detail stays in the face colours.
+  - Up to `line_share` of the face budget (default 25%) goes to lines, longest first.
+- **Smoothing:**
+  - Face colours get an edge-preserving smoothing over the triangle graph: noise evens out and real colour borders stay.
+  - Heights get Laplacian smoothing, with the rim fixed.
+  - Stage 3 and `build.py` encode **smooth (Gouraud) shading**, RS render type 0, so the client lights each vertex and blends across faces. `--shading flat` keeps the faceted look.
+
 ### Outputs per item
 
 - `model.obj`

@@ -341,3 +341,79 @@ class TestCapeFacing(unittest.TestCase):
         T = kept.V[kept.F]
         self.assertGreater(np.cross(T[:, 1] - T[:, 0], T[:, 2] - T[:, 0])[:, 2][
             np.array([c[0] > 200 for c in kept.C])].sum(), 0)
+
+
+class TestDetailLinesAndSmoothing(unittest.TestCase):
+    def _lined(self):
+        im = np.full((90, 120, 3), 60.0)
+        im[44:47, 10:110] = (250, 150, 40)    # a glowing horizontal line
+        im[10:80, 59:62] = (250, 150, 40)     # crossing it
+        im[20:70, 20:40] = (120, 120, 120)    # a flat block (an area, not a line)
+        return im, np.ones((90, 120), bool)
+
+    def test_finds_lines_not_areas(self):
+        from rsgen.detail import find_lines
+        im, m = self._lined()
+        lines = find_lines(im, m)
+        self.assertGreaterEqual(len(lines), 2)
+        total = sum(np.hypot(*np.diff(pl, axis=0).T).sum() for pl, _, _ in lines)
+        self.assertGreater(total, 120)  # the two strokes, joined across the junction
+        for pl, width, col in lines:
+            self.assertGreater(col[0], col[2] + 80)  # keeps the line's own (orange) colour
+            # nothing traced inside the flat block
+            inside = (pl[:, 0] > 24) & (pl[:, 0] < 66) & (pl[:, 1] > 24) & (pl[:, 1] < 36)
+            self.assertFalse(inside.any())
+
+    def test_lines_widen_to_rs_scale(self):
+        from rsgen.detail import find_lines
+        im, m = self._lined()
+        self.assertTrue(all(w >= 1.8 * 3 - 1e-9 for _, w, _ in find_lines(im, m, unit=3.0)))
+
+    def test_layers_survive_obj_and_encode_as_priority(self):
+        from rsgen.geom import Mesh
+        m = Mesh([(0, 0, 0), (9, 0, 0), (0, 9, 0), (0, 0, 3), (9, 0, 3), (0, 9, 3)], [(0, 1, 2), (3, 4, 5)],
+                 [(200, 30, 30), (30, 200, 30)], L=[0, 1])
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, 'm.obj')
+            write_obj_rgb(m, p)
+            back = load_mesh(p)
+        self.assertEqual(back.layers(), [0, 1])
+        dec = rsformat.decode(rsformat.encode(rsformat.clean(back), priority=10, smooth=True))
+        self.assertEqual(dec['priorities'], [10, 11])
+        self.assertEqual(dec['render_types'], [0, 0])
+        flat = rsformat.decode(rsformat.encode(rsformat.clean(box(4, 4, 4))))
+        self.assertEqual(set(flat['priorities']), {10})
+        self.assertEqual(set(flat['render_types']), {1})
+
+    def test_layers_follow_assembly(self):
+        a = box(4, 4, 4)
+        b = box(2, 2, 2)
+        b.L = [1] * len(b.F)
+        a.add(b)
+        n = len(box(4, 4, 4).F)
+        self.assertEqual(a.layers(), [0] * n + [1] * n)
+        a.F = a.F[:5]  # code that edits faces directly falls back to surface
+        self.assertEqual(a.layers(), [0] * 5)
+
+    def test_face_colour_smoothing_keeps_borders(self):
+        T = np.array([(0, 1, 2), (1, 3, 2), (2, 3, 4), (3, 5, 4)])
+        cols = np.array([(100, 100, 100), (110, 104, 100), (230, 40, 40), (226, 44, 40)], float)
+        out = rf.smooth_face_colours(T, cols)
+        self.assertLess(np.abs(out[0] - out[1]).max(), np.abs(cols[0] - cols[1]).max())  # noise evens out
+        self.assertGreater(np.abs(out[1] - out[2]).max(), 100)  # the real border stays
+
+    def test_refined_item_with_lines_end_to_end(self):
+        rgb, mask, depth, m = synthetic_item()
+        arr = np.asarray(rgb).astype(np.float64)
+        ys, xs = np.nonzero(m)
+        cy = int(ys.mean())
+        arr[cy - 1:cy + 2, xs.min() + 8:xs.max() - 8] = (255, 240, 120)  # a painted line across it
+        rgb = Image.fromarray(arr.astype(np.uint8))
+        mesh, hist, _ = rf.refine_item(rgb, mask, depth, 0.35, max_faces=900, start_points=10, slot='shield')
+        self.assertGreater(hist[-1]['line_faces'], 0)
+        self.assertIn(1, mesh.layers())
+        self.assertLessEqual(len(mesh.F), 900)
+        rs = s3.convert(mesh, 'shield', 2400)
+        dec = rsformat.decode(rsformat.encode(rs, smooth=True))
+        self.assertIn(11, dec['priorities'])
+        self.assertTrue(np.array_equal(dec['F'], rs.F))

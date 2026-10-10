@@ -1,0 +1,239 @@
+{
+ "code": "B08_2",
+ "name": "Solar helm",
+ "slot": "head",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  883,
+  723,
+  1024,
+  885
+ ],
+ "size": [
+  141,
+  162
+ ],
+ "depth_scale_px": 51.26743698120117,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1281,
+ "faces": 2399,
+ "match": {
+  "round": 24,
+  "points": 1027,
+  "faces": 2400,
+  "score": 0.7086,
+  "iou": 0.9589,
+  "colour": 0.4582,
+  "stop": "plateau",
+  "back_faces": 359,
+  "line_faces": 84
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 93,
+   "faces": 570,
+   "score": 0.5438,
+   "iou": 0.8765,
+   "colour": 0.2111
+  },
+  {
+   "round": 1,
+   "points": 105,
+   "faces": 592,
+   "score": 0.5579,
+   "iou": 0.8956,
+   "colour": 0.2203
+  },
+  {
+   "round": 2,
+   "points": 117,
+   "faces": 613,
+   "score": 0.572,
+   "iou": 0.9122,
+   "colour": 0.2319
+  },
+  {
+   "round": 3,
+   "points": 131,
+   "faces": 638,
+   "score": 0.5765,
+   "iou": 0.9172,
+   "colour": 0.2357
+  },
+  {
+   "round": 4,
+   "points": 146,
+   "faces": 669,
+   "score": 0.579,
+   "iou": 0.9182,
+   "colour": 0.2398
+  },
+  {
+   "round": 5,
+   "points": 163,
+   "faces": 696,
+   "score": 0.5859,
+   "iou": 0.9314,
+   "colour": 0.2405
+  },
+  {
+   "round": 6,
+   "points": 182,
+   "faces": 728,
+   "score": 0.5855,
+   "iou": 0.9194,
+   "colour": 0.2515
+  },
+  {
+   "round": 7,
+   "points": 203,
+   "faces": 768,
+   "score": 0.5916,
+   "iou": 0.9281,
+   "colour": 0.2552
+  },
+  {
+   "round": 8,
+   "points": 227,
+   "faces": 816,
+   "score": 0.6001,
+   "iou": 0.9296,
+   "colour": 0.2705
+  },
+  {
+   "round": 9,
+   "points": 254,
+   "faces": 865,
+   "score": 0.6062,
+   "iou": 0.9306,
+   "colour": 0.2818
+  },
+  {
+   "round": 10,
+   "points": 284,
+   "faces": 925,
+   "score": 0.6121,
+   "iou": 0.9306,
+   "colour": 0.2936
+  },
+  {
+   "round": 11,
+   "points": 318,
+   "faces": 994,
+   "score": 0.6164,
+   "iou": 0.9304,
+   "colour": 0.3023
+  },
+  {
+   "round": 12,
+   "points": 356,
+   "faces": 1069,
+   "score": 0.6202,
+   "iou": 0.9305,
+   "colour": 0.3099
+  },
+  {
+   "round": 13,
+   "points": 398,
+   "faces": 1153,
+   "score": 0.6249,
+   "iou": 0.9305,
+   "colour": 0.3193
+  },
+  {
+   "round": 14,
+   "points": 445,
+   "faces": 1247,
+   "score": 0.6294,
+   "iou": 0.9309,
+   "colour": 0.3279
+  },
+  {
+   "round": 15,
+   "points": 498,
+   "faces": 1353,
+   "score": 0.6352,
+   "iou": 0.9311,
+   "colour": 0.3393
+  },
+  {
+   "round": 16,
+   "points": 557,
+   "faces": 1472,
+   "score": 0.6436,
+   "iou": 0.9348,
+   "colour": 0.3523
+  },
+  {
+   "round": 17,
+   "points": 623,
+   "faces": 1603,
+   "score": 0.6507,
+   "iou": 0.9354,
+   "colour": 0.366
+  },
+  {
+   "round": 18,
+   "points": 697,
+   "faces": 1753,
+   "score": 0.6643,
+   "iou": 0.9413,
+   "colour": 0.3873
+  },
+  {
+   "round": 19,
+   "points": 780,
+   "faces": 1920,
+   "score": 0.6781,
+   "iou": 0.9479,
+   "colour": 0.4082
+  },
+  {
+   "round": 20,
+   "points": 873,
+   "faces": 2100,
+   "score": 0.6905,
+   "iou": 0.9531,
+   "colour": 0.4279
+  },
+  {
+   "round": 21,
+   "points": 977,
+   "faces": 2306,
+   "score": 0.7047,
+   "iou": 0.9584,
+   "colour": 0.4511
+  },
+  {
+   "round": 22,
+   "points": 1024,
+   "faces": 2395,
+   "score": 0.7077,
+   "iou": 0.9586,
+   "colour": 0.4567
+  },
+  {
+   "round": 23,
+   "points": 1026,
+   "faces": 2398,
+   "score": 0.7084,
+   "iou": 0.9589,
+   "colour": 0.4579
+  },
+  {
+   "round": 24,
+   "points": 1027,
+   "faces": 2400,
+   "score": 0.7086,
+   "iou": 0.9589,
+   "colour": 0.4582,
+   "stop": "plateau",
+   "back_faces": 359,
+   "line_faces": 84
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "code": "B01_1",
+ "name": "Copper scale platebody",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  28,
+  3,
+  205,
+  171
+ ],
+ "size": [
+  177,
+  168
+ ],
+ "depth_scale_px": 58.13264846801758,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 966,
+ "faces": 1566,
+ "match": {
+  "round": 13,
+  "points": 359,
+  "faces": 1260,
+  "score": 0.7033,
+  "iou": 0.9583,
+  "colour": 0.4483
+ },
+ "stop": "plateau",
+ "history": [
+  {
+   "round": 0,
+   "points": 83,
+   "faces": 728,
+   "score": 0.6468,
+   "iou": 0.9282,
+   "colour": 0.3653
+  },
+  {
+   "round": 1,
+   "points": 95,
+   "faces": 750,
+   "score": 0.6586,
+   "iou": 0.9436,
+   "colour": 0.3736
+  },
+  {
+   "round": 2,
+   "points": 107,
+   "faces": 770,
+   "score": 0.6614,
+   "iou": 0.9486,
+   "colour": 0.3741
+  },
+  {
+   "round": 3,
+   "points": 119,
+   "faces": 789,
+   "score": 0.6674,
+   "iou": 0.9575,
+   "colour": 0.3774
+  },
+  {
+   "round": 4,
+   "points": 133,
+   "faces": 814,
+   "score": 0.668,
+   "iou": 0.9591,
+   "colour": 0.377
+  },
+  {
+   "round": 5,
+   "points": 148,
+   "faces": 844,
+   "score": 0.6714,
+   "iou": 0.9591,
+   "colour": 0.3837
+  },
+  {
+   "round": 6,
+   "points": 165,
+   "faces": 878,
+   "score": 0.6822,
+   "iou": 0.9591,
+   "colour": 0.4052
+  },
+  {
+   "round": 7,
+   "points": 184,
+   "faces": 915,
+   "score": 0.6838,
+   "iou": 0.9585,
+   "colour": 0.4091
+  },
+  {
+   "round": 8,
+   "points": 206,
+   "faces": 960,
+   "score": 0.6919,
+   "iou": 0.9593,
+   "colour": 0.4244
+  },
+  {
+   "round": 9,
+   "points": 230,
+   "faces": 1006,
+   "score": 0.6958,
+   "iou": 0.9593,
+   "colour": 0.4324
+  },
+  {
+   "round": 10,
+   "points": 257,
+   "faces": 1060,
+   "score": 0.6987,
+   "iou": 0.9593,
+   "colour": 0.4382
+  },
+  {
+   "round": 11,
+   "points": 287,
+   "faces": 1120,
+   "score": 0.7012,
+   "iou": 0.9593,
+   "colour": 0.4431
+  },
+  {
+   "round": 12,
+   "points": 321,
+   "faces": 1185,
+   "score": 0.7004,
+   "iou": 0.9557,
+   "colour": 0.4451
+  },
+  {
+   "round": 13,
+   "points": 359,
+   "faces": 1260,
+   "score": 0.7033,
+   "iou": 0.9583,
+   "colour": 0.4483
+  },
+  {
+   "round": 14,
+   "points": 402,
+   "faces": 1345,
+   "score": 0.7026,
+   "iou": 0.9559,
+   "colour": 0.4493,
+   "stop": "plateau",
+   "back_faces": 666,
+   "line_faces": 234
+  }
+ ]
+}

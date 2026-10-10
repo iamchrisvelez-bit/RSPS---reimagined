@@ -64,8 +64,8 @@ def _load_mtl(path):
 
 
 def load_obj(path):
-    V, VC, VT, F, FM, FT = [], [], [], [], [], []
-    mats, cur = {}, None
+    V, VC, VT, F, FM, FT, FL = [], [], [], [], [], [], []
+    mats, cur, layer = {}, None, 0
     with open(path, errors='replace') as f:
         for line in f:
             p = line.split()
@@ -91,6 +91,9 @@ def load_obj(path):
                     F.append((a, b, c))
                     FM.append(cur)
                     FT.append((ta, tb, tc))
+                    FL.append(layer)
+            elif p[0] in ('g', 'o'):
+                layer = 1 if len(p) > 1 and p[1].startswith('detail') else 0
             elif p[0] == 'mtllib':
                 mp = os.path.join(os.path.dirname(path), ' '.join(p[1:]))
                 if os.path.exists(mp):
@@ -114,7 +117,7 @@ def load_obj(path):
             cols.append(tuple(int(x * 255) for x in mat['kd']))
         else:
             cols.append((180, 180, 180))
-    return Mesh(V, F, cols)
+    return Mesh(V, F, cols, L=FL)
 
 
 def write_obj_rgb(mesh, path, name='model', levels=32):
@@ -123,8 +126,12 @@ def write_obj_rgb(mesh, path, name='model', levels=32):
     mats, lines = {}, ['# %s' % name, 'mtllib %s' % (os.path.splitext(os.path.basename(path))[0] + '.mtl'),
                        'o %s' % name]
     lines += ['v %.3f %.3f %.3f' % tuple(v) for v in mesh.V]
-    cur = None
-    for (a, b, c), col in zip(mesh.F, mesh.C):
+    cur, group = None, 0
+    for (a, b, c), col, ly in zip(mesh.F, mesh.C, mesh.layers()):
+        if ly != group:  # detail-layer faces go in a 'detail' group (decals drawn over the surface)
+            group = ly
+            lines.append('g detail' if ly else 'g %s' % name)
+            cur = None
         key = tuple(min(255, (x // q) * q + q // 2) for x in col)
         if key not in mats:
             mats[key] = 'c_%02x%02x%02x' % key

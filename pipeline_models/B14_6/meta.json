@@ -1,0 +1,228 @@
+{
+ "code": "B14_6",
+ "name": "Crimson spiked roundshield",
+ "slot": "shield",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1066,
+  1621,
+  1219,
+  1793
+ ],
+ "size": [
+  153,
+  172
+ ],
+ "depth_scale_px": 58.49781799316406,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1266,
+ "faces": 2400,
+ "match": {
+  "round": 22,
+  "points": 1030,
+  "faces": 2394,
+  "score": 0.793,
+  "iou": 0.9719,
+  "colour": 0.6142
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 89,
+   "faces": 562,
+   "score": 0.6341,
+   "iou": 0.9102,
+   "colour": 0.358
+  },
+  {
+   "round": 1,
+   "points": 101,
+   "faces": 584,
+   "score": 0.6531,
+   "iou": 0.9361,
+   "colour": 0.3702
+  },
+  {
+   "round": 2,
+   "points": 113,
+   "faces": 607,
+   "score": 0.6611,
+   "iou": 0.9436,
+   "colour": 0.3786
+  },
+  {
+   "round": 3,
+   "points": 126,
+   "faces": 628,
+   "score": 0.6674,
+   "iou": 0.9526,
+   "colour": 0.3823
+  },
+  {
+   "round": 4,
+   "points": 141,
+   "faces": 655,
+   "score": 0.6712,
+   "iou": 0.9549,
+   "colour": 0.3875
+  },
+  {
+   "round": 5,
+   "points": 157,
+   "faces": 686,
+   "score": 0.6768,
+   "iou": 0.9545,
+   "colour": 0.399
+  },
+  {
+   "round": 6,
+   "points": 175,
+   "faces": 721,
+   "score": 0.6799,
+   "iou": 0.9564,
+   "colour": 0.4034
+  },
+  {
+   "round": 7,
+   "points": 196,
+   "faces": 761,
+   "score": 0.6815,
+   "iou": 0.955,
+   "colour": 0.408
+  },
+  {
+   "round": 8,
+   "points": 219,
+   "faces": 804,
+   "score": 0.682,
+   "iou": 0.9514,
+   "colour": 0.4126
+  },
+  {
+   "round": 9,
+   "points": 245,
+   "faces": 854,
+   "score": 0.6856,
+   "iou": 0.9527,
+   "colour": 0.4184
+  },
+  {
+   "round": 10,
+   "points": 274,
+   "faces": 913,
+   "score": 0.6928,
+   "iou": 0.9546,
+   "colour": 0.4309
+  },
+  {
+   "round": 11,
+   "points": 306,
+   "faces": 975,
+   "score": 0.6929,
+   "iou": 0.9492,
+   "colour": 0.4366
+  },
+  {
+   "round": 12,
+   "points": 342,
+   "faces": 1046,
+   "score": 0.7045,
+   "iou": 0.9528,
+   "colour": 0.4563
+  },
+  {
+   "round": 13,
+   "points": 383,
+   "faces": 1127,
+   "score": 0.7095,
+   "iou": 0.9518,
+   "colour": 0.4671
+  },
+  {
+   "round": 14,
+   "points": 428,
+   "faces": 1217,
+   "score": 0.718,
+   "iou": 0.9525,
+   "colour": 0.4834
+  },
+  {
+   "round": 15,
+   "points": 479,
+   "faces": 1318,
+   "score": 0.7221,
+   "iou": 0.9522,
+   "colour": 0.4919
+  },
+  {
+   "round": 16,
+   "points": 536,
+   "faces": 1432,
+   "score": 0.7289,
+   "iou": 0.9527,
+   "colour": 0.5051
+  },
+  {
+   "round": 17,
+   "points": 600,
+   "faces": 1558,
+   "score": 0.7376,
+   "iou": 0.9529,
+   "colour": 0.5224
+  },
+  {
+   "round": 18,
+   "points": 672,
+   "faces": 1702,
+   "score": 0.7478,
+   "iou": 0.9542,
+   "colour": 0.5413
+  },
+  {
+   "round": 19,
+   "points": 752,
+   "faces": 1860,
+   "score": 0.7576,
+   "iou": 0.9596,
+   "colour": 0.5555
+  },
+  {
+   "round": 20,
+   "points": 842,
+   "faces": 2034,
+   "score": 0.762,
+   "iou": 0.9624,
+   "colour": 0.5615
+  },
+  {
+   "round": 21,
+   "points": 943,
+   "faces": 2226,
+   "score": 0.7795,
+   "iou": 0.966,
+   "colour": 0.593
+  },
+  {
+   "round": 22,
+   "points": 1030,
+   "faces": 2394,
+   "score": 0.793,
+   "iou": 0.9719,
+   "colour": 0.6142
+  },
+  {
+   "round": 23,
+   "points": 1033,
+   "faces": 2400,
+   "score": 0.7929,
+   "iou": 0.9719,
+   "colour": 0.614,
+   "stop": "budget",
+   "back_faces": 366,
+   "line_faces": 70
+  }
+ ]
+}

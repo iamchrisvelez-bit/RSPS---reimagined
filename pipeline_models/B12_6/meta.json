@@ -1,0 +1,239 @@
+{
+ "code": "B12_6",
+ "name": "Goblin knotclub",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1690,
+  1282,
+  1884,
+  1405
+ ],
+ "size": [
+  194,
+  123
+ ],
+ "depth_scale_px": 31.627378463745117,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1190,
+ "faces": 2400,
+ "match": {
+  "round": 24,
+  "points": 1116,
+  "faces": 2400,
+  "score": 0.9323,
+  "iou": 0.9907,
+  "colour": 0.8739,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 84,
+   "faces": 490,
+   "score": 0.6427,
+   "iou": 0.8361,
+   "colour": 0.4494
+  },
+  {
+   "round": 1,
+   "points": 96,
+   "faces": 510,
+   "score": 0.679,
+   "iou": 0.8787,
+   "colour": 0.4794
+  },
+  {
+   "round": 2,
+   "points": 108,
+   "faces": 532,
+   "score": 0.7099,
+   "iou": 0.9092,
+   "colour": 0.5107
+  },
+  {
+   "round": 3,
+   "points": 120,
+   "faces": 553,
+   "score": 0.7136,
+   "iou": 0.9088,
+   "colour": 0.5185
+  },
+  {
+   "round": 4,
+   "points": 134,
+   "faces": 580,
+   "score": 0.7291,
+   "iou": 0.9248,
+   "colour": 0.5333
+  },
+  {
+   "round": 5,
+   "points": 150,
+   "faces": 609,
+   "score": 0.7356,
+   "iou": 0.9242,
+   "colour": 0.547
+  },
+  {
+   "round": 6,
+   "points": 168,
+   "faces": 646,
+   "score": 0.7415,
+   "iou": 0.9112,
+   "colour": 0.5718
+  },
+  {
+   "round": 7,
+   "points": 188,
+   "faces": 687,
+   "score": 0.7569,
+   "iou": 0.928,
+   "colour": 0.5858
+  },
+  {
+   "round": 8,
+   "points": 210,
+   "faces": 730,
+   "score": 0.7742,
+   "iou": 0.9368,
+   "colour": 0.6117
+  },
+  {
+   "round": 9,
+   "points": 235,
+   "faces": 779,
+   "score": 0.7955,
+   "iou": 0.9458,
+   "colour": 0.6452
+  },
+  {
+   "round": 10,
+   "points": 263,
+   "faces": 829,
+   "score": 0.8125,
+   "iou": 0.9517,
+   "colour": 0.6732
+  },
+  {
+   "round": 11,
+   "points": 294,
+   "faces": 882,
+   "score": 0.8198,
+   "iou": 0.9566,
+   "colour": 0.6829
+  },
+  {
+   "round": 12,
+   "points": 329,
+   "faces": 946,
+   "score": 0.8353,
+   "iou": 0.9619,
+   "colour": 0.7088
+  },
+  {
+   "round": 13,
+   "points": 368,
+   "faces": 1016,
+   "score": 0.8534,
+   "iou": 0.9666,
+   "colour": 0.7402
+  },
+  {
+   "round": 14,
+   "points": 412,
+   "faces": 1097,
+   "score": 0.8653,
+   "iou": 0.9663,
+   "colour": 0.7644
+  },
+  {
+   "round": 15,
+   "points": 461,
+   "faces": 1187,
+   "score": 0.8777,
+   "iou": 0.9695,
+   "colour": 0.7859
+  },
+  {
+   "round": 16,
+   "points": 516,
+   "faces": 1285,
+   "score": 0.8861,
+   "iou": 0.9707,
+   "colour": 0.8015
+  },
+  {
+   "round": 17,
+   "points": 577,
+   "faces": 1393,
+   "score": 0.8981,
+   "iou": 0.9759,
+   "colour": 0.8203
+  },
+  {
+   "round": 18,
+   "points": 646,
+   "faces": 1517,
+   "score": 0.9076,
+   "iou": 0.9793,
+   "colour": 0.8359
+  },
+  {
+   "round": 19,
+   "points": 723,
+   "faces": 1656,
+   "score": 0.9185,
+   "iou": 0.9842,
+   "colour": 0.8529
+  },
+  {
+   "round": 20,
+   "points": 809,
+   "faces": 1814,
+   "score": 0.921,
+   "iou": 0.9864,
+   "colour": 0.8556
+  },
+  {
+   "round": 21,
+   "points": 906,
+   "faces": 1995,
+   "score": 0.9264,
+   "iou": 0.9887,
+   "colour": 0.8641
+  },
+  {
+   "round": 22,
+   "points": 1014,
+   "faces": 2205,
+   "score": 0.9306,
+   "iou": 0.9895,
+   "colour": 0.8718
+  },
+  {
+   "round": 23,
+   "points": 1111,
+   "faces": 2390,
+   "score": 0.9314,
+   "iou": 0.9901,
+   "colour": 0.8728
+  },
+  {
+   "round": 24,
+   "points": 1116,
+   "faces": 2400,
+   "score": 0.9323,
+   "iou": 0.9907,
+   "colour": 0.8739,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 0
+  }
+ ]
+}

@@ -3,3 +3,4 @@ verify/build/
 out/compare/
 pipeline_out/
 .venv-blender/
+pipeline_models/*/refine.png

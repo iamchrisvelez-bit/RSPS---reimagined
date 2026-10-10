@@ -6,7 +6,7 @@ Everything you need is in `out/`. The single source of truth is `out/manifest.js
 ## 0. Verify the package before touching the server
 ```sh
 pip install -r requirements.txt
-./verify.sh            # rebuilds out/ from source + 11 checks; must end with "OK"
+./verify.sh            # rebuilds out/ from source + all checks; must end with "OK"
 ```
 If the cache already uses model ids 60000–60167 or item ids 30000–30083, rebuild with free ranges.
 **Don't hand-edit ids anywhere**: the manifest, definitions and file names are all regenerated together.
@@ -21,7 +21,7 @@ Constraints:
 | Path | Use |
 |---|---|
 | `manifest.json` | One entry per item: `item_id`, `name`, `slot`, `equip_slot`, `inventory_model`, `worn_model`, `icon` (zoom2d/xan2d/yan2d), `hide_kits`, `action`, file paths and sha1s |
-| `models/<id>.dat` | Raw RS model, classic format (flat-shaded, HSL colours; no textures, alpha or skins) |
+| `models/<id>.dat` | Raw RS model, classic format: HSL colours, smooth (Gouraud) shading = render type 0, per-face priorities 10 (surface) and 11 (detail lines drawn on top). No textures, alpha or skins |
 | `models/<id>.gz` | The same bytes gzipped. 317 caches store models this way |
 | `sprites/<item_id>.png` | 36×32 RGBA inventory icon in client style (outline 0x000001, shadow 0x302020) |
 | `defs/osrs_item_definitions.json` | Item definitions using RuneLite `ItemDefinition` field names |
@@ -75,10 +75,17 @@ For each `item_id`:
 3. Drop it: the ground model shows.
 4. Equip it: it appears on the player, in the right slot, with the right parts hidden.
 
-## 6. Known limitations, stated plainly
+## 6. Where the models come from
+`out/` is built from **`pipeline_models/`**: the models refined from the design sheet by `pipeline/refine_to_match.py` (see PIPELINE.md). `build.py` fits each one onto the player for its slot. Capes are turned so the artwork faces away from the wearer. The surface carries the design's own colours, shadows and texture, and thin painted lines (glow cracks, trims, straps) are separate strips with face priority 11 so they draw over the surface.
+
+The earlier procedural models are still available: `./verify.sh --source handbuilt` packages them instead (flat shading, single priority 10). Model and item ids are the same either way.
+
+## 7. Known limitations, stated plainly
 - **No vertex skins.** Worn models are placed on a ~200-unit-tall player (feet at y=0, facing +z in authoring space, stored as RS y-down). They show correctly while standing but will **not bend with animations** until vertex groups are copied from the base player kit in a model editor.
 - Items with `worn_placement: item_space_needs_offset` (weapons, shields, amulets) have the grip or centre at the origin. They need the base's usual hand/neck offset, or re-posing, before they look right when equipped.
-- Every model has at most 3,000 faces (enforced by the tests), so equipped players stay cheap to draw.
+- Every model has at most 2,400 faces (the tests enforce ≤3,000), so equipped players stay cheap to draw.
+- Models are reliefs built from one front view of each design: the back is a simpler, slightly darker version of the front, and depth comes from the design's shading rather than a full 3D sculpt.
+- Detail lines are at least ~1.8 RS units wide so they stay continuous on the integer vertex grid. Weapons are too small for that, so they carry their detail in the face colours only.
 - `icon.zoom2d` is estimated from model size (≈12.5 × largest extent). Expect small per-item tweaks.
 - These were verified offline:
   - all 168 models decode byte-for-byte identically with RuneLite's own `ModelLoader` (`verify/runelite_check.py`)

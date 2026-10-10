@@ -21,24 +21,34 @@ def _rot(axis, deg):
 
 
 class Mesh:
-    def __init__(self, V=None, F=None, C=None, G=None):
+    def __init__(self, V=None, F=None, C=None, G=None, L=None):
         self.V = np.zeros((0, 3)) if V is None else np.asarray(V, float).reshape(-1, 3)
         self.F = np.zeros((0, 3), int) if F is None else np.asarray(F, int).reshape(-1, 3)
         n = len(self.F)
         self.C = list(C) if C is not None else [(128, 128, 128)] * n
         self.G = list(G) if G is not None else [False] * n
+        # per-face layer: 0 = surface, 1 = detail decal drawn over it (encoded
+        # as a higher RS face priority)
+        self.L = list(L) if L is not None else [0] * n
+
+    def layers(self):
+        """Per-face layers, or all surface when the list doesn't match the faces
+        (code that rebuilds F directly doesn't have to maintain L)."""
+        return list(self.L) if len(self.L) == len(self.F) else [0] * len(self.F)
 
     # ---- assembly -------------------------------------------------------
     def copy(self):
-        return Mesh(self.V.copy(), self.F.copy(), list(self.C), list(self.G))
+        return Mesh(self.V.copy(), self.F.copy(), list(self.C), list(self.G), self.layers())
 
     def add(self, *others):
         for o in others:
             off = len(self.V)
+            layers = self.layers() + o.layers()
             self.V = np.vstack([self.V, o.V])
             self.F = np.vstack([self.F, o.F + off])
             self.C += o.C
             self.G += o.G
+            self.L = layers
         return self
 
     # ---- transforms (in place, chainable) --------------------------------
