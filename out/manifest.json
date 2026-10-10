@@ -1,0 +1,5261 @@
+{
+ "format": "rs-classic-model",
+ "base_model_id": 60000,
+ "base_item_id": 30000,
+ "count": 84,
+ "items": [
+  {
+   "code": "B01_1",
+   "name": "Copper scale platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30000,
+   "inventory_model": 60000,
+   "worn_model": 60001,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60000.dat",
+    "inventory_gz": "models/60000.gz",
+    "worn_dat": "models/60001.dat",
+    "worn_gz": "models/60001.gz",
+    "sprite": "sprites/30000.png",
+    "obj": "obj/B01_1_copper_scale_platebody.obj",
+    "render": "renders/B01_1_copper_scale_platebody.png"
+   },
+   "sha1": {
+    "inventory": "fabe801883d8995b50feb65e356966da425fd9b0",
+    "worn": "f720a862ed5a4ca57e7c4a767378f3c35c9370c3"
+   },
+   "vertices": 688,
+   "faces": 1300,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    24
+   ],
+   "colors_hsl": [
+    3614,
+    3618,
+    3622,
+    3623,
+    3624,
+    3625,
+    3626,
+    3627,
+    3637,
+    3638,
+    3639,
+    3640,
+    3641,
+    3642,
+    3643,
+    3644,
+    3645,
+    3646,
+    3647,
+    3648,
+    3649,
+    3650,
+    3651,
+    3782,
+    5710
+   ]
+  },
+  {
+   "code": "B01_2",
+   "name": "Iron platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30001,
+   "inventory_model": 60002,
+   "worn_model": 60003,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60002.dat",
+    "inventory_gz": "models/60002.gz",
+    "worn_dat": "models/60003.dat",
+    "worn_gz": "models/60003.gz",
+    "sprite": "sprites/30001.png",
+    "obj": "obj/B01_2_iron_platebody.obj",
+    "render": "renders/B01_2_iron_platebody.png"
+   },
+   "sha1": {
+    "inventory": "8d8d7478cdab0678c72f7e184a01770f536cc194",
+    "worn": "5680a2a9f7e229e9b628d64537e6f65102a8ce78"
+   },
+   "vertices": 454,
+   "faces": 852,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    24
+   ],
+   "colors_hsl": [
+    37928,
+    38949,
+    38950,
+    38951,
+    38952,
+    38959,
+    38960,
+    39976,
+    39977,
+    39978,
+    39981,
+    39982,
+    39983,
+    39984,
+    39985,
+    39986,
+    40994,
+    40998,
+    40999,
+    41002,
+    41006,
+    41007,
+    41010,
+    41011,
+    42022,
+    42034,
+    43034
+   ]
+  },
+  {
+   "code": "B01_3",
+   "name": "Steel platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30002,
+   "inventory_model": 60004,
+   "worn_model": 60005,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60004.dat",
+    "inventory_gz": "models/60004.gz",
+    "worn_dat": "models/60005.dat",
+    "worn_gz": "models/60005.gz",
+    "sprite": "sprites/30002.png",
+    "obj": "obj/B01_3_steel_platebody.obj",
+    "render": "renders/B01_3_steel_platebody.png"
+   },
+   "sha1": {
+    "inventory": "a7f3fd0d9a1f28c1124065e4a0ae6c0524d65070",
+    "worn": "eb666d6a7b51984ff5ffddf516b0388ec7686859"
+   },
+   "vertices": 454,
+   "faces": 852,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    176,
+    24
+   ],
+   "colors_hsl": [
+    36952,
+    37968,
+    37976,
+    38957,
+    38979,
+    38980,
+    38984,
+    38985,
+    38991,
+    38993,
+    38994,
+    38995,
+    38997,
+    38998,
+    38999,
+    39000,
+    40000,
+    40002,
+    40003,
+    40004,
+    40006,
+    40008,
+    40009,
+    40010,
+    40016,
+    40017,
+    40018,
+    40019,
+    40020,
+    40021,
+    40022,
+    40023,
+    41030,
+    41031,
+    41032,
+    41040,
+    42056,
+    42074
+   ]
+  },
+  {
+   "code": "B01_4",
+   "name": "Shadowsteel platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30003,
+   "inventory_model": 60006,
+   "worn_model": 60007,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60006.dat",
+    "inventory_gz": "models/60006.gz",
+    "worn_dat": "models/60007.dat",
+    "worn_gz": "models/60007.gz",
+    "sprite": "sprites/30003.png",
+    "obj": "obj/B01_4_shadowsteel_platebody.obj",
+    "render": "renders/B01_4_shadowsteel_platebody.png"
+   },
+   "sha1": {
+    "inventory": "1badf920c1712805c18673f1a4163e2b039a7ba0",
+    "worn": "7e4431f299aee41979a45dce7a14f49340fb01b3"
+   },
+   "vertices": 670,
+   "faces": 1284,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    24
+   ],
+   "colors_hsl": [
+    45199,
+    46217,
+    46223,
+    46224,
+    46230,
+    47247,
+    47248,
+    48835
+   ]
+  },
+  {
+   "code": "B01_5",
+   "name": "Silver filigree platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30004,
+   "inventory_model": 60008,
+   "worn_model": 60009,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60008.dat",
+    "inventory_gz": "models/60008.gz",
+    "worn_dat": "models/60009.dat",
+    "worn_gz": "models/60009.gz",
+    "sprite": "sprites/30004.png",
+    "obj": "obj/B01_5_silver_filigree_platebody.obj",
+    "render": "renders/B01_5_silver_filigree_platebody.png"
+   },
+   "sha1": {
+    "inventory": "ad96eb86c012529ea8306856628106134dc5abb9",
+    "worn": "c58f4aeb705525b385e3a5f475fbf6b10c50629b"
+   },
+   "vertices": 670,
+   "faces": 1284,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    24
+   ],
+   "colors_hsl": [
+    37087,
+    37088,
+    37090,
+    37093,
+    38088,
+    38089,
+    38090,
+    38111,
+    38112,
+    38113,
+    38114,
+    38115,
+    38116,
+    38117,
+    38246,
+    38247,
+    38248,
+    38249,
+    38250,
+    38251,
+    39107,
+    39108,
+    39109,
+    39110,
+    39111,
+    39112,
+    39113,
+    39114,
+    39115,
+    39135,
+    39138,
+    39140,
+    39271,
+    39272,
+    39274,
+    39275,
+    39285
+   ]
+  },
+  {
+   "code": "B01_6",
+   "name": "Jade crystal platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30005,
+   "inventory_model": 60010,
+   "worn_model": 60011,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60010.dat",
+    "inventory_gz": "models/60010.gz",
+    "worn_dat": "models/60011.dat",
+    "worn_gz": "models/60011.gz",
+    "sprite": "sprites/30005.png",
+    "obj": "obj/B01_6_jade_crystal_platebody.obj",
+    "render": "renders/B01_6_jade_crystal_platebody.png"
+   },
+   "sha1": {
+    "inventory": "80ad59e75fd0e0ea83c936b9405e877f7a4c1de5",
+    "worn": "c489ca2dfebc64cd9a8a7f82b85fff2b05903416"
+   },
+   "vertices": 689,
+   "faces": 1308,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    24
+   ],
+   "colors_hsl": [
+    27061,
+    27069,
+    27163,
+    27164,
+    28180,
+    28185,
+    28186,
+    28187,
+    28188,
+    28189,
+    28190,
+    28191,
+    28192,
+    28193,
+    28194,
+    28195,
+    28196,
+    28197,
+    28198,
+    28199,
+    28200,
+    28201,
+    28202,
+    28203,
+    28204,
+    28205,
+    28206,
+    28207,
+    28208,
+    28209
+   ]
+  },
+  {
+   "code": "B02_1",
+   "name": "Royal sapphire platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30006,
+   "inventory_model": 60012,
+   "worn_model": 60013,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1225,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60012.dat",
+    "inventory_gz": "models/60012.gz",
+    "worn_dat": "models/60013.dat",
+    "worn_gz": "models/60013.gz",
+    "sprite": "sprites/30006.png",
+    "obj": "obj/B02_1_royal_sapphire_platebody.obj",
+    "render": "renders/B02_1_royal_sapphire_platebody.png"
+   },
+   "sha1": {
+    "inventory": "41ce2cc3e76e7d346b2e9b317932c75d6845f342",
+    "worn": "95a71894bf246aa916a99d23070b3165621ed7ab"
+   },
+   "vertices": 618,
+   "faces": 1188,
+   "worn_bounds_min": [
+    -49,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    49,
+    176,
+    24
+   ],
+   "colors_hsl": [
+    7871,
+    41638,
+    41640,
+    41643,
+    41646,
+    41768,
+    41793,
+    41794,
+    41795,
+    41927,
+    42653,
+    42663,
+    42664,
+    42665,
+    42667,
+    42669,
+    42670,
+    42671,
+    42673,
+    42675,
+    42676,
+    42677,
+    42678,
+    42679,
+    42681,
+    42683,
+    42684,
+    42686,
+    42687,
+    42688,
+    42820
+   ]
+  },
+  {
+   "code": "B02_2",
+   "name": "Crimson dragonscale body",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30007,
+   "inventory_model": 60014,
+   "worn_model": 60015,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1150,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60014.dat",
+    "inventory_gz": "models/60014.gz",
+    "worn_dat": "models/60015.dat",
+    "worn_gz": "models/60015.gz",
+    "sprite": "sprites/30007.png",
+    "obj": "obj/B02_2_crimson_dragonscale_body.obj",
+    "render": "renders/B02_2_crimson_dragonscale_body.png"
+   },
+   "sha1": {
+    "inventory": "6b1ed118aed6c646e32bdf8ad67628cec0e638c1",
+    "worn": "27fde411b2eb1c38b86cd404102afacc6d4c85dd"
+   },
+   "vertices": 684,
+   "faces": 1236,
+   "worn_bounds_min": [
+    -46,
+    98,
+    -26
+   ],
+   "worn_bounds_max": [
+    46,
+    179,
+    26
+   ],
+   "colors_hsl": [
+    65203,
+    65209,
+    65311,
+    65312,
+    65313,
+    65314,
+    65315,
+    65316,
+    65317,
+    65318,
+    65319,
+    65320,
+    65321,
+    65322,
+    65323,
+    65324,
+    65326,
+    65327,
+    65328,
+    65329,
+    65330,
+    65331,
+    65332,
+    65334,
+    65335,
+    65336,
+    65337,
+    65339
+   ]
+  },
+  {
+   "code": "B02_3",
+   "name": "Crimson crystal scimitar",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30008,
+   "inventory_model": 60016,
+   "worn_model": 60017,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1062,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60016.dat",
+    "inventory_gz": "models/60016.gz",
+    "worn_dat": "models/60017.dat",
+    "worn_gz": "models/60017.gz",
+    "sprite": "sprites/30008.png",
+    "obj": "obj/B02_3_crimson_crystal_scimitar.obj",
+    "render": "renders/B02_3_crimson_crystal_scimitar.png"
+   },
+   "sha1": {
+    "inventory": "6668cc528ff1788ad2710c8f5b367ac1400aa6f7",
+    "worn": "7743a8865d8ad21900bf4bb5af6b1a5dac29b2f5"
+   },
+   "vertices": 221,
+   "faces": 460,
+   "worn_bounds_min": [
+    -9,
+    -21,
+    -3
+   ],
+   "worn_bounds_max": [
+    22,
+    64,
+    3
+   ],
+   "colors_hsl": [
+    64270,
+    65208,
+    65210,
+    65219,
+    65305,
+    65316,
+    65321,
+    65322,
+    65323,
+    65324,
+    65325,
+    65326,
+    65327,
+    65328,
+    65329,
+    65330,
+    65331,
+    65332,
+    65333,
+    65334,
+    65335,
+    65336,
+    65337,
+    65338,
+    65339,
+    65340,
+    65341,
+    65342,
+    65343,
+    65351,
+    65484,
+    65485,
+    65486
+   ]
+  },
+  {
+   "code": "B02_4",
+   "name": "Sapphire pickaxe",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30009,
+   "inventory_model": 60018,
+   "worn_model": 60019,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1000,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60018.dat",
+    "inventory_gz": "models/60018.gz",
+    "worn_dat": "models/60019.dat",
+    "worn_gz": "models/60019.gz",
+    "sprite": "sprites/30009.png",
+    "obj": "obj/B02_4_sapphire_pickaxe.obj",
+    "render": "renders/B02_4_sapphire_pickaxe.png"
+   },
+   "sha1": {
+    "inventory": "1b5c0ad99623c5eb9abb2047acfebd7a01eca666",
+    "worn": "1f54ef6a6e1e1bcfdebfeeb1a21cddfe2cc7d13f"
+   },
+   "vertices": 99,
+   "faces": 178,
+   "worn_bounds_min": [
+    -30,
+    -42,
+    -5
+   ],
+   "worn_bounds_max": [
+    30,
+    38,
+    5
+   ],
+   "colors_hsl": [
+    7871,
+    41776,
+    41777,
+    41779,
+    41782,
+    41783,
+    41784,
+    41785,
+    41787,
+    41788,
+    41790,
+    41792,
+    41793,
+    42660
+   ]
+  },
+  {
+   "code": "B02_5",
+   "name": "Magma pickaxe",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30010,
+   "inventory_model": 60020,
+   "worn_model": 60021,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1012,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60020.dat",
+    "inventory_gz": "models/60020.gz",
+    "worn_dat": "models/60021.dat",
+    "worn_gz": "models/60021.gz",
+    "sprite": "sprites/30010.png",
+    "obj": "obj/B02_5_magma_pickaxe.obj",
+    "render": "renders/B02_5_magma_pickaxe.png"
+   },
+   "sha1": {
+    "inventory": "7947cc7edae6c59df6c8fa89b5e787256f9f2ddc",
+    "worn": "bc68c7a3dd2597d8281895879effabc330d76d91"
+   },
+   "vertices": 624,
+   "faces": 1254,
+   "worn_bounds_min": [
+    -31,
+    -42,
+    -5
+   ],
+   "worn_bounds_max": [
+    31,
+    39,
+    5
+   ],
+   "colors_hsl": [
+    1423,
+    1426,
+    4035,
+    55306
+   ]
+  },
+  {
+   "code": "B02_6",
+   "name": "Magma hatchet",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30011,
+   "inventory_model": 60022,
+   "worn_model": 60023,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1000,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60022.dat",
+    "inventory_gz": "models/60022.gz",
+    "worn_dat": "models/60023.dat",
+    "worn_gz": "models/60023.gz",
+    "sprite": "sprites/30011.png",
+    "obj": "obj/B02_6_magma_hatchet.obj",
+    "render": "renders/B02_6_magma_hatchet.png"
+   },
+   "sha1": {
+    "inventory": "4774f5138d423daa0f6c92b08ef70a3120686cd8",
+    "worn": "703047b4bca670eeb3a6ddfcb85e062b73b0905f"
+   },
+   "vertices": 818,
+   "faces": 1612,
+   "worn_bounds_min": [
+    -14,
+    -40,
+    -4
+   ],
+   "worn_bounds_max": [
+    27,
+    40,
+    4
+   ],
+   "colors_hsl": [
+    1426,
+    4035,
+    55306
+   ]
+  },
+  {
+   "code": "B03_1",
+   "name": "Necrotic battleaxe",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30012,
+   "inventory_model": 60024,
+   "worn_model": 60025,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1250,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60024.dat",
+    "inventory_gz": "models/60024.gz",
+    "worn_dat": "models/60025.dat",
+    "worn_gz": "models/60025.gz",
+    "sprite": "sprites/30012.png",
+    "obj": "obj/B03_1_necrotic_battleaxe.obj",
+    "render": "renders/B03_1_necrotic_battleaxe.png"
+   },
+   "sha1": {
+    "inventory": "8fad9f9938183a8f78935e29c92ff5f5440cce9f",
+    "worn": "0839e3ca0521684d97e6d39a279aaa6d9f618941"
+   },
+   "vertices": 474,
+   "faces": 910,
+   "worn_bounds_min": [
+    -31,
+    -48,
+    -4
+   ],
+   "worn_bounds_max": [
+    31,
+    52,
+    11
+   ],
+   "colors_hsl": [
+    6328,
+    7192,
+    7219,
+    7379,
+    7514,
+    19275
+   ]
+  },
+  {
+   "code": "B03_2",
+   "name": "Necrotic spear",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30013,
+   "inventory_model": 60026,
+   "worn_model": 60027,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1650,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60026.dat",
+    "inventory_gz": "models/60026.gz",
+    "worn_dat": "models/60027.dat",
+    "worn_gz": "models/60027.gz",
+    "sprite": "sprites/30013.png",
+    "obj": "obj/B03_2_necrotic_spear.obj",
+    "render": "renders/B03_2_necrotic_spear.png"
+   },
+   "sha1": {
+    "inventory": "e977b7767acde3b4ab80846567f51a9f36b36c00",
+    "worn": "89775b911ff3834d4d9f48432b1535a568682da4"
+   },
+   "vertices": 302,
+   "faces": 592,
+   "worn_bounds_min": [
+    -9,
+    -62,
+    -4
+   ],
+   "worn_bounds_max": [
+    9,
+    70,
+    4
+   ],
+   "colors_hsl": [
+    7192,
+    7219,
+    7379,
+    8258,
+    19275
+   ]
+  },
+  {
+   "code": "B03_3",
+   "name": "Necrotic flail",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30014,
+   "inventory_model": 60028,
+   "worn_model": 60029,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 850,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60028.dat",
+    "inventory_gz": "models/60028.gz",
+    "worn_dat": "models/60029.dat",
+    "worn_gz": "models/60029.gz",
+    "sprite": "sprites/30014.png",
+    "obj": "obj/B03_3_necrotic_flail.obj",
+    "render": "renders/B03_3_necrotic_flail.png"
+   },
+   "sha1": {
+    "inventory": "b13adfd7002f59c0a4d48853f5dcf65a111b01ba",
+    "worn": "03f78623b87be92e7ece5f37fb4f75f47ede2408"
+   },
+   "vertices": 361,
+   "faces": 660,
+   "worn_bounds_min": [
+    -4,
+    -32,
+    -14
+   ],
+   "worn_bounds_max": [
+    44,
+    36,
+    14
+   ],
+   "colors_hsl": [
+    7192,
+    7219,
+    8267,
+    9259,
+    19275
+   ]
+  },
+  {
+   "code": "B03_4",
+   "name": "Necrotic twin mauls",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30015,
+   "inventory_model": 60030,
+   "worn_model": 60031,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1025,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60030.dat",
+    "inventory_gz": "models/60030.gz",
+    "worn_dat": "models/60031.dat",
+    "worn_gz": "models/60031.gz",
+    "sprite": "sprites/30015.png",
+    "obj": "obj/B03_4_necrotic_twin_mauls.obj",
+    "render": "renders/B03_4_necrotic_twin_mauls.png"
+   },
+   "sha1": {
+    "inventory": "f2cbaa0467efd733712c92e00f2c3ad7a2769f70",
+    "worn": "0b3a0cfb7890e5fdc5ac6fad12ed3219edda00e6"
+   },
+   "vertices": 214,
+   "faces": 384,
+   "worn_bounds_min": [
+    -41,
+    -31,
+    -8
+   ],
+   "worn_bounds_max": [
+    41,
+    38,
+    8
+   ],
+   "colors_hsl": [
+    6189,
+    7192,
+    7213,
+    7214,
+    7215,
+    7216,
+    7217,
+    7218,
+    7219,
+    7220,
+    7221,
+    7222,
+    7224,
+    7225,
+    8236,
+    8237,
+    8238,
+    8239,
+    8240,
+    8241,
+    8242,
+    8243,
+    8244,
+    8245,
+    8246,
+    8248,
+    9254,
+    9262,
+    9263,
+    9267,
+    9270,
+    9272,
+    19275
+   ]
+  },
+  {
+   "code": "B03_5",
+   "name": "Necrotic crossbow",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30016,
+   "inventory_model": 60032,
+   "worn_model": 60033,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1050,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60032.dat",
+    "inventory_gz": "models/60032.gz",
+    "worn_dat": "models/60033.dat",
+    "worn_gz": "models/60033.gz",
+    "sprite": "sprites/30016.png",
+    "obj": "obj/B03_5_necrotic_crossbow.obj",
+    "render": "renders/B03_5_necrotic_crossbow.png"
+   },
+   "sha1": {
+    "inventory": "1cf2ac9876131dd35479fa5ce6df93112dad6e99",
+    "worn": "a4a673138c6cd4f8a4b32011581b5b7459c6e55d"
+   },
+   "vertices": 159,
+   "faces": 288,
+   "worn_bounds_min": [
+    -39,
+    -11,
+    -46
+   ],
+   "worn_bounds_max": [
+    39,
+    11,
+    38
+   ],
+   "colors_hsl": [
+    6206,
+    6328,
+    7218,
+    7391,
+    7514,
+    19275,
+    39958
+   ]
+  },
+  {
+   "code": "B03_6",
+   "name": "Necrotic skull censer",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30017,
+   "inventory_model": 60034,
+   "worn_model": 60035,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1312,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60034.dat",
+    "inventory_gz": "models/60034.gz",
+    "worn_dat": "models/60035.dat",
+    "worn_gz": "models/60035.gz",
+    "sprite": "sprites/30017.png",
+    "obj": "obj/B03_6_necrotic_skull_censer.obj",
+    "render": "renders/B03_6_necrotic_skull_censer.png"
+   },
+   "sha1": {
+    "inventory": "71cced1c89c3a9401d833598bbdb2d4a84a3f6fa",
+    "worn": "e2e310e1472a36a762863fffcdc882173b1cef4c"
+   },
+   "vertices": 300,
+   "faces": 484,
+   "worn_bounds_min": [
+    -26,
+    -36,
+    -8
+   ],
+   "worn_bounds_max": [
+    26,
+    69,
+    9
+   ],
+   "colors_hsl": [
+    6328,
+    7192,
+    7219,
+    7514,
+    9259,
+    19275
+   ]
+  },
+  {
+   "code": "B04_1",
+   "name": "Reaver platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30018,
+   "inventory_model": 60036,
+   "worn_model": 60037,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1350,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60036.dat",
+    "inventory_gz": "models/60036.gz",
+    "worn_dat": "models/60037.dat",
+    "worn_gz": "models/60037.gz",
+    "sprite": "sprites/30018.png",
+    "obj": "obj/B04_1_reaver_platebody.obj",
+    "render": "renders/B04_1_reaver_platebody.png"
+   },
+   "sha1": {
+    "inventory": "f81b7437c9cef274a63f837c7b0c255674e2f290",
+    "worn": "ebd5c969ac64b6c10155cad7120539aba27daa49"
+   },
+   "vertices": 870,
+   "faces": 1616,
+   "worn_bounds_min": [
+    -50,
+    73,
+    -26
+   ],
+   "worn_bounds_max": [
+    50,
+    181,
+    25
+   ],
+   "colors_hsl": [
+    1290,
+    1554,
+    2446,
+    2447,
+    2448,
+    6328,
+    65175,
+    65323
+   ]
+  },
+  {
+   "code": "B04_2",
+   "name": "Reaver platelegs",
+   "slot": "legs",
+   "equip_slot": 7,
+   "item_id": 30019,
+   "inventory_model": 60038,
+   "worn_model": 60039,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1250,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60038.dat",
+    "inventory_gz": "models/60038.gz",
+    "worn_dat": "models/60039.dat",
+    "worn_gz": "models/60039.gz",
+    "sprite": "sprites/30019.png",
+    "obj": "obj/B04_2_reaver_platelegs.obj",
+    "render": "renders/B04_2_reaver_platelegs.png"
+   },
+   "sha1": {
+    "inventory": "57cff2e0a871788b3741aaeaaa1c275da61d87c8",
+    "worn": "4796ca6165bf424762c4135a331e9c3803bed793"
+   },
+   "vertices": 292,
+   "faces": 524,
+   "worn_bounds_min": [
+    -37,
+    10,
+    -27
+   ],
+   "worn_bounds_max": [
+    37,
+    110,
+    27
+   ],
+   "colors_hsl": [
+    1420,
+    1421,
+    1554,
+    2443,
+    2444,
+    2445,
+    2446,
+    2447,
+    2448,
+    6328,
+    65175,
+    65321
+   ]
+  },
+  {
+   "code": "B04_3",
+   "name": "Reaver warboots",
+   "slot": "feet",
+   "equip_slot": 10,
+   "item_id": 30020,
+   "inventory_model": 60040,
+   "worn_model": 60041,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 700,
+    "xan2d": 164,
+    "yan2d": 156,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60040.dat",
+    "inventory_gz": "models/60040.gz",
+    "worn_dat": "models/60041.dat",
+    "worn_gz": "models/60041.gz",
+    "sprite": "sprites/30020.png",
+    "obj": "obj/B04_3_reaver_warboots.obj",
+    "render": "renders/B04_3_reaver_warboots.png"
+   },
+   "sha1": {
+    "inventory": "0d3ff4ac74c9df670c9bafb86301da38c637d616",
+    "worn": "404335ceaaf53dfe9646bfcd91d79954cb4ead5e"
+   },
+   "vertices": 196,
+   "faces": 336,
+   "worn_bounds_min": [
+    -28,
+    0,
+    -10
+   ],
+   "worn_bounds_max": [
+    28,
+    50,
+    14
+   ],
+   "colors_hsl": [
+    661,
+    1420,
+    1421,
+    2443,
+    2444,
+    2445,
+    2446,
+    2447,
+    2448,
+    6328,
+    65173,
+    65174,
+    65175,
+    65176
+   ]
+  },
+  {
+   "code": "B04_4",
+   "name": "Horned bone helm",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30021,
+   "inventory_model": 60042,
+   "worn_model": 60043,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1050,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60042.dat",
+    "inventory_gz": "models/60042.gz",
+    "worn_dat": "models/60043.dat",
+    "worn_gz": "models/60043.gz",
+    "sprite": "sprites/30021.png",
+    "obj": "obj/B04_4_horned_bone_helm.obj",
+    "render": "renders/B04_4_horned_bone_helm.png"
+   },
+   "sha1": {
+    "inventory": "449b34467ea49aaeffc63e6fc59544f7c2bc1d63",
+    "worn": "9304dad5847e8035c825d57201eda819ced56345"
+   },
+   "vertices": 330,
+   "faces": 636,
+   "worn_bounds_min": [
+    -42,
+    168,
+    -24
+   ],
+   "worn_bounds_max": [
+    42,
+    238,
+    28
+   ],
+   "colors_hsl": [
+    263,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    1286,
+    2438,
+    6328,
+    6484,
+    6485,
+    6486,
+    6491,
+    6621,
+    6622,
+    6623,
+    6624,
+    7509,
+    7510,
+    7511,
+    7512,
+    7513,
+    7514,
+    7515,
+    7516,
+    7645,
+    7646,
+    7647,
+    7648,
+    7650
+   ]
+  },
+  {
+   "code": "B04_5",
+   "name": "Ribcage platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30022,
+   "inventory_model": 60044,
+   "worn_model": 60045,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60044.dat",
+    "inventory_gz": "models/60044.gz",
+    "worn_dat": "models/60045.dat",
+    "worn_gz": "models/60045.gz",
+    "sprite": "sprites/30022.png",
+    "obj": "obj/B04_5_ribcage_platebody.obj",
+    "render": "renders/B04_5_ribcage_platebody.png"
+   },
+   "sha1": {
+    "inventory": "8e3bb5a6255ac46df15b1ab9cc8c417acad7bbbd",
+    "worn": "1c63fd120f54fcf514dfdd443517399332b4b363"
+   },
+   "vertices": 699,
+   "faces": 1314,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -22
+   ],
+   "worn_bounds_max": [
+    48,
+    179,
+    22
+   ],
+   "colors_hsl": [
+    798,
+    6328,
+    7514,
+    65167
+   ]
+  },
+  {
+   "code": "B04_6",
+   "name": "Bone bracers",
+   "slot": "hands",
+   "equip_slot": 9,
+   "item_id": 30023,
+   "inventory_model": 60046,
+   "worn_model": 60047,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1450,
+    "xan2d": 420,
+    "yan2d": 828,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60046.dat",
+    "inventory_gz": "models/60046.gz",
+    "worn_dat": "models/60047.dat",
+    "worn_gz": "models/60047.gz",
+    "sprite": "sprites/30023.png",
+    "obj": "obj/B04_6_bone_bracers.obj",
+    "render": "renders/B04_6_bone_bracers.png"
+   },
+   "sha1": {
+    "inventory": "3d04b9a9123b5c0e2e09dcc5838555bb7747729a",
+    "worn": "2a86e1ee4a8ece5e86601598be00682da45fec71"
+   },
+   "vertices": 513,
+   "faces": 974,
+   "worn_bounds_min": [
+    -58,
+    73,
+    -4
+   ],
+   "worn_bounds_max": [
+    58,
+    120,
+    18
+   ],
+   "colors_hsl": [
+    798,
+    801,
+    6328,
+    7369,
+    7514
+   ]
+  },
+  {
+   "code": "B05_1",
+   "name": "Crimson knight helm",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30024,
+   "inventory_model": 60048,
+   "worn_model": 60049,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1188,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60048.dat",
+    "inventory_gz": "models/60048.gz",
+    "worn_dat": "models/60049.dat",
+    "worn_gz": "models/60049.gz",
+    "sprite": "sprites/30024.png",
+    "obj": "obj/B05_1_crimson_knight_helm.obj",
+    "render": "renders/B05_1_crimson_knight_helm.png"
+   },
+   "sha1": {
+    "inventory": "15ca777f6645c562937657c820941e1f5efb7a10",
+    "worn": "addab59fe74230e91842f42f309de503ef284af1"
+   },
+   "vertices": 324,
+   "faces": 664,
+   "worn_bounds_min": [
+    -38,
+    124,
+    -28
+   ],
+   "worn_bounds_max": [
+    38,
+    219,
+    29
+   ],
+   "colors_hsl": [
+    7871,
+    39970,
+    42116,
+    65308
+   ]
+  },
+  {
+   "code": "B05_2",
+   "name": "Crimson chain hauberk",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30025,
+   "inventory_model": 60050,
+   "worn_model": 60051,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1412,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60050.dat",
+    "inventory_gz": "models/60050.gz",
+    "worn_dat": "models/60051.dat",
+    "worn_gz": "models/60051.gz",
+    "sprite": "sprites/30025.png",
+    "obj": "obj/B05_2_crimson_chain_hauberk.obj",
+    "render": "renders/B05_2_crimson_chain_hauberk.png"
+   },
+   "sha1": {
+    "inventory": "2a57a473311d29ac7e36741321c0afe2e390d783",
+    "worn": "cbc3c4bf09741c746e80cf2e1e6883c7c8697923"
+   },
+   "vertices": 752,
+   "faces": 1428,
+   "worn_bounds_min": [
+    -48,
+    62,
+    -26
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    26
+   ],
+   "colors_hsl": [
+    7871,
+    35863,
+    37909,
+    37910,
+    37911,
+    37912,
+    37926,
+    37927,
+    38949,
+    38950,
+    38951,
+    38952,
+    39958,
+    39959,
+    39960,
+    39968,
+    39972,
+    39976,
+    40996,
+    40997,
+    40998,
+    40999,
+    42006,
+    42021,
+    43018,
+    65308,
+    65312
+   ]
+  },
+  {
+   "code": "B05_3",
+   "name": "Crimson knight tassets",
+   "slot": "legs",
+   "equip_slot": 7,
+   "item_id": 30026,
+   "inventory_model": 60052,
+   "worn_model": 60053,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60052.dat",
+    "inventory_gz": "models/60052.gz",
+    "worn_dat": "models/60053.dat",
+    "worn_gz": "models/60053.gz",
+    "sprite": "sprites/30026.png",
+    "obj": "obj/B05_3_crimson_knight_tassets.obj",
+    "render": "renders/B05_3_crimson_knight_tassets.png"
+   },
+   "sha1": {
+    "inventory": "f792e8db3ddb7e62b27614b242d6e65c65e70016",
+    "worn": "8c3d629bb282aba8d8050096b4f54bbef4028f89"
+   },
+   "vertices": 201,
+   "faces": 430,
+   "worn_bounds_min": [
+    -42,
+    10,
+    -29
+   ],
+   "worn_bounds_max": [
+    42,
+    106,
+    31
+   ],
+   "colors_hsl": [
+    16,
+    6826,
+    7871,
+    39958,
+    64286,
+    64294
+   ]
+  },
+  {
+   "code": "B05_4",
+   "name": "Paladin full helm",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30027,
+   "inventory_model": 60054,
+   "worn_model": 60055,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1100,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60054.dat",
+    "inventory_gz": "models/60054.gz",
+    "worn_dat": "models/60055.dat",
+    "worn_gz": "models/60055.gz",
+    "sprite": "sprites/30027.png",
+    "obj": "obj/B05_4_paladin_full_helm.obj",
+    "render": "renders/B05_4_paladin_full_helm.png"
+   },
+   "sha1": {
+    "inventory": "fe3c5c2330760fd3afb0f13f16c49777a336423d",
+    "worn": "132cd04465da1be4620d5f66ab450d65140509d0"
+   },
+   "vertices": 324,
+   "faces": 664,
+   "worn_bounds_min": [
+    -36,
+    130,
+    -27
+   ],
+   "worn_bounds_max": [
+    36,
+    218,
+    30
+   ],
+   "colors_hsl": [
+    7871,
+    38004,
+    40071,
+    41514
+   ]
+  },
+  {
+   "code": "B05_5",
+   "name": "Paladin platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30028,
+   "inventory_model": 60056,
+   "worn_model": 60057,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60056.dat",
+    "inventory_gz": "models/60056.gz",
+    "worn_dat": "models/60057.dat",
+    "worn_gz": "models/60057.gz",
+    "sprite": "sprites/30028.png",
+    "obj": "obj/B05_5_paladin_platebody.obj",
+    "render": "renders/B05_5_paladin_platebody.png"
+   },
+   "sha1": {
+    "inventory": "92e925f038b7a611cb8b02804cbaae3ad2ec1767",
+    "worn": "0aa1576a1c1c3b712bc55db3d39d2fcb31a8c9e0"
+   },
+   "vertices": 432,
+   "faces": 812,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    24
+   ],
+   "colors_hsl": [
+    7871,
+    37998,
+    38000,
+    38001,
+    38004,
+    40028,
+    40035,
+    40038,
+    40183,
+    40184,
+    40314,
+    40316,
+    40491,
+    41052,
+    41053,
+    41054,
+    41056,
+    41057,
+    41058,
+    41059,
+    41060,
+    41061,
+    41071,
+    41072,
+    41074,
+    41206,
+    42075,
+    42078,
+    42079,
+    42080,
+    42081,
+    42086,
+    42099,
+    42100,
+    42101,
+    42232,
+    42233,
+    42363,
+    43100,
+    43106,
+    43109,
+    43118,
+    43119,
+    43127,
+    43255,
+    43516
+   ]
+  },
+  {
+   "code": "B05_6",
+   "name": "Paladin greaves",
+   "slot": "feet",
+   "equip_slot": 10,
+   "item_id": 30029,
+   "inventory_model": 60058,
+   "worn_model": 60059,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 625,
+    "xan2d": 164,
+    "yan2d": 156,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60058.dat",
+    "inventory_gz": "models/60058.gz",
+    "worn_dat": "models/60059.dat",
+    "worn_gz": "models/60059.gz",
+    "sprite": "sprites/30029.png",
+    "obj": "obj/B05_6_paladin_greaves.obj",
+    "render": "renders/B05_6_paladin_greaves.png"
+   },
+   "sha1": {
+    "inventory": "3efdb8086185ddbf6b44a84f6f6d2dd00b85450b",
+    "worn": "87e7ecb2b84a1785753cdc71b1bfb55cdc4657d9"
+   },
+   "vertices": 160,
+   "faces": 288,
+   "worn_bounds_min": [
+    -24,
+    0,
+    -10
+   ],
+   "worn_bounds_max": [
+    24,
+    50,
+    14
+   ],
+   "colors_hsl": [
+    6849,
+    6983,
+    7867,
+    7868,
+    7869,
+    7870,
+    7871,
+    7872,
+    7874,
+    38000,
+    38001,
+    38002,
+    38004,
+    40183,
+    40184,
+    40314,
+    40316,
+    41050,
+    41052,
+    41053,
+    41054,
+    41056,
+    41057,
+    41058,
+    41059,
+    41060,
+    41061,
+    41071,
+    41072,
+    41074,
+    41206,
+    42075,
+    42078,
+    42080,
+    42081,
+    42099,
+    42100,
+    42101,
+    42232,
+    42233,
+    42363,
+    43100,
+    43106,
+    43108,
+    43109,
+    43118,
+    43119,
+    43127,
+    43255,
+    43258,
+    43516
+   ]
+  },
+  {
+   "code": "B06_1",
+   "name": "Magma helm",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30030,
+   "inventory_model": 60060,
+   "worn_model": 60061,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 625,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60060.dat",
+    "inventory_gz": "models/60060.gz",
+    "worn_dat": "models/60061.dat",
+    "worn_gz": "models/60061.gz",
+    "sprite": "sprites/30030.png",
+    "obj": "obj/B06_1_magma_helm.obj",
+    "render": "renders/B06_1_magma_helm.png"
+   },
+   "sha1": {
+    "inventory": "c6ede757da238f0929c0d72ccd2897d71cc01eda",
+    "worn": "d025d3a7541ca50665252d7f2389c1cd95b3ecf6"
+   },
+   "vertices": 962,
+   "faces": 1920,
+   "worn_bounds_min": [
+    -21,
+    168,
+    -23
+   ],
+   "worn_bounds_max": [
+    21,
+    216,
+    27
+   ],
+   "colors_hsl": [
+    2,
+    4035,
+    55306
+   ]
+  },
+  {
+   "code": "B06_2",
+   "name": "Magma platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30031,
+   "inventory_model": 60062,
+   "worn_model": 60063,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60062.dat",
+    "inventory_gz": "models/60062.gz",
+    "worn_dat": "models/60063.dat",
+    "worn_gz": "models/60063.gz",
+    "sprite": "sprites/30031.png",
+    "obj": "obj/B06_2_magma_platebody.obj",
+    "render": "renders/B06_2_magma_platebody.png"
+   },
+   "sha1": {
+    "inventory": "1de8d9dd1804155d6d2ae19602a45652a259304c",
+    "worn": "5503e3c73da084f558ecc6e2190d3dfe293a2c52"
+   },
+   "vertices": 1481,
+   "faces": 2916,
+   "worn_bounds_min": [
+    -48,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    24
+   ],
+   "colors_hsl": [
+    1033,
+    3341,
+    4035,
+    49158,
+    55305,
+    55306,
+    60426
+   ]
+  },
+  {
+   "code": "B06_3",
+   "name": "Magma gauntlets",
+   "slot": "hands",
+   "equip_slot": 9,
+   "item_id": 30032,
+   "inventory_model": 60064,
+   "worn_model": 60065,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1275,
+    "xan2d": 420,
+    "yan2d": 828,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60064.dat",
+    "inventory_gz": "models/60064.gz",
+    "worn_dat": "models/60065.dat",
+    "worn_gz": "models/60065.gz",
+    "sprite": "sprites/30032.png",
+    "obj": "obj/B06_3_magma_gauntlets.obj",
+    "render": "renders/B06_3_magma_gauntlets.png"
+   },
+   "sha1": {
+    "inventory": "6bebd92dbdec14bc1455099e0d9824dd0aff1ffa",
+    "worn": "416609b66dcd4350489d5586cf8b8ecc889d130a"
+   },
+   "vertices": 950,
+   "faces": 1880,
+   "worn_bounds_min": [
+    -52,
+    81,
+    -4
+   ],
+   "worn_bounds_max": [
+    50,
+    120,
+    18
+   ],
+   "colors_hsl": [
+    3341,
+    4035,
+    54280,
+    55306
+   ]
+  },
+  {
+   "code": "B06_4",
+   "name": "Magma dagger",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30033,
+   "inventory_model": 60066,
+   "worn_model": 60067,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 575,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60066.dat",
+    "inventory_gz": "models/60066.gz",
+    "worn_dat": "models/60067.dat",
+    "worn_gz": "models/60067.gz",
+    "sprite": "sprites/30033.png",
+    "obj": "obj/B06_4_magma_dagger.obj",
+    "render": "renders/B06_4_magma_dagger.png"
+   },
+   "sha1": {
+    "inventory": "52a76cd00a743270eba6a948a7a384679bb12e08",
+    "worn": "8fb51e8cda9cb5a7f074a80941b4ad0720b4e961"
+   },
+   "vertices": 171,
+   "faces": 360,
+   "worn_bounds_min": [
+    -6,
+    -18,
+    -3
+   ],
+   "worn_bounds_max": [
+    6,
+    28,
+    3
+   ],
+   "colors_hsl": [
+    1426,
+    3341,
+    3471,
+    4035,
+    55306
+   ]
+  },
+  {
+   "code": "B06_5",
+   "name": "Magma mace",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30034,
+   "inventory_model": 60068,
+   "worn_model": 60069,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 875,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60068.dat",
+    "inventory_gz": "models/60068.gz",
+    "worn_dat": "models/60069.dat",
+    "worn_gz": "models/60069.gz",
+    "sprite": "sprites/30034.png",
+    "obj": "obj/B06_5_magma_mace.obj",
+    "render": "renders/B06_5_magma_mace.png"
+   },
+   "sha1": {
+    "inventory": "78dc3da1e8dc2a6d3da3df83a291bfe3498de01b",
+    "worn": "5153cb8788ab5d2ee63ce1e8d9997fb92c0d206f"
+   },
+   "vertices": 980,
+   "faces": 1944,
+   "worn_bounds_min": [
+    -11,
+    -28,
+    -11
+   ],
+   "worn_bounds_max": [
+    11,
+    42,
+    11
+   ],
+   "colors_hsl": [
+    9,
+    1033,
+    3341,
+    4035,
+    53258,
+    55305,
+    55306,
+    56331,
+    60425,
+    60426,
+    60427
+   ]
+  },
+  {
+   "code": "B06_6",
+   "name": "Magma kiteshield",
+   "slot": "shield",
+   "equip_slot": 5,
+   "item_id": 30035,
+   "inventory_model": 60070,
+   "worn_model": 60071,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 838,
+    "xan2d": 344,
+    "yan2d": 1104,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60070.dat",
+    "inventory_gz": "models/60070.gz",
+    "worn_dat": "models/60071.dat",
+    "worn_gz": "models/60071.gz",
+    "sprite": "sprites/30035.png",
+    "obj": "obj/B06_6_magma_kiteshield.obj",
+    "render": "renders/B06_6_magma_kiteshield.png"
+   },
+   "sha1": {
+    "inventory": "d1412cab5360a247f2cc4bac8b584062b2a5ab2e",
+    "worn": "bbe405d9332708b59a2c1187ae7f82056c783cbb"
+   },
+   "vertices": 818,
+   "faces": 1634,
+   "worn_bounds_min": [
+    -24,
+    -40,
+    -4
+   ],
+   "worn_bounds_max": [
+    24,
+    27,
+    8
+   ],
+   "colors_hsl": [
+    3339,
+    4035,
+    55306
+   ]
+  },
+  {
+   "code": "B07_1",
+   "name": "Woodland ranger tunic",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30036,
+   "inventory_model": 60072,
+   "worn_model": 60073,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6,
+    8
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1562,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60072.dat",
+    "inventory_gz": "models/60072.gz",
+    "worn_dat": "models/60073.dat",
+    "worn_gz": "models/60073.gz",
+    "sprite": "sprites/30036.png",
+    "obj": "obj/B07_1_woodland_ranger_tunic.obj",
+    "render": "renders/B07_1_woodland_ranger_tunic.png"
+   },
+   "sha1": {
+    "inventory": "af5fc3be1c058bebe589ded84b65b0e4acbe97e4",
+    "worn": "76a7ba0148a2a52c5866f78145843ce4ee4ba412"
+   },
+   "vertices": 1014,
+   "faces": 2008,
+   "worn_bounds_min": [
+    -49,
+    95,
+    -28
+   ],
+   "worn_bounds_max": [
+    49,
+    220,
+    28
+   ],
+   "colors_hsl": [
+    3,
+    4504,
+    6574,
+    16788,
+    16789,
+    16790,
+    16791,
+    16792,
+    16793,
+    16800,
+    16801,
+    16802,
+    16803,
+    16804,
+    16805,
+    16806,
+    16807,
+    17814,
+    17826,
+    17827,
+    49155
+   ]
+  },
+  {
+   "code": "B07_2",
+   "name": "Tidewalker ranger tunic",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30037,
+   "inventory_model": 60074,
+   "worn_model": 60075,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6,
+    8
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1562,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60074.dat",
+    "inventory_gz": "models/60074.gz",
+    "worn_dat": "models/60075.dat",
+    "worn_gz": "models/60075.gz",
+    "sprite": "sprites/30037.png",
+    "obj": "obj/B07_2_tidewalker_ranger_tunic.obj",
+    "render": "renders/B07_2_tidewalker_ranger_tunic.png"
+   },
+   "sha1": {
+    "inventory": "9b4be5c240d0a2da86e1ff015a6d712c935e2f67",
+    "worn": "7c8b1cbb95cd7eaaf8a0935ab2f9b722b7a90694"
+   },
+   "vertices": 1014,
+   "faces": 2008,
+   "worn_bounds_min": [
+    -49,
+    95,
+    -28
+   ],
+   "worn_bounds_max": [
+    49,
+    220,
+    28
+   ],
+   "colors_hsl": [
+    3,
+    4504,
+    6574,
+    40473,
+    40474,
+    40475,
+    40476,
+    40477,
+    40486,
+    40487,
+    40488,
+    40489,
+    40490,
+    40491,
+    40492,
+    40493,
+    40494,
+    40495,
+    41500,
+    49155
+   ]
+  },
+  {
+   "code": "B07_3",
+   "name": "Emberhide ranger tunic",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30038,
+   "inventory_model": 60076,
+   "worn_model": 60077,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6,
+    8
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1562,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60076.dat",
+    "inventory_gz": "models/60076.gz",
+    "worn_dat": "models/60077.dat",
+    "worn_gz": "models/60077.gz",
+    "sprite": "sprites/30038.png",
+    "obj": "obj/B07_3_emberhide_ranger_tunic.obj",
+    "render": "renders/B07_3_emberhide_ranger_tunic.png"
+   },
+   "sha1": {
+    "inventory": "eff42ebb3fa4a04d5db745fc4f817cc6419e3c4a",
+    "worn": "71164d41b90c4a43ac95fa4871522c4e6cb4e50d"
+   },
+   "vertices": 1014,
+   "faces": 2008,
+   "worn_bounds_min": [
+    -49,
+    95,
+    -28
+   ],
+   "worn_bounds_max": [
+    49,
+    220,
+    28
+   ],
+   "colors_hsl": [
+    3,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    680,
+    681,
+    682,
+    683,
+    684,
+    685,
+    686,
+    687,
+    688,
+    4504,
+    6574,
+    49155
+   ]
+  },
+  {
+   "code": "B07_4",
+   "name": "Nightstalker ranger tunic",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30039,
+   "inventory_model": 60078,
+   "worn_model": 60079,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6,
+    8
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1562,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60078.dat",
+    "inventory_gz": "models/60078.gz",
+    "worn_dat": "models/60079.dat",
+    "worn_gz": "models/60079.gz",
+    "sprite": "sprites/30039.png",
+    "obj": "obj/B07_4_nightstalker_ranger_tunic.obj",
+    "render": "renders/B07_4_nightstalker_ranger_tunic.png"
+   },
+   "sha1": {
+    "inventory": "dddf181957b8b69c8fad8050d0d75985e9be5192",
+    "worn": "e47f66861b7b795b0ff1b4f519d26a42ed50e324"
+   },
+   "vertices": 1014,
+   "faces": 2008,
+   "worn_bounds_min": [
+    -49,
+    95,
+    -28
+   ],
+   "worn_bounds_max": [
+    49,
+    220,
+    28
+   ],
+   "colors_hsl": [
+    3,
+    4504,
+    6574,
+    37898,
+    37899,
+    37903,
+    40975,
+    40976,
+    40977,
+    41995,
+    43018,
+    43025,
+    43026,
+    49155
+   ]
+  },
+  {
+   "code": "B07_5",
+   "name": "Valkyrie winged helm",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30040,
+   "inventory_model": 60080,
+   "worn_model": 60081,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1175,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60080.dat",
+    "inventory_gz": "models/60080.gz",
+    "worn_dat": "models/60081.dat",
+    "worn_gz": "models/60081.gz",
+    "sprite": "sprites/30040.png",
+    "obj": "obj/B07_5_valkyrie_winged_helm.obj",
+    "render": "renders/B07_5_valkyrie_winged_helm.png"
+   },
+   "sha1": {
+    "inventory": "aef8af0cff04a83fe3b9860125ff85bf97dbcd74",
+    "worn": "f76ca6183ac27fbff8d2453bab3aa84652479773"
+   },
+   "vertices": 444,
+   "faces": 844,
+   "worn_bounds_min": [
+    -47,
+    168,
+    -23
+   ],
+   "worn_bounds_max": [
+    47,
+    215,
+    27
+   ],
+   "colors_hsl": [
+    6325,
+    7609,
+    7871,
+    40071,
+    41139,
+    41523,
+    42101
+   ]
+  },
+  {
+   "code": "B07_6",
+   "name": "Valkyrie platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30041,
+   "inventory_model": 60082,
+   "worn_model": 60083,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1250,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60082.dat",
+    "inventory_gz": "models/60082.gz",
+    "worn_dat": "models/60083.dat",
+    "worn_gz": "models/60083.gz",
+    "sprite": "sprites/30041.png",
+    "obj": "obj/B07_6_valkyrie_platebody.obj",
+    "render": "renders/B07_6_valkyrie_platebody.png"
+   },
+   "sha1": {
+    "inventory": "b0b6befc3f14e1a3198693ea8355518720c75fcf",
+    "worn": "9f43507a789733ef4148724827cfc288ad08530f"
+   },
+   "vertices": 604,
+   "faces": 1132,
+   "worn_bounds_min": [
+    -50,
+    95,
+    -19
+   ],
+   "worn_bounds_max": [
+    50,
+    179,
+    24
+   ],
+   "colors_hsl": [
+    6756,
+    6867,
+    7871,
+    38000,
+    38001,
+    38004,
+    40028,
+    40035,
+    40038,
+    40184,
+    40314,
+    41052,
+    41053,
+    41054,
+    41056,
+    41057,
+    41058,
+    41059,
+    41060,
+    41061,
+    41071,
+    41072,
+    41074,
+    41206,
+    41338,
+    41517,
+    42078,
+    42079,
+    42080,
+    42081,
+    42086,
+    42087,
+    42099,
+    42101,
+    42232,
+    42233,
+    42363,
+    43100,
+    43106,
+    43108,
+    43109,
+    43111,
+    43118,
+    43119,
+    43127,
+    43255,
+    43258,
+    43516
+   ]
+  },
+  {
+   "code": "B08_1",
+   "name": "Seraph feather mantle",
+   "slot": "cape",
+   "equip_slot": 1,
+   "item_id": 30042,
+   "inventory_model": 60084,
+   "worn_model": 60085,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 975,
+    "xan2d": 380,
+    "yan2d": 1024,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60084.dat",
+    "inventory_gz": "models/60084.gz",
+    "worn_dat": "models/60085.dat",
+    "worn_gz": "models/60085.gz",
+    "sprite": "sprites/30042.png",
+    "obj": "obj/B08_1_seraph_feather_mantle.obj",
+    "render": "renders/B08_1_seraph_feather_mantle.png"
+   },
+   "sha1": {
+    "inventory": "2cd04d1426e0a8ca7a210e3d77634a9a59dbd857",
+    "worn": "fde2183b4faad3102d7bca0d2619d9b38aa91150"
+   },
+   "vertices": 638,
+   "faces": 1121,
+   "worn_bounds_min": [
+    -39,
+    131,
+    -23
+   ],
+   "worn_bounds_max": [
+    39,
+    172,
+    24
+   ],
+   "colors_hsl": [
+    6519,
+    7523,
+    7533,
+    7871
+   ]
+  },
+  {
+   "code": "B08_2",
+   "name": "Solar helm",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30043,
+   "inventory_model": 60086,
+   "worn_model": 60087,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1000,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60086.dat",
+    "inventory_gz": "models/60086.gz",
+    "worn_dat": "models/60087.dat",
+    "worn_gz": "models/60087.gz",
+    "sprite": "sprites/30043.png",
+    "obj": "obj/B08_2_solar_helm.obj",
+    "render": "renders/B08_2_solar_helm.png"
+   },
+   "sha1": {
+    "inventory": "055b99f965109dfa2020b72c0aa6999c29896373",
+    "worn": "dbe816fdc488b0e98aa0e6a11ca189451816e77e"
+   },
+   "vertices": 338,
+   "faces": 666,
+   "worn_bounds_min": [
+    -35,
+    153,
+    -23
+   ],
+   "worn_bounds_max": [
+    35,
+    233,
+    27
+   ],
+   "colors_hsl": [
+    4743,
+    4744,
+    5767,
+    5768,
+    6849,
+    6983,
+    7864,
+    7865,
+    7867,
+    7868,
+    7869,
+    7870,
+    7871,
+    7872,
+    7874,
+    8005,
+    8010
+   ]
+  },
+  {
+   "code": "B08_3",
+   "name": "Solar scale platebody",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30044,
+   "inventory_model": 60088,
+   "worn_model": 60089,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1275,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60088.dat",
+    "inventory_gz": "models/60088.gz",
+    "worn_dat": "models/60089.dat",
+    "worn_gz": "models/60089.gz",
+    "sprite": "sprites/30044.png",
+    "obj": "obj/B08_3_solar_scale_platebody.obj",
+    "render": "renders/B08_3_solar_scale_platebody.png"
+   },
+   "sha1": {
+    "inventory": "011f6865053a6a98ca0c93da50786a30fc19dd17",
+    "worn": "138f26300ed24f314b9dfa2d06de4cdeaa2290f8"
+   },
+   "vertices": 794,
+   "faces": 1508,
+   "worn_bounds_min": [
+    -48,
+    73,
+    -26
+   ],
+   "worn_bounds_max": [
+    48,
+    175,
+    25
+   ],
+   "colors_hsl": [
+    6849,
+    6982,
+    6983,
+    7116,
+    7851,
+    7852,
+    7853,
+    7854,
+    7855,
+    7856,
+    7867,
+    7868,
+    7869,
+    7870,
+    7871,
+    7872,
+    7874,
+    8005,
+    8006,
+    8018,
+    8137,
+    8138,
+    8139,
+    8680
+   ]
+  },
+  {
+   "code": "B08_4",
+   "name": "Solar scale platelegs",
+   "slot": "legs",
+   "equip_slot": 7,
+   "item_id": 30045,
+   "inventory_model": 60090,
+   "worn_model": 60091,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1250,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60090.dat",
+    "inventory_gz": "models/60090.gz",
+    "worn_dat": "models/60091.dat",
+    "worn_gz": "models/60091.gz",
+    "sprite": "sprites/30045.png",
+    "obj": "obj/B08_4_solar_scale_platelegs.obj",
+    "render": "renders/B08_4_solar_scale_platelegs.png"
+   },
+   "sha1": {
+    "inventory": "ec2ef17508c53371f73bda5a5868a6c3dfc637ed",
+    "worn": "d8bd82dcd901f4f7bcc0d08777b6f818a5d5b56f"
+   },
+   "vertices": 438,
+   "faces": 848,
+   "worn_bounds_min": [
+    -28,
+    10,
+    -18
+   ],
+   "worn_bounds_max": [
+    28,
+    110,
+    20
+   ],
+   "colors_hsl": [
+    6849,
+    6983,
+    7116,
+    7851,
+    7852,
+    7853,
+    7854,
+    7855,
+    7856,
+    7863,
+    7867,
+    7868,
+    7869,
+    7870,
+    7871,
+    7872,
+    7874,
+    8005,
+    8006,
+    8018,
+    8137,
+    8138,
+    8139
+   ]
+  },
+  {
+   "code": "B08_5",
+   "name": "Verdant crystal helm",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30046,
+   "inventory_model": 60092,
+   "worn_model": 60093,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 750,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60092.dat",
+    "inventory_gz": "models/60092.gz",
+    "worn_dat": "models/60093.dat",
+    "worn_gz": "models/60093.gz",
+    "sprite": "sprites/30046.png",
+    "obj": "obj/B08_5_verdant_crystal_helm.obj",
+    "render": "renders/B08_5_verdant_crystal_helm.png"
+   },
+   "sha1": {
+    "inventory": "3ada2ee37b0a891b7879ae2f95fe906410545d1e",
+    "worn": "4a6555c4fa8c2b7eb29d7fa019f9b7a2153f0316"
+   },
+   "vertices": 1126,
+   "faces": 2202,
+   "worn_bounds_min": [
+    -32,
+    166,
+    -32
+   ],
+   "worn_bounds_max": [
+    25,
+    226,
+    28
+   ],
+   "colors_hsl": [
+    6563,
+    12707,
+    13573,
+    14746,
+    14752,
+    32476,
+    33345,
+    33487
+   ]
+  },
+  {
+   "code": "B08_6",
+   "name": "Verdant crystal body",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30047,
+   "inventory_model": 60094,
+   "worn_model": 60095,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1288,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60094.dat",
+    "inventory_gz": "models/60094.gz",
+    "worn_dat": "models/60095.dat",
+    "worn_gz": "models/60095.gz",
+    "sprite": "sprites/30047.png",
+    "obj": "obj/B08_6_verdant_crystal_body.obj",
+    "render": "renders/B08_6_verdant_crystal_body.png"
+   },
+   "sha1": {
+    "inventory": "3f040f95cd29e13d16607ce0faea9f6f9359c295",
+    "worn": "aa115515dbfcd9af199c01bc956da900d05db936"
+   },
+   "vertices": 1833,
+   "faces": 3538,
+   "worn_bounds_min": [
+    -50,
+    95,
+    -21
+   ],
+   "worn_bounds_max": [
+    53,
+    186,
+    24
+   ],
+   "colors_hsl": [
+    6563,
+    12707,
+    14746,
+    14752,
+    32476,
+    33345,
+    33487
+   ]
+  },
+  {
+   "code": "B09_1",
+   "name": "Bone longbow",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30048,
+   "inventory_model": 60096,
+   "worn_model": 60097,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1450,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60096.dat",
+    "inventory_gz": "models/60096.gz",
+    "worn_dat": "models/60097.dat",
+    "worn_gz": "models/60097.gz",
+    "sprite": "sprites/30048.png",
+    "obj": "obj/B09_1_bone_longbow.obj",
+    "render": "renders/B09_1_bone_longbow.png"
+   },
+   "sha1": {
+    "inventory": "e7d02ba382d4962f0da3f0b009b5cc6d0823e244",
+    "worn": "ce33b67f1ad906514f2dbf577d6bd72e942b41d4"
+   },
+   "vertices": 143,
+   "faces": 258,
+   "worn_bounds_min": [
+    -15,
+    -58,
+    -4
+   ],
+   "worn_bounds_max": [
+    4,
+    58,
+    4
+   ],
+   "colors_hsl": [
+    4504,
+    7397,
+    7514,
+    7655
+   ]
+  },
+  {
+   "code": "B09_2",
+   "name": "Shadowvine bow",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30049,
+   "inventory_model": 60098,
+   "worn_model": 60099,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1400,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60098.dat",
+    "inventory_gz": "models/60098.gz",
+    "worn_dat": "models/60099.dat",
+    "worn_gz": "models/60099.gz",
+    "sprite": "sprites/30049.png",
+    "obj": "obj/B09_2_shadowvine_bow.obj",
+    "render": "renders/B09_2_shadowvine_bow.png"
+   },
+   "sha1": {
+    "inventory": "70f58915148a92b972d77010e7ca8b7471f49788",
+    "worn": "830e47c448d9cd90c4869b12c57226de72a5c4b7"
+   },
+   "vertices": 73,
+   "faces": 138,
+   "worn_bounds_min": [
+    -11,
+    -56,
+    -4
+   ],
+   "worn_bounds_max": [
+    4,
+    56,
+    4
+   ],
+   "colors_hsl": [
+    2321,
+    2322,
+    2323,
+    2324,
+    2325,
+    3344,
+    3346,
+    3347,
+    3348,
+    3349,
+    3350,
+    7399,
+    8556,
+    8558,
+    8687,
+    48546,
+    48547,
+    48548,
+    48549,
+    48550,
+    48551,
+    48552,
+    48553,
+    48554,
+    48555,
+    48556,
+    48557,
+    48675,
+    48680,
+    48687
+   ]
+  },
+  {
+   "code": "B09_3",
+   "name": "Dragonspine bow",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30050,
+   "inventory_model": 60100,
+   "worn_model": 60101,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1525,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60100.dat",
+    "inventory_gz": "models/60100.gz",
+    "worn_dat": "models/60101.dat",
+    "worn_gz": "models/60101.gz",
+    "sprite": "sprites/30050.png",
+    "obj": "obj/B09_3_dragonspine_bow.obj",
+    "render": "renders/B09_3_dragonspine_bow.png"
+   },
+   "sha1": {
+    "inventory": "9401175008706f4d8b55823d49aa9ce5b5f3544b",
+    "worn": "7aec5fd2660ef208cdc5cb78caab14d2960cbbdc"
+   },
+   "vertices": 237,
+   "faces": 386,
+   "worn_bounds_min": [
+    -23,
+    -61,
+    -4
+   ],
+   "worn_bounds_max": [
+    3,
+    61,
+    4
+   ],
+   "colors_hsl": [
+    531,
+    6328,
+    7397,
+    7514,
+    65317
+   ]
+  },
+  {
+   "code": "B09_4",
+   "name": "Crystal-root bow",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30051,
+   "inventory_model": 60102,
+   "worn_model": 60103,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1488,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60102.dat",
+    "inventory_gz": "models/60102.gz",
+    "worn_dat": "models/60103.dat",
+    "worn_gz": "models/60103.gz",
+    "sprite": "sprites/30051.png",
+    "obj": "obj/B09_4_crystal_root_bow.obj",
+    "render": "renders/B09_4_crystal_root_bow.png"
+   },
+   "sha1": {
+    "inventory": "86bfa0fa52639576751f1604a0929d571f257b96",
+    "worn": "12843368b531dc321c4facd266208fa3534b0e66"
+   },
+   "vertices": 204,
+   "faces": 378,
+   "worn_bounds_min": [
+    -30,
+    -60,
+    -4
+   ],
+   "worn_bounds_max": [
+    4,
+    59,
+    4
+   ],
+   "colors_hsl": [
+    4495,
+    4497,
+    4498,
+    4499,
+    4500,
+    4633,
+    4634,
+    4635,
+    4636,
+    4637,
+    4638,
+    4639,
+    4640,
+    4641,
+    5520,
+    5521,
+    5647,
+    5656,
+    7390,
+    8412,
+    8424,
+    8557,
+    33355
+   ]
+  },
+  {
+   "code": "B09_5",
+   "name": "Seraph crossbow",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30052,
+   "inventory_model": 60104,
+   "worn_model": 60105,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1050,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60104.dat",
+    "inventory_gz": "models/60104.gz",
+    "worn_dat": "models/60105.dat",
+    "worn_gz": "models/60105.gz",
+    "sprite": "sprites/30052.png",
+    "obj": "obj/B09_5_seraph_crossbow.obj",
+    "render": "renders/B09_5_seraph_crossbow.png"
+   },
+   "sha1": {
+    "inventory": "1e2a5e620a7c827c699cb8db50ee91161dea23a9",
+    "worn": "d2b7ebdebc814e43ba6a59c4114dcee6d1f6e106"
+   },
+   "vertices": 254,
+   "faces": 466,
+   "worn_bounds_min": [
+    -41,
+    -11,
+    -46
+   ],
+   "worn_bounds_max": [
+    41,
+    5,
+    38
+   ],
+   "colors_hsl": [
+    7385,
+    7391,
+    7534,
+    7781,
+    7871,
+    7889,
+    38010,
+    39958,
+    42101
+   ]
+  },
+  {
+   "code": "B09_6",
+   "name": "Runic crossbow",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30053,
+   "inventory_model": 60106,
+   "worn_model": 60107,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1050,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60106.dat",
+    "inventory_gz": "models/60106.gz",
+    "worn_dat": "models/60107.dat",
+    "worn_gz": "models/60107.gz",
+    "sprite": "sprites/30053.png",
+    "obj": "obj/B09_6_runic_crossbow.obj",
+    "render": "renders/B09_6_runic_crossbow.png"
+   },
+   "sha1": {
+    "inventory": "84c9c91f134fcc8ac7aacc7a3715ffc4c5e9ef12",
+    "worn": "6f0a92cf89a5635d1f816d5272ad20727420e3f9"
+   },
+   "vertices": 358,
+   "faces": 707,
+   "worn_bounds_min": [
+    -32,
+    -11,
+    -46
+   ],
+   "worn_bounds_max": [
+    32,
+    4,
+    38
+   ],
+   "colors_hsl": [
+    7391,
+    32449,
+    33590,
+    37905,
+    37909,
+    39057,
+    39958
+   ]
+  },
+  {
+   "code": "B10_1",
+   "name": "Astral wizard hat",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30054,
+   "inventory_model": 60108,
+   "worn_model": 60109,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 950,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60108.dat",
+    "inventory_gz": "models/60108.gz",
+    "worn_dat": "models/60109.dat",
+    "worn_gz": "models/60109.gz",
+    "sprite": "sprites/30054.png",
+    "obj": "obj/B10_1_astral_wizard_hat.obj",
+    "render": "renders/B10_1_astral_wizard_hat.png"
+   },
+   "sha1": {
+    "inventory": "6306d48181cc616ce49523b3f9fff85114aab975",
+    "worn": "1e06f135b1c1abbe9fb959dcc562ac27355a1957"
+   },
+   "vertices": 210,
+   "faces": 398,
+   "worn_bounds_min": [
+    -37,
+    189,
+    -38
+   ],
+   "worn_bounds_max": [
+    37,
+    240,
+    38
+   ],
+   "colors_hsl": [
+    39279,
+    40164,
+    41644,
+    41645,
+    41646,
+    41647,
+    41648,
+    41650
+   ]
+  },
+  {
+   "code": "B10_2",
+   "name": "Astral robe top",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30055,
+   "inventory_model": 60110,
+   "worn_model": 60111,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1312,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60110.dat",
+    "inventory_gz": "models/60110.gz",
+    "worn_dat": "models/60111.dat",
+    "worn_gz": "models/60111.gz",
+    "sprite": "sprites/30055.png",
+    "obj": "obj/B10_2_astral_robe_top.obj",
+    "render": "renders/B10_2_astral_robe_top.png"
+   },
+   "sha1": {
+    "inventory": "657442d1fa4214dc1bf9a3a5d5dfb9a91b5436ef",
+    "worn": "5c8364f8e81e11b6c846dc06eef5ff66ec1677b8"
+   },
+   "vertices": 321,
+   "faces": 558,
+   "worn_bounds_min": [
+    -50,
+    70,
+    -20
+   ],
+   "worn_bounds_max": [
+    50,
+    175,
+    22
+   ],
+   "colors_hsl": [
+    39279,
+    40164,
+    41644,
+    41645,
+    41646,
+    41647,
+    41648,
+    41650
+   ]
+  },
+  {
+   "code": "B10_3",
+   "name": "Astral robe bottom",
+   "slot": "legs",
+   "equip_slot": 7,
+   "item_id": 30056,
+   "inventory_model": 60112,
+   "worn_model": 60113,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1275,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60112.dat",
+    "inventory_gz": "models/60112.gz",
+    "worn_dat": "models/60113.dat",
+    "worn_gz": "models/60113.gz",
+    "sprite": "sprites/30056.png",
+    "obj": "obj/B10_3_astral_robe_bottom.obj",
+    "render": "renders/B10_3_astral_robe_bottom.png"
+   },
+   "sha1": {
+    "inventory": "885ef8cf28a95b3e7e960eb58f60ffdb4d88cfa2",
+    "worn": "94cc788f1417f201f56baa1aa45a9f2d14128978"
+   },
+   "vertices": 139,
+   "faces": 320,
+   "worn_bounds_min": [
+    -41,
+    4,
+    -27
+   ],
+   "worn_bounds_max": [
+    41,
+    106,
+    27
+   ],
+   "colors_hsl": [
+    39279,
+    40164,
+    41648
+   ]
+  },
+  {
+   "code": "B10_4",
+   "name": "Runeweaver hood",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30057,
+   "inventory_model": 60114,
+   "worn_model": 60115,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1062,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60114.dat",
+    "inventory_gz": "models/60114.gz",
+    "worn_dat": "models/60115.dat",
+    "worn_gz": "models/60115.gz",
+    "sprite": "sprites/30057.png",
+    "obj": "obj/B10_4_runeweaver_hood.obj",
+    "render": "renders/B10_4_runeweaver_hood.png"
+   },
+   "sha1": {
+    "inventory": "216030d85259628d4d7d07fbdadb01a4c8fc7daf",
+    "worn": "a1f2d4129ba05d9a89a8139cea4f84358e760833"
+   },
+   "vertices": 314,
+   "faces": 644,
+   "worn_bounds_min": [
+    -36,
+    135,
+    -28
+   ],
+   "worn_bounds_max": [
+    36,
+    220,
+    28
+   ],
+   "colors_hsl": [
+    38860,
+    40164,
+    43268,
+    44163,
+    44585,
+    44586,
+    44587,
+    44588,
+    44589,
+    44590,
+    44591,
+    44592,
+    44593,
+    45316
+   ]
+  },
+  {
+   "code": "B10_5",
+   "name": "Runeweaver robe top",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30058,
+   "inventory_model": 60116,
+   "worn_model": 60117,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1312,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60116.dat",
+    "inventory_gz": "models/60116.gz",
+    "worn_dat": "models/60117.dat",
+    "worn_gz": "models/60117.gz",
+    "sprite": "sprites/30058.png",
+    "obj": "obj/B10_5_runeweaver_robe_top.obj",
+    "render": "renders/B10_5_runeweaver_robe_top.png"
+   },
+   "sha1": {
+    "inventory": "3be3fc3f5236056c7c5822f2bd0b0a8b669fab8f",
+    "worn": "1f38aa4ccb66b623827da6d9a7de91e73ccd01d6"
+   },
+   "vertices": 343,
+   "faces": 586,
+   "worn_bounds_min": [
+    -50,
+    70,
+    -20
+   ],
+   "worn_bounds_max": [
+    50,
+    175,
+    22
+   ],
+   "colors_hsl": [
+    38860,
+    40164,
+    44583,
+    44587,
+    44588,
+    44589,
+    44590,
+    44591,
+    44592,
+    44593
+   ]
+  },
+  {
+   "code": "B10_6",
+   "name": "Runeweaver robe skirt",
+   "slot": "legs",
+   "equip_slot": 7,
+   "item_id": 30059,
+   "inventory_model": 60118,
+   "worn_model": 60119,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1275,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60118.dat",
+    "inventory_gz": "models/60118.gz",
+    "worn_dat": "models/60119.dat",
+    "worn_gz": "models/60119.gz",
+    "sprite": "sprites/30059.png",
+    "obj": "obj/B10_6_runeweaver_robe_skirt.obj",
+    "render": "renders/B10_6_runeweaver_robe_skirt.png"
+   },
+   "sha1": {
+    "inventory": "18bb56486d0e742781df80ed0cae02d33fe1105b",
+    "worn": "e112ea8b2a161e3c28660a987ef21ba2c99042f8"
+   },
+   "vertices": 148,
+   "faces": 346,
+   "worn_bounds_min": [
+    -41,
+    4,
+    -27
+   ],
+   "worn_bounds_max": [
+    41,
+    106,
+    33
+   ],
+   "colors_hsl": [
+    38860,
+    40164,
+    44583,
+    44590
+   ]
+  },
+  {
+   "code": "B11_1",
+   "name": "Voidwoven hood",
+   "slot": "head",
+   "equip_slot": 0,
+   "item_id": 30060,
+   "inventory_model": 60120,
+   "worn_model": 60121,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    8,
+    11
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1062,
+    "xan2d": 100,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60120.dat",
+    "inventory_gz": "models/60120.gz",
+    "worn_dat": "models/60121.dat",
+    "worn_gz": "models/60121.gz",
+    "sprite": "sprites/30060.png",
+    "obj": "obj/B11_1_voidwoven_hood.obj",
+    "render": "renders/B11_1_voidwoven_hood.png"
+   },
+   "sha1": {
+    "inventory": "a6cde1a32a531f03f6c0b3997461099a143dd538",
+    "worn": "debc44649ee39e8b4e1cb13cb4e766587f1b3ba6"
+   },
+   "vertices": 284,
+   "faces": 584,
+   "worn_bounds_min": [
+    -36,
+    135,
+    -28
+   ],
+   "worn_bounds_max": [
+    36,
+    220,
+    28
+   ],
+   "colors_hsl": [
+    41346,
+    44546,
+    46477,
+    46478,
+    46479,
+    46480,
+    48080
+   ]
+  },
+  {
+   "code": "B11_2",
+   "name": "Voidwoven robe top",
+   "slot": "body",
+   "equip_slot": 4,
+   "item_id": 30061,
+   "inventory_model": 60122,
+   "worn_model": 60123,
+   "worn_placement": "on_body",
+   "hide_kits": [
+    6
+   ],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1312,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60122.dat",
+    "inventory_gz": "models/60122.gz",
+    "worn_dat": "models/60123.dat",
+    "worn_gz": "models/60123.gz",
+    "sprite": "sprites/30061.png",
+    "obj": "obj/B11_2_voidwoven_robe_top.obj",
+    "render": "renders/B11_2_voidwoven_robe_top.png"
+   },
+   "sha1": {
+    "inventory": "21807cdc8a5893fac7dab41b08c7f32f6e56a1d8",
+    "worn": "6018c0a39cfb2d50060b7ea1e756b920a88cb23c"
+   },
+   "vertices": 935,
+   "faces": 1772,
+   "worn_bounds_min": [
+    -49,
+    70,
+    -20
+   ],
+   "worn_bounds_max": [
+    49,
+    175,
+    21
+   ],
+   "colors_hsl": [
+    46478,
+    46479,
+    46490,
+    48080
+   ]
+  },
+  {
+   "code": "B11_3",
+   "name": "Voidwoven robe skirt",
+   "slot": "legs",
+   "equip_slot": 7,
+   "item_id": 30062,
+   "inventory_model": 60124,
+   "worn_model": 60125,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1375,
+    "xan2d": 500,
+    "yan2d": 0,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60124.dat",
+    "inventory_gz": "models/60124.gz",
+    "worn_dat": "models/60125.dat",
+    "worn_gz": "models/60125.gz",
+    "sprite": "sprites/30062.png",
+    "obj": "obj/B11_3_voidwoven_robe_skirt.obj",
+    "render": "renders/B11_3_voidwoven_robe_skirt.png"
+   },
+   "sha1": {
+    "inventory": "0b3d9c8b95e99e696a830a9d1c6a1b7707f1255d",
+    "worn": "c281fe955a039be472fbbda75a4756923dc16ff9"
+   },
+   "vertices": 235,
+   "faces": 720,
+   "worn_bounds_min": [
+    -38,
+    -4,
+    -25
+   ],
+   "worn_bounds_max": [
+    38,
+    106,
+    25
+   ],
+   "colors_hsl": [
+    46479,
+    46490,
+    48080
+   ]
+  },
+  {
+   "code": "B11_4",
+   "name": "Stormcaller staff",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30063,
+   "inventory_model": 60126,
+   "worn_model": 60127,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1738,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60126.dat",
+    "inventory_gz": "models/60126.gz",
+    "worn_dat": "models/60127.dat",
+    "worn_gz": "models/60127.gz",
+    "sprite": "sprites/30063.png",
+    "obj": "obj/B11_4_stormcaller_staff.obj",
+    "render": "renders/B11_4_stormcaller_staff.png"
+   },
+   "sha1": {
+    "inventory": "d4ff040e0849250af5712e11d16286e5f1e3eb4f",
+    "worn": "82902764c3cac0c6785e296b026ddfc48317cc6c"
+   },
+   "vertices": 267,
+   "faces": 507,
+   "worn_bounds_min": [
+    -12,
+    -28,
+    -15
+   ],
+   "worn_bounds_max": [
+    15,
+    111,
+    15
+   ],
+   "colors_hsl": [
+    37856,
+    38862,
+    45328,
+    45334,
+    45634
+   ]
+  },
+  {
+   "code": "B11_5",
+   "name": "Solar sceptre",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30064,
+   "inventory_model": 60128,
+   "worn_model": 60129,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1538,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60128.dat",
+    "inventory_gz": "models/60128.gz",
+    "worn_dat": "models/60129.dat",
+    "worn_gz": "models/60129.gz",
+    "sprite": "sprites/30064.png",
+    "obj": "obj/B11_5_solar_sceptre.obj",
+    "render": "renders/B11_5_solar_sceptre.png"
+   },
+   "sha1": {
+    "inventory": "b2bc632b132fc9b3e1ce974224a3e178c7ab66a6",
+    "worn": "526bd42f153307e45b26fb26294e2d1c7cb9f14a"
+   },
+   "vertices": 230,
+   "faces": 432,
+   "worn_bounds_min": [
+    -16,
+    -24,
+    -6
+   ],
+   "worn_bounds_max": [
+    16,
+    99,
+    8
+   ],
+   "colors_hsl": [
+    6826,
+    7871,
+    8145
+   ]
+  },
+  {
+   "code": "B11_6",
+   "name": "Necrotic soulstaff",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30065,
+   "inventory_model": 60130,
+   "worn_model": 60131,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1700,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60130.dat",
+    "inventory_gz": "models/60130.gz",
+    "worn_dat": "models/60131.dat",
+    "worn_gz": "models/60131.gz",
+    "sprite": "sprites/30065.png",
+    "obj": "obj/B11_6_necrotic_soulstaff.obj",
+    "render": "renders/B11_6_necrotic_soulstaff.png"
+   },
+   "sha1": {
+    "inventory": "3d618d369ad09d819799d806ee3785d90fedfbaf",
+    "worn": "d9bd98c36c6486b43d9b96385c31f9eeaeab9200"
+   },
+   "vertices": 264,
+   "faces": 462,
+   "worn_bounds_min": [
+    -11,
+    -26,
+    -14
+   ],
+   "worn_bounds_max": [
+    11,
+    110,
+    14
+   ],
+   "colors_hsl": [
+    6328,
+    7514,
+    17702,
+    19275,
+    45078,
+    46093
+   ]
+  },
+  {
+   "code": "B12_1",
+   "name": "Abyssal tidewhip",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30066,
+   "inventory_model": 60132,
+   "worn_model": 60133,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1362,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60132.dat",
+    "inventory_gz": "models/60132.gz",
+    "worn_dat": "models/60133.dat",
+    "worn_gz": "models/60133.gz",
+    "sprite": "sprites/30066.png",
+    "obj": "obj/B12_1_abyssal_tidewhip.obj",
+    "render": "renders/B12_1_abyssal_tidewhip.png"
+   },
+   "sha1": {
+    "inventory": "3c3a393fbaa09fab6caedfa864885a89225d2ec7",
+    "worn": "9c6760dd117e116b90a512a5929311e48d4ca576"
+   },
+   "vertices": 1001,
+   "faces": 1962,
+   "worn_bounds_min": [
+    -4,
+    -28,
+    -5
+   ],
+   "worn_bounds_max": [
+    15,
+    81,
+    7
+   ],
+   "colors_hsl": [
+    32170,
+    32285,
+    33044,
+    33481
+   ]
+  },
+  {
+   "code": "B12_2",
+   "name": "Seraph longsword",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30067,
+   "inventory_model": 60134,
+   "worn_model": 60135,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1238,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60134.dat",
+    "inventory_gz": "models/60134.gz",
+    "worn_dat": "models/60135.dat",
+    "worn_gz": "models/60135.gz",
+    "sprite": "sprites/30067.png",
+    "obj": "obj/B12_2_seraph_longsword.obj",
+    "render": "renders/B12_2_seraph_longsword.png"
+   },
+   "sha1": {
+    "inventory": "36ef224c41c79cb484f047c9865826369b0f1edc",
+    "worn": "16590bbf9e5e5c8e4ed94c09aa08440c7ce616d0"
+   },
+   "vertices": 359,
+   "faces": 670,
+   "worn_bounds_min": [
+    -18,
+    -25,
+    -6
+   ],
+   "worn_bounds_max": [
+    18,
+    74,
+    7
+   ],
+   "colors_hsl": [
+    3471,
+    3481,
+    7781,
+    7871,
+    7889,
+    33481,
+    38010,
+    38120,
+    43255
+   ]
+  },
+  {
+   "code": "B12_3",
+   "name": "Bloodfang cleaver",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30068,
+   "inventory_model": 60136,
+   "worn_model": 60137,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1250,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60136.dat",
+    "inventory_gz": "models/60136.gz",
+    "worn_dat": "models/60137.dat",
+    "worn_gz": "models/60137.gz",
+    "sprite": "sprites/30068.png",
+    "obj": "obj/B12_3_bloodfang_cleaver.obj",
+    "render": "renders/B12_3_bloodfang_cleaver.png"
+   },
+   "sha1": {
+    "inventory": "9a034c1b0bcc21c2b17715e2cc9d9f16fb64f14b",
+    "worn": "c7a085a3637349b9612245ca4d0f9e89e66acee2"
+   },
+   "vertices": 986,
+   "faces": 1918,
+   "worn_bounds_min": [
+    -10,
+    -22,
+    -3
+   ],
+   "worn_bounds_max": [
+    14,
+    78,
+    3
+   ],
+   "colors_hsl": [
+    266,
+    269,
+    65038,
+    65305,
+    65329
+   ]
+  },
+  {
+   "code": "B12_4",
+   "name": "Crimson rapier",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30069,
+   "inventory_model": 60138,
+   "worn_model": 60139,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1275,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60138.dat",
+    "inventory_gz": "models/60138.gz",
+    "worn_dat": "models/60139.dat",
+    "worn_gz": "models/60139.gz",
+    "sprite": "sprites/30069.png",
+    "obj": "obj/B12_4_crimson_rapier.obj",
+    "render": "renders/B12_4_crimson_rapier.png"
+   },
+   "sha1": {
+    "inventory": "f03e406414e03846944c9fc0d3ca78bc3b2c0c58",
+    "worn": "7feea6399dbc89351881ac51b926c93010e27b8f"
+   },
+   "vertices": 171,
+   "faces": 350,
+   "worn_bounds_min": [
+    -9,
+    -20,
+    -8
+   ],
+   "worn_bounds_max": [
+    9,
+    82,
+    8
+   ],
+   "colors_hsl": [
+    64270,
+    65305,
+    65323,
+    65334,
+    65342
+   ]
+  },
+  {
+   "code": "B12_5",
+   "name": "Gilded fang",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30070,
+   "inventory_model": 60140,
+   "worn_model": 60141,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 862,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60140.dat",
+    "inventory_gz": "models/60140.gz",
+    "worn_dat": "models/60141.dat",
+    "worn_gz": "models/60141.gz",
+    "sprite": "sprites/30070.png",
+    "obj": "obj/B12_5_gilded_fang.obj",
+    "render": "renders/B12_5_gilded_fang.png"
+   },
+   "sha1": {
+    "inventory": "4b9b8d4b2d4bacbafb7e830d22d157fd53baaa4a",
+    "worn": "c93153951db03b85c6625a614379045a1b93d527"
+   },
+   "vertices": 188,
+   "faces": 378,
+   "worn_bounds_min": [
+    -26,
+    -21,
+    -3
+   ],
+   "worn_bounds_max": [
+    6,
+    48,
+    3
+   ],
+   "colors_hsl": [
+    4628,
+    6823,
+    6826,
+    6849,
+    6982,
+    6983,
+    7863,
+    7864,
+    7865,
+    7867,
+    7868,
+    7869,
+    7870,
+    7871,
+    7872,
+    7874,
+    7887,
+    7888,
+    8005,
+    8006,
+    8020,
+    8152,
+    8910,
+    9043,
+    9176,
+    9177,
+    9178,
+    9179,
+    10202
+   ]
+  },
+  {
+   "code": "B12_6",
+   "name": "Goblin knotclub",
+   "slot": "weapon",
+   "equip_slot": 3,
+   "item_id": 30071,
+   "inventory_model": 60142,
+   "worn_model": 60143,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 1200,
+    "xan2d": 498,
+    "yan2d": 484,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60142.dat",
+    "inventory_gz": "models/60142.gz",
+    "worn_dat": "models/60143.dat",
+    "worn_gz": "models/60143.gz",
+    "sprite": "sprites/30071.png",
+    "obj": "obj/B12_6_goblin_knotclub.obj",
+    "render": "renders/B12_6_goblin_knotclub.png"
+   },
+   "sha1": {
+    "inventory": "14c8c8294a6c2c51eb7b7c7dc1c4ee5b1b833961",
+    "worn": "d5d79d51d899e313cc596aa8328500ad4dc580e5"
+   },
+   "vertices": 143,
+   "faces": 260,
+   "worn_bounds_min": [
+    -14,
+    -26,
+    -9
+   ],
+   "worn_bounds_max": [
+    12,
+    70,
+    10
+   ],
+   "colors_hsl": [
+    5675,
+    13854,
+    13855,
+    13856,
+    14747,
+    14748,
+    14749,
+    14750,
+    14751,
+    14756,
+    14874,
+    14875,
+    14878,
+    14879,
+    16820,
+    16823,
+    16929,
+    16930,
+    16931,
+    16932,
+    16933,
+    16934,
+    16935,
+    16936,
+    16937,
+    16938,
+    16939,
+    16940,
+    16941,
+    16942,
+    16943,
+    16944,
+    16945,
+    16947,
+    16948,
+    16949,
+    16950,
+    17834,
+    17838,
+    17839,
+    53672
+   ]
+  },
+  {
+   "code": "B13_1",
+   "name": "Amulet of the sun",
+   "slot": "neck",
+   "equip_slot": 2,
+   "item_id": 30072,
+   "inventory_model": 60144,
+   "worn_model": 60145,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 862,
+    "xan2d": 424,
+    "yan2d": 68,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60144.dat",
+    "inventory_gz": "models/60144.gz",
+    "worn_dat": "models/60145.dat",
+    "worn_gz": "models/60145.gz",
+    "sprite": "sprites/30072.png",
+    "obj": "obj/B13_1_amulet_of_the_sun.obj",
+    "render": "renders/B13_1_amulet_of_the_sun.png"
+   },
+   "sha1": {
+    "inventory": "20442199054303f81f27a41d770950757a3ce08a",
+    "worn": "debd9482a99a3bfd72e7ff29d48e08c4df6b6b4c"
+   },
+   "vertices": 370,
+   "faces": 736,
+   "worn_bounds_min": [
+    -24,
+    -16,
+    -5
+   ],
+   "worn_bounds_max": [
+    23,
+    53,
+    5
+   ],
+   "colors_hsl": [
+    952,
+    6826,
+    7871
+   ]
+  },
+  {
+   "code": "B13_2",
+   "name": "Crimson cord necklace",
+   "slot": "neck",
+   "equip_slot": 2,
+   "item_id": 30073,
+   "inventory_model": 60146,
+   "worn_model": 60147,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 925,
+    "xan2d": 424,
+    "yan2d": 68,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60146.dat",
+    "inventory_gz": "models/60146.gz",
+    "worn_dat": "models/60147.dat",
+    "worn_gz": "models/60147.gz",
+    "sprite": "sprites/30073.png",
+    "obj": "obj/B13_2_crimson_cord_necklace.obj",
+    "render": "renders/B13_2_crimson_cord_necklace.png"
+   },
+   "sha1": {
+    "inventory": "a5a282c09c74c04ad14769e187e0c75e896d9ca2",
+    "worn": "786894819525ea85252cb7f7a4938767628f2e19"
+   },
+   "vertices": 366,
+   "faces": 722,
+   "worn_bounds_min": [
+    -24,
+    -26,
+    -4
+   ],
+   "worn_bounds_max": [
+    24,
+    48,
+    6
+   ],
+   "colors_hsl": [
+    811,
+    65308,
+    65311,
+    65318,
+    65320
+   ]
+  },
+  {
+   "code": "B13_3",
+   "name": "Sapphire amulet",
+   "slot": "neck",
+   "equip_slot": 2,
+   "item_id": 30074,
+   "inventory_model": 60148,
+   "worn_model": 60149,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 962,
+    "xan2d": 424,
+    "yan2d": 68,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60148.dat",
+    "inventory_gz": "models/60148.gz",
+    "worn_dat": "models/60149.dat",
+    "worn_gz": "models/60149.gz",
+    "sprite": "sprites/30074.png",
+    "obj": "obj/B13_3_sapphire_amulet.obj",
+    "render": "renders/B13_3_sapphire_amulet.png"
+   },
+   "sha1": {
+    "inventory": "0bf16c753855ac9f56597a30b82fff58c3f997c2",
+    "worn": "ea31a1f6c8c10cfc9e9c69af97c59cdd22939e19"
+   },
+   "vertices": 324,
+   "faces": 628,
+   "worn_bounds_min": [
+    -24,
+    -22,
+    -5
+   ],
+   "worn_bounds_max": [
+    23,
+    55,
+    13
+   ],
+   "colors_hsl": [
+    7871,
+    33481,
+    39742,
+    41024
+   ]
+  },
+  {
+   "code": "B13_4",
+   "name": "Verdant shard amulet",
+   "slot": "neck",
+   "equip_slot": 2,
+   "item_id": 30075,
+   "inventory_model": 60150,
+   "worn_model": 60151,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 962,
+    "xan2d": 424,
+    "yan2d": 68,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60150.dat",
+    "inventory_gz": "models/60150.gz",
+    "worn_dat": "models/60151.dat",
+    "worn_gz": "models/60151.gz",
+    "sprite": "sprites/30075.png",
+    "obj": "obj/B13_4_verdant_shard_amulet.obj",
+    "render": "renders/B13_4_verdant_shard_amulet.png"
+   },
+   "sha1": {
+    "inventory": "d3f7279c7f609ab3d2c939bdbac587957a26f5be",
+    "worn": "1264069c0515a88aeb3971fdc3eaf0e49676ffd8"
+   },
+   "vertices": 305,
+   "faces": 604,
+   "worn_bounds_min": [
+    -24,
+    -22,
+    -5
+   ],
+   "worn_bounds_max": [
+    23,
+    55,
+    3
+   ],
+   "colors_hsl": [
+    15773,
+    15774,
+    15775,
+    15776,
+    15777,
+    15778,
+    15779,
+    15780,
+    15781,
+    15782,
+    15783,
+    15784,
+    15785,
+    38949
+   ]
+  },
+  {
+   "code": "B13_5",
+   "name": "Obsidian cape",
+   "slot": "cape",
+   "equip_slot": 1,
+   "item_id": 30076,
+   "inventory_model": 60152,
+   "worn_model": 60153,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1775,
+    "xan2d": 380,
+    "yan2d": 1024,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60152.dat",
+    "inventory_gz": "models/60152.gz",
+    "worn_dat": "models/60153.dat",
+    "worn_gz": "models/60153.gz",
+    "sprite": "sprites/30076.png",
+    "obj": "obj/B13_5_obsidian_cape.obj",
+    "render": "renders/B13_5_obsidian_cape.png"
+   },
+   "sha1": {
+    "inventory": "0a2a3ad688b144b0669d39d80d2cacb84ffe5ce7",
+    "worn": "f2206377a9a4fc40a937d9b98288c298b0b9afdb"
+   },
+   "vertices": 593,
+   "faces": 2108,
+   "worn_bounds_min": [
+    -46,
+    30,
+    -32
+   ],
+   "worn_bounds_max": [
+    46,
+    172,
+    14
+   ],
+   "colors_hsl": [
+    139,
+    820,
+    55306
+   ]
+  },
+  {
+   "code": "B13_6",
+   "name": "Magma cape",
+   "slot": "cape",
+   "equip_slot": 1,
+   "item_id": 30077,
+   "inventory_model": 60154,
+   "worn_model": 60155,
+   "worn_placement": "on_body",
+   "hide_kits": [],
+   "action": "Wear",
+   "icon": {
+    "zoom2d": 1750,
+    "xan2d": 380,
+    "yan2d": 1024,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60154.dat",
+    "inventory_gz": "models/60154.gz",
+    "worn_dat": "models/60155.dat",
+    "worn_gz": "models/60155.gz",
+    "sprite": "sprites/30077.png",
+    "obj": "obj/B13_6_magma_cape.obj",
+    "render": "renders/B13_6_magma_cape.png"
+   },
+   "sha1": {
+    "inventory": "3cb51b9f9df3c4bb61704dc80670c060bb245820",
+    "worn": "ddcc45c1c65ec62ee194aff7dd4fb6dfa72c1bcb"
+   },
+   "vertices": 617,
+   "faces": 2156,
+   "worn_bounds_min": [
+    -46,
+    32,
+    -32
+   ],
+   "worn_bounds_max": [
+    46,
+    172,
+    15
+   ],
+   "colors_hsl": [
+    1812,
+    1822,
+    1823,
+    1824,
+    1825,
+    1826,
+    1827,
+    1828,
+    1829,
+    1830,
+    1831,
+    1832,
+    1833,
+    1834,
+    1835,
+    6826,
+    7116
+   ]
+  },
+  {
+   "code": "B14_1",
+   "name": "Dragonfire shield",
+   "slot": "shield",
+   "equip_slot": 5,
+   "item_id": 30078,
+   "inventory_model": 60156,
+   "worn_model": 60157,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 850,
+    "xan2d": 344,
+    "yan2d": 1104,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60156.dat",
+    "inventory_gz": "models/60156.gz",
+    "worn_dat": "models/60157.dat",
+    "worn_gz": "models/60157.gz",
+    "sprite": "sprites/30078.png",
+    "obj": "obj/B14_1_dragonfire_shield.obj",
+    "render": "renders/B14_1_dragonfire_shield.png"
+   },
+   "sha1": {
+    "inventory": "5b6c86d4b506f79b503b8d575b64c1194a4a5c70",
+    "worn": "5ab95ec4fded90f35212bea1012222a31ec4d065"
+   },
+   "vertices": 276,
+   "faces": 510,
+   "worn_bounds_min": [
+    -27,
+    -33,
+    -22
+   ],
+   "worn_bounds_max": [
+    26,
+    35,
+    28
+   ],
+   "colors_hsl": [
+    3008,
+    4035,
+    5061,
+    7116,
+    35860,
+    37905,
+    37906,
+    37907,
+    37908,
+    37909,
+    38955,
+    38956,
+    38959,
+    38962,
+    39956,
+    39957,
+    39968,
+    39979,
+    39980,
+    39981,
+    39982,
+    39983,
+    39984,
+    39985,
+    39986,
+    39987,
+    40978,
+    40979,
+    41004,
+    41005,
+    41007,
+    41010,
+    41011,
+    41012,
+    41013,
+    42021,
+    43026,
+    43027,
+    43028
+   ]
+  },
+  {
+   "code": "B14_2",
+   "name": "Glacial crystal shield",
+   "slot": "shield",
+   "equip_slot": 5,
+   "item_id": 30079,
+   "inventory_model": 60158,
+   "worn_model": 60159,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 975,
+    "xan2d": 344,
+    "yan2d": 1104,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60158.dat",
+    "inventory_gz": "models/60158.gz",
+    "worn_dat": "models/60159.dat",
+    "worn_gz": "models/60159.gz",
+    "sprite": "sprites/30079.png",
+    "obj": "obj/B14_2_glacial_crystal_shield.obj",
+    "render": "renders/B14_2_glacial_crystal_shield.png"
+   },
+   "sha1": {
+    "inventory": "d418c034a81b79d437f0bd6bc33d62c113506a29",
+    "worn": "1233857eeb48ce2e10ceff3c55121c236c440f94"
+   },
+   "vertices": 256,
+   "faces": 476,
+   "worn_bounds_min": [
+    -33,
+    -39,
+    -4
+   ],
+   "worn_bounds_max": [
+    33,
+    39,
+    9
+   ],
+   "colors_hsl": [
+    33326,
+    33327,
+    33328,
+    33329,
+    33330,
+    33331,
+    33332,
+    33333,
+    33334,
+    33335,
+    33336,
+    33337,
+    33338,
+    33339,
+    33340,
+    33341,
+    33342,
+    33343,
+    33344,
+    33355,
+    33477,
+    33478,
+    33479,
+    34501,
+    34502,
+    34634,
+    34635,
+    35338
+   ]
+  },
+  {
+   "code": "B14_3",
+   "name": "Solar heater shield",
+   "slot": "shield",
+   "equip_slot": 5,
+   "item_id": 30080,
+   "inventory_model": 60160,
+   "worn_model": 60161,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 750,
+    "xan2d": 344,
+    "yan2d": 1104,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60160.dat",
+    "inventory_gz": "models/60160.gz",
+    "worn_dat": "models/60161.dat",
+    "worn_gz": "models/60161.gz",
+    "sprite": "sprites/30080.png",
+    "obj": "obj/B14_3_solar_heater_shield.obj",
+    "render": "renders/B14_3_solar_heater_shield.png"
+   },
+   "sha1": {
+    "inventory": "b02757b2967de5dc3827e19b9a22e297529f6b2d",
+    "worn": "57577d046098acae72e2d53c20fd972b079dc5b2"
+   },
+   "vertices": 225,
+   "faces": 430,
+   "worn_bounds_min": [
+    -24,
+    -33,
+    -4
+   ],
+   "worn_bounds_max": [
+    24,
+    27,
+    10
+   ],
+   "colors_hsl": [
+    6823,
+    6824,
+    6825,
+    6826,
+    6827,
+    6828,
+    6849,
+    6983,
+    7865,
+    7867,
+    7868,
+    7869,
+    7870,
+    7871,
+    7872,
+    7874,
+    8014,
+    8145
+   ]
+  },
+  {
+   "code": "B14_4",
+   "name": "Jade thorn shield",
+   "slot": "shield",
+   "equip_slot": 5,
+   "item_id": 30081,
+   "inventory_model": 60162,
+   "worn_model": 60163,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 750,
+    "xan2d": 344,
+    "yan2d": 1104,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60162.dat",
+    "inventory_gz": "models/60162.gz",
+    "worn_dat": "models/60163.dat",
+    "worn_gz": "models/60163.gz",
+    "sprite": "sprites/30081.png",
+    "obj": "obj/B14_4_jade_thorn_shield.obj",
+    "render": "renders/B14_4_jade_thorn_shield.png"
+   },
+   "sha1": {
+    "inventory": "46f2d7c2f877ac1b13a979a2ecd68fe7947d9da3",
+    "worn": "ec705a1ca9f6b857eb713d85f97fdc3d878a53ca"
+   },
+   "vertices": 318,
+   "faces": 632,
+   "worn_bounds_min": [
+    -25,
+    -29,
+    -4
+   ],
+   "worn_bounds_max": [
+    25,
+    31,
+    10
+   ],
+   "colors_hsl": [
+    24773,
+    24775,
+    24776,
+    24780,
+    24918,
+    25050,
+    25797,
+    25798,
+    25799,
+    25800,
+    25801,
+    25802,
+    25930,
+    25932,
+    25933,
+    25935,
+    25936,
+    25937,
+    25938,
+    25939,
+    25940,
+    25941,
+    25942,
+    26071,
+    26074,
+    26075,
+    26076
+   ]
+  },
+  {
+   "code": "B14_5",
+   "name": "Sapphire dragon kiteshield",
+   "slot": "shield",
+   "equip_slot": 5,
+   "item_id": 30082,
+   "inventory_model": 60164,
+   "worn_model": 60165,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 838,
+    "xan2d": 344,
+    "yan2d": 1104,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60164.dat",
+    "inventory_gz": "models/60164.gz",
+    "worn_dat": "models/60165.dat",
+    "worn_gz": "models/60165.gz",
+    "sprite": "sprites/30082.png",
+    "obj": "obj/B14_5_sapphire_dragon_kiteshield.obj",
+    "render": "renders/B14_5_sapphire_dragon_kiteshield.png"
+   },
+   "sha1": {
+    "inventory": "d104bf50df30877dafbf9ddfa4b17bffe86e959b",
+    "worn": "7636ec15f316a09a847b3f318795e24191986c82"
+   },
+   "vertices": 165,
+   "faces": 302,
+   "worn_bounds_min": [
+    -24,
+    -40,
+    -4
+   ],
+   "worn_bounds_max": [
+    24,
+    27,
+    6
+   ],
+   "colors_hsl": [
+    39152,
+    39755,
+    40163,
+    41644
+   ]
+  },
+  {
+   "code": "B14_6",
+   "name": "Crimson spiked roundshield",
+   "slot": "shield",
+   "equip_slot": 5,
+   "item_id": 30083,
+   "inventory_model": 60166,
+   "worn_model": 60167,
+   "worn_placement": "item_space_needs_offset",
+   "hide_kits": [],
+   "action": "Wield",
+   "icon": {
+    "zoom2d": 975,
+    "xan2d": 344,
+    "yan2d": 1104,
+    "zan2d": 0,
+    "xOffset2d": 0,
+    "yOffset2d": 0
+   },
+   "files": {
+    "inventory_dat": "models/60166.dat",
+    "inventory_gz": "models/60166.gz",
+    "worn_dat": "models/60167.dat",
+    "worn_gz": "models/60167.gz",
+    "sprite": "sprites/30083.png",
+    "obj": "obj/B14_6_crimson_spiked_roundshield.obj",
+    "render": "renders/B14_6_crimson_spiked_roundshield.png"
+   },
+   "sha1": {
+    "inventory": "e15017c42de7a73a1b58333c324a6f6622ff6d85",
+    "worn": "18082952346f7568297ad91ec2f8747c2c2353c1"
+   },
+   "vertices": 153,
+   "faces": 254,
+   "worn_bounds_min": [
+    -39,
+    -37,
+    -4
+   ],
+   "worn_bounds_max": [
+    39,
+    37,
+    16
+   ],
+   "colors_hsl": [
+    39960,
+    39961,
+    40987,
+    40988,
+    40989,
+    40990,
+    41056,
+    42008,
+    42009,
+    42010,
+    43034,
+    43035,
+    43036,
+    43038,
+    65186,
+    65187,
+    65188,
+    65190,
+    65191,
+    65192,
+    65193,
+    65195
+   ]
+  }
+ ]
+}
