@@ -82,8 +82,11 @@ class TestLowPoly(unittest.TestCase):
         pts = outline_points(m, eps=1.0, step=8)
         self.assertGreater(len(pts), 8)
         ys, xs = pts[:, 0], pts[:, 1]
-        self.assertTrue(((np.abs(ys - 10) < 1) | (np.abs(ys - 69) < 1) | (np.abs(xs - 20) < 1)
-                         | (np.abs(xs - 59) < 1)).all())
+        # points lie on the rectangle's pixel-corner boundary (rows 10/70, columns 20/60),
+        # within the simplifier's 1px tolerance
+        d = np.minimum.reduce([np.abs(ys - 10), np.abs(ys - 70), np.abs(xs - 20), np.abs(xs - 60)])
+        self.assertTrue((d <= 1.0).all())
+        self.assertTrue(((ys >= 9) & (ys <= 71) & (xs >= 19) & (xs <= 61)).all())
 
     def test_triangles_stay_inside_silhouette(self):
         m = np.zeros((90, 90), bool)
@@ -177,7 +180,7 @@ class TestFitAndConvert(unittest.TestCase):
         z = s1.depth_map(rgb, m)
         mask = Image.fromarray((m * 255).astype(np.uint8))
         depth = Image.fromarray((z / max(z.max(), 1) * 65535).astype(np.uint16))
-        mesh = s2.lowpoly_mesh(rgb, mask, depth, 200, 0.35)
+        mesh = s2.lowpoly_mesh(rgb, mask, depth, 200, 0.35, colors=8)
         self.assertGreater(mesh.signed_volume(), 0)
         cols = {c for c in mesh.C}
         self.assertLessEqual(len(cols), 16)  # flat palette (front tones + darker backs)

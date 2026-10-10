@@ -52,6 +52,23 @@ Example for a single model file:
 python3 pipeline/stage3_models_to_rs.py --in my_sword.glb --slot weapon --up z --forward -y
 ```
 
+## Blender (mold the designs with real Blender modelling)
+Blender runs headless as a Python module, with no GUI or GPU needed:
+```sh
+./scripts/setup_blender.sh                                   # one-time: Blender 5.2 (bpy) in .venv-blender
+.venv-blender/bin/python pipeline/blender_mold.py --only B14  # mold -> pipeline_out/02_models/
+python3 pipeline/stage3_models_to_rs.py --only B14           # -> RS
+```
+For each item, Blender:
+1. Builds a solid from the traced outline, with a chamfered rim.
+2. Remeshes it and moulds the front and back from the depth map.
+3. Uses its own collapse decimation to reach the face budget (`--faces`, default 1800).
+4. Projects the design's flat colours onto each face.
+
+**Compared with `lowpoly`:** Blender gives real thickness, bevelled edges and a solid side view; weapons and tools look clearly more three-dimensional. `lowpoly` keeps more surface detail, such as emblems and stars, and stays the default. Try both on a batch with `tools/compare.py --pipeline`.
+
+**Your own Blender scripts.** Any Blender Python script runs the same way with `.venv-blender/bin/python`; that includes scripts written by the Hermes `render-lab-3d` deck's procedural-modeler. Have the script export a `.glb`/`.obj`, then convert it with `stage3_models_to_rs.py --in <file> --slot <slot>`.
+
 ## Meshy (AI image-to-3D)
 One-time setup (environment settings: cloud environment menu in the title bar → Edit):
 1. Add your Meshy API key under **Network secrets** (or as an environment variable) named `MESHY_API_KEY`. Never paste it into a chat or commit it.

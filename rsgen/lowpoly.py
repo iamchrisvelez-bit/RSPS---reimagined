@@ -77,27 +77,42 @@ def _components(m):
 
 
 def trace_outline(m):
-    """Outer boundary of a single blob as an ordered list of (y, x) pixels
-    (Moore-neighbour tracing, clockwise in image coordinates)."""
+    """Outer boundary of a blob as an ordered loop of pixel-corner points (y, x).
+
+    Every inside pixel edge that faces an outside pixel becomes a directed
+    edge with the inside on a consistent side; chaining the edges yields
+    closed loops (outer outline and holes). The longest loop is the outline."""
+    p = np.pad(m, 1)
+    nxt = {}
     ys, xs = np.nonzero(m)
-    i = np.lexsort((xs, ys))[0]
-    start = (ys[i], xs[i])
-    nb = [(-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1)]
-    h, w = m.shape
-    path, cur, d = [start], start, 7
-    for _ in range(4 * m.size):
-        for k in range(8):
-            dd = (d + 6 + k) % 8  # start searching left of the previous direction
-            ny, nx = cur[0] + nb[dd][0], cur[1] + nb[dd][1]
-            if 0 <= ny < h and 0 <= nx < w and m[ny, nx]:
-                cur, d = (ny, nx), dd
+    for r, c in zip(ys, xs):
+        R, C = r + 1, c + 1  # index into the padded mask
+        if not p[R - 1, C]:
+            nxt.setdefault((r, c + 1), []).append((r, c))
+        if not p[R + 1, C]:
+            nxt.setdefault((r + 1, c), []).append((r + 1, c + 1))
+        if not p[R, C - 1]:
+            nxt.setdefault((r, c), []).append((r + 1, c))
+        if not p[R, C + 1]:
+            nxt.setdefault((r + 1, c + 1), []).append((r, c + 1))
+    loops = []
+    while nxt:
+        start = next(iter(nxt))
+        loop, cur = [start], start
+        while True:
+            outs = nxt.get(cur)
+            if not outs:
                 break
-        else:
-            break  # isolated pixel
-        if cur == start:
-            break
-        path.append(cur)
-    return np.array(path, float)
+            nx = outs.pop()
+            if not outs:
+                del nxt[cur]
+            if nx == start:
+                break
+            loop.append(nx)
+            cur = nx
+        loops.append(loop)
+    best = max(loops, key=len)
+    return np.array(best, float)
 
 
 def simplify(P, eps):
@@ -192,11 +207,18 @@ def triangulate_art(mask, labels, n_points=420, edge_spacing=3.0, seed=0):
     P = np.array(pts, float)
     T = delaunay(P[:, ::-1])  # triangulate in (x, y)
     # keep triangles that lie inside the silhouette (test centroid and edge midpoints)
+    def inside(p):
+        # outline points lie on pixel corners: a point counts as inside when it
+        # touches an inside pixel (pixel (r, c) spans [r, r+1) x [c, c+1))
+        y0, x0 = int(np.floor(p[0] - 0.5)), int(np.floor(p[1] - 0.5))
+        return any(0 <= y < h and 0 <= x < w and mask[y, x]
+                   for y in (y0, y0 + 1) for x in (x0, x0 + 1))
     keep = []
     for t in T:
         a, b, c = P[t]
-        probes = [(a + b + c) / 3, (a + b) / 2, (b + c) / 2, (c + a) / 2]
-        if all(mask[min(h - 1, int(round(p[0]))), min(w - 1, int(round(p[1])))] for p in probes):
+        cen = (a + b + c) / 3
+        if (mask[min(h - 1, int(cen[0])), min(w - 1, int(cen[1]))]
+                and all(inside(p) for p in ((a + b) / 2, (b + c) / 2, (c + a) / 2))):
             keep.append(t)
     T = np.array(keep)
     # dominant label under each triangle
@@ -215,7 +237,8 @@ def triangulate_art(mask, labels, n_points=420, edge_spacing=3.0, seed=0):
         inside = (l1 >= -0.05) & (l2 >= -0.05) & (1 - l1 - l2 >= -0.05)
         vals = L[gy[inside], gx[inside]]
         vals = vals[vals >= 0]
-        cy, cx = int(round((a[0] + b[0] + c[0]) / 3)), int(round((a[1] + b[1] + c[1]) / 3))
+        cy = min(h - 1, int((a[0] + b[0] + c[0]) / 3))
+        cx = min(w - 1, int((a[1] + b[1] + c[1]) / 3))
         lab.append(int(np.bincount(vals).argmax()) if len(vals) else int(max(L[cy, cx], 0)))
     on_edge = np.zeros(len(P), bool)
     on_edge[:n_edge] = True
