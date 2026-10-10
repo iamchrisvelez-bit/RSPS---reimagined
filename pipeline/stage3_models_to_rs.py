@@ -8,7 +8,8 @@ Per model:
   1. load (OBJ+MTL/textures, PLY, GLB with textures), reorient to y-up/+z-front
   2. fit into the equipment slot's box on the standard player (head, body,
      legs, feet, hands, cape) or centre it in item space (weapon, shield,
-     neck)
+     neck); capes made from the design sheet are turned so the artwork's
+     side faces away from the wearer
   3. decimate to the face budget (vertex clustering keeps the low-poly look)
   4. snap to the integer grid, drop degenerate faces, map colours to the RS
      HSL palette, encode (classic model format, readable by 317 and OSRS)
@@ -60,8 +61,14 @@ def rot_z(V, deg):
     return V @ np.array([[np.cos(a), -np.sin(a), 0], [np.sin(a), np.cos(a), 0], [0, 0, 1]]).T
 
 
-def convert(mesh, slot, max_faces, up='y', forward='z', fill=1.0):
+def convert(mesh, slot, max_faces, up='y', forward='z', fill=1.0, from_design=False):
+    """from_design: the model was made from a design image, so its +z side is
+    the side the artwork shows. For a cape that is the outside, which has to
+    face backwards (away from the wearer), so the model is turned around."""
     m = reorient(mesh, up, forward)
+    if from_design and slot == 'cape':
+        m = m.copy()
+        m.V = m.V * np.array([-1.0, 1.0, -1.0])  # 180 degrees about y (a rotation: faces keep their winding)
     m = fit_to_slot(m, slot, fill)
     m = decimate(m, max_faces)
     return rsformat.clean(m)
@@ -87,7 +94,7 @@ def main():
             continue
         slot = a.slot or meta.get('slot') or 'weapon'
         src = load_mesh(path)
-        m = convert(src, slot, a.max_faces, a.up, a.forward, a.fill)
+        m = convert(src, slot, a.max_faces, a.up, a.forward, a.fill, from_design='crop' in meta)
         data = rsformat.encode(m)
         dec = rsformat.decode(data)
         V = dec['V'] * np.array([1, -1, -1])

@@ -17,7 +17,11 @@ def delaunay(P):
     lo, hi = P.min(0), P.max(0)
     span = float((hi - lo).max()) * 20 + 1
     c = (lo + hi) / 2
-    S = np.vstack([P, [c + [-span, -span], c + [span, -span], c + [0, span]]])
+    # a tiny fixed perturbation breaks ties between cocircular / collinear
+    # points (pixel-corner outlines are full of them), which otherwise leave
+    # overlapping or missing triangles; only the predicates see it
+    jit = np.random.default_rng(12345).uniform(-1, 1, P.shape) * (span / 20) * 1e-7
+    S = np.vstack([P + jit, [c + [-span, -span], c + [span, -span], c + [0, span]]])
     tris = [(n, n + 1, n + 2)]
     for i in range(n):
         T = np.array(tris)
@@ -39,9 +43,9 @@ def delaunay(P):
         for (a, b), cnt in edges.items():
             if cnt == 1:
                 tris.append((a, b, i))
-    T = np.array([t for t in tris if max(t) < n])
+    T = np.array([t for t in tris if max(t) < n]).reshape(-1, 3)
     # consistent CCW orientation in (x, y)
-    A, B, C = P[T[:, 0]], P[T[:, 1]], P[T[:, 2]]
+    A, B, C = S[T[:, 0]], S[T[:, 1]], S[T[:, 2]]
     cw = ((B[:, 0] - A[:, 0]) * (C[:, 1] - A[:, 1]) - (B[:, 1] - A[:, 1]) * (C[:, 0] - A[:, 0])) < 0
     T[cw] = T[cw][:, ::-1]
     return T
@@ -280,3 +284,67 @@ def rasterize_labels(P, T, lab, shape):
         cover = (l1 >= -1e-9) & (l2 >= -1e-9) & (1 - l1 - l2 >= -1e-9)
         out[y0:y1 + 1, x0:x1 + 1][cover] = li
     return out
+
+
+def _orient(P, t):
+    a, b, c = P[t[0]], P[t[1]], P[t[2]]
+    return (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
+
+
+def collapse_interior(P, T, locked, target):
+    """Coarsen a 2D triangulation to about `target` triangles by collapsing
+    unlocked vertices onto a neighbour (shortest edges first). Locked
+    vertices - the rim - never move and boundary edges never change, so a
+    coarsened side still seals exactly against the other side. A collapse is
+    only made when no remaining triangle flips or degenerates.
+    Returns the new triangle array (indices into the same P)."""
+    tris = {i: tuple(int(v) for v in t) for i, t in enumerate(T)}
+    sign = {i: np.sign(_orient(P, t)) for i, t in tris.items()}
+    around = {}
+    for i, t in tris.items():
+        for v in t:
+            around.setdefault(v, set()).add(i)
+    changed = True
+    while len(tris) > target and changed:
+        changed = False
+        cand = []
+        for v, ts in around.items():
+            if locked[v] or not ts:
+                continue
+            nb = {u for i in ts for u in tris[i] if u != v}
+            for u in nb:
+                cand.append((float(np.hypot(*(P[u] - P[v]))), v, u))
+        cand.sort()
+        done = set()
+        for _, v, u in cand:
+            if len(tris) <= target:
+                break
+            if v in done or u in done or not around.get(v):
+                continue
+            ts = around[v]
+            if not any(u in tris[i] for i in ts):
+                continue
+            ok, new = True, {}
+            for i in ts:
+                t = tris[i]
+                if u in t:
+                    continue  # this triangle disappears
+                nt = tuple(u if x == v else x for x in t)
+                o = _orient(P, nt)
+                if abs(o) < 1e-6 or np.sign(o) != sign[i]:
+                    ok = False
+                    break
+                new[i] = nt
+            if not ok:
+                continue
+            for i in list(ts):
+                t = tris.pop(i)
+                for x in t:
+                    around[x].discard(i)
+                if i in new:
+                    tris[i] = new[i]
+                    for x in new[i]:
+                        around.setdefault(x, set()).add(i)
+            done.update((u, v))
+            changed = True
+    return np.array(list(tris.values()), int).reshape(-1, 3)

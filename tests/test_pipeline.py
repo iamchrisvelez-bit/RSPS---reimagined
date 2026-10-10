@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.join(ROOT, 'pipeline'))
 from rsgen import rsformat  # noqa: E402
 from rsgen.fit import decimate, fit_to_slot, reorient, SLOT_BOX  # noqa: E402
 from rsgen.geom import box  # noqa: E402
-from rsgen.lowpoly import delaunay, outline_points, rasterize_labels, triangulate_art  # noqa: E402
+from rsgen.lowpoly import collapse_interior, delaunay, outline_points, rasterize_labels, triangulate_art  # noqa: E402
 from rsgen.meshio import load_mesh, write_obj_rgb  # noqa: E402
 import stage1_designs_to_3d as s1  # noqa: E402
 import stage2_images_to_models as s2  # noqa: E402
@@ -263,3 +263,81 @@ class TestRefine(unittest.TestCase):
         _, hist, _ = rf.refine_item(rgb, mask, depth, target=0.5)
         self.assertEqual(hist[-1]['stop'], 'target')
         self.assertEqual(len(hist), 1)
+
+
+def _edge_uses(F):
+    from collections import Counter
+    return Counter(tuple(sorted(e)) for f in np.asarray(F).tolist() for e in ((f[0], f[1]), (f[1], f[2]), (f[2], f[0])))
+
+
+class TestShadowsAndTexture(unittest.TestCase):
+    def test_delaunay_cocircular_points(self):
+        ring = [(10 + 9 * np.sin(a), 10 + 9 * np.cos(a)) for a in np.linspace(0, 2 * np.pi, 30, endpoint=False)]
+        grid = [(float(i), float(j)) for i in range(12) for j in range(12)]
+        for P, hull in ((np.array(ring + [(10.0, 10.0)]), 30), (np.array(grid), 44)):
+            T = delaunay(P)
+            self.assertEqual(len(T), 2 * len(P) - 2 - hull)  # no overlapping or missing triangles
+
+    def test_collapse_keeps_rim_and_area(self):
+        rng = np.random.default_rng(1)
+        ring = [(10 + 9 * np.sin(a), 10 + 9 * np.cos(a)) for a in np.linspace(0, 2 * np.pi, 24, endpoint=False)]
+        P = np.array(ring + [tuple(10 + rng.uniform(-5, 5, 2)) for _ in range(120)])
+        T = delaunay(P)
+        locked = np.arange(len(P)) < 24
+        T2 = collapse_interior(P, T, locked, 30)
+        self.assertLess(len(T2), len(T) / 3)
+        rim = lambda F: {e for e, n in _edge_uses(F).items() if n == 1}  # noqa: E731
+        self.assertEqual(rim(T), rim(T2))
+        area = lambda F: sum(abs((P[b][0] - P[a][0]) * (P[c][1] - P[a][1]) - (P[b][1] - P[a][1]) * (P[c][0] - P[a][0])) / 2
+                             for a, b, c in F)  # noqa: E731
+        self.assertAlmostEqual(area(T), area(T2), 6)
+
+    def test_shading_target_keeps_crevice_shadows(self):
+        im = np.full((60, 60, 3), 180.0)
+        im[28:32, 10:50] = 40  # a dark groove
+        m = np.ones((60, 60), bool)
+        t = rf.shading_target(Image.fromarray(im.astype(np.uint8)), m)
+        self.assertLess(t[30, 30].mean(), 0.5 * t[10, 30].mean())
+        dent = rf.cavity_relief(t, m, 60)
+        self.assertLess(dent[30, 30], -0.02)
+        self.assertGreater(dent[10, 30], -0.005)
+
+    def test_detail_mode_faces_carry_shading(self):
+        rgb, mask, depth, m = synthetic_item()
+        arr = np.asarray(rgb).astype(np.float64)
+        arr[m] *= np.linspace(0.5, 1.2, m.shape[1])[None, :, None].repeat(m.shape[0], 0)[m]  # a shadow gradient
+        rgb = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
+        mesh, hist, _ = rf.refine_item(rgb, mask, depth, 0.35, max_faces=800, start_points=10)
+        self.assertGreater(len(set(mesh.C)), 30)  # many distinct tones, not a flat palette
+        self.assertGreater(hist[-1]['back_faces'], 0)
+        self.assertLessEqual(len(mesh.F), 800)
+        self.assertGreater(mesh.signed_volume(), 0)
+        rs = s3.convert(mesh, 'shield', 2400)
+        dec = rsformat.decode(rsformat.encode(rs))
+        self.assertTrue(np.array_equal(dec['F'], rs.F))
+
+    def test_flat_mode_still_available(self):
+        rgb, mask, depth, m = synthetic_item()
+        mesh, hist, _ = rf.refine_item(rgb, mask, depth, mode='flat', back_share=None, max_faces=600,
+                                       start_points=8)
+        self.assertLessEqual(len(set(mesh.C)), 16)
+
+
+class TestCapeFacing(unittest.TestCase):
+    def test_design_cape_shows_artwork_backwards(self):
+        rgb, mask, depth, m = synthetic_item()
+        mesh, _, _ = rf.refine_item(rgb, mask, depth, 0.25, max_faces=600, start_points=8)
+        T = mesh.V[mesh.F]
+        nz = np.cross(T[:, 1] - T[:, 0], T[:, 2] - T[:, 0])[:, 2]
+        mesh.C = [(255, 0, 255) if z > 0 else (40, 40, 40) for z in nz]  # tag the artwork (+z) side
+        rs = s3.convert(mesh, 'cape', 2400, from_design=True)
+        T = rs.V[rs.F]
+        nz = np.cross(T[:, 1] - T[:, 0], T[:, 2] - T[:, 0])[:, 2]
+        art = np.array([c[0] > 200 for c in rs.C])
+        self.assertLess(nz[art].sum(), 0)  # artwork now faces -z: behind the player
+        self.assertGreater(nz[~art].sum(), 0)
+        self.assertGreater(rs.signed_volume(), 0)  # still outward-facing, not inside-out
+        kept = s3.convert(mesh, 'shield', 2400, from_design=True)  # other slots are not turned
+        T = kept.V[kept.F]
+        self.assertGreater(np.cross(T[:, 1] - T[:, 0], T[:, 2] - T[:, 0])[:, 2][
+            np.array([c[0] > 200 for c in kept.C])].sum(), 0)

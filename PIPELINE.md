@@ -65,11 +65,11 @@ python3 verify/runelite_check.py pipeline_out/03_rs # RuneLite decodes every mod
 
 Each round does four things:
 
-1. **Render.** Renders the model's front view at the design's own resolution. The render is exact and pixel-aligned, and each facet shows its flat colour.
-2. **Score.** Compares the render with the design. The score combines silhouette IoU and colour accuracy, i.e. the share of design pixels whose facet has the right palette colour. The colour target is the design reduced to 8 flat tones with speckle smoothed away, which is what a low-poly RS model can show.
+1. **Render.** Renders the model's front view at the design's own resolution. The render is exact and pixel-aligned.
+2. **Score.** Compares the render with the design. The score combines silhouette IoU and colour accuracy, i.e. the share of design pixels whose facet colour is within reach of the design's colour there.
 3. **Add faces.** Places new points where the error is worst:
    - a silhouette miss snaps to the exact outline
-   - a colour miss snaps onto the nearest colour-region border, so triangle edges follow the design's shapes
+   - a colour miss snaps onto the nearest colour border, so triangle edges follow the design's shapes
 4. **Retriangulate.** Rebuilds the triangles from the new point set.
 
 A round that makes the match worse is undone, and its spots are skipped next time. The loop stops at the first of these:
@@ -78,13 +78,26 @@ A round that makes the match worse is undone, and its spots are skipped next tim
 - the next round would pass the RS face budget (`--max-faces`, front + back)
 - a plateau: the best score rose less than `--min-gain` over the last 3 rounds, or 6 while under half the budget
 
-Outputs per item:
+### Shadows and texture (`--mode detail`, the default)
+
+- **Colours.** Each face takes the design's true colour under it, so the refinement also chases:
+  - baked shadows and ambient occlusion
+  - highlights
+  - surface texture: scales, cracks, weave, glow lines
+
+  Only half of the broad light gradient is removed (`shading_target`), because the RS client lights the model by its normals too.
+- **Shadows in the geometry.** Pixels darker than their surroundings, such as gaps between plates, recesses and eye slits, become dents in the depth (`--cavity`, default 0.06). In-game lighting then shades them as well.
+- **Coarse back.** The back is the front simplified with the rim locked (`collapse_interior`), so the model stays closed. It uses `--back-share` of the budget (default 15%) instead of half, which leaves about 85% of the faces for visible front detail. `--back-share 0` mirrors the front onto the back as before.
+- **Capes.** Stage 3 turns capes made from the design sheet around, so the artwork side faces away from the wearer, as seen from behind in game. Other slots are unchanged. External models keep using `--forward`.
+- **Textures, technically.** RS old-format models also support texture-mapped faces, but those reference texture IDs in the client's own texture cache. The colours here are baked per face, which works on any client without cache edits.
+
+`--mode flat` gives the earlier look: 8 flat tones with the shading removed.
+
+### Outputs per item
 
 - `model.obj`
-- `meta.json`, which holds `match`, `stop` and the round-by-round `history`
+- `meta.json`, which holds `match`, `stop`, `mode` and the round-by-round `history`
 - `refine.png`, a strip showing the design, selected rounds with face counts and scores, and the final lit 3D model
-
-All 84 items run in about 5 minutes on CPU. At the same 2,400-face budget the refined models average a match score of 0.90; the one-shot `lowpoly` backend averages 0.89 on the batches compared. The gain is mostly visible in trims, borders and glow lines. Thin glowing cracks remain the hardest detail: within the face budget they come out as broken streaks.
 
 ## Blender (mold the designs with real Blender modelling)
 Blender runs headless as a Python module, with no GUI or GPU needed:

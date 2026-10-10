@@ -123,40 +123,59 @@ def lowpoly_mesh(color, mask, depth, points=420, thickness=0.6, depth_gain=1.0, 
     return mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness, depth_gain, smooth_div)
 
 
-def mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness=0.6, depth_gain=1.0, smooth_div=30.0):
+def mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness=0.6, depth_gain=1.0, smooth_div=30.0,
+                        detail=None, back=None):
     """Closed mesh from a front triangulation of the artwork (points (y, x) in
     pixels): front from the depth map, mirrored thinner back, sealed at the rim
-    (rim points are shared by both sides). Units: 1 = one source pixel."""
+    (rim points are shared by both sides). detail: optional HxW depth offsets
+    (fractions of the depth range, e.g. cavity dents) added after smoothing.
+    back: optional (triangles, RGB per triangle) for a separate, coarser back
+    built over the same points (it must share the rim, see collapse_interior);
+    default is the front mirrored, 20% darker.
+    Units: 1 = one source pixel."""
     h, w = m.shape
     # smooth the depth so neighbouring facets tilt coherently (the stage-1 depth
     # carries fine shading relief that would otherwise make every facet flicker)
     z = blur(np.asarray(depth).astype(np.float64) / 65535.0, max(1.5, max(h, w) / smooth_div)) * m
+    if detail is not None:  # dents never push the front through the back
+        z = np.maximum(z + detail * m, z * 0.3)
     zs = depth_gain * max(h, w) * 0.22
-    V, front, back = [], [], []
+    V, front, back_idx = [], [], []
     for (y, x), r in zip(P, rim):
         X, Y = x - w / 2, h / 2 - y
         if r:
             front.append(len(V))
-            back.append(len(V))
+            back_idx.append(len(V))
             V.append((X, Y, 0.0))
         else:
             d = z[min(h - 1, int(round(y))), min(w - 1, int(round(x)))] * zs
             front.append(len(V))
             V.append((X, Y, d))
-            back.append(len(V))
+            back_idx.append(len(V))
             V.append((X, Y, -d * thickness))
     F, C = [], []
     for t, li in zip(T, lab):
-        col = tuple(int(c) for c in pal[li])
+        col = tuple(int(round(c)) for c in pal[li])
         a, b, c = t
         # T is CCW in image (x, y-down) coordinates, i.e. clockwise once y points up
         F.append((front[a], front[c], front[b]))
         C.append(col)
-        F.append((back[a], back[b], back[c]))
-        C.append(tuple(int(v * 0.8) for v in col))
-    mesh = Mesh(np.array(V, float), F, C)
-    keep = [i for i, (p, q, r) in enumerate(mesh.F) if len({p, q, r}) == 3]
-    return Mesh(mesh.V, mesh.F[keep], [mesh.C[i] for i in keep])
+        if back is None:
+            F.append((back_idx[a], back_idx[b], back_idx[c]))
+            C.append(tuple(int(v * 0.8) for v in col))
+    if back is not None:
+        for (a, b, c), col in zip(*back):
+            F.append((back_idx[a], back_idx[b], back_idx[c]))
+            C.append(tuple(int(round(v)) for v in col))
+    used = sorted({v for f in F for v in f})
+    remap = {v: i for i, v in enumerate(used)}
+    V = np.array(V, float)[used]
+    F2, C2 = [], []
+    for f, col in zip(F, C):
+        if len(set(f)) == 3:
+            F2.append(tuple(remap[v] for v in f))
+            C2.append(col)
+    return Mesh(V, F2, C2)
 
 
 def relief_mesh(color, mask, depth, cells=56, thickness=0.6, depth_gain=1.0, delight=0.55, colors=10):
