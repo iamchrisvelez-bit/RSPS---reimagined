@@ -37,6 +37,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from rsgen import rsformat, render  # noqa: E402
 from rsgen.items import ITEMS  # noqa: E402
+from rsgen.requirements import requirements  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'out')
@@ -160,6 +161,7 @@ def main():
             worn_placement='on_body' if it['slot'] in ('head', 'body', 'legs', 'hands', 'feet', 'cape')
             else 'item_space_needs_offset',
             hide_kits=hide, action=action,
+            requirements=[dict(skill=n, skill_id=i, level=lv) for n, i, lv in requirements(it['code'])],
             icon=dict(zoom2d=int(round(extent * 12.5)), xan2d=xan, yan2d=yan, zan2d=0, xOffset2d=0, yOffset2d=0),
             files=dict(inventory_dat='models/%d.dat' % inv_id, inventory_gz='models/%d.gz' % inv_id,
                        worn_dat='models/%d.dat' % worn_id, worn_gz='models/%d.gz' % worn_id,
@@ -234,6 +236,11 @@ def write_defs(manifest):
     lines.append('}')
     with open(os.path.join(OUT, 'defs', 'ItemDef317_snippet.java'), 'w') as f:
         f.write('\n'.join(lines) + '\n')
+
+    # Server-side equip requirements (skill levels), generic
+    with open(os.path.join(OUT, 'defs', 'requirements.json'), 'w') as f:
+        json.dump([dict(item_id=m['item_id'], name=m['name'], requirements=m['requirements']) for m in manifest],
+                  f, indent=1)
 
     # Server-side equipment table (slot + hidden kits), generic
     with open(os.path.join(OUT, 'defs', 'equipment.json'), 'w') as f:

@@ -27,6 +27,7 @@ Constraints:
 | `defs/osrs_item_definitions.json` | Item definitions using RuneLite `ItemDefinition` field names |
 | `defs/ItemDef317_snippet.java` | `switch (id)` block for a 317 client's `ItemDef.forID` |
 | `defs/equipment.json` | Server-side equip slot, hidden kit parts, two-handed flag |
+| `defs/requirements.json` | Proposed equip requirements per item (skill name, OSRS skill id, level); edit `rsgen/requirements.py` and rebuild to change them |
 | `obj/` | OBJ/MTL of each worn model, for Blender or a model editor |
 | `renders/`, `sheets/` | Previews only |
 

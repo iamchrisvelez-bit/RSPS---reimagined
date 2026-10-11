@@ -169,3 +169,15 @@ class TestOutputs(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class TestRequirements(unittest.TestCase):
+    def test_every_item_has_valid_requirements(self):
+        from rsgen.requirements import REQUIREMENTS, SKILL_ID
+        self.assertEqual(set(REQUIREMENTS), {it['code'] for it in ITEMS})
+        for code, req in REQUIREMENTS.items():
+            for skill, lv in req.items():
+                self.assertIn(skill, SKILL_ID, code)
+                self.assertTrue(1 <= lv <= 99, code)
+        with open(os.path.join(OUT, 'defs', 'requirements.json')) as f:
+            self.assertEqual(len(json.load(f)), len(ITEMS))
