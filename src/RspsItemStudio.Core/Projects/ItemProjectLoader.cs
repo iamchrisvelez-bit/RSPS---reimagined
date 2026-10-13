@@ -10,6 +10,11 @@ namespace RspsItemStudio.Core.Projects;
 
 public static class ItemProjectLoader
 {
+    /// <summary>
+    /// Loads a project from <paramref name="rootDirectory"/>.
+    /// All seven JSON documents in <see cref="ItemProjectPaths"/> are required;
+    /// optional assets such as <see cref="ItemProjectPaths.InventoryMesh"/> are not read here.
+    /// </summary>
     public static ItemProject Load(string rootDirectory)
     {
         return new ItemProject

@@ -12,14 +12,16 @@ public static class ItemProjectFactory
     public static ItemProject Create(string rootDirectory, string displayName)
     {
         Directory.CreateDirectory(rootDirectory);
-        Directory.CreateDirectory(Path.Combine(rootDirectory, "meta"));
+        EnsureDocumentDirectory(rootDirectory, ItemProjectPaths.Definition);
         Directory.CreateDirectory(Path.Combine(rootDirectory, ItemProjectPaths.SourceDir));
         Directory.CreateDirectory(Path.Combine(rootDirectory, ItemProjectPaths.TexturesDir));
-        Directory.CreateDirectory(Path.Combine(rootDirectory, "colors"));
-        Directory.CreateDirectory(Path.Combine(rootDirectory, "animations", "clips"));
-        Directory.CreateDirectory(Path.Combine(rootDirectory, "effects"));
-        Directory.CreateDirectory(Path.Combine(rootDirectory, "export"));
-        Directory.CreateDirectory(Path.Combine(rootDirectory, "validation"));
+        EnsureDocumentDirectory(rootDirectory, ItemProjectPaths.Recolor);
+        EnsureDocumentDirectory(rootDirectory, ItemProjectPaths.Animations);
+        var animationsDir = Path.GetDirectoryName(Path.Combine(rootDirectory, ItemProjectPaths.Animations))!;
+        Directory.CreateDirectory(Path.Combine(animationsDir, "clips"));
+        EnsureDocumentDirectory(rootDirectory, ItemProjectPaths.Effects);
+        EnsureDocumentDirectory(rootDirectory, ItemProjectPaths.ExportPresets);
+        EnsureDocumentDirectory(rootDirectory, ItemProjectPaths.ValidationReport);
 
         var project = new ItemProject
         {
@@ -35,5 +37,12 @@ public static class ItemProjectFactory
 
         project.Save();
         return project;
+    }
+
+    private static void EnsureDocumentDirectory(string rootDirectory, string relativeDocumentPath)
+    {
+        var directory = Path.GetDirectoryName(Path.Combine(rootDirectory, relativeDocumentPath));
+        if (!string.IsNullOrEmpty(directory))
+            Directory.CreateDirectory(directory);
     }
 }
