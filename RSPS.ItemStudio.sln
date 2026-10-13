@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{89AAD534
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RspsItemStudio.Tests", "tests\RspsItemStudio.Tests\RspsItemStudio.Tests.csproj", "{F04CB3AB-5560-41A8-A4F6-2AA42F3096E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RspsItemStudio.Definitions", "src\RspsItemStudio.Definitions\RspsItemStudio.Definitions.csproj", "{45892F07-E574-466B-93CB-FF4B3D754106}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +30,14 @@ Global
 		{F04CB3AB-5560-41A8-A4F6-2AA42F3096E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F04CB3AB-5560-41A8-A4F6-2AA42F3096E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F04CB3AB-5560-41A8-A4F6-2AA42F3096E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45892F07-E574-466B-93CB-FF4B3D754106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45892F07-E574-466B-93CB-FF4B3D754106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45892F07-E574-466B-93CB-FF4B3D754106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45892F07-E574-466B-93CB-FF4B3D754106}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AC67B824-6890-45B0-B90A-B118069C9307} = {36F752EB-EF20-429B-B5FB-0F53970088E8}
 		{F04CB3AB-5560-41A8-A4F6-2AA42F3096E3} = {89AAD534-BB1A-4503-8961-F145CAE27482}
+		{45892F07-E574-466B-93CB-FF4B3D754106} = {36F752EB-EF20-429B-B5FB-0F53970088E8}
 	EndGlobalSection
 EndGlobal

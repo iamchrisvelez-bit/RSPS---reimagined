@@ -10,5 +10,6 @@
     <PackageReference Include="xunit" Version="2.9.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
     <ProjectReference Include="..\..\src\RspsItemStudio.Core\RspsItemStudio.Core.csproj" />
+    <ProjectReference Include="..\..\src\RspsItemStudio.Definitions\RspsItemStudio.Definitions.csproj" />
   </ItemGroup>
 </Project>
