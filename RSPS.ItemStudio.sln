@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RspsItemStudio.Tests", "tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RspsItemStudio.Definitions", "src\RspsItemStudio.Definitions\RspsItemStudio.Definitions.csproj", "{45892F07-E574-466B-93CB-FF4B3D754106}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RspsItemStudio.Modeling", "src\RspsItemStudio.Modeling\RspsItemStudio.Modeling.csproj", "{7E8F9A0B-1C2D-3E4F-5A6B-7C8D9E0F1A2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,10 +36,15 @@ Global
 		{45892F07-E574-466B-93CB-FF4B3D754106}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45892F07-E574-466B-93CB-FF4B3D754106}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45892F07-E574-466B-93CB-FF4B3D754106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8F9A0B-1C2D-3E4F-5A6B-7C8D9E0F1A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8F9A0B-1C2D-3E4F-5A6B-7C8D9E0F1A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8F9A0B-1C2D-3E4F-5A6B-7C8D9E0F1A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8F9A0B-1C2D-3E4F-5A6B-7C8D9E0F1A2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AC67B824-6890-45B0-B90A-B118069C9307} = {36F752EB-EF20-429B-B5FB-0F53970088E8}
 		{F04CB3AB-5560-41A8-A4F6-2AA42F3096E3} = {89AAD534-BB1A-4503-8961-F145CAE27482}
 		{45892F07-E574-466B-93CB-FF4B3D754106} = {36F752EB-EF20-429B-B5FB-0F53970088E8}
+		{7E8F9A0B-1C2D-3E4F-5A6B-7C8D9E0F1A2B} = {36F752EB-EF20-429B-B5FB-0F53970088E8}
 	EndGlobalSection
 EndGlobal
