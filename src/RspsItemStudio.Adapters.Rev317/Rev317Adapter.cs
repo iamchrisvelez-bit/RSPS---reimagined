@@ -53,11 +53,10 @@ public sealed class Rev317Adapter : IRevisionAdapter
 
         public AdapterResult<IntegrationReport> PackToStaging(ExportStagingRequest request)
         {
-            var stagingRelative = request.Preset.StagingDirectory;
-            if (string.IsNullOrWhiteSpace(stagingRelative))
-                stagingRelative = "export/staging";
-
-            var stagingPath = Path.Combine(request.Project.RootDirectory, stagingRelative);
+            var stagingRelative = StagingDirectoryResolver.ResolveRelative(request.Preset.StagingDirectory);
+            var stagingPath = StagingDirectoryResolver.ResolveFullPath(
+                request.Project.RootDirectory,
+                request.Preset.StagingDirectory);
             Directory.CreateDirectory(stagingPath);
 
             var report = new IntegrationReport

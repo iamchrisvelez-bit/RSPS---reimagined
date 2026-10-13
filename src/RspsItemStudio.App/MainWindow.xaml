@@ -36,11 +36,16 @@
                     BorderBrush="#E4E4E7"
                     BorderThickness="0,0,1,0"
                     Padding="8">
-                <StackPanel Width="120">
+                <StackPanel Width="140">
                     <TextBlock Text="Tools" FontWeight="SemiBold" Margin="4,0,4,8" />
                     <Button Content="Import OBJ" Margin="0,0,0,6" Command="{Binding ImportObjCommand}" />
                     <Button Content="Validate" Margin="0,0,0,6" Command="{Binding ValidateCommand}" />
-                    <Button Content="Export staging" Command="{Binding ExportStagingCommand}" />
+                    <Button Content="Export staging" Margin="0,0,0,12" Command="{Binding ExportStagingCommand}" />
+                    <TextBlock Text="Viewport" FontWeight="SemiBold" Margin="4,0,4,6" />
+                    <TextBlock Text="Display mode" Margin="4,0,4,4" FontSize="11" Foreground="#52525B" />
+                    <ComboBox Margin="0,0,0,6"
+                              ItemsSource="{Binding Viewport.DisplayModes}"
+                              SelectedItem="{Binding Viewport.DisplayMode, Mode=TwoWay}" />
                 </StackPanel>
             </Border>
 

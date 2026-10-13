@@ -30,8 +30,6 @@ dotnet test tests/RspsItemStudio.Tests/RspsItemStudio.Tests.csproj
 
 ## Run the application (Windows)
 
-After the WPF app project exists:
-
 ```bash
 dotnet run --project src/RspsItemStudio.App
 ```

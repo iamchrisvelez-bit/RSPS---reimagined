@@ -14,11 +14,11 @@ High-level module layout and data flow. See the design spec for full detail.
 | Module | Responsibility |
 |--------|----------------|
 | `RspsItemStudio.App` | WPF shell, panels, commands, dialogs |
-| `RspsItemStudio.Core` | Item project model, undo stack, schema versioning, shared JSON (`StudioJson`) |
-| `RspsItemStudio.Rendering` | 3D viewport, camera, lighting, inspection |
-| `RspsItemStudio.Modeling` | Mesh import/transform, studio mesh format |
-| `RspsItemStudio.Animation` | Clip binding and preview APIs |
-| `RspsItemStudio.Effects` | Effect attachment model and triggers |
+| `RspsItemStudio.Core` | Item project model, schema versioning, shared JSON (`StudioJson`); undo stack **planned** |
+| `RspsItemStudio.Rendering` | 3D viewport, camera, basic lighting (M1); inspection overlay **planned** |
+| `RspsItemStudio.Modeling` | Mesh import, studio mesh JSON (M1); `MeshTransform` / TRS editing **planned** |
+| `RspsItemStudio.Animation` | **Planned** — clip binding and preview APIs (not in solution yet) |
+| `RspsItemStudio.Effects` | **Planned** — effect attachment model and triggers (not in solution yet) |
 | `RspsItemStudio.Definitions` | Item stats/flags editor model |
 | `RspsItemStudio.Validation` | Validation engine and reports |
 | `RspsItemStudio.Adapters.Abstractions` | Codec/packer/preview interfaces |

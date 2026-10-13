@@ -47,6 +47,33 @@ public class OpenRuneAdapterTests
     }
 
     [Fact]
+    public void PackToStaging_rejects_escape_staging_paths()
+    {
+        var adapter = new OpenRuneAdapter();
+        var root = Path.Combine(Path.GetTempPath(), "itemstudio-" + Guid.NewGuid().ToString("N"));
+        try
+        {
+            var project = ItemProjectFactory.Create(root, "Staging Escape Test");
+            var outside = Path.Combine(Path.GetTempPath(), "itemstudio-outside-" + Guid.NewGuid().ToString("N"));
+            var result = adapter.Cache.PackToStaging(new ExportStagingRequest
+            {
+                Project = project,
+                Preset = new ExportPreset { StagingDirectory = "../../../" + Path.GetFileName(outside) }
+            });
+
+            Assert.True(result.Success);
+            Assert.Equal(StagingDirectoryResolver.DefaultRelative, result.Value!.StagingDirectory);
+            Assert.True(Directory.Exists(Path.Combine(root, StagingDirectoryResolver.DefaultRelative)));
+            Assert.False(Directory.Exists(outside));
+        }
+        finally
+        {
+            if (Directory.Exists(root))
+                Directory.Delete(root, true);
+        }
+    }
+
+    [Fact]
     public void PackToStaging_succeeds_with_skipped_report_entries()
     {
         var adapter = new OpenRuneAdapter();

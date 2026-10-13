@@ -4,9 +4,9 @@ Living milestone tracker. Update status as work lands.
 
 ## Current status
 
-**Milestone 1 — Foundation:** complete (library + wiring); **Windows UI smoke** remains manual.
+**Milestone 1 — Foundation:** library + wiring **landed**; **Windows UI smoke is required** before calling M1 fully closed.
 
-Next step: **Milestone 2** — OpenRune definition + model path verification against real cache data.
+Next step: finish M1 Windows smoke (Tasks 8–10 checklists), then **Milestone 2** — OpenRune definition + model path verification against real cache data.
 
 ### Linux / CI verification (M1)
 
@@ -27,7 +27,7 @@ Next step: **Milestone 2** — OpenRune definition + model path verification aga
 1. `dotnet run --project src/RspsItemStudio.App` on Windows.
 2. Create or open a project, click **Import OBJ**, choose a `.obj` file.
 3. Confirm status bar shows vertex/triangle counts; `models/inventory.mesh.json` and `models/source/<file>.obj` exist.
-4. Orbit (left drag), pan (right drag), zoom (wheel); switch **View** combo (Solid / SolidUntextured / Wireframe).
+4. Orbit (left drag), pan (right drag), zoom (wheel); switch **Display mode** in the left tool strip (Solid / SolidUntextured / Wireframe).
 5. **Validate** — `MODEL_MISSING` should clear after import.
 
 ### Windows manual check — staging export (Task 10)
@@ -40,18 +40,20 @@ Next step: **Milestone 2** — OpenRune definition + model path verification aga
 
 ## Milestones
 
-### Milestone 1 — Foundation (complete)
+### Milestone 1 — Foundation (in progress — Windows smoke pending)
 
 1. Application shell and project workspace (create/open/save) — **done** (`RspsItemStudio.App` WPF shell)
-2. 3D viewport with load, camera, lighting, inspection — **done** (Veldrid `ViewportHost`, orbit/pan/zoom, display modes)
+2. 3D viewport with load, camera, basic lighting — **done** (Veldrid `ViewportHost`, orbit/pan/zoom, display modes). **Not in M1:** mesh inspection overlay, debug primitives, TRS/`MeshTransform` editor.
 3. Import at least OBJ into studio mesh — **done** (Import OBJ → `inventory.mesh.json` + viewport preview)
-4. Item project structure on disk (model, texture, color, animation, effect, stats sections) — **done**
+4. Item project **folder layout** on disk (models, materials, colors stub, animations/effects placeholders, stats) — **done**. **Not in M1:** color/recolor editor (deferred to **M3**), animation/effects authoring UI.
 5. Basic item-stat editor — **done** (Stats tab, two-way binding)
 6. Validation report for missing/invalid project data — **done** (Validate + `validation/last-report.json`)
 7. Adapter interfaces + OpenRune adapter skeleton (no fake full export) — **done** (staging pack + honest skipped report)
 8. Seed `PROJECT_ROADMAP.md`, `ARCHITECTURE.md`, `COMPATIBILITY.md` — **done**
 
-**Success criteria:** create project → import OBJ → edit stats → validate → export staging shows clear adapter “not yet implemented” path without corrupting any game files. *(Verify end-to-end on Windows.)*
+**Not in M1 (planned later):** undo/redo stack, `RspsItemStudio.Animation` / `RspsItemStudio.Effects` projects, mesh TRS transforms.
+
+**Success criteria:** create project → import OBJ → edit stats → validate → export staging shows clear adapter “not yet implemented” path without corrupting any game files. **Required:** verify end-to-end on Windows (see checklists above).
 
 ### Milestone 2 — OpenRune definition + model path (planned)
 

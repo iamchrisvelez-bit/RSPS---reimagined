@@ -32,6 +32,9 @@ We do not invent cache, model, or animation behavior. Unverified capabilities su
 - Full OpenRune cache packing is **not** claimed complete.
 - Animation and effect export are not implemented until codecs are verified.
 - Model byte export is adapter-only, never a silent viewport side effect.
+- **Viewport (Windows):** M1 requires a manual smoke pass on Windows (`PROJECT_ROADMAP.md` Tasks 8–10). Linux CI compiles rendering sources only; no GPU/HWND runtime there.
+- **Viewport input:** Orbit, pan, and zoom handlers live on the WPF `ViewportHost` user control. The Veldrid surface is a Win32 child `HWND` (`HwndHost`) that sits above the WPF background and **captures the mouse** over the 3D area, so camera controls may not receive drags/wheel while the pointer is over the rendered region until HWND forwarding is implemented. Display mode is in the left tool strip (not over the HWND) to avoid WPF airspace issues.
+- Color/recolor editor is a on-disk stub only; UI deferred to Milestone 3.
 
 ## Open unknowns
 

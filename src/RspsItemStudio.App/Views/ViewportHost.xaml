@@ -15,21 +15,5 @@
                 BorderBrush="#3F3F46"
                 BorderThickness="1"
                 IsHitTestVisible="False" />
-
-        <StackPanel Orientation="Horizontal"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top"
-                    Margin="8"
-                    Background="#CC27272A"
-                    Opacity="0.95">
-            <TextBlock Text="View:"
-                       Foreground="#E4E4E7"
-                       VerticalAlignment="Center"
-                       Margin="8,6,4,6" />
-            <ComboBox Width="150"
-                      Margin="0,4,8,4"
-                      ItemsSource="{Binding DisplayModes}"
-                      SelectedItem="{Binding DisplayMode, Mode=TwoWay}" />
-        </StackPanel>
     </Grid>
 </UserControl>

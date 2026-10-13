@@ -33,9 +33,12 @@ public partial class ViewportHost : UserControl
         _controller = new VeldridViewportController();
         _viewportModel?.BindController(_controller);
 
-        ViewportGrid.Children.Insert(0, _hwndHost);
-        _hwndHost.Controller = _controller;
         _hwndHost.Ready += OnHostReady;
+        _hwndHost.Controller = _controller;
+        ViewportGrid.Children.Insert(0, _hwndHost);
+
+        if (_hwndHost.Handle != IntPtr.Zero)
+            TryAttachHost();
 
         CompositionTarget.Rendering += OnRendering;
         _controller.Resize((int)Math.Max(1, ActualWidth), (int)Math.Max(1, ActualHeight));
@@ -50,9 +53,11 @@ public partial class ViewportHost : UserControl
         _controller = null;
     }
 
-    private void OnHostReady(object? sender, EventArgs e)
+    private void OnHostReady(object? sender, EventArgs e) => TryAttachHost();
+
+    private void TryAttachHost()
     {
-        if (_controller is null || _hwndHost is null)
+        if (_controller is null || _hwndHost is null || _hwndHost.Handle == IntPtr.Zero)
             return;
 
         var source = HwndSource.FromHwnd(_hwndHost.Handle);
