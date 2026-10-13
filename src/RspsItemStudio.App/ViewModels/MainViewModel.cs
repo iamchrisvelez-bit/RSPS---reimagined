@@ -1,9 +1,13 @@
 using System.IO;
+using RspsItemStudio.Adapters.Abstractions;
+using RspsItemStudio.Adapters.OpenRune;
 using RspsItemStudio.App.Services;
+using RspsItemStudio.Core.Export;
 using RspsItemStudio.Core.Json;
 using RspsItemStudio.Core.Meshes;
 using RspsItemStudio.Core.Projects;
 using RspsItemStudio.Modeling;
+using RspsItemStudio.Validation;
 
 namespace RspsItemStudio.App.ViewModels;
 
@@ -203,7 +207,47 @@ public sealed class MainViewModel : ViewModelBase
 
     private void ExportStaging()
     {
-        StatusText = "Export staging — coming in Task 10.";
+        if (CurrentProject is null)
+            return;
+
+        var project = CurrentProject;
+        var report = ItemProjectValidator.Validate(project);
+        project.SaveValidationReport(report);
+        Validation.ShowValidationReport(report);
+
+        if (report.HasErrors)
+        {
+            StatusText = "Export blocked by validation errors.";
+            return;
+        }
+
+        try
+        {
+            var adapter = new OpenRuneAdapter();
+            var result = adapter.Cache.PackToStaging(new ExportStagingRequest
+            {
+                Project = project,
+                Preset = project.ExportPresets.Presets.FirstOrDefault() ?? new ExportPreset()
+            });
+
+            if (!result.Success)
+            {
+                StatusText = result.Message ?? "Staging export failed.";
+                return;
+            }
+
+            if (result.Value is not null)
+            {
+                IntegrationReportWriter.Save(project, result.Value);
+                Validation.ShowIntegrationReport(result.Value);
+            }
+
+            StatusText = result.Message ?? (result.Value?.Summary ?? "Export finished.");
+        }
+        catch (Exception ex)
+        {
+            StatusText = $"Staging export failed: {ex.Message}";
+        }
     }
 
     private void RefreshProjectSummary()

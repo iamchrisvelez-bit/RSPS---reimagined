@@ -24,7 +24,8 @@ We do not invent cache, model, or animation behavior. Unverified capabilities su
 
 - Adapter skeleton and interfaces only until formats are verified against real data.
 - Default export is **staging folder + integration report**, not silent writes to live cache or server trees.
-- Live cache/server writes require user confirmation and timestamped backup of overwritten files.
+- The WPF app exposes **Export staging** only; it validates the project, calls `openrune` `PackToStaging`, writes `export/last-integration-report.json`, and shows entries on the Validation tab. **`PackToLiveTree` is not reachable from the UI.**
+- Live cache/server writes require user confirmation and timestamped backup of overwritten files (future Milestone 2+).
 
 ## Known limits (Milestone 1)
 
