@@ -118,16 +118,37 @@ def cavity_relief(target, mask, size, gain=0.06):
 COLOUR_TOL = 24.0  # RGB distance that still reads as the same colour
 
 
-def colour_score(cov, img, mask, target):
-    """(combined, silhouette IoU, colour accuracy) of a true-colour render."""
+def _down(a, k):
+    """Area-average downsample by an integer factor (crops to a multiple of k)."""
+    if k <= 1:
+        return a
+    h, w = a.shape[:2]
+    H, W = h // k * k, w // k * k
+    a = a[:H, :W].astype(np.float64)
+    return a.reshape(H // k, k, W // k, k, *a.shape[2:]).mean((1, 3))
+
+
+def colour_score(cov, img, mask, target, scale=1):
+    """(combined, silhouette IoU, colour accuracy) of a true-colour render,
+    compared at 1/scale of the design's resolution. scale 1 is pixel-exact;
+    in game a design is seen at roughly 1/4-1/5 of its size, where texture
+    finer than a screen pixel can't be told apart."""
+    if scale > 1:
+        T = _down(target * mask[..., None], scale)
+        img = _down(img * cov[..., None], scale)
+        mask, cov, target = _down(mask, scale) > 0.5, _down(cov, scale) > 0.5, T
     iou = (cov & mask).sum() / max(1, (cov | mask).sum())
     dist = np.linalg.norm(img - target, axis=-1)
     acc = ((dist < COLOUR_TOL) & cov & mask).sum() / max(1, mask.sum())
     return 0.5 * iou + 0.5 * acc, float(iou), float(acc)
 
 
-def colour_error_map(cov, img, mask, target, r):
-    dist = np.linalg.norm(img - target, axis=-1)
+def colour_error_map(cov, img, mask, target, r, scale=1):
+    if scale > 1:  # judge colour as it reads at 1/scale: compare blurred images
+        bl = lambda a: np.stack([blur(a[..., c], scale / 2) for c in range(3)], -1)  # noqa: E731
+        dist = np.linalg.norm(bl(img * cov[..., None]) - bl(target * mask[..., None]), axis=-1)
+    else:
+        dist = np.linalg.norm(img - target, axis=-1)
     err = (cov ^ mask) * 2.0 + np.clip(dist / (2 * COLOUR_TOL), 0, 1.5) * (mask & cov)
     return blur(err, r) if r >= 1 else err
 
@@ -234,6 +255,103 @@ def line_strips(lines, P, T, R, heights, shape, lift):
     return Mesh(V, F, C, L=[1] * len(F))
 
 
+def _tri_pixels(a, b, c, shape):
+    """Pixels (rows, cols) whose centres lie in triangle abc ((y, x) points)."""
+    h, w = shape
+    y0, y1 = int(max(0, np.floor(min(a[0], b[0], c[0])))), int(min(h - 1, np.ceil(max(a[0], b[0], c[0]))))
+    x0, x1 = int(max(0, np.floor(min(a[1], b[1], c[1])))), int(min(w - 1, np.ceil(max(a[1], b[1], c[1]))))
+    if y1 < y0 or x1 < x0:
+        return np.zeros(0, int), np.zeros(0, int)
+    gy, gx = np.mgrid[y0:y1 + 1, x0:x1 + 1] + 0.5
+    d = (b[1] - c[1]) * (a[0] - c[0]) + (c[0] - b[0]) * (a[1] - c[1])
+    if abs(d) < 1e-9:
+        return np.zeros(0, int), np.zeros(0, int)
+    l1 = ((b[1] - c[1]) * (gy - c[0]) + (c[0] - b[0]) * (gx - c[1])) / d
+    l2 = ((c[1] - a[1]) * (gy - c[0]) + (a[0] - c[0]) * (gx - c[1])) / d
+    inside = (l1 >= -1e-9) & (l2 >= -1e-9) & (1 - l1 - l2 >= -1e-9)
+    return (gy[inside] - 0.5).astype(int), (gx[inside] - 0.5).astype(int)
+
+
+def _orient2(a, b, c):
+    return (b[1] - a[1]) * (c[0] - a[0]) - (b[0] - a[0]) * (c[1] - a[1])
+
+
+def optimize_vertices(P, T, movable, target, allowed, passes=6, log=None, mask=None, rim=None, rim_allowed=None,
+                      rim_weight=40000.0):
+    """Image-triangulation vertex optimisation: nudge each movable vertex a
+    pixel at a time (8 directions) wherever that lowers the colour variance
+    inside its triangles - each triangle shows one flat colour, so less
+    variance under it means its colour matches the design better. Triangles
+    must keep their orientation (no fold-overs), so the covered area never
+    changes; only how it is split. allowed: bool mask of positions a vertex
+    may move to.
+
+    With mask/rim/rim_allowed, outline vertices move too: then a triangle's
+    cost also charges rim_weight per covered pixel outside the design's
+    silhouette and credits it per covered pixel inside, so the outline
+    slides out to thin spikes and in from gaps. Returns the new points."""
+    P = np.asarray(P, float).copy()
+    adj = [[] for _ in range(len(P))]
+    for i, t in enumerate(T):
+        for v in t:
+            adj[v].append(i)
+    sign = np.array([np.sign(_orient2(*P[t])) for t in T])
+    h, w = allowed.shape
+
+    def sse(t, pts):
+        ys, xs = _tri_pixels(pts[0], pts[1], pts[2], (h, w))
+        if len(ys) == 0:
+            return 0.0
+        if mask is None:
+            c = target[ys, xs]
+            return float(((c - c.mean(0)) ** 2).sum())
+        inside = mask[ys, xs]
+        n_in = int(inside.sum())
+        c = target[ys[inside], xs[inside]]
+        var = float(((c - c.mean(0)) ** 2).sum()) if n_in else 0.0
+        return var + rim_weight * (len(ys) - n_in) - rim_weight * n_in
+    cost = np.array([sse(i, P[t]) for i, t in enumerate(T)])
+    dirs = [np.array(d, float) for d in ((-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1))]
+    total0 = cost.sum()
+    rim = np.zeros(len(P), bool) if rim is None else np.asarray(rim, bool)
+    movable = np.asarray(movable, bool) | (rim if rim_allowed is not None else False)
+    for p in range(passes):
+        moved = 0
+        for v in np.where(movable)[0]:
+            tris = adj[v]
+            if not tris:
+                continue
+            base = cost[tris].sum()
+            best = None
+            for d in dirs:
+                q = P[v] + d
+                yi, xi = int(q[0]), int(q[1])
+                ok_at = rim_allowed if rim[v] else allowed
+                if not (0 <= yi < h and 0 <= xi < w and ok_at[yi, xi]):
+                    continue
+                ok, new = True, []
+                for i in tris:
+                    pts = P[T[i]].copy()
+                    pts[list(T[i]).index(v)] = q
+                    o = _orient2(*pts)
+                    if np.sign(o) != sign[i] or abs(o) < 0.5:
+                        ok = False
+                        break
+                    new.append(sse(i, pts))
+                if ok and sum(new) < base - 1e-6 and (best is None or sum(new) < best[0]):
+                    best = (sum(new), q, new)
+            if best is not None:
+                P[v] = best[1]
+                cost[tris] = best[2]
+                moved += 1
+        if log:
+            log('  vertex pass %d: %d moved, colour variance %.1f%% of start' % (p + 1, moved,
+                                                                              100 * cost.sum() / max(total0, 1e-9)))
+        if not moved:
+            break
+    return P
+
+
 class Refiner:
     def __init__(self, mask, labels, start_points=60, seed=0, target=None, face_target=None, overlay=None):
         """labels: palette labels (flat mode). With target (HxWx3 design
@@ -311,15 +429,17 @@ class Refiner:
                 self.img[on] = self.overlay[1][on]
         return self
 
-    def score(self):
+    judge = 2  # compare at 1/judge resolution (see colour_score)
+
+    def score(self, scale=None):
         if self.target is None:
             return score(self.R, self.m, self.L)
-        return colour_score(self.R >= 0, self.img, self.m, self.target)
+        return colour_score(self.R >= 0, self.img, self.m, self.target, self.judge if scale is None else scale)
 
     def error(self, r):
         if self.target is None:
             return error_map(self.R, self.m, self.L, r)
-        return colour_error_map(self.R >= 0, self.img, self.m, self.target, r)
+        return colour_error_map(self.R >= 0, self.img, self.m, self.target, r, self.judge)
 
     def picture(self, pal=None):
         if self.target is None:
@@ -399,10 +519,52 @@ def flat_image(R, pal):
     return Image.fromarray(img)
 
 
-def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, min_gain=0.004, patience=3,
-                step=0.12, start_points=60, colors=8, delight=0.75, depth_gain=1.0, max_rounds=40, seed=0,
-                smooth=3, mode='detail', cavity=0.06, back_share=0.15, line_share=0.25, smoothing=True,
-                slot=None, log=None):
+def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, slot=None, line_share=0.25, mode='detail',
+                depth_gain=1.0, log=None, **kw):
+    """Refine with detail lines only where they beat plain faces.
+
+    Detected lines (glow cracks, trims, straps) are drawn as strips, but a
+    wide bevelled trim or a facet highlight is often matched better by
+    ordinary faces. So: refine without lines first, keep each detected line
+    only where its colour is clearly closer to the design than those faces
+    were, refine again with the survivors, and return whichever version
+    matches the design better. Arguments as _refine_once."""
+    m = np.asarray(mask.convert('L')) > 127
+    unit = rs_unit(slot, m.shape, thickness, depth_gain)
+    candidates = []
+    if mode == 'detail' and line_share and unit <= 4.0:
+        # below ~1/4 RS unit per design pixel a line can't be drawn thinner than
+        # ~2 units without swallowing the detail it is meant to show: skip them
+        tgt = shading_target(color, m)
+        candidates = budget_lines(find_lines(tgt, m, unit=unit), int(max_faces * line_share))
+    plain = _refine_once(color, mask, depth, thickness, max_faces, slot=slot, mode=mode, depth_gain=depth_gain,
+                         lines=[], log=log, **kw)
+    if not candidates:
+        return plain
+    kept = []
+    for ln in candidates:
+        cov, img = line_coverage([ln], m.shape)
+        cov &= m
+        if not cov.any():
+            continue
+        e_faces = np.linalg.norm(plain[0].render[cov] - tgt[cov], axis=-1).mean()
+        e_line = np.linalg.norm(img[cov] - tgt[cov], axis=-1).mean()
+        if e_line < 0.85 * e_faces:
+            kept.append(ln)
+    if log:
+        log('  lines: %d detected, %d beat plain faces' % (len(candidates), len(kept)))
+    if not kept:
+        return plain
+    lined = _refine_once(color, mask, depth, thickness, max_faces, slot=slot, mode=mode, depth_gain=depth_gain,
+                         lines=kept, log=log, **kw)
+    best = lambda r: max(h['score'] for h in r[1])  # noqa: E731
+    return lined if best(lined) > best(plain) else plain
+
+
+def _refine_once(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, min_gain=0.004, patience=3,
+                 step=0.12, start_points=60, colors=8, delight=0.75, depth_gain=1.0, max_rounds=40, seed=0,
+                 smooth=3, mode='detail', cavity=0.06, back_share=0.15, smoothing=True,
+                 slot=None, lines=None, optimize=True, log=None):
     """Returns (mesh, history, snapshots). history: one dict per round.
 
     mode 'detail': faces take the design's true colours, shadows and texture
@@ -420,11 +582,7 @@ def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, 
     detail = None
     if mode == 'detail':
         tgt = shading_target(color, m)
-        unit = rs_unit(slot, m.shape, thickness, depth_gain)
-        # below ~1/4 RS unit per design pixel a line can't be drawn thinner than
-        # ~2 units without swallowing the detail it is meant to show: skip them
-        use_lines = line_share and unit <= 4.0
-        lines = budget_lines(find_lines(tgt, m, unit=unit), int(max_faces * line_share)) if use_lines else []
+        lines = list(lines or [])
         lcov, limg = line_coverage(lines, m.shape)
         # faces take the surface colour under the lines, not a blend with them
         face_tgt = inpaint(tgt, dilate(lcov, 1), m) if lines else tgt
@@ -451,10 +609,13 @@ def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, 
         s, iou, acc = ref.score()
         history.append({'round': rnd, 'points': len(ref.P), 'faces': ref.faces(), 'score': round(float(s), 4),
                         'iou': round(iou, 4), 'colour': round(acc, 4)})
+        if ref.target is not None:  # the same match judged pixel-exact and at in-game size (1/4)
+            history[-1]['exact'] = round(float(ref.score(1)[0]), 4)
+            history[-1]['ingame'] = round(float(ref.score(4)[0]), 4)
         snaps.append((ref.picture(pal), history[-1]))
         if log:
-            log('  round %2d  faces %4d  score %.3f  (silhouette %.3f, colour %.3f)'
-                % (rnd, ref.faces(), s, iou, acc))
+            log('  round %2d  faces %4d  score %.3f  (silhouette %.3f, colour %.3f)  in-game %.3f'
+                % (rnd, ref.faces(), s, iou, acc, history[-1].get('ingame', s)))
         if best is None or s >= best[0]:
             best = (s, ref.snapshot())
         elif s < best[0] - 0.001:
@@ -489,6 +650,31 @@ def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, 
             history[-1]['stop'] = 'budget'
             break
     _, (_, _, _, P, T, lab, rim, R, cols, img) = best
+    if mode == 'detail' and optimize:
+        # move interior vertices to where their triangles' flat colours fit best
+        movable = ~np.asarray(rim, bool)
+        # interior first (colour), then the outline (silhouette), then interior again
+        P = optimize_vertices(P, T, movable, ref.face_target, ref.inner, log=log)
+        P = optimize_vertices(P, T, np.zeros(len(P), bool), ref.face_target, ref.inner, passes=3, log=log,
+                              mask=m, rim=rim, rim_allowed=dilate(m, 2))
+        P = optimize_vertices(P, T, movable, ref.face_target, ref.inner, passes=3, log=log)
+        ref.P, ref.T = P, T
+        ref.R = R = rasterize_labels(P, T, np.arange(len(T)), m.shape)
+        cols = face_colours(R, ref.face_target, P, T)
+        ref.cols = cols
+        ref.img = np.zeros(m.shape + (3,))
+        ref.img[R >= 0] = cols[R[R >= 0]]
+        if ref.overlay is not None:
+            on = ref.overlay[0] & (R >= 0)
+            ref.img[on] = ref.overlay[1][on]
+        s, iou, acc = ref.score()
+        history.append({'round': 'vertex-optimised', 'points': len(P), 'faces': ref.faces(),
+                        'score': round(float(s), 4), 'iou': round(iou, 4), 'colour': round(acc, 4),
+                        'exact': round(float(ref.score(1)[0]), 4), 'ingame': round(float(ref.score(4)[0]), 4),
+                        'stop': history[-1].get('stop')})
+        if log:
+            log('  after vertex optimisation: score %.3f  in-game %.3f  exact %.3f'
+                % (s, history[-1]['ingame'], history[-1]['exact']))
     if cols is not None:
         if smoothing:
             cols = smooth_face_colours(T, cols)
@@ -507,6 +693,7 @@ def refine_item(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97, 
                                extra=strips)
     history[-1]['back_faces'] = 0 if back is None else len(back[0])
     history[-1]['line_faces'] = 0 if strips is None else len(strips.F)
+    mesh.render = img  # the faces' own front look (design resolution), for comparisons
     return mesh, history, snaps
 
 
@@ -560,7 +747,7 @@ def main():
         color = Image.open(os.path.join(d, 'color.png'))
         mesh, hist, snaps = refine_item(
             color, Image.open(os.path.join(d, 'mask.png')), Image.open(os.path.join(d, 'depth.png')),
-            THICKNESS.get(meta.get('slot'), 0.6), a.max_faces, a.target, a.min_gain,
+            THICKNESS.get(meta.get('slot'), 0.6), a.max_faces, target=a.target, min_gain=a.min_gain,
             start_points=a.start_points, colors=a.colors, delight=a.delight, depth_gain=a.depth_gain,
             mode=a.mode, cavity=a.cavity, back_share=a.back_share or None, slot=meta.get('slot'), log=print)
         out = os.path.join(a.out, meta['code'])
@@ -572,10 +759,11 @@ def main():
                            match=best, stop=hist[-1].get('stop'), history=hist), f, indent=1)
         progress_sheet(color, snaps, mesh, '%s %s - stop: %s' % (meta['code'], meta['name'], hist[-1].get('stop'))) \
             .save(os.path.join(out, 'refine.png'))
-        summary.append((meta['code'], len(mesh.F), best['score'], hist[-1].get('stop')))
+        summary.append((meta['code'], len(mesh.F), best.get('ingame', best['score']), best.get('exact', best['score']),
+                        hist[-1].get('stop')))
         n += 1
-    for code, f, s, why in summary:
-        print('%-6s faces %4d  match %.3f  stop %s' % (code, f, s, why))
+    for code, f, g, x, why in summary:
+        print('%-6s faces %4d  match in-game %.3f  exact %.3f  stop %s' % (code, f, g, x, why))
     print('refine: %d models -> %s' % (n, a.out))
 
 

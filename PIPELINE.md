@@ -67,6 +67,9 @@ Each round does four things:
 
 1. **Render.** Renders the model's front view at the design's own resolution. The render is exact and pixel-aligned.
 2. **Score.** Compares the render with the design. The score combines silhouette IoU and colour accuracy, i.e. the share of design pixels whose facet colour is within reach of the design's colour there.
+   The comparison is made at **half the design's resolution** (both images box-averaged). Two more scores are recorded in each round:
+   - `exact`, at full design resolution. It saturates around 0.86–0.93 whatever the face count: a 1-pixel blur of the design itself only scores 0.68 against the original, so per-pixel texture noise can't be reproduced by a ~2400-face model.
+   - `ingame`, at a quarter of the design's resolution. This is roughly the size the item is drawn on screen in game, and it is the number to read as "how close the model is to the design".
 3. **Add faces.** Places new points where the error is worst:
    - a silhouette miss snaps to the exact outline
    - a colour miss snaps onto the nearest colour border, so triangle edges follow the design's shapes
@@ -77,6 +80,15 @@ A round that makes the match worse is undone, and its spots are skipped next tim
 - `--target` reached
 - the next round would pass the RS face budget (`--max-faces`, front + back)
 - a plateau: the best score rose less than `--min-gain` over the last 3 rounds, or 6 while under half the budget
+
+Then the **vertices are optimised** against the design (`optimize_vertices`). Each vertex tries 1-pixel moves in 8 directions, and a move is kept when it lowers the colour error of the triangles around it without flipping any. This runs in three stages:
+1. interior vertices: triangle edges slide onto the design's colour borders
+2. rim vertices: the outline fits the silhouette (weighted by `rim_weight`)
+3. interior again, to follow the new rim
+
+The result is the history's last round, `vertex-optimised`.
+
+Detected detail lines are now **kept only where they beat plain faces.** The item is refined without lines first. A line survives when its colour error over its own pixels is under 85% of the faces' error there. The item is then refined again with the surviving lines, and whichever version matches better is kept. Wide bevelled trims and facet highlights usually come out better as faces.
 
 ### Shadows and texture (`--mode detail`, the default)
 

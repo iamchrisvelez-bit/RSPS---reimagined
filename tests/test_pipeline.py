@@ -262,7 +262,9 @@ class TestRefine(unittest.TestCase):
         rgb, mask, depth, m = synthetic_item()
         _, hist, _ = rf.refine_item(rgb, mask, depth, target=0.5)
         self.assertEqual(hist[-1]['stop'], 'target')
-        self.assertEqual(len(hist), 1)
+        # one refinement round, then the final vertex-optimisation entry
+        self.assertEqual([h['round'] for h in hist][1:], ['vertex-optimised'])
+        self.assertGreaterEqual(hist[-1]['score'], hist[0]['score'] - 0.01)
 
 
 def _edge_uses(F):
@@ -409,10 +411,20 @@ class TestDetailLinesAndSmoothing(unittest.TestCase):
         cy = int(ys.mean())
         arr[cy - 1:cy + 2, xs.min() + 8:xs.max() - 8] = (255, 240, 120)  # a painted line across it
         rgb = Image.fromarray(arr.astype(np.uint8))
-        mesh, hist, _ = rf.refine_item(rgb, mask, depth, 0.35, max_faces=900, start_points=10, slot='shield')
+        m = np.asarray(mask.convert('L')) > 127
+        unit = rf.rs_unit('shield', m.shape, 0.35, 1.0)
+        lines = rf.find_lines(rf.shading_target(rgb, m), m, unit=unit)
+        self.assertTrue(lines)
+        # strips: drawn as their own layer, one priority above the surface
+        mesh, hist, _ = rf._refine_once(rgb, mask, depth, 0.35, max_faces=900, start_points=10, slot='shield',
+                                        lines=lines)
         self.assertGreater(hist[-1]['line_faces'], 0)
         self.assertIn(1, mesh.layers())
         self.assertLessEqual(len(mesh.F), 900)
+        # refine_item keeps lines only where they beat plain faces: never worse than faces alone
+        plain = rf._refine_once(rgb, mask, depth, 0.35, max_faces=900, start_points=10, slot='shield', lines=[])
+        _, best, _ = rf.refine_item(rgb, mask, depth, 0.35, max_faces=900, start_points=10, slot='shield')
+        self.assertGreaterEqual(max(h['score'] for h in best), max(h['score'] for h in plain[1]) - 1e-9)
         rs = s3.convert(mesh, 'shield', 2400)
         dec = rsformat.decode(rsformat.encode(rs, smooth=True))
         self.assertIn(11, dec['priorities'])
