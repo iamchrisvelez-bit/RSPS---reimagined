@@ -26,6 +26,7 @@ public sealed class VeldridViewportController : IDisposable
     private int _width = 1;
     private int _height = 1;
     private bool _meshLoaded;
+    private StudioMesh? _pendingMesh;
 
     public ViewportCamera Camera => _camera;
 
@@ -56,6 +57,12 @@ public sealed class VeldridViewportController : IDisposable
         _commandList = _device.ResourceFactory.CreateCommandList();
         CreateResources();
         Resize(_width, _height);
+
+        if (_pendingMesh is not null)
+        {
+            LoadMesh(_pendingMesh);
+            _pendingMesh = null;
+        }
     }
 
     public void Resize(int width, int height)
@@ -75,7 +82,10 @@ public sealed class VeldridViewportController : IDisposable
     public void LoadMesh(StudioMesh mesh)
     {
         if (_device is null)
+        {
+            _pendingMesh = mesh;
             return;
+        }
 
         var (vertices, indices, min, max) = MeshGeometryBuilder.Build(mesh);
         _meshIndexCount = (uint)indices.Length;
