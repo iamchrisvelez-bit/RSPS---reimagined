@@ -1,0 +1,2522 @@
+[
+ {
+  "code": "B01_1",
+  "name": "Copper scale platebody",
+  "slot": "body",
+  "triangles": 2076,
+  "vertices": 1063,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 181,
+  "degenerate_faces": 0,
+  "colours": 237,
+  "view_coverage": {
+   "front": 0.212,
+   "back": 0.212,
+   "left": 0.135,
+   "right": 0.135,
+   "top": 0.153,
+   "bottom": 0.153,
+   "three_quarter": 0.18,
+   "three_quarter_left": 0.176,
+   "back_three_quarter": 0.181,
+   "back_three_quarter_left": 0.177
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B01_2",
+  "name": "Iron platebody",
+  "slot": "body",
+  "triangles": 2033,
+  "vertices": 1044,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 204,
+  "degenerate_faces": 0,
+  "colours": 64,
+  "view_coverage": {
+   "front": 0.207,
+   "back": 0.203,
+   "left": 0.124,
+   "right": 0.124,
+   "top": 0.147,
+   "bottom": 0.155,
+   "three_quarter": 0.174,
+   "three_quarter_left": 0.172,
+   "back_three_quarter": 0.172,
+   "back_three_quarter_left": 0.171
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B01_3",
+  "name": "Steel platebody",
+  "slot": "body",
+  "triangles": 2057,
+  "vertices": 1060,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 198,
+  "degenerate_faces": 0,
+  "colours": 96,
+  "view_coverage": {
+   "front": 0.215,
+   "back": 0.21,
+   "left": 0.128,
+   "right": 0.129,
+   "top": 0.151,
+   "bottom": 0.153,
+   "three_quarter": 0.18,
+   "three_quarter_left": 0.177,
+   "back_three_quarter": 0.178,
+   "back_three_quarter_left": 0.176
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B01_4",
+  "name": "Shadowsteel platebody",
+  "slot": "body",
+  "triangles": 2055,
+  "vertices": 1065,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 216,
+  "degenerate_faces": 0,
+  "colours": 87,
+  "view_coverage": {
+   "front": 0.206,
+   "back": 0.214,
+   "left": 0.13,
+   "right": 0.132,
+   "top": 0.145,
+   "bottom": 0.155,
+   "three_quarter": 0.171,
+   "three_quarter_left": 0.17,
+   "back_three_quarter": 0.178,
+   "back_three_quarter_left": 0.177
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B01_5",
+  "name": "Silver filigree platebody",
+  "slot": "body",
+  "triangles": 2095,
+  "vertices": 1082,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 198,
+  "degenerate_faces": 0,
+  "colours": 183,
+  "view_coverage": {
+   "front": 0.213,
+   "back": 0.202,
+   "left": 0.128,
+   "right": 0.127,
+   "top": 0.144,
+   "bottom": 0.147,
+   "three_quarter": 0.178,
+   "three_quarter_left": 0.177,
+   "back_three_quarter": 0.169,
+   "back_three_quarter_left": 0.169
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B01_6",
+  "name": "Jade crystal platebody",
+  "slot": "body",
+  "triangles": 2031,
+  "vertices": 1053,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 216,
+  "degenerate_faces": 0,
+  "colours": 162,
+  "view_coverage": {
+   "front": 0.211,
+   "back": 0.212,
+   "left": 0.137,
+   "right": 0.137,
+   "top": 0.154,
+   "bottom": 0.155,
+   "three_quarter": 0.181,
+   "three_quarter_left": 0.176,
+   "back_three_quarter": 0.183,
+   "back_three_quarter_left": 0.178
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B02_1",
+  "name": "Royal sapphire platebody",
+  "slot": "body",
+  "triangles": 2067,
+  "vertices": 1060,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 197,
+  "degenerate_faces": 0,
+  "colours": 506,
+  "view_coverage": {
+   "front": 0.211,
+   "back": 0.211,
+   "left": 0.132,
+   "right": 0.133,
+   "top": 0.153,
+   "bottom": 0.154,
+   "three_quarter": 0.182,
+   "three_quarter_left": 0.179,
+   "back_three_quarter": 0.186,
+   "back_three_quarter_left": 0.179
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B02_2",
+  "name": "Crimson dragonscale body",
+  "slot": "body",
+  "triangles": 1854,
+  "vertices": 966,
+  "dimensions": [
+   36.0,
+   23.0,
+   51.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 255,
+  "degenerate_faces": 0,
+  "colours": 263,
+  "view_coverage": {
+   "front": 0.209,
+   "back": 0.21,
+   "left": 0.159,
+   "right": 0.159,
+   "top": 0.107,
+   "bottom": 0.107,
+   "three_quarter": 0.182,
+   "three_quarter_left": 0.175,
+   "back_three_quarter": 0.181,
+   "back_three_quarter_left": 0.178
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B02_3",
+  "name": "Crimson crystal scimitar",
+  "slot": "weapon",
+  "triangles": 1455,
+  "vertices": 747,
+  "dimensions": [
+   25.0,
+   123.0,
+   55.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 251,
+  "degenerate_faces": 0,
+  "colours": 305,
+  "view_coverage": {
+   "front": 0.044,
+   "back": 0.044,
+   "left": 0.097,
+   "right": 0.098,
+   "top": 0.097,
+   "bottom": 0.098,
+   "three_quarter": 0.07,
+   "three_quarter_left": 0.073,
+   "back_three_quarter": 0.084,
+   "back_three_quarter_left": 0.087
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B02_4",
+  "name": "Sapphire pickaxe",
+  "slot": "weapon",
+  "triangles": 1519,
+  "vertices": 775,
+  "dimensions": [
+   18.0,
+   85.0,
+   76.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 192,
+  "degenerate_faces": 0,
+  "colours": 409,
+  "view_coverage": {
+   "front": 0.05,
+   "back": 0.05,
+   "left": 0.096,
+   "right": 0.097,
+   "top": 0.057,
+   "bottom": 0.058,
+   "three_quarter": 0.071,
+   "three_quarter_left": 0.076,
+   "back_three_quarter": 0.075,
+   "back_three_quarter_left": 0.073
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B02_5",
+  "name": "Magma pickaxe",
+  "slot": "weapon",
+  "triangles": 1539,
+  "vertices": 793,
+  "dimensions": [
+   18.0,
+   87.0,
+   65.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 211,
+  "degenerate_faces": 0,
+  "colours": 284,
+  "view_coverage": {
+   "front": 0.048,
+   "back": 0.052,
+   "left": 0.118,
+   "right": 0.118,
+   "top": 0.074,
+   "bottom": 0.078,
+   "three_quarter": 0.084,
+   "three_quarter_left": 0.084,
+   "back_three_quarter": 0.095,
+   "back_three_quarter_left": 0.094
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B02_6",
+  "name": "Magma hatchet",
+  "slot": "weapon",
+  "triangles": 1540,
+  "vertices": 794,
+  "dimensions": [
+   21.0,
+   98.0,
+   55.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 210,
+  "degenerate_faces": 0,
+  "colours": 429,
+  "view_coverage": {
+   "front": 0.052,
+   "back": 0.054,
+   "left": 0.149,
+   "right": 0.149,
+   "top": 0.081,
+   "bottom": 0.082,
+   "three_quarter": 0.094,
+   "three_quarter_left": 0.097,
+   "back_three_quarter": 0.103,
+   "back_three_quarter_left": 0.105
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B03_1",
+  "name": "Necrotic battleaxe",
+  "slot": "weapon",
+  "triangles": 1580,
+  "vertices": 815,
+  "dimensions": [
+   18.0,
+   84.0,
+   54.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 220,
+  "degenerate_faces": 0,
+  "colours": 194,
+  "view_coverage": {
+   "front": 0.056,
+   "back": 0.054,
+   "left": 0.145,
+   "right": 0.144,
+   "top": 0.061,
+   "bottom": 0.061,
+   "three_quarter": 0.095,
+   "three_quarter_left": 0.098,
+   "back_three_quarter": 0.087,
+   "back_three_quarter_left": 0.09
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B03_2",
+  "name": "Necrotic spear",
+  "slot": "weapon",
+  "triangles": 1525,
+  "vertices": 785,
+  "dimensions": [
+   42.0,
+   155.0,
+   77.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 230,
+  "degenerate_faces": 0,
+  "colours": 153,
+  "view_coverage": {
+   "front": 0.041,
+   "back": 0.04,
+   "left": 0.079,
+   "right": 0.078,
+   "top": 0.069,
+   "bottom": 0.071,
+   "three_quarter": 0.046,
+   "three_quarter_left": 0.048,
+   "back_three_quarter": 0.069,
+   "back_three_quarter_left": 0.069
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B03_3",
+  "name": "Necrotic flail",
+  "slot": "weapon",
+  "triangles": 1382,
+  "vertices": 704,
+  "dimensions": [
+   20.0,
+   80.0,
+   78.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 202,
+  "degenerate_faces": 0,
+  "colours": 154,
+  "view_coverage": {
+   "front": 0.051,
+   "back": 0.05,
+   "left": 0.103,
+   "right": 0.104,
+   "top": 0.059,
+   "bottom": 0.06,
+   "three_quarter": 0.079,
+   "three_quarter_left": 0.074,
+   "back_three_quarter": 0.069,
+   "back_three_quarter_left": 0.067
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B03_4",
+  "name": "Necrotic twin mauls",
+  "slot": "weapon",
+  "triangles": 1698,
+  "vertices": 876,
+  "dimensions": [
+   20.0,
+   79.0,
+   69.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 185,
+  "degenerate_faces": 0,
+  "colours": 158,
+  "view_coverage": {
+   "front": 0.062,
+   "back": 0.062,
+   "left": 0.166,
+   "right": 0.167,
+   "top": 0.08,
+   "bottom": 0.079,
+   "three_quarter": 0.119,
+   "three_quarter_left": 0.116,
+   "back_three_quarter": 0.114,
+   "back_three_quarter_left": 0.114
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B03_5",
+  "name": "Necrotic crossbow",
+  "slot": "weapon",
+  "triangles": 1621,
+  "vertices": 843,
+  "dimensions": [
+   48.0,
+   13.0,
+   55.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 257,
+  "degenerate_faces": 0,
+  "colours": 148,
+  "view_coverage": {
+   "front": 0.16,
+   "back": 0.16,
+   "left": 0.069,
+   "right": 0.069,
+   "top": 0.055,
+   "bottom": 0.055,
+   "three_quarter": 0.128,
+   "three_quarter_left": 0.128,
+   "back_three_quarter": 0.12,
+   "back_three_quarter_left": 0.118
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B03_6",
+  "name": "Necrotic skull censer",
+  "slot": "weapon",
+  "triangles": 1758,
+  "vertices": 921,
+  "dimensions": [
+   18.0,
+   79.0,
+   43.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 282,
+  "degenerate_faces": 0,
+  "colours": 185,
+  "view_coverage": {
+   "front": 0.048,
+   "back": 0.048,
+   "left": 0.153,
+   "right": 0.155,
+   "top": 0.075,
+   "bottom": 0.076,
+   "three_quarter": 0.1,
+   "three_quarter_left": 0.097,
+   "back_three_quarter": 0.099,
+   "back_three_quarter_left": 0.102
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B04_1",
+  "name": "Reaver platebody",
+  "slot": "body",
+  "triangles": 2090,
+  "vertices": 1080,
+  "dimensions": [
+   72.0,
+   37.0,
+   64.0
+  ],
+  "loose_parts": 2,
+  "non_manifold_edges": 225,
+  "degenerate_faces": 0,
+  "colours": 127,
+  "view_coverage": {
+   "front": 0.217,
+   "back": 0.218,
+   "left": 0.126,
+   "right": 0.126,
+   "top": 0.133,
+   "bottom": 0.135,
+   "three_quarter": 0.181,
+   "three_quarter_left": 0.183,
+   "back_three_quarter": 0.183,
+   "back_three_quarter_left": 0.186
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B04_2",
+  "name": "Reaver platelegs",
+  "slot": "legs",
+  "triangles": 2129,
+  "vertices": 1106,
+  "dimensions": [
+   38.0,
+   27.0,
+   96.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 246,
+  "degenerate_faces": 0,
+  "colours": 120,
+  "view_coverage": {
+   "front": 0.166,
+   "back": 0.168,
+   "left": 0.128,
+   "right": 0.129,
+   "top": 0.051,
+   "bottom": 0.051,
+   "three_quarter": 0.141,
+   "three_quarter_left": 0.142,
+   "back_three_quarter": 0.143,
+   "back_three_quarter_left": 0.143
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B04_3",
+  "name": "Reaver warboots",
+  "slot": "feet",
+  "triangles": 1536,
+  "vertices": 801,
+  "dimensions": [
+   33.0,
+   29.0,
+   25.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 277,
+  "degenerate_faces": 0,
+  "colours": 134,
+  "view_coverage": {
+   "front": 0.172,
+   "back": 0.173,
+   "left": 0.158,
+   "right": 0.158,
+   "top": 0.203,
+   "bottom": 0.205,
+   "three_quarter": 0.185,
+   "three_quarter_left": 0.189,
+   "back_three_quarter": 0.186,
+   "back_three_quarter_left": 0.193
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B04_4",
+  "name": "Horned bone helm",
+  "slot": "head",
+  "triangles": 1557,
+  "vertices": 818,
+  "dimensions": [
+   22.0,
+   38.0,
+   46.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 281,
+  "degenerate_faces": 0,
+  "colours": 201,
+  "view_coverage": {
+   "front": 0.112,
+   "back": 0.111,
+   "left": 0.219,
+   "right": 0.218,
+   "top": 0.111,
+   "bottom": 0.111,
+   "three_quarter": 0.152,
+   "three_quarter_left": 0.162,
+   "back_three_quarter": 0.148,
+   "back_three_quarter_left": 0.164
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B04_5",
+  "name": "Ribcage platebody",
+  "slot": "body",
+  "triangles": 2135,
+  "vertices": 1095,
+  "dimensions": [
+   76.0,
+   42.0,
+   69.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 164,
+  "degenerate_faces": 0,
+  "colours": 196,
+  "view_coverage": {
+   "front": 0.23,
+   "back": 0.231,
+   "left": 0.124,
+   "right": 0.124,
+   "top": 0.152,
+   "bottom": 0.152,
+   "three_quarter": 0.188,
+   "three_quarter_left": 0.185,
+   "back_three_quarter": 0.185,
+   "back_three_quarter_left": 0.191
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B04_6",
+  "name": "Bone bracers",
+  "slot": "hands",
+  "triangles": 1400,
+  "vertices": 719,
+  "dimensions": [
+   66.0,
+   9.0,
+   23.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 261,
+  "degenerate_faces": 0,
+  "colours": 175,
+  "view_coverage": {
+   "front": 0.146,
+   "back": 0.145,
+   "left": 0.025,
+   "right": 0.025,
+   "top": 0.065,
+   "bottom": 0.066,
+   "three_quarter": 0.113,
+   "three_quarter_left": 0.112,
+   "back_three_quarter": 0.111,
+   "back_three_quarter_left": 0.112
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B05_1",
+  "name": "Crimson knight helm",
+  "slot": "head",
+  "triangles": 1491,
+  "vertices": 782,
+  "dimensions": [
+   22.0,
+   38.0,
+   46.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 262,
+  "degenerate_faces": 0,
+  "colours": 220,
+  "view_coverage": {
+   "front": 0.111,
+   "back": 0.112,
+   "left": 0.244,
+   "right": 0.246,
+   "top": 0.106,
+   "bottom": 0.107,
+   "three_quarter": 0.174,
+   "three_quarter_left": 0.154,
+   "back_three_quarter": 0.173,
+   "back_three_quarter_left": 0.155
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B05_2",
+  "name": "Crimson chain hauberk",
+  "slot": "body",
+  "triangles": 1860,
+  "vertices": 957,
+  "dimensions": [
+   36.0,
+   28.0,
+   51.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 195,
+  "degenerate_faces": 0,
+  "colours": 226,
+  "view_coverage": {
+   "front": 0.224,
+   "back": 0.224,
+   "left": 0.173,
+   "right": 0.173,
+   "top": 0.112,
+   "bottom": 0.115,
+   "three_quarter": 0.187,
+   "three_quarter_left": 0.187,
+   "back_three_quarter": 0.187,
+   "back_three_quarter_left": 0.188
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B05_3",
+  "name": "Crimson knight tassets",
+  "slot": "legs",
+  "triangles": 1848,
+  "vertices": 951,
+  "dimensions": [
+   42.0,
+   31.0,
+   98.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 252,
+  "degenerate_faces": 0,
+  "colours": 215,
+  "view_coverage": {
+   "front": 0.163,
+   "back": 0.164,
+   "left": 0.129,
+   "right": 0.129,
+   "top": 0.053,
+   "bottom": 0.053,
+   "three_quarter": 0.141,
+   "three_quarter_left": 0.139,
+   "back_three_quarter": 0.141,
+   "back_three_quarter_left": 0.139
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B05_4",
+  "name": "Paladin full helm",
+  "slot": "head",
+  "triangles": 1580,
+  "vertices": 820,
+  "dimensions": [
+   22.0,
+   38.0,
+   45.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 235,
+  "degenerate_faces": 0,
+  "colours": 346,
+  "view_coverage": {
+   "front": 0.131,
+   "back": 0.132,
+   "left": 0.248,
+   "right": 0.239,
+   "top": 0.109,
+   "bottom": 0.11,
+   "three_quarter": 0.167,
+   "three_quarter_left": 0.176,
+   "back_three_quarter": 0.168,
+   "back_three_quarter_left": 0.171
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B05_5",
+  "name": "Paladin platebody",
+  "slot": "body",
+  "triangles": 2117,
+  "vertices": 1089,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 227,
+  "degenerate_faces": 0,
+  "colours": 367,
+  "view_coverage": {
+   "front": 0.235,
+   "back": 0.228,
+   "left": 0.121,
+   "right": 0.122,
+   "top": 0.148,
+   "bottom": 0.148,
+   "three_quarter": 0.19,
+   "three_quarter_left": 0.192,
+   "back_three_quarter": 0.184,
+   "back_three_quarter_left": 0.184
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B05_6",
+  "name": "Paladin greaves",
+  "slot": "feet",
+  "triangles": 1573,
+  "vertices": 812,
+  "dimensions": [
+   34.0,
+   29.0,
+   25.0
+  ],
+  "loose_parts": 2,
+  "non_manifold_edges": 317,
+  "degenerate_faces": 0,
+  "colours": 268,
+  "view_coverage": {
+   "front": 0.151,
+   "back": 0.148,
+   "left": 0.173,
+   "right": 0.173,
+   "top": 0.184,
+   "bottom": 0.183,
+   "three_quarter": 0.237,
+   "three_quarter_left": 0.225,
+   "back_three_quarter": 0.236,
+   "back_three_quarter_left": 0.225
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B06_1",
+  "name": "Magma helm",
+  "slot": "head",
+  "triangles": 1986,
+  "vertices": 1009,
+  "dimensions": [
+   54.0,
+   70.0,
+   60.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 130,
+  "degenerate_faces": 0,
+  "colours": 266,
+  "view_coverage": {
+   "front": 0.158,
+   "back": 0.16,
+   "left": 0.211,
+   "right": 0.212,
+   "top": 0.186,
+   "bottom": 0.189,
+   "three_quarter": 0.177,
+   "three_quarter_left": 0.184,
+   "back_three_quarter": 0.179,
+   "back_three_quarter_left": 0.185
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B06_2",
+  "name": "Magma platebody",
+  "slot": "body",
+  "triangles": 2095,
+  "vertices": 1076,
+  "dimensions": [
+   72.0,
+   37.0,
+   64.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 189,
+  "degenerate_faces": 0,
+  "colours": 276,
+  "view_coverage": {
+   "front": 0.22,
+   "back": 0.222,
+   "left": 0.126,
+   "right": 0.126,
+   "top": 0.133,
+   "bottom": 0.135,
+   "three_quarter": 0.177,
+   "three_quarter_left": 0.174,
+   "back_three_quarter": 0.182,
+   "back_three_quarter_left": 0.179
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B06_3",
+  "name": "Magma gauntlets",
+  "slot": "hands",
+  "triangles": 1532,
+  "vertices": 821,
+  "dimensions": [
+   66.0,
+   9.0,
+   23.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 328,
+  "degenerate_faces": 0,
+  "colours": 190,
+  "view_coverage": {
+   "front": 0.14,
+   "back": 0.142,
+   "left": 0.025,
+   "right": 0.025,
+   "top": 0.071,
+   "bottom": 0.073,
+   "three_quarter": 0.105,
+   "three_quarter_left": 0.106,
+   "back_three_quarter": 0.106,
+   "back_three_quarter_left": 0.108
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B06_4",
+  "name": "Magma dagger",
+  "slot": "weapon",
+  "triangles": 1282,
+  "vertices": 675,
+  "dimensions": [
+   11.0,
+   41.0,
+   16.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 297,
+  "degenerate_faces": 0,
+  "colours": 156,
+  "view_coverage": {
+   "front": 0.045,
+   "back": 0.045,
+   "left": 0.123,
+   "right": 0.123,
+   "top": 0.119,
+   "bottom": 0.121,
+   "three_quarter": 0.084,
+   "three_quarter_left": 0.083,
+   "back_three_quarter": 0.1,
+   "back_three_quarter_left": 0.099
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B06_5",
+  "name": "Magma mace",
+  "slot": "weapon",
+  "triangles": 1444,
+  "vertices": 745,
+  "dimensions": [
+   21.0,
+   82.0,
+   55.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 196,
+  "degenerate_faces": 0,
+  "colours": 193,
+  "view_coverage": {
+   "front": 0.061,
+   "back": 0.062,
+   "left": 0.185,
+   "right": 0.184,
+   "top": 0.074,
+   "bottom": 0.078,
+   "three_quarter": 0.111,
+   "three_quarter_left": 0.111,
+   "back_three_quarter": 0.115,
+   "back_three_quarter_left": 0.119
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B06_6",
+  "name": "Magma kiteshield",
+  "slot": "shield",
+  "triangles": 2012,
+  "vertices": 1037,
+  "dimensions": [
+   21.0,
+   85.0,
+   71.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 222,
+  "degenerate_faces": 0,
+  "colours": 223,
+  "view_coverage": {
+   "front": 0.066,
+   "back": 0.068,
+   "left": 0.274,
+   "right": 0.274,
+   "top": 0.08,
+   "bottom": 0.081,
+   "three_quarter": 0.168,
+   "three_quarter_left": 0.157,
+   "back_three_quarter": 0.158,
+   "back_three_quarter_left": 0.17
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B07_1",
+  "name": "Woodland ranger tunic",
+  "slot": "body",
+  "triangles": 1897,
+  "vertices": 977,
+  "dimensions": [
+   36.0,
+   23.0,
+   51.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 221,
+  "degenerate_faces": 0,
+  "colours": 127,
+  "view_coverage": {
+   "front": 0.202,
+   "back": 0.202,
+   "left": 0.157,
+   "right": 0.156,
+   "top": 0.103,
+   "bottom": 0.104,
+   "three_quarter": 0.184,
+   "three_quarter_left": 0.18,
+   "back_three_quarter": 0.182,
+   "back_three_quarter_left": 0.182
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B07_2",
+  "name": "Tidewalker ranger tunic",
+  "slot": "body",
+  "triangles": 1882,
+  "vertices": 977,
+  "dimensions": [
+   36.0,
+   23.0,
+   51.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 230,
+  "degenerate_faces": 0,
+  "colours": 160,
+  "view_coverage": {
+   "front": 0.202,
+   "back": 0.203,
+   "left": 0.157,
+   "right": 0.157,
+   "top": 0.099,
+   "bottom": 0.099,
+   "three_quarter": 0.178,
+   "three_quarter_left": 0.173,
+   "back_three_quarter": 0.182,
+   "back_three_quarter_left": 0.18
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B07_3",
+  "name": "Emberhide ranger tunic",
+  "slot": "body",
+  "triangles": 1908,
+  "vertices": 987,
+  "dimensions": [
+   36.0,
+   23.0,
+   51.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 262,
+  "degenerate_faces": 0,
+  "colours": 174,
+  "view_coverage": {
+   "front": 0.203,
+   "back": 0.204,
+   "left": 0.164,
+   "right": 0.164,
+   "top": 0.102,
+   "bottom": 0.102,
+   "three_quarter": 0.181,
+   "three_quarter_left": 0.179,
+   "back_three_quarter": 0.185,
+   "back_three_quarter_left": 0.182
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B07_4",
+  "name": "Nightstalker ranger tunic",
+  "slot": "body",
+  "triangles": 1906,
+  "vertices": 994,
+  "dimensions": [
+   36.0,
+   23.0,
+   51.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 239,
+  "degenerate_faces": 0,
+  "colours": 35,
+  "view_coverage": {
+   "front": 0.173,
+   "back": 0.177,
+   "left": 0.127,
+   "right": 0.13,
+   "top": 0.097,
+   "bottom": 0.101,
+   "three_quarter": 0.16,
+   "three_quarter_left": 0.157,
+   "back_three_quarter": 0.161,
+   "back_three_quarter_left": 0.163
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B07_5",
+  "name": "Valkyrie winged helm",
+  "slot": "head",
+  "triangles": 1595,
+  "vertices": 821,
+  "dimensions": [
+   22.0,
+   38.0,
+   45.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 236,
+  "degenerate_faces": 0,
+  "colours": 388,
+  "view_coverage": {
+   "front": 0.146,
+   "back": 0.146,
+   "left": 0.238,
+   "right": 0.238,
+   "top": 0.117,
+   "bottom": 0.117,
+   "three_quarter": 0.171,
+   "three_quarter_left": 0.184,
+   "back_three_quarter": 0.172,
+   "back_three_quarter_left": 0.186
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B07_6",
+  "name": "Valkyrie platebody",
+  "slot": "body",
+  "triangles": 2172,
+  "vertices": 1113,
+  "dimensions": [
+   72.0,
+   37.0,
+   58.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 187,
+  "degenerate_faces": 0,
+  "colours": 406,
+  "view_coverage": {
+   "front": 0.228,
+   "back": 0.226,
+   "left": 0.128,
+   "right": 0.124,
+   "top": 0.153,
+   "bottom": 0.154,
+   "three_quarter": 0.192,
+   "three_quarter_left": 0.19,
+   "back_three_quarter": 0.192,
+   "back_three_quarter_left": 0.189
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B08_1",
+  "name": "Seraph feather mantle",
+  "slot": "cape",
+  "triangles": 2113,
+  "vertices": 1090,
+  "dimensions": [
+   68.0,
+   26.0,
+   135.0
+  ],
+  "loose_parts": 2,
+  "non_manifold_edges": 223,
+  "degenerate_faces": 0,
+  "colours": 439,
+  "view_coverage": {
+   "front": 0.202,
+   "back": 0.201,
+   "left": 0.079,
+   "right": 0.081,
+   "top": 0.044,
+   "bottom": 0.044,
+   "three_quarter": 0.159,
+   "three_quarter_left": 0.159,
+   "back_three_quarter": 0.154,
+   "back_three_quarter_left": 0.154
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B08_2",
+  "name": "Solar helm",
+  "slot": "head",
+  "triangles": 1607,
+  "vertices": 827,
+  "dimensions": [
+   28.0,
+   48.0,
+   38.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 222,
+  "degenerate_faces": 0,
+  "colours": 398,
+  "view_coverage": {
+   "front": 0.109,
+   "back": 0.109,
+   "left": 0.215,
+   "right": 0.215,
+   "top": 0.139,
+   "bottom": 0.138,
+   "three_quarter": 0.154,
+   "three_quarter_left": 0.155,
+   "back_three_quarter": 0.153,
+   "back_three_quarter_left": 0.15
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B08_3",
+  "name": "Solar scale platebody",
+  "slot": "body",
+  "triangles": 2193,
+  "vertices": 1122,
+  "dimensions": [
+   74.0,
+   33.0,
+   63.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 185,
+  "degenerate_faces": 0,
+  "colours": 503,
+  "view_coverage": {
+   "front": 0.253,
+   "back": 0.254,
+   "left": 0.117,
+   "right": 0.116,
+   "top": 0.129,
+   "bottom": 0.129,
+   "three_quarter": 0.201,
+   "three_quarter_left": 0.197,
+   "back_three_quarter": 0.202,
+   "back_three_quarter_left": 0.202
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B08_4",
+  "name": "Solar scale platelegs",
+  "slot": "legs",
+  "triangles": 2099,
+  "vertices": 1080,
+  "dimensions": [
+   34.0,
+   26.0,
+   96.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 212,
+  "degenerate_faces": 0,
+  "colours": 439,
+  "view_coverage": {
+   "front": 0.153,
+   "back": 0.153,
+   "left": 0.141,
+   "right": 0.139,
+   "top": 0.044,
+   "bottom": 0.044,
+   "three_quarter": 0.163,
+   "three_quarter_left": 0.159,
+   "back_three_quarter": 0.163,
+   "back_three_quarter_left": 0.162
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B08_5",
+  "name": "Verdant crystal helm",
+  "slot": "head",
+  "triangles": 1649,
+  "vertices": 853,
+  "dimensions": [
+   24.0,
+   28.0,
+   38.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 221,
+  "degenerate_faces": 0,
+  "colours": 653,
+  "view_coverage": {
+   "front": 0.169,
+   "back": 0.169,
+   "left": 0.223,
+   "right": 0.223,
+   "top": 0.129,
+   "bottom": 0.13,
+   "three_quarter": 0.186,
+   "three_quarter_left": 0.183,
+   "back_three_quarter": 0.186,
+   "back_three_quarter_left": 0.184
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B08_6",
+  "name": "Verdant crystal body",
+  "slot": "body",
+  "triangles": 2151,
+  "vertices": 1104,
+  "dimensions": [
+   80.0,
+   30.0,
+   57.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 208,
+  "degenerate_faces": 0,
+  "colours": 640,
+  "view_coverage": {
+   "front": 0.249,
+   "back": 0.249,
+   "left": 0.094,
+   "right": 0.094,
+   "top": 0.128,
+   "bottom": 0.129,
+   "three_quarter": 0.197,
+   "three_quarter_left": 0.193,
+   "back_three_quarter": 0.197,
+   "back_three_quarter_left": 0.198
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B09_1",
+  "name": "Bone longbow",
+  "slot": "weapon",
+  "triangles": 1595,
+  "vertices": 830,
+  "dimensions": [
+   22.0,
+   97.0,
+   47.0
+  ],
+  "loose_parts": 2,
+  "non_manifold_edges": 247,
+  "degenerate_faces": 0,
+  "colours": 261,
+  "view_coverage": {
+   "front": 0.044,
+   "back": 0.044,
+   "left": 0.09,
+   "right": 0.09,
+   "top": 0.092,
+   "bottom": 0.09,
+   "three_quarter": 0.067,
+   "three_quarter_left": 0.067,
+   "back_three_quarter": 0.079,
+   "back_three_quarter_left": 0.083
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B09_2",
+  "name": "Shadowvine bow",
+  "slot": "weapon",
+  "triangles": 1496,
+  "vertices": 773,
+  "dimensions": [
+   42.0,
+   201.0,
+   85.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 216,
+  "degenerate_faces": 0,
+  "colours": 206,
+  "view_coverage": {
+   "front": 0.041,
+   "back": 0.041,
+   "left": 0.085,
+   "right": 0.085,
+   "top": 0.081,
+   "bottom": 0.082,
+   "three_quarter": 0.064,
+   "three_quarter_left": 0.063,
+   "back_three_quarter": 0.077,
+   "back_three_quarter_left": 0.076
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B09_3",
+  "name": "Dragonspine bow",
+  "slot": "weapon",
+  "triangles": 1592,
+  "vertices": 827,
+  "dimensions": [
+   15.0,
+   78.0,
+   45.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 240,
+  "degenerate_faces": 0,
+  "colours": 266,
+  "view_coverage": {
+   "front": 0.036,
+   "back": 0.036,
+   "left": 0.123,
+   "right": 0.123,
+   "top": 0.08,
+   "bottom": 0.08,
+   "three_quarter": 0.084,
+   "three_quarter_left": 0.085,
+   "back_three_quarter": 0.084,
+   "back_three_quarter_left": 0.083
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B09_4",
+  "name": "Crystal-root bow",
+  "slot": "weapon",
+  "triangles": 1681,
+  "vertices": 870,
+  "dimensions": [
+   24.0,
+   112.0,
+   61.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 227,
+  "degenerate_faces": 0,
+  "colours": 519,
+  "view_coverage": {
+   "front": 0.051,
+   "back": 0.05,
+   "left": 0.125,
+   "right": 0.124,
+   "top": 0.093,
+   "bottom": 0.094,
+   "three_quarter": 0.082,
+   "three_quarter_left": 0.083,
+   "back_three_quarter": 0.097,
+   "back_three_quarter_left": 0.099
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B09_5",
+  "name": "Seraph crossbow",
+  "slot": "weapon",
+  "triangles": 1618,
+  "vertices": 829,
+  "dimensions": [
+   46.0,
+   19.0,
+   73.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 185,
+  "degenerate_faces": 0,
+  "colours": 349,
+  "view_coverage": {
+   "front": 0.175,
+   "back": 0.177,
+   "left": 0.083,
+   "right": 0.083,
+   "top": 0.061,
+   "bottom": 0.059,
+   "three_quarter": 0.142,
+   "three_quarter_left": 0.142,
+   "back_three_quarter": 0.132,
+   "back_three_quarter_left": 0.134
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B09_6",
+  "name": "Runic crossbow",
+  "slot": "weapon",
+  "triangles": 1529,
+  "vertices": 799,
+  "dimensions": [
+   34.0,
+   13.0,
+   55.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 249,
+  "degenerate_faces": 0,
+  "colours": 214,
+  "view_coverage": {
+   "front": 0.165,
+   "back": 0.169,
+   "left": 0.085,
+   "right": 0.086,
+   "top": 0.053,
+   "bottom": 0.054,
+   "three_quarter": 0.134,
+   "three_quarter_left": 0.131,
+   "back_three_quarter": 0.128,
+   "back_three_quarter_left": 0.13
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B10_1",
+  "name": "Astral wizard hat",
+  "slot": "head",
+  "triangles": 1711,
+  "vertices": 887,
+  "dimensions": [
+   44.0,
+   54.0,
+   43.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 239,
+  "degenerate_faces": 0,
+  "colours": 390,
+  "view_coverage": {
+   "front": 0.124,
+   "back": 0.123,
+   "left": 0.205,
+   "right": 0.203,
+   "top": 0.213,
+   "bottom": 0.215,
+   "three_quarter": 0.175,
+   "three_quarter_left": 0.166,
+   "back_three_quarter": 0.172,
+   "back_three_quarter_left": 0.166
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B10_2",
+  "name": "Astral robe top",
+  "slot": "body",
+  "triangles": 2178,
+  "vertices": 1106,
+  "dimensions": [
+   102.0,
+   31.0,
+   74.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 122,
+  "degenerate_faces": 0,
+  "colours": 350,
+  "view_coverage": {
+   "front": 0.245,
+   "back": 0.239,
+   "left": 0.082,
+   "right": 0.081,
+   "top": 0.11,
+   "bottom": 0.111,
+   "three_quarter": 0.188,
+   "three_quarter_left": 0.185,
+   "back_three_quarter": 0.185,
+   "back_three_quarter_left": 0.184
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B10_3",
+  "name": "Astral robe bottom",
+  "slot": "legs",
+  "triangles": 1928,
+  "vertices": 992,
+  "dimensions": [
+   72.0,
+   48.0,
+   102.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 193,
+  "degenerate_faces": 0,
+  "colours": 314,
+  "view_coverage": {
+   "front": 0.203,
+   "back": 0.198,
+   "left": 0.161,
+   "right": 0.154,
+   "top": 0.105,
+   "bottom": 0.106,
+   "three_quarter": 0.172,
+   "three_quarter_left": 0.17,
+   "back_three_quarter": 0.169,
+   "back_three_quarter_left": 0.17
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B10_4",
+  "name": "Runeweaver hood",
+  "slot": "head",
+  "triangles": 1495,
+  "vertices": 773,
+  "dimensions": [
+   34.0,
+   47.0,
+   37.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 208,
+  "degenerate_faces": 0,
+  "colours": 281,
+  "view_coverage": {
+   "front": 0.136,
+   "back": 0.134,
+   "left": 0.225,
+   "right": 0.229,
+   "top": 0.187,
+   "bottom": 0.19,
+   "three_quarter": 0.181,
+   "three_quarter_left": 0.179,
+   "back_three_quarter": 0.179,
+   "back_three_quarter_left": 0.176
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B10_5",
+  "name": "Runeweaver robe top",
+  "slot": "body",
+  "triangles": 2152,
+  "vertices": 1101,
+  "dimensions": [
+   78.0,
+   28.0,
+   60.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 169,
+  "degenerate_faces": 0,
+  "colours": 357,
+  "view_coverage": {
+   "front": 0.236,
+   "back": 0.23,
+   "left": 0.095,
+   "right": 0.093,
+   "top": 0.118,
+   "bottom": 0.12,
+   "three_quarter": 0.183,
+   "three_quarter_left": 0.179,
+   "back_three_quarter": 0.179,
+   "back_three_quarter_left": 0.179
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B10_6",
+  "name": "Runeweaver robe skirt",
+  "slot": "legs",
+  "triangles": 2031,
+  "vertices": 1044,
+  "dimensions": [
+   60.0,
+   31.0,
+   96.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 204,
+  "degenerate_faces": 0,
+  "colours": 337,
+  "view_coverage": {
+   "front": 0.214,
+   "back": 0.213,
+   "left": 0.13,
+   "right": 0.129,
+   "top": 0.078,
+   "bottom": 0.079,
+   "three_quarter": 0.169,
+   "three_quarter_left": 0.168,
+   "back_three_quarter": 0.171,
+   "back_three_quarter_left": 0.168
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B11_1",
+  "name": "Voidwoven hood",
+  "slot": "head",
+  "triangles": 1823,
+  "vertices": 942,
+  "dimensions": [
+   67.0,
+   64.0,
+   73.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 207,
+  "degenerate_faces": 0,
+  "colours": 214,
+  "view_coverage": {
+   "front": 0.176,
+   "back": 0.178,
+   "left": 0.208,
+   "right": 0.208,
+   "top": 0.174,
+   "bottom": 0.176,
+   "three_quarter": 0.184,
+   "three_quarter_left": 0.191,
+   "back_three_quarter": 0.182,
+   "back_three_quarter_left": 0.192
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B11_2",
+  "name": "Voidwoven robe top",
+  "slot": "body",
+  "triangles": 2050,
+  "vertices": 1059,
+  "dimensions": [
+   78.0,
+   28.0,
+   57.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 254,
+  "degenerate_faces": 0,
+  "colours": 216,
+  "view_coverage": {
+   "front": 0.217,
+   "back": 0.218,
+   "left": 0.097,
+   "right": 0.097,
+   "top": 0.107,
+   "bottom": 0.108,
+   "three_quarter": 0.17,
+   "three_quarter_left": 0.166,
+   "back_three_quarter": 0.17,
+   "back_three_quarter_left": 0.17
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B11_3",
+  "name": "Voidwoven robe skirt",
+  "slot": "legs",
+  "triangles": 2042,
+  "vertices": 1050,
+  "dimensions": [
+   45.0,
+   31.0,
+   97.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 195,
+  "degenerate_faces": 0,
+  "colours": 187,
+  "view_coverage": {
+   "front": 0.187,
+   "back": 0.188,
+   "left": 0.161,
+   "right": 0.161,
+   "top": 0.066,
+   "bottom": 0.067,
+   "three_quarter": 0.162,
+   "three_quarter_left": 0.159,
+   "back_three_quarter": 0.162,
+   "back_three_quarter_left": 0.161
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B11_4",
+  "name": "Stormcaller staff",
+  "slot": "weapon",
+  "triangles": 1686,
+  "vertices": 869,
+  "dimensions": [
+   14.0,
+   56.0,
+   33.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 234,
+  "degenerate_faces": 0,
+  "colours": 544,
+  "view_coverage": {
+   "front": 0.051,
+   "back": 0.05,
+   "left": 0.106,
+   "right": 0.107,
+   "top": 0.076,
+   "bottom": 0.078,
+   "three_quarter": 0.069,
+   "three_quarter_left": 0.071,
+   "back_three_quarter": 0.085,
+   "back_three_quarter_left": 0.079
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B11_5",
+  "name": "Solar sceptre",
+  "slot": "weapon",
+  "triangles": 1635,
+  "vertices": 839,
+  "dimensions": [
+   14.0,
+   52.0,
+   27.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 277,
+  "degenerate_faces": 0,
+  "colours": 355,
+  "view_coverage": {
+   "front": 0.047,
+   "back": 0.047,
+   "left": 0.103,
+   "right": 0.104,
+   "top": 0.079,
+   "bottom": 0.08,
+   "three_quarter": 0.07,
+   "three_quarter_left": 0.073,
+   "back_three_quarter": 0.082,
+   "back_three_quarter_left": 0.078
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B11_6",
+  "name": "Necrotic soulstaff",
+  "slot": "weapon",
+  "triangles": 1826,
+  "vertices": 954,
+  "dimensions": [
+   16.0,
+   66.0,
+   36.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 309,
+  "degenerate_faces": 0,
+  "colours": 342,
+  "view_coverage": {
+   "front": 0.045,
+   "back": 0.044,
+   "left": 0.091,
+   "right": 0.092,
+   "top": 0.073,
+   "bottom": 0.074,
+   "three_quarter": 0.059,
+   "three_quarter_left": 0.061,
+   "back_three_quarter": 0.077,
+   "back_three_quarter_left": 0.073
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B12_1",
+  "name": "Abyssal tidewhip",
+  "slot": "weapon",
+  "triangles": 1745,
+  "vertices": 903,
+  "dimensions": [
+   19.0,
+   54.0,
+   104.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 257,
+  "degenerate_faces": 0,
+  "colours": 452,
+  "view_coverage": {
+   "front": 0.083,
+   "back": 0.083,
+   "left": 0.129,
+   "right": 0.128,
+   "top": 0.04,
+   "bottom": 0.04,
+   "three_quarter": 0.113,
+   "three_quarter_left": 0.119,
+   "back_three_quarter": 0.117,
+   "back_three_quarter_left": 0.114
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B12_2",
+  "name": "Seraph longsword",
+  "slot": "weapon",
+  "triangles": 1379,
+  "vertices": 720,
+  "dimensions": [
+   9.0,
+   44.0,
+   25.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 265,
+  "degenerate_faces": 0,
+  "colours": 459,
+  "view_coverage": {
+   "front": 0.05,
+   "back": 0.049,
+   "left": 0.115,
+   "right": 0.112,
+   "top": 0.078,
+   "bottom": 0.074,
+   "three_quarter": 0.085,
+   "three_quarter_left": 0.086,
+   "back_three_quarter": 0.087,
+   "back_three_quarter_left": 0.089
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B12_3",
+  "name": "Bloodfang cleaver",
+  "slot": "weapon",
+  "triangles": 1492,
+  "vertices": 778,
+  "dimensions": [
+   22.0,
+   108.0,
+   47.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 282,
+  "degenerate_faces": 0,
+  "colours": 250,
+  "view_coverage": {
+   "front": 0.041,
+   "back": 0.041,
+   "left": 0.106,
+   "right": 0.109,
+   "top": 0.084,
+   "bottom": 0.087,
+   "three_quarter": 0.075,
+   "three_quarter_left": 0.069,
+   "back_three_quarter": 0.088,
+   "back_three_quarter_left": 0.084
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B12_4",
+  "name": "Crimson rapier",
+  "slot": "weapon",
+  "triangles": 1382,
+  "vertices": 716,
+  "dimensions": [
+   19.0,
+   94.0,
+   31.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 271,
+  "degenerate_faces": 0,
+  "colours": 265,
+  "view_coverage": {
+   "front": 0.03,
+   "back": 0.03,
+   "left": 0.069,
+   "right": 0.069,
+   "top": 0.058,
+   "bottom": 0.058,
+   "three_quarter": 0.052,
+   "three_quarter_left": 0.055,
+   "back_three_quarter": 0.054,
+   "back_three_quarter_left": 0.053
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B12_5",
+  "name": "Gilded fang",
+  "slot": "weapon",
+  "triangles": 1499,
+  "vertices": 768,
+  "dimensions": [
+   17.0,
+   75.0,
+   30.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 283,
+  "degenerate_faces": 0,
+  "colours": 348,
+  "view_coverage": {
+   "front": 0.033,
+   "back": 0.032,
+   "left": 0.117,
+   "right": 0.118,
+   "top": 0.113,
+   "bottom": 0.111,
+   "three_quarter": 0.089,
+   "three_quarter_left": 0.087,
+   "back_three_quarter": 0.086,
+   "back_three_quarter_left": 0.085
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B12_6",
+  "name": "Goblin knotclub",
+  "slot": "weapon",
+  "triangles": 1482,
+  "vertices": 765,
+  "dimensions": [
+   24.0,
+   68.0,
+   31.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 213,
+  "degenerate_faces": 0,
+  "colours": 328,
+  "view_coverage": {
+   "front": 0.061,
+   "back": 0.061,
+   "left": 0.14,
+   "right": 0.14,
+   "top": 0.122,
+   "bottom": 0.123,
+   "three_quarter": 0.093,
+   "three_quarter_left": 0.103,
+   "back_three_quarter": 0.104,
+   "back_three_quarter_left": 0.121
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B13_1",
+  "name": "Amulet of the sun",
+  "slot": "neck",
+  "triangles": 844,
+  "vertices": 430,
+  "dimensions": [
+   18.0,
+   6.0,
+   22.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 177,
+  "degenerate_faces": 0,
+  "colours": 317,
+  "view_coverage": {
+   "front": 0.147,
+   "back": 0.145,
+   "left": 0.072,
+   "right": 0.072,
+   "top": 0.06,
+   "bottom": 0.06,
+   "three_quarter": 0.133,
+   "three_quarter_left": 0.131,
+   "back_three_quarter": 0.129,
+   "back_three_quarter_left": 0.132
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B13_2",
+  "name": "Crimson cord necklace",
+  "slot": "neck",
+  "triangles": 848,
+  "vertices": 438,
+  "dimensions": [
+   18.0,
+   6.0,
+   22.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 182,
+  "degenerate_faces": 0,
+  "colours": 152,
+  "view_coverage": {
+   "front": 0.174,
+   "back": 0.174,
+   "left": 0.083,
+   "right": 0.083,
+   "top": 0.07,
+   "bottom": 0.07,
+   "three_quarter": 0.15,
+   "three_quarter_left": 0.154,
+   "back_three_quarter": 0.148,
+   "back_three_quarter_left": 0.157
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B13_3",
+  "name": "Sapphire amulet",
+  "slot": "neck",
+  "triangles": 733,
+  "vertices": 378,
+  "dimensions": [
+   18.0,
+   5.0,
+   22.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 138,
+  "degenerate_faces": 0,
+  "colours": 283,
+  "view_coverage": {
+   "front": 0.129,
+   "back": 0.13,
+   "left": 0.066,
+   "right": 0.066,
+   "top": 0.048,
+   "bottom": 0.048,
+   "three_quarter": 0.114,
+   "three_quarter_left": 0.115,
+   "back_three_quarter": 0.113,
+   "back_three_quarter_left": 0.113
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B13_4",
+  "name": "Verdant shard amulet",
+  "slot": "neck",
+  "triangles": 814,
+  "vertices": 429,
+  "dimensions": [
+   18.0,
+   7.0,
+   24.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 184,
+  "degenerate_faces": 0,
+  "colours": 140,
+  "view_coverage": {
+   "front": 0.157,
+   "back": 0.157,
+   "left": 0.085,
+   "right": 0.085,
+   "top": 0.067,
+   "bottom": 0.068,
+   "three_quarter": 0.132,
+   "three_quarter_left": 0.13,
+   "back_three_quarter": 0.128,
+   "back_three_quarter_left": 0.129
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B13_5",
+  "name": "Obsidian cape",
+  "slot": "cape",
+  "triangles": 2105,
+  "vertices": 1083,
+  "dimensions": [
+   54.0,
+   22.0,
+   138.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 213,
+  "degenerate_faces": 0,
+  "colours": 255,
+  "view_coverage": {
+   "front": 0.148,
+   "back": 0.151,
+   "left": 0.073,
+   "right": 0.073,
+   "top": 0.03,
+   "bottom": 0.031,
+   "three_quarter": 0.12,
+   "three_quarter_left": 0.119,
+   "back_three_quarter": 0.119,
+   "back_three_quarter_left": 0.119
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B13_6",
+  "name": "Magma cape",
+  "slot": "cape",
+  "triangles": 2132,
+  "vertices": 1102,
+  "dimensions": [
+   66.0,
+   23.0,
+   147.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 274,
+  "degenerate_faces": 0,
+  "colours": 445,
+  "view_coverage": {
+   "front": 0.189,
+   "back": 0.19,
+   "left": 0.075,
+   "right": 0.075,
+   "top": 0.033,
+   "bottom": 0.033,
+   "three_quarter": 0.148,
+   "three_quarter_left": 0.145,
+   "back_three_quarter": 0.144,
+   "back_three_quarter_left": 0.147
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B14_1",
+  "name": "Dragonfire shield",
+  "slot": "shield",
+  "triangles": 2001,
+  "vertices": 1042,
+  "dimensions": [
+   24.0,
+   100.0,
+   78.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 242,
+  "degenerate_faces": 0,
+  "colours": 313,
+  "view_coverage": {
+   "front": 0.062,
+   "back": 0.06,
+   "left": 0.195,
+   "right": 0.2,
+   "top": 0.077,
+   "bottom": 0.079,
+   "three_quarter": 0.127,
+   "three_quarter_left": 0.119,
+   "back_three_quarter": 0.118,
+   "back_three_quarter_left": 0.126
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B14_2",
+  "name": "Glacial crystal shield",
+  "slot": "shield",
+  "triangles": 2031,
+  "vertices": 1043,
+  "dimensions": [
+   32.0,
+   131.0,
+   98.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 206,
+  "degenerate_faces": 0,
+  "colours": 407,
+  "view_coverage": {
+   "front": 0.061,
+   "back": 0.061,
+   "left": 0.224,
+   "right": 0.226,
+   "top": 0.083,
+   "bottom": 0.086,
+   "three_quarter": 0.13,
+   "three_quarter_left": 0.136,
+   "back_three_quarter": 0.139,
+   "back_three_quarter_left": 0.133
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B14_3",
+  "name": "Solar heater shield",
+  "slot": "shield",
+  "triangles": 2084,
+  "vertices": 1064,
+  "dimensions": [
+   27.0,
+   101.0,
+   83.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 159,
+  "degenerate_faces": 0,
+  "colours": 305,
+  "view_coverage": {
+   "front": 0.071,
+   "back": 0.071,
+   "left": 0.239,
+   "right": 0.24,
+   "top": 0.088,
+   "bottom": 0.088,
+   "three_quarter": 0.145,
+   "three_quarter_left": 0.141,
+   "back_three_quarter": 0.147,
+   "back_three_quarter_left": 0.148
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B14_4",
+  "name": "Jade thorn shield",
+  "slot": "shield",
+  "triangles": 2046,
+  "vertices": 1044,
+  "dimensions": [
+   26.0,
+   94.0,
+   78.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 154,
+  "degenerate_faces": 0,
+  "colours": 189,
+  "view_coverage": {
+   "front": 0.075,
+   "back": 0.074,
+   "left": 0.254,
+   "right": 0.254,
+   "top": 0.097,
+   "bottom": 0.096,
+   "three_quarter": 0.157,
+   "three_quarter_left": 0.156,
+   "back_three_quarter": 0.151,
+   "back_three_quarter_left": 0.165
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B14_5",
+  "name": "Sapphire dragon kiteshield",
+  "slot": "shield",
+  "triangles": 2053,
+  "vertices": 1050,
+  "dimensions": [
+   26.0,
+   94.0,
+   71.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 182,
+  "degenerate_faces": 0,
+  "colours": 477,
+  "view_coverage": {
+   "front": 0.069,
+   "back": 0.069,
+   "left": 0.24,
+   "right": 0.24,
+   "top": 0.092,
+   "bottom": 0.094,
+   "three_quarter": 0.144,
+   "three_quarter_left": 0.145,
+   "back_three_quarter": 0.141,
+   "back_three_quarter_left": 0.152
+  },
+  "fails": [],
+  "ok": true
+ },
+ {
+  "code": "B14_6",
+  "name": "Crimson spiked roundshield",
+  "slot": "shield",
+  "triangles": 1987,
+  "vertices": 1027,
+  "dimensions": [
+   21.0,
+   80.0,
+   67.0
+  ],
+  "loose_parts": 1,
+  "non_manifold_edges": 200,
+  "degenerate_faces": 0,
+  "colours": 277,
+  "view_coverage": {
+   "front": 0.063,
+   "back": 0.063,
+   "left": 0.221,
+   "right": 0.221,
+   "top": 0.079,
+   "bottom": 0.079,
+   "three_quarter": 0.137,
+   "three_quarter_left": 0.135,
+   "back_three_quarter": 0.135,
+   "back_three_quarter_left": 0.136
+  },
+  "fails": [],
+  "ok": true
+ }
+]

@@ -24,19 +24,18 @@
      "kind": "inventory",
      "model": 64000,
      "replaces": 2605,
-     "faces": 1449,
+     "faces": 2102,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 1449
+     "decoded_faces": 2102
     },
     {
      "kind": "maleModel0",
      "model": 64001,
      "replaces": 306,
-     "faces": 1420,
-     "anchors": 117,
+     "faces": 1950,
+     "anchors": 123,
      "groups": [
       2,
       4,
@@ -45,6 +44,7 @@
       18,
       19,
       21,
+      22,
       24,
       25,
       59
@@ -60,18 +60,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1420
+     "decoded_faces": 1950
     },
     {
      "kind": "maleModel1",
      "model": 64002,
      "replaces": 164,
-     "faces": 228,
-     "anchors": 56,
+     "faces": 338,
+     "anchors": 65,
      "groups": [
       17,
       18,
@@ -92,17 +90,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 228
+     "decoded_faces": 338
     },
     {
      "kind": "femaleModel0",
      "model": 64003,
      "replaces": 468,
-     "faces": 1281,
-     "anchors": 133,
+     "faces": 1911,
+     "anchors": 165,
      "groups": [
       4,
       8,
@@ -124,18 +121,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 1281
+     "decoded_faces": 1911
     },
     {
      "kind": "femaleModel1",
      "model": 64004,
      "replaces": 344,
-     "faces": 240,
-     "anchors": 47,
+     "faces": 352,
+     "anchors": 103,
      "groups": [
       4,
       17,
@@ -157,10 +152,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 240
+     "decoded_faces": 352
     }
    ],
    "item_def_patch": {
@@ -198,19 +192,18 @@
      "kind": "inventory",
      "model": 64005,
      "replaces": 2605,
-     "faces": 2129,
+     "faces": 2051,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2129
+     "decoded_faces": 2051
     },
     {
      "kind": "maleModel0",
      "model": 64006,
      "replaces": 306,
-     "faces": 2034,
-     "anchors": 115,
+     "faces": 1879,
+     "anchors": 120,
      "groups": [
       2,
       4,
@@ -234,18 +227,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2034
+     "decoded_faces": 1879
     },
     {
      "kind": "maleModel1",
      "model": 64007,
      "replaces": 164,
-     "faces": 286,
-     "anchors": 56,
+     "faces": 362,
+     "anchors": 57,
      "groups": [
       17,
       18,
@@ -266,17 +257,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 286
+     "decoded_faces": 362
     },
     {
      "kind": "femaleModel0",
      "model": 64008,
      "replaces": 468,
-     "faces": 2065,
-     "anchors": 211,
+     "faces": 1848,
+     "anchors": 174,
      "groups": [
       4,
       8,
@@ -298,18 +288,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2065
+     "decoded_faces": 1848
     },
     {
      "kind": "femaleModel1",
      "model": 64009,
      "replaces": 344,
-     "faces": 223,
-     "anchors": 58,
+     "faces": 352,
+     "anchors": 104,
      "groups": [
       4,
       17,
@@ -331,10 +319,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 223
+     "decoded_faces": 352
     }
    ],
    "item_def_patch": {
@@ -372,19 +359,18 @@
      "kind": "inventory",
      "model": 64010,
      "replaces": 2605,
-     "faces": 2233,
+     "faces": 2071,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2233
+     "decoded_faces": 2071
     },
     {
      "kind": "maleModel0",
      "model": 64011,
      "replaces": 306,
-     "faces": 2014,
-     "anchors": 121,
+     "faces": 1934,
+     "anchors": 123,
      "groups": [
       2,
       4,
@@ -408,17 +394,16 @@
      "priorities": [
       2,
       3,
-      4,
       10
      ],
-     "decoded_faces": 2014
+     "decoded_faces": 1934
     },
     {
      "kind": "maleModel1",
      "model": 64012,
      "replaces": 164,
-     "faces": 413,
-     "anchors": 81,
+     "faces": 324,
+     "anchors": 61,
      "groups": [
       17,
       18,
@@ -439,17 +424,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 413
+     "decoded_faces": 324
     },
     {
      "kind": "femaleModel0",
      "model": 64013,
      "replaces": 468,
-     "faces": 2012,
-     "anchors": 177,
+     "faces": 1900,
+     "anchors": 158,
      "groups": [
       4,
       8,
@@ -471,17 +455,16 @@
      ],
      "priorities": [
       1,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2012
+     "decoded_faces": 1900
     },
     {
      "kind": "femaleModel1",
      "model": 64014,
      "replaces": 344,
-     "faces": 304,
-     "anchors": 73,
+     "faces": 329,
+     "anchors": 101,
      "groups": [
       4,
       17,
@@ -503,10 +486,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 304
+     "decoded_faces": 329
     }
    ],
    "item_def_patch": {
@@ -544,19 +526,18 @@
      "kind": "inventory",
      "model": 64015,
      "replaces": 2605,
-     "faces": 2106,
+     "faces": 2093,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2106
+     "decoded_faces": 2093
     },
     {
      "kind": "maleModel0",
      "model": 64016,
      "replaces": 306,
-     "faces": 2023,
-     "anchors": 125,
+     "faces": 1911,
+     "anchors": 121,
      "groups": [
       2,
       4,
@@ -580,18 +561,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2023
+     "decoded_faces": 1911
     },
     {
      "kind": "maleModel1",
      "model": 64017,
      "replaces": 164,
-     "faces": 299,
-     "anchors": 68,
+     "faces": 374,
+     "anchors": 69,
      "groups": [
       17,
       18,
@@ -612,17 +591,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 299
+     "decoded_faces": 374
     },
     {
      "kind": "femaleModel0",
      "model": 64018,
      "replaces": 468,
-     "faces": 1959,
-     "anchors": 199,
+     "faces": 1927,
+     "anchors": 165,
      "groups": [
       4,
       8,
@@ -644,18 +622,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 1959
+     "decoded_faces": 1927
     },
     {
      "kind": "femaleModel1",
      "model": 64019,
      "replaces": 344,
-     "faces": 216,
-     "anchors": 71,
+     "faces": 297,
+     "anchors": 94,
      "groups": [
       4,
       17,
@@ -677,10 +653,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 216
+     "decoded_faces": 297
     }
    ],
    "item_def_patch": {
@@ -718,19 +693,18 @@
      "kind": "inventory",
      "model": 64020,
      "replaces": 2605,
-     "faces": 2115,
+     "faces": 2132,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2115
+     "decoded_faces": 2132
     },
     {
      "kind": "maleModel0",
      "model": 64021,
      "replaces": 306,
-     "faces": 2025,
-     "anchors": 120,
+     "faces": 1990,
+     "anchors": 129,
      "groups": [
       2,
       4,
@@ -754,18 +728,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2025
+     "decoded_faces": 1990
     },
     {
      "kind": "maleModel1",
      "model": 64022,
      "replaces": 164,
-     "faces": 321,
-     "anchors": 80,
+     "faces": 314,
+     "anchors": 60,
      "groups": [
       17,
       18,
@@ -786,17 +758,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 321
+     "decoded_faces": 314
     },
     {
      "kind": "femaleModel0",
      "model": 64023,
      "replaces": 468,
-     "faces": 1877,
-     "anchors": 140,
+     "faces": 1951,
+     "anchors": 173,
      "groups": [
       4,
       8,
@@ -818,18 +789,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 1877
+     "decoded_faces": 1951
     },
     {
      "kind": "femaleModel1",
      "model": 64024,
      "replaces": 344,
-     "faces": 293,
-     "anchors": 68,
+     "faces": 314,
+     "anchors": 87,
      "groups": [
       4,
       17,
@@ -851,10 +820,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 293
+     "decoded_faces": 314
     }
    ],
    "item_def_patch": {
@@ -892,19 +860,18 @@
      "kind": "inventory",
      "model": 64025,
      "replaces": 2605,
-     "faces": 2226,
+     "faces": 2049,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2226
+     "decoded_faces": 2049
     },
     {
      "kind": "maleModel0",
      "model": 64026,
      "replaces": 306,
-     "faces": 2036,
-     "anchors": 120,
+     "faces": 1945,
+     "anchors": 118,
      "groups": [
       2,
       4,
@@ -913,6 +880,7 @@
       18,
       19,
       21,
+      22,
       24,
       25,
       59
@@ -928,18 +896,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2036
+     "decoded_faces": 1945
     },
     {
      "kind": "maleModel1",
      "model": 64027,
      "replaces": 164,
-     "faces": 373,
-     "anchors": 81,
+     "faces": 293,
+     "anchors": 61,
      "groups": [
       17,
       18,
@@ -960,17 +926,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 373
+     "decoded_faces": 293
     },
     {
      "kind": "femaleModel0",
      "model": 64028,
      "replaces": 468,
-     "faces": 2114,
-     "anchors": 216,
+     "faces": 1951,
+     "anchors": 180,
      "groups": [
       4,
       8,
@@ -992,18 +957,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2114
+     "decoded_faces": 1951
     },
     {
      "kind": "femaleModel1",
      "model": 64029,
      "replaces": 344,
-     "faces": 245,
-     "anchors": 64,
+     "faces": 306,
+     "anchors": 104,
      "groups": [
       4,
       17,
@@ -1025,10 +988,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 245
+     "decoded_faces": 306
     }
    ],
    "item_def_patch": {
@@ -1066,19 +1028,18 @@
      "kind": "inventory",
      "model": 64030,
      "replaces": 2605,
-     "faces": 2173,
+     "faces": 2089,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2173
+     "decoded_faces": 2089
     },
     {
      "kind": "maleModel0",
      "model": 64031,
      "replaces": 306,
-     "faces": 2002,
-     "anchors": 122,
+     "faces": 1873,
+     "anchors": 118,
      "groups": [
       2,
       4,
@@ -1103,18 +1064,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2002
+     "decoded_faces": 1873
     },
     {
      "kind": "maleModel1",
      "model": 64032,
      "replaces": 164,
-     "faces": 368,
-     "anchors": 73,
+     "faces": 420,
+     "anchors": 79,
      "groups": [
       17,
       18,
@@ -1135,17 +1094,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 368
+     "decoded_faces": 420
     },
     {
      "kind": "femaleModel0",
      "model": 64033,
      "replaces": 468,
-     "faces": 2069,
-     "anchors": 170,
+     "faces": 1907,
+     "anchors": 159,
      "groups": [
       4,
       8,
@@ -1167,18 +1125,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2069
+     "decoded_faces": 1907
     },
     {
      "kind": "femaleModel1",
      "model": 64034,
      "replaces": 344,
-     "faces": 182,
-     "anchors": 60,
+     "faces": 310,
+     "anchors": 88,
      "groups": [
       4,
       17,
@@ -1200,10 +1156,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 182
+     "decoded_faces": 310
     }
    ],
    "item_def_patch": {
@@ -1241,18 +1196,17 @@
      "kind": "inventory",
      "model": 64035,
      "replaces": 2745,
-     "faces": 1899,
+     "faces": 1881,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1899
+     "decoded_faces": 1881
     },
     {
      "kind": "maleModel0",
      "model": 64036,
      "replaces": 314,
-     "faces": 2036,
+     "faces": 2016,
      "anchors": 138,
      "groups": [
       2,
@@ -1267,18 +1221,17 @@
      ],
      "priorities": [
       1,
-      2,
       3,
       4
      ],
-     "decoded_faces": 2036
+     "decoded_faces": 2016
     },
     {
      "kind": "femaleModel0",
      "model": 64037,
      "replaces": 477,
-     "faces": 1908,
-     "anchors": 140,
+     "faces": 1965,
+     "anchors": 111,
      "groups": [
       4,
       8,
@@ -1295,7 +1248,7 @@
       3,
       4
      ],
-     "decoded_faces": 1908
+     "decoded_faces": 1965
     }
    ],
    "item_def_patch": {
@@ -1333,18 +1286,18 @@
      "kind": "inventory",
      "model": 64038,
      "replaces": 6033,
-     "faces": 1494,
+     "faces": 1493,
      "priorities": [
       10
      ],
-     "decoded_faces": 1494
+     "decoded_faces": 1493
     },
     {
      "kind": "maleModel0",
      "model": 64039,
      "replaces": 6031,
-     "faces": 2057,
-     "anchors": 562,
+     "faces": 2030,
+     "anchors": 537,
      "groups": [
       50
      ],
@@ -1354,7 +1307,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2057
+     "decoded_faces": 2030
     }
    ],
    "item_def_patch": {
@@ -1392,18 +1345,18 @@
      "kind": "inventory",
      "model": 64040,
      "replaces": 2529,
-     "faces": 1570,
+     "faces": 1519,
      "priorities": [
       10
      ],
-     "decoded_faces": 1570
+     "decoded_faces": 1519
     },
     {
      "kind": "maleModel0",
      "model": 64041,
      "replaces": 509,
-     "faces": 1893,
-     "anchors": 277,
+     "faces": 1810,
+     "anchors": 268,
      "groups": [
       50
      ],
@@ -1413,7 +1366,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1893
+     "decoded_faces": 1810
     }
    ],
    "item_def_patch": {
@@ -1451,18 +1404,18 @@
      "kind": "inventory",
      "model": 64042,
      "replaces": 28315,
-     "faces": 1761,
+     "faces": 1578,
      "priorities": [
       10
      ],
-     "decoded_faces": 1761
+     "decoded_faces": 1578
     },
     {
      "kind": "maleModel0",
      "model": 64043,
      "replaces": 28288,
-     "faces": 2137,
-     "anchors": 375,
+     "faces": 1882,
+     "anchors": 303,
      "groups": [
       50
      ],
@@ -1472,7 +1425,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2137
+     "decoded_faces": 1882
     }
    ],
    "item_def_patch": {
@@ -1510,18 +1463,18 @@
      "kind": "inventory",
      "model": 64044,
      "replaces": 9959,
-     "faces": 1662,
+     "faces": 1565,
      "priorities": [
       10
      ],
-     "decoded_faces": 1662
+     "decoded_faces": 1565
     },
     {
      "kind": "maleModel0",
      "model": 64045,
      "replaces": 9957,
-     "faces": 1962,
-     "anchors": 280,
+     "faces": 1776,
+     "anchors": 211,
      "groups": [
       50
      ],
@@ -1532,7 +1485,7 @@
       0,
       10
      ],
-     "decoded_faces": 1962
+     "decoded_faces": 1776
     }
    ],
    "item_def_patch": {
@@ -1570,18 +1523,18 @@
      "kind": "inventory",
      "model": 64046,
      "replaces": 2801,
-     "faces": 1602,
+     "faces": 1613,
      "priorities": [
       10
      ],
-     "decoded_faces": 1602
+     "decoded_faces": 1613
     },
     {
      "kind": "maleModel0",
      "model": 64047,
      "replaces": 559,
-     "faces": 1876,
-     "anchors": 270,
+     "faces": 1927,
+     "anchors": 312,
      "groups": [
       50
      ],
@@ -1591,7 +1544,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1876
+     "decoded_faces": 1927
     }
    ],
    "item_def_patch": {
@@ -1629,18 +1582,18 @@
      "kind": "inventory",
      "model": 64048,
      "replaces": 2482,
-     "faces": 1581,
+     "faces": 1555,
      "priorities": [
       10
      ],
-     "decoded_faces": 1581
+     "decoded_faces": 1555
     },
     {
      "kind": "maleModel0",
      "model": 64049,
      "replaces": 505,
-     "faces": 3102,
-     "anchors": 1520,
+     "faces": 3845,
+     "anchors": 2286,
      "groups": [
       50
      ],
@@ -1650,7 +1603,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 3102
+     "decoded_faces": 3845
     }
    ],
    "item_def_patch": {
@@ -1688,18 +1641,18 @@
      "kind": "inventory",
      "model": 64050,
      "replaces": 6585,
-     "faces": 1423,
+     "faces": 1426,
      "priorities": [
       10
      ],
-     "decoded_faces": 1423
+     "decoded_faces": 1426
     },
     {
      "kind": "maleModel0",
      "model": 64051,
      "replaces": 6704,
-     "faces": 2147,
-     "anchors": 722,
+     "faces": 2129,
+     "anchors": 702,
      "groups": [
       50,
       51,
@@ -1723,7 +1676,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2147
+     "decoded_faces": 2129
     }
    ],
    "item_def_patch": {
@@ -1761,18 +1714,18 @@
      "kind": "inventory",
      "model": 64052,
      "replaces": 5413,
-     "faces": 1750,
+     "faces": 1711,
      "priorities": [
       10
      ],
-     "decoded_faces": 1750
+     "decoded_faces": 1711
     },
     {
      "kind": "maleModel0",
      "model": 64053,
      "replaces": 5410,
-     "faces": 2168,
-     "anchors": 393,
+     "faces": 2089,
+     "anchors": 369,
      "groups": [
       50
      ],
@@ -1782,7 +1735,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2168
+     "decoded_faces": 2089
     }
    ],
    "item_def_patch": {
@@ -1820,18 +1773,18 @@
      "kind": "inventory",
      "model": 64054,
      "replaces": 16876,
-     "faces": 1626,
+     "faces": 1655,
      "priorities": [
       10
      ],
-     "decoded_faces": 1626
+     "decoded_faces": 1655
     },
     {
      "kind": "maleModel0",
      "model": 64055,
      "replaces": 16846,
-     "faces": 1805,
-     "anchors": 179,
+     "faces": 1840,
+     "anchors": 185,
      "groups": [
       50
      ],
@@ -1841,14 +1794,14 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1805
+     "decoded_faces": 1840
     },
     {
      "kind": "femaleModel0",
      "model": 64056,
      "replaces": 42622,
-     "faces": 1805,
-     "anchors": 179,
+     "faces": 1840,
+     "anchors": 185,
      "groups": [
       50
      ],
@@ -1858,7 +1811,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1805
+     "decoded_faces": 1840
     }
    ],
    "item_def_patch": {
@@ -1896,18 +1849,18 @@
      "kind": "inventory",
      "model": 64057,
      "replaces": 2391,
-     "faces": 1938,
+     "faces": 1780,
      "priorities": [
       10
      ],
-     "decoded_faces": 1938
+     "decoded_faces": 1780
     },
     {
      "kind": "maleModel0",
      "model": 64058,
      "replaces": 493,
-     "faces": 2327,
-     "anchors": 358,
+     "faces": 2089,
+     "anchors": 294,
      "groups": [
       50
      ],
@@ -1917,7 +1870,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2327
+     "decoded_faces": 2089
     }
    ],
    "item_def_patch": {
@@ -1955,19 +1908,18 @@
      "kind": "inventory",
      "model": 64059,
      "replaces": 35103,
-     "faces": 2160,
+     "faces": 2052,
      "priorities": [
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2160
+     "decoded_faces": 2052
     },
     {
      "kind": "maleModel0",
      "model": 64060,
      "replaces": 34630,
-     "faces": 2513,
-     "anchors": 262,
+     "faces": 2411,
+     "anchors": 274,
      "groups": [
       2,
       4,
@@ -2003,18 +1955,16 @@
       2,
       3,
       4,
-      5,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2513
+     "decoded_faces": 2411
     },
     {
      "kind": "femaleModel0",
      "model": 64061,
      "replaces": 34645,
-     "faces": 2490,
-     "anchors": 275,
+     "faces": 2402,
+     "anchors": 267,
      "groups": [
       4,
       8,
@@ -2048,11 +1998,9 @@
       2,
       3,
       4,
-      5,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2490
+     "decoded_faces": 2402
     }
    ],
    "item_def_patch": {
@@ -2090,19 +2038,18 @@
      "kind": "inventory",
      "model": 64062,
      "replaces": 5026,
-     "faces": 2235,
+     "faces": 2159,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2235
+     "decoded_faces": 2159
     },
     {
      "kind": "maleModel0",
      "model": 64063,
      "replaces": 5024,
-     "faces": 2527,
-     "anchors": 293,
+     "faces": 2478,
+     "anchors": 320,
      "groups": [
       4,
       5,
@@ -2145,17 +2092,16 @@
       44
      ],
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2527
+     "decoded_faces": 2478
     },
     {
      "kind": "femaleModel0",
      "model": 64064,
      "replaces": 5025,
-     "faces": 2428,
-     "anchors": 235,
+     "faces": 2364,
+     "anchors": 242,
      "groups": [
       4,
       29,
@@ -2196,10 +2142,9 @@
       44
      ],
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2428
+     "decoded_faces": 2364
     }
    ],
    "item_def_patch": {
@@ -2237,19 +2182,18 @@
      "kind": "inventory",
      "model": 64065,
      "replaces": 28044,
-     "faces": 1495,
+     "faces": 1531,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 1495
+     "decoded_faces": 1531
     },
     {
      "kind": "maleModel0",
      "model": 64066,
      "replaces": 27638,
-     "faces": 2634,
-     "anchors": 1077,
+     "faces": 2598,
+     "anchors": 1034,
      "groups": [
       0,
       32,
@@ -2269,17 +2213,16 @@
       48
      ],
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2634
+     "decoded_faces": 2598
     },
     {
      "kind": "femaleModel0",
      "model": 64067,
      "replaces": 27646,
-     "faces": 2794,
-     "anchors": 1226,
+     "faces": 2782,
+     "anchors": 1175,
      "groups": [
       0,
       32,
@@ -2299,10 +2242,9 @@
       48
      ],
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2794
+     "decoded_faces": 2782
     }
    ],
    "item_def_patch": {
@@ -2340,19 +2282,18 @@
      "kind": "inventory",
      "model": 64068,
      "replaces": 2813,
-     "faces": 1600,
+     "faces": 1568,
      "priorities": [
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1600
+     "decoded_faces": 1568
     },
     {
      "kind": "maleModel0",
      "model": 64069,
      "replaces": 218,
-     "faces": 1767,
-     "anchors": 144,
+     "faces": 1791,
+     "anchors": 210,
      "groups": [
       1,
       2,
@@ -2366,17 +2307,16 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1767
+     "decoded_faces": 1791
     },
     {
      "kind": "femaleModel0",
      "model": 64070,
      "replaces": 394,
-     "faces": 1739,
-     "anchors": 138,
+     "faces": 1750,
+     "anchors": 217,
      "groups": [
       1,
       2,
@@ -2394,7 +2334,7 @@
       6,
       7
      ],
-     "decoded_faces": 1739
+     "decoded_faces": 1750
     }
    ],
    "item_def_patch": {
@@ -2432,18 +2372,17 @@
      "kind": "inventory",
      "model": 64071,
      "replaces": 6594,
-     "faces": 2266,
+     "faces": 2099,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2266
+     "decoded_faces": 2099
     },
     {
      "kind": "maleModel0",
      "model": 64072,
      "replaces": 6676,
-     "faces": 2056,
+     "faces": 2018,
      "anchors": 130,
      "groups": [
       8,
@@ -2462,18 +2401,16 @@
      ],
      "priorities": [
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2056
+     "decoded_faces": 2018
     },
     {
      "kind": "maleModel1",
      "model": 64073,
      "replaces": 6644,
-     "faces": 1205,
-     "anchors": 834,
+     "faces": 936,
+     "anchors": 671,
      "groups": [
       17,
       18,
@@ -2498,16 +2435,15 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1205
+     "decoded_faces": 936
     },
     {
      "kind": "femaleModel0",
      "model": 64074,
      "replaces": 6701,
-     "faces": 1964,
+     "faces": 1931,
      "anchors": 138,
      "groups": [
       8,
@@ -2528,18 +2464,16 @@
      ],
      "priorities": [
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1964
+     "decoded_faces": 1931
     },
     {
      "kind": "femaleModel1",
      "model": 64075,
      "replaces": 6684,
-     "faces": 827,
-     "anchors": 532,
+     "faces": 691,
+     "anchors": 457,
      "groups": [
       17,
       18,
@@ -2564,10 +2498,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 827
+     "decoded_faces": 691
     }
    ],
    "item_def_patch": {
@@ -2605,19 +2538,18 @@
      "kind": "inventory",
      "model": 64076,
      "replaces": 13631,
-     "faces": 1224,
+     "faces": 1232,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 1224
+     "decoded_faces": 1232
     },
     {
      "kind": "maleModel0",
      "model": 64077,
      "replaces": 13307,
-     "faces": 2548,
-     "anchors": 1154,
+     "faces": 2523,
+     "anchors": 1089,
      "groups": [
       19,
       22,
@@ -2633,17 +2565,16 @@
       28
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2548
+     "decoded_faces": 2523
     },
     {
      "kind": "femaleModel0",
      "model": 64078,
      "replaces": 13319,
-     "faces": 2268,
-     "anchors": 925,
+     "faces": 2305,
+     "anchors": 870,
      "groups": [
       19,
       22,
@@ -2659,10 +2590,9 @@
       28
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2268
+     "decoded_faces": 2305
     }
    ],
    "item_def_patch": {
@@ -2700,19 +2630,18 @@
      "kind": "inventory",
      "model": 64079,
      "replaces": 2813,
-     "faces": 1484,
+     "faces": 1490,
      "priorities": [
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1484
+     "decoded_faces": 1490
     },
     {
      "kind": "maleModel0",
      "model": 64080,
      "replaces": 218,
-     "faces": 1896,
-     "anchors": 311,
+     "faces": 1771,
+     "anchors": 247,
      "groups": [
       1,
       2,
@@ -2726,17 +2655,16 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1896
+     "decoded_faces": 1771
     },
     {
      "kind": "femaleModel0",
      "model": 64081,
      "replaces": 394,
-     "faces": 1787,
-     "anchors": 319,
+     "faces": 1665,
+     "anchors": 258,
      "groups": [
       1,
       2,
@@ -2752,10 +2680,9 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1787
+     "decoded_faces": 1665
     }
    ],
    "item_def_patch": {
@@ -2793,19 +2720,18 @@
      "kind": "inventory",
      "model": 64082,
      "replaces": 2558,
-     "faces": 1300,
+     "faces": 1888,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1300
+     "decoded_faces": 1888
     },
     {
      "kind": "maleModel0",
      "model": 64083,
      "replaces": 301,
-     "faces": 1769,
-     "anchors": 472,
+     "faces": 2334,
+     "anchors": 444,
      "groups": [
       2,
       4,
@@ -2822,17 +2748,16 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1769
+     "decoded_faces": 2334
     },
     {
      "kind": "femaleModel0",
      "model": 64084,
      "replaces": 464,
-     "faces": 1546,
-     "anchors": 315,
+     "faces": 2109,
+     "anchors": 346,
      "groups": [
       4,
       8,
@@ -2847,10 +2772,9 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1546
+     "decoded_faces": 2109
     }
    ],
    "item_def_patch": {
@@ -2888,19 +2812,18 @@
      "kind": "inventory",
      "model": 64085,
      "replaces": 28047,
-     "faces": 1516,
+     "faces": 1508,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 1516
+     "decoded_faces": 1508
     },
     {
      "kind": "maleModel0",
      "model": 64086,
      "replaces": 27625,
-     "faces": 2140,
-     "anchors": 265,
+     "faces": 2222,
+     "anchors": 326,
      "groups": [
       4,
       29,
@@ -2942,17 +2865,16 @@
       0,
       1,
       2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2140
+     "decoded_faces": 2222
     },
     {
      "kind": "femaleModel0",
      "model": 64087,
      "replaces": 27640,
-     "faces": 2173,
-     "anchors": 299,
+     "faces": 2237,
+     "anchors": 344,
      "groups": [
       4,
       29,
@@ -2994,10 +2916,9 @@
       0,
       1,
       2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2173
+     "decoded_faces": 2237
     }
    ],
    "item_def_patch": {
@@ -3035,19 +2956,18 @@
      "kind": "inventory",
      "model": 64088,
      "replaces": 2813,
-     "faces": 1469,
+     "faces": 1582,
      "priorities": [
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1469
+     "decoded_faces": 1582
     },
     {
      "kind": "maleModel0",
      "model": 64089,
      "replaces": 218,
-     "faces": 1823,
-     "anchors": 239,
+     "faces": 1858,
+     "anchors": 245,
      "groups": [
       1,
       2,
@@ -3061,17 +2981,16 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1823
+     "decoded_faces": 1858
     },
     {
      "kind": "femaleModel0",
      "model": 64090,
      "replaces": 394,
-     "faces": 1736,
-     "anchors": 246,
+     "faces": 1807,
+     "anchors": 258,
      "groups": [
       1,
       2,
@@ -3087,10 +3006,9 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1736
+     "decoded_faces": 1807
     }
    ],
    "item_def_patch": {
@@ -3128,19 +3046,18 @@
      "kind": "inventory",
      "model": 64091,
      "replaces": 2605,
-     "faces": 2215,
+     "faces": 2124,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2215
+     "decoded_faces": 2124
     },
     {
      "kind": "maleModel0",
      "model": 64092,
      "replaces": 306,
-     "faces": 2067,
-     "anchors": 119,
+     "faces": 1823,
+     "anchors": 118,
      "groups": [
       2,
       4,
@@ -3165,18 +3082,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2067
+     "decoded_faces": 1823
     },
     {
      "kind": "maleModel1",
      "model": 64093,
      "replaces": 164,
-     "faces": 345,
-     "anchors": 50,
+     "faces": 506,
+     "anchors": 66,
      "groups": [
       17,
       18,
@@ -3197,17 +3112,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 345
+     "decoded_faces": 506
     },
     {
      "kind": "femaleModel0",
      "model": 64094,
      "replaces": 468,
-     "faces": 2070,
-     "anchors": 193,
+     "faces": 1903,
+     "anchors": 180,
      "groups": [
       4,
       8,
@@ -3229,18 +3143,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2070
+     "decoded_faces": 1903
     },
     {
      "kind": "femaleModel1",
      "model": 64095,
      "replaces": 344,
-     "faces": 300,
-     "anchors": 83,
+     "faces": 429,
+     "anchors": 117,
      "groups": [
       4,
       17,
@@ -3262,10 +3174,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 300
+     "decoded_faces": 429
     }
    ],
    "item_def_patch": {
@@ -3303,19 +3214,18 @@
      "kind": "inventory",
      "model": 64096,
      "replaces": 5037,
-     "faces": 1644,
+     "faces": 1614,
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 1644
+     "decoded_faces": 1614
     },
     {
      "kind": "maleModel0",
      "model": 64097,
      "replaces": 4954,
-     "faces": 2991,
-     "anchors": 1379,
+     "faces": 2939,
+     "anchors": 1326,
      "groups": [
       0,
       32,
@@ -3335,17 +3245,16 @@
       48
      ],
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2991
+     "decoded_faces": 2939
     },
     {
      "kind": "femaleModel0",
      "model": 64098,
      "replaces": 5031,
-     "faces": 2969,
-     "anchors": 1379,
+     "faces": 3005,
+     "anchors": 1358,
      "groups": [
       0,
       32,
@@ -3365,10 +3274,9 @@
       48
      ],
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2969
+     "decoded_faces": 3005
     }
    ],
    "item_def_patch": {
@@ -3406,19 +3314,18 @@
      "kind": "inventory",
      "model": 64099,
      "replaces": 26662,
-     "faces": 1959,
+     "faces": 1840,
      "priorities": [
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1959
+     "decoded_faces": 1840
     },
     {
      "kind": "maleModel0",
      "model": 64100,
      "replaces": 19861,
-     "faces": 2391,
-     "anchors": 259,
+     "faces": 2280,
+     "anchors": 282,
      "groups": [
       1,
       2,
@@ -3435,17 +3342,16 @@
      "priorities": [
       3,
       5,
-      6,
-      7
+      6
      ],
-     "decoded_faces": 2391
+     "decoded_faces": 2280
     },
     {
      "kind": "femaleModel0",
      "model": 64101,
      "replaces": 254,
-     "faces": 2375,
-     "anchors": 279,
+     "faces": 2278,
+     "anchors": 302,
      "groups": [
       1,
       2,
@@ -3462,10 +3368,9 @@
      "priorities": [
       3,
       5,
-      6,
-      7
+      6
      ],
-     "decoded_faces": 2375
+     "decoded_faces": 2278
     }
    ],
    "item_def_patch": {
@@ -3503,19 +3408,18 @@
      "kind": "inventory",
      "model": 64102,
      "replaces": 35103,
-     "faces": 1742,
+     "faces": 2081,
      "priorities": [
-      3,
-      4
+      3
      ],
-     "decoded_faces": 1742
+     "decoded_faces": 2081
     },
     {
      "kind": "maleModel0",
      "model": 64103,
      "replaces": 34630,
-     "faces": 2068,
-     "anchors": 292,
+     "faces": 2379,
+     "anchors": 256,
      "groups": [
       2,
       4,
@@ -3551,18 +3455,16 @@
       2,
       3,
       4,
-      5,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2068
+     "decoded_faces": 2379
     },
     {
      "kind": "femaleModel0",
      "model": 64104,
      "replaces": 34645,
-     "faces": 1964,
-     "anchors": 253,
+     "faces": 2295,
+     "anchors": 252,
      "groups": [
       4,
       8,
@@ -3596,11 +3498,9 @@
       2,
       3,
       4,
-      5,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1964
+     "decoded_faces": 2295
     }
    ],
    "item_def_patch": {
@@ -3638,19 +3538,18 @@
      "kind": "inventory",
      "model": 64105,
      "replaces": 13631,
-     "faces": 1347,
+     "faces": 1330,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 1347
+     "decoded_faces": 1330
     },
     {
      "kind": "maleModel0",
      "model": 64106,
      "replaces": 13307,
-     "faces": 3071,
-     "anchors": 1479,
+     "faces": 2781,
+     "anchors": 1220,
      "groups": [
       19,
       22,
@@ -3666,17 +3565,16 @@
       28
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 3071
+     "decoded_faces": 2781
     },
     {
      "kind": "femaleModel0",
      "model": 64107,
      "replaces": 13319,
-     "faces": 2664,
-     "anchors": 1194,
+     "faces": 2399,
+     "anchors": 979,
      "groups": [
       19,
       22,
@@ -3692,10 +3590,9 @@
       28
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2664
+     "decoded_faces": 2399
     }
    ],
    "item_def_patch": {
@@ -3733,17 +3630,17 @@
      "kind": "inventory",
      "model": 64108,
      "replaces": 2718,
-     "faces": 1046,
+     "faces": 1286,
      "priorities": [
       10
      ],
-     "decoded_faces": 1046
+     "decoded_faces": 1286
     },
     {
      "kind": "maleModel0",
      "model": 64109,
      "replaces": 539,
-     "faces": 1116,
+     "faces": 1338,
      "anchors": 25,
      "groups": [
       27,
@@ -3755,13 +3652,13 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1116
+     "decoded_faces": 1338
     },
     {
      "kind": "femaleModel0",
      "model": 64110,
      "replaces": 42626,
-     "faces": 1063,
+     "faces": 1329,
      "anchors": 25,
      "groups": [
       27,
@@ -3773,7 +3670,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1063
+     "decoded_faces": 1329
     }
    ],
    "item_def_patch": {
@@ -3811,18 +3708,18 @@
      "kind": "inventory",
      "model": 64111,
      "replaces": 2391,
-     "faces": 1540,
+     "faces": 1459,
      "priorities": [
       10
      ],
-     "decoded_faces": 1540
+     "decoded_faces": 1459
     },
     {
      "kind": "maleModel0",
      "model": 64112,
      "replaces": 493,
-     "faces": 1770,
-     "anchors": 228,
+     "faces": 1661,
+     "anchors": 193,
      "groups": [
       50
      ],
@@ -3832,7 +3729,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1770
+     "decoded_faces": 1661
     }
    ],
    "item_def_patch": {
@@ -3870,18 +3767,17 @@
      "kind": "inventory",
      "model": 64113,
      "replaces": 35105,
-     "faces": 1329,
+     "faces": 2038,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1329
+     "decoded_faces": 2038
     },
     {
      "kind": "maleModel0",
      "model": 64114,
      "replaces": 34649,
-     "faces": 1518,
+     "faces": 2226,
      "anchors": 189,
      "groups": [
       28,
@@ -3891,16 +3787,15 @@
       28
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1518
+     "decoded_faces": 2226
     },
     {
      "kind": "femaleModel0",
      "model": 64115,
      "replaces": 34650,
-     "faces": 1519,
+     "faces": 2240,
      "anchors": 189,
      "groups": [
       28,
@@ -3910,10 +3805,9 @@
       28
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1519
+     "decoded_faces": 2240
     }
    ],
    "item_def_patch": {
@@ -3951,18 +3845,17 @@
      "kind": "inventory",
      "model": 64116,
      "replaces": 2745,
-     "faces": 1973,
+     "faces": 1919,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1973
+     "decoded_faces": 1919
     },
     {
      "kind": "maleModel0",
      "model": 64117,
      "replaces": 314,
-     "faces": 2118,
+     "faces": 2061,
      "anchors": 138,
      "groups": [
       2,
@@ -3977,19 +3870,17 @@
      ],
      "priorities": [
       1,
-      2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2118
+     "decoded_faces": 2061
     },
     {
      "kind": "femaleModel0",
      "model": 64118,
      "replaces": 477,
-     "faces": 2054,
-     "anchors": 156,
+     "faces": 1984,
+     "anchors": 132,
      "groups": [
       4,
       8,
@@ -4004,10 +3895,9 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2054
+     "decoded_faces": 1984
     }
    ],
    "item_def_patch": {
@@ -4045,18 +3935,17 @@
      "kind": "inventory",
      "model": 64119,
      "replaces": 2745,
-     "faces": 2007,
+     "faces": 1919,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2007
+     "decoded_faces": 1919
     },
     {
      "kind": "maleModel0",
      "model": 64120,
      "replaces": 314,
-     "faces": 2145,
+     "faces": 2053,
      "anchors": 138,
      "groups": [
       2,
@@ -4071,19 +3960,17 @@
      ],
      "priorities": [
       1,
-      2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2145
+     "decoded_faces": 2053
     },
     {
      "kind": "femaleModel0",
      "model": 64121,
      "replaces": 477,
-     "faces": 2022,
-     "anchors": 129,
+     "faces": 1937,
+     "anchors": 130,
      "groups": [
       4,
       8,
@@ -4098,10 +3985,9 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2022
+     "decoded_faces": 1937
     }
    ],
    "item_def_patch": {
@@ -4139,18 +4025,17 @@
      "kind": "inventory",
      "model": 64122,
      "replaces": 2745,
-     "faces": 1948,
+     "faces": 1927,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1948
+     "decoded_faces": 1927
     },
     {
      "kind": "maleModel0",
      "model": 64123,
      "replaces": 314,
-     "faces": 2091,
+     "faces": 2071,
      "anchors": 138,
      "groups": [
       2,
@@ -4166,17 +4051,16 @@
      "priorities": [
       1,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2091
+     "decoded_faces": 2071
     },
     {
      "kind": "femaleModel0",
      "model": 64124,
      "replaces": 477,
-     "faces": 2059,
-     "anchors": 145,
+     "faces": 1984,
+     "anchors": 120,
      "groups": [
       4,
       8,
@@ -4191,10 +4075,9 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2059
+     "decoded_faces": 1984
     }
    ],
    "item_def_patch": {
@@ -4232,18 +4115,17 @@
      "kind": "inventory",
      "model": 64125,
      "replaces": 2745,
-     "faces": 1923,
+     "faces": 1939,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1923
+     "decoded_faces": 1939
     },
     {
      "kind": "maleModel0",
      "model": 64126,
      "replaces": 314,
-     "faces": 2058,
+     "faces": 2075,
      "anchors": 138,
      "groups": [
       2,
@@ -4258,19 +4140,17 @@
      ],
      "priorities": [
       1,
-      2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2058
+     "decoded_faces": 2075
     },
     {
      "kind": "femaleModel0",
      "model": 64127,
      "replaces": 477,
-     "faces": 1957,
-     "anchors": 133,
+     "faces": 2011,
+     "anchors": 157,
      "groups": [
       4,
       8,
@@ -4285,10 +4165,9 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1957
+     "decoded_faces": 2011
     }
    ],
    "item_def_patch": {
@@ -4326,19 +4205,18 @@
      "kind": "inventory",
      "model": 64128,
      "replaces": 2813,
-     "faces": 1525,
+     "faces": 1584,
      "priorities": [
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1525
+     "decoded_faces": 1584
     },
     {
      "kind": "maleModel0",
      "model": 64129,
      "replaces": 218,
-     "faces": 1803,
-     "anchors": 224,
+     "faces": 1854,
+     "anchors": 232,
      "groups": [
       1,
       2,
@@ -4352,17 +4230,16 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1803
+     "decoded_faces": 1854
     },
     {
      "kind": "femaleModel0",
      "model": 64130,
      "replaces": 394,
-     "faces": 1739,
-     "anchors": 227,
+     "faces": 1817,
+     "anchors": 240,
      "groups": [
       1,
       2,
@@ -4378,10 +4255,9 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1739
+     "decoded_faces": 1817
     }
    ],
    "item_def_patch": {
@@ -4419,19 +4295,18 @@
      "kind": "inventory",
      "model": 64131,
      "replaces": 2605,
-     "faces": 2245,
+     "faces": 2193,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2245
+     "decoded_faces": 2193
     },
     {
      "kind": "maleModel0",
      "model": 64132,
      "replaces": 306,
-     "faces": 1918,
-     "anchors": 114,
+     "faces": 1897,
+     "anchors": 117,
      "groups": [
       2,
       4,
@@ -4455,18 +4330,16 @@
      "priorities": [
       2,
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1918
+     "decoded_faces": 1897
     },
     {
      "kind": "maleModel1",
      "model": 64133,
      "replaces": 164,
-     "faces": 530,
-     "anchors": 86,
+     "faces": 490,
+     "anchors": 76,
      "groups": [
       17,
       18,
@@ -4487,17 +4360,16 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 530
+     "decoded_faces": 490
     },
     {
      "kind": "femaleModel0",
      "model": 64134,
      "replaces": 468,
-     "faces": 1845,
-     "anchors": 129,
+     "faces": 1915,
+     "anchors": 152,
      "groups": [
       4,
       8,
@@ -4519,18 +4391,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3,
-      4
+      3
      ],
-     "decoded_faces": 1845
+     "decoded_faces": 1915
     },
     {
      "kind": "femaleModel1",
      "model": 64135,
      "replaces": 344,
-     "faces": 432,
-     "anchors": 69,
+     "faces": 407,
+     "anchors": 72,
      "groups": [
       4,
       17,
@@ -4552,10 +4422,9 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 432
+     "decoded_faces": 407
     }
    ],
    "item_def_patch": {
@@ -4593,19 +4462,18 @@
      "kind": "inventory",
      "model": 64136,
      "replaces": 9631,
-     "faces": 2266,
+     "faces": 2122,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2266
+     "decoded_faces": 2122
     },
     {
      "kind": "maleModel0",
      "model": 64137,
      "replaces": 9638,
-     "faces": 6322,
-     "anchors": 4024,
+     "faces": 5520,
+     "anchors": 3369,
      "groups": [
       2,
       8,
@@ -4634,17 +4502,16 @@
      "priorities": [
       0,
       1,
-      5,
-      6
+      5
      ],
-     "decoded_faces": 6322
+     "decoded_faces": 5520
     },
     {
      "kind": "femaleModel0",
      "model": 64138,
      "replaces": 9640,
-     "faces": 6241,
-     "anchors": 3960,
+     "faces": 5438,
+     "anchors": 3297,
      "groups": [
       8,
       9,
@@ -4671,10 +4538,9 @@
      "priorities": [
       0,
       1,
-      5,
-      6
+      5
      ],
-     "decoded_faces": 6241
+     "decoded_faces": 5438
     }
    ],
    "item_def_patch": {
@@ -4712,19 +4578,18 @@
      "kind": "inventory",
      "model": 64139,
      "replaces": 28043,
-     "faces": 1612,
+     "faces": 1631,
      "priorities": [
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1612
+     "decoded_faces": 1631
     },
     {
      "kind": "maleModel0",
      "model": 64140,
      "replaces": 19821,
-     "faces": 1875,
-     "anchors": 269,
+     "faces": 1932,
+     "anchors": 306,
      "groups": [
       1,
       2,
@@ -4740,17 +4605,16 @@
       0,
       3,
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1875
+     "decoded_faces": 1932
     },
     {
      "kind": "femaleModel0",
      "model": 64141,
      "replaces": 54249,
-     "faces": 1802,
-     "anchors": 280,
+     "faces": 1853,
+     "anchors": 315,
      "groups": [
       1,
       2,
@@ -4768,10 +4632,9 @@
       5,
       6,
       7,
-      8,
-      9
+      8
      ],
-     "decoded_faces": 1802
+     "decoded_faces": 1853
     }
    ],
    "item_def_patch": {
@@ -4809,18 +4672,17 @@
      "kind": "inventory",
      "model": 64142,
      "replaces": 28039,
-     "faces": 1902,
+     "faces": 1924,
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 1902
+     "decoded_faces": 1924
     },
     {
      "kind": "maleModel0",
      "model": 64143,
      "replaces": 27633,
-     "faces": 1868,
+     "faces": 1570,
      "anchors": 75,
      "groups": [
       2,
@@ -4836,17 +4698,16 @@
       8
      ],
      "priorities": [
-      3,
-      4
+      3
      ],
-     "decoded_faces": 1868
+     "decoded_faces": 1570
     },
     {
      "kind": "maleModel1",
      "model": 64144,
      "replaces": 27629,
-     "faces": 633,
-     "anchors": 155,
+     "faces": 904,
+     "anchors": 189,
      "groups": [
       17,
       18,
@@ -4873,16 +4734,15 @@
       68
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 633
+     "decoded_faces": 904
     },
     {
      "kind": "femaleModel0",
      "model": 64145,
      "replaces": 27645,
-     "faces": 1524,
+     "faces": 1146,
      "anchors": 66,
      "groups": [
       8,
@@ -4898,17 +4758,16 @@
       94
      ],
      "priorities": [
-      3,
-      4
+      3
      ],
-     "decoded_faces": 1524
+     "decoded_faces": 1146
     },
     {
      "kind": "femaleModel1",
      "model": 64146,
      "replaces": 28828,
-     "faces": 1021,
-     "anchors": 285,
+     "faces": 1474,
+     "anchors": 368,
      "groups": [
       17,
       18,
@@ -4931,10 +4790,9 @@
       25
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1021
+     "decoded_faces": 1474
     }
    ],
    "item_def_patch": {
@@ -4972,19 +4830,18 @@
      "kind": "inventory",
      "model": 64147,
      "replaces": 2582,
-     "faces": 2183,
+     "faces": 2131,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2183
+     "decoded_faces": 2131
     },
     {
      "kind": "maleModel0",
      "model": 64148,
      "replaces": 268,
-     "faces": 2508,
-     "anchors": 322,
+     "faces": 2477,
+     "anchors": 357,
      "groups": [
       4,
       5,
@@ -5027,17 +4884,16 @@
       42
      ],
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2508
+     "decoded_faces": 2477
     },
     {
      "kind": "femaleModel0",
      "model": 64149,
      "replaces": 432,
-     "faces": 2493,
-     "anchors": 294,
+     "faces": 2422,
+     "anchors": 330,
      "groups": [
       4,
       29,
@@ -5078,10 +4934,9 @@
       42
      ],
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2493
+     "decoded_faces": 2422
     }
    ],
    "item_def_patch": {
@@ -5119,19 +4974,18 @@
      "kind": "inventory",
      "model": 64150,
      "replaces": 38761,
-     "faces": 1557,
+     "faces": 1694,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1557
+     "decoded_faces": 1694
     },
     {
      "kind": "maleModel0",
      "model": 64151,
      "replaces": 38027,
-     "faces": 1912,
-     "anchors": 369,
+     "faces": 1995,
+     "anchors": 327,
      "groups": [
       1,
       2,
@@ -5145,17 +4999,16 @@
      ],
      "priorities": [
       5,
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1912
+     "decoded_faces": 1995
     },
     {
      "kind": "femaleModel0",
      "model": 64152,
      "replaces": 38164,
-     "faces": 1840,
-     "anchors": 507,
+     "faces": 2100,
+     "anchors": 613,
      "groups": [
       1,
       2,
@@ -5170,10 +5023,9 @@
       49
      ],
      "priorities": [
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1840
+     "decoded_faces": 2100
     }
    ],
    "item_def_patch": {
@@ -5211,19 +5063,18 @@
      "kind": "inventory",
      "model": 64153,
      "replaces": 38766,
-     "faces": 2262,
+     "faces": 2169,
      "priorities": [
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2262
+     "decoded_faces": 2169
     },
     {
      "kind": "maleModel0",
      "model": 64154,
      "replaces": 38101,
-     "faces": 2830,
-     "anchors": 565,
+     "faces": 2671,
+     "anchors": 496,
      "groups": [
       2,
       8,
@@ -5255,18 +5106,16 @@
      ],
      "priorities": [
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2830
+     "decoded_faces": 2671
     },
     {
      "kind": "femaleModel0",
      "model": 64155,
      "replaces": 38237,
-     "faces": 2772,
-     "anchors": 570,
+     "faces": 2654,
+     "anchors": 551,
      "groups": [
       8,
       17,
@@ -5298,11 +5147,9 @@
      ],
      "priorities": [
       3,
-      4,
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2772
+     "decoded_faces": 2654
     }
    ],
    "item_def_patch": {
@@ -5340,17 +5187,17 @@
      "kind": "inventory",
      "model": 64156,
      "replaces": 2832,
-     "faces": 1605,
+     "faces": 1629,
      "priorities": [
       0
      ],
-     "decoded_faces": 1605
+     "decoded_faces": 1629
     },
     {
      "kind": "maleModel0",
      "model": 64157,
      "replaces": 563,
-     "faces": 1637,
+     "faces": 1655,
      "anchors": 26,
      "groups": [
       27,
@@ -5362,7 +5209,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1637
+     "decoded_faces": 1655
     }
    ],
    "item_def_patch": {
@@ -5400,17 +5247,17 @@
      "kind": "inventory",
      "model": 64158,
      "replaces": 26386,
-     "faces": 1590,
+     "faces": 1520,
      "priorities": [
       1
      ],
-     "decoded_faces": 1590
+     "decoded_faces": 1520
     },
     {
      "kind": "maleModel0",
      "model": 64159,
      "replaces": 26279,
-     "faces": 1804,
+     "faces": 1734,
      "anchors": 214,
      "groups": [
       27,
@@ -5422,7 +5269,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1804
+     "decoded_faces": 1734
     }
    ],
    "item_def_patch": {
@@ -5460,18 +5307,18 @@
      "kind": "inventory",
      "model": 64160,
      "replaces": 32799,
-     "faces": 1703,
+     "faces": 1621,
      "priorities": [
       7
      ],
-     "decoded_faces": 1703
+     "decoded_faces": 1621
     },
     {
      "kind": "maleModel0",
      "model": 64161,
      "replaces": 32674,
-     "faces": 2094,
-     "anchors": 378,
+     "faces": 1953,
+     "anchors": 321,
      "groups": [
       50
      ],
@@ -5481,14 +5328,14 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2094
+     "decoded_faces": 1953
     },
     {
      "kind": "femaleModel0",
      "model": 64162,
      "replaces": 39561,
-     "faces": 2094,
-     "anchors": 378,
+     "faces": 1953,
+     "anchors": 321,
      "groups": [
       50
      ],
@@ -5498,7 +5345,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2094
+     "decoded_faces": 1953
     }
    ],
    "item_def_patch": {
@@ -5536,17 +5383,17 @@
      "kind": "inventory",
      "model": 64163,
      "replaces": 3902,
-     "faces": 1579,
+     "faces": 1705,
      "priorities": [
       10
      ],
-     "decoded_faces": 1579
+     "decoded_faces": 1705
     },
     {
      "kind": "maleModel0",
      "model": 64164,
      "replaces": 5197,
-     "faces": 1637,
+     "faces": 1764,
      "anchors": 58,
      "groups": [
       27,
@@ -5558,7 +5405,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1637
+     "decoded_faces": 1764
     }
    ],
    "item_def_patch": {
@@ -5596,18 +5443,18 @@
      "kind": "inventory",
      "model": 64165,
      "replaces": 19967,
-     "faces": 1741,
+     "faces": 1640,
      "priorities": [
       0
      ],
-     "decoded_faces": 1741
+     "decoded_faces": 1640
     },
     {
      "kind": "maleModel0",
      "model": 64166,
      "replaces": 19839,
-     "faces": 2207,
-     "anchors": 468,
+     "faces": 2000,
+     "anchors": 360,
      "groups": [
       50
      ],
@@ -5617,14 +5464,14 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2207
+     "decoded_faces": 2000
     },
     {
      "kind": "femaleModel0",
      "model": 64167,
      "replaces": 42611,
-     "faces": 2207,
-     "anchors": 468,
+     "faces": 2000,
+     "anchors": 360,
      "groups": [
       50
      ],
@@ -5634,7 +5481,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2207
+     "decoded_faces": 2000
     }
    ],
    "item_def_patch": {
@@ -5672,18 +5519,18 @@
      "kind": "inventory",
      "model": 64168,
      "replaces": 16876,
-     "faces": 1583,
+     "faces": 1554,
      "priorities": [
       10
      ],
-     "decoded_faces": 1583
+     "decoded_faces": 1554
     },
     {
      "kind": "maleModel0",
      "model": 64169,
      "replaces": 16846,
-     "faces": 1779,
-     "anchors": 197,
+     "faces": 1755,
+     "anchors": 203,
      "groups": [
       50
      ],
@@ -5693,14 +5540,14 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1779
+     "decoded_faces": 1755
     },
     {
      "kind": "femaleModel0",
      "model": 64170,
      "replaces": 42622,
-     "faces": 1779,
-     "anchors": 197,
+     "faces": 1755,
+     "anchors": 203,
      "groups": [
       50
      ],
@@ -5710,7 +5557,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1779
+     "decoded_faces": 1755
     }
    ],
    "item_def_patch": {
@@ -5748,19 +5595,18 @@
      "kind": "inventory",
      "model": 64171,
      "replaces": 2483,
-     "faces": 1450,
+     "faces": 1435,
      "priorities": [
-      9,
-      10
+      9
      ],
-     "decoded_faces": 1450
+     "decoded_faces": 1435
     },
     {
      "kind": "maleModel0",
      "model": 64172,
      "replaces": 202,
-     "faces": 2323,
-     "anchors": 546,
+     "faces": 2304,
+     "anchors": 568,
      "groups": [
       1
      ],
@@ -5768,17 +5614,16 @@
       1
      ],
      "priorities": [
-      9,
-      10
+      9
      ],
-     "decoded_faces": 2323
+     "decoded_faces": 2304
     },
     {
      "kind": "femaleModel0",
      "model": 64173,
      "replaces": 377,
-     "faces": 2211,
-     "anchors": 556,
+     "faces": 2213,
+     "anchors": 580,
      "groups": [
       1
      ],
@@ -5786,10 +5631,9 @@
       1
      ],
      "priorities": [
-      9,
-      10
+      9
      ],
-     "decoded_faces": 2211
+     "decoded_faces": 2213
     }
    ],
    "item_def_patch": {
@@ -5827,19 +5671,18 @@
      "kind": "inventory",
      "model": 64174,
      "replaces": 5043,
-     "faces": 2310,
+     "faces": 2177,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2310
+     "decoded_faces": 2177
     },
     {
      "kind": "maleModel0",
      "model": 64175,
      "replaces": 4952,
-     "faces": 1311,
-     "anchors": 347,
+     "faces": 1543,
+     "anchors": 386,
      "groups": [
       4,
       17,
@@ -5867,17 +5710,16 @@
       92
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1311
+     "decoded_faces": 1543
     },
     {
      "kind": "maleModel1",
      "model": 64176,
      "replaces": 5028,
-     "faces": 1548,
-     "anchors": 147,
+     "faces": 1148,
+     "anchors": 106,
      "groups": [
       2,
       4,
@@ -5897,20 +5739,18 @@
      ],
      "priorities": [
       0,
-      1,
       3,
       4,
-      5,
-      6
+      5
      ],
-     "decoded_faces": 1548
+     "decoded_faces": 1148
     },
     {
      "kind": "femaleModel0",
      "model": 64177,
      "replaces": 5029,
-     "faces": 1087,
-     "anchors": 353,
+     "faces": 1420,
+     "anchors": 432,
      "groups": [
       17,
       18,
@@ -5937,16 +5777,15 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1087
+     "decoded_faces": 1420
     },
     {
      "kind": "femaleModel1",
      "model": 64178,
      "replaces": 5035,
-     "faces": 1627,
+     "faces": 1216,
      "anchors": 80,
      "groups": [
       8,
@@ -5963,11 +5802,9 @@
      ],
      "priorities": [
       3,
-      4,
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1627
+     "decoded_faces": 1216
     }
    ],
    "item_def_patch": {
@@ -6005,19 +5842,18 @@
      "kind": "inventory",
      "model": 64179,
      "replaces": 5042,
-     "faces": 2012,
+     "faces": 1923,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 2012
+     "decoded_faces": 1923
     },
     {
      "kind": "maleModel0",
      "model": 64180,
      "replaces": 4844,
-     "faces": 2843,
-     "anchors": 769,
+     "faces": 2601,
+     "anchors": 652,
      "groups": [
       4,
       5,
@@ -6067,17 +5903,16 @@
      ],
      "priorities": [
       0,
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2843
+     "decoded_faces": 2601
     },
     {
      "kind": "femaleModel0",
      "model": 64181,
      "replaces": 5034,
-     "faces": 2821,
-     "anchors": 797,
+     "faces": 2623,
+     "anchors": 702,
      "groups": [
       4,
       29,
@@ -6125,10 +5960,9 @@
      ],
      "priorities": [
       0,
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2821
+     "decoded_faces": 2623
     }
    ],
    "item_def_patch": {
@@ -6166,19 +6000,18 @@
      "kind": "inventory",
      "model": 64182,
      "replaces": 5419,
-     "faces": 1531,
+     "faces": 1522,
      "priorities": [
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1531
+     "decoded_faces": 1522
     },
     {
      "kind": "maleModel0",
      "model": 64183,
      "replaces": 5430,
-     "faces": 1739,
-     "anchors": 196,
+     "faces": 1766,
+     "anchors": 241,
      "groups": [
       1,
       2,
@@ -6194,17 +6027,16 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1739
+     "decoded_faces": 1766
     },
     {
      "kind": "femaleModel0",
      "model": 64184,
      "replaces": 5435,
-     "faces": 1755,
-     "anchors": 240,
+     "faces": 1841,
+     "anchors": 284,
      "groups": [
       1,
       2,
@@ -6220,10 +6052,9 @@
      ],
      "priorities": [
       6,
-      7,
-      8
+      7
      ],
-     "decoded_faces": 1755
+     "decoded_faces": 1841
     }
    ],
    "item_def_patch": {
@@ -6261,18 +6092,17 @@
      "kind": "inventory",
      "model": 64185,
      "replaces": 6578,
-     "faces": 2177,
+     "faces": 2050,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2177
+     "decoded_faces": 2050
     },
     {
      "kind": "maleModel0",
      "model": 64186,
      "replaces": 6669,
-     "faces": 2180,
+     "faces": 1942,
      "anchors": 382,
      "groups": [
       2,
@@ -6294,17 +6124,16 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2180
+     "decoded_faces": 1942
     },
     {
      "kind": "maleModel1",
      "model": 64187,
      "replaces": 35817,
-     "faces": 757,
-     "anchors": 274,
+     "faces": 834,
+     "anchors": 225,
      "groups": [
       17,
       18,
@@ -6327,16 +6156,15 @@
       25
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 757
+     "decoded_faces": 834
     },
     {
      "kind": "femaleModel0",
      "model": 64188,
      "replaces": 6697,
-     "faces": 2397,
+     "faces": 2217,
      "anchors": 407,
      "groups": [
       8,
@@ -6345,6 +6173,7 @@
       22,
       24,
       59,
+      73,
       74,
       94
      ],
@@ -6356,17 +6185,16 @@
      "priorities": [
       2,
       3,
-      4,
-      5
+      4
      ],
-     "decoded_faces": 2397
+     "decoded_faces": 2217
     },
     {
      "kind": "femaleModel1",
      "model": 64189,
      "replaces": 35819,
-     "faces": 325,
-     "anchors": 123,
+     "faces": 375,
+     "anchors": 124,
      "groups": [
       17,
       18,
@@ -6389,10 +6217,9 @@
       25
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 325
+     "decoded_faces": 375
     }
    ],
    "item_def_patch": {
@@ -6430,19 +6257,18 @@
      "kind": "inventory",
      "model": 64190,
      "replaces": 6577,
-     "faces": 2141,
+     "faces": 1993,
      "priorities": [
-      2,
-      3
+      2
      ],
-     "decoded_faces": 2141
+     "decoded_faces": 1993
     },
     {
      "kind": "maleModel0",
      "model": 64191,
      "replaces": 6659,
-     "faces": 3013,
-     "anchors": 796,
+     "faces": 2741,
+     "anchors": 686,
      "groups": [
       4,
       5,
@@ -6474,72 +6300,6 @@
      ],
      "template_groups": [
       5,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      40,
-      41,
-      42,
-      43,
-      44,
-      76,
-      77,
-      79,
-      80,
-      81,
-      82,
-      83
-     ],
-     "priorities": [
-      0,
-      1,
-      2,
-      3
-     ],
-     "decoded_faces": 3013
-    },
-    {
-     "kind": "femaleModel0",
-     "model": 64192,
-     "replaces": 6691,
-     "faces": 2750,
-     "anchors": 697,
-     "groups": [
-      4,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      40,
-      41,
-      42,
-      43,
-      44,
-      76,
-      77,
-      79,
-      80,
-      81,
-      82,
-      83,
-      166,
-      167,
-      168
-     ],
-     "template_groups": [
       29,
       30,
       31,
@@ -6568,7 +6328,71 @@
       1,
       2
      ],
-     "decoded_faces": 2750
+     "decoded_faces": 2741
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64192,
+     "replaces": 6691,
+     "faces": 2518,
+     "anchors": 572,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83,
+      166,
+      167,
+      168
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83
+     ],
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2518
     }
    ],
    "item_def_patch": {
@@ -6606,19 +6430,18 @@
      "kind": "inventory",
      "model": 64193,
      "replaces": 32794,
-     "faces": 818,
+     "faces": 1764,
      "priorities": [
-      8,
-      9
+      8
      ],
-     "decoded_faces": 818
+     "decoded_faces": 1764
     },
     {
      "kind": "maleModel0",
      "model": 64194,
      "replaces": 32655,
-     "faces": 976,
-     "anchors": 125,
+     "faces": 2167,
+     "anchors": 312,
      "groups": [
       1,
       3,
@@ -6634,17 +6457,16 @@
       0,
       6,
       8,
-      9,
-      10
+      9
      ],
-     "decoded_faces": 976
+     "decoded_faces": 2167
     },
     {
      "kind": "femaleModel0",
      "model": 64195,
      "replaces": 32663,
-     "faces": 913,
-     "anchors": 62,
+     "faces": 2119,
+     "anchors": 264,
      "groups": [
       1,
       3,
@@ -6659,12 +6481,10 @@
      "priorities": [
       0,
       6,
-      7,
       8,
-      9,
-      10
+      9
      ],
-     "decoded_faces": 913
+     "decoded_faces": 2119
     }
    ],
    "item_def_patch": {
@@ -6702,19 +6522,18 @@
      "kind": "inventory",
      "model": 64196,
      "replaces": 32790,
-     "faces": 2202,
+     "faces": 2086,
      "priorities": [
-      3,
-      4
+      3
      ],
-     "decoded_faces": 2202
+     "decoded_faces": 2086
     },
     {
      "kind": "maleModel0",
      "model": 64197,
      "replaces": 32657,
-     "faces": 835,
-     "anchors": 204,
+     "faces": 859,
+     "anchors": 210,
      "groups": [
       4,
       17,
@@ -6742,16 +6561,15 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 835
+     "decoded_faces": 859
     },
     {
      "kind": "maleModel1",
      "model": 64198,
      "replaces": 32658,
-     "faces": 1721,
+     "faces": 1587,
      "anchors": 150,
      "groups": [
       2,
@@ -6776,17 +6594,16 @@
       3,
       4,
       5,
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1721
+     "decoded_faces": 1587
     },
     {
      "kind": "femaleModel0",
      "model": 64199,
      "replaces": 32664,
-     "faces": 845,
-     "anchors": 240,
+     "faces": 933,
+     "anchors": 270,
      "groups": [
       17,
       18,
@@ -6813,16 +6630,15 @@
       26
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 845
+     "decoded_faces": 933
     },
     {
      "kind": "femaleModel1",
      "model": 64200,
      "replaces": 32665,
-     "faces": 1625,
+     "faces": 1502,
      "anchors": 144,
      "groups": [
       8,
@@ -6841,10 +6657,9 @@
       3,
       4,
       5,
-      6,
-      7
+      6
      ],
-     "decoded_faces": 1625
+     "decoded_faces": 1502
     }
    ],
    "item_def_patch": {
@@ -6882,19 +6697,18 @@
      "kind": "inventory",
      "model": 64201,
      "replaces": 32787,
-     "faces": 2201,
+     "faces": 2072,
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2201
+     "decoded_faces": 2072
     },
     {
      "kind": "maleModel0",
      "model": 64202,
      "replaces": 32653,
-     "faces": 2560,
-     "anchors": 359,
+     "faces": 2444,
+     "anchors": 372,
      "groups": [
       29,
       30,
@@ -6937,17 +6751,16 @@
      ],
      "priorities": [
       1,
-      2,
-      3
+      2
      ],
-     "decoded_faces": 2560
+     "decoded_faces": 2444
     },
     {
      "kind": "femaleModel0",
      "model": 64203,
      "replaces": 32662,
-     "faces": 2474,
-     "anchors": 308,
+     "faces": 2353,
+     "anchors": 302,
      "groups": [
       4,
       29,
@@ -6991,10 +6804,9 @@
      ],
      "priorities": [
       1,
-      2,
-      3
+      2
      ],
-     "decoded_faces": 2474
+     "decoded_faces": 2353
     }
    ],
    "item_def_patch": {
@@ -7032,18 +6844,17 @@
      "kind": "inventory",
      "model": 64204,
      "replaces": 2810,
-     "faces": 1362,
+     "faces": 1360,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1362
+     "decoded_faces": 1360
     },
     {
      "kind": "maleModel0",
      "model": 64205,
      "replaces": 534,
-     "faces": 1835,
+     "faces": 1715,
      "anchors": 0,
      "groups": [
       50
@@ -7052,10 +6863,9 @@
       50
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1835
+     "decoded_faces": 1715
     },
     {
      "kind": "maleModel1",
@@ -7067,7 +6877,7 @@
      "kind": "femaleModel0",
      "model": 64206,
      "replaces": 39602,
-     "faces": 1820,
+     "faces": 1718,
      "anchors": 0,
      "groups": [
       50
@@ -7076,10 +6886,9 @@
       50
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1820
+     "decoded_faces": 1718
     },
     {
      "kind": "femaleModel1",
@@ -7123,19 +6932,18 @@
      "kind": "inventory",
      "model": 64207,
      "replaces": 10565,
-     "faces": 1784,
+     "faces": 1686,
      "priorities": [
-      0,
-      1
+      0
      ],
-     "decoded_faces": 1784
+     "decoded_faces": 1686
     },
     {
      "kind": "maleModel0",
      "model": 64208,
      "replaces": 10702,
-     "faces": 3000,
-     "anchors": 1224,
+     "faces": 2859,
+     "anchors": 1186,
      "groups": [
       50
      ],
@@ -7143,17 +6951,16 @@
       50
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 3000
+     "decoded_faces": 2859
     },
     {
      "kind": "femaleModel0",
      "model": 64209,
      "replaces": 39616,
-     "faces": 3182,
-     "anchors": 1422,
+     "faces": 2996,
+     "anchors": 1376,
      "groups": [
       50
      ],
@@ -7161,10 +6968,9 @@
       50
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 3182
+     "decoded_faces": 2996
     }
    ],
    "item_def_patch": {
@@ -7202,18 +7008,17 @@
      "kind": "inventory",
      "model": 64210,
      "replaces": 2810,
-     "faces": 1577,
+     "faces": 1512,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1577
+     "decoded_faces": 1512
     },
     {
      "kind": "maleModel0",
      "model": 64211,
      "replaces": 534,
-     "faces": 1943,
+     "faces": 1857,
      "anchors": 0,
      "groups": [
       50
@@ -7222,10 +7027,9 @@
       50
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1943
+     "decoded_faces": 1857
     },
     {
      "kind": "maleModel1",
@@ -7237,7 +7041,7 @@
      "kind": "femaleModel0",
      "model": 64212,
      "replaces": 39602,
-     "faces": 1927,
+     "faces": 1858,
      "anchors": 0,
      "groups": [
       50
@@ -7246,10 +7050,9 @@
       50
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1927
+     "decoded_faces": 1858
     },
     {
      "kind": "femaleModel1",
@@ -7293,18 +7096,18 @@
      "kind": "inventory",
      "model": 64213,
      "replaces": 5412,
-     "faces": 1754,
+     "faces": 1717,
      "priorities": [
       10
      ],
-     "decoded_faces": 1754
+     "decoded_faces": 1717
     },
     {
      "kind": "maleModel0",
      "model": 64214,
      "replaces": 5409,
-     "faces": 2360,
-     "anchors": 546,
+     "faces": 2284,
+     "anchors": 508,
      "groups": [
       50,
       51,
@@ -7331,7 +7134,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2360
+     "decoded_faces": 2284
     }
    ],
    "item_def_patch": {
@@ -7369,19 +7172,18 @@
      "kind": "inventory",
      "model": 64215,
      "replaces": 2834,
-     "faces": 1430,
+     "faces": 1378,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 1430
+     "decoded_faces": 1378
     },
     {
      "kind": "maleModel0",
      "model": 64216,
      "replaces": 564,
-     "faces": 6004,
-     "anchors": 4539,
+     "faces": 5933,
+     "anchors": 4522,
      "groups": [
       50
      ],
@@ -7389,10 +7191,9 @@
       50
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 6004
+     "decoded_faces": 5933
     }
    ],
    "item_def_patch": {
@@ -7430,18 +7231,18 @@
      "kind": "inventory",
      "model": 64217,
      "replaces": 6033,
-     "faces": 1585,
+     "faces": 1522,
      "priorities": [
       10
      ],
-     "decoded_faces": 1585
+     "decoded_faces": 1522
     },
     {
      "kind": "maleModel0",
      "model": 64218,
      "replaces": 6031,
-     "faces": 2627,
-     "anchors": 1041,
+     "faces": 2452,
+     "anchors": 929,
      "groups": [
       50
      ],
@@ -7451,7 +7252,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2627
+     "decoded_faces": 2452
     }
    ],
    "item_def_patch": {
@@ -7489,18 +7290,18 @@
      "kind": "inventory",
      "model": 64219,
      "replaces": 35739,
-     "faces": 1512,
+     "faces": 1429,
      "priorities": [
       10
      ],
-     "decoded_faces": 1512
+     "decoded_faces": 1429
     },
     {
      "kind": "maleModel0",
      "model": 64220,
      "replaces": 35374,
-     "faces": 2194,
-     "anchors": 682,
+     "faces": 2037,
+     "anchors": 608,
      "groups": [
       50
      ],
@@ -7510,14 +7311,14 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2194
+     "decoded_faces": 2037
     },
     {
      "kind": "femaleModel0",
      "model": 64221,
      "replaces": 35369,
-     "faces": 2195,
-     "anchors": 683,
+     "faces": 2037,
+     "anchors": 609,
      "groups": [
       50
      ],
@@ -7527,7 +7328,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 2195
+     "decoded_faces": 2037
     }
    ],
    "item_def_patch": {
@@ -7565,18 +7366,18 @@
      "kind": "inventory",
      "model": 64222,
      "replaces": 46468,
-     "faces": 1510,
+     "faces": 1547,
      "priorities": [
       10
      ],
-     "decoded_faces": 1510
+     "decoded_faces": 1547
     },
     {
      "kind": "maleModel0",
      "model": 64223,
      "replaces": 45278,
-     "faces": 3751,
-     "anchors": 2241,
+     "faces": 3772,
+     "anchors": 2226,
      "groups": [
       50
      ],
@@ -7586,14 +7387,14 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 3751
+     "decoded_faces": 3772
     },
     {
      "kind": "femaleModel0",
      "model": 64224,
      "replaces": 45285,
-     "faces": 3743,
-     "anchors": 2233,
+     "faces": 3764,
+     "anchors": 2218,
      "groups": [
       50
      ],
@@ -7603,7 +7404,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 3743
+     "decoded_faces": 3764
     }
    ],
    "item_def_patch": {
@@ -7641,17 +7442,17 @@
      "kind": "inventory",
      "model": 64225,
      "replaces": 2464,
-     "faces": 1521,
+     "faces": 1504,
      "priorities": [
       10
      ],
-     "decoded_faces": 1521
+     "decoded_faces": 1504
     },
     {
      "kind": "maleModel0",
      "model": 64226,
      "replaces": 502,
-     "faces": 1570,
+     "faces": 1540,
      "anchors": 35,
      "groups": [
       27,
@@ -7663,7 +7464,7 @@
      "priorities": [
       10
      ],
-     "decoded_faces": 1570
+     "decoded_faces": 1540
     }
    ],
    "item_def_patch": {
@@ -7701,17 +7502,17 @@
      "kind": "inventory",
      "model": 64227,
      "replaces": 2796,
-     "faces": 868,
+     "faces": 878,
      "priorities": [
       0
      ],
-     "decoded_faces": 868
+     "decoded_faces": 878
     },
     {
      "kind": "maleModel0",
      "model": 64228,
      "replaces": 290,
-     "faces": 890,
+     "faces": 905,
      "anchors": 32,
      "groups": [
       2,
@@ -7725,13 +7526,13 @@
      "priorities": [
       5
      ],
-     "decoded_faces": 890
+     "decoded_faces": 905
     },
     {
      "kind": "femaleModel0",
      "model": 64229,
      "replaces": 454,
-     "faces": 921,
+     "faces": 908,
      "anchors": 32,
      "groups": [
       8,
@@ -7743,7 +7544,7 @@
      "priorities": [
       5
      ],
-     "decoded_faces": 921
+     "decoded_faces": 908
     }
    ],
    "item_def_patch": {
@@ -7781,17 +7582,17 @@
      "kind": "inventory",
      "model": 64230,
      "replaces": 2796,
-     "faces": 918,
+     "faces": 903,
      "priorities": [
       0
      ],
-     "decoded_faces": 918
+     "decoded_faces": 903
     },
     {
      "kind": "maleModel0",
      "model": 64231,
      "replaces": 290,
-     "faces": 931,
+     "faces": 914,
      "anchors": 32,
      "groups": [
       2,
@@ -7805,13 +7606,13 @@
      "priorities": [
       5
      ],
-     "decoded_faces": 931
+     "decoded_faces": 914
     },
     {
      "kind": "femaleModel0",
      "model": 64232,
      "replaces": 454,
-     "faces": 977,
+     "faces": 973,
      "anchors": 32,
      "groups": [
       8,
@@ -7823,7 +7624,7 @@
      "priorities": [
       5
      ],
-     "decoded_faces": 977
+     "decoded_faces": 973
     }
    ],
    "item_def_patch": {
@@ -7861,17 +7662,17 @@
      "kind": "inventory",
      "model": 64233,
      "replaces": 2796,
-     "faces": 758,
+     "faces": 770,
      "priorities": [
       0
      ],
-     "decoded_faces": 758
+     "decoded_faces": 770
     },
     {
      "kind": "maleModel0",
      "model": 64234,
      "replaces": 290,
-     "faces": 785,
+     "faces": 788,
      "anchors": 32,
      "groups": [
       2,
@@ -7885,13 +7686,13 @@
      "priorities": [
       5
      ],
-     "decoded_faces": 785
+     "decoded_faces": 788
     },
     {
      "kind": "femaleModel0",
      "model": 64235,
      "replaces": 454,
-     "faces": 818,
+     "faces": 821,
      "anchors": 32,
      "groups": [
       8,
@@ -7903,7 +7704,7 @@
      "priorities": [
       5
      ],
-     "decoded_faces": 818
+     "decoded_faces": 821
     }
    ],
    "item_def_patch": {
@@ -7941,17 +7742,17 @@
      "kind": "inventory",
      "model": 64236,
      "replaces": 9633,
-     "faces": 939,
+     "faces": 864,
      "priorities": [
       4
      ],
-     "decoded_faces": 939
+     "decoded_faces": 864
     },
     {
      "kind": "maleModel0",
      "model": 64237,
      "replaces": 9642,
-     "faces": 962,
+     "faces": 879,
      "anchors": 28,
      "groups": [
       2,
@@ -7966,13 +7767,13 @@
       4,
       5
      ],
-     "decoded_faces": 962
+     "decoded_faces": 879
     },
     {
      "kind": "femaleModel0",
      "model": 64238,
      "replaces": 9644,
-     "faces": 988,
+     "faces": 994,
      "anchors": 24,
      "groups": [
       8,
@@ -7984,7 +7785,7 @@
      "priorities": [
       4
      ],
-     "decoded_faces": 988
+     "decoded_faces": 994
     }
    ],
    "item_def_patch": {
@@ -8022,19 +7823,18 @@
      "kind": "inventory",
      "model": 64239,
      "replaces": 9632,
-     "faces": 1466,
+     "faces": 2129,
      "priorities": [
-      4,
-      5
+      4
      ],
-     "decoded_faces": 1466
+     "decoded_faces": 2129
     },
     {
      "kind": "maleModel0",
      "model": 64240,
      "replaces": 9639,
-     "faces": 1700,
-     "anchors": 209,
+     "faces": 2521,
+     "anchors": 376,
      "groups": [
       2,
       8,
@@ -8060,19 +7860,17 @@
      ],
      "priorities": [
       1,
-      2,
       4,
-      5,
-      6
+      5
      ],
-     "decoded_faces": 1700
+     "decoded_faces": 2521
     },
     {
      "kind": "femaleModel0",
      "model": 64241,
      "replaces": 9641,
-     "faces": 1727,
-     "anchors": 227,
+     "faces": 2776,
+     "anchors": 643,
      "groups": [
       8,
       9,
@@ -8098,10 +7896,9 @@
       1,
       2,
       4,
-      5,
-      6
+      5
      ],
-     "decoded_faces": 1727
+     "decoded_faces": 2776
     }
    ],
    "item_def_patch": {
@@ -8139,19 +7936,18 @@
      "kind": "inventory",
      "model": 64242,
      "replaces": 33144,
-     "faces": 2228,
+     "faces": 2112,
      "priorities": [
-      1,
-      2
+      1
      ],
-     "decoded_faces": 2228
+     "decoded_faces": 2112
     },
     {
      "kind": "maleModel0",
      "model": 64243,
      "replaces": 33103,
-     "faces": 6048,
-     "anchors": 3791,
+     "faces": 5256,
+     "anchors": 3086,
      "groups": [
       8,
       9,
@@ -8177,18 +7973,16 @@
      ],
      "priorities": [
       0,
-      1,
-      5,
-      6
+      5
      ],
-     "decoded_faces": 6048
+     "decoded_faces": 5256
     },
     {
      "kind": "femaleModel0",
      "model": 64244,
      "replaces": 33111,
-     "faces": 5813,
-     "anchors": 3569,
+     "faces": 5024,
+     "anchors": 2873,
      "groups": [
       8,
       9,
@@ -8214,11 +8008,9 @@
      ],
      "priorities": [
       0,
-      1,
-      5,
-      6
+      5
      ],
-     "decoded_faces": 5813
+     "decoded_faces": 5024
     }
    ],
    "item_def_patch": {
@@ -8256,19 +8048,18 @@
      "kind": "inventory",
      "model": 64245,
      "replaces": 26457,
-     "faces": 2137,
+     "faces": 2036,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2137
+     "decoded_faces": 2036
     },
     {
      "kind": "maleModel0",
      "model": 64246,
      "replaces": 26423,
-     "faces": 2297,
-     "anchors": 155,
+     "faces": 2219,
+     "anchors": 175,
      "groups": [
       161
      ],
@@ -8276,10 +8067,9 @@
       161
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2297
+     "decoded_faces": 2219
     }
    ],
    "item_def_patch": {
@@ -8317,18 +8107,17 @@
      "kind": "inventory",
      "model": 64247,
      "replaces": 5198,
-     "faces": 2183,
+     "faces": 2051,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2183
+     "decoded_faces": 2051
     },
     {
      "kind": "maleModel0",
      "model": 64248,
      "replaces": 5196,
-     "faces": 2287,
+     "faces": 2138,
      "anchors": 82,
      "groups": [
       28,
@@ -8338,10 +8127,9 @@
       28
      ],
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2287
+     "decoded_faces": 2138
     }
    ],
    "item_def_patch": {
@@ -8379,18 +8167,17 @@
      "kind": "inventory",
      "model": 64249,
      "replaces": 2720,
-     "faces": 2199,
+     "faces": 2084,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2199
+     "decoded_faces": 2084
     },
     {
      "kind": "maleModel0",
      "model": 64250,
      "replaces": 541,
-     "faces": 2242,
+     "faces": 2137,
      "anchors": 36,
      "groups": [
       28,
@@ -8403,7 +8190,7 @@
       10,
       11
      ],
-     "decoded_faces": 2242
+     "decoded_faces": 2137
     }
    ],
    "item_def_patch": {
@@ -8441,17 +8228,17 @@
      "kind": "inventory",
      "model": 64251,
      "replaces": 2339,
-     "faces": 2119,
+     "faces": 2064,
      "priorities": [
       11
      ],
-     "decoded_faces": 2119
+     "decoded_faces": 2064
     },
     {
      "kind": "maleModel0",
      "model": 64252,
      "replaces": 486,
-     "faces": 2178,
+     "faces": 2123,
      "anchors": 56,
      "groups": [
       28,
@@ -8464,7 +8251,7 @@
       10,
       11
      ],
-     "decoded_faces": 2178
+     "decoded_faces": 2123
     }
    ],
    "item_def_patch": {
@@ -8502,17 +8289,17 @@
      "kind": "inventory",
      "model": 64253,
      "replaces": 2339,
-     "faces": 2041,
+     "faces": 2071,
      "priorities": [
       11
      ],
-     "decoded_faces": 2041
+     "decoded_faces": 2071
     },
     {
      "kind": "maleModel0",
      "model": 64254,
      "replaces": 486,
-     "faces": 2106,
+     "faces": 2131,
      "anchors": 56,
      "groups": [
       28,
@@ -8525,7 +8312,7 @@
       10,
       11
      ],
-     "decoded_faces": 2106
+     "decoded_faces": 2131
     }
    ],
    "item_def_patch": {
@@ -8563,18 +8350,17 @@
      "kind": "inventory",
      "model": 64255,
      "replaces": 9354,
-     "faces": 2085,
+     "faces": 2005,
      "priorities": [
-      10,
-      11
+      10
      ],
-     "decoded_faces": 2085
+     "decoded_faces": 2005
     },
     {
      "kind": "maleModel0",
      "model": 64256,
      "replaces": 9347,
-     "faces": 2168,
+     "faces": 2086,
      "anchors": 74,
      "groups": [
       28,
@@ -8587,7 +8373,7 @@
       10,
       11
      ],
-     "decoded_faces": 2168
+     "decoded_faces": 2086
     }
    ],
    "item_def_patch": {

@@ -43,13 +43,13 @@ Both are in RS units (a player is about 200 tall). Current run (rev 241):
 | | Swaps (`out_swap/`) | New items (`out/`) |
 |---|---|---|
 | Items checked | 84 | 84 |
-| Body drift, median / max | **0.00** / 6.1 | **0.00** / 6.1 |
-| Items within 2 units | 76 | 75 |
-| Follow, items within 2 units | 80 | 79 |
+| Body drift, median / max | **0.00** / 4.1 | **0.00** / 4.1 |
+| Items within 2 units | 74 | 73 |
+| Follow, items within 2 units | 82 | 81 |
 | Icon silhouette overlap with the template, median | 0.67 | 0.67 |
 
 - **Body armour and weapons are exact.** Every platebody, helm, weapon, shield and cape lands at 0–1 units: integer rounding in the client's own maths.
-- **Leg armour and skirts drift up to 6 units.** Their skeleton classes leave no free twin label, so our vertices have to share labels with the original's rotation centres.
+- **Leg armour and skirts drift up to 4 units.** Their skeleton classes leave no free twin label, so our vertices have to share labels with the original's rotation centres.
 - **Icon overlap stays below 1 by design.** The redesigns have different shapes from their templates. The footprint (largest side of the icon) is matched.
 - `out_swap/VERIFY_SAMPLES.png` shows six slots side by side.
 
