@@ -144,8 +144,15 @@ public sealed class MainViewModel : ViewModelBase
 
     private void Validate()
     {
-        Validation.SetPlaceholder("Validation UI — coming in Task 8.");
-        StatusText = "Validate — coming in Task 8.";
+        if (CurrentProject is null)
+            return;
+
+        Validation.Run(CurrentProject);
+
+        StatusText = Validation.ErrorCount > 0
+            ? $"Validation finished with {Validation.ErrorCount} error(s). See Validation tab."
+            : "Validation finished. See Validation tab for details.";
+        OnPropertyChanged(nameof(ProjectDisplayName));
     }
 
     private void ExportStaging()

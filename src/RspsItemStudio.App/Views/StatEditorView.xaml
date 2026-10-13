@@ -2,15 +2,147 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="8">
-        <StackPanel>
-            <TextBlock Text="Item stats editor" FontWeight="SemiBold" Margin="0,0,0,8" />
-            <TextBlock Text="Two-way stat editing arrives in Task 8."
-                       Foreground="#71717A"
-                       TextWrapping="Wrap" />
-            <TextBlock Margin="0,12,0,0">
-                <Run Text="Current name: " />
-                <Run Text="{Binding DisplayName, Mode=OneWay, TargetNullValue=(none)}" FontWeight="SemiBold" />
-            </TextBlock>
+        <StackPanel IsEnabled="{Binding HasDocument}">
+            <TextBlock Text="Item stats"
+                       FontWeight="SemiBold"
+                       Margin="0,0,0,8" />
+            <GroupBox Header="Identity" Margin="0,0,0,8" Padding="8">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Name" VerticalAlignment="Center" Margin="0,0,8,6" />
+                    <TextBox Grid.Row="0" Grid.Column="1" Margin="0,0,0,6"
+                             Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Examine" VerticalAlignment="Top" Margin="0,0,8,6" />
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="0,0,0,6" AcceptsReturn="True"
+                             TextWrapping="Wrap" MinHeight="48"
+                             Text="{Binding Examine, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Slot" VerticalAlignment="Center" Margin="0,0,8,6" />
+                    <ComboBox Grid.Row="2" Grid.Column="1" Margin="0,0,0,6"
+                              ItemsSource="{Binding SlotOptions}"
+                              SelectedItem="{Binding Slot}" />
+                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Weight (kg)" VerticalAlignment="Center" Margin="0,0,8,0" />
+                    <TextBox Grid.Row="3" Grid.Column="1"
+                             Text="{Binding WeightKg, UpdateSourceTrigger=PropertyChanged}" />
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Header="Flags" Margin="0,0,0,8" Padding="8" DataContext="{Binding Flags}">
+                <WrapPanel>
+                    <CheckBox Content="Tradeable" Margin="0,0,12,4" IsChecked="{Binding Tradeable}" />
+                    <CheckBox Content="Stackable" Margin="0,0,12,4" IsChecked="{Binding Stackable}" />
+                    <CheckBox Content="Noted" Margin="0,0,12,4" IsChecked="{Binding Noted}" />
+                    <CheckBox Content="Members" Margin="0,0,12,4" IsChecked="{Binding Members}" />
+                    <CheckBox Content="Equipable" Margin="0,0,12,4" IsChecked="{Binding Equipable}" />
+                </WrapPanel>
+            </GroupBox>
+
+            <GroupBox Header="Offensive" Margin="0,0,0,8" Padding="8" DataContext="{Binding Bonuses}">
+                <UniformGrid Columns="2">
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Attack stab" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding AttackStab, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Attack slash" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding AttackSlash, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Attack crush" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding AttackCrush, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Attack magic" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding AttackMagic, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Attack ranged" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding AttackRanged, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Melee strength" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding MeleeStrength, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Ranged strength" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding RangedStrength, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Magic damage" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding MagicDamage, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                </UniformGrid>
+            </GroupBox>
+
+            <GroupBox Header="Defensive" Margin="0,0,0,8" Padding="8" DataContext="{Binding Bonuses}">
+                <UniformGrid Columns="2">
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Defence stab" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding DefenceStab, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Defence slash" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding DefenceSlash, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Defence crush" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding DefenceCrush, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Defence magic" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding DefenceMagic, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Defence ranged" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding DefenceRanged, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Prayer bonus" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Prayer, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                </UniformGrid>
+            </GroupBox>
+
+            <GroupBox Header="Other" Padding="8" DataContext="{Binding Requirements}">
+                <UniformGrid Columns="2">
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Req. attack" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Attack, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Req. strength" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Strength, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Req. defence" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Defence, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Req. hitpoints" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Hitpoints, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Req. ranged" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Ranged, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="8,0,0,4">
+                        <TextBlock Text="Req. prayer" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Prayer, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel Margin="0,0,8,4">
+                        <TextBlock Text="Req. magic" FontSize="11" Foreground="#71717A" />
+                        <TextBox Text="{Binding Magic, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                </UniformGrid>
+            </GroupBox>
         </StackPanel>
     </ScrollViewer>
 </UserControl>
