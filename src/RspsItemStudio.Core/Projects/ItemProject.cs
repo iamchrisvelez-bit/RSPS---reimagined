@@ -30,6 +30,9 @@ public sealed class ItemProject
         WriteJson(ItemProjectPaths.ExportPresets, ExportPresets);
     }
 
+    public void SaveValidationReport<T>(T report) =>
+        WriteJson(ItemProjectPaths.ValidationReport, report);
+
     private void WriteJson<T>(string relativePath, T value)
     {
         var fullPath = Path.Combine(RootDirectory, relativePath);
