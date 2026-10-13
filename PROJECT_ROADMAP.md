@@ -6,13 +6,13 @@ Living milestone tracker. Update status as work lands.
 
 **Milestone 1 — Foundation:** in progress
 
-Next step: application shell and project workspace (create/open/save).
+Next step: stat editor + validation report UI (Task 8).
 
 ## Milestones
 
 ### Milestone 1 — Foundation (in progress)
 
-1. Application shell and project workspace (create/open/save)
+1. Application shell and project workspace (create/open/save) — **done** (`RspsItemStudio.App` WPF shell)
 2. 3D viewport with load, camera, lighting, inspection
 3. Import at least OBJ into studio mesh
 4. Item project structure on disk (model, texture, color, animation, effect, stats sections)

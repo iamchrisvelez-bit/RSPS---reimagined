@@ -42,3 +42,12 @@ Track and resolve before claiming full export compatibility:
 4. **Whether male/female equip models and inventory models** are mandatory for all item types in their content pipeline.
 
 Until these are resolved, adapters expose interfaces and partial implementations only. Update this document as verification completes.
+
+## Build platform notes
+
+| Component | Linux (CI / cloud agents) | Windows |
+|-----------|---------------------------|---------|
+| Core, Definitions, Modeling, Validation, Adapters, Tests | `dotnet test` | Same |
+| `RspsItemStudio.App` (WPF, `net8.0-windows`) | **Not buildable** — SDK lacks `Microsoft.NET.Sdk.WindowsDesktop` | `dotnet build src/RspsItemStudio.App/RspsItemStudio.App.csproj` and `dotnet run --project src/RspsItemStudio.App` |
+
+The WPF shell sources are maintained in-repo; verify the app on a Windows machine with the .NET 8 SDK (desktop workload included by default on Windows).

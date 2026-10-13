@@ -1,0 +1,16 @@
+<UserControl x:Class="RspsItemStudio.App.Views.StatEditorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="8">
+        <StackPanel>
+            <TextBlock Text="Item stats editor" FontWeight="SemiBold" Margin="0,0,0,8" />
+            <TextBlock Text="Two-way stat editing arrives in Task 8."
+                       Foreground="#71717A"
+                       TextWrapping="Wrap" />
+            <TextBlock Margin="0,12,0,0">
+                <Run Text="Current name: " />
+                <Run Text="{Binding DisplayName, Mode=OneWay, TargetNullValue=(none)}" FontWeight="SemiBold" />
+            </TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

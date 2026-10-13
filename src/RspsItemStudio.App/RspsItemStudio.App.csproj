@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <RootNamespace>RspsItemStudio.App</RootNamespace>
+    <AssemblyName>RspsItemStudio.App</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RspsItemStudio.Core\RspsItemStudio.Core.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Definitions\RspsItemStudio.Definitions.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Modeling\RspsItemStudio.Modeling.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Validation\RspsItemStudio.Validation.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Adapters.Abstractions\RspsItemStudio.Adapters.Abstractions.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Adapters.OpenRune\RspsItemStudio.Adapters.OpenRune.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Adapters.Rev317\RspsItemStudio.Adapters.Rev317.csproj" />
+  </ItemGroup>
+</Project>

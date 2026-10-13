@@ -9,9 +9,16 @@ Windows desktop suite for authoring custom RuneScape private-server items: model
 
 ## Build and test
 
-From the repository root:
+From the repository root on **Linux or macOS** (libraries and tests only):
 
 ```bash
+dotnet test
+```
+
+On **Windows**, build and run the WPF shell as well:
+
+```bash
+dotnet build src/RspsItemStudio.App/RspsItemStudio.App.csproj
 dotnet test
 ```
 

@@ -1,0 +1,11 @@
+<UserControl x:Class="RspsItemStudio.App.Views.ValidationReportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel Margin="8">
+        <TextBlock DockPanel.Dock="Top"
+                   Text="{Binding SummaryText}"
+                   TextWrapping="Wrap"
+                   Margin="0,0,0,8" />
+        <ListBox ItemsSource="{Binding IssueSummaries}" />
+    </DockPanel>
+</UserControl>
