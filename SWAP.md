@@ -44,8 +44,8 @@ Both are in RS units (a player is about 200 tall). Current run (rev 241):
 |---|---|---|
 | Items checked | 84 | 84 |
 | Body drift, median / max | **0.00** / 4.1 | **0.00** / 4.1 |
-| Items within 2 units | 74 | 73 |
-| Follow, items within 2 units | 82 | 81 |
+| Items within 2 units | 75 | 74 |
+| Follow, items within 2 units | 81 | 80 |
 | Icon silhouette overlap with the template, median | 0.67 | 0.67 |
 
 - **Body armour and weapons are exact.** Every platebody, helm, weapon, shield and cape lands at 0–1 units: integer rounding in the client's own maths.

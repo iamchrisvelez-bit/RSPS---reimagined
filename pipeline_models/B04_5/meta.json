@@ -17,19 +17,19 @@
  "backend": "refine",
  "mode": "detail",
  "model": "model.obj",
- "vertices": 1202,
- "faces": 2399,
+ "vertices": 2400,
+ "faces": 4799,
  "match": {
   "round": "vertex-optimised",
-  "points": 1092,
-  "faces": 2400,
-  "score": 0.9203,
-  "iou": 0.9849,
-  "colour": 0.8556,
-  "exact": 0.8579,
-  "ingame": 0.977,
+  "points": 2140,
+  "faces": 4799,
+  "score": 0.9704,
+  "iou": 0.9871,
+  "colour": 0.9537,
+  "exact": 0.905,
+  "ingame": 0.985,
   "stop": "budget",
-  "back_faces": 359,
+  "back_faces": 720,
   "line_faces": 0
  },
  "stop": "budget",
@@ -37,7 +37,7 @@
   {
    "round": 0,
    "points": 92,
-   "faces": 500,
+   "faces": 860,
    "score": 0.6023,
    "iou": 0.9272,
    "colour": 0.2773,
@@ -47,7 +47,7 @@
   {
    "round": 1,
    "points": 104,
-   "faces": 523,
+   "faces": 883,
    "score": 0.6105,
    "iou": 0.9404,
    "colour": 0.2805,
@@ -57,7 +57,7 @@
   {
    "round": 2,
    "points": 116,
-   "faces": 545,
+   "faces": 905,
    "score": 0.6183,
    "iou": 0.9496,
    "colour": 0.287,
@@ -67,7 +67,7 @@
   {
    "round": 3,
    "points": 129,
-   "faces": 568,
+   "faces": 928,
    "score": 0.628,
    "iou": 0.9595,
    "colour": 0.2964,
@@ -77,7 +77,7 @@
   {
    "round": 4,
    "points": 144,
-   "faces": 590,
+   "faces": 950,
    "score": 0.6332,
    "iou": 0.9632,
    "colour": 0.3032,
@@ -87,7 +87,7 @@
   {
    "round": 5,
    "points": 161,
-   "faces": 624,
+   "faces": 984,
    "score": 0.6391,
    "iou": 0.9632,
    "colour": 0.315,
@@ -97,7 +97,7 @@
   {
    "round": 6,
    "points": 180,
-   "faces": 662,
+   "faces": 1022,
    "score": 0.6463,
    "iou": 0.9632,
    "colour": 0.3293,
@@ -107,7 +107,7 @@
   {
    "round": 7,
    "points": 201,
-   "faces": 704,
+   "faces": 1064,
    "score": 0.6526,
    "iou": 0.9632,
    "colour": 0.342,
@@ -117,7 +117,7 @@
   {
    "round": 8,
    "points": 225,
-   "faces": 752,
+   "faces": 1112,
    "score": 0.6556,
    "iou": 0.9632,
    "colour": 0.3479,
@@ -127,7 +127,7 @@
   {
    "round": 9,
    "points": 252,
-   "faces": 805,
+   "faces": 1165,
    "score": 0.6626,
    "iou": 0.9624,
    "colour": 0.3627,
@@ -137,7 +137,7 @@
   {
    "round": 10,
    "points": 282,
-   "faces": 865,
+   "faces": 1225,
    "score": 0.669,
    "iou": 0.9624,
    "colour": 0.3756,
@@ -147,7 +147,7 @@
   {
    "round": 11,
    "points": 315,
-   "faces": 931,
+   "faces": 1291,
    "score": 0.6781,
    "iou": 0.9624,
    "colour": 0.3937,
@@ -157,7 +157,7 @@
   {
    "round": 12,
    "points": 352,
-   "faces": 1002,
+   "faces": 1362,
    "score": 0.6847,
    "iou": 0.9621,
    "colour": 0.4072,
@@ -167,7 +167,7 @@
   {
    "round": 13,
    "points": 394,
-   "faces": 1088,
+   "faces": 1448,
    "score": 0.6948,
    "iou": 0.9643,
    "colour": 0.4252,
@@ -177,7 +177,7 @@
   {
    "round": 14,
    "points": 441,
-   "faces": 1181,
+   "faces": 1541,
    "score": 0.7053,
    "iou": 0.9656,
    "colour": 0.4449,
@@ -187,7 +187,7 @@
   {
    "round": 15,
    "points": 493,
-   "faces": 1278,
+   "faces": 1638,
    "score": 0.7139,
    "iou": 0.9702,
    "colour": 0.4576,
@@ -197,7 +197,7 @@
   {
    "round": 16,
    "points": 552,
-   "faces": 1391,
+   "faces": 1751,
    "score": 0.7296,
    "iou": 0.9718,
    "colour": 0.4875,
@@ -207,7 +207,7 @@
   {
    "round": 17,
    "points": 618,
-   "faces": 1508,
+   "faces": 1868,
    "score": 0.7446,
    "iou": 0.9715,
    "colour": 0.5177,
@@ -217,7 +217,7 @@
   {
    "round": 18,
    "points": 692,
-   "faces": 1651,
+   "faces": 2011,
    "score": 0.7669,
    "iou": 0.9782,
    "colour": 0.5556,
@@ -227,7 +227,7 @@
   {
    "round": 19,
    "points": 775,
-   "faces": 1812,
+   "faces": 2172,
    "score": 0.7796,
    "iou": 0.9801,
    "colour": 0.5791,
@@ -237,7 +237,7 @@
   {
    "round": 20,
    "points": 868,
-   "faces": 1973,
+   "faces": 2333,
    "score": 0.7927,
    "iou": 0.9842,
    "colour": 0.6012,
@@ -247,7 +247,7 @@
   {
    "round": 21,
    "points": 972,
-   "faces": 2175,
+   "faces": 2535,
    "score": 0.8129,
    "iou": 0.9869,
    "colour": 0.6389,
@@ -256,36 +256,96 @@
   },
   {
    "round": 22,
-   "points": 1084,
-   "faces": 2384,
-   "score": 0.827,
+   "points": 1088,
+   "faces": 2752,
+   "score": 0.8269,
    "iou": 0.9895,
-   "colour": 0.6645,
-   "exact": 0.7892,
-   "ingame": 0.9087
+   "colour": 0.6642,
+   "exact": 0.7895,
+   "ingame": 0.9097
   },
   {
    "round": 23,
-   "points": 1092,
-   "faces": 2400,
-   "score": 0.8315,
-   "iou": 0.9898,
-   "colour": 0.6731,
-   "exact": 0.7919,
-   "ingame": 0.9135,
+   "points": 1218,
+   "faces": 3002,
+   "score": 0.8471,
+   "iou": 0.9887,
+   "colour": 0.7055,
+   "exact": 0.8042,
+   "ingame": 0.929
+  },
+  {
+   "round": 24,
+   "points": 1364,
+   "faces": 3277,
+   "score": 0.863,
+   "iou": 0.9919,
+   "colour": 0.734,
+   "exact": 0.8161,
+   "ingame": 0.9503
+  },
+  {
+   "round": 25,
+   "points": 1527,
+   "faces": 3598,
+   "score": 0.8798,
+   "iou": 0.9919,
+   "colour": 0.7677,
+   "exact": 0.829,
+   "ingame": 0.9653
+  },
+  {
+   "round": 26,
+   "points": 1710,
+   "faces": 3958,
+   "score": 0.9022,
+   "iou": 0.9919,
+   "colour": 0.8124,
+   "exact": 0.8412,
+   "ingame": 0.9797
+  },
+  {
+   "round": 27,
+   "points": 1915,
+   "faces": 4359,
+   "score": 0.9115,
+   "iou": 0.9887,
+   "colour": 0.8343,
+   "exact": 0.8507,
+   "ingame": 0.9786
+  },
+  {
+   "round": 28,
+   "points": 2135,
+   "faces": 4789,
+   "score": 0.9304,
+   "iou": 0.9914,
+   "colour": 0.8693,
+   "exact": 0.8629,
+   "ingame": 0.9851
+  },
+  {
+   "round": 29,
+   "points": 2140,
+   "faces": 4799,
+   "score": 0.9305,
+   "iou": 0.9914,
+   "colour": 0.8696,
+   "exact": 0.8631,
+   "ingame": 0.9856,
    "stop": "budget"
   },
   {
    "round": "vertex-optimised",
-   "points": 1092,
-   "faces": 2400,
-   "score": 0.9203,
-   "iou": 0.9849,
-   "colour": 0.8556,
-   "exact": 0.8579,
-   "ingame": 0.977,
+   "points": 2140,
+   "faces": 4799,
+   "score": 0.9704,
+   "iou": 0.9871,
+   "colour": 0.9537,
+   "exact": 0.905,
+   "ingame": 0.985,
    "stop": "budget",
-   "back_faces": 359,
+   "back_faces": 720,
    "line_faces": 0
   }
  ]

@@ -17,19 +17,19 @@
  "backend": "refine",
  "mode": "detail",
  "model": "model.obj",
- "vertices": 1198,
- "faces": 2399,
+ "vertices": 2395,
+ "faces": 4800,
  "match": {
   "round": "vertex-optimised",
-  "points": 1101,
-  "faces": 2399,
-  "score": 0.8796,
-  "iou": 0.9874,
-  "colour": 0.7719,
-  "exact": 0.8066,
-  "ingame": 0.965,
+  "points": 2156,
+  "faces": 4799,
+  "score": 0.9492,
+  "iou": 0.9926,
+  "colour": 0.9058,
+  "exact": 0.8659,
+  "ingame": 0.9901,
   "stop": "budget",
-  "back_faces": 360,
+  "back_faces": 721,
   "line_faces": 0
  },
  "stop": "budget",
@@ -37,7 +37,7 @@
   {
    "round": 0,
    "points": 91,
-   "faces": 489,
+   "faces": 849,
    "score": 0.5579,
    "iou": 0.882,
    "colour": 0.2338,
@@ -47,7 +47,7 @@
   {
    "round": 1,
    "points": 103,
-   "faces": 510,
+   "faces": 870,
    "score": 0.5874,
    "iou": 0.918,
    "colour": 0.2569,
@@ -57,7 +57,7 @@
   {
    "round": 2,
    "points": 115,
-   "faces": 533,
+   "faces": 893,
    "score": 0.5998,
    "iou": 0.9361,
    "colour": 0.2634,
@@ -67,7 +67,7 @@
   {
    "round": 3,
    "points": 128,
-   "faces": 558,
+   "faces": 918,
    "score": 0.612,
    "iou": 0.9528,
    "colour": 0.2712,
@@ -77,7 +77,7 @@
   {
    "round": 4,
    "points": 143,
-   "faces": 585,
+   "faces": 945,
    "score": 0.6207,
    "iou": 0.9589,
    "colour": 0.2825,
@@ -87,7 +87,7 @@
   {
    "round": 5,
    "points": 160,
-   "faces": 620,
+   "faces": 980,
    "score": 0.625,
    "iou": 0.9589,
    "colour": 0.291,
@@ -97,7 +97,7 @@
   {
    "round": 6,
    "points": 179,
-   "faces": 658,
+   "faces": 1018,
    "score": 0.6303,
    "iou": 0.9589,
    "colour": 0.3017,
@@ -107,7 +107,7 @@
   {
    "round": 7,
    "points": 200,
-   "faces": 700,
+   "faces": 1060,
    "score": 0.6389,
    "iou": 0.9589,
    "colour": 0.3188,
@@ -117,7 +117,7 @@
   {
    "round": 8,
    "points": 224,
-   "faces": 747,
+   "faces": 1107,
    "score": 0.6455,
    "iou": 0.9598,
    "colour": 0.3312,
@@ -127,7 +127,7 @@
   {
    "round": 9,
    "points": 250,
-   "faces": 797,
+   "faces": 1157,
    "score": 0.6517,
    "iou": 0.9593,
    "colour": 0.3441,
@@ -137,7 +137,7 @@
   {
    "round": 10,
    "points": 280,
-   "faces": 854,
+   "faces": 1214,
    "score": 0.6565,
    "iou": 0.957,
    "colour": 0.356,
@@ -147,7 +147,7 @@
   {
    "round": 11,
    "points": 313,
-   "faces": 919,
+   "faces": 1279,
    "score": 0.6646,
    "iou": 0.96,
    "colour": 0.3693,
@@ -157,7 +157,7 @@
   {
    "round": 12,
    "points": 350,
-   "faces": 993,
+   "faces": 1353,
    "score": 0.6704,
    "iou": 0.96,
    "colour": 0.3808,
@@ -167,7 +167,7 @@
   {
    "round": 13,
    "points": 392,
-   "faces": 1076,
+   "faces": 1436,
    "score": 0.6782,
    "iou": 0.963,
    "colour": 0.3934,
@@ -177,7 +177,7 @@
   {
    "round": 14,
    "points": 439,
-   "faces": 1165,
+   "faces": 1525,
    "score": 0.6915,
    "iou": 0.9678,
    "colour": 0.4152,
@@ -187,7 +187,7 @@
   {
    "round": 15,
    "points": 491,
-   "faces": 1262,
+   "faces": 1622,
    "score": 0.7073,
    "iou": 0.9741,
    "colour": 0.4406,
@@ -197,7 +197,7 @@
   {
    "round": 16,
    "points": 549,
-   "faces": 1370,
+   "faces": 1730,
    "score": 0.7208,
    "iou": 0.9747,
    "colour": 0.4669,
@@ -207,7 +207,7 @@
   {
    "round": 17,
    "points": 614,
-   "faces": 1484,
+   "faces": 1844,
    "score": 0.7328,
    "iou": 0.9766,
    "colour": 0.4889,
@@ -217,7 +217,7 @@
   {
    "round": 18,
    "points": 687,
-   "faces": 1620,
+   "faces": 1980,
    "score": 0.7453,
    "iou": 0.979,
    "colour": 0.5115,
@@ -227,7 +227,7 @@
   {
    "round": 19,
    "points": 769,
-   "faces": 1771,
+   "faces": 2131,
    "score": 0.7586,
    "iou": 0.9831,
    "colour": 0.5341,
@@ -237,7 +237,7 @@
   {
    "round": 20,
    "points": 861,
-   "faces": 1939,
+   "faces": 2299,
    "score": 0.7713,
    "iou": 0.9863,
    "colour": 0.5563,
@@ -247,7 +247,7 @@
   {
    "round": 21,
    "points": 964,
-   "faces": 2142,
+   "faces": 2502,
    "score": 0.787,
    "iou": 0.9876,
    "colour": 0.5863,
@@ -257,7 +257,7 @@
   {
    "round": 22,
    "points": 1079,
-   "faces": 2361,
+   "faces": 2721,
    "score": 0.7993,
    "iou": 0.9883,
    "colour": 0.6103,
@@ -266,36 +266,86 @@
   },
   {
    "round": 23,
-   "points": 1098,
-   "faces": 2394,
-   "score": 0.8037,
-   "iou": 0.9892,
-   "colour": 0.6183,
-   "exact": 0.7565,
-   "ingame": 0.9201
+   "points": 1208,
+   "faces": 2961,
+   "score": 0.814,
+   "iou": 0.9896,
+   "colour": 0.6383,
+   "exact": 0.7657,
+   "ingame": 0.9382
   },
   {
    "round": 24,
-   "points": 1101,
-   "faces": 2399,
-   "score": 0.8059,
-   "iou": 0.9896,
-   "colour": 0.6222,
-   "exact": 0.7574,
-   "ingame": 0.9201,
+   "points": 1352,
+   "faces": 3238,
+   "score": 0.829,
+   "iou": 0.9909,
+   "colour": 0.667,
+   "exact": 0.7753,
+   "ingame": 0.952
+  },
+  {
+   "round": 25,
+   "points": 1514,
+   "faces": 3549,
+   "score": 0.8439,
+   "iou": 0.9922,
+   "colour": 0.6955,
+   "exact": 0.7888,
+   "ingame": 0.9646
+  },
+  {
+   "round": 26,
+   "points": 1695,
+   "faces": 3907,
+   "score": 0.8617,
+   "iou": 0.9907,
+   "colour": 0.7327,
+   "exact": 0.7987,
+   "ingame": 0.9706
+  },
+  {
+   "round": 27,
+   "points": 1898,
+   "faces": 4299,
+   "score": 0.8754,
+   "iou": 0.9918,
+   "colour": 0.759,
+   "exact": 0.8097,
+   "ingame": 0.9784
+  },
+  {
+   "round": 28,
+   "points": 2125,
+   "faces": 4738,
+   "score": 0.8956,
+   "iou": 0.9928,
+   "colour": 0.7984,
+   "exact": 0.8233,
+   "ingame": 0.9845
+  },
+  {
+   "round": 29,
+   "points": 2156,
+   "faces": 4799,
+   "score": 0.8986,
+   "iou": 0.9928,
+   "colour": 0.8043,
+   "exact": 0.826,
+   "ingame": 0.9849,
    "stop": "budget"
   },
   {
    "round": "vertex-optimised",
-   "points": 1101,
-   "faces": 2399,
-   "score": 0.8796,
-   "iou": 0.9874,
-   "colour": 0.7719,
-   "exact": 0.8066,
-   "ingame": 0.965,
+   "points": 2156,
+   "faces": 4799,
+   "score": 0.9492,
+   "iou": 0.9926,
+   "colour": 0.9058,
+   "exact": 0.8659,
+   "ingame": 0.9901,
    "stop": "budget",
-   "back_faces": 360,
+   "back_faces": 721,
    "line_faces": 0
   }
  ]

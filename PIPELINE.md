@@ -88,6 +88,8 @@ Then the **vertices are optimised** against the design (`optimize_vertices`). Ea
 
 The result is the history's last round, `vertex-optimised`.
 
+**Face budget, adaptive.** Every item is refined at `--max-faces 2400` and again at 4800. The larger model is kept only where its in-game match is at least 0.005 higher. Thin weapons are limited by their outline, not by face count, so they mostly stay at 2400; plate armour and robes gain the most. When a refinement runs out of spots at its point spacing before the budget is used, the spacing tightens, down to 1 pixel. `close_outline` then adds true-outline corners wherever triangles cut across a concave outline.
+
 Detected detail lines are now **kept only where they beat plain faces.** The item is refined without lines first. A line survives when its colour error over its own pixels is under 85% of the faces' error there. The item is then refined again with the surviving lines, and whichever version matches better is kept. Wide bevelled trims and facet highlights usually come out better as faces.
 
 ### Shadows and texture (`--mode detail`, the default)

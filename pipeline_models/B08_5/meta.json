@@ -17,19 +17,19 @@
  "backend": "refine",
  "mode": "detail",
  "model": "model.obj",
- "vertices": 1193,
- "faces": 2399,
+ "vertices": 2397,
+ "faces": 4799,
  "match": {
   "round": "vertex-optimised",
-  "points": 1092,
-  "faces": 2399,
-  "score": 0.9268,
-  "iou": 0.9867,
-  "colour": 0.8668,
-  "exact": 0.8476,
-  "ingame": 0.9863,
+  "points": 2153,
+  "faces": 4799,
+  "score": 0.968,
+  "iou": 0.9931,
+  "colour": 0.9429,
+  "exact": 0.8984,
+  "ingame": 0.9961,
   "stop": "budget",
-  "back_faces": 360,
+  "back_faces": 720,
   "line_faces": 0
  },
  "stop": "budget",
@@ -37,7 +37,7 @@
   {
    "round": 0,
    "points": 92,
-   "faces": 493,
+   "faces": 853,
    "score": 0.5633,
    "iou": 0.9292,
    "colour": 0.1974,
@@ -47,7 +47,7 @@
   {
    "round": 1,
    "points": 104,
-   "faces": 517,
+   "faces": 877,
    "score": 0.5725,
    "iou": 0.9378,
    "colour": 0.2073,
@@ -57,7 +57,7 @@
   {
    "round": 2,
    "points": 116,
-   "faces": 541,
+   "faces": 901,
    "score": 0.5834,
    "iou": 0.9511,
    "colour": 0.2157,
@@ -67,7 +67,7 @@
   {
    "round": 3,
    "points": 129,
-   "faces": 565,
+   "faces": 925,
    "score": 0.5896,
    "iou": 0.9587,
    "colour": 0.2206,
@@ -77,7 +77,7 @@
   {
    "round": 4,
    "points": 144,
-   "faces": 591,
+   "faces": 951,
    "score": 0.5941,
    "iou": 0.9589,
    "colour": 0.2292,
@@ -87,7 +87,7 @@
   {
    "round": 5,
    "points": 161,
-   "faces": 624,
+   "faces": 984,
    "score": 0.6051,
    "iou": 0.9589,
    "colour": 0.2512,
@@ -97,7 +97,7 @@
   {
    "round": 6,
    "points": 180,
-   "faces": 661,
+   "faces": 1021,
    "score": 0.6172,
    "iou": 0.9587,
    "colour": 0.2757,
@@ -107,7 +107,7 @@
   {
    "round": 7,
    "points": 201,
-   "faces": 702,
+   "faces": 1062,
    "score": 0.6263,
    "iou": 0.9589,
    "colour": 0.2937,
@@ -117,7 +117,7 @@
   {
    "round": 8,
    "points": 225,
-   "faces": 749,
+   "faces": 1109,
    "score": 0.633,
    "iou": 0.9552,
    "colour": 0.3108,
@@ -127,7 +127,7 @@
   {
    "round": 9,
    "points": 252,
-   "faces": 801,
+   "faces": 1161,
    "score": 0.6438,
    "iou": 0.9591,
    "colour": 0.3286,
@@ -137,7 +137,7 @@
   {
    "round": 10,
    "points": 282,
-   "faces": 859,
+   "faces": 1219,
    "score": 0.6529,
    "iou": 0.9596,
    "colour": 0.3461,
@@ -147,7 +147,7 @@
   {
    "round": 11,
    "points": 315,
-   "faces": 925,
+   "faces": 1285,
    "score": 0.6639,
    "iou": 0.9596,
    "colour": 0.3681,
@@ -157,7 +157,7 @@
   {
    "round": 12,
    "points": 352,
-   "faces": 1000,
+   "faces": 1360,
    "score": 0.674,
    "iou": 0.9604,
    "colour": 0.3876,
@@ -167,7 +167,7 @@
   {
    "round": 13,
    "points": 394,
-   "faces": 1084,
+   "faces": 1444,
    "score": 0.6946,
    "iou": 0.9687,
    "colour": 0.4205,
@@ -177,7 +177,7 @@
   {
    "round": 14,
    "points": 441,
-   "faces": 1174,
+   "faces": 1534,
    "score": 0.7071,
    "iou": 0.9714,
    "colour": 0.4427,
@@ -187,7 +187,7 @@
   {
    "round": 15,
    "points": 493,
-   "faces": 1278,
+   "faces": 1638,
    "score": 0.7243,
    "iou": 0.9783,
    "colour": 0.4704,
@@ -197,7 +197,7 @@
   {
    "round": 16,
    "points": 552,
-   "faces": 1392,
+   "faces": 1752,
    "score": 0.7353,
    "iou": 0.9803,
    "colour": 0.4904,
@@ -207,7 +207,7 @@
   {
    "round": 17,
    "points": 618,
-   "faces": 1518,
+   "faces": 1878,
    "score": 0.7519,
    "iou": 0.9828,
    "colour": 0.521,
@@ -217,7 +217,7 @@
   {
    "round": 18,
    "points": 692,
-   "faces": 1654,
+   "faces": 2014,
    "score": 0.7694,
    "iou": 0.9842,
    "colour": 0.5546,
@@ -227,7 +227,7 @@
   {
    "round": 19,
    "points": 775,
-   "faces": 1814,
+   "faces": 2174,
    "score": 0.7883,
    "iou": 0.9892,
    "colour": 0.5875,
@@ -237,7 +237,7 @@
   {
    "round": 20,
    "points": 868,
-   "faces": 1986,
+   "faces": 2346,
    "score": 0.8025,
    "iou": 0.9884,
    "colour": 0.6166,
@@ -247,7 +247,7 @@
   {
    "round": 21,
    "points": 972,
-   "faces": 2180,
+   "faces": 2540,
    "score": 0.8293,
    "iou": 0.9916,
    "colour": 0.667,
@@ -256,36 +256,96 @@
   },
   {
    "round": 22,
-   "points": 1082,
-   "faces": 2379,
-   "score": 0.8362,
+   "points": 1088,
+   "faces": 2751,
+   "score": 0.8364,
    "iou": 0.9862,
-   "colour": 0.6863,
+   "colour": 0.6865,
    "exact": 0.7872,
-   "ingame": 0.9456
+   "ingame": 0.9451
   },
   {
    "round": 23,
-   "points": 1092,
-   "faces": 2399,
-   "score": 0.8393,
+   "points": 1218,
+   "faces": 2987,
+   "score": 0.8561,
    "iou": 0.9899,
-   "colour": 0.6887,
-   "exact": 0.7906,
-   "ingame": 0.95,
+   "colour": 0.7223,
+   "exact": 0.8027,
+   "ingame": 0.9632
+  },
+  {
+   "round": 24,
+   "points": 1364,
+   "faces": 3270,
+   "score": 0.875,
+   "iou": 0.9911,
+   "colour": 0.7589,
+   "exact": 0.8149,
+   "ingame": 0.974
+  },
+  {
+   "round": 25,
+   "points": 1527,
+   "faces": 3580,
+   "score": 0.8932,
+   "iou": 0.9924,
+   "colour": 0.794,
+   "exact": 0.8279,
+   "ingame": 0.9799
+  },
+  {
+   "round": 26,
+   "points": 1710,
+   "faces": 3935,
+   "score": 0.9075,
+   "iou": 0.9926,
+   "colour": 0.8224,
+   "exact": 0.8374,
+   "ingame": 0.9858
+  },
+  {
+   "round": 27,
+   "points": 1915,
+   "faces": 4331,
+   "score": 0.9174,
+   "iou": 0.9926,
+   "colour": 0.8421,
+   "exact": 0.8484,
+   "ingame": 0.9892
+  },
+  {
+   "round": 28,
+   "points": 2144,
+   "faces": 4781,
+   "score": 0.9228,
+   "iou": 0.9929,
+   "colour": 0.8528,
+   "exact": 0.8551,
+   "ingame": 0.9878
+  },
+  {
+   "round": 29,
+   "points": 2153,
+   "faces": 4799,
+   "score": 0.9236,
+   "iou": 0.9929,
+   "colour": 0.8542,
+   "exact": 0.8557,
+   "ingame": 0.9878,
    "stop": "budget"
   },
   {
    "round": "vertex-optimised",
-   "points": 1092,
-   "faces": 2399,
-   "score": 0.9268,
-   "iou": 0.9867,
-   "colour": 0.8668,
-   "exact": 0.8476,
-   "ingame": 0.9863,
+   "points": 2153,
+   "faces": 4799,
+   "score": 0.968,
+   "iou": 0.9931,
+   "colour": 0.9429,
+   "exact": 0.8984,
+   "ingame": 0.9961,
    "stop": "budget",
-   "back_faces": 360,
+   "back_faces": 720,
    "line_faces": 0
   }
  ]
