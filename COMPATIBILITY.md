@@ -9,6 +9,15 @@ Honest support matrix and integration notes. **OpenRune-first**; other revisions
 | **OpenRune / OpenRune-Server** | Primary; partial in M1 | OSRS-protocol server; first concrete adapter |
 | **Rev317** | Stub only | Planned behind same abstractions (Milestone 6) |
 
+## Adapter capability status (M1)
+
+| Adapter ID | Model codec | Definition codec | Animation codec | Staging pack | Live cache write |
+|------------|-------------|------------------|-----------------|--------------|------------------|
+| `openrune` | NotSupported | NotSupported | NotSupported | Success (skipped report, empty staging folder) | Disabled (`Fail`) |
+| `rev317` | NotSupported | NotSupported | NotSupported | Success (skipped report, empty staging folder) | Disabled (`Fail`) |
+
+Codec methods return `AdapterResult.NotSupported` with an explicit message — no fabricated cache or model bytes. Staging export creates the configured folder and an `IntegrationReport` listing skipped steps; live tree writes remain blocked until formats are verified and backup flow ships.
+
 We do not invent cache, model, or animation behavior. Unverified capabilities surface as explicit `NotSupported` on adapter interfaces.
 
 ## OpenRune integration (M1)

@@ -13,6 +13,9 @@
     <ProjectReference Include="..\..\src\RspsItemStudio.Definitions\RspsItemStudio.Definitions.csproj" />
     <ProjectReference Include="..\..\src\RspsItemStudio.Modeling\RspsItemStudio.Modeling.csproj" />
     <ProjectReference Include="..\..\src\RspsItemStudio.Validation\RspsItemStudio.Validation.csproj" />
+    <ProjectReference Include="..\..\src\RspsItemStudio.Adapters.Abstractions\RspsItemStudio.Adapters.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\RspsItemStudio.Adapters.OpenRune\RspsItemStudio.Adapters.OpenRune.csproj" />
+    <ProjectReference Include="..\..\src\RspsItemStudio.Adapters.Rev317\RspsItemStudio.Adapters.Rev317.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Fixtures\**\*" CopyToOutputDirectory="PreserveNewest" />
