@@ -195,7 +195,7 @@ def main():
     ap.add_argument('--templates', help='JSON {code: OSRS item name or id} overriding the defaults')
     ap.add_argument('--base-model-id', type=int, default=64000,
                     help='first new model id (must be unused in the server cache; rev 241 ends at 62050)')
-    ap.add_argument('--max-faces', type=int, default=2400)
+    ap.add_argument('--max-faces', type=int, default=4800)
     a = ap.parse_args()
 
     cache = FlatCache(a.cache)

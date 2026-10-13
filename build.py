@@ -42,7 +42,7 @@ from rsgen.requirements import requirements  # noqa: E402
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'out')
 PIPELINE_MODELS = os.path.join(ROOT, 'pipeline_models')
-MAX_FACES = 2400  # per model; tests/test_assets.py allows up to 3000
+MAX_FACES = 4800  # per model (adaptive refine budget); tests/test_assets.py checks the same limit
 
 # OSRS / 317 equipment slot indices
 SLOT_ID = {'head': 0, 'cape': 1, 'neck': 2, 'weapon': 3, 'body': 4, 'shield': 5, 'legs': 7,

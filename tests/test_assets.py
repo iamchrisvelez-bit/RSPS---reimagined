@@ -22,7 +22,7 @@ from rsgen.geom import Mesh  # noqa: E402
 from rsgen.items import ITEMS  # noqa: E402
 
 
-MAX_FACES = 3000  # keep worn models light: the client draws every face of every visible player
+MAX_FACES = 4800  # visible faces (anchors excluded), matching build.py; the client draws every face of every visible player
 
 
 def read(path, mode='rb'):
