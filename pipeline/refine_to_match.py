@@ -513,6 +513,57 @@ class Refiner:
         return added
 
 
+
+def close_outline(ref, max_faces, rounds=8, log=None):
+    """Fill the notches where triangles cut across a concave outline.
+
+    Every design pixel the model misses gets the nearest true-outline corner
+    as a new rim point, spread at least 2 pixels apart. A batch is kept only
+    if the match improves; otherwise it is halved and retried. Returns the
+    number of points kept."""
+    h, w = ref.m.shape
+    kept = 0
+    base = ref.score()[0]
+    batch = None
+    for _ in range(rounds):
+        miss = ref.m & (ref.R < 0)
+        if not miss.any():
+            break
+        room = (max_faces - ref.faces()) // 2
+        if room <= 0:
+            break
+        taken = np.zeros_like(ref.m)
+        cand = []
+        for y, x in np.argwhere(miss):
+            if taken[y, x]:
+                continue
+            taken[max(0, y - 2):y + 3, max(0, x - 2):x + 3] = True
+            d = (ref.fine[:, 0] - (y + 0.5)) ** 2 + (ref.fine[:, 1] - (x + 0.5)) ** 2
+            for j in np.argsort(d)[:4]:
+                q = tuple(ref.fine[j])
+                if q not in ref.used and q not in ref.banned and q not in cand:
+                    cand.append(q)
+                    break
+        if not cand:
+            break
+        batch = min(len(cand), room, batch or len(cand))
+        snap = ref.snapshot()
+        ref.edge += cand[:batch]
+        ref.used |= set(cand[:batch])
+        ref.build()
+        s = ref.score()[0]
+        if s > base + 1e-4 and ref.faces() <= max_faces:
+            base, kept = s, kept + batch
+            batch = None
+        else:
+            ref.restore(snap, ban_last=False)
+            if batch == 1:
+                ref.banned |= set(cand[:1])
+            batch = max(1, batch // 2)
+    if log and kept:
+        log('  outline: %d rim points close notches, score %.3f' % (kept, base))
+    return kept
+
 def flat_image(R, pal):
     img = np.full(R.shape + (3,), 24, np.uint8)
     img[R >= 0] = np.asarray(pal, np.uint8)[R[R >= 0]]
@@ -640,7 +691,14 @@ def _refine_once(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97,
         # a new point costs ~2 front faces (~4 when the back mirrors the front)
         room = (max_faces - ref.faces()) // (4 if ref.back_faces is None else 2)
         k = int(min(max(12, len(ref.P) * step), room))
-        if k <= 0 or not ref.add(k):
+        added = ref.add(k) if k > 0 else 0
+        while k > 0 and not added and ref.spacing > 1.0:
+            # every bad spot already has a point within the spacing: allow
+            # denser points (thin parts and fine detail need them)
+            ref.spacing = max(1.0, ref.spacing * 0.7)
+            history[-1]['spacing'] = round(ref.spacing, 2)
+            added = ref.add(k)
+        if not added:
             history[-1]['stop'] = 'budget' if k <= 0 else 'no error left to fix'
             break
         prev = ref.snapshot()
@@ -649,6 +707,11 @@ def _refine_once(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97,
             ref.restore(prev, ban_last=False)
             history[-1]['stop'] = 'budget'
             break
+    if mode == 'detail' and optimize:
+        ref.restore(best[1], ban_last=False)
+        if close_outline(ref, max_faces, log=log):
+            s = ref.score()[0]
+            best = (s, ref.snapshot())
     _, (_, _, _, P, T, lab, rim, R, cols, img) = best
     if mode == 'detail' and optimize:
         # move interior vertices to where their triangles' flat colours fit best
@@ -686,7 +749,7 @@ def _refine_once(color, mask, depth, thickness=0.6, max_faces=2400, target=0.97,
         if lines else None
     back = None
     if ref.back_faces is not None:
-        Tb = collapse_interior(P, T, rim, max(ref.back_faces, max_faces - len(T) - ref.extra_faces))
+        Tb = collapse_interior(P, T, rim, max(ref.back_faces, min(len(T), max_faces - len(T) - ref.extra_faces)))
         ids = rasterize_labels(P, Tb, np.arange(len(Tb)), m.shape)
         back = (Tb, face_colours(ids, img, P, Tb) * 0.8)  # the front's look, a little darker
     mesh = mesh_from_triangles(P, T, lab, rim, pal, m, depth, thickness, depth_gain, back=back, heights=heights,
