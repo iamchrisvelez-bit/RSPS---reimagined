@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RspsItemStudio.Core\RspsItemStudio.Core.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Definitions\RspsItemStudio.Definitions.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Modeling\RspsItemStudio.Modeling.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Validation\RspsItemStudio.Validation.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Adapters.OpenRune\RspsItemStudio.Adapters.OpenRune.csproj" />
+    <ProjectReference Include="..\RspsItemStudio.Adapters.Abstractions\RspsItemStudio.Adapters.Abstractions.csproj" />
+  </ItemGroup>
+</Project>
