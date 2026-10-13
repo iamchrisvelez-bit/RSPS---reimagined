@@ -4,9 +4,11 @@ Living milestone tracker. Update status as work lands.
 
 ## Current status
 
-**Milestone 1 — Foundation:** library + wiring **landed**; **Windows UI smoke is required** before calling M1 fully closed.
+**Milestone 1 — Foundation:** library + wiring **landed** (including HWND mouse forwarding); **Windows UI smoke is required** before calling M1 fully closed.
 
-Next step: finish M1 Windows smoke (Tasks 8–10 checklists), then **Milestone 2** — OpenRune definition + model path verification against real cache data.
+**Milestone 2 — OpenRune definitions (in progress):** partial item-definition codec + Pack Items TOML staging. Models/JS5 live pack still pending.
+
+Next step: Windows smoke (M1 checklists) + set `ItemId` on an export preset and verify staged TOML packs with OpenRune FileStore.
 
 ### Linux / CI verification (M1)
 
@@ -55,12 +57,16 @@ Next step: finish M1 Windows smoke (Tasks 8–10 checklists), then **Milestone 2
 
 **Success criteria:** create project → import OBJ → edit stats → validate → export staging shows clear adapter “not yet implemented” path without corrupting any game files. **Required:** verify end-to-end on Windows (see checklists above).
 
-### Milestone 2 — OpenRune definition + model path (planned)
+### Milestone 2 — OpenRune definition + model path (in progress)
 
-- Verify OpenRune-FileStore / OSRS item definition and model formats against real data
-- Implement definition codec + staging export + integration report
-- Model codec as formats are confirmed
-- Backup-on-write into user-selected cache/server paths
+- [x] Partial OSRS item-definition encode/decode (OpenRune `ItemCodec` subset)
+- [x] OpenRune Pack Items TOML staging under `export/staging/openrune-items/`
+- [x] Integration report lists written TOML/bin + skipped model/anim/cache
+- [ ] Confirm wearPos/weight against a pinned OpenRune revision fixture
+- [ ] Model codec as formats are confirmed
+- [ ] Backup-on-write into user-selected cache/server paths
+
+See `docs/superpowers/plans/2026-10-13-milestone-2-openrune-definitions.md`.
 
 ### Milestone 3 — Materials, recolor, richer preview (planned)
 

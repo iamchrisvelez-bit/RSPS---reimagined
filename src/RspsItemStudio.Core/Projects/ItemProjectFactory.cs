@@ -32,7 +32,18 @@ public static class ItemProjectFactory
             Materials = new MaterialsDocument(),
             Animations = new AnimationBindingsDocument(),
             Effects = new EffectsDocument(),
-            ExportPresets = new ExportPresetsDocument()
+            ExportPresets = new ExportPresetsDocument
+            {
+                Presets =
+                [
+                    new ExportPreset
+                    {
+                        AdapterId = "openrune",
+                        StagingDirectory = "export/staging"
+                        // ItemId must be set before OpenRune definition files are staged.
+                    }
+                ]
+            }
         };
 
         project.Save();

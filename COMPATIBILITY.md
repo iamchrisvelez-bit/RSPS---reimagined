@@ -9,14 +9,35 @@ Honest support matrix and integration notes. **OpenRune-first**; other revisions
 | **OpenRune / OpenRune-Server** | Primary; partial in M1 | OSRS-protocol server; first concrete adapter |
 | **Rev317** | Stub only | Planned behind same abstractions (Milestone 6) |
 
-## Adapter capability status (M1)
+## Adapter capability status
 
 | Adapter ID | Model codec | Definition codec | Animation codec | Staging pack | Live cache write |
 |------------|-------------|------------------|-----------------|--------------|------------------|
-| `openrune` | NotSupported | NotSupported | NotSupported | Success (skipped report, empty staging folder) | Disabled (`Fail`) |
+| `openrune` | NotSupported | **Partial** (M2) | NotSupported | TOML + `.obj.bin` when `ItemId` set | Disabled (`Fail`) |
 | `rev317` | NotSupported | NotSupported | NotSupported | Success (skipped report, empty staging folder) | Disabled (`Fail`) |
 
-Codec methods return `AdapterResult.NotSupported` with an explicit message — no fabricated cache or model bytes. Staging export creates the configured folder and an `IntegrationReport` listing skipped steps; live tree writes remain blocked until formats are verified and backup flow ships.
+### OpenRune definition support (M2 partial)
+
+Aligned with OpenRune FileStore `ItemCodec` / Pack Items wiki for a **subset** of fields:
+
+| Studio field | TOML (`Pack Items`) | OSRS opcode |
+|--------------|---------------------|-------------|
+| Name | `name` | 2 |
+| Examine | `description` | 3 |
+| Stackable | `stacks` | 11 |
+| Cost (`extensions.cost`) | `cost` | 12 |
+| Equipment slot | `wearPos1` | 13 |
+| Not tradeable | `isTradeable=false` | 15 |
+| Members | `members` | 16 |
+| Inventory model (`extensions.inventoryModel`) | `inventoryModel` | 1 |
+| Male/female model0 (+offsets) | `maleModel0` / `femaleModel0` | 23 / 25 |
+| Weight | `weight` (game units) | 75 (`weightKg * 1000` unless `extensions.weightUnits`) |
+
+**Not packed yet:** full JS5 archive, models, animations, colour/texture opcodes, notes/placeholders, interface options, params (249), extended 32-bit model opcodes.
+
+**Integration:** set `export/presets.json` → `itemId`, run **Export staging**, copy `export/staging/openrune-items/*.toml` into an OpenRune `itemDirectory`, then `packConfig(PackMode.ITEMS, …)` via OpenRune FileStore tools.
+
+Live tree writes remain blocked until backup-on-write ships.
 
 We do not invent cache, model, or animation behavior. Unverified capabilities surface as explicit `NotSupported` on adapter interfaces.
 
@@ -33,7 +54,7 @@ We do not invent cache, model, or animation behavior. Unverified capabilities su
 - Animation and effect export are not implemented until codecs are verified.
 - Model byte export is adapter-only, never a silent viewport side effect.
 - **Viewport (Windows):** M1 requires a manual smoke pass on Windows (`PROJECT_ROADMAP.md` Tasks 8–10). Linux CI compiles rendering sources only; no GPU/HWND runtime there.
-- **Viewport input:** Orbit, pan, and zoom handlers live on the WPF `ViewportHost` user control. The Veldrid surface is a Win32 child `HWND` (`HwndHost`) that sits above the WPF background and **captures the mouse** over the 3D area, so camera controls may not receive drags/wheel while the pointer is over the rendered region until HWND forwarding is implemented. Display mode is in the left tool strip (not over the HWND) to avoid WPF airspace issues.
+- **Viewport input:** `ViewportHost` forwards Win32 mouse messages (`WM_*BUTTON*`, `WM_MOUSEMOVE`, `WM_MOUSEWHEEL`) from the Veldrid child HWND into orbit/pan/zoom. Display mode remains in the left tool strip (not over the HWND). Windows smoke still required.
 - Color/recolor editor is a on-disk stub only; UI deferred to Milestone 3.
 
 ## Open unknowns
