@@ -48,6 +48,7 @@ Until these are resolved, adapters expose interfaces and partial implementations
 | Component | Linux (CI / cloud agents) | Windows |
 |-----------|---------------------------|---------|
 | Core, Definitions, Modeling, Validation, Adapters, Tests | `dotnet test` | Same |
-| `RspsItemStudio.App` (WPF, `net8.0-windows`) | **Not buildable** — SDK lacks `Microsoft.NET.Sdk.WindowsDesktop` | `dotnet build src/RspsItemStudio.App/RspsItemStudio.App.csproj` and `dotnet run --project src/RspsItemStudio.App` |
+| `RspsItemStudio.Rendering` (Veldrid, `net8.0-windows`) | **Compiles** on Linux CI (no GPU / Win32 HWND at runtime) | Full D3D11 viewport on Windows |
+| `RspsItemStudio.App` (WPF + Veldrid host, `net8.0-windows`) | **Not buildable** — SDK lacks `Microsoft.NET.Sdk.WindowsDesktop` | `dotnet build src/RspsItemStudio.App/RspsItemStudio.App.csproj` and `dotnet run --project src/RspsItemStudio.App` |
 
-The WPF shell sources are maintained in-repo; verify the app on a Windows machine with the .NET 8 SDK (desktop workload included by default on Windows).
+The WPF shell and Veldrid viewport sources are maintained in-repo; verify import + 3D preview on a Windows machine with the .NET 8 SDK (desktop workload included by default on Windows). `VeldridViewportController.Attach` uses a Win32 child HWND and D3D11 swapchain — runtime requires Windows.

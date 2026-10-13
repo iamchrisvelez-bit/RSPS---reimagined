@@ -41,6 +41,23 @@ public sealed class ProjectDialogService
         return true;
     }
 
+    public bool TryPickObjFile(out string? objPath)
+    {
+        objPath = null;
+        var dialog = new OpenFileDialog
+        {
+            Title = "Import Wavefront OBJ",
+            Filter = "Wavefront OBJ (*.obj)|*.obj",
+            Multiselect = false
+        };
+
+        if (dialog.ShowDialog() != true)
+            return false;
+
+        objPath = dialog.FileName;
+        return !string.IsNullOrWhiteSpace(objPath) && File.Exists(objPath);
+    }
+
     public bool TryPickExistingProjectRoot(out string? projectRoot)
     {
         projectRoot = null;

@@ -1,6 +1,9 @@
 using System.IO;
 using RspsItemStudio.App.Services;
+using RspsItemStudio.Core.Json;
+using RspsItemStudio.Core.Meshes;
 using RspsItemStudio.Core.Projects;
+using RspsItemStudio.Modeling;
 
 namespace RspsItemStudio.App.ViewModels;
 
@@ -45,6 +48,7 @@ public sealed class MainViewModel : ViewModelBase
                 RefreshProjectSummary();
                 Definition.Attach(value?.Definition);
                 Validation.Clear();
+                TryLoadInventoryMeshIntoViewport();
                 SaveProjectCommand.RaiseCanExecuteChanged();
                 ImportObjCommand.RaiseCanExecuteChanged();
                 ValidateCommand.RaiseCanExecuteChanged();
@@ -139,7 +143,49 @@ public sealed class MainViewModel : ViewModelBase
 
     private void ImportObj()
     {
-        StatusText = "Import OBJ — coming in Task 9.";
+        if (CurrentProject is null)
+            return;
+
+        if (!_dialogs.TryPickObjFile(out var objPath) || objPath is null)
+            return;
+
+        try
+        {
+            var result = ObjMeshImporter.Import(objPath);
+            CurrentProject.AttachInventoryMesh(result.Mesh, objPath);
+            Viewport.LoadMesh(result.Mesh);
+
+            var warningText = result.Warnings.Count > 0
+                ? $" Warnings: {string.Join("; ", result.Warnings)}"
+                : string.Empty;
+            StatusText =
+                $"Imported \"{result.Mesh.Name}\" ({result.Mesh.Vertices.Count} verts, {result.Mesh.Triangles.Count} tris).{warningText}";
+        }
+        catch (Exception ex)
+        {
+            StatusText = $"OBJ import failed: {ex.Message}";
+        }
+    }
+
+    private void TryLoadInventoryMeshIntoViewport()
+    {
+        if (CurrentProject is null)
+            return;
+
+        var meshPath = Path.Combine(CurrentProject.RootDirectory, ItemProjectPaths.InventoryMesh);
+        if (!File.Exists(meshPath))
+            return;
+
+        try
+        {
+            var mesh = StudioJson.Deserialize<StudioMesh>(File.ReadAllText(meshPath));
+            if (mesh is not null)
+                Viewport.LoadMesh(mesh);
+        }
+        catch
+        {
+            // Viewport preview is best-effort when opening a project.
+        }
     }
 
     private void Validate()

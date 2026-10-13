@@ -1,3 +1,4 @@
+using RspsItemStudio.Core.Meshes;
 using RspsItemStudio.Core.Animations;
 using RspsItemStudio.Core.Colors;
 using RspsItemStudio.Core.Effects;
@@ -32,6 +33,21 @@ public sealed class ItemProject
 
     public void SaveValidationReport<T>(T report) =>
         WriteJson(ItemProjectPaths.ValidationReport, report);
+
+    /// <summary>
+    /// Writes <see cref="ItemProjectPaths.InventoryMesh"/> and copies the OBJ source into <see cref="ItemProjectPaths.SourceDir"/>.
+    /// </summary>
+    public string AttachInventoryMesh(StudioMesh mesh, string sourceObjPath)
+    {
+        var sourceDir = Path.Combine(RootDirectory, ItemProjectPaths.SourceDir);
+        Directory.CreateDirectory(sourceDir);
+        var fileName = Path.GetFileName(sourceObjPath);
+        var copiedPath = Path.Combine(sourceDir, fileName);
+        File.Copy(sourceObjPath, copiedPath, overwrite: true);
+
+        WriteJson(ItemProjectPaths.InventoryMesh, mesh);
+        return copiedPath;
+    }
 
     private void WriteJson<T>(string relativePath, T value)
     {

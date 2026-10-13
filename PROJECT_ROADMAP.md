@@ -6,7 +6,7 @@ Living milestone tracker. Update status as work lands.
 
 **Milestone 1 — Foundation:** in progress
 
-Next step: Veldrid viewport + OBJ import (Task 9).
+Next step: Export staging command + M1 acceptance (Task 10).
 
 ### Windows manual check — stat editor & validation (Task 8)
 
@@ -16,13 +16,21 @@ Next step: Veldrid viewport + OBJ import (Task 9).
 4. Set **Name** to a non-empty value, **Validate** again — `NAME_EMPTY` is gone; `MODEL_MISSING` remains (no inventory mesh yet).
 5. Confirm `validation/last-report.json` exists under the project folder after Validate.
 
+### Windows manual check — viewport & OBJ import (Task 9)
+
+1. `dotnet run --project src/RspsItemStudio.App` on Windows.
+2. Create or open a project, click **Import OBJ**, choose a `.obj` file.
+3. Confirm status bar shows vertex/triangle counts; `models/inventory.mesh.json` and `models/source/<file>.obj` exist.
+4. Orbit (left drag), pan (right drag), zoom (wheel); switch **View** combo (Solid / SolidUntextured / Wireframe).
+5. **Validate** — `MODEL_MISSING` should clear after import.
+
 ## Milestones
 
 ### Milestone 1 — Foundation (in progress)
 
 1. Application shell and project workspace (create/open/save) — **done** (`RspsItemStudio.App` WPF shell)
-2. 3D viewport with load, camera, lighting, inspection
-3. Import at least OBJ into studio mesh
+2. 3D viewport with load, camera, lighting, inspection — **done** (Veldrid `ViewportHost`, orbit/pan/zoom, display modes)
+3. Import at least OBJ into studio mesh — **done** (Import OBJ → `inventory.mesh.json` + viewport preview)
 4. Item project structure on disk (model, texture, color, animation, effect, stats sections)
 5. Basic item-stat editor — **done** (Stats tab, two-way binding)
 6. Validation report for missing/invalid project data — **done** (Validate + `validation/last-report.json`)
