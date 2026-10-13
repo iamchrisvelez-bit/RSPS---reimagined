@@ -23,7 +23,11 @@ def background(w, h):
 
 
 def render(V, F, cols, glow=None, size=480, yaw=-32, pitch=16, ss=3, fill=0.84, bg=None, smooth=False,
-           layers=None):
+           layers=None, priorities=None):
+    """priorities: per-face RS draw priorities - draw like the client does
+    (painter's algorithm: lower priority first, then far to near, no depth
+    buffer), so e.g. an amulet with a higher priority than the body shows over
+    the chest even where its depth is behind it."""
     W = H = size * ss
     R = _rx(pitch) @ _ry(yaw)
     P = np.asarray(V, float) @ R.T
@@ -59,7 +63,12 @@ def render(V, F, cols, glow=None, size=480, yaw=-32, pitch=16, ss=3, fill=0.84, 
     shade = np.where(glow, np.maximum(shade, 1.05), shade)
     fc = np.clip(cols * shade[:, None], 0, 255)
 
-    for i, (a, b, cc) in enumerate(F):
+    order = range(len(F))
+    if priorities is not None:
+        order = np.lexsort((Z[np.asarray(F)].mean(1), np.asarray(priorities)))
+        zbuf[:] = -np.inf  # painter's algorithm: every later face wins
+    for i in order:
+        a, b, cc = F[i]
         if n[i, 2] <= 0:  # back-face cull, as the RS client does
             continue
         xs, ys = (X[a], X[b], X[cc]), (Y[a], Y[b], Y[cc])
@@ -80,8 +89,9 @@ def render(V, F, cols, glow=None, size=480, yaw=-32, pitch=16, ss=3, fill=0.84, 
             continue
         z = w0 * Z[a] + w1 * Z[b] + w2 * Z[cc] + zbias[i]
         zb = zbuf[y0:y1 + 1, x0:x1 + 1]
-        m &= z > zb
-        zb[m] = z[m]
+        if priorities is None:
+            m &= z > zb
+            zb[m] = z[m]
         if vshade is not None and not glow[i]:
             sh = w0 * vshade[a] + w1 * vshade[b] + w2 * vshade[cc]
             img[y0:y1 + 1, x0:x1 + 1][m] = np.clip(cols[i][None, :] * sh[m][:, None], 0, 255)

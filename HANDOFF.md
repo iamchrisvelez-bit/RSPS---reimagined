@@ -8,13 +8,17 @@ Everything you need is in `out/`. The single source of truth is `out/manifest.js
 pip install -r requirements.txt
 ./verify.sh            # rebuilds out/ from source + all checks; must end with "OK"
 ```
-If the cache already uses model ids 60000–60167 or item ids 30000–30083, rebuild with free ranges.
+Defaults are model ids 63000–63167 and item ids 40000–40083, which are free in the rev 241 game cache (it ends at model 62050 and item 34645). The earlier defaults (60000/30000) collided with real game models and items. The server may have added its own custom items, so check against an export of **the server's** cache before packing:
+```sh
+python3 tools/check_ids.py --cache <flatcache dump of the server cache>
+```
+If anything collides, rebuild with free ranges.
 **Don't hand-edit ids anywhere**: the manifest, definitions and file names are all regenerated together.
 ```sh
 ./verify.sh --base-model-id <first free model id> --base-item-id <first free item id>
 ```
 Constraints:
-- Model ids must stay ≤ 65535. Item definitions store model ids as unsigned 16-bit.
+- Keep model ids ≤ 65535 to use the classic 16-bit item-definition fields. Rev 241 also has 32-bit model fields (item opcodes 44–54) if a base needs more.
 - The model ids for one build are a contiguous block of 168.
 
 ## 1. What is in `out/`
@@ -31,9 +35,12 @@ Constraints:
 | `obj/` | OBJ/MTL of each worn model, for Blender or a model editor |
 | `renders/`, `sheets/` | Previews only |
 
-Each item has **two models**:
-- `inventory_model` is centred on the origin. Use it for the icon and the ground item.
-- `worn_model` is positioned on the player. Use it for `maleModel0` and `femaleModel0`.
+Each item has **three models**, each fitted onto a real rev 241 template item (`template` in the manifest; see SWAP.md):
+- `inventory_model` is laid out like the template's inventory model. Use it for the icon and the ground item. The `icon` values (zoom2d/xan2d/yan2d/...) are the template's, so the icon frames exactly like the template's. `sprites/<item_id>.png` is that icon, rendered by RuneLite's port of the client's sprite code.
+- `worn_model` sits on the player exactly where the template's worn model sits. Weapons and shields are in the hand. Use it for `maleModel0`.
+- `worn_model_female` is fitted to the template's female models. Use it for `femaleModel0`. For unisex templates it is the same id as `worn_model`.
+
+Worn models carry the template's **vertex groups**, so they animate with the player, and its face priorities. They also carry a few **anchor faces**: zero-area triangles with all three corners on one vertex. These keep the player's rotation centres exactly where the original item kept them. The client keeps them when it merges the player model and never draws them. **Don't strip degenerate faces** in a model tool.
 
 ## 2. Pack the models into the cache
 Pick the section that matches the server's revision. Look for the cache folder (`main_file_cache.dat2` + `.idx*` = OSRS-style; `main_file_cache.dat` + `idx0..4` = 317-style).
@@ -76,14 +83,16 @@ For each `item_id`:
 3. Drop it: the ground model shows.
 4. Equip it: it appears on the player, in the right slot, with the right parts hidden.
 
+## 5b. Replacing existing items instead
+To make the redesigns replace existing OSRS items' looks rather than add new items, use the swap kit: see [SWAP.md](SWAP.md). It fits every model onto a real rev 241 item, so the item keeps that item's animations, hand placement and icon framing, and it verifies the result against the game's own animations.
+
 ## 6. Where the models come from
 `out/` is built from **`pipeline_models/`**: the models refined from the design sheet by `pipeline/refine_to_match.py` (see PIPELINE.md). `build.py` fits each one onto the player for its slot. Capes are turned so the artwork faces away from the wearer. The surface carries the design's own colours, shadows and texture, and thin painted lines (glow cracks, trims, straps) are separate strips with face priority 11 so they draw over the surface.
 
 The earlier procedural models are still available: `./verify.sh --source handbuilt` packages them instead (flat shading, single priority 10). Model and item ids are the same either way.
 
 ## 7. Known limitations, stated plainly
-- **No vertex skins.** Worn models are placed on a ~200-unit-tall player (feet at y=0, facing +z in authoring space, stored as RS y-down). They show correctly while standing but will **not bend with animations** until vertex groups are copied from the base player kit in a model editor.
-- Items with `worn_placement: item_space_needs_offset` (weapons, shields, amulets) have the grip or centre at the origin. They need the base's usual hand/neck offset, or re-posing, before they look right when equipped.
+- **Animation was verified offline** against the game's own data: the default male and female player, wearing each item in place of its template, posed by real sequences (idle 808, walk 819, run 824, slash 390). The client's player-model merge and frame transforms were reproduced from RuneLite's and the deobfuscated client's code. See `tools/swap_verify.py --manifest out/manifest.json` and SWAP.md. Animations that use other skeletons, or newer skeletal ("animaya") animations, were not checked.
 - Every model has at most 2,400 faces (the tests enforce ≤3,000), so equipped players stay cheap to draw.
 - Models are reliefs built from one front view of each design: the back is a simpler, slightly darker version of the front, and depth comes from the design's shading rather than a full 3D sculpt.
 - Detail lines are at least ~1.8 RS units wide so they stay continuous on the integer vertex grid. Weapons are too small for that, so they carry their detail in the face colours only.

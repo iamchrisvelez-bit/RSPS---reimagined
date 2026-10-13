@@ -21,11 +21,17 @@ pip install -r requirements.txt
 | `rsgen/items.py` | The 84 item builders (`@item(code, name, slot)`) |
 | `rsgen/rsformat.py` | RS classic model encoder/decoder, HSL palette, mesh cleaning, OBJ export |
 | `rsgen/render.py` | Preview renderer and inventory-sprite generator |
-| `build.py` | Builds `out/` (models, sprites, defs, manifest) |
+| `build.py` | Builds `out/` (models, sprites, defs, manifest). Pipeline models are fitted onto real OSRS template items |
+| `rsgen/swap.py` | Fitting onto a template item: placement, vertex groups (animation labels), model split, priorities, rotation-centre anchors |
+| `rsgen/detail.py` | Detail lines (glow cracks, trims) found in the designs and built as strips |
+| `tools/swap_build.py`, `tools/swap_verify.py` | Swap kit: replace existing items' looks, and verify with the game's own animations and icon renderer (SWAP.md) |
+| `tools/osrs/` | Read-only OSRS cache access ported from RuneLite: flatcache, item/kit/sequence definitions, frames, client-accurate animation |
+| `tools/check_ids.py` | Checks our model and item ids are free in a server's cache |
+| `data/osrs-rev241/` | The rev 241 game data these need (template items, their models, player kits, skeleton, four animations): 0.9 MB |
 | `tests/` | Release checks |
 | `tools/compare.py` | Reference panel vs. current renders, side by side (`out/compare/`) |
 | `tools/preview.py` | Quick render of ad-hoc meshes while tuning templates |
-| `verify/` | RuneLite `ModelLoader` sources (BSD-2, unmodified apart from removing Lombok) + cross-check harness |
+| `verify/` | RuneLite cache sources (BSD-2): `ModelLoader`, the item sprite renderer (Lombok removed, minimal `ItemDefinition`), plus `ModelDump`/`IconRender`/`VerifyModels` harnesses |
 
 ## Interpretations of the sheet
 - B04 shows one armour suit three times. It is split into Reaver platebody, Reaver platelegs and Reaver warboots.

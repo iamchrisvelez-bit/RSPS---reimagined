@@ -770,10 +770,6 @@ newmtl hsl_65052
 Kd 0.4196 0.1490 0.1647
 illum 1
 
-newmtl hsl_668
-Kd 0.4471 0.1333 0.1137
-illum 1
-
 newmtl hsl_59552
 Kd 0.3765 0.2784 0.3294
 illum 1

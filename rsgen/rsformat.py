@@ -86,21 +86,27 @@ def _smart(v):
     raise ValueError('delta out of range for smart encoding: %d' % v)
 
 
-def clean(mesh):
+def clean(mesh, vattr=None, fattr=None):
     """Snap vertices to the integer grid the format stores, weld duplicates,
     and drop triangles that become degenerate (repeated vertex or zero area)
-    plus vertices no face uses. Returns a new Mesh; colours/glow follow faces."""
+    plus vertices no face uses. Returns a new Mesh; colours/glow follow faces.
+    vattr / fattr: optional per-vertex / per-face lists (e.g. vertex groups,
+    face priorities) carried along; when given, returns (mesh, vattr, fattr).
+    A welded vertex keeps the first merged vertex's value."""
     from .geom import Mesh
     R = np.rint(mesh.V).astype(int)
     keymap, newV, remap = {}, [], np.zeros(len(R), int)
+    vout = []
     for i, v in enumerate(map(tuple, R)):
         if v not in keymap:
             keymap[v] = len(newV)
             newV.append(v)
+            vout.append(vattr[i] if vattr is not None else None)
         remap[i] = keymap[v]
-    F, C, G, L = [], [], [], []
+    F, C, G, L, FA = [], [], [], [], []
     Vn = np.array(newV, float)
-    for (a, b, c), col, g, ly in zip(remap[mesh.F], mesh.C, mesh.G, mesh.layers()):
+    fa_in = fattr if fattr is not None else [None] * len(mesh.F)
+    for (a, b, c), col, g, ly, fa in zip(remap[mesh.F], mesh.C, mesh.G, mesh.layers(), fa_in):
         if a == b or b == c or a == c:
             continue
         if np.linalg.norm(np.cross(Vn[b] - Vn[a], Vn[c] - Vn[a])) == 0:
@@ -109,19 +115,26 @@ def clean(mesh):
         C.append(col)
         G.append(g)
         L.append(ly)
+        FA.append(fa)
     used = sorted({i for f in F for i in f})
     idx = {o: n for n, o in enumerate(used)}
-    return Mesh(Vn[used], [(idx[a], idx[b], idx[c]) for a, b, c in F], C, G, L)
+    out = Mesh(Vn[used], [(idx[a], idx[b], idx[c]) for a, b, c in F], C, G, L)
+    if vattr is None and fattr is None:
+        return out
+    return out, ([vout[i] for i in used] if vattr is not None else None), (FA if fattr is not None else None)
 
 
-def encode(mesh, priority=10, smooth=False):
+def encode(mesh, priority=10, smooth=False, priorities=None, vertex_groups=None):
     """Encode a cleaned mesh (see clean()); vertices must already be integers.
 
     priority: face draw priority (0..11 in the client). Faces on a detail
     layer (mesh.L = 1) get priority + 1 so they draw over the surface; the
     model then stores a per-face priority list.
     smooth: render type 0 (Gouraud: lit per vertex, smooth shading) instead
-    of 1 (flat, one light value per face)."""
+    of 1 (flat, one light value per face).
+    priorities: explicit per-face priorities (overrides priority + layer).
+    vertex_groups: per-vertex animation labels (0..255), written as the
+    model's vertex skins so player animations move the vertices."""
     if not np.array_equal(mesh.V, np.rint(mesh.V)):
         raise ValueError('mesh has non-integer vertices; run clean() first')
     if not 0 <= priority <= 254:
@@ -166,7 +179,14 @@ def encode(mesh, priority=10, smooth=False):
     render_types = bytes([0 if smooth else 1]) * nf  # 0 smooth (Gouraud), 1 flat (faceted)
     col = b''.join(struct.pack('>H', c) for c in colors)
     layers = mesh.layers()
-    if any(layers):
+    if priorities is not None:
+        if len(priorities) != nf or not all(0 <= p <= 254 for p in priorities):
+            raise ValueError('need one priority 0..254 per face')
+        if len(set(priorities)) == 1:
+            prios, prio_flag = b'', int(priorities[0])
+        else:
+            prios, prio_flag = bytes(int(p) for p in priorities), 255
+    elif any(layers):
         if priority + max(layers) > 11:
             raise ValueError('priority + layer must stay within 0..11')
         prios = bytes(priority + ly for ly in layers)
@@ -174,11 +194,18 @@ def encode(mesh, priority=10, smooth=False):
     else:
         prios, prio_flag = b'', priority
 
-    body = vflags + ctypes + prios + render_types + fdata + col + xs + ys + zs
+    if vertex_groups is not None:
+        if len(vertex_groups) != nv or not all(0 <= g <= 255 for g in vertex_groups):
+            raise ValueError('need one vertex group 0..255 per vertex')
+        vskins = bytes(int(g) for g in vertex_groups)
+    else:
+        vskins = b''
+    body = vflags + ctypes + prios + render_types + vskins + fdata + col + xs + ys + zs
     footer = struct.pack('>HHBBBBBBHHHH', nv, nf, 0,
                          1,          # per-face render types present
                          prio_flag,  # one priority for every face, or 255 = per-face list
-                         0, 0, 0,    # no alpha, no face/vertex skins
+                         0, 0,       # no alpha, no face skins
+                         1 if vertex_groups is not None else 0,  # vertex skins (animation labels)
                          len(xs), len(ys), len(zs), len(fdata))
     return bytes(body + footer)
 

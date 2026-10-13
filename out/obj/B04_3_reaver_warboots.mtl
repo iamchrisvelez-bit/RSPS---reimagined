@@ -1,17 +1,13 @@
-newmtl hsl_138
-Kd 0.1451 0.1059 0.1059
+newmtl hsl_32776
+Kd 0.1020 0.1059 0.1137
 illum 1
 
 newmtl hsl_5125
 Kd 0.0745 0.0745 0.0667
 illum 1
 
-newmtl hsl_32776
-Kd 0.1020 0.1059 0.1137
-illum 1
-
-newmtl hsl_31879
-Kd 0.0784 0.1059 0.1059
+newmtl hsl_138
+Kd 0.1451 0.1059 0.1059
 illum 1
 
 newmtl hsl_135
@@ -50,10 +46,6 @@ newmtl hsl_1284
 Kd 0.0745 0.0471 0.0392
 illum 1
 
-newmtl hsl_3341
-Kd 0.1961 0.1451 0.1137
-illum 1
-
 newmtl hsl_5123
 Kd 0.0471 0.0471 0.0392
 illum 1
@@ -74,10 +66,6 @@ newmtl hsl_5387
 Kd 0.1686 0.1373 0.1020
 illum 1
 
-newmtl hsl_2203
-Kd 0.3294 0.2627 0.2392
-illum 1
-
 newmtl hsl_3344
 Kd 0.2353 0.1686 0.1373
 illum 1
@@ -90,16 +78,16 @@ newmtl hsl_19
 Kd 0.2235 0.2039 0.2039
 illum 1
 
+newmtl hsl_2203
+Kd 0.3294 0.2627 0.2392
+illum 1
+
 newmtl hsl_5284
 Kd 0.4118 0.3608 0.3059
 illum 1
 
 newmtl hsl_3356
 Kd 0.3647 0.2667 0.2157
-illum 1
-
-newmtl hsl_4257
-Kd 0.3843 0.3294 0.2824
 illum 1
 
 newmtl hsl_5512
@@ -114,28 +102,20 @@ newmtl hsl_5134
 Kd 0.1725 0.1686 0.1608
 illum 1
 
-newmtl hsl_1416
-Kd 0.1451 0.0745 0.0667
+newmtl hsl_3341
+Kd 0.1961 0.1451 0.1137
 illum 1
 
-newmtl hsl_9239
-Kd 0.2627 0.2627 0.2392
+newmtl hsl_1416
+Kd 0.1451 0.0745 0.0667
 illum 1
 
 newmtl hsl_3234
 Kd 0.3922 0.3255 0.2902
 illum 1
 
-newmtl hsl_1188
-Kd 0.4118 0.3216 0.3059
-illum 1
-
 newmtl hsl_3230
 Kd 0.3569 0.2941 0.2627
-illum 1
-
-newmtl hsl_2216
-Kd 0.4510 0.3608 0.3333
 illum 1
 
 newmtl hsl_4261
@@ -178,10 +158,6 @@ newmtl hsl_9858
 Kd 0.0471 0.0471 0.0118
 illum 1
 
-newmtl hsl_1428
-Kd 0.2980 0.1647 0.1373
-illum 1
-
 newmtl hsl_9229
 Kd 0.1647 0.1647 0.1490
 illum 1
@@ -192,10 +168,6 @@ illum 1
 
 newmtl hsl_3462
 Kd 0.1137 0.0745 0.0471
-illum 1
-
-newmtl hsl_2450
-Kd 0.2745 0.1647 0.1294
 illum 1
 
 newmtl hsl_5137
@@ -234,20 +206,16 @@ newmtl hsl_2077
 Kd 0.3176 0.2941 0.2863
 illum 1
 
-newmtl hsl_5279
-Kd 0.3647 0.3216 0.2706
-illum 1
-
 newmtl hsl_4140
 Kd 0.4431 0.4196 0.4000
 illum 1
 
-newmtl hsl_64911
-Kd 0.2392 0.1059 0.1176
+newmtl hsl_9239
+Kd 0.2627 0.2627 0.2392
 illum 1
 
-newmtl hsl_5763
-Kd 0.0745 0.0471 0.0118
+newmtl hsl_64911
+Kd 0.2392 0.1059 0.1176
 illum 1
 
 newmtl hsl_64917
@@ -278,6 +246,14 @@ newmtl hsl_64906
 Kd 0.1686 0.0784 0.0863
 illum 1
 
+newmtl hsl_31879
+Kd 0.0784 0.1059 0.1059
+illum 1
+
+newmtl hsl_1188
+Kd 0.4118 0.3216 0.3059
+illum 1
+
 newmtl hsl_2199
 Kd 0.2863 0.2314 0.2118
 illum 1
@@ -288,14 +264,6 @@ illum 1
 
 newmtl hsl_10270
 Kd 0.3255 0.3255 0.2941
-illum 1
-
-newmtl hsl_2571
-Kd 0.1961 0.1020 0.0667
-illum 1
-
-newmtl hsl_65042
-Kd 0.2941 0.1020 0.1137
 illum 1
 
 newmtl hsl_30
@@ -314,10 +282,6 @@ newmtl hsl_6296
 Kd 0.2980 0.2667 0.2196
 illum 1
 
-newmtl hsl_1062
-Kd 0.3922 0.3608 0.3569
-illum 1
-
 newmtl hsl_528
 Kd 0.2706 0.1020 0.0980
 illum 1
@@ -330,8 +294,16 @@ newmtl hsl_64794
 Kd 0.3451 0.2039 0.2118
 illum 1
 
+newmtl hsl_5279
+Kd 0.3647 0.3216 0.2706
+illum 1
+
 newmtl hsl_5292
 Kd 0.4863 0.4235 0.3569
+illum 1
+
+newmtl hsl_1062
+Kd 0.3922 0.3608 0.3569
 illum 1
 
 newmtl hsl_3466
@@ -350,8 +322,8 @@ newmtl hsl_1425
 Kd 0.2627 0.1451 0.1216
 illum 1
 
-newmtl hsl_7319
-Kd 0.2863 0.2667 0.2118
+newmtl hsl_5763
+Kd 0.0745 0.0471 0.0118
 illum 1
 
 newmtl hsl_1
@@ -362,8 +334,8 @@ newmtl hsl_1566
 Kd 0.4431 0.2039 0.1608
 illum 1
 
-newmtl hsl_3719
-Kd 0.1451 0.0745 0.0353
+newmtl hsl_2571
+Kd 0.1961 0.1020 0.0667
 illum 1
 
 newmtl hsl_1680
@@ -378,16 +350,16 @@ newmtl hsl_7199
 Kd 0.3333 0.3255 0.3059
 illum 1
 
-newmtl hsl_162
-Kd 0.3922 0.2941 0.2902
-illum 1
-
 newmtl hsl_3352
 Kd 0.3255 0.2353 0.1922
 illum 1
 
 newmtl hsl_389
 Kd 0.0980 0.0471 0.0392
+illum 1
+
+newmtl hsl_65042
+Kd 0.2941 0.1020 0.1137
 illum 1
 
 newmtl hsl_64789
@@ -402,8 +374,8 @@ newmtl hsl_407
 Kd 0.3373 0.1647 0.1529
 illum 1
 
-newmtl hsl_1308
-Kd 0.3647 0.2392 0.2157
+newmtl hsl_2450
+Kd 0.2745 0.1647 0.1294
 illum 1
 
 newmtl hsl_52362
@@ -422,28 +394,16 @@ newmtl hsl_643
 Kd 0.0745 0.0196 0.0118
 illum 1
 
+newmtl hsl_3719
+Kd 0.1451 0.0745 0.0353
+illum 1
+
 newmtl hsl_2207
 Kd 0.3647 0.2902 0.2706
 illum 1
 
-newmtl hsl_420
-Kd 0.4824 0.2392 0.2235
-illum 1
-
-newmtl hsl_2465
-Kd 0.4471 0.2706 0.2118
-illum 1
-
-newmtl hsl_424
-Kd 0.5255 0.2627 0.2471
-illum 1
-
 newmtl hsl_1311
 Kd 0.3961 0.2627 0.2353
-illum 1
-
-newmtl hsl_5400
-Kd 0.3255 0.2627 0.1922
 illum 1
 
 newmtl hsl_64556
@@ -458,12 +418,8 @@ newmtl hsl_1550
 Kd 0.2392 0.1059 0.0863
 illum 1
 
-newmtl hsl_412
-Kd 0.3922 0.1922 0.1843
-illum 1
-
-newmtl hsl_1312
-Kd 0.4078 0.2667 0.2431
+newmtl hsl_1428
+Kd 0.2980 0.1647 0.1373
 illum 1
 
 newmtl hsl_40
@@ -478,12 +434,12 @@ newmtl hsl_1066
 Kd 0.4275 0.3922 0.3843
 illum 1
 
-newmtl hsl_535
-Kd 0.3569 0.1373 0.1294
+newmtl hsl_5400
+Kd 0.3255 0.2627 0.1922
 illum 1
 
-newmtl hsl_65286
-Kd 0.1333 0.0196 0.0275
+newmtl hsl_535
+Kd 0.3569 0.1373 0.1294
 illum 1
 
 newmtl hsl_280

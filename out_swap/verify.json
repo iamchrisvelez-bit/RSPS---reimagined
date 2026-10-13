@@ -1,0 +1,758 @@
+[
+ {
+  "code": "B01_1",
+  "template": "Bronze platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.541,
+  "icon_silhouette_iou": 0.769
+ },
+ {
+  "code": "B01_2",
+  "template": "Iron platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.516,
+  "icon_silhouette_iou": 0.78
+ },
+ {
+  "code": "B01_3",
+  "template": "Steel platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.496,
+  "icon_silhouette_iou": 0.771
+ },
+ {
+  "code": "B01_4",
+  "template": "Black platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.516,
+  "icon_silhouette_iou": 0.77
+ },
+ {
+  "code": "B01_5",
+  "template": "Mithril platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.559,
+  "icon_silhouette_iou": 0.73
+ },
+ {
+  "code": "B01_6",
+  "template": "Adamant platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.527,
+  "icon_silhouette_iou": 0.769
+ },
+ {
+  "code": "B02_1",
+  "template": "Rune platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.491,
+  "icon_silhouette_iou": 0.758
+ },
+ {
+  "code": "B02_2",
+  "template": "Red d'hide body",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.453,
+  "icon_fill_ours": 0.329,
+  "icon_silhouette_iou": 0.703
+ },
+ {
+  "code": "B02_3",
+  "template": "Dragon scimitar",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.228,
+  "icon_fill_ours": 0.284,
+  "icon_silhouette_iou": 0.63
+ },
+ {
+  "code": "B02_4",
+  "template": "Rune pickaxe",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.265,
+  "icon_fill_ours": 0.341,
+  "icon_silhouette_iou": 0.658
+ },
+ {
+  "code": "B02_5",
+  "template": "Dragon pickaxe",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.299,
+  "icon_fill_ours": 0.437,
+  "icon_silhouette_iou": 0.659
+ },
+ {
+  "code": "B02_6",
+  "template": "Dragon axe",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.305,
+  "icon_fill_ours": 0.343,
+  "icon_silhouette_iou": 0.707
+ },
+ {
+  "code": "B03_1",
+  "template": "Dragon battleaxe",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.307,
+  "icon_fill_ours": 0.34,
+  "icon_silhouette_iou": 0.604
+ },
+ {
+  "code": "B03_2",
+  "template": "Dragon spear",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.177,
+  "icon_fill_ours": 0.229,
+  "icon_silhouette_iou": 0.636
+ },
+ {
+  "code": "B03_3",
+  "template": "Verac's flail",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.214,
+  "icon_fill_ours": 0.233,
+  "icon_silhouette_iou": 0.481
+ },
+ {
+  "code": "B03_4",
+  "template": "Granite maul",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.203,
+  "icon_fill_ours": 0.371,
+  "icon_silhouette_iou": 0.392
+ },
+ {
+  "code": "B03_5",
+  "template": "Rune crossbow",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.328,
+  "icon_fill_ours": 0.392,
+  "icon_silhouette_iou": 0.529
+ },
+ {
+  "code": "B03_6",
+  "template": "Dragon mace",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.249,
+  "icon_fill_ours": 0.303,
+  "icon_silhouette_iou": 0.618
+ },
+ {
+  "code": "B04_1",
+  "template": "Dragon platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.609,
+  "icon_fill_ours": 0.427,
+  "icon_silhouette_iou": 0.636
+ },
+ {
+  "code": "B04_2",
+  "template": "Dragon platelegs",
+  "body_drift_max": 5.1,
+  "follow_p95_max": 5.0,
+  "icon_fill_original": 0.293,
+  "icon_fill_ours": 0.247,
+  "icon_silhouette_iou": 0.827
+ },
+ {
+  "code": "B04_3",
+  "template": "Dragon boots",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.652,
+  "icon_fill_ours": 0.444,
+  "icon_silhouette_iou": 0.558
+ },
+ {
+  "code": "B04_4",
+  "template": "Rune full helm",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.318,
+  "icon_fill_ours": 0.451,
+  "icon_silhouette_iou": 0.621
+ },
+ {
+  "code": "B04_5",
+  "template": "Torag's platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.451,
+  "icon_fill_ours": 0.529,
+  "icon_silhouette_iou": 0.628
+ },
+ {
+  "code": "B04_6",
+  "template": "Barrows gloves",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.398,
+  "icon_fill_ours": 0.298,
+  "icon_silhouette_iou": 0.637
+ },
+ {
+  "code": "B05_1",
+  "template": "Rune full helm",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.318,
+  "icon_fill_ours": 0.29,
+  "icon_silhouette_iou": 0.804
+ },
+ {
+  "code": "B05_2",
+  "template": "Rune chainbody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.385,
+  "icon_fill_ours": 0.337,
+  "icon_silhouette_iou": 0.847
+ },
+ {
+  "code": "B05_3",
+  "template": "Bandos tassets",
+  "body_drift_max": 3.16,
+  "follow_p95_max": 3.0,
+  "icon_fill_original": 0.566,
+  "icon_fill_ours": 0.335,
+  "icon_silhouette_iou": 0.509
+ },
+ {
+  "code": "B05_4",
+  "template": "Adamant full helm",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.318,
+  "icon_fill_ours": 0.39,
+  "icon_silhouette_iou": 0.674
+ },
+ {
+  "code": "B05_5",
+  "template": "Adamant platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.507,
+  "icon_silhouette_iou": 0.82
+ },
+ {
+  "code": "B05_6",
+  "template": "Rune boots",
+  "body_drift_max": 2.45,
+  "follow_p95_max": 1.41,
+  "icon_fill_original": 0.503,
+  "icon_fill_ours": 0.468,
+  "icon_silhouette_iou": 0.799
+ },
+ {
+  "code": "B06_1",
+  "template": "Dragon full helm",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.406,
+  "icon_fill_ours": 0.656,
+  "icon_silhouette_iou": 0.619
+ },
+ {
+  "code": "B06_2",
+  "template": "Dragon platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.609,
+  "icon_fill_ours": 0.486,
+  "icon_silhouette_iou": 0.723
+ },
+ {
+  "code": "B06_3",
+  "template": "Barrows gloves",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.398,
+  "icon_fill_ours": 0.283,
+  "icon_silhouette_iou": 0.576
+ },
+ {
+  "code": "B06_4",
+  "template": "Dragon dagger",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.157,
+  "icon_fill_ours": 0.201,
+  "icon_silhouette_iou": 0.695
+ },
+ {
+  "code": "B06_5",
+  "template": "Dragon mace",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.249,
+  "icon_fill_ours": 0.3,
+  "icon_silhouette_iou": 0.72
+ },
+ {
+  "code": "B06_6",
+  "template": "Dragon kiteshield",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.47,
+  "icon_fill_ours": 0.478,
+  "icon_silhouette_iou": 0.808
+ },
+ {
+  "code": "B07_1",
+  "template": "Green d'hide body",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.453,
+  "icon_fill_ours": 0.302,
+  "icon_silhouette_iou": 0.651
+ },
+ {
+  "code": "B07_2",
+  "template": "Blue d'hide body",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.453,
+  "icon_fill_ours": 0.315,
+  "icon_silhouette_iou": 0.683
+ },
+ {
+  "code": "B07_3",
+  "template": "Red d'hide body",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.453,
+  "icon_fill_ours": 0.307,
+  "icon_silhouette_iou": 0.653
+ },
+ {
+  "code": "B07_4",
+  "template": "Black d'hide body",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.453,
+  "icon_fill_ours": 0.307,
+  "icon_silhouette_iou": 0.672
+ },
+ {
+  "code": "B07_5",
+  "template": "Adamant full helm",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.318,
+  "icon_fill_ours": 0.428,
+  "icon_silhouette_iou": 0.639
+ },
+ {
+  "code": "B07_6",
+  "template": "Rune platebody",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.543,
+  "icon_fill_ours": 0.501,
+  "icon_silhouette_iou": 0.837
+ },
+ {
+  "code": "B08_1",
+  "template": "Fire cape",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 1.0,
+  "icon_fill_original": 0.429,
+  "icon_fill_ours": 0.418,
+  "icon_silhouette_iou": 0.838
+ },
+ {
+  "code": "B08_2",
+  "template": "Armadyl helmet",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.382,
+  "icon_fill_ours": 0.481,
+  "icon_silhouette_iou": 0.643
+ },
+ {
+  "code": "B08_3",
+  "template": "Armadyl chestplate",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.484,
+  "icon_fill_ours": 0.505,
+  "icon_silhouette_iou": 0.731
+ },
+ {
+  "code": "B08_4",
+  "template": "Rune platelegs",
+  "body_drift_max": 2.24,
+  "follow_p95_max": 2.0,
+  "icon_fill_original": 0.286,
+  "icon_fill_ours": 0.255,
+  "icon_silhouette_iou": 0.846
+ },
+ {
+  "code": "B08_5",
+  "template": "Crystal helm",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.337,
+  "icon_fill_ours": 0.375,
+  "icon_silhouette_iou": 0.81
+ },
+ {
+  "code": "B08_6",
+  "template": "Crystal body",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.497,
+  "icon_fill_ours": 0.555,
+  "icon_silhouette_iou": 0.817
+ },
+ {
+  "code": "B09_1",
+  "template": "Magic longbow",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.178,
+  "icon_fill_ours": 0.227,
+  "icon_silhouette_iou": 0.596
+ },
+ {
+  "code": "B09_2",
+  "template": "Dark bow",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.231,
+  "icon_fill_ours": 0.25,
+  "icon_silhouette_iou": 0.601
+ },
+ {
+  "code": "B09_3",
+  "template": "Twisted bow",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.296,
+  "icon_fill_ours": 0.404,
+  "icon_silhouette_iou": 0.609
+ },
+ {
+  "code": "B09_4",
+  "template": "Crystal bow",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.146,
+  "icon_fill_ours": 0.425,
+  "icon_silhouette_iou": 0.306
+ },
+ {
+  "code": "B09_5",
+  "template": "Armadyl crossbow",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.272,
+  "icon_fill_ours": 0.644,
+  "icon_silhouette_iou": 0.358
+ },
+ {
+  "code": "B09_6",
+  "template": "Rune crossbow",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.328,
+  "icon_fill_ours": 0.387,
+  "icon_silhouette_iou": 0.509
+ },
+ {
+  "code": "B10_1",
+  "template": "Wizard hat",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.416,
+  "icon_fill_ours": 0.583,
+  "icon_silhouette_iou": 0.628
+ },
+ {
+  "code": "B10_2",
+  "template": "Mystic robe top",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.342,
+  "icon_fill_ours": 0.351,
+  "icon_silhouette_iou": 0.687
+ },
+ {
+  "code": "B10_3",
+  "template": "Mystic robe bottom",
+  "body_drift_max": 3.0,
+  "follow_p95_max": 1.41,
+  "icon_fill_original": 0.384,
+  "icon_fill_ours": 0.411,
+  "icon_silhouette_iou": 0.819
+ },
+ {
+  "code": "B10_4",
+  "template": "Ahrim's hood",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.479,
+  "icon_fill_ours": 0.483,
+  "icon_silhouette_iou": 0.731
+ },
+ {
+  "code": "B10_5",
+  "template": "Ahrim's robetop",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.418,
+  "icon_fill_ours": 0.407,
+  "icon_silhouette_iou": 0.801
+ },
+ {
+  "code": "B10_6",
+  "template": "Ahrim's robeskirt",
+  "body_drift_max": 6.08,
+  "follow_p95_max": 6.0,
+  "icon_fill_original": 0.358,
+  "icon_fill_ours": 0.305,
+  "icon_silhouette_iou": 0.812
+ },
+ {
+  "code": "B11_1",
+  "template": "Ancestral hat",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.303,
+  "icon_fill_ours": 0.475,
+  "icon_silhouette_iou": 0.503
+ },
+ {
+  "code": "B11_2",
+  "template": "Ancestral robe top",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.47,
+  "icon_fill_ours": 0.418,
+  "icon_silhouette_iou": 0.86
+ },
+ {
+  "code": "B11_3",
+  "template": "Ancestral robe bottom",
+  "body_drift_max": 4.12,
+  "follow_p95_max": 4.0,
+  "icon_fill_original": 0.347,
+  "icon_fill_ours": 0.293,
+  "icon_silhouette_iou": 0.716
+ },
+ {
+  "code": "B11_4",
+  "template": "Mystic air staff",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.168,
+  "icon_fill_ours": 0.141,
+  "icon_silhouette_iou": 0.31
+ },
+ {
+  "code": "B11_5",
+  "template": "Master wand",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.338,
+  "icon_fill_ours": 0.504,
+  "icon_silhouette_iou": 0.49
+ },
+ {
+  "code": "B11_6",
+  "template": "Mystic air staff",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.168,
+  "icon_fill_ours": 0.166,
+  "icon_silhouette_iou": 0.376
+ },
+ {
+  "code": "B12_1",
+  "template": "Abyssal whip",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.424,
+  "icon_fill_ours": 0.339,
+  "icon_silhouette_iou": 0.622
+ },
+ {
+  "code": "B12_2",
+  "template": "Dragon longsword",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.199,
+  "icon_fill_ours": 0.276,
+  "icon_silhouette_iou": 0.49
+ },
+ {
+  "code": "B12_3",
+  "template": "Dragon scimitar",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.228,
+  "icon_fill_ours": 0.263,
+  "icon_silhouette_iou": 0.622
+ },
+ {
+  "code": "B12_4",
+  "template": "Ghrazi rapier",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.191,
+  "icon_fill_ours": 0.256,
+  "icon_silhouette_iou": 0.635
+ },
+ {
+  "code": "B12_5",
+  "template": "Osmumten's fang",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.246,
+  "icon_fill_ours": 0.354,
+  "icon_silhouette_iou": 0.6
+ },
+ {
+  "code": "B12_6",
+  "template": "Rune mace",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.221,
+  "icon_fill_ours": 0.293,
+  "icon_silhouette_iou": 0.699
+ },
+ {
+  "code": "B13_1",
+  "template": "Amulet of glory",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.28,
+  "icon_fill_ours": 0.37,
+  "icon_silhouette_iou": 0.49
+ },
+ {
+  "code": "B13_2",
+  "template": "Amulet of power",
+  "body_drift_max": 2.24,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.28,
+  "icon_fill_ours": 0.406,
+  "icon_silhouette_iou": 0.564
+ },
+ {
+  "code": "B13_3",
+  "template": "Sapphire amulet",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.22,
+  "icon_fill_ours": 0.232,
+  "icon_silhouette_iou": 0.421
+ },
+ {
+  "code": "B13_4",
+  "template": "Amulet of fury",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.249,
+  "icon_fill_ours": 0.325,
+  "icon_silhouette_iou": 0.544
+ },
+ {
+  "code": "B13_5",
+  "template": "Obsidian cape",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.306,
+  "icon_fill_ours": 0.265,
+  "icon_silhouette_iou": 0.803
+ },
+ {
+  "code": "B13_6",
+  "template": "Infernal cape",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 1.0,
+  "icon_fill_original": 0.354,
+  "icon_fill_ours": 0.372,
+  "icon_silhouette_iou": 0.783
+ },
+ {
+  "code": "B14_1",
+  "template": "Dragonfire shield",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.396,
+  "icon_fill_ours": 0.382,
+  "icon_silhouette_iou": 0.74
+ },
+ {
+  "code": "B14_2",
+  "template": "Crystal shield",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.405,
+  "icon_fill_ours": 0.413,
+  "icon_silhouette_iou": 0.67
+ },
+ {
+  "code": "B14_3",
+  "template": "Rune sq shield",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.43,
+  "icon_fill_ours": 0.451,
+  "icon_silhouette_iou": 0.696
+ },
+ {
+  "code": "B14_4",
+  "template": "Adamant kiteshield",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.487,
+  "icon_fill_ours": 0.554,
+  "icon_silhouette_iou": 0.768
+ },
+ {
+  "code": "B14_5",
+  "template": "Rune kiteshield",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.487,
+  "icon_fill_ours": 0.577,
+  "icon_silhouette_iou": 0.749
+ },
+ {
+  "code": "B14_6",
+  "template": "Toktz-ket-xil",
+  "body_drift_max": 0.0,
+  "follow_p95_max": 0.0,
+  "icon_fill_original": 0.675,
+  "icon_fill_ours": 0.627,
+  "icon_silhouette_iou": 0.832
+ }
+]

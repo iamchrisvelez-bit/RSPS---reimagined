@@ -1,6 +1,6 @@
 [
  {
-  "item_id": 30000,
+  "item_id": 40000,
   "name": "Copper scale platebody",
   "requirements": [
    {
@@ -11,7 +11,7 @@
   ]
  },
  {
-  "item_id": 30001,
+  "item_id": 40001,
   "name": "Iron platebody",
   "requirements": [
    {
@@ -22,7 +22,7 @@
   ]
  },
  {
-  "item_id": 30002,
+  "item_id": 40002,
   "name": "Steel platebody",
   "requirements": [
    {
@@ -33,7 +33,7 @@
   ]
  },
  {
-  "item_id": 30003,
+  "item_id": 40003,
   "name": "Shadowsteel platebody",
   "requirements": [
    {
@@ -44,7 +44,7 @@
   ]
  },
  {
-  "item_id": 30004,
+  "item_id": 40004,
   "name": "Silver filigree platebody",
   "requirements": [
    {
@@ -55,7 +55,7 @@
   ]
  },
  {
-  "item_id": 30005,
+  "item_id": 40005,
   "name": "Jade crystal platebody",
   "requirements": [
    {
@@ -66,7 +66,7 @@
   ]
  },
  {
-  "item_id": 30006,
+  "item_id": 40006,
   "name": "Royal sapphire platebody",
   "requirements": [
    {
@@ -77,7 +77,7 @@
   ]
  },
  {
-  "item_id": 30007,
+  "item_id": 40007,
   "name": "Crimson dragonscale body",
   "requirements": [
    {
@@ -93,7 +93,7 @@
   ]
  },
  {
-  "item_id": 30008,
+  "item_id": 40008,
   "name": "Crimson crystal scimitar",
   "requirements": [
    {
@@ -104,7 +104,7 @@
   ]
  },
  {
-  "item_id": 30009,
+  "item_id": 40009,
   "name": "Sapphire pickaxe",
   "requirements": [
    {
@@ -120,7 +120,7 @@
   ]
  },
  {
-  "item_id": 30010,
+  "item_id": 40010,
   "name": "Magma pickaxe",
   "requirements": [
    {
@@ -136,7 +136,7 @@
   ]
  },
  {
-  "item_id": 30011,
+  "item_id": 40011,
   "name": "Magma hatchet",
   "requirements": [
    {
@@ -152,7 +152,7 @@
   ]
  },
  {
-  "item_id": 30012,
+  "item_id": 40012,
   "name": "Necrotic battleaxe",
   "requirements": [
    {
@@ -168,7 +168,7 @@
   ]
  },
  {
-  "item_id": 30013,
+  "item_id": 40013,
   "name": "Necrotic spear",
   "requirements": [
    {
@@ -179,7 +179,7 @@
   ]
  },
  {
-  "item_id": 30014,
+  "item_id": 40014,
   "name": "Necrotic flail",
   "requirements": [
    {
@@ -190,7 +190,7 @@
   ]
  },
  {
-  "item_id": 30015,
+  "item_id": 40015,
   "name": "Necrotic twin mauls",
   "requirements": [
    {
@@ -201,7 +201,7 @@
   ]
  },
  {
-  "item_id": 30016,
+  "item_id": 40016,
   "name": "Necrotic crossbow",
   "requirements": [
    {
@@ -212,7 +212,7 @@
   ]
  },
  {
-  "item_id": 30017,
+  "item_id": 40017,
   "name": "Necrotic skull censer",
   "requirements": [
    {
@@ -228,7 +228,7 @@
   ]
  },
  {
-  "item_id": 30018,
+  "item_id": 40018,
   "name": "Reaver platebody",
   "requirements": [
    {
@@ -239,7 +239,7 @@
   ]
  },
  {
-  "item_id": 30019,
+  "item_id": 40019,
   "name": "Reaver platelegs",
   "requirements": [
    {
@@ -250,7 +250,7 @@
   ]
  },
  {
-  "item_id": 30020,
+  "item_id": 40020,
   "name": "Reaver warboots",
   "requirements": [
    {
@@ -261,7 +261,7 @@
   ]
  },
  {
-  "item_id": 30021,
+  "item_id": 40021,
   "name": "Horned bone helm",
   "requirements": [
    {
@@ -272,7 +272,7 @@
   ]
  },
  {
-  "item_id": 30022,
+  "item_id": 40022,
   "name": "Ribcage platebody",
   "requirements": [
    {
@@ -283,7 +283,7 @@
   ]
  },
  {
-  "item_id": 30023,
+  "item_id": 40023,
   "name": "Bone bracers",
   "requirements": [
    {
@@ -294,7 +294,7 @@
   ]
  },
  {
-  "item_id": 30024,
+  "item_id": 40024,
   "name": "Crimson knight helm",
   "requirements": [
    {
@@ -305,7 +305,7 @@
   ]
  },
  {
-  "item_id": 30025,
+  "item_id": 40025,
   "name": "Crimson chain hauberk",
   "requirements": [
    {
@@ -316,7 +316,7 @@
   ]
  },
  {
-  "item_id": 30026,
+  "item_id": 40026,
   "name": "Crimson knight tassets",
   "requirements": [
    {
@@ -327,7 +327,7 @@
   ]
  },
  {
-  "item_id": 30027,
+  "item_id": 40027,
   "name": "Paladin full helm",
   "requirements": [
    {
@@ -343,7 +343,7 @@
   ]
  },
  {
-  "item_id": 30028,
+  "item_id": 40028,
   "name": "Paladin platebody",
   "requirements": [
    {
@@ -359,7 +359,7 @@
   ]
  },
  {
-  "item_id": 30029,
+  "item_id": 40029,
   "name": "Paladin greaves",
   "requirements": [
    {
@@ -375,7 +375,7 @@
   ]
  },
  {
-  "item_id": 30030,
+  "item_id": 40030,
   "name": "Magma helm",
   "requirements": [
    {
@@ -386,7 +386,7 @@
   ]
  },
  {
-  "item_id": 30031,
+  "item_id": 40031,
   "name": "Magma platebody",
   "requirements": [
    {
@@ -397,7 +397,7 @@
   ]
  },
  {
-  "item_id": 30032,
+  "item_id": 40032,
   "name": "Magma gauntlets",
   "requirements": [
    {
@@ -408,7 +408,7 @@
   ]
  },
  {
-  "item_id": 30033,
+  "item_id": 40033,
   "name": "Magma dagger",
   "requirements": [
    {
@@ -419,7 +419,7 @@
   ]
  },
  {
-  "item_id": 30034,
+  "item_id": 40034,
   "name": "Magma mace",
   "requirements": [
    {
@@ -430,7 +430,7 @@
   ]
  },
  {
-  "item_id": 30035,
+  "item_id": 40035,
   "name": "Magma kiteshield",
   "requirements": [
    {
@@ -441,7 +441,7 @@
   ]
  },
  {
-  "item_id": 30036,
+  "item_id": 40036,
   "name": "Woodland ranger tunic",
   "requirements": [
    {
@@ -457,7 +457,7 @@
   ]
  },
  {
-  "item_id": 30037,
+  "item_id": 40037,
   "name": "Tidewalker ranger tunic",
   "requirements": [
    {
@@ -473,7 +473,7 @@
   ]
  },
  {
-  "item_id": 30038,
+  "item_id": 40038,
   "name": "Emberhide ranger tunic",
   "requirements": [
    {
@@ -489,7 +489,7 @@
   ]
  },
  {
-  "item_id": 30039,
+  "item_id": 40039,
   "name": "Nightstalker ranger tunic",
   "requirements": [
    {
@@ -505,7 +505,7 @@
   ]
  },
  {
-  "item_id": 30040,
+  "item_id": 40040,
   "name": "Valkyrie winged helm",
   "requirements": [
    {
@@ -516,7 +516,7 @@
   ]
  },
  {
-  "item_id": 30041,
+  "item_id": 40041,
   "name": "Valkyrie platebody",
   "requirements": [
    {
@@ -527,7 +527,7 @@
   ]
  },
  {
-  "item_id": 30042,
+  "item_id": 40042,
   "name": "Seraph feather mantle",
   "requirements": [
    {
@@ -543,7 +543,7 @@
   ]
  },
  {
-  "item_id": 30043,
+  "item_id": 40043,
   "name": "Solar helm",
   "requirements": [
    {
@@ -554,7 +554,7 @@
   ]
  },
  {
-  "item_id": 30044,
+  "item_id": 40044,
   "name": "Solar scale platebody",
   "requirements": [
    {
@@ -565,7 +565,7 @@
   ]
  },
  {
-  "item_id": 30045,
+  "item_id": 40045,
   "name": "Solar scale platelegs",
   "requirements": [
    {
@@ -576,7 +576,7 @@
   ]
  },
  {
-  "item_id": 30046,
+  "item_id": 40046,
   "name": "Verdant crystal helm",
   "requirements": [
    {
@@ -587,7 +587,7 @@
   ]
  },
  {
-  "item_id": 30047,
+  "item_id": 40047,
   "name": "Verdant crystal body",
   "requirements": [
    {
@@ -598,7 +598,7 @@
   ]
  },
  {
-  "item_id": 30048,
+  "item_id": 40048,
   "name": "Bone longbow",
   "requirements": [
    {
@@ -609,7 +609,7 @@
   ]
  },
  {
-  "item_id": 30049,
+  "item_id": 40049,
   "name": "Shadowvine bow",
   "requirements": [
    {
@@ -620,7 +620,7 @@
   ]
  },
  {
-  "item_id": 30050,
+  "item_id": 40050,
   "name": "Dragonspine bow",
   "requirements": [
    {
@@ -631,7 +631,7 @@
   ]
  },
  {
-  "item_id": 30051,
+  "item_id": 40051,
   "name": "Crystal-root bow",
   "requirements": [
    {
@@ -642,7 +642,7 @@
   ]
  },
  {
-  "item_id": 30052,
+  "item_id": 40052,
   "name": "Seraph crossbow",
   "requirements": [
    {
@@ -653,7 +653,7 @@
   ]
  },
  {
-  "item_id": 30053,
+  "item_id": 40053,
   "name": "Runic crossbow",
   "requirements": [
    {
@@ -664,7 +664,7 @@
   ]
  },
  {
-  "item_id": 30054,
+  "item_id": 40054,
   "name": "Astral wizard hat",
   "requirements": [
    {
@@ -675,7 +675,7 @@
   ]
  },
  {
-  "item_id": 30055,
+  "item_id": 40055,
   "name": "Astral robe top",
   "requirements": [
    {
@@ -686,7 +686,7 @@
   ]
  },
  {
-  "item_id": 30056,
+  "item_id": 40056,
   "name": "Astral robe bottom",
   "requirements": [
    {
@@ -697,7 +697,7 @@
   ]
  },
  {
-  "item_id": 30057,
+  "item_id": 40057,
   "name": "Runeweaver hood",
   "requirements": [
    {
@@ -708,7 +708,7 @@
   ]
  },
  {
-  "item_id": 30058,
+  "item_id": 40058,
   "name": "Runeweaver robe top",
   "requirements": [
    {
@@ -719,7 +719,7 @@
   ]
  },
  {
-  "item_id": 30059,
+  "item_id": 40059,
   "name": "Runeweaver robe skirt",
   "requirements": [
    {
@@ -730,7 +730,7 @@
   ]
  },
  {
-  "item_id": 30060,
+  "item_id": 40060,
   "name": "Voidwoven hood",
   "requirements": [
    {
@@ -746,7 +746,7 @@
   ]
  },
  {
-  "item_id": 30061,
+  "item_id": 40061,
   "name": "Voidwoven robe top",
   "requirements": [
    {
@@ -762,7 +762,7 @@
   ]
  },
  {
-  "item_id": 30062,
+  "item_id": 40062,
   "name": "Voidwoven robe skirt",
   "requirements": [
    {
@@ -778,7 +778,7 @@
   ]
  },
  {
-  "item_id": 30063,
+  "item_id": 40063,
   "name": "Stormcaller staff",
   "requirements": [
    {
@@ -789,7 +789,7 @@
   ]
  },
  {
-  "item_id": 30064,
+  "item_id": 40064,
   "name": "Solar sceptre",
   "requirements": [
    {
@@ -800,7 +800,7 @@
   ]
  },
  {
-  "item_id": 30065,
+  "item_id": 40065,
   "name": "Necrotic soulstaff",
   "requirements": [
    {
@@ -811,7 +811,7 @@
   ]
  },
  {
-  "item_id": 30066,
+  "item_id": 40066,
   "name": "Abyssal tidewhip",
   "requirements": [
    {
@@ -822,7 +822,7 @@
   ]
  },
  {
-  "item_id": 30067,
+  "item_id": 40067,
   "name": "Seraph longsword",
   "requirements": [
    {
@@ -833,7 +833,7 @@
   ]
  },
  {
-  "item_id": 30068,
+  "item_id": 40068,
   "name": "Bloodfang cleaver",
   "requirements": [
    {
@@ -849,7 +849,7 @@
   ]
  },
  {
-  "item_id": 30069,
+  "item_id": 40069,
   "name": "Crimson rapier",
   "requirements": [
    {
@@ -860,7 +860,7 @@
   ]
  },
  {
-  "item_id": 30070,
+  "item_id": 40070,
   "name": "Gilded fang",
   "requirements": [
    {
@@ -871,7 +871,7 @@
   ]
  },
  {
-  "item_id": 30071,
+  "item_id": 40071,
   "name": "Goblin knotclub",
   "requirements": [
    {
@@ -882,7 +882,7 @@
   ]
  },
  {
-  "item_id": 30072,
+  "item_id": 40072,
   "name": "Amulet of the sun",
   "requirements": [
    {
@@ -893,17 +893,17 @@
   ]
  },
  {
-  "item_id": 30073,
+  "item_id": 40073,
   "name": "Crimson cord necklace",
   "requirements": []
  },
  {
-  "item_id": 30074,
+  "item_id": 40074,
   "name": "Sapphire amulet",
   "requirements": []
  },
  {
-  "item_id": 30075,
+  "item_id": 40075,
   "name": "Verdant shard amulet",
   "requirements": [
    {
@@ -914,12 +914,12 @@
   ]
  },
  {
-  "item_id": 30076,
+  "item_id": 40076,
   "name": "Obsidian cape",
   "requirements": []
  },
  {
-  "item_id": 30077,
+  "item_id": 40077,
   "name": "Magma cape",
   "requirements": [
    {
@@ -930,7 +930,7 @@
   ]
  },
  {
-  "item_id": 30078,
+  "item_id": 40078,
   "name": "Dragonfire shield",
   "requirements": [
    {
@@ -941,7 +941,7 @@
   ]
  },
  {
-  "item_id": 30079,
+  "item_id": 40079,
   "name": "Glacial crystal shield",
   "requirements": [
    {
@@ -952,7 +952,7 @@
   ]
  },
  {
-  "item_id": 30080,
+  "item_id": 40080,
   "name": "Solar heater shield",
   "requirements": [
    {
@@ -963,7 +963,7 @@
   ]
  },
  {
-  "item_id": 30081,
+  "item_id": 40081,
   "name": "Jade thorn shield",
   "requirements": [
    {
@@ -974,7 +974,7 @@
   ]
  },
  {
-  "item_id": 30082,
+  "item_id": 40082,
   "name": "Sapphire dragon kiteshield",
   "requirements": [
    {
@@ -985,7 +985,7 @@
   ]
  },
  {
-  "item_id": 30083,
+  "item_id": 40083,
   "name": "Crimson spiked roundshield",
   "requirements": [
    {

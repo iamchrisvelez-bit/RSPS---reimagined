@@ -1,0 +1,8608 @@
+{
+ "cache_last_model": 54249,
+ "base_model_id": 64000,
+ "models_written": 257,
+ "swaps": [
+  {
+   "code": "B01_1",
+   "name": "Copper scale platebody",
+   "slot": "body",
+   "template_id": 1117,
+   "template_name": "Bronze platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64000,
+     "replaces": 2605,
+     "faces": 1449,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 1449
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64001,
+     "replaces": 306,
+     "faces": 1420,
+     "anchors": 117,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 1420
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64002,
+     "replaces": 164,
+     "faces": 228,
+     "anchors": 56,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 228
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64003,
+     "replaces": 468,
+     "faces": 1281,
+     "anchors": 133,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 1281
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64004,
+     "replaces": 344,
+     "faces": 240,
+     "anchors": 47,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 240
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64000,
+    "maleModel0": 64001,
+    "maleModel1": 64002,
+    "maleModel2": -1,
+    "femaleModel0": 64003,
+    "femaleModel1": 64004,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B01_2",
+   "name": "Iron platebody",
+   "slot": "body",
+   "template_id": 1115,
+   "template_name": "Iron platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64005,
+     "replaces": 2605,
+     "faces": 2129,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2129
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64006,
+     "replaces": 306,
+     "faces": 2034,
+     "anchors": 115,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2034
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64007,
+     "replaces": 164,
+     "faces": 286,
+     "anchors": 56,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 286
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64008,
+     "replaces": 468,
+     "faces": 2065,
+     "anchors": 211,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 2065
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64009,
+     "replaces": 344,
+     "faces": 223,
+     "anchors": 58,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 223
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64005,
+    "maleModel0": 64006,
+    "maleModel1": 64007,
+    "maleModel2": -1,
+    "femaleModel0": 64008,
+    "femaleModel1": 64009,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B01_3",
+   "name": "Steel platebody",
+   "slot": "body",
+   "template_id": 1119,
+   "template_name": "Steel platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64010,
+     "replaces": 2605,
+     "faces": 2233,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2233
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64011,
+     "replaces": 306,
+     "faces": 2014,
+     "anchors": 121,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10
+     ],
+     "decoded_faces": 2014
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64012,
+     "replaces": 164,
+     "faces": 413,
+     "anchors": 81,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 413
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64013,
+     "replaces": 468,
+     "faces": 2012,
+     "anchors": 177,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      3,
+      4
+     ],
+     "decoded_faces": 2012
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64014,
+     "replaces": 344,
+     "faces": 304,
+     "anchors": 73,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 304
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64010,
+    "maleModel0": 64011,
+    "maleModel1": 64012,
+    "maleModel2": -1,
+    "femaleModel0": 64013,
+    "femaleModel1": 64014,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B01_4",
+   "name": "Shadowsteel platebody",
+   "slot": "body",
+   "template_id": 1125,
+   "template_name": "Black platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64015,
+     "replaces": 2605,
+     "faces": 2106,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2106
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64016,
+     "replaces": 306,
+     "faces": 2023,
+     "anchors": 125,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2023
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64017,
+     "replaces": 164,
+     "faces": 299,
+     "anchors": 68,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 299
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64018,
+     "replaces": 468,
+     "faces": 1959,
+     "anchors": 199,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 1959
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64019,
+     "replaces": 344,
+     "faces": 216,
+     "anchors": 71,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 216
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64015,
+    "maleModel0": 64016,
+    "maleModel1": 64017,
+    "maleModel2": -1,
+    "femaleModel0": 64018,
+    "femaleModel1": 64019,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B01_5",
+   "name": "Silver filigree platebody",
+   "slot": "body",
+   "template_id": 1121,
+   "template_name": "Mithril platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64020,
+     "replaces": 2605,
+     "faces": 2115,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2115
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64021,
+     "replaces": 306,
+     "faces": 2025,
+     "anchors": 120,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2025
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64022,
+     "replaces": 164,
+     "faces": 321,
+     "anchors": 80,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 321
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64023,
+     "replaces": 468,
+     "faces": 1877,
+     "anchors": 140,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 1877
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64024,
+     "replaces": 344,
+     "faces": 293,
+     "anchors": 68,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 293
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64020,
+    "maleModel0": 64021,
+    "maleModel1": 64022,
+    "maleModel2": -1,
+    "femaleModel0": 64023,
+    "femaleModel1": 64024,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B01_6",
+   "name": "Jade crystal platebody",
+   "slot": "body",
+   "template_id": 1123,
+   "template_name": "Adamant platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64025,
+     "replaces": 2605,
+     "faces": 2226,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2226
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64026,
+     "replaces": 306,
+     "faces": 2036,
+     "anchors": 120,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2036
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64027,
+     "replaces": 164,
+     "faces": 373,
+     "anchors": 81,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 373
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64028,
+     "replaces": 468,
+     "faces": 2114,
+     "anchors": 216,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 2114
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64029,
+     "replaces": 344,
+     "faces": 245,
+     "anchors": 64,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 245
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64025,
+    "maleModel0": 64026,
+    "maleModel1": 64027,
+    "maleModel2": -1,
+    "femaleModel0": 64028,
+    "femaleModel1": 64029,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B02_1",
+   "name": "Royal sapphire platebody",
+   "slot": "body",
+   "template_id": 1127,
+   "template_name": "Rune platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64030,
+     "replaces": 2605,
+     "faces": 2173,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2173
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64031,
+     "replaces": 306,
+     "faces": 2002,
+     "anchors": 122,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2002
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64032,
+     "replaces": 164,
+     "faces": 368,
+     "anchors": 73,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 368
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64033,
+     "replaces": 468,
+     "faces": 2069,
+     "anchors": 170,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 2069
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64034,
+     "replaces": 344,
+     "faces": 182,
+     "anchors": 60,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 182
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64030,
+    "maleModel0": 64031,
+    "maleModel1": 64032,
+    "maleModel2": -1,
+    "femaleModel0": 64033,
+    "femaleModel1": 64034,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B02_2",
+   "name": "Crimson dragonscale body",
+   "slot": "body",
+   "template_id": 2501,
+   "template_name": "Red d'hide body",
+   "template_models": {
+    "inventoryModel": 2745,
+    "maleModel0": 314,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 477,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64035,
+     "replaces": 2745,
+     "faces": 1899,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 1899
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64036,
+     "replaces": 314,
+     "faces": 2036,
+     "anchors": 138,
+     "groups": [
+      2,
+      8,
+      59,
+      86
+     ],
+     "template_groups": [
+      2,
+      8,
+      86
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 2036
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64037,
+     "replaces": 477,
+     "faces": 1908,
+     "anchors": 140,
+     "groups": [
+      4,
+      8,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 1908
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64035,
+    "maleModel0": 64036,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64037,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B02_3",
+   "name": "Crimson crystal scimitar",
+   "slot": "weapon",
+   "template_id": 4587,
+   "template_name": "Dragon scimitar",
+   "template_models": {
+    "inventoryModel": 6033,
+    "maleModel0": 6031,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 6031,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64038,
+     "replaces": 6033,
+     "faces": 1494,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1494
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64039,
+     "replaces": 6031,
+     "faces": 2057,
+     "anchors": 562,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2057
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64038,
+    "maleModel0": 64039,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64039,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B02_4",
+   "name": "Sapphire pickaxe",
+   "slot": "weapon",
+   "template_id": 1275,
+   "template_name": "Rune pickaxe",
+   "template_models": {
+    "inventoryModel": 2529,
+    "maleModel0": 509,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 509,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64040,
+     "replaces": 2529,
+     "faces": 1570,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1570
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64041,
+     "replaces": 509,
+     "faces": 1893,
+     "anchors": 277,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1893
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64040,
+    "maleModel0": 64041,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64041,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B02_5",
+   "name": "Magma pickaxe",
+   "slot": "weapon",
+   "template_id": 11920,
+   "template_name": "Dragon pickaxe",
+   "template_models": {
+    "inventoryModel": 28315,
+    "maleModel0": 28288,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 28288,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64042,
+     "replaces": 28315,
+     "faces": 1761,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1761
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64043,
+     "replaces": 28288,
+     "faces": 2137,
+     "anchors": 375,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2137
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64042,
+    "maleModel0": 64043,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64043,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B02_6",
+   "name": "Magma hatchet",
+   "slot": "weapon",
+   "template_id": 6739,
+   "template_name": "Dragon axe",
+   "template_models": {
+    "inventoryModel": 9959,
+    "maleModel0": 9957,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 9957,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64044,
+     "replaces": 9959,
+     "faces": 1662,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1662
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64045,
+     "replaces": 9957,
+     "faces": 1962,
+     "anchors": 280,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      0,
+      10
+     ],
+     "decoded_faces": 1962
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64044,
+    "maleModel0": 64045,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64045,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B03_1",
+   "name": "Necrotic battleaxe",
+   "slot": "weapon",
+   "template_id": 1377,
+   "template_name": "Dragon battleaxe",
+   "template_models": {
+    "inventoryModel": 2801,
+    "maleModel0": 559,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 559,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64046,
+     "replaces": 2801,
+     "faces": 1602,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1602
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64047,
+     "replaces": 559,
+     "faces": 1876,
+     "anchors": 270,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1876
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64046,
+    "maleModel0": 64047,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64047,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B03_2",
+   "name": "Necrotic spear",
+   "slot": "weapon",
+   "template_id": 1249,
+   "template_name": "Dragon spear",
+   "template_models": {
+    "inventoryModel": 2482,
+    "maleModel0": 505,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 505,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64048,
+     "replaces": 2482,
+     "faces": 1581,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1581
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64049,
+     "replaces": 505,
+     "faces": 3102,
+     "anchors": 1520,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 3102
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64048,
+    "maleModel0": 64049,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64049,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B03_3",
+   "name": "Necrotic flail",
+   "slot": "weapon",
+   "template_id": 4755,
+   "template_name": "Verac's flail",
+   "template_models": {
+    "inventoryModel": 6585,
+    "maleModel0": 6704,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 6704,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64050,
+     "replaces": 6585,
+     "faces": 1423,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1423
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64051,
+     "replaces": 6704,
+     "faces": 2147,
+     "anchors": 722,
+     "groups": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      56,
+      65,
+      66
+     ],
+     "template_groups": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      56,
+      65,
+      66
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2147
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64050,
+    "maleModel0": 64051,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64051,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B03_4",
+   "name": "Necrotic twin mauls",
+   "slot": "weapon",
+   "template_id": 4153,
+   "template_name": "Granite maul",
+   "template_models": {
+    "inventoryModel": 5413,
+    "maleModel0": 5410,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5410,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64052,
+     "replaces": 5413,
+     "faces": 1750,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1750
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64053,
+     "replaces": 5410,
+     "faces": 2168,
+     "anchors": 393,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2168
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64052,
+    "maleModel0": 64053,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64053,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B03_5",
+   "name": "Necrotic crossbow",
+   "slot": "weapon",
+   "template_id": 9185,
+   "template_name": "Rune crossbow",
+   "template_models": {
+    "inventoryModel": 16876,
+    "maleModel0": 16846,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 42622,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 6,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64054,
+     "replaces": 16876,
+     "faces": 1626,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1626
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64055,
+     "replaces": 16846,
+     "faces": 1805,
+     "anchors": 179,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1805
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64056,
+     "replaces": 42622,
+     "faces": 1805,
+     "anchors": 179,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1805
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64054,
+    "maleModel0": 64055,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64056,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B03_6",
+   "name": "Necrotic skull censer",
+   "slot": "weapon",
+   "template_id": 1434,
+   "template_name": "Dragon mace",
+   "template_models": {
+    "inventoryModel": 2391,
+    "maleModel0": 493,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 493,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64057,
+     "replaces": 2391,
+     "faces": 1938,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1938
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64058,
+     "replaces": 493,
+     "faces": 2327,
+     "anchors": 358,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2327
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64057,
+    "maleModel0": 64058,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64058,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B04_1",
+   "name": "Reaver platebody",
+   "slot": "body",
+   "template_id": 21892,
+   "template_name": "Dragon platebody",
+   "template_models": {
+    "inventoryModel": 35103,
+    "maleModel0": 34630,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 34645,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64059,
+     "replaces": 35103,
+     "faces": 2160,
+     "priorities": [
+      3,
+      4
+     ],
+     "decoded_faces": 2160
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64060,
+     "replaces": 34630,
+     "faces": 2513,
+     "anchors": 262,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5,
+      10,
+      11
+     ],
+     "decoded_faces": 2513
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64061,
+     "replaces": 34645,
+     "faces": 2490,
+     "anchors": 275,
+     "groups": [
+      4,
+      8,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5,
+      10,
+      11
+     ],
+     "decoded_faces": 2490
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64059,
+    "maleModel0": 64060,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64061,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B04_2",
+   "name": "Reaver platelegs",
+   "slot": "legs",
+   "template_id": 4087,
+   "template_name": "Dragon platelegs",
+   "template_models": {
+    "inventoryModel": 5026,
+    "maleModel0": 5024,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5025,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64062,
+     "replaces": 5026,
+     "faces": 2235,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2235
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64063,
+     "replaces": 5024,
+     "faces": 2527,
+     "anchors": 293,
+     "groups": [
+      4,
+      5,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      57,
+      79,
+      80,
+      83,
+      166,
+      167
+     ],
+     "template_groups": [
+      5,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+     ],
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 2527
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64064,
+     "replaces": 5025,
+     "faces": 2428,
+     "anchors": 235,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      57,
+      79,
+      80,
+      83,
+      166,
+      167
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+     ],
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 2428
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64062,
+    "maleModel0": 64063,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64064,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B04_3",
+   "name": "Reaver warboots",
+   "slot": "feet",
+   "template_id": 11840,
+   "template_name": "Dragon boots",
+   "template_models": {
+    "inventoryModel": 28044,
+    "maleModel0": 27638,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 27646,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64065,
+     "replaces": 28044,
+     "faces": 1495,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 1495
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64066,
+     "replaces": 27638,
+     "faces": 2634,
+     "anchors": 1077,
+     "groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "template_groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2634
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64067,
+     "replaces": 27646,
+     "faces": 2794,
+     "anchors": 1226,
+     "groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "template_groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2794
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64065,
+    "maleModel0": 64066,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64067,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B04_4",
+   "name": "Horned bone helm",
+   "slot": "head",
+   "template_id": 1163,
+   "template_name": "Rune full helm",
+   "template_models": {
+    "inventoryModel": 2813,
+    "maleModel0": 218,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 394,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64068,
+     "replaces": 2813,
+     "faces": 1600,
+     "priorities": [
+      6,
+      7
+     ],
+     "decoded_faces": 1600
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64069,
+     "replaces": 218,
+     "faces": 1767,
+     "anchors": 144,
+     "groups": [
+      1,
+      2,
+      3,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1767
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64070,
+     "replaces": 394,
+     "faces": 1739,
+     "anchors": 138,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      6,
+      7
+     ],
+     "decoded_faces": 1739
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64068,
+    "maleModel0": 64069,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64070,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B04_5",
+   "name": "Ribcage platebody",
+   "slot": "body",
+   "template_id": 4749,
+   "template_name": "Torag's platebody",
+   "template_models": {
+    "inventoryModel": 6594,
+    "maleModel0": 6676,
+    "maleModel1": 6644,
+    "maleModel2": -1,
+    "femaleModel0": 6701,
+    "femaleModel1": 6684,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64071,
+     "replaces": 6594,
+     "faces": 2266,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2266
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64072,
+     "replaces": 6676,
+     "faces": 2056,
+     "anchors": 130,
+     "groups": [
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2056
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64073,
+     "replaces": 6644,
+     "faces": 1205,
+     "anchors": 834,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1205
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64074,
+     "replaces": 6701,
+     "faces": 1964,
+     "anchors": 138,
+     "groups": [
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 1964
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64075,
+     "replaces": 6684,
+     "faces": 827,
+     "anchors": 532,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 827
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64071,
+    "maleModel0": 64072,
+    "maleModel1": 64073,
+    "maleModel2": -1,
+    "femaleModel0": 64074,
+    "femaleModel1": 64075,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B04_6",
+   "name": "Bone bracers",
+   "slot": "hands",
+   "template_id": 7462,
+   "template_name": "Barrows gloves",
+   "template_models": {
+    "inventoryModel": 13631,
+    "maleModel0": 13307,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 13319,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64076,
+     "replaces": 13631,
+     "faces": 1224,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 1224
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64077,
+     "replaces": 13307,
+     "faces": 2548,
+     "anchors": 1154,
+     "groups": [
+      19,
+      22,
+      27,
+      28,
+      198,
+      200
+     ],
+     "template_groups": [
+      19,
+      22,
+      27,
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2548
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64078,
+     "replaces": 13319,
+     "faces": 2268,
+     "anchors": 925,
+     "groups": [
+      19,
+      22,
+      27,
+      28,
+      198,
+      200
+     ],
+     "template_groups": [
+      19,
+      22,
+      27,
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2268
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64076,
+    "maleModel0": 64077,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64078,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B05_1",
+   "name": "Crimson knight helm",
+   "slot": "head",
+   "template_id": 1163,
+   "template_name": "Rune full helm",
+   "template_models": {
+    "inventoryModel": 2813,
+    "maleModel0": 218,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 394,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64079,
+     "replaces": 2813,
+     "faces": 1484,
+     "priorities": [
+      6,
+      7
+     ],
+     "decoded_faces": 1484
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64080,
+     "replaces": 218,
+     "faces": 1896,
+     "anchors": 311,
+     "groups": [
+      1,
+      2,
+      3,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1896
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64081,
+     "replaces": 394,
+     "faces": 1787,
+     "anchors": 319,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1787
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64079,
+    "maleModel0": 64080,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64081,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B05_2",
+   "name": "Crimson chain hauberk",
+   "slot": "body",
+   "template_id": 1113,
+   "template_name": "Rune chainbody",
+   "template_models": {
+    "inventoryModel": 2558,
+    "maleModel0": 301,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 464,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64082,
+     "replaces": 2558,
+     "faces": 1300,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 1300
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64083,
+     "replaces": 301,
+     "faces": 1769,
+     "anchors": 472,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 1769
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64084,
+     "replaces": 464,
+     "faces": 1546,
+     "anchors": 315,
+     "groups": [
+      4,
+      8,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 1546
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64082,
+    "maleModel0": 64083,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64084,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B05_3",
+   "name": "Crimson knight tassets",
+   "slot": "legs",
+   "template_id": 11834,
+   "template_name": "Bandos tassets",
+   "template_models": {
+    "inventoryModel": 28047,
+    "maleModel0": 27625,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 27640,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64085,
+     "replaces": 28047,
+     "faces": 1516,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 1516
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64086,
+     "replaces": 27625,
+     "faces": 2140,
+     "anchors": 265,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      57,
+      80,
+      83,
+      166,
+      167
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      57
+     ],
+     "priorities": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 2140
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64087,
+     "replaces": 27640,
+     "faces": 2173,
+     "anchors": 299,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      57,
+      80,
+      83,
+      166,
+      167
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      57
+     ],
+     "priorities": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 2173
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64085,
+    "maleModel0": 64086,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64087,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B05_4",
+   "name": "Paladin full helm",
+   "slot": "head",
+   "template_id": 1161,
+   "template_name": "Adamant full helm",
+   "template_models": {
+    "inventoryModel": 2813,
+    "maleModel0": 218,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 394,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64088,
+     "replaces": 2813,
+     "faces": 1469,
+     "priorities": [
+      6,
+      7
+     ],
+     "decoded_faces": 1469
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64089,
+     "replaces": 218,
+     "faces": 1823,
+     "anchors": 239,
+     "groups": [
+      1,
+      2,
+      3,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1823
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64090,
+     "replaces": 394,
+     "faces": 1736,
+     "anchors": 246,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1736
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64088,
+    "maleModel0": 64089,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64090,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B05_5",
+   "name": "Paladin platebody",
+   "slot": "body",
+   "template_id": 1123,
+   "template_name": "Adamant platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64091,
+     "replaces": 2605,
+     "faces": 2215,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2215
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64092,
+     "replaces": 306,
+     "faces": 2067,
+     "anchors": 119,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2067
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64093,
+     "replaces": 164,
+     "faces": 345,
+     "anchors": 50,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 345
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64094,
+     "replaces": 468,
+     "faces": 2070,
+     "anchors": 193,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 2070
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64095,
+     "replaces": 344,
+     "faces": 300,
+     "anchors": 83,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 300
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64091,
+    "maleModel0": 64092,
+    "maleModel1": 64093,
+    "maleModel2": -1,
+    "femaleModel0": 64094,
+    "femaleModel1": 64095,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B05_6",
+   "name": "Paladin greaves",
+   "slot": "feet",
+   "template_id": 4131,
+   "template_name": "Rune boots",
+   "template_models": {
+    "inventoryModel": 5037,
+    "maleModel0": 4954,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5031,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64096,
+     "replaces": 5037,
+     "faces": 1644,
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 1644
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64097,
+     "replaces": 4954,
+     "faces": 2991,
+     "anchors": 1379,
+     "groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "template_groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2991
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64098,
+     "replaces": 5031,
+     "faces": 2969,
+     "anchors": 1379,
+     "groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "template_groups": [
+      0,
+      32,
+      38,
+      45,
+      46,
+      47,
+      48
+     ],
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2969
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64096,
+    "maleModel0": 64097,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64098,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B06_1",
+   "name": "Magma helm",
+   "slot": "head",
+   "template_id": 11335,
+   "template_name": "Dragon full helm",
+   "template_models": {
+    "inventoryModel": 26662,
+    "maleModel0": 19861,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 254,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64099,
+     "replaces": 26662,
+     "faces": 1959,
+     "priorities": [
+      7,
+      8
+     ],
+     "decoded_faces": 1959
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64100,
+     "replaces": 19861,
+     "faces": 2391,
+     "anchors": 259,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "decoded_faces": 2391
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64101,
+     "replaces": 254,
+     "faces": 2375,
+     "anchors": 279,
+     "groups": [
+      1,
+      2,
+      49,
+      59,
+      94
+     ],
+     "template_groups": [
+      1,
+      2,
+      49,
+      94
+     ],
+     "priorities": [
+      3,
+      5,
+      6,
+      7
+     ],
+     "decoded_faces": 2375
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64099,
+    "maleModel0": 64100,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64101,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B06_2",
+   "name": "Magma platebody",
+   "slot": "body",
+   "template_id": 21892,
+   "template_name": "Dragon platebody",
+   "template_models": {
+    "inventoryModel": 35103,
+    "maleModel0": 34630,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 34645,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64102,
+     "replaces": 35103,
+     "faces": 1742,
+     "priorities": [
+      3,
+      4
+     ],
+     "decoded_faces": 1742
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64103,
+     "replaces": 34630,
+     "faces": 2068,
+     "anchors": 292,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5,
+      10,
+      11
+     ],
+     "decoded_faces": 2068
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64104,
+     "replaces": 34645,
+     "faces": 1964,
+     "anchors": 253,
+     "groups": [
+      4,
+      8,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5,
+      10,
+      11
+     ],
+     "decoded_faces": 1964
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64102,
+    "maleModel0": 64103,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64104,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B06_3",
+   "name": "Magma gauntlets",
+   "slot": "hands",
+   "template_id": 7462,
+   "template_name": "Barrows gloves",
+   "template_models": {
+    "inventoryModel": 13631,
+    "maleModel0": 13307,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 13319,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64105,
+     "replaces": 13631,
+     "faces": 1347,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 1347
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64106,
+     "replaces": 13307,
+     "faces": 3071,
+     "anchors": 1479,
+     "groups": [
+      19,
+      22,
+      27,
+      28,
+      198,
+      200
+     ],
+     "template_groups": [
+      19,
+      22,
+      27,
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 3071
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64107,
+     "replaces": 13319,
+     "faces": 2664,
+     "anchors": 1194,
+     "groups": [
+      19,
+      22,
+      27,
+      28,
+      198,
+      200
+     ],
+     "template_groups": [
+      19,
+      22,
+      27,
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2664
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64105,
+    "maleModel0": 64106,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64107,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B06_4",
+   "name": "Magma dagger",
+   "slot": "weapon",
+   "template_id": 1215,
+   "template_name": "Dragon dagger",
+   "template_models": {
+    "inventoryModel": 2718,
+    "maleModel0": 539,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 42626,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64108,
+     "replaces": 2718,
+     "faces": 1046,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1046
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64109,
+     "replaces": 539,
+     "faces": 1116,
+     "anchors": 25,
+     "groups": [
+      27,
+      200
+     ],
+     "template_groups": [
+      27
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1116
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64110,
+     "replaces": 42626,
+     "faces": 1063,
+     "anchors": 25,
+     "groups": [
+      27,
+      200
+     ],
+     "template_groups": [
+      27
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1063
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64108,
+    "maleModel0": 64109,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64110,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B06_5",
+   "name": "Magma mace",
+   "slot": "weapon",
+   "template_id": 1434,
+   "template_name": "Dragon mace",
+   "template_models": {
+    "inventoryModel": 2391,
+    "maleModel0": 493,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 493,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64111,
+     "replaces": 2391,
+     "faces": 1540,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1540
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64112,
+     "replaces": 493,
+     "faces": 1770,
+     "anchors": 228,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1770
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64111,
+    "maleModel0": 64112,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64112,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B06_6",
+   "name": "Magma kiteshield",
+   "slot": "shield",
+   "template_id": 21895,
+   "template_name": "Dragon kiteshield",
+   "template_models": {
+    "inventoryModel": 35105,
+    "maleModel0": 34649,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 34650,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64113,
+     "replaces": 35105,
+     "faces": 1329,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1329
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64114,
+     "replaces": 34649,
+     "faces": 1518,
+     "anchors": 189,
+     "groups": [
+      28,
+      198
+     ],
+     "template_groups": [
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1518
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64115,
+     "replaces": 34650,
+     "faces": 1519,
+     "anchors": 189,
+     "groups": [
+      28,
+      198
+     ],
+     "template_groups": [
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1519
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64113,
+    "maleModel0": 64114,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64115,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B07_1",
+   "name": "Woodland ranger tunic",
+   "slot": "body",
+   "template_id": 1135,
+   "template_name": "Green d'hide body",
+   "template_models": {
+    "inventoryModel": 2745,
+    "maleModel0": 314,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 477,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64116,
+     "replaces": 2745,
+     "faces": 1973,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 1973
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64117,
+     "replaces": 314,
+     "faces": 2118,
+     "anchors": 138,
+     "groups": [
+      2,
+      8,
+      59,
+      86
+     ],
+     "template_groups": [
+      2,
+      8,
+      86
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2118
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64118,
+     "replaces": 477,
+     "faces": 2054,
+     "anchors": 156,
+     "groups": [
+      4,
+      8,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2054
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64116,
+    "maleModel0": 64117,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64118,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B07_2",
+   "name": "Tidewalker ranger tunic",
+   "slot": "body",
+   "template_id": 2499,
+   "template_name": "Blue d'hide body",
+   "template_models": {
+    "inventoryModel": 2745,
+    "maleModel0": 314,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 477,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64119,
+     "replaces": 2745,
+     "faces": 2007,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 2007
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64120,
+     "replaces": 314,
+     "faces": 2145,
+     "anchors": 138,
+     "groups": [
+      2,
+      8,
+      59,
+      86
+     ],
+     "template_groups": [
+      2,
+      8,
+      86
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2145
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64121,
+     "replaces": 477,
+     "faces": 2022,
+     "anchors": 129,
+     "groups": [
+      4,
+      8,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2022
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64119,
+    "maleModel0": 64120,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64121,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B07_3",
+   "name": "Emberhide ranger tunic",
+   "slot": "body",
+   "template_id": 2501,
+   "template_name": "Red d'hide body",
+   "template_models": {
+    "inventoryModel": 2745,
+    "maleModel0": 314,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 477,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64122,
+     "replaces": 2745,
+     "faces": 1948,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 1948
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64123,
+     "replaces": 314,
+     "faces": 2091,
+     "anchors": 138,
+     "groups": [
+      2,
+      8,
+      59,
+      86
+     ],
+     "template_groups": [
+      2,
+      8,
+      86
+     ],
+     "priorities": [
+      1,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2091
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64124,
+     "replaces": 477,
+     "faces": 2059,
+     "anchors": 145,
+     "groups": [
+      4,
+      8,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2059
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64122,
+    "maleModel0": 64123,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64124,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B07_4",
+   "name": "Nightstalker ranger tunic",
+   "slot": "body",
+   "template_id": 2503,
+   "template_name": "Black d'hide body",
+   "template_models": {
+    "inventoryModel": 2745,
+    "maleModel0": 314,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 477,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64125,
+     "replaces": 2745,
+     "faces": 1923,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 1923
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64126,
+     "replaces": 314,
+     "faces": 2058,
+     "anchors": 138,
+     "groups": [
+      2,
+      8,
+      59,
+      86
+     ],
+     "template_groups": [
+      2,
+      8,
+      86
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2058
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64127,
+     "replaces": 477,
+     "faces": 1957,
+     "anchors": 133,
+     "groups": [
+      4,
+      8,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 1957
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64125,
+    "maleModel0": 64126,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64127,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B07_5",
+   "name": "Valkyrie winged helm",
+   "slot": "head",
+   "template_id": 1161,
+   "template_name": "Adamant full helm",
+   "template_models": {
+    "inventoryModel": 2813,
+    "maleModel0": 218,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 394,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64128,
+     "replaces": 2813,
+     "faces": 1525,
+     "priorities": [
+      6,
+      7
+     ],
+     "decoded_faces": 1525
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64129,
+     "replaces": 218,
+     "faces": 1803,
+     "anchors": 224,
+     "groups": [
+      1,
+      2,
+      3,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1803
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64130,
+     "replaces": 394,
+     "faces": 1739,
+     "anchors": 227,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1739
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64128,
+    "maleModel0": 64129,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64130,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B07_6",
+   "name": "Valkyrie platebody",
+   "slot": "body",
+   "template_id": 1127,
+   "template_name": "Rune platebody",
+   "template_models": {
+    "inventoryModel": 2605,
+    "maleModel0": 306,
+    "maleModel1": 164,
+    "maleModel2": -1,
+    "femaleModel0": 468,
+    "femaleModel1": 344,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64131,
+     "replaces": 2605,
+     "faces": 2245,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2245
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64132,
+     "replaces": 306,
+     "faces": 1918,
+     "anchors": 114,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      21,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8,
+      21,
+      25
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 1918
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64133,
+     "replaces": 164,
+     "faces": 530,
+     "anchors": 86,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 530
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64134,
+     "replaces": 468,
+     "faces": 1845,
+     "anchors": 129,
+     "groups": [
+      4,
+      8,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      59,
+      94
+     ],
+     "template_groups": [
+      4,
+      8,
+      21,
+      25,
+      94
+     ],
+     "priorities": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "decoded_faces": 1845
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64135,
+     "replaces": 344,
+     "faces": 432,
+     "anchors": 69,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      19,
+      20,
+      22,
+      23,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 432
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64131,
+    "maleModel0": 64132,
+    "maleModel1": 64133,
+    "maleModel2": -1,
+    "femaleModel0": 64134,
+    "femaleModel1": 64135,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B08_1",
+   "name": "Seraph feather mantle",
+   "slot": "cape",
+   "template_id": 6570,
+   "template_name": "Fire cape",
+   "template_models": {
+    "inventoryModel": 9631,
+    "maleModel0": 9638,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 9640,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64136,
+     "replaces": 9631,
+     "faces": 2266,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 2266
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64137,
+     "replaces": 9638,
+     "faces": 6322,
+     "anchors": 4024,
+     "groups": [
+      2,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      59
+     ],
+     "template_groups": [
+      2,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "priorities": [
+      0,
+      1,
+      5,
+      6
+     ],
+     "decoded_faces": 6322
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64138,
+     "replaces": 9640,
+     "faces": 6241,
+     "anchors": 3960,
+     "groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      59
+     ],
+     "template_groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "priorities": [
+      0,
+      1,
+      5,
+      6
+     ],
+     "decoded_faces": 6241
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64136,
+    "maleModel0": 64137,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64138,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B08_2",
+   "name": "Solar helm",
+   "slot": "head",
+   "template_id": 11826,
+   "template_name": "Armadyl helmet",
+   "template_models": {
+    "inventoryModel": 28043,
+    "maleModel0": 19821,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 54249,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64139,
+     "replaces": 28043,
+     "faces": 1612,
+     "priorities": [
+      7,
+      8
+     ],
+     "decoded_faces": 1612
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64140,
+     "replaces": 19821,
+     "faces": 1875,
+     "anchors": 269,
+     "groups": [
+      1,
+      2,
+      3,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3
+     ],
+     "priorities": [
+      0,
+      3,
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1875
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64141,
+     "replaces": 54249,
+     "faces": 1802,
+     "anchors": 280,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "decoded_faces": 1802
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64139,
+    "maleModel0": 64140,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64141,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B08_3",
+   "name": "Solar scale platebody",
+   "slot": "body",
+   "template_id": 11828,
+   "template_name": "Armadyl chestplate",
+   "template_models": {
+    "inventoryModel": 28039,
+    "maleModel0": 27633,
+    "maleModel1": 27629,
+    "maleModel2": -1,
+    "femaleModel0": 27645,
+    "femaleModel1": 28828,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64142,
+     "replaces": 28039,
+     "faces": 1902,
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 1902
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64143,
+     "replaces": 27633,
+     "faces": 1868,
+     "anchors": 75,
+     "groups": [
+      2,
+      8,
+      18,
+      19,
+      22,
+      24,
+      59
+     ],
+     "template_groups": [
+      2,
+      8
+     ],
+     "priorities": [
+      3,
+      4
+     ],
+     "decoded_faces": 1868
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64144,
+     "replaces": 27629,
+     "faces": 633,
+     "anchors": 155,
+     "groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      59,
+      67,
+      68
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      67,
+      68
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 633
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64145,
+     "replaces": 27645,
+     "faces": 1524,
+     "anchors": 66,
+     "groups": [
+      8,
+      18,
+      19,
+      22,
+      24,
+      59,
+      94
+     ],
+     "template_groups": [
+      8,
+      94
+     ],
+     "priorities": [
+      3,
+      4
+     ],
+     "decoded_faces": 1524
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64146,
+     "replaces": 28828,
+     "faces": 1021,
+     "anchors": 285,
+     "groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1021
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64142,
+    "maleModel0": 64143,
+    "maleModel1": 64144,
+    "maleModel2": -1,
+    "femaleModel0": 64145,
+    "femaleModel1": 64146,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B08_4",
+   "name": "Solar scale platelegs",
+   "slot": "legs",
+   "template_id": 1079,
+   "template_name": "Rune platelegs",
+   "template_models": {
+    "inventoryModel": 2582,
+    "maleModel0": 268,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 432,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64147,
+     "replaces": 2582,
+     "faces": 2183,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2183
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64148,
+     "replaces": 268,
+     "faces": 2508,
+     "anchors": 322,
+     "groups": [
+      4,
+      5,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      57,
+      79,
+      83,
+      166
+     ],
+     "template_groups": [
+      5,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+     ],
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 2508
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64149,
+     "replaces": 432,
+     "faces": 2493,
+     "anchors": 294,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      57,
+      79,
+      83,
+      166
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+     ],
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 2493
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64147,
+    "maleModel0": 64148,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64149,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B08_5",
+   "name": "Verdant crystal helm",
+   "slot": "head",
+   "template_id": 23971,
+   "template_name": "Crystal helm",
+   "template_models": {
+    "inventoryModel": 38761,
+    "maleModel0": 38027,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 38164,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64150,
+     "replaces": 38761,
+     "faces": 1557,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 1557
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64151,
+     "replaces": 38027,
+     "faces": 1912,
+     "anchors": 369,
+     "groups": [
+      1,
+      2,
+      3,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3
+     ],
+     "priorities": [
+      5,
+      6,
+      7
+     ],
+     "decoded_faces": 1912
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64152,
+     "replaces": 38164,
+     "faces": 1840,
+     "anchors": 507,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      6,
+      7
+     ],
+     "decoded_faces": 1840
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64150,
+    "maleModel0": 64151,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64152,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B08_6",
+   "name": "Verdant crystal body",
+   "slot": "body",
+   "template_id": 23975,
+   "template_name": "Crystal body",
+   "template_models": {
+    "inventoryModel": 38766,
+    "maleModel0": 38101,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 38237,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64153,
+     "replaces": 38766,
+     "faces": 2262,
+     "priorities": [
+      3,
+      4
+     ],
+     "decoded_faces": 2262
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64154,
+     "replaces": 38101,
+     "faces": 2830,
+     "anchors": 565,
+     "groups": [
+      2,
+      8,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59
+     ],
+     "template_groups": [
+      2,
+      8,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+     ],
+     "priorities": [
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2830
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64155,
+     "replaces": 38237,
+     "faces": 2772,
+     "anchors": 570,
+     "groups": [
+      8,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      59,
+      60,
+      91,
+      94
+     ],
+     "template_groups": [
+      8,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      59,
+      60,
+      94
+     ],
+     "priorities": [
+      3,
+      4,
+      10,
+      11
+     ],
+     "decoded_faces": 2772
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64153,
+    "maleModel0": 64154,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64155,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B09_1",
+   "name": "Bone longbow",
+   "slot": "weapon",
+   "template_id": 859,
+   "template_name": "Magic longbow",
+   "template_models": {
+    "inventoryModel": 2832,
+    "maleModel0": 563,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 563,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64156,
+     "replaces": 2832,
+     "faces": 1605,
+     "priorities": [
+      0
+     ],
+     "decoded_faces": 1605
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64157,
+     "replaces": 563,
+     "faces": 1637,
+     "anchors": 26,
+     "groups": [
+      27,
+      200
+     ],
+     "template_groups": [
+      27
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1637
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64156,
+    "maleModel0": 64157,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64157,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B09_2",
+   "name": "Shadowvine bow",
+   "slot": "weapon",
+   "template_id": 11235,
+   "template_name": "Dark bow",
+   "template_models": {
+    "inventoryModel": 26386,
+    "maleModel0": 26279,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 26279,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64158,
+     "replaces": 26386,
+     "faces": 1590,
+     "priorities": [
+      1
+     ],
+     "decoded_faces": 1590
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64159,
+     "replaces": 26279,
+     "faces": 1804,
+     "anchors": 214,
+     "groups": [
+      27,
+      200
+     ],
+     "template_groups": [
+      27
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1804
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64158,
+    "maleModel0": 64159,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64159,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B09_3",
+   "name": "Dragonspine bow",
+   "slot": "weapon",
+   "template_id": 20997,
+   "template_name": "Twisted bow",
+   "template_models": {
+    "inventoryModel": 32799,
+    "maleModel0": 32674,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 39561,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64160,
+     "replaces": 32799,
+     "faces": 1703,
+     "priorities": [
+      7
+     ],
+     "decoded_faces": 1703
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64161,
+     "replaces": 32674,
+     "faces": 2094,
+     "anchors": 378,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2094
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64162,
+     "replaces": 39561,
+     "faces": 2094,
+     "anchors": 378,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2094
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64160,
+    "maleModel0": 64161,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64162,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B09_4",
+   "name": "Crystal-root bow",
+   "slot": "weapon",
+   "template_id": 23983,
+   "template_name": "Crystal bow",
+   "template_models": {
+    "inventoryModel": 3902,
+    "maleModel0": 5197,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5197,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64163,
+     "replaces": 3902,
+     "faces": 1579,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1579
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64164,
+     "replaces": 5197,
+     "faces": 1637,
+     "anchors": 58,
+     "groups": [
+      27,
+      200
+     ],
+     "template_groups": [
+      27
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1637
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64163,
+    "maleModel0": 64164,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64164,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B09_5",
+   "name": "Seraph crossbow",
+   "slot": "weapon",
+   "template_id": 11785,
+   "template_name": "Armadyl crossbow",
+   "template_models": {
+    "inventoryModel": 19967,
+    "maleModel0": 19839,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 42611,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 4,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64165,
+     "replaces": 19967,
+     "faces": 1741,
+     "priorities": [
+      0
+     ],
+     "decoded_faces": 1741
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64166,
+     "replaces": 19839,
+     "faces": 2207,
+     "anchors": 468,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2207
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64167,
+     "replaces": 42611,
+     "faces": 2207,
+     "anchors": 468,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2207
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64165,
+    "maleModel0": 64166,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64167,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B09_6",
+   "name": "Runic crossbow",
+   "slot": "weapon",
+   "template_id": 9185,
+   "template_name": "Rune crossbow",
+   "template_models": {
+    "inventoryModel": 16876,
+    "maleModel0": 16846,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 42622,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 6,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64168,
+     "replaces": 16876,
+     "faces": 1583,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1583
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64169,
+     "replaces": 16846,
+     "faces": 1779,
+     "anchors": 197,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1779
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64170,
+     "replaces": 42622,
+     "faces": 1779,
+     "anchors": 197,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1779
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64168,
+    "maleModel0": 64169,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64170,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B10_1",
+   "name": "Astral wizard hat",
+   "slot": "head",
+   "template_id": 1017,
+   "template_name": "Wizard hat",
+   "template_models": {
+    "inventoryModel": 2483,
+    "maleModel0": 202,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 377,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64171,
+     "replaces": 2483,
+     "faces": 1450,
+     "priorities": [
+      9,
+      10
+     ],
+     "decoded_faces": 1450
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64172,
+     "replaces": 202,
+     "faces": 2323,
+     "anchors": 546,
+     "groups": [
+      1
+     ],
+     "template_groups": [
+      1
+     ],
+     "priorities": [
+      9,
+      10
+     ],
+     "decoded_faces": 2323
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64173,
+     "replaces": 377,
+     "faces": 2211,
+     "anchors": 556,
+     "groups": [
+      1
+     ],
+     "template_groups": [
+      1
+     ],
+     "priorities": [
+      9,
+      10
+     ],
+     "decoded_faces": 2211
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64171,
+    "maleModel0": 64172,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64173,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B10_2",
+   "name": "Astral robe top",
+   "slot": "body",
+   "template_id": 4091,
+   "template_name": "Mystic robe top",
+   "template_models": {
+    "inventoryModel": 5043,
+    "maleModel0": 4952,
+    "maleModel1": 5028,
+    "maleModel2": -1,
+    "femaleModel0": 5029,
+    "femaleModel1": 5035,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64174,
+     "replaces": 5043,
+     "faces": 2310,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2310
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64175,
+     "replaces": 4952,
+     "faces": 1311,
+     "anchors": 347,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      59,
+      91,
+      92
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      91,
+      92
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1311
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64176,
+     "replaces": 5028,
+     "faces": 1548,
+     "anchors": 147,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      22,
+      24,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8
+     ],
+     "priorities": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+     ],
+     "decoded_faces": 1548
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64177,
+     "replaces": 5029,
+     "faces": 1087,
+     "anchors": 353,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1087
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64178,
+     "replaces": 5035,
+     "faces": 1627,
+     "anchors": 80,
+     "groups": [
+      8,
+      18,
+      19,
+      22,
+      24,
+      59,
+      94
+     ],
+     "template_groups": [
+      8,
+      94
+     ],
+     "priorities": [
+      3,
+      4,
+      6,
+      7
+     ],
+     "decoded_faces": 1627
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64174,
+    "maleModel0": 64175,
+    "maleModel1": 64176,
+    "maleModel2": -1,
+    "femaleModel0": 64177,
+    "femaleModel1": 64178,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B10_3",
+   "name": "Astral robe bottom",
+   "slot": "legs",
+   "template_id": 4093,
+   "template_name": "Mystic robe bottom",
+   "template_models": {
+    "inventoryModel": 5042,
+    "maleModel0": 4844,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5034,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64179,
+     "replaces": 5042,
+     "faces": 2012,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 2012
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64180,
+     "replaces": 4844,
+     "faces": 2843,
+     "anchors": 769,
+     "groups": [
+      4,
+      5,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83,
+      166,
+      168
+     ],
+     "template_groups": [
+      5,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      40,
+      41,
+      42,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83
+     ],
+     "priorities": [
+      0,
+      1,
+      2
+     ],
+     "decoded_faces": 2843
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64181,
+     "replaces": 5034,
+     "faces": 2821,
+     "anchors": 797,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83,
+      166,
+      168
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      40,
+      41,
+      42,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83
+     ],
+     "priorities": [
+      0,
+      1,
+      2
+     ],
+     "decoded_faces": 2821
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64179,
+    "maleModel0": 64180,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64181,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B10_4",
+   "name": "Runeweaver hood",
+   "slot": "head",
+   "template_id": 4708,
+   "template_name": "Ahrim's hood",
+   "template_models": {
+    "inventoryModel": 5419,
+    "maleModel0": 5430,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5435,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64182,
+     "replaces": 5419,
+     "faces": 1531,
+     "priorities": [
+      6,
+      7
+     ],
+     "decoded_faces": 1531
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64183,
+     "replaces": 5430,
+     "faces": 1739,
+     "anchors": 196,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1739
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64184,
+     "replaces": 5435,
+     "faces": 1755,
+     "anchors": 240,
+     "groups": [
+      1,
+      2,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      2,
+      3,
+      49
+     ],
+     "priorities": [
+      6,
+      7,
+      8
+     ],
+     "decoded_faces": 1755
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64182,
+    "maleModel0": 64183,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64184,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B10_5",
+   "name": "Runeweaver robe top",
+   "slot": "body",
+   "template_id": 4712,
+   "template_name": "Ahrim's robetop",
+   "template_models": {
+    "inventoryModel": 6578,
+    "maleModel0": 6669,
+    "maleModel1": 35817,
+    "maleModel2": -1,
+    "femaleModel0": 6697,
+    "femaleModel1": 35819,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64185,
+     "replaces": 6578,
+     "faces": 2177,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 2177
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64186,
+     "replaces": 6669,
+     "faces": 2180,
+     "anchors": 382,
+     "groups": [
+      2,
+      4,
+      5,
+      8,
+      18,
+      19,
+      22,
+      24,
+      59
+     ],
+     "template_groups": [
+      2,
+      4,
+      5,
+      8
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2180
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64187,
+     "replaces": 35817,
+     "faces": 757,
+     "anchors": 274,
+     "groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 757
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64188,
+     "replaces": 6697,
+     "faces": 2397,
+     "anchors": 407,
+     "groups": [
+      8,
+      18,
+      19,
+      22,
+      24,
+      59,
+      74,
+      94
+     ],
+     "template_groups": [
+      8,
+      74,
+      94
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "decoded_faces": 2397
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64189,
+     "replaces": 35819,
+     "faces": 325,
+     "anchors": 123,
+     "groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 325
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64185,
+    "maleModel0": 64186,
+    "maleModel1": 64187,
+    "maleModel2": -1,
+    "femaleModel0": 64188,
+    "femaleModel1": 64189,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B10_6",
+   "name": "Runeweaver robe skirt",
+   "slot": "legs",
+   "template_id": 4714,
+   "template_name": "Ahrim's robeskirt",
+   "template_models": {
+    "inventoryModel": 6577,
+    "maleModel0": 6659,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 6691,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64190,
+     "replaces": 6577,
+     "faces": 2141,
+     "priorities": [
+      2,
+      3
+     ],
+     "decoded_faces": 2141
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64191,
+     "replaces": 6659,
+     "faces": 3013,
+     "anchors": 796,
+     "groups": [
+      4,
+      5,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83,
+      166,
+      167,
+      168
+     ],
+     "template_groups": [
+      5,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83
+     ],
+     "priorities": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "decoded_faces": 3013
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64192,
+     "replaces": 6691,
+     "faces": 2750,
+     "anchors": 697,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83,
+      166,
+      167,
+      168
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      76,
+      77,
+      79,
+      80,
+      81,
+      82,
+      83
+     ],
+     "priorities": [
+      0,
+      1,
+      2
+     ],
+     "decoded_faces": 2750
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64190,
+    "maleModel0": 64191,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64192,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B11_1",
+   "name": "Voidwoven hood",
+   "slot": "head",
+   "template_id": 21018,
+   "template_name": "Ancestral hat",
+   "template_models": {
+    "inventoryModel": 32794,
+    "maleModel0": 32655,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 32663,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64193,
+     "replaces": 32794,
+     "faces": 818,
+     "priorities": [
+      8,
+      9
+     ],
+     "decoded_faces": 818
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64194,
+     "replaces": 32655,
+     "faces": 976,
+     "anchors": 125,
+     "groups": [
+      1,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      3,
+      49
+     ],
+     "priorities": [
+      0,
+      6,
+      8,
+      9,
+      10
+     ],
+     "decoded_faces": 976
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64195,
+     "replaces": 32663,
+     "faces": 913,
+     "anchors": 62,
+     "groups": [
+      1,
+      3,
+      49,
+      59
+     ],
+     "template_groups": [
+      1,
+      3,
+      49
+     ],
+     "priorities": [
+      0,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "decoded_faces": 913
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64193,
+    "maleModel0": 64194,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64195,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B11_2",
+   "name": "Voidwoven robe top",
+   "slot": "body",
+   "template_id": 21021,
+   "template_name": "Ancestral robe top",
+   "template_models": {
+    "inventoryModel": 32790,
+    "maleModel0": 32657,
+    "maleModel1": 32658,
+    "maleModel2": -1,
+    "femaleModel0": 32664,
+    "femaleModel1": 32665,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64196,
+     "replaces": 32790,
+     "faces": 2202,
+     "priorities": [
+      3,
+      4
+     ],
+     "decoded_faces": 2202
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64197,
+     "replaces": 32657,
+     "faces": 835,
+     "anchors": 204,
+     "groups": [
+      4,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 835
+    },
+    {
+     "kind": "maleModel1",
+     "model": 64198,
+     "replaces": 32658,
+     "faces": 1721,
+     "anchors": 150,
+     "groups": [
+      2,
+      4,
+      8,
+      18,
+      19,
+      22,
+      24,
+      30,
+      59,
+      86
+     ],
+     "template_groups": [
+      2,
+      8,
+      30,
+      86
+     ],
+     "priorities": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "decoded_faces": 1721
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64199,
+     "replaces": 32664,
+     "faces": 845,
+     "anchors": 240,
+     "groups": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      59
+     ],
+     "template_groups": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 845
+    },
+    {
+     "kind": "femaleModel1",
+     "model": 64200,
+     "replaces": 32665,
+     "faces": 1625,
+     "anchors": 144,
+     "groups": [
+      8,
+      18,
+      19,
+      22,
+      24,
+      59,
+      94
+     ],
+     "template_groups": [
+      8,
+      94
+     ],
+     "priorities": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "decoded_faces": 1625
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64196,
+    "maleModel0": 64197,
+    "maleModel1": 64198,
+    "maleModel2": -1,
+    "femaleModel0": 64199,
+    "femaleModel1": 64200,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B11_3",
+   "name": "Voidwoven robe skirt",
+   "slot": "legs",
+   "template_id": 21024,
+   "template_name": "Ancestral robe bottom",
+   "template_models": {
+    "inventoryModel": 32787,
+    "maleModel0": 32653,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 32662,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64201,
+     "replaces": 32787,
+     "faces": 2201,
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 2201
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64202,
+     "replaces": 32653,
+     "faces": 2560,
+     "anchors": 359,
+     "groups": [
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      57,
+      79,
+      80,
+      83,
+      166,
+      167
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+     ],
+     "priorities": [
+      1,
+      2,
+      3
+     ],
+     "decoded_faces": 2560
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64203,
+     "replaces": 32662,
+     "faces": 2474,
+     "anchors": 308,
+     "groups": [
+      4,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      57,
+      79,
+      80,
+      83,
+      166,
+      167
+     ],
+     "template_groups": [
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+     ],
+     "priorities": [
+      1,
+      2,
+      3
+     ],
+     "decoded_faces": 2474
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64201,
+    "maleModel0": 64202,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64203,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B11_4",
+   "name": "Stormcaller staff",
+   "slot": "weapon",
+   "template_id": 1405,
+   "template_name": "Mystic air staff",
+   "template_models": {
+    "inventoryModel": 2810,
+    "maleModel0": 534,
+    "maleModel1": 567,
+    "maleModel2": -1,
+    "femaleModel0": 39602,
+    "femaleModel1": 39629,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64204,
+     "replaces": 2810,
+     "faces": 1362,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1362
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64205,
+     "replaces": 534,
+     "faces": 1835,
+     "anchors": 0,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1835
+    },
+    {
+     "kind": "maleModel1",
+     "model": -1,
+     "replaces": 567,
+     "faces": 0
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64206,
+     "replaces": 39602,
+     "faces": 1820,
+     "anchors": 0,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1820
+    },
+    {
+     "kind": "femaleModel1",
+     "model": -1,
+     "replaces": 39629,
+     "faces": 0
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64204,
+    "maleModel0": 64205,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64206,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B11_5",
+   "name": "Solar sceptre",
+   "slot": "weapon",
+   "template_id": 6914,
+   "template_name": "Master wand",
+   "template_models": {
+    "inventoryModel": 10565,
+    "maleModel0": 10702,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 39616,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64207,
+     "replaces": 10565,
+     "faces": 1784,
+     "priorities": [
+      0,
+      1
+     ],
+     "decoded_faces": 1784
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64208,
+     "replaces": 10702,
+     "faces": 3000,
+     "anchors": 1224,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 3000
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64209,
+     "replaces": 39616,
+     "faces": 3182,
+     "anchors": 1422,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 3182
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64207,
+    "maleModel0": 64208,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64209,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B11_6",
+   "name": "Necrotic soulstaff",
+   "slot": "weapon",
+   "template_id": 1405,
+   "template_name": "Mystic air staff",
+   "template_models": {
+    "inventoryModel": 2810,
+    "maleModel0": 534,
+    "maleModel1": 567,
+    "maleModel2": -1,
+    "femaleModel0": 39602,
+    "femaleModel1": 39629,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64210,
+     "replaces": 2810,
+     "faces": 1577,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1577
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64211,
+     "replaces": 534,
+     "faces": 1943,
+     "anchors": 0,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1943
+    },
+    {
+     "kind": "maleModel1",
+     "model": -1,
+     "replaces": 567,
+     "faces": 0
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64212,
+     "replaces": 39602,
+     "faces": 1927,
+     "anchors": 0,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1927
+    },
+    {
+     "kind": "femaleModel1",
+     "model": -1,
+     "replaces": 39629,
+     "faces": 0
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64210,
+    "maleModel0": 64211,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64212,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B12_1",
+   "name": "Abyssal tidewhip",
+   "slot": "weapon",
+   "template_id": 4151,
+   "template_name": "Abyssal whip",
+   "template_models": {
+    "inventoryModel": 5412,
+    "maleModel0": 5409,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5409,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64213,
+     "replaces": 5412,
+     "faces": 1754,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1754
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64214,
+     "replaces": 5409,
+     "faces": 2360,
+     "anchors": 546,
+     "groups": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      61,
+      62,
+      63,
+      64
+     ],
+     "template_groups": [
+      50,
+      51,
+      53,
+      54,
+      55,
+      61,
+      62,
+      63,
+      64
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2360
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64213,
+    "maleModel0": 64214,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64214,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B12_2",
+   "name": "Seraph longsword",
+   "slot": "weapon",
+   "template_id": 1305,
+   "template_name": "Dragon longsword",
+   "template_models": {
+    "inventoryModel": 2834,
+    "maleModel0": 564,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 564,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64215,
+     "replaces": 2834,
+     "faces": 1430,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 1430
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64216,
+     "replaces": 564,
+     "faces": 6004,
+     "anchors": 4539,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 6004
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64215,
+    "maleModel0": 64216,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64216,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B12_3",
+   "name": "Bloodfang cleaver",
+   "slot": "weapon",
+   "template_id": 4587,
+   "template_name": "Dragon scimitar",
+   "template_models": {
+    "inventoryModel": 6033,
+    "maleModel0": 6031,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 6031,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64217,
+     "replaces": 6033,
+     "faces": 1585,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1585
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64218,
+     "replaces": 6031,
+     "faces": 2627,
+     "anchors": 1041,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2627
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64217,
+    "maleModel0": 64218,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64218,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B12_4",
+   "name": "Crimson rapier",
+   "slot": "weapon",
+   "template_id": 22324,
+   "template_name": "Ghrazi rapier",
+   "template_models": {
+    "inventoryModel": 35739,
+    "maleModel0": 35374,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 35369,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64219,
+     "replaces": 35739,
+     "faces": 1512,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1512
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64220,
+     "replaces": 35374,
+     "faces": 2194,
+     "anchors": 682,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2194
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64221,
+     "replaces": 35369,
+     "faces": 2195,
+     "anchors": 683,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 2195
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64219,
+    "maleModel0": 64220,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64221,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B12_5",
+   "name": "Gilded fang",
+   "slot": "weapon",
+   "template_id": 26219,
+   "template_name": "Osmumten's fang",
+   "template_models": {
+    "inventoryModel": 46468,
+    "maleModel0": 45278,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 45285,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64222,
+     "replaces": 46468,
+     "faces": 1510,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1510
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64223,
+     "replaces": 45278,
+     "faces": 3751,
+     "anchors": 2241,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 3751
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64224,
+     "replaces": 45285,
+     "faces": 3743,
+     "anchors": 2233,
+     "groups": [
+      50
+     ],
+     "template_groups": [
+      50
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 3743
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64222,
+    "maleModel0": 64223,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64224,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B12_6",
+   "name": "Goblin knotclub",
+   "slot": "weapon",
+   "template_id": 1432,
+   "template_name": "Rune mace",
+   "template_models": {
+    "inventoryModel": 2464,
+    "maleModel0": 502,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 502,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64225,
+     "replaces": 2464,
+     "faces": 1521,
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1521
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64226,
+     "replaces": 502,
+     "faces": 1570,
+     "anchors": 35,
+     "groups": [
+      27,
+      200
+     ],
+     "template_groups": [
+      27
+     ],
+     "priorities": [
+      10
+     ],
+     "decoded_faces": 1570
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64225,
+    "maleModel0": 64226,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64226,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B13_1",
+   "name": "Amulet of the sun",
+   "slot": "neck",
+   "template_id": 1704,
+   "template_name": "Amulet of glory",
+   "template_models": {
+    "inventoryModel": 2796,
+    "maleModel0": 290,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 454,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 4,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64227,
+     "replaces": 2796,
+     "faces": 868,
+     "priorities": [
+      0
+     ],
+     "decoded_faces": 868
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64228,
+     "replaces": 290,
+     "faces": 890,
+     "anchors": 32,
+     "groups": [
+      2,
+      8,
+      59
+     ],
+     "template_groups": [
+      2,
+      8
+     ],
+     "priorities": [
+      5
+     ],
+     "decoded_faces": 890
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64229,
+     "replaces": 454,
+     "faces": 921,
+     "anchors": 32,
+     "groups": [
+      8,
+      59
+     ],
+     "template_groups": [
+      8
+     ],
+     "priorities": [
+      5
+     ],
+     "decoded_faces": 921
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64227,
+    "maleModel0": 64228,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64229,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B13_2",
+   "name": "Crimson cord necklace",
+   "slot": "neck",
+   "template_id": 1731,
+   "template_name": "Amulet of power",
+   "template_models": {
+    "inventoryModel": 2796,
+    "maleModel0": 290,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 454,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64230,
+     "replaces": 2796,
+     "faces": 918,
+     "priorities": [
+      0
+     ],
+     "decoded_faces": 918
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64231,
+     "replaces": 290,
+     "faces": 931,
+     "anchors": 32,
+     "groups": [
+      2,
+      8,
+      59
+     ],
+     "template_groups": [
+      2,
+      8
+     ],
+     "priorities": [
+      5
+     ],
+     "decoded_faces": 931
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64232,
+     "replaces": 454,
+     "faces": 977,
+     "anchors": 32,
+     "groups": [
+      8,
+      59
+     ],
+     "template_groups": [
+      8
+     ],
+     "priorities": [
+      5
+     ],
+     "decoded_faces": 977
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64230,
+    "maleModel0": 64231,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64232,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B13_3",
+   "name": "Sapphire amulet",
+   "slot": "neck",
+   "template_id": 1694,
+   "template_name": "Sapphire amulet",
+   "template_models": {
+    "inventoryModel": 2796,
+    "maleModel0": 290,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 454,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 3,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64233,
+     "replaces": 2796,
+     "faces": 758,
+     "priorities": [
+      0
+     ],
+     "decoded_faces": 758
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64234,
+     "replaces": 290,
+     "faces": 785,
+     "anchors": 32,
+     "groups": [
+      2,
+      8,
+      59
+     ],
+     "template_groups": [
+      2,
+      8
+     ],
+     "priorities": [
+      5
+     ],
+     "decoded_faces": 785
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64235,
+     "replaces": 454,
+     "faces": 818,
+     "anchors": 32,
+     "groups": [
+      8,
+      59
+     ],
+     "template_groups": [
+      8
+     ],
+     "priorities": [
+      5
+     ],
+     "decoded_faces": 818
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64233,
+    "maleModel0": 64234,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64235,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B13_4",
+   "name": "Verdant shard amulet",
+   "slot": "neck",
+   "template_id": 6585,
+   "template_name": "Amulet of fury",
+   "template_models": {
+    "inventoryModel": 9633,
+    "maleModel0": 9642,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 9644,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64236,
+     "replaces": 9633,
+     "faces": 939,
+     "priorities": [
+      4
+     ],
+     "decoded_faces": 939
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64237,
+     "replaces": 9642,
+     "faces": 962,
+     "anchors": 28,
+     "groups": [
+      2,
+      8,
+      59
+     ],
+     "template_groups": [
+      2,
+      8
+     ],
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 962
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64238,
+     "replaces": 9644,
+     "faces": 988,
+     "anchors": 24,
+     "groups": [
+      8,
+      59
+     ],
+     "template_groups": [
+      8
+     ],
+     "priorities": [
+      4
+     ],
+     "decoded_faces": 988
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64236,
+    "maleModel0": 64237,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64238,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B13_5",
+   "name": "Obsidian cape",
+   "slot": "cape",
+   "template_id": 6568,
+   "template_name": "Obsidian cape",
+   "template_models": {
+    "inventoryModel": 9632,
+    "maleModel0": 9639,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 9641,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64239,
+     "replaces": 9632,
+     "faces": 1466,
+     "priorities": [
+      4,
+      5
+     ],
+     "decoded_faces": 1466
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64240,
+     "replaces": 9639,
+     "faces": 1700,
+     "anchors": 209,
+     "groups": [
+      2,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      59
+     ],
+     "template_groups": [
+      2,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "priorities": [
+      1,
+      2,
+      4,
+      5,
+      6
+     ],
+     "decoded_faces": 1700
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64241,
+     "replaces": 9641,
+     "faces": 1727,
+     "anchors": 227,
+     "groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      59
+     ],
+     "template_groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "priorities": [
+      1,
+      2,
+      4,
+      5,
+      6
+     ],
+     "decoded_faces": 1727
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64239,
+    "maleModel0": 64240,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64241,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B13_6",
+   "name": "Magma cape",
+   "slot": "cape",
+   "template_id": 21295,
+   "template_name": "Infernal cape",
+   "template_models": {
+    "inventoryModel": 33144,
+    "maleModel0": 33103,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 33111,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64242,
+     "replaces": 33144,
+     "faces": 2228,
+     "priorities": [
+      1,
+      2
+     ],
+     "decoded_faces": 2228
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64243,
+     "replaces": 33103,
+     "faces": 6048,
+     "anchors": 3791,
+     "groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      59
+     ],
+     "template_groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "priorities": [
+      0,
+      1,
+      5,
+      6
+     ],
+     "decoded_faces": 6048
+    },
+    {
+     "kind": "femaleModel0",
+     "model": 64244,
+     "replaces": 33111,
+     "faces": 5813,
+     "anchors": 3569,
+     "groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      59
+     ],
+     "template_groups": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "priorities": [
+      0,
+      1,
+      5,
+      6
+     ],
+     "decoded_faces": 5813
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64242,
+    "maleModel0": 64243,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64244,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B14_1",
+   "name": "Dragonfire shield",
+   "slot": "shield",
+   "template_id": 11283,
+   "template_name": "Dragonfire shield",
+   "template_models": {
+    "inventoryModel": 26457,
+    "maleModel0": 26423,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 26423,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64245,
+     "replaces": 26457,
+     "faces": 2137,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2137
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64246,
+     "replaces": 26423,
+     "faces": 2297,
+     "anchors": 155,
+     "groups": [
+      161
+     ],
+     "template_groups": [
+      161
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2297
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64245,
+    "maleModel0": 64246,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64246,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B14_2",
+   "name": "Glacial crystal shield",
+   "slot": "shield",
+   "template_id": 23991,
+   "template_name": "Crystal shield",
+   "template_models": {
+    "inventoryModel": 5198,
+    "maleModel0": 5196,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 5196,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64247,
+     "replaces": 5198,
+     "faces": 2183,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2183
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64248,
+     "replaces": 5196,
+     "faces": 2287,
+     "anchors": 82,
+     "groups": [
+      28,
+      198
+     ],
+     "template_groups": [
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2287
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64247,
+    "maleModel0": 64248,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64248,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B14_3",
+   "name": "Solar heater shield",
+   "slot": "shield",
+   "template_id": 1185,
+   "template_name": "Rune sq shield",
+   "template_models": {
+    "inventoryModel": 2720,
+    "maleModel0": 541,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 541,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 1,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64249,
+     "replaces": 2720,
+     "faces": 2199,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2199
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64250,
+     "replaces": 541,
+     "faces": 2242,
+     "anchors": 36,
+     "groups": [
+      28,
+      198
+     ],
+     "template_groups": [
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2242
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64249,
+    "maleModel0": 64250,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64250,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B14_4",
+   "name": "Jade thorn shield",
+   "slot": "shield",
+   "template_id": 1199,
+   "template_name": "Adamant kiteshield",
+   "template_models": {
+    "inventoryModel": 2339,
+    "maleModel0": 486,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 486,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64251,
+     "replaces": 2339,
+     "faces": 2119,
+     "priorities": [
+      11
+     ],
+     "decoded_faces": 2119
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64252,
+     "replaces": 486,
+     "faces": 2178,
+     "anchors": 56,
+     "groups": [
+      28,
+      198
+     ],
+     "template_groups": [
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2178
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64251,
+    "maleModel0": 64252,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64252,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B14_5",
+   "name": "Sapphire dragon kiteshield",
+   "slot": "shield",
+   "template_id": 1201,
+   "template_name": "Rune kiteshield",
+   "template_models": {
+    "inventoryModel": 2339,
+    "maleModel0": 486,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 486,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 2,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64253,
+     "replaces": 2339,
+     "faces": 2041,
+     "priorities": [
+      11
+     ],
+     "decoded_faces": 2041
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64254,
+     "replaces": 486,
+     "faces": 2106,
+     "anchors": 56,
+     "groups": [
+      28,
+      198
+     ],
+     "template_groups": [
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2106
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64253,
+    "maleModel0": 64254,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64254,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  },
+  {
+   "code": "B14_6",
+   "name": "Crimson spiked roundshield",
+   "slot": "shield",
+   "template_id": 6524,
+   "template_name": "Toktz-ket-xil",
+   "template_models": {
+    "inventoryModel": 9354,
+    "maleModel0": 9347,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 9347,
+    "femaleModel1": -1,
+    "femaleModel2": -1
+   },
+   "template_recolours": 0,
+   "parts": [
+    {
+     "kind": "inventory",
+     "model": 64255,
+     "replaces": 9354,
+     "faces": 2085,
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2085
+    },
+    {
+     "kind": "maleModel0",
+     "model": 64256,
+     "replaces": 9347,
+     "faces": 2168,
+     "anchors": 74,
+     "groups": [
+      28,
+      198
+     ],
+     "template_groups": [
+      28
+     ],
+     "priorities": [
+      10,
+      11
+     ],
+     "decoded_faces": 2168
+    }
+   ],
+   "item_def_patch": {
+    "inventoryModel": 64255,
+    "maleModel0": 64256,
+    "maleModel1": -1,
+    "maleModel2": -1,
+    "femaleModel0": 64256,
+    "femaleModel1": -1,
+    "femaleModel2": -1,
+    "colorFind": [],
+    "colorReplace": [],
+    "textureFind": [],
+    "textureReplace": []
+   }
+  }
+ ]
+}
