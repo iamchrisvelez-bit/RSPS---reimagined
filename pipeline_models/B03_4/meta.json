@@ -1,0 +1,384 @@
+{
+ "code": "B03_4",
+ "name": "Necrotic twin mauls",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1298,
+  180,
+  1501,
+  354
+ ],
+ "size": [
+  203,
+  174
+ ],
+ "depth_scale_px": 41.118343353271484,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 2384,
+ "faces": 4799,
+ "match": {
+  "round": "vertex-optimised",
+  "points": 2192,
+  "faces": 4799,
+  "score": 0.9727,
+  "iou": 0.9887,
+  "colour": 0.9567,
+  "exact": 0.9112,
+  "ingame": 0.9951,
+  "stop": "budget",
+  "back_faces": 720,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 89,
+   "faces": 856,
+   "score": 0.6038,
+   "iou": 0.8692,
+   "colour": 0.3385,
+   "exact": 0.59,
+   "ingame": 0.6344
+  },
+  {
+   "round": 1,
+   "points": 101,
+   "faces": 877,
+   "score": 0.6391,
+   "iou": 0.9116,
+   "colour": 0.3666,
+   "exact": 0.6251,
+   "ingame": 0.6693
+  },
+  {
+   "round": 2,
+   "points": 113,
+   "faces": 902,
+   "score": 0.65,
+   "iou": 0.9272,
+   "colour": 0.3727,
+   "exact": 0.6369,
+   "ingame": 0.6911
+  },
+  {
+   "round": 3,
+   "points": 126,
+   "faces": 921,
+   "score": 0.6561,
+   "iou": 0.9317,
+   "colour": 0.3805,
+   "exact": 0.6426,
+   "ingame": 0.7008
+  },
+  {
+   "round": 4,
+   "points": 141,
+   "faces": 948,
+   "score": 0.663,
+   "iou": 0.9341,
+   "colour": 0.3918,
+   "exact": 0.6499,
+   "ingame": 0.7085
+  },
+  {
+   "round": 5,
+   "points": 157,
+   "faces": 980,
+   "score": 0.6715,
+   "iou": 0.9363,
+   "colour": 0.4067,
+   "exact": 0.659,
+   "ingame": 0.7172
+  },
+  {
+   "round": 6,
+   "points": 175,
+   "faces": 1012,
+   "score": 0.6829,
+   "iou": 0.9334,
+   "colour": 0.4324,
+   "exact": 0.6648,
+   "ingame": 0.7222
+  },
+  {
+   "round": 7,
+   "points": 196,
+   "faces": 1055,
+   "score": 0.6978,
+   "iou": 0.9384,
+   "colour": 0.4572,
+   "exact": 0.6768,
+   "ingame": 0.7414
+  },
+  {
+   "round": 8,
+   "points": 219,
+   "faces": 1100,
+   "score": 0.7077,
+   "iou": 0.942,
+   "colour": 0.4735,
+   "exact": 0.6831,
+   "ingame": 0.7649
+  },
+  {
+   "round": 9,
+   "points": 245,
+   "faces": 1146,
+   "score": 0.7153,
+   "iou": 0.9459,
+   "colour": 0.4848,
+   "exact": 0.6922,
+   "ingame": 0.7742
+  },
+  {
+   "round": 10,
+   "points": 274,
+   "faces": 1202,
+   "score": 0.7245,
+   "iou": 0.9473,
+   "colour": 0.5017,
+   "exact": 0.6992,
+   "ingame": 0.7791
+  },
+  {
+   "round": 11,
+   "points": 306,
+   "faces": 1263,
+   "score": 0.7409,
+   "iou": 0.9534,
+   "colour": 0.5284,
+   "exact": 0.7149,
+   "ingame": 0.7929
+  },
+  {
+   "round": 12,
+   "points": 342,
+   "faces": 1329,
+   "score": 0.7566,
+   "iou": 0.9597,
+   "colour": 0.5536,
+   "exact": 0.727,
+   "ingame": 0.817
+  },
+  {
+   "round": 13,
+   "points": 383,
+   "faces": 1399,
+   "score": 0.762,
+   "iou": 0.9572,
+   "colour": 0.5668,
+   "exact": 0.7319,
+   "ingame": 0.8279
+  },
+  {
+   "round": 14,
+   "points": 428,
+   "faces": 1476,
+   "score": 0.7756,
+   "iou": 0.9695,
+   "colour": 0.5817,
+   "exact": 0.7466,
+   "ingame": 0.852
+  },
+  {
+   "round": 15,
+   "points": 479,
+   "faces": 1567,
+   "score": 0.7795,
+   "iou": 0.9693,
+   "colour": 0.5897,
+   "exact": 0.7532,
+   "ingame": 0.8635
+  },
+  {
+   "round": 16,
+   "points": 536,
+   "faces": 1670,
+   "score": 0.7937,
+   "iou": 0.9734,
+   "colour": 0.614,
+   "exact": 0.7657,
+   "ingame": 0.8849
+  },
+  {
+   "round": 17,
+   "points": 600,
+   "faces": 1780,
+   "score": 0.801,
+   "iou": 0.9715,
+   "colour": 0.6306,
+   "exact": 0.7727,
+   "ingame": 0.9024
+  },
+  {
+   "round": 18,
+   "points": 672,
+   "faces": 1915,
+   "score": 0.8173,
+   "iou": 0.9762,
+   "colour": 0.6585,
+   "exact": 0.7855,
+   "ingame": 0.9156
+  },
+  {
+   "round": 19,
+   "points": 752,
+   "faces": 2066,
+   "score": 0.8342,
+   "iou": 0.9792,
+   "colour": 0.6891,
+   "exact": 0.7949,
+   "ingame": 0.9326
+  },
+  {
+   "round": 20,
+   "points": 842,
+   "faces": 2229,
+   "score": 0.8493,
+   "iou": 0.9822,
+   "colour": 0.7165,
+   "exact": 0.8058,
+   "ingame": 0.9463
+  },
+  {
+   "round": 21,
+   "points": 943,
+   "faces": 2420,
+   "score": 0.8594,
+   "iou": 0.9795,
+   "colour": 0.7394,
+   "exact": 0.8156,
+   "ingame": 0.9655
+  },
+  {
+   "round": 22,
+   "points": 1056,
+   "faces": 2620,
+   "score": 0.8732,
+   "iou": 0.98,
+   "colour": 0.7664,
+   "exact": 0.8246,
+   "ingame": 0.9704
+  },
+  {
+   "round": 23,
+   "points": 1182,
+   "faces": 2855,
+   "score": 0.8834,
+   "iou": 0.9816,
+   "colour": 0.7852,
+   "exact": 0.8328,
+   "ingame": 0.9775
+  },
+  {
+   "round": 24,
+   "points": 1323,
+   "faces": 3118,
+   "score": 0.8883,
+   "iou": 0.9803,
+   "colour": 0.7962,
+   "exact": 0.8407,
+   "ingame": 0.9803
+  },
+  {
+   "round": 25,
+   "points": 1452,
+   "faces": 3338,
+   "score": 0.8924,
+   "iou": 0.9822,
+   "colour": 0.8026,
+   "exact": 0.8428,
+   "ingame": 0.9808
+  },
+  {
+   "round": 26,
+   "points": 1466,
+   "faces": 3357,
+   "score": 0.8934,
+   "iou": 0.9838,
+   "colour": 0.8029,
+   "exact": 0.8432,
+   "ingame": 0.9808
+  },
+  {
+   "round": 27,
+   "points": 1469,
+   "faces": 3359,
+   "score": 0.8938,
+   "iou": 0.9844,
+   "colour": 0.8031,
+   "exact": 0.8436,
+   "ingame": 0.9797
+  },
+  {
+   "round": 28,
+   "points": 1470,
+   "faces": 3360,
+   "score": 0.8911,
+   "iou": 0.9844,
+   "colour": 0.7979,
+   "exact": 0.843,
+   "ingame": 0.9803,
+   "rolled_back": true,
+   "spacing": 1.58
+  },
+  {
+   "round": 29,
+   "points": 1645,
+   "faces": 3709,
+   "score": 0.9161,
+   "iou": 0.986,
+   "colour": 0.8462,
+   "exact": 0.8559,
+   "ingame": 0.9885
+  },
+  {
+   "round": 30,
+   "points": 1842,
+   "faces": 4099,
+   "score": 0.9302,
+   "iou": 0.9868,
+   "colour": 0.8736,
+   "exact": 0.8642,
+   "ingame": 0.9907
+  },
+  {
+   "round": 31,
+   "points": 2063,
+   "faces": 4541,
+   "score": 0.9367,
+   "iou": 0.9871,
+   "colour": 0.8863,
+   "exact": 0.8748,
+   "ingame": 0.9912
+  },
+  {
+   "round": 32,
+   "points": 2192,
+   "faces": 4799,
+   "score": 0.9444,
+   "iou": 0.9871,
+   "colour": 0.9017,
+   "exact": 0.8799,
+   "ingame": 0.9923,
+   "stop": "budget"
+  },
+  {
+   "round": "vertex-optimised",
+   "points": 2192,
+   "faces": 4799,
+   "score": 0.9727,
+   "iou": 0.9887,
+   "colour": 0.9567,
+   "exact": 0.9112,
+   "ingame": 0.9951,
+   "stop": "budget",
+   "back_faces": 720,
+   "line_faces": 0
+  }
+ ]
+}

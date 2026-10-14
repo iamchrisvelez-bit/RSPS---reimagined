@@ -1,0 +1,292 @@
+{
+ "code": "B11_3",
+ "name": "Voidwoven robe skirt",
+ "slot": "legs",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1087,
+  1089,
+  1222,
+  1250
+ ],
+ "size": [
+  135,
+  161
+ ],
+ "depth_scale_px": 44.90394973754883,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1197,
+ "faces": 2399,
+ "match": {
+  "round": "vertex-optimised",
+  "points": 1101,
+  "faces": 2399,
+  "score": 0.981,
+  "iou": 0.9898,
+  "colour": 0.9722,
+  "exact": 0.9513,
+  "ingame": 0.9905,
+  "stop": "budget",
+  "back_faces": 360,
+  "line_faces": 0
+ },
+ "stop": "budget",
+ "history": [
+  {
+   "round": 0,
+   "points": 86,
+   "faces": 496,
+   "score": 0.7938,
+   "iou": 0.9459,
+   "colour": 0.6417,
+   "exact": 0.7688,
+   "ingame": 0.8235
+  },
+  {
+   "round": 1,
+   "points": 98,
+   "faces": 517,
+   "score": 0.8062,
+   "iou": 0.958,
+   "colour": 0.6544,
+   "exact": 0.7822,
+   "ingame": 0.8367
+  },
+  {
+   "round": 2,
+   "points": 110,
+   "faces": 539,
+   "score": 0.814,
+   "iou": 0.9649,
+   "colour": 0.6631,
+   "exact": 0.7918,
+   "ingame": 0.8405
+  },
+  {
+   "round": 3,
+   "points": 123,
+   "faces": 560,
+   "score": 0.822,
+   "iou": 0.9682,
+   "colour": 0.6758,
+   "exact": 0.7971,
+   "ingame": 0.8524
+  },
+  {
+   "round": 4,
+   "points": 137,
+   "faces": 587,
+   "score": 0.8273,
+   "iou": 0.9686,
+   "colour": 0.686,
+   "exact": 0.7989,
+   "ingame": 0.855
+  },
+  {
+   "round": 5,
+   "points": 153,
+   "faces": 619,
+   "score": 0.8385,
+   "iou": 0.9721,
+   "colour": 0.7049,
+   "exact": 0.8116,
+   "ingame": 0.8682
+  },
+  {
+   "round": 6,
+   "points": 171,
+   "faces": 654,
+   "score": 0.8388,
+   "iou": 0.9689,
+   "colour": 0.7087,
+   "exact": 0.811,
+   "ingame": 0.867
+  },
+  {
+   "round": 7,
+   "points": 191,
+   "faces": 692,
+   "score": 0.8413,
+   "iou": 0.9734,
+   "colour": 0.7093,
+   "exact": 0.8137,
+   "ingame": 0.8752
+  },
+  {
+   "round": 8,
+   "points": 213,
+   "faces": 730,
+   "score": 0.8466,
+   "iou": 0.9696,
+   "colour": 0.7237,
+   "exact": 0.8171,
+   "ingame": 0.8854
+  },
+  {
+   "round": 9,
+   "points": 238,
+   "faces": 773,
+   "score": 0.854,
+   "iou": 0.9737,
+   "colour": 0.7342,
+   "exact": 0.8252,
+   "ingame": 0.9018
+  },
+  {
+   "round": 10,
+   "points": 266,
+   "faces": 823,
+   "score": 0.8614,
+   "iou": 0.9762,
+   "colour": 0.7466,
+   "exact": 0.8331,
+   "ingame": 0.91
+  },
+  {
+   "round": 11,
+   "points": 297,
+   "faces": 871,
+   "score": 0.8608,
+   "iou": 0.9724,
+   "colour": 0.7492,
+   "exact": 0.837,
+   "ingame": 0.9145
+  },
+  {
+   "round": 12,
+   "points": 332,
+   "faces": 940,
+   "score": 0.8715,
+   "iou": 0.9797,
+   "colour": 0.7632,
+   "exact": 0.8473,
+   "ingame": 0.9233
+  },
+  {
+   "round": 13,
+   "points": 371,
+   "faces": 1008,
+   "score": 0.8807,
+   "iou": 0.9829,
+   "colour": 0.7786,
+   "exact": 0.8575,
+   "ingame": 0.9341
+  },
+  {
+   "round": 14,
+   "points": 415,
+   "faces": 1091,
+   "score": 0.8892,
+   "iou": 0.9845,
+   "colour": 0.7939,
+   "exact": 0.8664,
+   "ingame": 0.9392
+  },
+  {
+   "round": 15,
+   "points": 464,
+   "faces": 1180,
+   "score": 0.9048,
+   "iou": 0.9848,
+   "colour": 0.8248,
+   "exact": 0.8783,
+   "ingame": 0.9569
+  },
+  {
+   "round": 16,
+   "points": 519,
+   "faces": 1274,
+   "score": 0.9144,
+   "iou": 0.9867,
+   "colour": 0.8421,
+   "exact": 0.8872,
+   "ingame": 0.9639
+  },
+  {
+   "round": 17,
+   "points": 581,
+   "faces": 1383,
+   "score": 0.9261,
+   "iou": 0.9908,
+   "colour": 0.8615,
+   "exact": 0.8965,
+   "ingame": 0.9715
+  },
+  {
+   "round": 18,
+   "points": 650,
+   "faces": 1517,
+   "score": 0.94,
+   "iou": 0.9914,
+   "colour": 0.8886,
+   "exact": 0.9074,
+   "ingame": 0.9842
+  },
+  {
+   "round": 19,
+   "points": 728,
+   "faces": 1667,
+   "score": 0.9443,
+   "iou": 0.9911,
+   "colour": 0.8976,
+   "exact": 0.9115,
+   "ingame": 0.9861
+  },
+  {
+   "round": 20,
+   "points": 815,
+   "faces": 1835,
+   "score": 0.9523,
+   "iou": 0.9914,
+   "colour": 0.9132,
+   "exact": 0.9175,
+   "ingame": 0.9899
+  },
+  {
+   "round": 21,
+   "points": 912,
+   "faces": 2024,
+   "score": 0.9616,
+   "iou": 0.992,
+   "colour": 0.9311,
+   "exact": 0.9246,
+   "ingame": 0.9892
+  },
+  {
+   "round": 22,
+   "points": 1021,
+   "faces": 2240,
+   "score": 0.966,
+   "iou": 0.9924,
+   "colour": 0.9397,
+   "exact": 0.9298,
+   "ingame": 0.9899
+  },
+  {
+   "round": 23,
+   "points": 1101,
+   "faces": 2399,
+   "score": 0.9695,
+   "iou": 0.9924,
+   "colour": 0.9467,
+   "exact": 0.9344,
+   "ingame": 0.9911,
+   "stop": "budget"
+  },
+  {
+   "round": "vertex-optimised",
+   "points": 1101,
+   "faces": 2399,
+   "score": 0.981,
+   "iou": 0.9898,
+   "colour": 0.9722,
+   "exact": 0.9513,
+   "ingame": 0.9905,
+   "stop": "budget",
+   "back_faces": 360,
+   "line_faces": 0
+  }
+ ]
+}

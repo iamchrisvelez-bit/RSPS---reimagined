@@ -1,0 +1,274 @@
+{
+ "code": "B06_4",
+ "name": "Magma dagger",
+ "slot": "weapon",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  1619,
+  492,
+  1780,
+  589
+ ],
+ "size": [
+  161,
+  97
+ ],
+ "depth_scale_px": 22.241403579711914,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1161,
+ "faces": 2324,
+ "match": {
+  "round": "vertex-optimised",
+  "points": 660,
+  "faces": 1522,
+  "score": 0.9845,
+  "iou": 0.9905,
+  "colour": 0.9785,
+  "exact": 0.9517,
+  "ingame": 0.9969,
+  "stop": "target",
+  "back_faces": 1162,
+  "line_faces": 0
+ },
+ "stop": "target",
+ "history": [
+  {
+   "round": 0,
+   "points": 75,
+   "faces": 487,
+   "score": 0.8154,
+   "iou": 0.9323,
+   "colour": 0.6985,
+   "exact": 0.7897,
+   "ingame": 0.8641
+  },
+  {
+   "round": 1,
+   "points": 87,
+   "faces": 508,
+   "score": 0.8309,
+   "iou": 0.9443,
+   "colour": 0.7176,
+   "exact": 0.8062,
+   "ingame": 0.8798
+  },
+  {
+   "round": 2,
+   "points": 99,
+   "faces": 525,
+   "score": 0.8457,
+   "iou": 0.95,
+   "colour": 0.7414,
+   "exact": 0.8147,
+   "ingame": 0.894
+  },
+  {
+   "round": 3,
+   "points": 111,
+   "faces": 540,
+   "score": 0.83,
+   "iou": 0.9321,
+   "colour": 0.7279,
+   "exact": 0.7985,
+   "ingame": 0.8782,
+   "rolled_back": true
+  },
+  {
+   "round": 4,
+   "points": 111,
+   "faces": 544,
+   "score": 0.8474,
+   "iou": 0.9494,
+   "colour": 0.7454,
+   "exact": 0.8103,
+   "ingame": 0.8892
+  },
+  {
+   "round": 5,
+   "points": 124,
+   "faces": 568,
+   "score": 0.8676,
+   "iou": 0.9612,
+   "colour": 0.7741,
+   "exact": 0.8269,
+   "ingame": 0.9141
+  },
+  {
+   "round": 6,
+   "points": 138,
+   "faces": 593,
+   "score": 0.8732,
+   "iou": 0.9636,
+   "colour": 0.7828,
+   "exact": 0.8338,
+   "ingame": 0.9126
+  },
+  {
+   "round": 7,
+   "points": 154,
+   "faces": 615,
+   "score": 0.8725,
+   "iou": 0.9597,
+   "colour": 0.7852,
+   "exact": 0.834,
+   "ingame": 0.9298
+  },
+  {
+   "round": 8,
+   "points": 172,
+   "faces": 646,
+   "score": 0.8859,
+   "iou": 0.9755,
+   "colour": 0.7963,
+   "exact": 0.8485,
+   "ingame": 0.9406
+  },
+  {
+   "round": 9,
+   "points": 192,
+   "faces": 679,
+   "score": 0.8907,
+   "iou": 0.977,
+   "colour": 0.8043,
+   "exact": 0.8563,
+   "ingame": 0.9469
+  },
+  {
+   "round": 10,
+   "points": 215,
+   "faces": 721,
+   "score": 0.8919,
+   "iou": 0.962,
+   "colour": 0.8218,
+   "exact": 0.8492,
+   "ingame": 0.9484
+  },
+  {
+   "round": 11,
+   "points": 240,
+   "faces": 767,
+   "score": 0.9086,
+   "iou": 0.9794,
+   "colour": 0.8377,
+   "exact": 0.8651,
+   "ingame": 0.9641
+  },
+  {
+   "round": 12,
+   "points": 268,
+   "faces": 811,
+   "score": 0.9161,
+   "iou": 0.9842,
+   "colour": 0.8481,
+   "exact": 0.8747,
+   "ingame": 0.9688
+  },
+  {
+   "round": 13,
+   "points": 300,
+   "faces": 864,
+   "score": 0.9276,
+   "iou": 0.985,
+   "colour": 0.8703,
+   "exact": 0.8813,
+   "ingame": 0.9735
+  },
+  {
+   "round": 14,
+   "points": 336,
+   "faces": 917,
+   "score": 0.9256,
+   "iou": 0.9778,
+   "colour": 0.8735,
+   "exact": 0.878,
+   "ingame": 0.9735,
+   "rolled_back": true
+  },
+  {
+   "round": 15,
+   "points": 336,
+   "faces": 925,
+   "score": 0.9325,
+   "iou": 0.9818,
+   "colour": 0.8831,
+   "exact": 0.8868,
+   "ingame": 0.9844
+  },
+  {
+   "round": 16,
+   "points": 376,
+   "faces": 990,
+   "score": 0.9424,
+   "iou": 0.985,
+   "colour": 0.8998,
+   "exact": 0.8941,
+   "ingame": 0.9844
+  },
+  {
+   "round": 17,
+   "points": 421,
+   "faces": 1074,
+   "score": 0.9479,
+   "iou": 0.9849,
+   "colour": 0.9109,
+   "exact": 0.9022,
+   "ingame": 0.9844
+  },
+  {
+   "round": 18,
+   "points": 471,
+   "faces": 1164,
+   "score": 0.9527,
+   "iou": 0.9834,
+   "colour": 0.922,
+   "exact": 0.9083,
+   "ingame": 0.9844
+  },
+  {
+   "round": 19,
+   "points": 527,
+   "faces": 1267,
+   "score": 0.9662,
+   "iou": 0.9873,
+   "colour": 0.9451,
+   "exact": 0.9192,
+   "ingame": 0.9891
+  },
+  {
+   "round": 20,
+   "points": 590,
+   "faces": 1386,
+   "score": 0.969,
+   "iou": 0.9881,
+   "colour": 0.9499,
+   "exact": 0.9252,
+   "ingame": 0.9906
+  },
+  {
+   "round": 21,
+   "points": 660,
+   "faces": 1522,
+   "score": 0.9734,
+   "iou": 0.9897,
+   "colour": 0.957,
+   "exact": 0.9301,
+   "ingame": 0.9906,
+   "stop": "target"
+  },
+  {
+   "round": "vertex-optimised",
+   "points": 660,
+   "faces": 1522,
+   "score": 0.9845,
+   "iou": 0.9905,
+   "colour": 0.9785,
+   "exact": 0.9517,
+   "ingame": 0.9969,
+   "stop": "target",
+   "back_faces": 1162,
+   "line_faces": 0
+  }
+ ]
+}

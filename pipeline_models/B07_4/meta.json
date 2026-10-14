@@ -1,0 +1,263 @@
+{
+ "code": "B07_4",
+ "name": "Nightstalker ranger tunic",
+ "slot": "body",
+ "sheet": "reference_sheet.jpg",
+ "crop": [
+  467,
+  722,
+  609,
+  905
+ ],
+ "size": [
+  142,
+  183
+ ],
+ "depth_scale_px": 34.792781829833984,
+ "backend": "refine",
+ "mode": "detail",
+ "model": "model.obj",
+ "vertices": 1196,
+ "faces": 2400,
+ "match": {
+  "round": "vertex-optimised",
+  "points": 1021,
+  "faces": 2091,
+  "score": 0.9758,
+  "iou": 0.9754,
+  "colour": 0.9762,
+  "exact": 0.9562,
+  "ingame": 0.9769,
+  "stop": "target",
+  "back_faces": 669,
+  "line_faces": 0
+ },
+ "stop": "target",
+ "history": [
+  {
+   "round": 0,
+   "points": 123,
+   "faces": 514,
+   "score": 0.7595,
+   "iou": 0.8647,
+   "colour": 0.6543,
+   "exact": 0.7377,
+   "ingame": 0.7988
+  },
+  {
+   "round": 1,
+   "points": 137,
+   "faces": 542,
+   "score": 0.7882,
+   "iou": 0.8937,
+   "colour": 0.6827,
+   "exact": 0.7661,
+   "ingame": 0.8258
+  },
+  {
+   "round": 2,
+   "points": 153,
+   "faces": 566,
+   "score": 0.799,
+   "iou": 0.9085,
+   "colour": 0.6894,
+   "exact": 0.7773,
+   "ingame": 0.84
+  },
+  {
+   "round": 3,
+   "points": 171,
+   "faces": 591,
+   "score": 0.8102,
+   "iou": 0.9102,
+   "colour": 0.7102,
+   "exact": 0.7855,
+   "ingame": 0.8446
+  },
+  {
+   "round": 4,
+   "points": 191,
+   "faces": 629,
+   "score": 0.8207,
+   "iou": 0.9218,
+   "colour": 0.7195,
+   "exact": 0.7971,
+   "ingame": 0.8551
+  },
+  {
+   "round": 5,
+   "points": 213,
+   "faces": 668,
+   "score": 0.8394,
+   "iou": 0.9379,
+   "colour": 0.741,
+   "exact": 0.8138,
+   "ingame": 0.8676
+  },
+  {
+   "round": 6,
+   "points": 238,
+   "faces": 715,
+   "score": 0.8539,
+   "iou": 0.9464,
+   "colour": 0.7614,
+   "exact": 0.8288,
+   "ingame": 0.8939
+  },
+  {
+   "round": 7,
+   "points": 266,
+   "faces": 761,
+   "score": 0.8591,
+   "iou": 0.9433,
+   "colour": 0.7748,
+   "exact": 0.8322,
+   "ingame": 0.8893
+  },
+  {
+   "round": 8,
+   "points": 297,
+   "faces": 821,
+   "score": 0.8762,
+   "iou": 0.959,
+   "colour": 0.7935,
+   "exact": 0.8494,
+   "ingame": 0.913
+  },
+  {
+   "round": 9,
+   "points": 332,
+   "faces": 873,
+   "score": 0.8741,
+   "iou": 0.9543,
+   "colour": 0.7938,
+   "exact": 0.8476,
+   "ingame": 0.9142,
+   "rolled_back": true
+  },
+  {
+   "round": 10,
+   "points": 332,
+   "faces": 879,
+   "score": 0.8789,
+   "iou": 0.9558,
+   "colour": 0.8019,
+   "exact": 0.8513,
+   "ingame": 0.9202
+  },
+  {
+   "round": 11,
+   "points": 371,
+   "faces": 951,
+   "score": 0.8912,
+   "iou": 0.9659,
+   "colour": 0.8166,
+   "exact": 0.8653,
+   "ingame": 0.9288
+  },
+  {
+   "round": 12,
+   "points": 415,
+   "faces": 1022,
+   "score": 0.8995,
+   "iou": 0.9633,
+   "colour": 0.8357,
+   "exact": 0.8743,
+   "ingame": 0.94
+  },
+  {
+   "round": 13,
+   "points": 464,
+   "faces": 1099,
+   "score": 0.915,
+   "iou": 0.9708,
+   "colour": 0.8591,
+   "exact": 0.8877,
+   "ingame": 0.9538
+  },
+  {
+   "round": 14,
+   "points": 519,
+   "faces": 1192,
+   "score": 0.931,
+   "iou": 0.9761,
+   "colour": 0.8859,
+   "exact": 0.9001,
+   "ingame": 0.9684
+  },
+  {
+   "round": 15,
+   "points": 581,
+   "faces": 1297,
+   "score": 0.9327,
+   "iou": 0.9724,
+   "colour": 0.8929,
+   "exact": 0.9014,
+   "ingame": 0.9618
+  },
+  {
+   "round": 16,
+   "points": 650,
+   "faces": 1422,
+   "score": 0.9459,
+   "iou": 0.9771,
+   "colour": 0.9147,
+   "exact": 0.9155,
+   "ingame": 0.9757
+  },
+  {
+   "round": 17,
+   "points": 728,
+   "faces": 1556,
+   "score": 0.9493,
+   "iou": 0.9735,
+   "colour": 0.925,
+   "exact": 0.9208,
+   "ingame": 0.979
+  },
+  {
+   "round": 18,
+   "points": 815,
+   "faces": 1712,
+   "score": 0.9583,
+   "iou": 0.9784,
+   "colour": 0.9381,
+   "exact": 0.9288,
+   "ingame": 0.9803
+  },
+  {
+   "round": 19,
+   "points": 912,
+   "faces": 1884,
+   "score": 0.9645,
+   "iou": 0.9774,
+   "colour": 0.9515,
+   "exact": 0.9346,
+   "ingame": 0.9836
+  },
+  {
+   "round": 20,
+   "points": 1021,
+   "faces": 2091,
+   "score": 0.9723,
+   "iou": 0.9804,
+   "colour": 0.9642,
+   "exact": 0.9416,
+   "ingame": 0.9829,
+   "stop": "target"
+  },
+  {
+   "round": "vertex-optimised",
+   "points": 1021,
+   "faces": 2091,
+   "score": 0.9758,
+   "iou": 0.9754,
+   "colour": 0.9762,
+   "exact": 0.9562,
+   "ingame": 0.9769,
+   "stop": "target",
+   "back_faces": 669,
+   "line_faces": 0
+  }
+ ]
+}

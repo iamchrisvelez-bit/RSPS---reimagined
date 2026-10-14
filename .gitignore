@@ -1,0 +1,8 @@
+__pycache__/
+verify/build/
+out/compare/
+pipeline_out/
+.venv-blender/
+pipeline_models/*/refine.png
+out_swap/verify/
+out/verify/

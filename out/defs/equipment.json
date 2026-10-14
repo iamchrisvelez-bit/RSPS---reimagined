@@ -1,0 +1,746 @@
+[
+ {
+  "item_id": 40000,
+  "name": "Copper scale platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40001,
+  "name": "Iron platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40002,
+  "name": "Steel platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40003,
+  "name": "Shadowsteel platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40004,
+  "name": "Silver filigree platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40005,
+  "name": "Jade crystal platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40006,
+  "name": "Royal sapphire platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40007,
+  "name": "Crimson dragonscale body",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40008,
+  "name": "Crimson crystal scimitar",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40009,
+  "name": "Sapphire pickaxe",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40010,
+  "name": "Magma pickaxe",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40011,
+  "name": "Magma hatchet",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40012,
+  "name": "Necrotic battleaxe",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40013,
+  "name": "Necrotic spear",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [
+   5
+  ],
+  "two_handed": true
+ },
+ {
+  "item_id": 40014,
+  "name": "Necrotic flail",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [
+   5
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40015,
+  "name": "Necrotic twin mauls",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [
+   5
+  ],
+  "two_handed": true
+ },
+ {
+  "item_id": 40016,
+  "name": "Necrotic crossbow",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": true
+ },
+ {
+  "item_id": 40017,
+  "name": "Necrotic skull censer",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40018,
+  "name": "Reaver platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40019,
+  "name": "Reaver platelegs",
+  "equip_slot": 7,
+  "slot": "legs",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40020,
+  "name": "Reaver warboots",
+  "equip_slot": 10,
+  "slot": "feet",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40021,
+  "name": "Horned bone helm",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8,
+   11
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40022,
+  "name": "Ribcage platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40023,
+  "name": "Bone bracers",
+  "equip_slot": 9,
+  "slot": "hands",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40024,
+  "name": "Crimson knight helm",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8,
+   11
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40025,
+  "name": "Crimson chain hauberk",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40026,
+  "name": "Crimson knight tassets",
+  "equip_slot": 7,
+  "slot": "legs",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40027,
+  "name": "Paladin full helm",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8,
+   11
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40028,
+  "name": "Paladin platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40029,
+  "name": "Paladin greaves",
+  "equip_slot": 10,
+  "slot": "feet",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40030,
+  "name": "Magma helm",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8,
+   11
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40031,
+  "name": "Magma platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40032,
+  "name": "Magma gauntlets",
+  "equip_slot": 9,
+  "slot": "hands",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40033,
+  "name": "Magma dagger",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40034,
+  "name": "Magma mace",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40035,
+  "name": "Magma kiteshield",
+  "equip_slot": 5,
+  "slot": "shield",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40036,
+  "name": "Woodland ranger tunic",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40037,
+  "name": "Tidewalker ranger tunic",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40038,
+  "name": "Emberhide ranger tunic",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40039,
+  "name": "Nightstalker ranger tunic",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40040,
+  "name": "Valkyrie winged helm",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8,
+   11
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40041,
+  "name": "Valkyrie platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40042,
+  "name": "Seraph feather mantle",
+  "equip_slot": 1,
+  "slot": "cape",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40043,
+  "name": "Solar helm",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40044,
+  "name": "Solar scale platebody",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40045,
+  "name": "Solar scale platelegs",
+  "equip_slot": 7,
+  "slot": "legs",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40046,
+  "name": "Verdant crystal helm",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8,
+   11
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40047,
+  "name": "Verdant crystal body",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40048,
+  "name": "Bone longbow",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [
+   5
+  ],
+  "two_handed": true
+ },
+ {
+  "item_id": 40049,
+  "name": "Shadowvine bow",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [
+   5
+  ],
+  "two_handed": true
+ },
+ {
+  "item_id": 40050,
+  "name": "Dragonspine bow",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [
+   5
+  ],
+  "two_handed": true
+ },
+ {
+  "item_id": 40051,
+  "name": "Crystal-root bow",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [
+   5
+  ],
+  "two_handed": true
+ },
+ {
+  "item_id": 40052,
+  "name": "Seraph crossbow",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": true
+ },
+ {
+  "item_id": 40053,
+  "name": "Runic crossbow",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": true
+ },
+ {
+  "item_id": 40054,
+  "name": "Astral wizard hat",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40055,
+  "name": "Astral robe top",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40056,
+  "name": "Astral robe bottom",
+  "equip_slot": 7,
+  "slot": "legs",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40057,
+  "name": "Runeweaver hood",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40058,
+  "name": "Runeweaver robe top",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40059,
+  "name": "Runeweaver robe skirt",
+  "equip_slot": 7,
+  "slot": "legs",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40060,
+  "name": "Voidwoven hood",
+  "equip_slot": 0,
+  "slot": "head",
+  "hide_kits": [
+   8
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40061,
+  "name": "Voidwoven robe top",
+  "equip_slot": 4,
+  "slot": "body",
+  "hide_kits": [
+   6
+  ],
+  "two_handed": false
+ },
+ {
+  "item_id": 40062,
+  "name": "Voidwoven robe skirt",
+  "equip_slot": 7,
+  "slot": "legs",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40063,
+  "name": "Stormcaller staff",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": true
+ },
+ {
+  "item_id": 40064,
+  "name": "Solar sceptre",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40065,
+  "name": "Necrotic soulstaff",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": true
+ },
+ {
+  "item_id": 40066,
+  "name": "Abyssal tidewhip",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40067,
+  "name": "Seraph longsword",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40068,
+  "name": "Bloodfang cleaver",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40069,
+  "name": "Crimson rapier",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40070,
+  "name": "Gilded fang",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40071,
+  "name": "Goblin knotclub",
+  "equip_slot": 3,
+  "slot": "weapon",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40072,
+  "name": "Amulet of the sun",
+  "equip_slot": 2,
+  "slot": "neck",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40073,
+  "name": "Crimson cord necklace",
+  "equip_slot": 2,
+  "slot": "neck",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40074,
+  "name": "Sapphire amulet",
+  "equip_slot": 2,
+  "slot": "neck",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40075,
+  "name": "Verdant shard amulet",
+  "equip_slot": 2,
+  "slot": "neck",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40076,
+  "name": "Obsidian cape",
+  "equip_slot": 1,
+  "slot": "cape",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40077,
+  "name": "Magma cape",
+  "equip_slot": 1,
+  "slot": "cape",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40078,
+  "name": "Dragonfire shield",
+  "equip_slot": 5,
+  "slot": "shield",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40079,
+  "name": "Glacial crystal shield",
+  "equip_slot": 5,
+  "slot": "shield",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40080,
+  "name": "Solar heater shield",
+  "equip_slot": 5,
+  "slot": "shield",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40081,
+  "name": "Jade thorn shield",
+  "equip_slot": 5,
+  "slot": "shield",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40082,
+  "name": "Sapphire dragon kiteshield",
+  "equip_slot": 5,
+  "slot": "shield",
+  "hide_kits": [],
+  "two_handed": false
+ },
+ {
+  "item_id": 40083,
+  "name": "Crimson spiked roundshield",
+  "equip_slot": 5,
+  "slot": "shield",
+  "hide_kits": [],
+  "two_handed": false
+ }
+]

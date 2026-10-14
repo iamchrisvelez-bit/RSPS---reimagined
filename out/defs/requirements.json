@@ -1,0 +1,998 @@
+[
+ {
+  "item_id": 40000,
+  "name": "Copper scale platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 1
+   }
+  ]
+ },
+ {
+  "item_id": 40001,
+  "name": "Iron platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 1
+   }
+  ]
+ },
+ {
+  "item_id": 40002,
+  "name": "Steel platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 5
+   }
+  ]
+ },
+ {
+  "item_id": 40003,
+  "name": "Shadowsteel platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 30
+   }
+  ]
+ },
+ {
+  "item_id": 40004,
+  "name": "Silver filigree platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 20
+   }
+  ]
+ },
+ {
+  "item_id": 40005,
+  "name": "Jade crystal platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 50
+   }
+  ]
+ },
+ {
+  "item_id": 40006,
+  "name": "Royal sapphire platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40007,
+  "name": "Crimson dragonscale body",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 40
+   },
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40008,
+  "name": "Crimson crystal scimitar",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40009,
+  "name": "Sapphire pickaxe",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 40
+   },
+   {
+    "skill": "mining",
+    "skill_id": 14,
+    "level": 41
+   }
+  ]
+ },
+ {
+  "item_id": 40010,
+  "name": "Magma pickaxe",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 60
+   },
+   {
+    "skill": "mining",
+    "skill_id": 14,
+    "level": 61
+   }
+  ]
+ },
+ {
+  "item_id": 40011,
+  "name": "Magma hatchet",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 60
+   },
+   {
+    "skill": "woodcutting",
+    "skill_id": 8,
+    "level": 61
+   }
+  ]
+ },
+ {
+  "item_id": 40012,
+  "name": "Necrotic battleaxe",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 70
+   },
+   {
+    "skill": "strength",
+    "skill_id": 2,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40013,
+  "name": "Necrotic spear",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40014,
+  "name": "Necrotic flail",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40015,
+  "name": "Necrotic twin mauls",
+  "requirements": [
+   {
+    "skill": "strength",
+    "skill_id": 2,
+    "level": 75
+   }
+  ]
+ },
+ {
+  "item_id": 40016,
+  "name": "Necrotic crossbow",
+  "requirements": [
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40017,
+  "name": "Necrotic skull censer",
+  "requirements": [
+   {
+    "skill": "prayer",
+    "skill_id": 5,
+    "level": 50
+   },
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40018,
+  "name": "Reaver platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40019,
+  "name": "Reaver platelegs",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40020,
+  "name": "Reaver warboots",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40021,
+  "name": "Horned bone helm",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 45
+   }
+  ]
+ },
+ {
+  "item_id": 40022,
+  "name": "Ribcage platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 45
+   }
+  ]
+ },
+ {
+  "item_id": 40023,
+  "name": "Bone bracers",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 45
+   }
+  ]
+ },
+ {
+  "item_id": 40024,
+  "name": "Crimson knight helm",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 50
+   }
+  ]
+ },
+ {
+  "item_id": 40025,
+  "name": "Crimson chain hauberk",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 50
+   }
+  ]
+ },
+ {
+  "item_id": 40026,
+  "name": "Crimson knight tassets",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 50
+   }
+  ]
+ },
+ {
+  "item_id": 40027,
+  "name": "Paladin full helm",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 55
+   },
+   {
+    "skill": "prayer",
+    "skill_id": 5,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40028,
+  "name": "Paladin platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 55
+   },
+   {
+    "skill": "prayer",
+    "skill_id": 5,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40029,
+  "name": "Paladin greaves",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 55
+   },
+   {
+    "skill": "prayer",
+    "skill_id": 5,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40030,
+  "name": "Magma helm",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 65
+   }
+  ]
+ },
+ {
+  "item_id": 40031,
+  "name": "Magma platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 65
+   }
+  ]
+ },
+ {
+  "item_id": 40032,
+  "name": "Magma gauntlets",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 65
+   }
+  ]
+ },
+ {
+  "item_id": 40033,
+  "name": "Magma dagger",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 65
+   }
+  ]
+ },
+ {
+  "item_id": 40034,
+  "name": "Magma mace",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 65
+   }
+  ]
+ },
+ {
+  "item_id": 40035,
+  "name": "Magma kiteshield",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 65
+   }
+  ]
+ },
+ {
+  "item_id": 40036,
+  "name": "Woodland ranger tunic",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 10
+   },
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 20
+   }
+  ]
+ },
+ {
+  "item_id": 40037,
+  "name": "Tidewalker ranger tunic",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 20
+   },
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40038,
+  "name": "Emberhide ranger tunic",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 25
+   },
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 50
+   }
+  ]
+ },
+ {
+  "item_id": 40039,
+  "name": "Nightstalker ranger tunic",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 30
+   },
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40040,
+  "name": "Valkyrie winged helm",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40041,
+  "name": "Valkyrie platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40042,
+  "name": "Seraph feather mantle",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 40
+   },
+   {
+    "skill": "prayer",
+    "skill_id": 5,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40043,
+  "name": "Solar helm",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40044,
+  "name": "Solar scale platebody",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40045,
+  "name": "Solar scale platelegs",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40046,
+  "name": "Verdant crystal helm",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 75
+   }
+  ]
+ },
+ {
+  "item_id": 40047,
+  "name": "Verdant crystal body",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 75
+   }
+  ]
+ },
+ {
+  "item_id": 40048,
+  "name": "Bone longbow",
+  "requirements": [
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 45
+   }
+  ]
+ },
+ {
+  "item_id": 40049,
+  "name": "Shadowvine bow",
+  "requirements": [
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40050,
+  "name": "Dragonspine bow",
+  "requirements": [
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 75
+   }
+  ]
+ },
+ {
+  "item_id": 40051,
+  "name": "Crystal-root bow",
+  "requirements": [
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40052,
+  "name": "Seraph crossbow",
+  "requirements": [
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 80
+   }
+  ]
+ },
+ {
+  "item_id": 40053,
+  "name": "Runic crossbow",
+  "requirements": [
+   {
+    "skill": "ranged",
+    "skill_id": 4,
+    "level": 61
+   }
+  ]
+ },
+ {
+  "item_id": 40054,
+  "name": "Astral wizard hat",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40055,
+  "name": "Astral robe top",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40056,
+  "name": "Astral robe bottom",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40057,
+  "name": "Runeweaver hood",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 55
+   }
+  ]
+ },
+ {
+  "item_id": 40058,
+  "name": "Runeweaver robe top",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 55
+   }
+  ]
+ },
+ {
+  "item_id": 40059,
+  "name": "Runeweaver robe skirt",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 55
+   }
+  ]
+ },
+ {
+  "item_id": 40060,
+  "name": "Voidwoven hood",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 30
+   },
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40061,
+  "name": "Voidwoven robe top",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 30
+   },
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40062,
+  "name": "Voidwoven robe skirt",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 30
+   },
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40063,
+  "name": "Stormcaller staff",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 65
+   }
+  ]
+ },
+ {
+  "item_id": 40064,
+  "name": "Solar sceptre",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40065,
+  "name": "Necrotic soulstaff",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 75
+   }
+  ]
+ },
+ {
+  "item_id": 40066,
+  "name": "Abyssal tidewhip",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40067,
+  "name": "Seraph longsword",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 80
+   }
+  ]
+ },
+ {
+  "item_id": 40068,
+  "name": "Bloodfang cleaver",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 70
+   },
+   {
+    "skill": "strength",
+    "skill_id": 2,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40069,
+  "name": "Crimson rapier",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40070,
+  "name": "Gilded fang",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 50
+   }
+  ]
+ },
+ {
+  "item_id": 40071,
+  "name": "Goblin knotclub",
+  "requirements": [
+   {
+    "skill": "attack",
+    "skill_id": 0,
+    "level": 10
+   }
+  ]
+ },
+ {
+  "item_id": 40072,
+  "name": "Amulet of the sun",
+  "requirements": [
+   {
+    "skill": "prayer",
+    "skill_id": 5,
+    "level": 45
+   }
+  ]
+ },
+ {
+  "item_id": 40073,
+  "name": "Crimson cord necklace",
+  "requirements": []
+ },
+ {
+  "item_id": 40074,
+  "name": "Sapphire amulet",
+  "requirements": []
+ },
+ {
+  "item_id": 40075,
+  "name": "Verdant shard amulet",
+  "requirements": [
+   {
+    "skill": "magic",
+    "skill_id": 6,
+    "level": 40
+   }
+  ]
+ },
+ {
+  "item_id": 40076,
+  "name": "Obsidian cape",
+  "requirements": []
+ },
+ {
+  "item_id": 40077,
+  "name": "Magma cape",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40078,
+  "name": "Dragonfire shield",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 75
+   }
+  ]
+ },
+ {
+  "item_id": 40079,
+  "name": "Glacial crystal shield",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40080,
+  "name": "Solar heater shield",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 70
+   }
+  ]
+ },
+ {
+  "item_id": 40081,
+  "name": "Jade thorn shield",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 50
+   }
+  ]
+ },
+ {
+  "item_id": 40082,
+  "name": "Sapphire dragon kiteshield",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 60
+   }
+  ]
+ },
+ {
+  "item_id": 40083,
+  "name": "Crimson spiked roundshield",
+  "requirements": [
+   {
+    "skill": "defence",
+    "skill_id": 1,
+    "level": 40
+   }
+  ]
+ }
+]

@@ -1,0 +1,1712 @@
+newmtl c_1c1c1c
+Kd 0.1098 0.1098 0.1098
+illum 1
+
+newmtl c_34241c
+Kd 0.2039 0.1412 0.1098
+illum 1
+
+newmtl c_24140c
+Kd 0.1412 0.0784 0.0471
+illum 1
+
+newmtl c_141414
+Kd 0.0784 0.0784 0.0784
+illum 1
+
+newmtl c_34242c
+Kd 0.2039 0.1412 0.1725
+illum 1
+
+newmtl c_342c2c
+Kd 0.2039 0.1725 0.1725
+illum 1
+
+newmtl c_3c2c2c
+Kd 0.2353 0.1725 0.1725
+illum 1
+
+newmtl c_3c242c
+Kd 0.2353 0.1412 0.1725
+illum 1
+
+newmtl c_2c241c
+Kd 0.1725 0.1412 0.1098
+illum 1
+
+newmtl c_342c34
+Kd 0.2039 0.1725 0.2039
+illum 1
+
+newmtl c_242424
+Kd 0.1412 0.1412 0.1412
+illum 1
+
+newmtl c_442c24
+Kd 0.2667 0.1725 0.1412
+illum 1
+
+newmtl c_3c1c24
+Kd 0.2353 0.1098 0.1412
+illum 1
+
+newmtl c_340c0c
+Kd 0.2039 0.0471 0.0471
+illum 1
+
+newmtl c_3c3434
+Kd 0.2353 0.2039 0.2039
+illum 1
+
+newmtl c_2c141c
+Kd 0.1725 0.0784 0.1098
+illum 1
+
+newmtl c_2c2424
+Kd 0.1725 0.1412 0.1412
+illum 1
+
+newmtl c_3c2424
+Kd 0.2353 0.1412 0.1412
+illum 1
+
+newmtl c_2c0c0c
+Kd 0.1725 0.0471 0.0471
+illum 1
+
+newmtl c_341414
+Kd 0.2039 0.0784 0.0784
+illum 1
+
+newmtl c_342424
+Kd 0.2039 0.1412 0.1412
+illum 1
+
+newmtl c_2c2c2c
+Kd 0.1725 0.1725 0.1725
+illum 1
+
+newmtl c_3c1414
+Kd 0.2353 0.0784 0.0784
+illum 1
+
+newmtl c_240c14
+Kd 0.1412 0.0471 0.0784
+illum 1
+
+newmtl c_240c0c
+Kd 0.1412 0.0471 0.0471
+illum 1
+
+newmtl c_241c1c
+Kd 0.1412 0.1098 0.1098
+illum 1
+
+newmtl c_343434
+Kd 0.2039 0.2039 0.2039
+illum 1
+
+newmtl c_4c2424
+Kd 0.2980 0.1412 0.1412
+illum 1
+
+newmtl c_341c1c
+Kd 0.2039 0.1098 0.1098
+illum 1
+
+newmtl c_542424
+Kd 0.3294 0.1412 0.1412
+illum 1
+
+newmtl c_442424
+Kd 0.2667 0.1412 0.1412
+illum 1
+
+newmtl c_2c140c
+Kd 0.1725 0.0784 0.0471
+illum 1
+
+newmtl c_2c0404
+Kd 0.1725 0.0157 0.0157
+illum 1
+
+newmtl c_2c1414
+Kd 0.1725 0.0784 0.0784
+illum 1
+
+newmtl c_241414
+Kd 0.1412 0.0784 0.0784
+illum 1
+
+newmtl c_2c1c1c
+Kd 0.1725 0.1098 0.1098
+illum 1
+
+newmtl c_4c3c3c
+Kd 0.2980 0.2353 0.2353
+illum 1
+
+newmtl c_3c2c34
+Kd 0.2353 0.1725 0.2039
+illum 1
+
+newmtl c_442c2c
+Kd 0.2667 0.1725 0.1725
+illum 1
+
+newmtl c_2c2c24
+Kd 0.1725 0.1725 0.1412
+illum 1
+
+newmtl c_442c34
+Kd 0.2667 0.1725 0.2039
+illum 1
+
+newmtl c_3c1c1c
+Kd 0.2353 0.1098 0.1098
+illum 1
+
+newmtl c_44242c
+Kd 0.2667 0.1412 0.1725
+illum 1
+
+newmtl c_3c241c
+Kd 0.2353 0.1412 0.1098
+illum 1
+
+newmtl c_4c1c24
+Kd 0.2980 0.1098 0.1412
+illum 1
+
+newmtl c_441c24
+Kd 0.2667 0.1098 0.1412
+illum 1
+
+newmtl c_8c3c3c
+Kd 0.5490 0.2353 0.2353
+illum 1
+
+newmtl c_44343c
+Kd 0.2667 0.2039 0.2353
+illum 1
+
+newmtl c_34141c
+Kd 0.2039 0.0784 0.1098
+illum 1
+
+newmtl c_5c2424
+Kd 0.3608 0.1412 0.1412
+illum 1
+
+newmtl c_040404
+Kd 0.0157 0.0157 0.0157
+illum 1
+
+newmtl c_0c0404
+Kd 0.0471 0.0157 0.0157
+illum 1
+
+newmtl c_541c1c
+Kd 0.3294 0.1098 0.1098
+illum 1
+
+newmtl c_3c1c14
+Kd 0.2353 0.1098 0.0784
+illum 1
+
+newmtl c_a45c64
+Kd 0.6431 0.3608 0.3922
+illum 1
+
+newmtl c_2c242c
+Kd 0.1725 0.1412 0.1725
+illum 1
+
+newmtl c_1c0404
+Kd 0.1098 0.0157 0.0157
+illum 1
+
+newmtl c_140404
+Kd 0.0784 0.0157 0.0157
+illum 1
+
+newmtl c_9c6464
+Kd 0.6118 0.3922 0.3922
+illum 1
+
+newmtl c_341c24
+Kd 0.2039 0.1098 0.1412
+illum 1
+
+newmtl c_ac5454
+Kd 0.6745 0.3294 0.3294
+illum 1
+
+newmtl c_4c2c24
+Kd 0.2980 0.1725 0.1412
+illum 1
+
+newmtl c_ac545c
+Kd 0.6745 0.3294 0.3608
+illum 1
+
+newmtl c_dc6c74
+Kd 0.8627 0.4235 0.4549
+illum 1
+
+newmtl c_3c2c24
+Kd 0.2353 0.1725 0.1412
+illum 1
+
+newmtl c_bc6464
+Kd 0.7373 0.3922 0.3922
+illum 1
+
+newmtl c_944c4c
+Kd 0.5804 0.2980 0.2980
+illum 1
+
+newmtl c_7c3c44
+Kd 0.4863 0.2353 0.2667
+illum 1
+
+newmtl c_340c14
+Kd 0.2039 0.0471 0.0784
+illum 1
+
+newmtl c_643434
+Kd 0.3922 0.2039 0.2039
+illum 1
+
+newmtl c_2c1c24
+Kd 0.1725 0.1098 0.1412
+illum 1
+
+newmtl c_64242c
+Kd 0.3922 0.1412 0.1725
+illum 1
+
+newmtl c_a45454
+Kd 0.6431 0.3294 0.3294
+illum 1
+
+newmtl c_ec7c7c
+Kd 0.9255 0.4863 0.4863
+illum 1
+
+newmtl c_d45c5c
+Kd 0.8314 0.3608 0.3608
+illum 1
+
+newmtl c_e46c6c
+Kd 0.8941 0.4235 0.4235
+illum 1
+
+newmtl c_e46c74
+Kd 0.8941 0.4235 0.4549
+illum 1
+
+newmtl c_4c0c0c
+Kd 0.2980 0.0471 0.0471
+illum 1
+
+newmtl c_5c2c2c
+Kd 0.3608 0.1725 0.1725
+illum 1
+
+newmtl c_942c34
+Kd 0.5804 0.1725 0.2039
+illum 1
+
+newmtl c_e47474
+Kd 0.8941 0.4549 0.4549
+illum 1
+
+newmtl c_5c0c14
+Kd 0.3608 0.0471 0.0784
+illum 1
+
+newmtl c_ec747c
+Kd 0.9255 0.4549 0.4863
+illum 1
+
+newmtl c_441c1c
+Kd 0.2667 0.1098 0.1098
+illum 1
+
+newmtl c_4c2c2c
+Kd 0.2980 0.1725 0.1725
+illum 1
+
+newmtl c_542c2c
+Kd 0.3294 0.1725 0.1725
+illum 1
+
+newmtl c_3c0c0c
+Kd 0.2353 0.0471 0.0471
+illum 1
+
+newmtl c_3c0404
+Kd 0.2353 0.0157 0.0157
+illum 1
+
+newmtl c_8c242c
+Kd 0.5490 0.1412 0.1725
+illum 1
+
+newmtl c_942424
+Kd 0.5804 0.1412 0.1412
+illum 1
+
+newmtl c_340404
+Kd 0.2039 0.0157 0.0157
+illum 1
+
+newmtl c_34040c
+Kd 0.2039 0.0157 0.0471
+illum 1
+
+newmtl c_440404
+Kd 0.2667 0.0157 0.0157
+illum 1
+
+newmtl c_b45454
+Kd 0.7059 0.3294 0.3294
+illum 1
+
+newmtl c_540c14
+Kd 0.3294 0.0471 0.0784
+illum 1
+
+newmtl c_b44c54
+Kd 0.7059 0.2980 0.3294
+illum 1
+
+newmtl c_b4545c
+Kd 0.7059 0.3294 0.3608
+illum 1
+
+newmtl c_d4646c
+Kd 0.8314 0.3922 0.4235
+illum 1
+
+newmtl c_a45c5c
+Kd 0.6431 0.3608 0.3608
+illum 1
+
+newmtl c_c46c74
+Kd 0.7686 0.4235 0.4549
+illum 1
+
+newmtl c_e4747c
+Kd 0.8941 0.4549 0.4863
+illum 1
+
+newmtl c_c46c64
+Kd 0.7686 0.4235 0.3922
+illum 1
+
+newmtl c_7c2c2c
+Kd 0.4863 0.1725 0.1725
+illum 1
+
+newmtl c_7c3c3c
+Kd 0.4863 0.2353 0.2353
+illum 1
+
+newmtl c_dc8484
+Kd 0.8627 0.5176 0.5176
+illum 1
+
+newmtl c_5c0c0c
+Kd 0.3608 0.0471 0.0471
+illum 1
+
+newmtl c_540c0c
+Kd 0.3294 0.0471 0.0471
+illum 1
+
+newmtl c_dc7c7c
+Kd 0.8627 0.4863 0.4863
+illum 1
+
+newmtl c_a42424
+Kd 0.6431 0.1412 0.1412
+illum 1
+
+newmtl c_9c2424
+Kd 0.6118 0.1412 0.1412
+illum 1
+
+newmtl c_741414
+Kd 0.4549 0.0784 0.0784
+illum 1
+
+newmtl c_4c141c
+Kd 0.2980 0.0784 0.1098
+illum 1
+
+newmtl c_4c0404
+Kd 0.2980 0.0157 0.0157
+illum 1
+
+newmtl c_4c1c1c
+Kd 0.2980 0.1098 0.1098
+illum 1
+
+newmtl c_541c24
+Kd 0.3294 0.1098 0.1412
+illum 1
+
+newmtl c_4c040c
+Kd 0.2980 0.0157 0.0471
+illum 1
+
+newmtl c_4c0c14
+Kd 0.2980 0.0471 0.0784
+illum 1
+
+newmtl c_74242c
+Kd 0.4549 0.1412 0.1725
+illum 1
+
+newmtl c_cc5454
+Kd 0.8000 0.3294 0.3294
+illum 1
+
+newmtl c_dc545c
+Kd 0.8627 0.3294 0.3608
+illum 1
+
+newmtl c_f48c8c
+Kd 0.9569 0.5490 0.5490
+illum 1
+
+newmtl c_8c2c2c
+Kd 0.5490 0.1725 0.1725
+illum 1
+
+newmtl c_6c141c
+Kd 0.4235 0.0784 0.1098
+illum 1
+
+newmtl c_c45c64
+Kd 0.7686 0.3608 0.3922
+illum 1
+
+newmtl c_5c1c1c
+Kd 0.3608 0.1098 0.1098
+illum 1
+
+newmtl c_ac444c
+Kd 0.6745 0.2667 0.2980
+illum 1
+
+newmtl c_b46c6c
+Kd 0.7059 0.4235 0.4235
+illum 1
+
+newmtl c_ac3434
+Kd 0.6745 0.2039 0.2039
+illum 1
+
+newmtl c_842424
+Kd 0.5176 0.1412 0.1412
+illum 1
+
+newmtl c_b43434
+Kd 0.7059 0.2039 0.2039
+illum 1
+
+newmtl c_2c040c
+Kd 0.1725 0.0157 0.0471
+illum 1
+
+newmtl c_b45c64
+Kd 0.7059 0.3608 0.3922
+illum 1
+
+newmtl c_c4545c
+Kd 0.7686 0.3294 0.3608
+illum 1
+
+newmtl c_cc5c5c
+Kd 0.8000 0.3608 0.3608
+illum 1
+
+newmtl c_b4444c
+Kd 0.7059 0.2667 0.2980
+illum 1
+
+newmtl c_844c4c
+Kd 0.5176 0.2980 0.2980
+illum 1
+
+newmtl c_cc6464
+Kd 0.8000 0.3922 0.3922
+illum 1
+
+newmtl c_44241c
+Kd 0.2667 0.1412 0.1098
+illum 1
+
+newmtl c_7c242c
+Kd 0.4863 0.1412 0.1725
+illum 1
+
+newmtl c_843434
+Kd 0.5176 0.2039 0.2039
+illum 1
+
+newmtl c_6c1414
+Kd 0.4235 0.0784 0.0784
+illum 1
+
+newmtl c_c4444c
+Kd 0.7686 0.2667 0.2980
+illum 1
+
+newmtl c_ec8c84
+Kd 0.9255 0.5490 0.5176
+illum 1
+
+newmtl c_8c2c34
+Kd 0.5490 0.1725 0.2039
+illum 1
+
+newmtl c_7c1414
+Kd 0.4863 0.0784 0.0784
+illum 1
+
+newmtl c_741c1c
+Kd 0.4549 0.1098 0.1098
+illum 1
+
+newmtl c_8c5454
+Kd 0.5490 0.3294 0.3294
+illum 1
+
+newmtl c_7c3434
+Kd 0.4863 0.2039 0.2039
+illum 1
+
+newmtl c_ac646c
+Kd 0.6745 0.3922 0.4235
+illum 1
+
+newmtl c_bc646c
+Kd 0.7373 0.3922 0.4235
+illum 1
+
+newmtl c_9c3c3c
+Kd 0.6118 0.2353 0.2353
+illum 1
+
+newmtl c_5c3434
+Kd 0.3608 0.2039 0.2039
+illum 1
+
+newmtl c_d47c7c
+Kd 0.8314 0.4863 0.4863
+illum 1
+
+newmtl c_a44c4c
+Kd 0.6431 0.2980 0.2980
+illum 1
+
+newmtl c_bc5454
+Kd 0.7373 0.3294 0.3294
+illum 1
+
+newmtl c_8c3434
+Kd 0.5490 0.2039 0.2039
+illum 1
+
+newmtl c_947c84
+Kd 0.5804 0.4863 0.5176
+illum 1
+
+newmtl c_dc8c8c
+Kd 0.8627 0.5490 0.5490
+illum 1
+
+newmtl c_6c2c2c
+Kd 0.4235 0.1725 0.1725
+illum 1
+
+newmtl c_8c2424
+Kd 0.5490 0.1412 0.1412
+illum 1
+
+newmtl c_bc5c64
+Kd 0.7373 0.3608 0.3922
+illum 1
+
+newmtl c_ac4c54
+Kd 0.6745 0.2980 0.3294
+illum 1
+
+newmtl c_646464
+Kd 0.3922 0.3922 0.3922
+illum 1
+
+newmtl c_841c24
+Kd 0.5176 0.1098 0.1412
+illum 1
+
+newmtl c_9c4444
+Kd 0.6118 0.2667 0.2667
+illum 1
+
+newmtl c_842c2c
+Kd 0.5176 0.1725 0.1725
+illum 1
+
+newmtl c_74141c
+Kd 0.4549 0.0784 0.1098
+illum 1
+
+newmtl c_641c14
+Kd 0.3922 0.1098 0.0784
+illum 1
+
+newmtl c_440c0c
+Kd 0.2667 0.0471 0.0471
+illum 1
+
+newmtl c_9c4c4c
+Kd 0.6118 0.2980 0.2980
+illum 1
+
+newmtl c_7c5454
+Kd 0.4863 0.3294 0.3294
+illum 1
+
+newmtl c_dc7474
+Kd 0.8627 0.4549 0.4549
+illum 1
+
+newmtl c_7c4c4c
+Kd 0.4863 0.2980 0.2980
+illum 1
+
+newmtl c_9c6c6c
+Kd 0.6118 0.4235 0.4235
+illum 1
+
+newmtl c_b46c74
+Kd 0.7059 0.4235 0.4549
+illum 1
+
+newmtl c_7c2424
+Kd 0.4863 0.1412 0.1412
+illum 1
+
+newmtl c_bc4c54
+Kd 0.7373 0.2980 0.3294
+illum 1
+
+newmtl c_dc747c
+Kd 0.8627 0.4549 0.4863
+illum 1
+
+newmtl c_cc646c
+Kd 0.8000 0.3922 0.4235
+illum 1
+
+newmtl c_640c14
+Kd 0.3922 0.0471 0.0784
+illum 1
+
+newmtl c_a4343c
+Kd 0.6431 0.2039 0.2353
+illum 1
+
+newmtl c_cc7c7c
+Kd 0.8000 0.4863 0.4863
+illum 1
+
+newmtl c_c44c4c
+Kd 0.7686 0.2980 0.2980
+illum 1
+
+newmtl c_743434
+Kd 0.4549 0.2039 0.2039
+illum 1
+
+newmtl c_ec7c84
+Kd 0.9255 0.4863 0.5176
+illum 1
+
+newmtl c_5c1414
+Kd 0.3608 0.0784 0.0784
+illum 1
+
+newmtl c_640c0c
+Kd 0.3922 0.0471 0.0471
+illum 1
+
+newmtl c_ac5c5c
+Kd 0.6745 0.3608 0.3608
+illum 1
+
+newmtl c_54242c
+Kd 0.3294 0.1412 0.1725
+illum 1
+
+newmtl c_54141c
+Kd 0.3294 0.0784 0.1098
+illum 1
+
+newmtl c_84242c
+Kd 0.5176 0.1412 0.1725
+illum 1
+
+newmtl c_541414
+Kd 0.3294 0.0784 0.0784
+illum 1
+
+newmtl c_742c2c
+Kd 0.4549 0.1725 0.1725
+illum 1
+
+newmtl c_a4444c
+Kd 0.6431 0.2667 0.2980
+illum 1
+
+newmtl c_ec8484
+Kd 0.9255 0.5176 0.5176
+illum 1
+
+newmtl c_e48484
+Kd 0.8941 0.5176 0.5176
+illum 1
+
+newmtl c_540404
+Kd 0.3294 0.0157 0.0157
+illum 1
+
+newmtl c_641c24
+Kd 0.3922 0.1098 0.1412
+illum 1
+
+newmtl c_5c1c24
+Kd 0.3608 0.1098 0.1412
+illum 1
+
+newmtl c_742424
+Kd 0.4549 0.1412 0.1412
+illum 1
+
+newmtl c_b45c5c
+Kd 0.7059 0.3608 0.3608
+illum 1
+
+newmtl c_c46c6c
+Kd 0.7686 0.4235 0.4235
+illum 1
+
+newmtl c_5c040c
+Kd 0.3608 0.0157 0.0471
+illum 1
+
+newmtl c_842c24
+Kd 0.5176 0.1725 0.1412
+illum 1
+
+newmtl c_844c44
+Kd 0.5176 0.2980 0.2667
+illum 1
+
+newmtl c_8c5c5c
+Kd 0.5490 0.3608 0.3608
+illum 1
+
+newmtl c_b4646c
+Kd 0.7059 0.3922 0.4235
+illum 1
+
+newmtl c_9c444c
+Kd 0.6118 0.2667 0.2980
+illum 1
+
+newmtl c_5c4c54
+Kd 0.3608 0.2980 0.3294
+illum 1
+
+newmtl c_6c5c5c
+Kd 0.4235 0.3608 0.3608
+illum 1
+
+newmtl c_645c64
+Kd 0.3922 0.3608 0.3922
+illum 1
+
+newmtl c_746c6c
+Kd 0.4549 0.4235 0.4235
+illum 1
+
+newmtl c_c4646c
+Kd 0.7686 0.3922 0.4235
+illum 1
+
+newmtl c_744444
+Kd 0.4549 0.2667 0.2667
+illum 1
+
+newmtl c_a44444
+Kd 0.6431 0.2667 0.2667
+illum 1
+
+newmtl c_6c0c0c
+Kd 0.4235 0.0471 0.0471
+illum 1
+
+newmtl c_d47474
+Kd 0.8314 0.4549 0.4549
+illum 1
+
+newmtl c_ac4c4c
+Kd 0.6745 0.2980 0.2980
+illum 1
+
+newmtl c_b44c4c
+Kd 0.7059 0.2980 0.2980
+illum 1
+
+newmtl c_b4645c
+Kd 0.7059 0.3922 0.3608
+illum 1
+
+newmtl c_6c140c
+Kd 0.4235 0.0784 0.0471
+illum 1
+
+newmtl c_741c24
+Kd 0.4549 0.1098 0.1412
+illum 1
+
+newmtl c_3c141c
+Kd 0.2353 0.0784 0.1098
+illum 1
+
+newmtl c_c46464
+Kd 0.7686 0.3922 0.3922
+illum 1
+
+newmtl c_cc7474
+Kd 0.8000 0.4549 0.4549
+illum 1
+
+newmtl c_4c0c04
+Kd 0.2980 0.0471 0.0157
+illum 1
+
+newmtl c_942c2c
+Kd 0.5804 0.1725 0.1725
+illum 1
+
+newmtl c_bc3c3c
+Kd 0.7373 0.2353 0.2353
+illum 1
+
+newmtl c_b43c3c
+Kd 0.7059 0.2353 0.2353
+illum 1
+
+newmtl c_6c2424
+Kd 0.4235 0.1412 0.1412
+illum 1
+
+newmtl c_9c3434
+Kd 0.6118 0.2039 0.2039
+illum 1
+
+newmtl c_a43434
+Kd 0.6431 0.2039 0.2039
+illum 1
+
+newmtl c_641c1c
+Kd 0.3922 0.1098 0.1098
+illum 1
+
+newmtl c_943c44
+Kd 0.5804 0.2353 0.2667
+illum 1
+
+newmtl c_44040c
+Kd 0.2667 0.0157 0.0471
+illum 1
+
+newmtl c_ac4c44
+Kd 0.6745 0.2980 0.2667
+illum 1
+
+newmtl c_6c2c34
+Kd 0.4235 0.1725 0.2039
+illum 1
+
+newmtl c_842c34
+Kd 0.5176 0.1725 0.2039
+illum 1
+
+newmtl c_6c1c1c
+Kd 0.4235 0.1098 0.1098
+illum 1
+
+newmtl c_140c0c
+Kd 0.0784 0.0471 0.0471
+illum 1
+
+newmtl c_1c141c
+Kd 0.1098 0.0784 0.1098
+illum 1
+
+newmtl c_240404
+Kd 0.1412 0.0157 0.0157
+illum 1
+
+newmtl c_94343c
+Kd 0.5804 0.2039 0.2353
+illum 1
+
+newmtl c_8c444c
+Kd 0.5490 0.2667 0.2980
+illum 1
+
+newmtl c_943434
+Kd 0.5804 0.2039 0.2039
+illum 1
+
+newmtl c_a46464
+Kd 0.6431 0.3922 0.3922
+illum 1
+
+newmtl c_ec9494
+Kd 0.9255 0.5804 0.5804
+illum 1
+
+newmtl c_cc6c6c
+Kd 0.8000 0.4235 0.4235
+illum 1
+
+newmtl c_1c1414
+Kd 0.1098 0.0784 0.0784
+illum 1
+
+newmtl c_645454
+Kd 0.3922 0.3294 0.3294
+illum 1
+
+newmtl c_241c14
+Kd 0.1412 0.1098 0.0784
+illum 1
+
+newmtl c_844444
+Kd 0.5176 0.2667 0.2667
+illum 1
+
+newmtl c_b47474
+Kd 0.7059 0.4549 0.4549
+illum 1
+
+newmtl c_4c1414
+Kd 0.2980 0.0784 0.0784
+illum 1
+
+newmtl c_841c1c
+Kd 0.5176 0.1098 0.1098
+illum 1
+
+newmtl c_bc4c4c
+Kd 0.7373 0.2980 0.2980
+illum 1
+
+newmtl c_bc5c5c
+Kd 0.7373 0.3608 0.3608
+illum 1
+
+newmtl c_14040c
+Kd 0.0784 0.0157 0.0471
+illum 1
+
+newmtl c_342c24
+Kd 0.2039 0.1725 0.1412
+illum 1
+
+newmtl c_9c545c
+Kd 0.6118 0.3294 0.3608
+illum 1
+
+newmtl c_54040c
+Kd 0.3294 0.0157 0.0471
+illum 1
+
+newmtl c_a42c2c
+Kd 0.6431 0.1725 0.1725
+illum 1
+
+newmtl c_ac3c44
+Kd 0.6745 0.2353 0.2667
+illum 1
+
+newmtl c_944444
+Kd 0.5804 0.2667 0.2667
+illum 1
+
+newmtl c_b43c44
+Kd 0.7059 0.2353 0.2667
+illum 1
+
+newmtl c_cc5c64
+Kd 0.8000 0.3608 0.3922
+illum 1
+
+newmtl c_7c1c24
+Kd 0.4863 0.1098 0.1412
+illum 1
+
+newmtl c_bc4444
+Kd 0.7373 0.2667 0.2667
+illum 1
+
+newmtl c_4c2c34
+Kd 0.2980 0.1725 0.2039
+illum 1
+
+newmtl c_74343c
+Kd 0.4549 0.2039 0.2353
+illum 1
+
+newmtl c_641414
+Kd 0.3922 0.0784 0.0784
+illum 1
+
+newmtl c_a43c44
+Kd 0.6431 0.2353 0.2667
+illum 1
+
+newmtl c_44141c
+Kd 0.2667 0.0784 0.1098
+illum 1
+
+newmtl c_4c4c4c
+Kd 0.2980 0.2980 0.2980
+illum 1
+
+newmtl c_4c444c
+Kd 0.2980 0.2667 0.2980
+illum 1
+
+newmtl c_941c1c
+Kd 0.5804 0.1098 0.1098
+illum 1
+
+newmtl c_545454
+Kd 0.3294 0.3294 0.3294
+illum 1
+
+newmtl c_a43c3c
+Kd 0.6431 0.2353 0.2353
+illum 1
+
+newmtl c_843c44
+Kd 0.5176 0.2353 0.2667
+illum 1
+
+newmtl c_5c0404
+Kd 0.3608 0.0157 0.0157
+illum 1
+
+newmtl c_7c2c34
+Kd 0.4863 0.1725 0.2039
+illum 1
+
+newmtl c_843c3c
+Kd 0.5176 0.2353 0.2353
+illum 1
+
+newmtl c_94444c
+Kd 0.5804 0.2667 0.2980
+illum 1
+
+newmtl c_ac3c3c
+Kd 0.6745 0.2353 0.2353
+illum 1
+
+newmtl c_642c34
+Kd 0.3922 0.1725 0.2039
+illum 1
+
+newmtl c_8c4444
+Kd 0.5490 0.2667 0.2667
+illum 1
+
+newmtl c_640404
+Kd 0.3922 0.0157 0.0157
+illum 1
+
+newmtl c_642424
+Kd 0.3922 0.1412 0.1412
+illum 1
+
+newmtl c_740c0c
+Kd 0.4549 0.0471 0.0471
+illum 1
+
+newmtl c_6c0404
+Kd 0.4235 0.0157 0.0157
+illum 1
+
+newmtl c_b44444
+Kd 0.7059 0.2667 0.2667
+illum 1
+
+newmtl c_ac343c
+Kd 0.6745 0.2039 0.2353
+illum 1
+
+newmtl c_9c5c64
+Kd 0.6118 0.3608 0.3922
+illum 1
+
+newmtl c_9c4c54
+Kd 0.6118 0.2980 0.3294
+illum 1
+
+newmtl c_dc6c6c
+Kd 0.8627 0.4235 0.4235
+illum 1
+
+newmtl c_d46464
+Kd 0.8314 0.3922 0.3922
+illum 1
+
+newmtl c_ac2c34
+Kd 0.6745 0.1725 0.2039
+illum 1
+
+newmtl c_74241c
+Kd 0.4549 0.1412 0.1098
+illum 1
+
+newmtl c_dc6464
+Kd 0.8627 0.3922 0.3922
+illum 1
+
+newmtl c_740c14
+Kd 0.4549 0.0471 0.0784
+illum 1
+
+newmtl c_7c0c14
+Kd 0.4863 0.0471 0.0784
+illum 1
+
+newmtl c_7c0c0c
+Kd 0.4863 0.0471 0.0471
+illum 1
+
+newmtl c_5c140c
+Kd 0.3608 0.0784 0.0471
+illum 1
+
+newmtl c_64141c
+Kd 0.3922 0.0784 0.1098
+illum 1
+
+newmtl c_a46c6c
+Kd 0.6431 0.4235 0.4235
+illum 1
+
+newmtl c_6c242c
+Kd 0.4235 0.1412 0.1725
+illum 1
+
+newmtl c_0c0c14
+Kd 0.0471 0.0471 0.0784
+illum 1
+
+newmtl c_0c040c
+Kd 0.0471 0.0157 0.0471
+illum 1
+
+newmtl c_c45c5c
+Kd 0.7686 0.3608 0.3608
+illum 1
+
+newmtl c_ac5c54
+Kd 0.6745 0.3608 0.3294
+illum 1
+
+newmtl c_0c0c04
+Kd 0.0471 0.0471 0.0157
+illum 1
+
+newmtl c_0c0c0c
+Kd 0.0471 0.0471 0.0471
+illum 1
+
+newmtl c_9c2c2c
+Kd 0.6118 0.1725 0.1725
+illum 1
+
+newmtl c_8c1c24
+Kd 0.5490 0.1098 0.1412
+illum 1
+
+newmtl c_64343c
+Kd 0.3922 0.2039 0.2353
+illum 1
+
+newmtl c_5c545c
+Kd 0.3608 0.3294 0.3608
+illum 1
+
+newmtl c_4c4444
+Kd 0.2980 0.2667 0.2667
+illum 1
+
+newmtl c_ac4444
+Kd 0.6745 0.2667 0.2667
+illum 1
+
+newmtl c_dc7c84
+Kd 0.8627 0.4863 0.5176
+illum 1
+
+newmtl c_440c14
+Kd 0.2667 0.0471 0.0784
+illum 1
+
+newmtl c_840c14
+Kd 0.5176 0.0471 0.0784
+illum 1
+
+newmtl c_642c2c
+Kd 0.3922 0.1725 0.1725
+illum 1
+
+newmtl c_d4645c
+Kd 0.8314 0.3922 0.3608
+illum 1
+
+newmtl c_6c0c14
+Kd 0.4235 0.0471 0.0784
+illum 1
+
+newmtl c_a42c34
+Kd 0.6431 0.1725 0.2039
+illum 1
+
+newmtl c_9c343c
+Kd 0.6118 0.2039 0.2353
+illum 1
+
+newmtl c_441414
+Kd 0.2667 0.0784 0.0784
+illum 1
+
+newmtl c_1c0c0c
+Kd 0.1098 0.0471 0.0471
+illum 1
+
+newmtl c_841414
+Kd 0.5176 0.0784 0.0784
+illum 1
+
+newmtl c_941c24
+Kd 0.5804 0.1098 0.1412
+illum 1
+
+newmtl c_2c0c04
+Kd 0.1725 0.0471 0.0157
+illum 1
+
+newmtl c_64140c
+Kd 0.3922 0.0784 0.0471
+illum 1
+
+newmtl c_7c1c1c
+Kd 0.4863 0.1098 0.1098
+illum 1
+
+newmtl c_7c141c
+Kd 0.4863 0.0784 0.1098
+illum 1
+
+newmtl c_5c141c
+Kd 0.3608 0.0784 0.1098
+illum 1
+
+newmtl c_9c646c
+Kd 0.6118 0.3922 0.4235
+illum 1
+
+newmtl c_644444
+Kd 0.3922 0.2667 0.2667
+illum 1
+
+newmtl c_cc747c
+Kd 0.8000 0.4549 0.4863
+illum 1
+
+newmtl c_bc444c
+Kd 0.7373 0.2667 0.2980
+illum 1
+
+newmtl c_6c3434
+Kd 0.4235 0.2039 0.2039
+illum 1
+
+newmtl c_9c1c1c
+Kd 0.6118 0.1098 0.1098
+illum 1
+
+newmtl c_7c040c
+Kd 0.4863 0.0157 0.0471
+illum 1
+
+newmtl c_b46464
+Kd 0.7059 0.3922 0.3922
+illum 1
+
+newmtl c_dc5c5c
+Kd 0.8627 0.3608 0.3608
+illum 1
+
+newmtl c_6c1c24
+Kd 0.4235 0.1098 0.1412
+illum 1
+
+newmtl c_c44c54
+Kd 0.7686 0.2980 0.3294
+illum 1
+
+newmtl c_5c1c14
+Kd 0.3608 0.1098 0.0784
+illum 1
+
+newmtl c_bc7474
+Kd 0.7373 0.4549 0.4549
+illum 1
+
+newmtl c_bc545c
+Kd 0.7373 0.3294 0.3608
+illum 1
+
+newmtl c_84544c
+Kd 0.5176 0.3294 0.2980
+illum 1
+
+newmtl c_9c3c44
+Kd 0.6118 0.2353 0.2667
+illum 1
+
+newmtl c_d45454
+Kd 0.8314 0.3294 0.3294
+illum 1
+
+newmtl c_8c3c44
+Kd 0.5490 0.2353 0.2667
+illum 1
+
+newmtl c_84141c
+Kd 0.5176 0.0784 0.1098
+illum 1
+
+newmtl c_1c040c
+Kd 0.1098 0.0157 0.0471
+illum 1
+
+newmtl c_8c343c
+Kd 0.5490 0.2039 0.2353
+illum 1
+
+newmtl c_04040c
+Kd 0.0157 0.0157 0.0471
+illum 1
+
+newmtl c_8c1c1c
+Kd 0.5490 0.1098 0.1098
+illum 1
+
+newmtl c_24141c
+Kd 0.1412 0.0784 0.1098
+illum 1
+
+newmtl c_94242c
+Kd 0.5804 0.1412 0.1725
+illum 1
+
+newmtl c_9c141c
+Kd 0.6118 0.0784 0.1098
+illum 1
+
+newmtl c_140c04
+Kd 0.0784 0.0471 0.0157
+illum 1
+
+newmtl c_1c0c04
+Kd 0.1098 0.0471 0.0157
+illum 1
+
+newmtl c_645c5c
+Kd 0.3922 0.3608 0.3608
+illum 1
+
+newmtl c_6c040c
+Kd 0.4235 0.0157 0.0471
+illum 1
+
+newmtl c_140c14
+Kd 0.0784 0.0471 0.0784
+illum 1
+
+newmtl c_2c0c14
+Kd 0.1725 0.0471 0.0784
+illum 1
+
+newmtl c_1c0c14
+Kd 0.1098 0.0471 0.0784
+illum 1
+
+newmtl c_1c1c14
+Kd 0.1098 0.1098 0.0784
+illum 1
+
+newmtl c_54544c
+Kd 0.3294 0.3294 0.2980
+illum 1
+
+newmtl c_8c1414
+Kd 0.5490 0.0784 0.0784
+illum 1
+
+newmtl c_94141c
+Kd 0.5804 0.0784 0.1098
+illum 1
+
+newmtl c_8c141c
+Kd 0.5490 0.0784 0.1098
+illum 1
+
+newmtl c_740404
+Kd 0.4549 0.0157 0.0157
+illum 1
+
+newmtl c_7c443c
+Kd 0.4863 0.2667 0.2353
+illum 1
+
+newmtl c_ac2c2c
+Kd 0.6745 0.1725 0.1725
+illum 1
+
+newmtl c_944c54
+Kd 0.5804 0.2980 0.3294
+illum 1
+
+newmtl c_cc6c74
+Kd 0.8000 0.4235 0.4549
+illum 1
+
+newmtl c_4c242c
+Kd 0.2980 0.1412 0.1725
+illum 1
+
+newmtl c_943c3c
+Kd 0.5804 0.2353 0.2353
+illum 1
+
+newmtl c_241c24
+Kd 0.1412 0.1098 0.1412
+illum 1
+
+newmtl c_14141c
+Kd 0.0784 0.0784 0.1098
+illum 1
+
+newmtl c_24242c
+Kd 0.1412 0.1412 0.1725
+illum 1
+
+newmtl c_1c140c
+Kd 0.1098 0.0784 0.0471
+illum 1
+
+newmtl c_24241c
+Kd 0.1412 0.1412 0.1098
+illum 1
+
+newmtl c_2c1c14
+Kd 0.1725 0.1098 0.0784
+illum 1
+
+newmtl c_7c4c54
+Kd 0.4863 0.2980 0.3294
+illum 1
+
+newmtl c_341c14
+Kd 0.2039 0.1098 0.0784
+illum 1
+
+newmtl c_84444c
+Kd 0.5176 0.2667 0.2980
+illum 1
+
+newmtl c_743c3c
+Kd 0.4549 0.2353 0.2353
+illum 1
+
+newmtl c_9c5454
+Kd 0.6118 0.3294 0.3294
+illum 1
+
+newmtl c_c47474
+Kd 0.7686 0.4549 0.4549
+illum 1
+
+newmtl c_945454
+Kd 0.5804 0.3294 0.3294
+illum 1
+
+newmtl c_8c4c4c
+Kd 0.5490 0.2980 0.2980
+illum 1
+
+newmtl c_a44c54
+Kd 0.6431 0.2980 0.3294
+illum 1
+
+newmtl c_643c3c
+Kd 0.3922 0.2353 0.2353
+illum 1
+
+newmtl c_bc6c6c
+Kd 0.7373 0.4235 0.4235
+illum 1
+
+newmtl c_ac6c6c
+Kd 0.6745 0.4235 0.4235
+illum 1
+
+newmtl c_ac6c74
+Kd 0.6745 0.4235 0.4549
+illum 1
+
+newmtl c_746464
+Kd 0.4549 0.3922 0.3922
+illum 1
+
+newmtl c_84545c
+Kd 0.5176 0.3294 0.3608
+illum 1
+
+newmtl c_94545c
+Kd 0.5804 0.3294 0.3608
+illum 1
+
+newmtl c_3c040c
+Kd 0.2353 0.0157 0.0471
+illum 1
+
+newmtl c_84343c
+Kd 0.5176 0.2039 0.2353
+illum 1
+
+newmtl c_a4545c
+Kd 0.6431 0.3294 0.3608
+illum 1
+
+newmtl c_945c5c
+Kd 0.5804 0.3608 0.3608
+illum 1
+
+newmtl c_744c4c
+Kd 0.4549 0.2980 0.2980
+illum 1
+
+newmtl c_4c3c44
+Kd 0.2980 0.2353 0.2667
+illum 1
+
+newmtl c_5c4c4c
+Kd 0.3608 0.2980 0.2980
+illum 1
+
+newmtl c_5c5c5c
+Kd 0.3608 0.3608 0.3608
+illum 1
+
+newmtl c_94544c
+Kd 0.5804 0.3294 0.2980
+illum 1
+
+newmtl c_3c0c04
+Kd 0.2353 0.0471 0.0157
+illum 1
+
+newmtl c_7c343c
+Kd 0.4863 0.2039 0.2353
+illum 1
+
+newmtl c_844c54
+Kd 0.5176 0.2980 0.3294
+illum 1
+
+newmtl c_ac6464
+Kd 0.6745 0.3922 0.3922
+illum 1
+
+newmtl c_3c3c3c
+Kd 0.2353 0.2353 0.2353
+illum 1
+
+newmtl c_444444
+Kd 0.2667 0.2667 0.2667
+illum 1
+
+newmtl c_443c3c
+Kd 0.2667 0.2353 0.2353
+illum 1
+
+newmtl c_6c343c
+Kd 0.4235 0.2039 0.2353
+illum 1
+
+newmtl c_3c343c
+Kd 0.2353 0.2039 0.2353
+illum 1
+
+newmtl c_3c0c14
+Kd 0.2353 0.0471 0.0784
+illum 1
+
+newmtl c_743c44
+Kd 0.4549 0.2353 0.2667
+illum 1
+
+newmtl c_543434
+Kd 0.3294 0.2039 0.2039
+illum 1
+
+newmtl c_64040c
+Kd 0.3922 0.0157 0.0471
+illum 1
+
+newmtl c_5c0c04
+Kd 0.3608 0.0471 0.0157
+illum 1
+
+newmtl c_6c443c
+Kd 0.4235 0.2667 0.2353
+illum 1
+
+newmtl c_544c4c
+Kd 0.3294 0.2980 0.2980
+illum 1
+
+newmtl c_44443c
+Kd 0.2667 0.2667 0.2353
+illum 1
+

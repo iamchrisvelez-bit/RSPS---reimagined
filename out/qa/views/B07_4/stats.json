@@ -1,0 +1,70 @@
+{
+ "objects": 1,
+ "triangles": 1906,
+ "non_manifold_edges": 239,
+ "loose_parts": 1,
+ "dimensions": [
+  36.0,
+  23.0,
+  51.0
+ ],
+ "bounds_min": [
+  -18.0,
+  -12.0,
+  114.0
+ ],
+ "bounds_max": [
+  18.0,
+  11.0,
+  165.0
+ ],
+ "materials": [
+  "hsl_1",
+  "hsl_10260",
+  "hsl_10270",
+  "hsl_10500",
+  "hsl_1284",
+  "hsl_13",
+  "hsl_135",
+  "hsl_138",
+  "hsl_19",
+  "hsl_20615",
+  "hsl_23",
+  "hsl_26",
+  "hsl_30",
+  "hsl_3215",
+  "hsl_32776",
+  "hsl_39958",
+  "hsl_5123",
+  "hsl_5125",
+  "hsl_5131",
+  "hsl_5134",
+  "hsl_51344",
+  "hsl_5137",
+  "hsl_52237",
+  "hsl_52251",
+  "hsl_53267",
+  "hsl_53271",
+  "hsl_7192",
+  "hsl_7199",
+  "hsl_8219",
+  "hsl_8231",
+  "hsl_8330",
+  "hsl_9229",
+  "hsl_9239",
+  "hsl_9351",
+  "hsl_9858"
+ ],
+ "views": [
+  "front.png",
+  "back.png",
+  "left.png",
+  "right.png",
+  "top.png",
+  "bottom.png",
+  "three_quarter.png",
+  "three_quarter_left.png",
+  "back_three_quarter.png",
+  "back_three_quarter_left.png"
+ ]
+}

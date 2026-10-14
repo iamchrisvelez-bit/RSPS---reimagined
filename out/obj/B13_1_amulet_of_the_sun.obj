@@ -1,0 +1,2118 @@
+# B13_1_amulet_of_the_sun
+mtllib B13_1_amulet_of_the_sun.mtl
+o B13_1_amulet_of_the_sun
+v -8.00 164.00 8.00
+v -7.00 161.00 8.00
+v -2.00 157.00 8.00
+v -3.00 153.00 8.00
+v -6.00 151.00 8.00
+v -9.00 150.00 8.00
+v -6.00 148.00 8.00
+v -8.00 145.00 8.00
+v -4.00 145.00 8.00
+v -3.00 142.00 8.00
+v -2.00 142.00 8.00
+v -1.00 145.00 8.00
+v 4.00 144.00 8.00
+v 3.00 148.00 8.00
+v 6.00 149.00 8.00
+v 3.00 151.00 8.00
+v 4.00 154.00 8.00
+v 1.00 153.00 8.00
+v 1.00 157.00 8.00
+v 6.00 160.00 8.00
+v 9.00 164.00 8.00
+v 7.00 164.00 8.00
+v 6.00 162.00 8.00
+v 4.00 161.00 8.00
+v 3.00 161.00 8.00
+v 2.00 159.00 8.00
+v -3.00 160.00 8.00
+v -6.00 163.00 8.00
+v -6.00 164.00 8.00
+v 2.00 153.00 8.00
+v -8.00 151.00 8.00
+v -8.00 163.00 8.00
+v 1.00 154.00 8.00
+v -7.00 162.00 8.00
+v -5.00 162.00 8.00
+v 0.00 154.00 8.00
+v -3.00 156.00 8.00
+v -4.00 154.00 8.00
+v -6.00 159.00 8.00
+v 3.00 152.00 8.00
+v -3.00 155.00 8.00
+v 8.00 163.00 8.00
+v -2.00 143.00 8.00
+v 4.00 145.00 8.00
+v 3.00 154.00 8.00
+v 7.00 163.00 8.00
+v -7.00 149.00 8.00
+v -4.00 153.00 8.00
+v -7.00 146.00 8.00
+v 6.00 163.00 8.00
+v -6.00 161.00 8.00
+v 5.00 150.00 8.00
+v -7.00 147.00 8.00
+v -4.00 144.00 8.00
+v -3.00 144.00 8.00
+v -3.00 143.00 8.00
+v -7.00 144.00 8.00
+v 3.00 147.00 8.00
+v -6.00 153.00 8.00
+v -2.00 159.00 8.00
+v 5.00 162.00 8.00
+v -4.00 160.00 8.00
+v -7.00 153.00 8.00
+v 0.00 159.00 8.00
+v 3.00 144.00 8.00
+v -5.00 154.00 8.00
+v -5.00 145.00 8.00
+v -7.00 151.00 8.00
+v 4.00 153.00 8.00
+v 3.00 145.00 8.00
+v 2.00 145.00 8.00
+v -8.00 149.00 8.00
+v -6.00 145.00 8.00
+v 2.00 144.00 8.00
+v 3.00 146.00 8.00
+v 3.00 158.00 8.00
+v 5.00 148.00 8.00
+v -4.00 158.00 8.00
+v 5.00 159.00 8.00
+v 4.00 159.00 8.00
+v -3.00 157.00 8.00
+v 1.00 155.00 8.00
+v 3.00 160.00 8.00
+v 4.00 146.00 8.00
+v 5.00 160.00 8.00
+v -4.00 159.00 8.00
+v 4.00 148.00 8.00
+v -5.00 159.00 8.00
+v 6.00 161.00 8.00
+v 7.00 161.00 8.00
+v -3.00 158.00 8.00
+v 8.00 162.00 8.00
+v 7.00 162.00 8.00
+v 5.00 161.00 8.00
+v -6.00 160.00 8.00
+v 1.00 145.00 8.00
+v -6.00 154.00 8.00
+v 1.00 156.00 8.00
+v -6.00 147.00 8.00
+v -1.00 160.00 8.00
+v 2.00 158.00 8.00
+v -7.00 145.00 8.00
+v -2.00 156.00 8.00
+v 2.00 154.00 8.00
+v -1.00 144.00 8.00
+v -3.00 159.00 8.00
+v -1.00 143.00 8.00
+v -2.00 160.00 8.00
+v -9.00 149.00 8.00
+v 1.00 159.00 8.00
+v 2.00 157.00 8.00
+v -4.00 161.00 8.00
+v 6.00 150.00 8.00
+v 4.00 158.00 8.00
+v -7.00 154.00 8.00
+v 4.00 151.00 8.00
+v 4.00 150.00 8.00
+v -7.00 148.00 8.00
+v -3.00 154.00 8.00
+v -8.00 150.00 8.00
+v 4.00 152.00 8.00
+v 2.00 160.00 8.00
+v -7.00 163.00 8.00
+v -4.00 149.00 12.00
+v 5.00 160.00 9.00
+v -2.00 143.00 9.00
+v 3.00 151.00 10.00
+v -7.00 162.00 9.00
+v 2.00 148.00 12.00
+v -3.00 149.00 13.00
+v 1.00 152.00 12.00
+v -4.00 148.00 12.00
+v -7.00 163.00 9.00
+v -1.00 152.00 12.00
+v -1.00 145.00 11.00
+v 2.00 147.00 11.00
+v -5.00 151.00 11.00
+v -2.00 149.00 13.00
+v 4.00 154.00 9.00
+v 6.00 162.00 9.00
+v 7.00 164.00 9.00
+v -2.00 147.00 12.00
+v -5.00 149.00 11.00
+v 3.00 158.00 9.00
+v 8.00 164.00 9.00
+v -1.00 149.00 13.00
+v -2.00 155.00 10.00
+v 3.00 144.00 9.00
+v 4.00 160.00 9.00
+v 1.00 147.00 12.00
+v 2.00 150.00 12.00
+v -4.00 151.00 12.00
+v -6.00 161.00 9.00
+v 2.00 150.00 11.00
+v 2.00 146.00 11.00
+v -5.00 145.00 10.00
+v -6.00 147.00 11.00
+v 4.00 149.00 11.00
+v 2.00 145.00 9.00
+v -2.00 151.00 13.00
+v -1.00 155.00 10.00
+v -3.00 149.00 12.00
+v -2.00 146.00 12.00
+v -5.00 152.00 11.00
+v -2.00 154.00 10.00
+v 1.00 148.00 12.00
+v -7.00 150.00 11.00
+v -3.00 159.00 10.00
+v -3.00 158.00 10.00
+v -7.00 149.00 9.00
+v -7.00 145.00 9.00
+v 0.00 152.00 12.00
+v -2.00 148.00 12.00
+v 2.00 146.00 10.00
+v 4.00 150.00 9.00
+v -6.00 152.00 10.00
+v 4.00 150.00 10.00
+v -5.00 153.00 10.00
+v -5.00 153.00 11.00
+v -6.00 153.00 9.00
+v -5.00 154.00 9.00
+v -6.00 154.00 9.00
+v 1.00 155.00 9.00
+v -6.00 154.00 10.00
+v -4.00 153.00 10.00
+v -3.00 158.00 9.00
+v -5.00 153.00 9.00
+v 2.00 159.00 9.00
+v -2.00 156.00 9.00
+v -3.00 153.00 11.00
+v 3.00 153.00 9.00
+v -1.00 159.00 9.00
+v 0.00 154.00 9.00
+v 1.00 145.00 9.00
+v -5.00 160.00 9.00
+v 2.00 144.00 9.00
+v 5.00 150.00 9.00
+v -1.00 159.00 10.00
+v -1.00 158.00 11.00
+v -8.00 163.00 9.00
+v 1.00 157.00 10.00
+v -2.00 158.00 11.00
+v -8.00 164.00 9.00
+v -3.00 146.00 11.00
+v -1.00 157.00 10.00
+v -2.00 145.00 11.00
+v 1.00 153.00 11.00
+v -1.00 157.00 11.00
+v -5.00 148.00 11.00
+v -6.00 148.00 11.00
+v -8.00 149.00 9.00
+v 2.00 153.00 11.00
+v -2.00 154.00 11.00
+v -1.00 150.00 13.00
+v 2.00 153.00 10.00
+v -7.00 150.00 10.00
+v -1.00 151.00 12.00
+v -2.00 151.00 12.00
+v -2.00 150.00 13.00
+v -3.00 151.00 12.00
+v 2.00 153.00 9.00
+v 3.00 153.00 10.00
+v 1.00 153.00 10.00
+v 2.00 152.00 11.00
+v -6.00 146.00 10.00
+v -3.00 146.00 12.00
+v 3.00 150.00 11.00
+v -6.00 161.00 10.00
+v 0.00 159.00 10.00
+v 3.00 160.00 9.00
+v -6.00 147.00 10.00
+v 4.00 159.00 9.00
+v 0.00 159.00 9.00
+v 3.00 147.00 10.00
+v -6.00 151.00 11.00
+v -7.00 146.00 10.00
+v 4.00 160.00 10.00
+v 3.00 159.00 10.00
+v -6.00 162.00 9.00
+v -7.00 150.00 9.00
+v -7.00 151.00 9.00
+v -7.00 146.00 9.00
+v -8.00 150.00 9.00
+v -7.00 147.00 9.00
+v -8.00 150.00 10.00
+v -5.00 150.00 11.00
+v -7.00 151.00 10.00
+v -5.00 150.00 12.00
+v 2.00 158.00 10.00
+v -6.00 150.00 11.00
+v -2.00 159.00 10.00
+v -2.00 152.00 12.00
+v -3.00 150.00 13.00
+v -6.00 151.00 10.00
+v 2.00 149.00 12.00
+v -3.00 153.00 9.00
+v 6.00 161.00 9.00
+v -1.00 154.00 10.00
+v -2.00 153.00 11.00
+v -3.00 152.00 11.00
+v 1.00 151.00 12.00
+v 5.00 161.00 9.00
+v -3.00 153.00 10.00
+v -1.00 154.00 11.00
+v -5.00 161.00 9.00
+v -5.00 162.00 9.00
+v 0.00 154.00 10.00
+v 0.00 153.00 10.00
+v 0.00 151.00 12.00
+v -4.00 160.00 9.00
+v -5.00 159.00 9.00
+v 2.00 159.00 10.00
+v -7.00 164.00 9.00
+v -5.00 147.00 12.00
+v -3.00 147.00 12.00
+v 7.00 163.00 9.00
+v -3.00 144.00 10.00
+v -3.00 145.00 10.00
+v 6.00 163.00 9.00
+v -4.00 159.00 10.00
+v -5.00 160.00 10.00
+v 3.00 160.00 10.00
+v 1.00 149.00 12.00
+v -5.00 161.00 10.00
+v -3.00 144.00 9.00
+v -3.00 143.00 9.00
+v 4.00 153.00 9.00
+v -1.00 158.00 10.00
+v 1.00 158.00 10.00
+v -1.00 150.00 12.00
+v -2.00 142.00 9.00
+v -5.00 145.00 9.00
+v -3.00 142.00 9.00
+v -4.00 160.00 10.00
+v 3.00 146.00 10.00
+v -6.00 145.00 9.00
+v -2.00 158.00 10.00
+v 1.00 155.00 10.00
+v -5.00 148.00 12.00
+v 3.00 146.00 9.00
+v -2.00 156.00 10.00
+v -2.00 157.00 10.00
+v -4.00 150.00 12.00
+v -1.00 156.00 11.00
+v -4.00 152.00 12.00
+v -4.00 146.00 11.00
+v 2.00 147.00 10.00
+v 7.00 162.00 9.00
+v 0.00 153.00 11.00
+v 4.00 148.00 10.00
+v 4.00 148.00 9.00
+v -4.00 159.00 9.00
+v 4.00 149.00 10.00
+v 5.00 148.00 9.00
+v 3.00 148.00 9.00
+v 0.00 156.00 9.00
+v 5.00 149.00 10.00
+v 3.00 148.00 10.00
+v 0.00 156.00 10.00
+v 3.00 149.00 11.00
+v 5.00 149.00 9.00
+v 0.00 155.00 10.00
+v 3.00 149.00 10.00
+v 6.00 149.00 9.00
+v -1.00 156.00 10.00
+v -1.00 155.00 11.00
+v 2.00 151.00 11.00
+v 8.00 163.00 9.00
+v -5.00 149.00 12.00
+v 4.00 159.00 10.00
+v -5.00 148.00 7.00
+v 1.00 159.00 10.00
+v 3.00 152.00 10.00
+v -4.00 147.00 11.00
+v 3.00 151.00 11.00
+v 1.00 145.00 10.00
+v 1.00 146.00 11.00
+v 0.00 146.00 11.00
+v 3.00 159.00 9.00
+v 1.00 150.00 12.00
+v 2.00 151.00 12.00
+v -3.00 152.00 12.00
+v 2.00 145.00 10.00
+v -4.00 153.00 11.00
+v -4.00 153.00 7.00
+v 0.00 145.00 10.00
+v -1.00 145.00 9.00
+v -4.00 146.00 10.00
+v -1.00 147.00 12.00
+v 0.00 150.00 12.00
+v -3.00 159.00 9.00
+v 1.00 147.00 11.00
+v -1.00 145.00 10.00
+v -6.00 146.00 11.00
+v -2.00 144.00 11.00
+v -1.00 144.00 10.00
+v -2.00 144.00 10.00
+v 0.00 147.00 12.00
+v 1.00 147.00 7.00
+v -7.00 149.00 10.00
+v -5.00 147.00 11.00
+v -5.00 146.00 10.00
+v -6.00 149.00 11.00
+v -2.00 146.00 11.00
+v -2.00 159.00 9.00
+v 0.00 158.00 10.00
+v -5.00 151.00 10.00
+v 1.00 159.00 9.00
+v -3.00 148.00 12.00
+v -3.00 143.00 10.00
+v -4.00 145.00 10.00
+v -6.00 160.00 9.00
+v -6.00 148.00 10.00
+v 3.00 150.00 10.00
+v 2.00 158.00 9.00
+v -4.00 161.00 9.00
+v 0.00 158.00 11.00
+v 2.00 151.00 7.00
+v 5.00 162.00 9.00
+v -2.00 150.00 7.00
+v 3.00 149.00 7.00
+v 3.00 150.00 9.00
+v -1.00 153.00 11.00
+v 1.00 149.00 7.00
+v -6.00 149.00 10.00
+v -2.00 152.00 7.00
+v -1.00 146.00 11.00
+v -1.00 149.00 12.00
+v -1.00 148.00 12.00
+v 2.00 149.00 11.00
+v -2.00 152.00 11.00
+v 3.00 145.00 9.00
+v -6.00 150.00 7.00
+v -2.00 153.00 12.00
+v -1.00 156.00 7.00
+v -1.00 150.00 7.00
+v -2.00 154.00 9.00
+v -2.00 157.00 11.00
+v -1.00 158.00 7.00
+v -2.00 144.00 9.00
+v 0.00 149.00 12.00
+v -2.00 146.00 7.00
+v -6.00 146.00 8.00
+v -5.00 159.00 10.00
+v -2.00 145.00 7.00
+v -1.00 149.00 7.00
+v -6.00 163.00 9.00
+v -2.00 157.00 9.00
+v 0.00 152.00 7.00
+v -2.00 153.00 10.00
+v 9.00 164.00 9.00
+v 2.00 150.00 7.00
+v -5.00 149.00 7.00
+v -3.00 147.00 7.00
+v -2.00 148.00 7.00
+v 0.00 148.00 12.00
+v 0.00 148.00 7.00
+v -4.00 153.00 9.00
+v 2.00 148.00 11.00
+v -3.00 150.00 12.00
+v 3.00 152.00 9.00
+v -3.00 149.00 7.00
+v -3.00 151.00 7.00
+v -4.00 151.00 7.00
+v -1.00 153.00 10.00
+v 1.00 151.00 7.00
+v 0.00 146.00 10.00
+v -2.00 151.00 7.00
+v -4.00 150.00 7.00
+v 1.00 157.00 9.00
+usemtl hsl_5125
+f 108 27 106
+usemtl hsl_6791
+f 19 111 101
+usemtl hsl_135
+f 112 62 27
+f 39 88 95
+usemtl hsl_5765
+f 93 89 90
+usemtl hsl_3462
+f 83 122 26
+usemtl hsl_6689
+f 123 32 34
+usemtl hsl_3598
+f 43 126 11
+usemtl hsl_3466
+f 139 69 17
+usemtl hsl_4495
+f 13 148 65
+usemtl hsl_6474
+f 24 149 94
+usemtl hsl_4870
+f 95 153 51
+usemtl hsl_5643
+f 159 71 74
+usemtl hsl_3719
+f 141 22 46
+usemtl hsl_3462
+f 47 170 72
+usemtl hsl_4617
+f 175 52 117
+usemtl hsl_5802
+f 176 179 178
+f 176 164 179
+usemtl hsl_4870
+f 181 38 66
+usemtl hsl_9351
+f 183 33 82
+usemtl hsl_6595
+f 178 184 180
+usemtl hsl_5440
+f 185 181 184
+usemtl hsl_6731
+f 178 185 184
+usemtl hsl_3719
+f 91 186 78
+usemtl hsl_5512
+f 78 186 86
+usemtl hsl_6724
+f 178 179 185
+usemtl hsl_5555
+f 182 59 180
+usemtl hsl_6595
+f 182 180 184
+usemtl hsl_6737
+f 181 182 184
+usemtl hsl_4870
+f 187 38 181
+usemtl hsl_6799
+f 187 181 185
+usemtl hsl_6860
+f 164 185 179
+usemtl hsl_3462
+f 189 37 41
+usemtl hsl_5646
+f 41 147 189
+usemtl hsl_6722
+f 164 190 185
+usemtl hsl_6413
+f 148 13 44
+usemtl hsl_6672
+f 148 44 70
+usemtl hsl_6791
+f 45 191 17
+f 17 191 139
+usemtl hsl_6672
+f 60 192 100
+usemtl hsl_5387
+f 171 8 57
+usemtl hsl_5400
+f 8 171 102
+usemtl hsl_5643
+f 171 57 73
+usemtl hsl_5512
+f 33 193 36
+usemtl hsl_3462
+f 36 193 161
+usemtl hsl_6794
+f 193 33 183
+usemtl hsl_7700
+f 66 182 181
+usemtl hsl_3466
+f 71 194 96
+usemtl hsl_3462
+f 195 95 88
+usemtl hsl_6799
+f 196 65 148
+usemtl hsl_6924
+f 192 64 100
+usemtl hsl_4617
+f 197 52 175
+usemtl hsl_7562
+f 65 196 74
+usemtl hsl_3462
+f 59 97 63
+usemtl hsl_135
+f 63 97 115
+usemtl hsl_6564
+f 133 32 123
+usemtl hsl_6692
+f 32 133 200
+usemtl hsl_5765
+f 200 1 32
+usemtl hsl_6703
+f 34 133 123
+usemtl hsl_6588
+f 133 34 128
+usemtl hsl_4880
+f 203 1 200
+usemtl hsl_3979
+f 201 208 205
+usemtl hsl_3462
+f 211 72 170
+usemtl hsl_2903
+f 217 160 214
+usemtl hsl_2773
+f 218 160 217
+usemtl hsl_3926
+f 160 219 214
+usemtl hsl_5512
+f 30 221 191
+usemtl hsl_5435
+f 215 191 221
+usemtl hsl_5512
+f 191 45 104
+f 30 191 104
+usemtl hsl_6445
+f 222 191 215
+usemtl hsl_6791
+f 221 30 18
+usemtl hsl_3719
+f 18 223 221
+usemtl hsl_6733
+f 223 207 212
+usemtl hsl_8026
+f 131 224 207
+usemtl hsl_6864
+f 207 224 212
+usemtl hsl_3462
+f 230 25 83
+usemtl hsl_7942
+f 80 232 114
+usemtl hsl_10885
+f 232 76 114
+usemtl hsl_3462
+f 25 149 24
+usemtl hsl_135
+f 149 25 230
+usemtl hsl_6587
+f 233 64 192
+usemtl hsl_6568
+f 233 192 198
+usemtl hsl_6710
+f 233 198 229
+usemtl hsl_138
+f 14 234 58
+usemtl hsl_6727
+f 236 225 231
+usemtl hsl_5512
+f 241 68 31
+f 241 31 240
+usemtl hsl_6452
+f 216 241 240
+usemtl hsl_7689
+f 243 31 120
+usemtl hsl_8656
+f 243 216 240
+usemtl hsl_5646
+f 31 243 240
+usemtl hsl_5512
+f 49 244 53
+f 244 49 242
+usemtl hsl_5781
+f 231 244 236
+usemtl hsl_6579
+f 236 244 242
+usemtl hsl_6791
+f 102 242 49
+usemtl hsl_7762
+f 245 216 243
+usemtl hsl_8024
+f 137 235 246
+usemtl hsl_6456
+f 216 247 241
+usemtl hsl_5870
+f 160 253 219
+usemtl hsl_4617
+f 257 20 89
+usemtl hsl_6998
+f 154 151 227
+usemtl hsl_5686
+f 213 264 258
+usemtl hsl_6588
+f 228 266 239
+usemtl hsl_5532
+f 266 35 239
+f 35 266 265
+usemtl hsl_6791
+f 36 267 258
+usemtl hsl_6934
+f 267 36 161
+usemtl hsl_5512
+f 268 18 36
+f 268 36 258
+usemtl hsl_135
+f 62 270 27
+usemtl hsl_3462
+f 88 271 195
+usemtl hsl_6864
+f 228 128 153
+usemtl hsl_6868
+f 128 228 239
+usemtl hsl_3462
+f 251 106 168
+usemtl hsl_6727
+f 272 188 249
+usemtl hsl_6724
+f 157 231 225
+usemtl hsl_3466
+f 53 231 99
+usemtl hsl_5643
+f 231 53 244
+usemtl hsl_4668
+f 275 226 163
+usemtl hsl_5969
+f 206 278 277
+usemtl hsl_8720
+f 279 46 50
+usemtl hsl_6737
+f 276 46 279
+usemtl hsl_6434
+f 230 282 149
+usemtl hsl_7895
+f 237 282 238
+usemtl hsl_6791
+f 262 61 94
+usemtl hsl_7895
+f 237 149 282
+usemtl hsl_5765
+f 21 145 42
+usemtl hsl_4617
+f 285 54 55
+usemtl hsl_5512
+f 285 9 54
+usemtl hsl_5001
+f 55 286 285
+usemtl hsl_5512
+f 286 55 54
+usemtl hsl_3466
+f 286 54 56
+usemtl hsl_6681
+f 278 9 285
+usemtl hsl_6695
+f 277 278 285
+usemtl hsl_7562
+f 287 69 139
+usemtl hsl_5005
+f 201 288 208
+usemtl hsl_5905
+f 208 288 199
+usemtl hsl_926
+f 290 261 269
+usemtl hsl_6587
+f 145 21 22
+usemtl hsl_6413
+f 293 10 11
+usemtl hsl_5387
+f 10 293 56
+usemtl hsl_4397
+f 56 293 291
+usemtl hsl_3598
+f 291 11 43
+usemtl hsl_4370
+f 11 291 293
+usemtl hsl_6934
+f 156 225 292
+usemtl hsl_6805
+f 43 126 291
+usemtl hsl_6860
+f 281 294 284
+f 294 281 280
+usemtl hsl_5765
+f 182 66 97
+usemtl hsl_6826
+f 234 136 155
+usemtl hsl_5679
+f 234 155 295
+usemtl hsl_7003
+f 299 209 274
+usemtl hsl_267
+f 58 300 75
+f 300 58 234
+usemtl hsl_5540
+f 295 300 234
+usemtl hsl_7505
+f 6 243 120
+usemtl hsl_4617
+f 302 3 103
+usemtl hsl_7689
+f 302 103 301
+usemtl hsl_5512
+f 37 301 103
+usemtl hsl_9606
+f 301 37 189
+usemtl hsl_6859
+f 164 305 260
+usemtl hsl_2864
+f 220 152 303
+usemtl hsl_6988
+f 204 306 206
+usemtl hsl_7006
+f 264 165 213
+usemtl hsl_5699
+f 309 134 172
+usemtl hsl_6791
+f 79 232 80
+usemtl hsl_5791
+f 245 170 216
+usemtl hsl_6936
+f 313 310 311
+usemtl hsl_5643
+f 86 312 88
+usemtl hsl_7562
+f 77 314 87
+usemtl hsl_4751
+f 87 314 311
+usemtl hsl_5902
+f 315 87 311
+usemtl hsl_6803
+f 310 315 311
+usemtl hsl_5912
+f 315 310 313
+usemtl hsl_6706
+f 169 312 186
+usemtl hsl_6689
+f 312 86 186
+usemtl hsl_5643
+f 82 316 298
+usemtl hsl_5657
+f 88 312 271
+usemtl hsl_5643
+f 318 14 87
+usemtl hsl_5902
+f 318 87 315
+usemtl hsl_5643
+f 14 318 234
+usemtl hsl_5912
+f 313 318 315
+usemtl hsl_6579
+f 319 298 316
+usemtl hsl_4888
+f 313 320 318
+usemtl hsl_5912
+f 320 313 158
+usemtl hsl_5708
+f 321 197 317
+usemtl hsl_4751
+f 77 321 314
+usemtl hsl_6940
+f 323 158 313
+usemtl hsl_5896
+f 20 125 85
+usemtl hsl_6864
+f 280 169 168
+usemtl hsl_6709
+f 169 280 312
+usemtl hsl_5576
+f 319 325 322
+f 298 319 322
+usemtl hsl_6592
+f 210 231 157
+usemtl hsl_3981
+f 304 161 325
+usemtl hsl_5555
+f 161 322 325
+usemtl hsl_5915
+f 313 311 314
+f 313 314 321
+usemtl hsl_5788
+f 313 321 317
+usemtl hsl_3979
+f 304 326 161
+usemtl hsl_3462
+f 308 93 92
+usemtl hsl_6791
+f 308 92 42
+usemtl hsl_5690
+f 140 308 276
+usemtl hsl_5653
+f 92 328 308
+usemtl hsl_4495
+f 19 316 98
+usemtl hsl_6815
+f 276 308 328
+usemtl hsl_6710
+f 264 213 258
+usemtl hsl_7895
+f 273 1 203
+usemtl hsl_7562
+f 59 182 97
+usemtl hsl_6794
+f 85 232 79
+usemtl hsl_6803
+f 232 85 125
+usemtl hsl_5683
+f 330 237 238
+usemtl hsl_7893
+f 230 238 282
+usemtl hsl_6576
+f 264 326 161
+f 326 264 161
+usemtl hsl_6812
+f 326 264 161
+usemtl hsl_1954
+f 299 124 329
+usemtl hsl_7893
+f 147 165 264
+usemtl hsl_7620
+f 147 264 326
+usemtl hsl_6465
+f 147 326 161
+usemtl hsl_6864
+f 157 209 210
+usemtl hsl_6550
+f 140 23 61
+usemtl hsl_4617
+f 333 16 40
+f 16 333 127
+usemtl hsl_6924
+f 263 48 185
+usemtl hsl_6791
+f 48 263 256
+usemtl hsl_5543
+f 263 185 190
+usemtl hsl_1960
+f 124 248 329
+usemtl hsl_5808
+f 132 299 209
+f 299 132 209
+usemtl hsl_6587
+f 335 127 327
+usemtl hsl_5912
+f 174 336 194
+usemtl hsl_6699
+f 328 141 276
+usemtl hsl_5912
+f 174 337 336
+usemtl hsl_6934
+f 338 336 337
+usemtl hsl_3462
+f 339 83 26
+usemtl hsl_7825
+f 339 26 188
+usemtl hsl_7899
+f 339 238 230
+usemtl hsl_5643
+f 83 339 230
+usemtl hsl_5532
+f 1 273 29
+usemtl hsl_5912
+f 71 343 194
+f 343 174 194
+usemtl hsl_7495
+f 188 238 339
+usemtl hsl_7562
+f 2 128 34
+usemtl hsl_7001
+f 342 190 260
+f 190 342 252
+usemtl hsl_6868
+f 342 260 305
+usemtl hsl_5807
+f 151 341 340
+usemtl hsl_5919
+f 131 261 341
+usemtl hsl_4657
+f 261 340 341
+usemtl hsl_5831
+f 164 344 190
+usemtl hsl_6859
+f 344 164 260
+f 190 344 260
+usemtl hsl_9049
+f 320 227 255
+usemtl hsl_4617
+f 96 346 12
+f 346 96 336
+usemtl hsl_5653
+f 346 336 338
+usemtl hsl_8330
+f 324 15 113
+usemtl hsl_5646
+f 12 347 105
+usemtl hsl_6718
+f 204 348 306
+usemtl hsl_5796
+f 222 287 191
+usemtl hsl_4004
+f 152 342 305
+usemtl hsl_3880
+f 342 152 220
+usemtl hsl_5802
+f 294 280 270
+usemtl hsl_5865
+f 253 138 219
+usemtl hsl_805
+f 173 130 162
+usemtl hsl_6827
+f 327 151 154
+usemtl hsl_5679
+f 151 327 341
+usemtl hsl_5919
+f 327 131 341
+usemtl hsl_927
+f 350 261 290
+usemtl hsl_801
+f 261 350 340
+usemtl hsl_6039
+f 328 145 141
+usemtl hsl_5765
+f 328 42 145
+usemtl hsl_6791
+f 42 328 92
+usemtl hsl_3462
+f 27 351 106
+usemtl hsl_4624
+f 351 27 168
+usemtl hsl_2969
+f 163 142 275
+usemtl hsl_5969
+f 204 206 226
+f 226 206 163
+usemtl hsl_6727
+f 354 157 225
+usemtl hsl_5915
+f 206 355 353
+usemtl hsl_5703
+f 352 136 150
+usemtl hsl_6726
+f 136 352 155
+usemtl hsl_6727
+f 155 352 337
+usemtl hsl_5784
+f 356 105 347
+usemtl hsl_5912
+f 356 347 353
+usemtl hsl_5915
+f 356 353 355
+usemtl hsl_5686
+f 357 206 277
+usemtl hsl_5808
+f 329 143 299
+usemtl hsl_5563
+f 329 246 250
+usemtl hsl_5916
+f 143 329 250
+usemtl hsl_6588
+f 246 329 248
+usemtl hsl_5792
+f 170 360 216
+usemtl hsl_5830
+f 269 172 134
+usemtl hsl_4670
+f 261 172 269
+usemtl hsl_5803
+f 206 357 355
+usemtl hsl_5915
+f 355 357 356
+usemtl hsl_3864
+f 142 163 349
+usemtl hsl_6996
+f 157 361 209
+f 209 361 274
+usemtl hsl_5919
+f 225 361 354
+usemtl hsl_6727
+f 361 157 354
+usemtl hsl_6860
+f 198 199 229
+usemtl hsl_5912
+f 330 232 237
+usemtl hsl_5674
+f 232 125 237
+usemtl hsl_3981
+f 289 332 229
+usemtl hsl_5912
+f 156 362 225
+usemtl hsl_5915
+f 225 362 361
+f 353 135 206
+usemtl hsl_1833
+f 218 134 252
+f 218 217 134
+usemtl hsl_2854
+f 134 217 269
+usemtl hsl_5800
+f 135 364 206
+usemtl hsl_7625
+f 22 141 145
+usemtl hsl_6791
+f 365 60 100
+usemtl hsl_5125
+f 106 365 108
+usemtl hsl_3462
+f 365 106 251
+usemtl hsl_3979
+f 229 366 289
+usemtl hsl_7626
+f 60 198 192
+usemtl hsl_7625
+f 198 60 251
+usemtl hsl_6791
+f 23 279 50
+usemtl hsl_6875
+f 279 23 140
+usemtl hsl_3719
+f 368 26 110
+usemtl hsl_6791
+f 5 254 367
+usemtl hsl_5808
+f 143 210 299
+f 299 210 209
+usemtl hsl_804
+f 369 124 299
+usemtl hsl_5690
+f 370 277 286
+usemtl hsl_1960
+f 162 369 173
+usemtl hsl_3796
+f 253 130 138
+usemtl hsl_5902
+f 61 257 140
+usemtl hsl_6718
+f 371 306 348
+usemtl hsl_6809
+f 9 371 348
+usemtl hsl_4880
+f 95 372 153
+usemtl hsl_6864
+f 372 281 284
+usemtl hsl_5650
+f 308 89 93
+usemtl hsl_6809
+f 89 308 140
+usemtl hsl_6827
+f 137 305 164
+usemtl hsl_5806
+f 305 137 152
+usemtl hsl_5915
+f 373 143 363
+usemtl hsl_5800
+f 143 373 210
+usemtl hsl_2745
+f 220 252 342
+usemtl hsl_6703
+f 168 297 251
+usemtl hsl_6791
+f 374 16 127
+usemtl hsl_6803
+f 277 285 286
+usemtl hsl_7942
+f 375 19 101
+usemtl hsl_5861
+f 160 218 220
+usemtl hsl_5564
+f 286 126 370
+usemtl hsl_7000
+f 335 154 227
+usemtl hsl_4617
+f 231 7 99
+usemtl hsl_6576
+f 231 210 373
+usemtl hsl_10632
+f 7 231 373
+usemtl hsl_10219
+f 199 251 202
+f 251 199 198
+usemtl hsl_135
+f 376 62 112
+usemtl hsl_4617
+f 62 376 270
+usemtl hsl_6692
+f 270 376 294
+usemtl hsl_5671
+f 288 377 199
+usemtl hsl_6030
+f 366 377 289
+f 377 288 289
+usemtl hsl_7892
+f 215 212 222
+f 212 215 224
+usemtl hsl_6830
+f 327 154 335
+usemtl hsl_5835
+f 278 206 306
+usemtl hsl_5683
+f 278 306 371
+usemtl hsl_6699
+f 9 278 371
+usemtl hsl_5915
+f 229 199 366
+usemtl hsl_5912
+f 366 199 377
+usemtl hsl_6822
+f 249 375 272
+usemtl hsl_7599
+f 61 379 257
+usemtl hsl_5777
+f 379 61 262
+usemtl hsl_3462
+f 35 265 112
+usemtl hsl_5555
+f 265 284 294
+usemtl hsl_5563
+f 265 294 376
+usemtl hsl_5777
+f 112 265 376
+usemtl hsl_2622
+f 219 130 138
+usemtl hsl_3796
+f 130 219 138
+usemtl hsl_1722
+f 162 124 369
+usemtl hsl_5001
+f 205 319 201
+usemtl hsl_3979
+f 319 205 208
+usemtl hsl_6672
+f 319 19 201
+f 19 319 316
+usemtl hsl_5919
+f 320 158 323
+usemtl hsl_6809
+f 257 89 140
+usemtl hsl_6731
+f 262 257 379
+usemtl hsl_5512
+f 16 382 116
+f 382 16 374
+f 116 382 117
+usemtl hsl_8026
+f 262 94 149
+usemtl hsl_6699
+f 125 262 149
+usemtl hsl_6805
+f 95 195 372
+usemtl hsl_5663
+f 195 281 372
+usemtl hsl_5896
+f 177 117 382
+usemtl hsl_4617
+f 374 177 382
+usemtl hsl_5802
+f 215 222 212
+usemtl hsl_1833
+f 269 217 290
+usemtl hsl_6722
+f 323 177 320
+usemtl hsl_4617
+f 7 373 118
+usemtl hsl_6864
+f 177 313 317
+f 177 317 197
+usemtl hsl_5551
+f 286 56 291
+usemtl hsl_6692
+f 286 291 126
+usemtl hsl_5643
+f 15 321 77
+usemtl hsl_6692
+f 321 15 324
+usemtl hsl_5440
+f 280 294 270
+usemtl hsl_4642
+f 363 385 373
+usemtl hsl_4771
+f 166 129 283
+usemtl hsl_6991
+f 190 252 259
+usemtl hsl_6703
+f 125 149 237
+usemtl hsl_4870
+f 351 27 270
+usemtl hsl_6561
+f 351 270 294
+usemtl hsl_3848
+f 27 351 168
+usemtl hsl_6596
+f 168 351 280
+f 351 294 280
+usemtl hsl_4749
+f 180 59 176
+usemtl hsl_5802
+f 180 176 178
+usemtl hsl_6699
+f 266 228 265
+f 265 228 284
+usemtl hsl_6943
+f 284 228 372
+usemtl hsl_5795
+f 135 387 364
+usemtl hsl_5919
+f 387 135 338
+usemtl hsl_5788
+f 135 353 338
+usemtl hsl_6588
+f 227 374 335
+usemtl hsl_6567
+f 374 127 335
+usemtl hsl_5795
+f 129 166 136
+f 136 166 150
+usemtl hsl_5803
+f 176 137 164
+usemtl hsl_5802
+f 137 176 367
+usemtl hsl_6791
+f 176 5 367
+usemtl hsl_3462
+f 29 273 28
+usemtl hsl_1593
+f 138 214 219
+f 214 138 146
+usemtl hsl_6330
+f 139 191 287
+usemtl hsl_3979
+f 208 325 319
+usemtl hsl_4880
+f 316 325 319
+usemtl hsl_5005
+f 325 316 319
+usemtl hsl_2903
+f 214 290 217
+usemtl hsl_6722
+f 227 320 177
+usemtl hsl_6591
+f 227 177 374
+usemtl hsl_6695
+f 309 268 383
+usemtl hsl_8030
+f 255 390 320
+usemtl hsl_6692
+f 175 177 197
+usemtl hsl_6859
+f 391 190 252
+usemtl hsl_6720
+f 190 391 252
+usemtl hsl_5919
+f 212 131 327
+usemtl hsl_4749
+f 137 367 254
+usemtl hsl_6695
+f 235 137 254
+usemtl hsl_7689
+f 75 392 84
+usemtl hsl_4631
+f 392 75 295
+usemtl hsl_6868
+f 250 167 216
+usemtl hsl_5800
+f 226 275 204
+usemtl hsl_5799
+f 204 275 334
+usemtl hsl_1947
+f 334 275 132
+usemtl hsl_5800
+f 134 394 252
+usemtl hsl_6827
+f 394 259 252
+usemtl hsl_5919
+f 238 232 330
+usemtl hsl_6030
+f 208 304 325
+usemtl hsl_1717
+f 290 146 388
+usemtl hsl_570
+f 146 290 214
+usemtl hsl_6859
+f 313 177 323
+usemtl hsl_6827
+f 283 151 340
+usemtl hsl_6731
+f 151 283 255
+usemtl hsl_5667
+f 153 372 228
+usemtl hsl_7689
+f 165 119 397
+usemtl hsl_6611
+f 189 147 301
+usemtl hsl_6815
+f 309 207 268
+usemtl hsl_6791
+f 147 41 119
+usemtl hsl_5653
+f 147 119 165
+usemtl hsl_5512
+f 223 18 268
+usemtl hsl_5896
+f 223 268 207
+usemtl hsl_5802
+f 301 325 304
+f 325 301 147
+usemtl hsl_5686
+f 398 302 208
+usemtl hsl_5912
+f 225 171 296
+usemtl hsl_5704
+f 171 225 236
+usemtl hsl_4884
+f 199 205 208
+usemtl hsl_5905
+f 205 199 208
+usemtl hsl_6864
+f 131 207 309
+usemtl hsl_6718
+f 172 131 309
+usemtl hsl_6803
+f 136 234 307
+usemtl hsl_5646
+f 400 43 107
+f 400 107 105
+usemtl hsl_4628
+f 43 400 126
+usemtl hsl_5686
+f 202 398 199
+usemtl hsl_1831
+f 130 389 146
+usemtl hsl_808
+f 146 389 388
+usemtl hsl_5919
+f 357 370 126
+usemtl hsl_138
+f 52 197 113
+usemtl hsl_5512
+f 113 197 324
+usemtl hsl_5572
+f 197 321 324
+usemtl hsl_6866
+f 202 251 297
+usemtl hsl_6711
+f 304 398 301
+usemtl hsl_5555
+f 398 302 301
+usemtl hsl_5540
+f 302 398 208
+usemtl hsl_6947
+f 208 398 304
+usemtl hsl_5919
+f 163 364 387
+usemtl hsl_5690
+f 357 277 370
+usemtl hsl_6731
+f 249 332 289
+usemtl hsl_6867
+f 332 249 188
+usemtl hsl_6456
+f 26 332 188
+usemtl hsl_3719
+f 332 26 368
+usemtl hsl_5540
+f 44 392 70
+usemtl hsl_3863
+f 349 163 387
+usemtl hsl_5657
+f 404 271 312
+usemtl hsl_5908
+f 19 249 289
+usemtl hsl_5905
+f 249 19 375
+usemtl hsl_6711
+f 276 308 140
+usemtl hsl_6866
+f 140 308 279
+usemtl hsl_6867
+f 308 276 279
+usemtl hsl_2822
+f 276 46 50
+f 276 50 46
+usemtl hsl_6456
+f 46 276 141
+usemtl hsl_5795
+f 208 199 398
+usemtl hsl_9351
+f 243 6 109
+usemtl hsl_6791
+f 243 109 72
+usemtl hsl_805
+f 275 173 369
+usemtl hsl_927
+f 275 369 132
+usemtl hsl_918
+f 388 389 401
+usemtl hsl_7049
+f 234 318 307
+usemtl hsl_5765
+f 128 2 51
+usemtl hsl_5777
+f 128 51 153
+usemtl hsl_6822
+f 312 280 404
+usemtl hsl_6830
+f 280 281 404
+usemtl hsl_5796
+f 326 304 325
+usemtl hsl_4880
+f 161 326 147
+usemtl hsl_5919
+f 147 326 325
+usemtl hsl_6940
+f 129 255 283
+f 255 129 390
+usemtl hsl_7689
+f 9 348 67
+usemtl hsl_6924
+f 67 348 292
+usemtl hsl_5781
+f 348 156 292
+usemtl hsl_4760
+f 156 348 362
+usemtl hsl_4775
+f 348 204 334
+usemtl hsl_5915
+f 348 361 362
+usemtl hsl_918
+f 389 283 401
+usemtl hsl_6934
+f 183 322 193
+usemtl hsl_6932
+f 322 183 298
+usemtl hsl_6934
+f 322 161 193
+usemtl hsl_3719
+f 3 408 81
+usemtl hsl_1416
+f 81 408 91
+usemtl hsl_5683
+f 408 302 297
+usemtl hsl_5781
+f 91 408 297
+usemtl hsl_1945
+f 166 358 150
+usemtl hsl_6867
+f 131 172 261
+usemtl hsl_927
+f 142 173 275
+usemtl hsl_5765
+f 254 68 247
+usemtl hsl_5512
+f 254 5 68
+usemtl hsl_7762
+f 410 4 263
+usemtl hsl_5969
+f 410 190 259
+usemtl hsl_6860
+f 190 410 263
+usemtl hsl_5803
+f 364 163 206
+usemtl hsl_5785
+f 400 105 356
+usemtl hsl_5915
+f 400 356 357
+usemtl hsl_5686
+f 398 202 302
+usemtl hsl_6706
+f 302 202 297
+usemtl hsl_6733
+f 212 215 223
+usemtl hsl_6565
+f 215 221 223
+usemtl hsl_6733
+f 215 212 224
+usemtl hsl_4751
+f 21 411 145
+usemtl hsl_5532
+f 411 21 145
+usemtl hsl_8026
+f 227 151 255
+usemtl hsl_6791
+f 243 72 211
+usemtl hsl_4624
+f 243 211 170
+usemtl hsl_5791
+f 243 170 245
+usemtl hsl_805
+f 389 130 173
+usemtl hsl_5915
+f 357 126 400
+usemtl hsl_6689
+f 281 195 271
+f 281 271 404
+usemtl hsl_4755
+f 73 296 171
+usemtl hsl_921
+f 389 416 283
+f 416 166 283
+usemtl hsl_923
+f 166 416 358
+usemtl hsl_6588
+f 70 392 148
+usemtl hsl_5765
+f 418 38 187
+usemtl hsl_135
+f 38 418 48
+usemtl hsl_6027
+f 418 187 185
+usemtl hsl_6605
+f 410 213 397
+f 213 410 259
+usemtl hsl_6445
+f 4 410 397
+usemtl hsl_2693
+f 407 35 28
+f 35 407 239
+usemtl hsl_5678
+f 272 249 188
+f 188 249 272
+usemtl hsl_5683
+f 174 295 155
+usemtl hsl_5802
+f 174 155 337
+usemtl hsl_5686
+f 295 174 392
+usemtl hsl_6711
+f 392 174 343
+usemtl hsl_4760
+f 339 272 249
+usemtl hsl_5439
+f 238 188 272
+usemtl hsl_5912
+f 144 238 339
+usemtl hsl_6819
+f 238 272 339
+usemtl hsl_5643
+f 159 74 196
+usemtl hsl_4891
+f 343 159 392
+usemtl hsl_6561
+f 102 171 242
+usemtl hsl_5576
+f 242 171 236
+usemtl hsl_8026
+f 250 235 167
+usemtl hsl_5678
+f 272 375 249
+f 307 419 136
+usemtl hsl_4884
+f 419 307 318
+usemtl hsl_5777
+f 125 20 257
+usemtl hsl_5802
+f 262 125 257
+usemtl hsl_5791
+f 127 333 327
+usemtl hsl_5919
+f 327 333 212
+f 333 215 212
+usemtl hsl_7825
+f 339 76 232
+usemtl hsl_5799
+f 238 339 232
+usemtl hsl_6943
+f 128 239 407
+usemtl hsl_5915
+f 392 159 148
+usemtl hsl_6809
+f 159 196 148
+usemtl hsl_5912
+f 144 339 238
+usemtl hsl_4617
+f 421 121 69
+usemtl hsl_5653
+f 421 69 287
+usemtl hsl_6943
+f 222 421 287
+usemtl hsl_7689
+f 421 40 121
+usemtl hsl_5915
+f 143 250 363
+f 363 250 216
+usemtl hsl_5777
+f 144 101 76
+usemtl hsl_4755
+f 101 144 375
+usemtl hsl_6934
+f 249 144 339
+usemtl hsl_4760
+f 144 249 375
+usemtl hsl_6791
+f 368 110 64
+usemtl hsl_7710
+f 368 64 233
+usemtl hsl_6583
+f 229 368 233
+usemtl hsl_6579
+f 368 229 332
+usemtl hsl_8026
+f 246 250 248
+usemtl hsl_5576
+f 250 246 248
+usemtl hsl_8026
+f 235 250 246
+usemtl hsl_6591
+f 259 264 213
+usemtl hsl_6709
+f 168 169 297
+usemtl hsl_2753
+f 124 303 248
+usemtl hsl_2741
+f 130 124 162
+usemtl hsl_3790
+f 124 130 303
+usemtl hsl_6943
+f 407 133 128
+usemtl hsl_5866
+f 160 220 253
+usemtl hsl_3796
+f 253 220 420
+usemtl hsl_1595
+f 220 218 252
+usemtl hsl_6866
+f 274 334 299
+usemtl hsl_4668
+f 334 132 299
+usemtl hsl_6591
+f 334 274 361
+usemtl hsl_5915
+f 334 361 348
+usemtl hsl_6950
+f 259 134 309
+usemtl hsl_6827
+f 134 259 394
+usemtl hsl_6722
+f 246 248 137
+usemtl hsl_5909
+f 419 318 320
+usemtl hsl_5919
+f 419 320 390
+f 129 419 390
+usemtl hsl_65429
+f 142 389 173
+usemtl hsl_926
+f 389 358 416
+usemtl hsl_5695
+f 152 137 248
+usemtl hsl_4794
+f 303 152 248
+usemtl hsl_5555
+f 273 200 133
+usemtl hsl_5912
+f 200 273 203
+usemtl hsl_6550
+f 133 28 273
+usemtl hsl_6561
+f 28 133 407
+usemtl hsl_5686
+f 425 258 264
+usemtl hsl_5663
+f 258 425 268
+usemtl hsl_5686
+f 425 264 259
+usemtl hsl_4617
+f 360 47 118
+usemtl hsl_5919
+f 360 363 216
+usemtl hsl_4617
+f 360 118 373
+usemtl hsl_5791
+f 360 373 385
+f 363 360 385
+usemtl hsl_6731
+f 167 254 216
+usemtl hsl_6733
+f 216 254 247
+usemtl hsl_6727
+f 235 254 167
+usemtl hsl_917
+f 142 358 389
+usemtl hsl_5795
+f 419 129 136
+usemtl hsl_5919
+f 222 215 333
+usemtl hsl_5791
+f 421 222 333
+usemtl hsl_4749
+f 67 296 73
+usemtl hsl_6794
+f 296 67 292
+usemtl hsl_6934
+f 296 292 225
+usemtl hsl_4617
+f 427 12 346
+usemtl hsl_5001
+f 12 427 353
+usemtl hsl_5905
+f 427 338 353
+usemtl hsl_3792
+f 220 303 420
+usemtl hsl_3799
+f 303 253 420
+f 253 303 130
+usemtl hsl_1832
+f 283 340 350
+f 283 350 290
+usemtl hsl_684
+f 283 290 388
+usemtl hsl_4767
+f 338 337 352
+usemtl hsl_6940
+f 150 338 352
+f 338 150 358
+usemtl hsl_3863
+f 387 338 349
+f 349 338 358
+usemtl hsl_6934
+f 346 338 427
+usemtl hsl_5905
+f 76 339 144
+usemtl hsl_5005
+f 201 289 288
+usemtl hsl_4878
+f 289 201 430
+f 19 289 430
+usemtl hsl_4767
+f 169 91 297
+usemtl hsl_6934
+f 161 258 267
+usemtl hsl_5563
+f 258 161 264
+usemtl hsl_5686
+f 383 268 259
+usemtl hsl_5671
+f 259 268 425
+usemtl hsl_10500
+f 108 106 27
+usemtl hsl_3462
+f 19 101 111
+usemtl hsl_5125
+f 112 27 62
+usemtl hsl_10500
+f 39 95 88
+usemtl hsl_5763
+f 93 90 89
+usemtl hsl_3462
+f 83 26 122
+usemtl hsl_6681
+f 123 34 32
+usemtl hsl_3341
+f 70 44 13
+usemtl hsl_10500
+f 59 115 97
+f 63 115 59
+usemtl hsl_3462
+f 78 86 91
+usemtl hsl_4370
+f 8 102 57
+usemtl hsl_5643
+f 48 4 345
+usemtl hsl_5765
+f 80 114 76
+usemtl hsl_7333
+f 6 120 109
+usemtl hsl_9351
+f 113 15 52
+usemtl hsl_135
+f 16 116 117
+usemtl hsl_6794
+f 16 378 40
+usemtl hsl_7562
+f 43 105 107
+usemtl hsl_1941
+f 414 415 402
+usemtl hsl_7691
+f 345 38 48
+usemtl hsl_1416
+f 56 54 55
+usemtl hsl_7319
+f 59 97 66
+usemtl hsl_6565
+f 393 31 68
+usemtl hsl_2610
+f 429 422 424
+usemtl hsl_2730
+f 422 413 424
+usemtl hsl_7597
+f 61 85 24
+usemtl hsl_6803
+f 79 24 85
+usemtl hsl_5646
+f 60 100 64
+usemtl hsl_2731
+f 424 423 429
+usemtl hsl_4428
+f 428 429 423
+usemtl hsl_6681
+f 95 51 35
+usemtl hsl_5653
+f 57 102 73
+usemtl hsl_6548
+f 13 65 70
+usemtl hsl_5653
+f 35 34 28
+usemtl hsl_3462
+f 36 82 33
+usemtl hsl_7698
+f 46 92 93
+usemtl hsl_3462
+f 34 51 2
+usemtl hsl_6568
+f 34 35 51
+usemtl hsl_5646
+f 74 70 65
+usemtl hsl_671
+f 384 406 396
+usemtl hsl_5653
+f 89 23 93
+usemtl hsl_5547
+f 93 23 50
+usemtl hsl_6692
+f 86 106 91
+usemtl hsl_7689
+f 117 378 16
+usemtl hsl_5781
+f 12 105 402
+usemtl hsl_4880
+f 381 87 14
+usemtl hsl_4755
+f 77 381 15
+usemtl hsl_5905
+f 381 77 87
+usemtl hsl_5653
+f 395 103 3
+usemtl hsl_5529
+f 27 106 86
+usemtl hsl_5526
+f 56 43 10
+usemtl hsl_7562
+f 11 10 43
+usemtl hsl_5765
+f 66 38 345
+usemtl hsl_5650
+f 1 123 32
+usemtl hsl_7710
+f 1 29 123
+usemtl hsl_5657
+f 89 20 61
+usemtl hsl_5660
+f 85 61 20
+usemtl hsl_5663
+f 23 89 61
+usemtl hsl_6571
+f 46 93 50
+usemtl hsl_1945
+f 426 384 396
+usemtl hsl_6816
+f 412 426 378
+usemtl hsl_3743
+f 384 426 412
+usemtl hsl_10500
+f 24 83 25
+usemtl hsl_6561
+f 80 83 24
+usemtl hsl_5653
+f 80 24 79
+usemtl hsl_6684
+f 26 83 80
+usemtl hsl_5902
+f 67 73 403
+usemtl hsl_5663
+f 43 56 55
+usemtl hsl_6572
+f 28 34 123
+usemtl hsl_7586
+f 28 123 29
+usemtl hsl_5673
+f 5 345 423
+usemtl hsl_5784
+f 26 101 19
+usemtl hsl_1949
+f 380 406 415
+usemtl hsl_917
+f 417 415 406
+usemtl hsl_6572
+f 66 345 59
+usemtl hsl_5663
+f 5 59 345
+usemtl hsl_5653
+f 9 67 405
+usemtl hsl_5660
+f 103 395 37
+usemtl hsl_1947
+f 380 415 414
+usemtl hsl_4760
+f 414 67 331
+usemtl hsl_6692
+f 378 426 18
+usemtl hsl_2607
+f 428 386 396
+usemtl hsl_1706
+f 396 406 380
+usemtl hsl_1703
+f 409 396 386
+usemtl hsl_6564
+f 95 112 88
+usemtl hsl_5653
+f 35 112 95
+usemtl hsl_5667
+f 402 405 414
+f 414 405 67
+usemtl hsl_5532
+f 88 62 27
+usemtl hsl_5660
+f 86 88 27
+usemtl hsl_6679
+f 88 112 62
+usemtl hsl_5777
+f 109 393 72
+f 72 393 47
+f 47 393 118
+usemtl hsl_6567
+f 393 109 120
+usemtl hsl_7592
+f 393 120 31
+usemtl hsl_6554
+f 82 36 395
+usemtl hsl_5643
+f 19 98 395
+usemtl hsl_2844
+f 396 409 426
+usemtl hsl_7603
+f 18 426 409
+usemtl hsl_5653
+f 64 26 399
+f 19 399 26
+usemtl hsl_2489
+f 380 428 396
+usemtl hsl_5646
+f 99 7 413
+usemtl hsl_5674
+f 413 331 99
+usemtl hsl_1822
+f 414 413 422
+usemtl hsl_1945
+f 331 413 414
+usemtl hsl_5777
+f 7 118 413
+usemtl hsl_5781
+f 3 81 399
+usemtl hsl_6583
+f 399 60 64
+usemtl hsl_135
+f 30 104 45
+usemtl hsl_4751
+f 70 74 71
+usemtl hsl_9858
+f 75 84 70
+usemtl hsl_913
+f 417 406 384
+usemtl hsl_4428
+f 428 380 429
+usemtl hsl_3400
+f 429 380 422
+usemtl hsl_6548
+f 49 53 403
+usemtl hsl_6554
+f 102 49 403
+usemtl hsl_5532
+f 99 403 53
+usemtl hsl_6684
+f 403 73 102
+usemtl hsl_6698
+f 378 117 381
+usemtl hsl_7611
+f 378 381 412
+usemtl hsl_5663
+f 381 14 412
+usemtl hsl_1938
+f 417 384 359
+usemtl hsl_7481
+f 399 106 60
+usemtl hsl_9858
+f 106 100 60
+usemtl hsl_1825
+f 380 414 422
+usemtl hsl_913
+f 402 415 417
+usemtl hsl_5791
+f 99 67 403
+usemtl hsl_6692
+f 99 331 67
+usemtl hsl_5535
+f 92 46 22
+usemtl hsl_6561
+f 22 21 42
+usemtl hsl_5532
+f 42 92 22
+usemtl hsl_4775
+f 424 5 423
+usemtl hsl_6564
+f 52 381 117
+usemtl hsl_6576
+f 52 15 381
+usemtl hsl_5653
+f 26 80 76
+usemtl hsl_5781
+f 101 26 76
+usemtl hsl_2485
+f 423 386 428
+usemtl hsl_5555
+f 4 423 345
+usemtl hsl_4659
+f 4 386 423
+usemtl hsl_6815
+f 55 405 43
+usemtl hsl_5781
+f 43 405 105
+usemtl hsl_5788
+f 402 105 405
+usemtl hsl_5660
+f 405 55 54
+usemtl hsl_5663
+f 54 9 405
+usemtl hsl_5678
+f 409 386 4
+usemtl hsl_6809
+f 384 412 58
+usemtl hsl_5777
+f 14 58 412
+usemtl hsl_5785
+f 359 384 58
+usemtl hsl_6554
+f 121 45 17
+usemtl hsl_4755
+f 378 121 40
+usemtl hsl_5663
+f 121 378 18
+usemtl hsl_6561
+f 121 18 30
+f 45 121 30
+usemtl hsl_5547
+f 399 91 106
+usemtl hsl_5781
+f 91 399 81
+usemtl hsl_6692
+f 4 36 409
+usemtl hsl_5646
+f 18 409 36
+usemtl hsl_6805
+f 119 395 36
+usemtl hsl_7586
+f 4 119 36
+usemtl hsl_6561
+f 119 37 395
+usemtl hsl_4881
+f 402 417 12
+usemtl hsl_6692
+f 58 96 359
+usemtl hsl_5657
+f 58 75 96
+usemtl hsl_5784
+f 96 75 70
+usemtl hsl_4880
+f 96 12 417
+usemtl hsl_4764
+f 96 417 359
+usemtl hsl_6803
+f 3 19 395
+f 3 399 19
+usemtl hsl_7716
+f 118 393 424
+usemtl hsl_5532
+f 5 424 68
+usemtl hsl_7482
+f 424 393 68
+usemtl hsl_6689
+f 413 118 424
