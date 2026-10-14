@@ -1,2 +1,4 @@
 numpy>=1.24
 Pillow>=10.0
+# optional: repairs dark-armour cutouts in tools/meshy_inputs.py
+# opencv-python-headless>=4.8

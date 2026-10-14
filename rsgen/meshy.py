@@ -19,7 +19,7 @@ import time
 import urllib.error
 import urllib.request
 
-from PIL import Image
+from PIL import Image, ImageFilter
 
 DEFAULT_BASE = 'https://api.meshy.ai'
 ENDPOINT = '/openapi/v1/image-to-3d'
@@ -29,6 +29,26 @@ DONE_BAD = {'FAILED', 'CANCELED', 'CANCELLED', 'EXPIRED'}
 
 class MeshyError(RuntimeError):
     pass
+
+
+def clean_shot(sheet, crop, mask, size=1024, pad=0.12):
+    """A clean upload image of one design: cut from the reference sheet at its
+    full quality, background removed with the item mask (choked 1px so the
+    sheet's dark backdrop doesn't fringe the edge), centred on a transparent
+    square canvas and upscaled to size. sheet: RGB image; crop: (x0, y0, x1,
+    y1) on it; mask: L image the size of the crop."""
+    rgb = sheet.crop(tuple(crop))
+    w, h = rgb.size
+    k = size * (1 - 2 * pad) / max(w, h)
+    W, H = round(w * k), round(h * k)
+    big = rgb.resize((W, H), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
+    a = mask.convert('L').filter(ImageFilter.MinFilter(3)).resize((W, H), Image.LANCZOS)
+    a = a.filter(ImageFilter.GaussianBlur(k * 0.3)).point(lambda v: max(0, min(255, int((v - 128) * 1.8 + 128))))
+    tile = big.convert('RGBA')
+    tile.putalpha(a)
+    out = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+    out.alpha_composite(tile, ((size - W) // 2, (size - H) // 2))
+    return out
 
 
 def image_data_uri(path, min_side=512, pad=0.08):

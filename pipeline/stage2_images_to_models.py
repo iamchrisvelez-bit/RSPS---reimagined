@@ -351,7 +351,9 @@ def run_meshy_all(items, a, client=None, log=print):
             log('%s: skipped (--max-tasks %d reached)' % (meta['code'], a.max_tasks))
             continue
         os.makedirs(out, exist_ok=True)
-        tid = client.create_image_to_3d(image_data_uri(os.path.join(d, 'color.png')), **opts)
+        # the clean shot from tools/meshy_inputs.py when there is one, else the stage-1 cutout
+        shot = sorted(glob.glob(os.path.join(ROOT, 'meshy_input', meta['code'] + '_*.png')))
+        tid = client.create_image_to_3d(image_data_uri(shot[0] if shot else os.path.join(d, 'color.png')), **opts)
         with open(tj, 'w') as f:
             json.dump(dict(task_id=tid, options=opts, created=time.time()), f, indent=1)
         submitted += 1
